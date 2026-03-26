@@ -1,0 +1,21 @@
+ServerEvents.recipes(event => {
+  // Toms Storage
+  event.remove({output: 'toms_storage:adv_wireless_terminal'})
+  event.remove({output: 'toms_storage:wireless_terminal'})
+  event.remove({output: 'toms_storage:polymorphic_item_filter'})
+  event.remove({output: 'toms_storage:tag_item_filter'})
+  event.remove({output: 'toms_storage:item_filter'})
+  event.remove({output: 'toms_storage:level_emitter'})
+  event.remove({output: 'toms_storage:basic_inventory_hopper'})
+
+  event.remove({output: 'utilitarian:snad'})
+  event.remove({output: 'utilitarian:red_snad'})
+  event.remove({output: 'utilitarian:soul_snad'})
+  event.remove({output: 'utilitarian:drit'})
+  event.remove({output: 'utilitarian:grrass'})
+  event.remove({output: 'utilitarian:tiny_coal'})
+  event.remove({output: 'utilitarian:tiny_charcoal'})
+  event.remove({output: 'utilitarian:redstone_clock'})
+  event.remove({output: 'utilitarian:fluid_hopper'})
+  event.remove({output: 'constructionstick:template_destruction'})
+})

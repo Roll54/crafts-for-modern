@@ -1,0 +1,60 @@
+ServerEvents.recipes(event => {
+
+event.remove({ output: "railcraft:tunnel_bore" })
+event.remove({ output: "railcraft:world_spike" })
+event.remove({ output: "railcraft:personal_world_spike" })
+event.remove({ output: "railcraft:steam_turbine" })
+event.remove({ output: "railcraft:white_iron_tank_wall" })
+event.remove({ output: "railcraft:white_steel_tank_wall" })
+event.remove({ output: "railcraft:brass_ingot" })
+event.remove({ output: "railcraft:bronze_ingot" })
+event.remove({ output: "railcraft:invar_ingot" })
+
+event.remove({ output: "railcraft:powered_rolling_machine" })
+  
+  event.remove({output: 'railcraft:steel_sword'})
+  event.remove({output: 'railcraft:steel_pickaxe'})
+  event.remove({output: 'railcraft:steel_axe'})
+  event.remove({output: 'railcraft:steel_shovel'})
+  event.remove({output: 'railcraft:steel_hoe'})
+  event.remove({output: 'railcraft:steel_helmet'})
+  event.remove({output: 'railcraft:steel_chestplate'})
+  event.remove({output: 'railcraft:steel_leggings'})
+  event.remove({output: 'railcraft:steel_boots'})
+
+  // Plates
+  event.remove({output: 'railcraft:lead_plate'})
+  event.remove({output: 'railcraft:invar_plate'})
+  event.remove({output: 'railcraft:steel_plate'})
+  event.remove({output: 'railcraft:bronze_plate'})
+  event.remove({output: 'railcraft:silver_plate'})
+  event.remove({output: 'railcraft:nickel_plate'})
+  event.remove({output: 'railcraft:iron_plate'})
+  event.remove({output: 'railcraft:copper_plate'})
+  event.remove({output: 'railcraft:gold_plate'})
+  event.remove({output: 'railcraft:tin_plate'})
+  event.remove({output: 'railcraft:zinc_plate'})
+  event.remove({output: 'railcraft:brass_plate'})
+// Gears
+  event.remove({output: 'railcraft:lead_gear'})
+  event.remove({output: 'railcraft:invar_gear'})
+  event.remove({output: 'railcraft:steel_gear'})
+  event.remove({output: 'railcraft:bronze_gear'})
+  event.remove({output: 'railcraft:silver_gear'})
+  event.remove({output: 'railcraft:nickel_gear'})
+  event.remove({output: 'railcraft:iron_gear'})
+  event.remove({output: 'railcraft:copper_gear'})
+  event.remove({output: 'railcraft:gold_gear'})
+
+
+  //rail
+
+event.remove({output: 'railcraft:standard_rail'})
+event.remove({output: 'railcraft:black_post'})
+event.remove({output: 'railcraft:rebar'})
+event.remove({output: 'railcraft:wooden_tie'})
+event.remove({output: 'railcraft:stone_tie'})
+event.remove({output: 'minecraft:powered_rail'})
+event.remove({output: 'minecraft:detector_rail'})
+event.remove({output: 'minecraft:activator_rail'})
+})
