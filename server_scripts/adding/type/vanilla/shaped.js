@@ -864,4 +864,819 @@ event.shaped(
         A: 'modern_industrialization:steel_plate'
     }
 )
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:backpack'),
+    [
+        'ABA',
+        'ACA',
+        'BBB'
+    ],
+    {
+        B: 'minecraft:leather',
+        C: 'ironchest:iron_chest',
+        A: 'minecraft:string'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:magnet_upgrade'),
+    [
+        'ABA',
+        'ACA',
+        'DDD'
+    ],
+    {
+        B: 'modern_industrialization:steel_rod_magnetic',
+        A: 'roll_mod:raw_magnetite',
+        C: 'sophisticatedbackpacks:upgrade_base',
+        D: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_magnet_upgrade'),
+    [
+        'AAA',
+        'ABA',
+        'CCC'
+    ],
+    {
+        A: 'modern_industrialization:stainless_steel_rod_magnetic',
+        B: 'sophisticatedbackpacks:magnet_upgrade',
+        C: 'modern_industrialization:stainless_steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_block',
+        B: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:upgrade_base'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:leather',
+        A: 'modern_industrialization:bronze_plate',
+        B: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_upgrade_tier_2'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:aluminum_block',
+        C: 'sophisticatedbackpacks:stack_upgrade_tier_1',
+        D: 'roll_mod:treated_plate',
+        B: 'modern_industrialization:electronic_circuit'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_upgrade_tier_1'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:steel_block',
+        C: 'modern_industrialization:analog_circuit',
+        D: 'roll_mod:treated_plate',
+        B: 'sophisticatedbackpacks:stack_upgrade_starter_tier'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_upgrade_tier_4'),
+    [
+        'AAA',
+        'BCB',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:titanium_block',
+        B: 'sophisticatedbackpacks:stack_upgrade_tier_3',
+        C: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_upgrade_tier_3'),
+    [
+        'AAA',
+        'BCB',
+        'AAA'
+    ],
+    {
+        B: 'sophisticatedbackpacks:stack_upgrade_tier_2',
+        C: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:stainless_steel_block'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_upgrade_omega_tier'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        B: 'sophisticatedbackpacks:stack_upgrade_tier_4',
+        A: 'modern_industrialization:processing_unit',
+        C: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:pump_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:bucket',
+        B: 'modern_industrialization:bronze_water_pump',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        A: 'modern_industrialization:rubber_sheet'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:everlasting_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        B: 'roll_mod:nether_star_plate',
+        C: 'sophisticatedbackpacks:upgrade_base',
+        A: 'roll_mod:quantum_star'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:everlasting_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        B: 'roll_mod:nether_star_plate',
+        C: 'sophisticatedbackpacks:upgrade_base',
+        A: 'roll_mod:quantum_star'
+    }
+)
+
+event.shaped(
+    Item.of('toms_storage:polymorphic_item_filter'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'modern_industrialization:item_pipe',
+        A: 'modern_industrialization:diamond_dust',
+        B: 'modern_industrialization:configurable_chest',
+        D: 'toms_storage:item_filter'
+    }
+)
+
+event.shaped(
+    Item.of('toms_storage:item_filter'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:item_pipe',
+        C: 'minecraft:hopper',
+        A: 'modern_industrialization:iron_dust'
+    }
+)
+
+event.shaped(
+    Item.of('toms_storage:tag_item_filter'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:item_pipe',
+        A: 'modern_industrialization:gold_dust',
+        C: 'modern_industrialization:configurable_chest',
+        D: 'toms_storage:item_filter'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:feeding_upgrade'),
+    [
+        'ABA',
+        'CDE',
+        'FGF'
+    ],
+    {
+        F: 'roll_mod:advanced_robot_arm',
+        G: 'modern_industrialization:digital_circuit',
+        C: 'sophisticatedbackpacks:advanced_alchemy_upgrade',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        A: 'minecraft:enchanted_golden_apple',
+        E: 'sophisticatedbackpacks:advanced_refill_upgrade',
+        B: 'extended_industrialization:robot_auto_feeder'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_feeding_upgrade'),
+    [
+        'ABC',
+        'DED',
+        'FGH'
+    ],
+    {
+        A: 'tide:bedrock_bug',
+        H: 'roll_mod:very_nutritious_candy',
+        C: 'roll_mod:sulfur_jam',
+        D: 'modern_industrialization:processing_unit',
+        E: 'sophisticatedbackpacks:feeding_upgrade',
+        F: 'stellaris:moon_fruit',
+        B: 'yet_another_industrialization:configurable_mixed_storage',
+        G: 'modern_industrialization:iridium_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:filter_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        B: 'minecraft:hopper',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        C: 'toms_storage:item_filter'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:compacting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:crafting_table',
+        A: 'modern_industrialization:item_pipe',
+        B: 'minecraft:hopper',
+        D: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_filter_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        C: 'modern_industrialization:configurable_chest',
+        D: 'sophisticatedbackpacks:filter_upgrade',
+        B: 'toms_storage:item_filter'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_compacting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:crafter',
+        A: 'modern_industrialization:item_pipe',
+        B: 'modern_industrialization:configurable_chest',
+        D: 'sophisticatedbackpacks:compacting_upgrade'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:deposit_upgrade'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        D: 'minecraft:hopper',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:restock_upgrade'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        D: 'modern_industrialization:item_pipe',
+        A: 'minecraft:hopper',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:restock_upgrade'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        D: 'modern_industrialization:item_pipe',
+        A: 'minecraft:hopper',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_restock_upgrade'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        C: 'sophisticatedbackpacks:restock_upgrade',
+        D: 'modern_industrialization:item_pipe',
+        A: 'modern_industrialization:configurable_chest',
+        B: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:pickup_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        B: 'minecraft:hopper',
+        C: 'modern_industrialization:robot_arm',
+        D: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_pickup_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        C: 'sophisticatedbackpacks:pickup_upgrade',
+        B: 'modern_industrialization:configurable_chest'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_pump_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        B: 'modern_industrialization:fluid_pipe',
+        C: 'sophisticatedbackpacks:pump_upgrade',
+        D: 'modern_industrialization:steel_water_pump',
+        A: 'modern_industrialization:rubber_sheet'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:xp_pump_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:ender_eye',
+        D: 'sophisticatedbackpacks:advanced_pump_upgrade',
+        A: 'modern_industrialization:pump',
+        B: 'minecraft:experience_bottle'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:smelting_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedbackpacks:upgrade_base',
+        D: 'minecraft:furnace'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:void_upgrade'),
+    [
+        'ABA',
+        'ACA',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        B: 'minecraft:hopper',
+        C: 'sophisticatedbackpacks:upgrade_base',
+        D: 'modern_industrialization:trash_can'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:auto_smelting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        C: 'modern_industrialization:item_pipe',
+        B: 'modern_industrialization:configurable_chest',
+        E: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:smelting_upgrade',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_void_upgrade'),
+    [
+        'ABA',
+        'ACA',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        C: 'sophisticatedbackpacks:void_upgrade',
+        B: 'modern_industrialization:configurable_chest',
+        D: 'modern_industrialization:trash_can'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:blasting_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedbackpacks:upgrade_base',
+        D: 'minecraft:blast_furnace'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:smoking_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedbackpacks:upgrade_base',
+        D: 'minecraft:smoker'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:auto_blasting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        D: 'sophisticatedbackpacks:blasting_upgrade',
+        C: 'modern_industrialization:item_pipe',
+        B: 'modern_industrialization:configurable_chest',
+        E: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:auto_blasting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        D: 'sophisticatedbackpacks:blasting_upgrade',
+        C: 'modern_industrialization:item_pipe',
+        B: 'modern_industrialization:configurable_chest',
+        E: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:alchemy_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        E: 'extended_industrialization:steel_brewery',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        B: 'minecraft:glass_bottle'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:jukebox_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        B: 'minecraft:chest',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        E: 'minecraft:jukebox'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_alchemy_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        E: 'modern_industrialization:analog_circuit',
+        B: 'modern_industrialization:robot_arm',
+        D: 'sophisticatedbackpacks:alchemy_upgrade',
+        C: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_jukebox_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        E: 'modern_industrialization:analog_circuit',
+        B: 'ironchest:iron_chest',
+        D: 'sophisticatedbackpacks:jukebox_upgrade',
+        C: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stonecutter_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        B: 'minecraft:stonecutter'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:crafting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'minecraft:crafter',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:anvil_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'minecraft:anvil',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:tank_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        C: 'modern_industrialization:rubber_sheet',
+        B: 'modern_industrialization:steel_tank'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:smithing_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'minecraft:smithing_table',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_downgrade_tier_2'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        D: 'sophisticatedbackpacks:stack_downgrade_tier_1',
+        B: 'modern_industrialization:creosote_bucket',
+        C: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_downgrade_tier_1'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        B: 'modern_industrialization:creosote_bucket',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:stack_downgrade_tier_3'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        D: 'sophisticatedbackpacks:stack_downgrade_tier_2',
+        A: 'modern_industrialization:bronze_plate',
+        B: 'modern_industrialization:creosote_bucket',
+        C: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:refill_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        B: 'minecraft:hopper',
+        A: 'modern_industrialization:bronze_plate',
+        E: 'modern_industrialization:robot_arm',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedbackpacks:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedbackpacks:advanced_refill_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:analog_circuit',
+        D: 'sophisticatedbackpacks:refill_upgrade',
+        C: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('toms_storage:basic_inventory_hopper', 2),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'modern_industrialization:bronze_gear',
+        B: 'modern_industrialization:item_pipe',
+        D: 'minecraft:hopper',
+        A: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('toms_storage:level_emitter', 2),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:analog_circuit',
+        D: 'minecraft:redstone_torch',
+        C: 'modern_industrialization:bronze_plate',
+        A: 'roll_mod:treated_plate'
+    }
+)
+
+
 })
