@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
       { item: "roll_mod:fin_mk1" }
     ],
     output: {
-      id: "stellaris:rocket",
+      id: "roll_mod:tier_1_rocket",
       count: 1
     }
   });

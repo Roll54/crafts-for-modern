@@ -735,4 +735,22 @@ event.recipes.modern_industrialization.assembler(16, 100)
 .itemIn("8x modern_industrialization:copper_plate")
 .itemIn("2x immersive_aircraft:propeller")
 .itemOut("1x immersive_aircraft:enhanced_propeller");
+
+
+event.recipes.modern_industrialization.assembler(32, 200)
+.itemIn("8x modern_industrialization:incoloy_large_plate")
+.itemIn("4x modern_industrialization:large_advanced_motor")
+.itemIn("1x modern_industrialization:incoloy_machine_casing_pipe")
+//.itemIn("1x roll_mod:research_high_efficiency_steam_turbine", 0.0 ) //todo: add this when research is 
+.itemOut("1x modern_industrialization:high_efficiency_steam_turbine");
+
+
+event.recipes.modern_industrialization.assembler(32, 100)
+.itemIn("20x modern_industrialization:analog_circuit")
+.itemIn("16x minecraft:glass")
+.itemIn("16x modern_industrialization:steel_rod")
+.itemIn("4x modern_industrialization:diamond_plate")
+.itemIn("4x modern_industrialization:steel_large_plate")
+.itemIn("1x modern_industrialization:basic_machine_hull")
+.itemOut("1x roll_mod:research_workbench");
 })

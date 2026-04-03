@@ -132,7 +132,7 @@ event.recipes.modern_industrialization.mixer(24, 100)
 
 event.recipes.modern_industrialization.mixer(24, 100)
 .itemIn("4x ae2:ender_dust")
-.itemIn("2x roll_mod:lead_dust")
+.itemIn("2x #c:dusts/lead")
 .itemIn("1x modern_industrialization:tin_dust")
 .itemIn("1x modern_industrialization:platinum_dust")
 .itemOut("4x modern_industrialization:enderium_dust")

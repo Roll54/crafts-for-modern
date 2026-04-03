@@ -1036,19 +1036,6 @@ event.shaped(
     }
 )
 
-event.shaped(
-    Item.of('sophisticatedbackpacks:everlasting_upgrade'),
-    [
-        'ABA',
-        'BCB',
-        'ABA'
-    ],
-    {
-        B: 'roll_mod:nether_star_plate',
-        C: 'sophisticatedbackpacks:upgrade_base',
-        A: 'roll_mod:quantum_star'
-    }
-)
 
 event.shaped(
     Item.of('toms_storage:polymorphic_item_filter'),
@@ -1201,21 +1188,6 @@ event.shaped(
     {
         A: 'modern_industrialization:item_pipe',
         D: 'minecraft:hopper',
-        B: 'roll_mod:treated_plate',
-        C: 'sophisticatedbackpacks:upgrade_base'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedbackpacks:restock_upgrade'),
-    [
-        'AAA',
-        'BCB',
-        'DDD'
-    ],
-    {
-        D: 'modern_industrialization:item_pipe',
-        A: 'minecraft:hopper',
         B: 'roll_mod:treated_plate',
         C: 'sophisticatedbackpacks:upgrade_base'
     }
@@ -1678,5 +1650,46 @@ event.shaped(
     }
 )
 
+event.shaped(
+    Item.of('roll_mod:rocket_controller'),
+    [
+        'ABA',
+        'CDC',
+    ],
+    {
+        A: 'modern_industrialization:netherite_large_plate',
+        D: 'roll_mod:research_rocket_controller',
+        B: 'modern_industrialization:tungsten_large_plate',
+        C: 'modern_industrialization:turbo_machine_hull'
+    }
+)
 
+event.shaped(
+    Item.of('modern_industrialization:incoloy_casing'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:chrome_vanadium_steel_large_plate',
+        B: 'modern_industrialization:incoloy_large_plate',
+        C: 'modern_industrialization:titanium_gear'
+    }
+)
+
+event.shaped(
+    Item.of('modern_industrialization:incoloy_machine_casing_pipe'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:incoloy_gear',
+        D: 'modern_industrialization:incoloy_casing',
+        B: 'modern_industrialization:incoloy_rotor',
+        C: 'modern_industrialization:large_advanced_motor'
+    }
+)
 })
