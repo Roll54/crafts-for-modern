@@ -865,6 +865,8 @@ event.shaped(
     }
 )
 
+/*
+
 event.shaped(
     Item.of('sophisticatedbackpacks:backpack'),
     [
@@ -1036,7 +1038,7 @@ event.shaped(
     }
 )
 
-
+*/// for new season
 event.shaped(
     Item.of('toms_storage:polymorphic_item_filter'),
     [
@@ -1080,7 +1082,7 @@ event.shaped(
         D: 'toms_storage:item_filter'
     }
 )
-
+/*
 event.shaped(
     Item.of('sophisticatedbackpacks:feeding_upgrade'),
     [
@@ -1619,7 +1621,7 @@ event.shaped(
         A: 'modern_industrialization:steel_plate'
     }
 )
-
+*/// for new season
 event.shaped(
     Item.of('toms_storage:basic_inventory_hopper', 2),
     [
@@ -1692,4 +1694,5 @@ event.shaped(
         C: 'modern_industrialization:large_advanced_motor'
     }
 )
+
 })

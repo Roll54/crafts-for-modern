@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
 
 //actually shaped, this type just moves items between containers from sophisticatedbackpacks
 
+/*
 event.custom({
   type: "sophisticatedbackpacks:backpack_upgrade",
   key: {
@@ -104,5 +105,5 @@ event.custom({
     count: 1
   }
 })
-
+*/// FOR MEW SEASON
 })
