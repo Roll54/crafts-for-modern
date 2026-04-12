@@ -20,5 +20,8 @@ event.remove({ output: "blahaj:blue_shark" })
 event.remove({ output: "tide:fishing_line" })
 event.remove({ output: "silentgear:prospector_hammer_blueprint" })
 event.remove({ output: "silentgear:prospector_hammer_template" })
+event.remove({ output: "ironchest:crystal_chest" }) // жоско напрягають клієнт
+event.remove({ output: "ironchest:diamond_to_crystal_chest_upgrade" }) // жоско напрягають клієнт
+
 
 })
