@@ -69,7 +69,7 @@ event.recipes.modern_industrialization.electrolyzer(32, 200)
 .itemIn("38x roll_mod:mica_dust")
 .itemOut("15x roll_mod:alumina_dust")
 .itemOut("6x modern_industrialization:silicon_dust")
-.itemOut("2x roll_mod:calcium_dust") // тут має бути калій
+.itemOut("2x roll_mod:potassium_dust") // тут має бути калій
 .fluidOut("modern_industrialization:oxygen", 11000)
 .fluidOut("modern_industrialization:fluorine", 4000)
 
@@ -94,7 +94,7 @@ event.recipes.modern_industrialization.electrolyzer(32, 200)
   .itemOut("15x roll_mod:alumina_dust")
   .itemOut("6x modern_industrialization:silicon_dust")
   .itemOut("6x modern_industrialization:magnesium_dust")
-  .itemOut("2x roll_mod:calcium_dust") // тут має бути калій
+  .itemOut("2x roll_mod:potassium_dust") // тут має бути калій
   .fluidOut("modern_industrialization:oxygen", 11000)
   .fluidOut("modern_industrialization:hydrogen", 4000);
 
@@ -237,5 +237,12 @@ event.recipes.modern_industrialization.electrolyzer(64, 200)
 .itemOut("3x modern_industrialization:magnesium_dust")
 .fluidOut("modern_industrialization:oxygen", 12000)
 .fluidOut("modern_industrialization:hydrogen", 2000); 
+
+
+event.recipes.modern_industrialization.electrolyzer(128, 1000)
+.itemIn("5x roll_mod:marble_dust")
+.itemOut("1x roll_mod:calcium_dust")
+.itemOut("1x modern_industrialization:carbon_dust")
+.fluidOut("modern_industrialization:oxygen", 3000)
   
 })

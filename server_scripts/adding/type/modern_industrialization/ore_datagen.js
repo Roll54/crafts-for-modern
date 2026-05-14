@@ -753,6 +753,37 @@ ServerEvents.recipes(event => {
     centrifuge_byproduct: "roll_mod:obsidian_dust",
     washer_byproduct: "roll_mod:peridot_dust"
 },
+{
+    ore_name: "crimson_iron",
+    input: "#c:ores/crimson_iron",
+
+    main_multiplier: 3,
+
+    macerator_byproduct: "roll_mod:redstone_dust",
+    centrifuge_byproduct: "minecraft:netherite_scrap",
+    washer_byproduct: "roll_mod:hematite_dust"
+},
+{
+    ore_name: "stannite",
+    input: "#c:ores/stannite",
+
+    main_multiplier: 4,
+
+    macerator_byproduct: "roll_mod:crushed_cassiterite_sand_ore",
+    centrifuge_byproduct: "roll_mod:cassiterite_sand_dust",
+    washer_byproduct: "roll_mod:pyrite_dust"
+},
+{
+    ore_name: "nickel",
+    input: "#c:ores/nickel",
+
+    main_multiplier: 3,
+
+    macerator_byproduct: "roll_mod:stibnite_dust",
+    centrifuge_byproduct: "modern_industrialization:magnesium_dust",
+    washer_byproduct: "roll_mod:garnierite_dust"
+},
+
 
     ];
 
@@ -820,7 +851,8 @@ ServerEvents.recipes(event => {
         event.recipes.modern_industrialization.thermal_centrefuge(32, 16)
             .itemIn(`1x ${purified}`)
             .itemOut(`1x ${refined}`)
-            .itemOut(`1x ${ore.centrifuge_byproduct}`, 0.5);
+            .itemOut(`1x ${ore.centrifuge_byproduct}`)
+            .itemOut(`1x ${ore.washer_byproduct}`, 0.5);
 
         event.recipes.modern_industrialization.macerator(2, 200)
             .itemIn(`1x ${refined}`)

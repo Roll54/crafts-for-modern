@@ -1692,4 +1692,21 @@ event.shaped(
     }
 )
 
+event.shaped(
+    Item.of('roll_mod:primitive_battery'),
+    [
+        'AAA',
+        'BCD',
+        ' E '
+    ],
+    {
+        A: 'modern_industrialization:sulfur_dust',
+        B: 'modern_industrialization:copper_plate',
+        C: 'minecraft:water_bucket',
+        D: 'modern_industrialization:zinc_plate',
+        E: 'minecraft:glass'
+    }
+)
+
+
 })

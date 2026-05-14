@@ -753,4 +753,7 @@ event.recipes.modern_industrialization.assembler(32, 100)
 .itemIn("4x modern_industrialization:steel_large_plate")
 .itemIn("1x modern_industrialization:basic_machine_hull")
 .itemOut("1x roll_mod:research_workbench");
+
+
+
 })

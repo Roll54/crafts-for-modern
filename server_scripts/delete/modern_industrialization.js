@@ -44,5 +44,6 @@ event.remove([{ input: 'modern_industrialization:rhodium_plated_palladium_dust',
 event.remove([{ input: 'modern_industrialization:niobium_titanium_alloy_dust', output: 'modern_industrialization:niobium_titanium_alloy_ingot' }])
 event.remove([{ input: 'modern_industrialization:incoloy_dust', output: 'modern_industrialization:incoloy_ingot' }])
 event.remove([{ input: 'modern_industrialization:chrome_vanadium_steel_dust', output: 'modern_industrialization:chrome_vanadium_steel_ingot' }])
+event.remove([{ input: 'modern_industrialization:enderium_dust', output: 'modern_industrialization:enderium_ingot' }])
   
 })
