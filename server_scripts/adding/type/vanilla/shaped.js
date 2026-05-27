@@ -1036,6 +1036,841 @@ event.shaped(
     }
 )
 
+event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_1' })
+
+event.shaped(
+    Item.of('sophisticatedstorage:magnet_upgrade'),
+    [
+        'ABA',
+        'ACA',
+        'DDD'
+    ],
+    {
+        B: 'modern_industrialization:steel_rod_magnetic',
+        A: 'roll_mod:raw_magnetite',
+        C: 'sophisticatedstorage:upgrade_base',
+        D: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_magnet_upgrade'),
+    [
+        'AAA',
+        'ABA',
+        'CCC'
+    ],
+    {
+        A: 'modern_industrialization:stainless_steel_rod_magnetic',
+        B: 'sophisticatedstorage:magnet_upgrade',
+        C: 'modern_industrialization:stainless_steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_upgrade_tier_1_plus'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_block',
+        B: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:upgrade_base'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        C: '#minecraft:logs',
+        A: 'modern_industrialization:bronze_plate',
+        B: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_upgrade_tier_2'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:aluminum_block',
+        C: 'sophisticatedstorage:stack_upgrade_tier_1',
+        D: 'roll_mod:treated_plate',
+        B: 'modern_industrialization:electronic_circuit'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_upgrade_tier_1_plus'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:steel_block',
+        C: 'modern_industrialization:analog_circuit',
+        D: 'roll_mod:treated_plate',
+        B: 'sophisticatedstorage:stack_upgrade_tier_1_plus'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_upgrade_tier_4'),
+    [
+        'AAA',
+        'BCB',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:titanium_block',
+        B: 'sophisticatedstorage:stack_upgrade_tier_3',
+        C: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_upgrade_tier_3'),
+    [
+        'AAA',
+        'BCB',
+        'AAA'
+    ],
+    {
+        B: 'sophisticatedstorage:stack_upgrade_tier_2',
+        C: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:stainless_steel_block'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_upgrade_omega_tier'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        B: 'sophisticatedstorage:stack_upgrade_tier_4',
+        A: 'modern_industrialization:processing_unit',
+        C: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:pump_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:bucket',
+        B: 'modern_industrialization:bronze_water_pump',
+        D: 'sophisticatedstorage:upgrade_base',
+        A: 'modern_industrialization:rubber_sheet'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:everlasting_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        B: 'roll_mod:nether_star_plate',
+        C: 'sophisticatedstorage:upgrade_base',
+        A: 'roll_mod:quantum_star'
+    }
+)
+
+event.shaped(
+    Item.of('toms_storage:polymorphic_item_filter'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'modern_industrialization:item_pipe',
+        A: 'modern_industrialization:diamond_dust',
+        B: 'modern_industrialization:configurable_chest',
+        D: 'toms_storage:item_filter'
+    }
+)
+
+event.shaped(
+    Item.of('toms_storage:item_filter'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:item_pipe',
+        C: 'minecraft:hopper',
+        A: 'modern_industrialization:iron_dust'
+    }
+)
+
+event.shaped(
+    Item.of('toms_storage:tag_item_filter'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:item_pipe',
+        A: 'modern_industrialization:gold_dust',
+        C: 'modern_industrialization:configurable_chest',
+        D: 'toms_storage:item_filter'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:feeding_upgrade'),
+    [
+        'ABA',
+        'CDE',
+        'FGF'
+    ],
+    {
+        F: 'roll_mod:advanced_robot_arm',
+        G: 'modern_industrialization:digital_circuit',
+        C: 'sophisticatedstorage:advanced_alchemy_upgrade',
+        D: 'sophisticatedstorage:upgrade_base',
+        A: 'minecraft:enchanted_golden_apple',
+        E: 'sophisticatedstorage:advanced_refill_upgrade',
+        B: 'extended_industrialization:robot_auto_feeder'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_feeding_upgrade'),
+    [
+        'ABC',
+        'DED',
+        'FGH'
+    ],
+    {
+        A: 'tide:bedrock_bug',
+        H: 'roll_mod:very_nutritious_candy',
+        C: 'roll_mod:sulfur_jam',
+        D: 'modern_industrialization:processing_unit',
+        E: 'sophisticatedstorage:feeding_upgrade',
+        F: 'stellaris:moon_fruit',
+        B: 'yet_another_industrialization:configurable_mixed_storage',
+        G: 'modern_industrialization:iridium_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:filter_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        B: 'minecraft:hopper',
+        D: 'sophisticatedstorage:upgrade_base',
+        C: 'toms_storage:item_filter'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:compacting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:crafting_table',
+        A: 'modern_industrialization:item_pipe',
+        B: 'minecraft:hopper',
+        D: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_filter_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        C: 'modern_industrialization:configurable_chest',
+        D: 'sophisticatedstorage:filter_upgrade',
+        B: 'toms_storage:item_filter'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_compacting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:crafter',
+        A: 'modern_industrialization:item_pipe',
+        B: 'modern_industrialization:configurable_chest',
+        D: 'sophisticatedstorage:compacting_upgrade'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:deposit_upgrade'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        D: 'minecraft:hopper',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:restock_upgrade'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        D: 'modern_industrialization:item_pipe',
+        A: 'minecraft:hopper',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_restock_upgrade'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        C: 'sophisticatedstorage:restock_upgrade',
+        D: 'modern_industrialization:item_pipe',
+        A: 'modern_industrialization:configurable_chest',
+        B: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:pickup_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        B: 'minecraft:hopper',
+        C: 'modern_industrialization:robot_arm',
+        D: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_pickup_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        C: 'sophisticatedstorage:pickup_upgrade',
+        B: 'modern_industrialization:configurable_chest'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_pump_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        B: 'modern_industrialization:fluid_pipe',
+        C: 'sophisticatedstorage:pump_upgrade',
+        D: 'modern_industrialization:steel_water_pump',
+        A: 'modern_industrialization:rubber_sheet'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:xp_pump_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'minecraft:ender_eye',
+        D: 'sophisticatedstorage:advanced_pump_upgrade',
+        A: 'modern_industrialization:pump',
+        B: 'minecraft:experience_bottle'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:smelting_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedstorage:upgrade_base',
+        D: 'minecraft:furnace'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:void_upgrade'),
+    [
+        'ABA',
+        'ACA',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        B: 'minecraft:hopper',
+        C: 'sophisticatedstorage:upgrade_base',
+        D: 'modern_industrialization:trash_can'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:auto_smelting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        C: 'modern_industrialization:item_pipe',
+        B: 'modern_industrialization:configurable_chest',
+        E: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:smelting_upgrade',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_void_upgrade'),
+    [
+        'ABA',
+        'ACA',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:item_pipe',
+        C: 'sophisticatedstorage:void_upgrade',
+        B: 'modern_industrialization:configurable_chest',
+        D: 'modern_industrialization:trash_can'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:blasting_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedstorage:upgrade_base',
+        D: 'minecraft:blast_furnace'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:smoking_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        B: 'roll_mod:treated_plate',
+        C: 'sophisticatedstorage:upgrade_base',
+        D: 'minecraft:smoker'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:auto_blasting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        D: 'sophisticatedstorage:blasting_upgrade',
+        C: 'modern_industrialization:item_pipe',
+        B: 'modern_industrialization:configurable_chest',
+        E: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:alchemy_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        E: 'extended_industrialization:steel_brewery',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:upgrade_base',
+        B: 'minecraft:glass_bottle'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:jukebox_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        B: 'minecraft:chest',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:upgrade_base',
+        E: 'minecraft:jukebox'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_alchemy_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        E: 'modern_industrialization:analog_circuit',
+        B: 'modern_industrialization:robot_arm',
+        D: 'sophisticatedstorage:alchemy_upgrade',
+        C: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_jukebox_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        E: 'modern_industrialization:analog_circuit',
+        B: 'ironchest:iron_chest',
+        D: 'sophisticatedstorage:jukebox_upgrade',
+        C: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stonecutter_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:upgrade_base',
+        B: 'minecraft:stonecutter'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:crafting_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'minecraft:crafter',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:anvil_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'minecraft:anvil',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:tank_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        D: 'sophisticatedstorage:upgrade_base',
+        C: 'modern_industrialization:rubber_sheet',
+        B: 'modern_industrialization:steel_tank'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:smithing_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'minecraft:smithing_table',
+        A: 'modern_industrialization:bronze_plate',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_downgrade_tier_2'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        D: 'sophisticatedstorage:stack_downgrade_tier_1',
+        B: 'modern_industrialization:creosote_bucket',
+        C: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_downgrade_tier_1'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:bronze_plate',
+        B: 'modern_industrialization:creosote_bucket',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:stack_downgrade_tier_3'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        D: 'sophisticatedstorage:stack_downgrade_tier_2',
+        A: 'modern_industrialization:bronze_plate',
+        B: 'modern_industrialization:creosote_bucket',
+        C: 'roll_mod:treated_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:refill_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        B: 'minecraft:hopper',
+        A: 'modern_industrialization:bronze_plate',
+        E: 'modern_industrialization:robot_arm',
+        C: 'roll_mod:treated_plate',
+        D: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_refill_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:analog_circuit',
+        D: 'sophisticatedstorage:refill_upgrade',
+        C: 'roll_mod:treated_plate',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:hopper_upgrade'),
+    [
+        ' A ',
+        ' B ',
+        ' C '
+    ],
+    {
+        A: 'minecraft:hopper',
+        C: 'modern_industrialization:configurable_chest',
+        B: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_hopper_upgrade'),
+    [
+        ' A ',
+        'DBD',
+        ' C '
+    ],
+    {
+        A: 'minecraft:hopper',
+        C: 'extended_industrialization:large_configurable_chest',
+        B: 'sophisticatedstorage:upgrade_base',
+		D: 'roll_mod:advanced_robot_arm'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:compression_upgrade'),
+    [
+        'ABA',
+        'CDE',
+        'AFA'
+    ],
+    {
+        F: 'minecraft:hopper',
+        C: 'modern_industrialization:packer_double_ingot_template',
+        E: 'modern_industrialization:packer_block_template',
+        D: 'sophisticatedstorage:upgrade_base',
+        A: 'modern_industrialization:steel_plate',
+        B: 'minecraft:piston'
+    }
+)
+
+
+// --- sophisticated storage tier upgrades ---
+
+ServerEvents.recipes(event => {
+    // Remove all existing tier upgrade recipes to avoid conflicts
+    event.remove({ id: /sophisticatedstorage:.*_tier_upgrade/ });
+
+    // Important: keep this specific removal to prevent duplicate recipe issues
+    event.remove({ id: 'sophisticatedstorage:basic_to_iron_tier_from_basic_to_copper_tier' })
+
+    // Material definitions for each tier
+    // Each material provides a plate and a rod for crafting
+    const mats = {
+        bronze:    { p: "modern_industrialization:bronze_plate", r: "modern_industrialization:bronze_rod" },
+        steel:     { p: "modern_industrialization:steel_plate", r: "modern_industrialization:steel_rod" },
+        aluminum:  { p: "modern_industrialization:aluminum_plate", r: "modern_industrialization:aluminum_rod" },
+        stainless: { p: "modern_industrialization:stainless_steel_plate", r: "modern_industrialization:stainless_steel_rod" },
+        titanium:  { p: "modern_industrialization:titanium_plate", r: "modern_industrialization:titanium_rod" }
+    };
+
+    // Helper function to create a shaped tier upgrade recipe
+    // Pattern: plates in corners, rods on edges, input upgrade in center
+    const addUpgrade = (input, output, matKey) => {
+        event.shaped(`sophisticatedstorage:${output}_tier_upgrade`, ["PRP", "RSR", "PRP"], {
+            P: mats[matKey].p,  // Plate material
+            R: mats[matKey].r,  // Rod material
+            S: input             // Source upgrade (what we're upgrading from)
+        });
+    };
+
+    // ----- Basic tier upgrade chain -----
+    // Basic -> Copper -> Iron -> Gold -> Diamond -> Netherite
+    addUpgrade("sophisticatedstorage:basic_tier_upgrade", "basic_to_copper", "bronze");
+    addUpgrade("sophisticatedstorage:basic_to_copper_tier_upgrade", "basic_to_iron", "steel");
+    addUpgrade("sophisticatedstorage:basic_to_iron_tier_upgrade", "basic_to_gold", "aluminum");
+    addUpgrade("sophisticatedstorage:basic_to_gold_tier_upgrade", "basic_to_diamond", "stainless");
+    addUpgrade("sophisticatedstorage:basic_to_diamond_tier_upgrade", "basic_to_netherite", "titanium");
+
+    // ----- Copper tier upgrade chain -----
+    // Upgrade Base -> Copper -> Iron -> Gold -> Diamond -> Netherite
+    addUpgrade("sophisticatedstorage:upgrade_base", "copper_to_iron", "steel");
+    addUpgrade("sophisticatedstorage:copper_to_iron_tier_upgrade", "copper_to_gold", "aluminum");
+    addUpgrade("sophisticatedstorage:copper_to_gold_tier_upgrade", "copper_to_diamond", "stainless");
+    addUpgrade("sophisticatedstorage:copper_to_diamond_tier_upgrade", "copper_to_netherite", "titanium");
+
+    // ----- Iron tier upgrade chain -----
+    // Upgrade Base -> Iron -> Gold -> Diamond -> Netherite
+    addUpgrade("sophisticatedstorage:upgrade_base", "iron_to_gold", "aluminum");
+    addUpgrade("sophisticatedstorage:iron_to_gold_tier_upgrade", "iron_to_diamond", "stainless");
+    addUpgrade("sophisticatedstorage:iron_to_diamond_tier_upgrade", "iron_to_netherite", "titanium");
+
+    // ----- Gold tier upgrade chain -----
+    // Upgrade Base -> Gold -> Diamond -> Netherite
+    addUpgrade("sophisticatedstorage:upgrade_base", "gold_to_diamond", "stainless");
+    addUpgrade("sophisticatedstorage:gold_to_diamond_tier_upgrade", "gold_to_netherite", "titanium");
+
+    // ----- Diamond tier upgrade chain -----
+    // Upgrade Base -> Diamond -> Netherite
+    addUpgrade("sophisticatedstorage:upgrade_base", "diamond_to_netherite", "titanium");
+});
+
+// --- sophisticated storage tier upgrades ---
+
 event.shaped(
     Item.of('toms_storage:polymorphic_item_filter'),
     [
