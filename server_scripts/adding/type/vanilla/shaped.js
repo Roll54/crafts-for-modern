@@ -111,57 +111,6 @@ ServerEvents.recipes(event => {
       W: 'modern_industrialization:annealed_copper_cable',
   })
 
-
-  event.shaped(
-    Item.of('hostilenetworks:deep_learner', 1),[
-      'ABA',
-      'CDC',
-      'ACA',
-    ],{
-      A: 'modern_industrialization:steel_plate',
-      B: 'ae2:monitor',
-      C: 'modern_industrialization:netherite_plate',
-      D: 'modern_industrialization:electronic_circuit',
-  })
-
-  event.shaped(
-    Item.of('hostilenetworks:blank_data_model', 1),[
-      'ABA',
-      'BCB',
-      'ABA',
-    ],{
-      A: 'modern_industrialization:aluminum_plate',
-      B: 'modern_industrialization:diamond_large_plate',
-      C: 'minecraft:clay',
-  })
-
-  event.shaped(
-    Item.of('hostile_neural_industrialization:mono_loot_fabricator', 1),[
-      'ABA',
-      'CDC',
-      'FGF',
-    ],{
-      A: 'modern_industrialization:invar_rotary_blade',
-      B: 'modern_industrialization:gold_ring',
-      C: 'modern_industrialization:netherite_gear',
-      D: 'modern_industrialization:advanced_machine_hull',
-      F: 'modern_industrialization:electronic_circuit',
-      G: 'modern_industrialization:assembler'
-  })
-
-  event.shaped(
-    Item.of('hostile_neural_industrialization:electric_simulation_chamber', 1),[
-      'ABA',
-      'BCB',
-      'DED',
-    ],{
-      A: 'modern_industrialization:electronic_circuit',
-      B: 'modern_industrialization:netherite_large_plate',
-      C: 'modern_industrialization:advanced_machine_hull',
-      D: 'modern_industrialization:large_motor',
-      E: 'modern_industrialization:invar_rotary_blade',
-  })
-
     event.shaped(
     Item.of('immersive_aircraft:gyrodyne', 1),[
       'ABA',
@@ -874,7 +823,7 @@ event.shaped(
     ],
     {
         B: 'minecraft:leather',
-        C: 'ironchest:iron_chest',
+        C: 'sophisticatedstorage:iron_chest',
         A: 'minecraft:string'
     }
 )
@@ -1604,7 +1553,7 @@ event.shaped(
     ],
     {
         E: 'modern_industrialization:analog_circuit',
-        B: 'ironchest:iron_chest',
+        B: 'sophisticatedstorage:iron_chest',
         D: 'sophisticatedstorage:jukebox_upgrade',
         C: 'roll_mod:treated_plate',
         A: 'modern_industrialization:steel_plate'
@@ -2296,7 +2245,7 @@ event.shaped(
     ],
     {
         E: 'modern_industrialization:analog_circuit',
-        B: 'ironchest:iron_chest',
+        B: 'sophisticatedstorage:iron_chest',
         D: 'sophisticatedbackpacks:jukebox_upgrade',
         C: 'roll_mod:treated_plate',
         A: 'modern_industrialization:steel_plate'

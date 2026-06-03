@@ -1,17 +1,5 @@
 ServerEvents.recipes(event => {
 
-event.recipes.modern_industrialization.chemical_reactor(32, 100)
-.itemIn("4x #c:glass_blocks")
-.itemIn("1x modern_industrialization:electronic_circuit")
-.fluidIn("modern_industrialization:polyethylene", 500)
-.itemOut("32x hostilenetworks:prediction_matrix")
-
-event.recipes.modern_industrialization.chemical_reactor(32, 200)
-.itemIn("4x #c:glass_blocks")
-.itemIn("1x modern_industrialization:electronic_circuit")
-.fluidIn("modern_industrialization:polytetrafluoroethylene", 250)
-.itemOut("128x hostilenetworks:prediction_matrix")
-
 event.recipes.modern_industrialization.chemical_reactor(16, 200)
 .itemIn("1x #c:dusts/fluorite")
 .fluidIn("modern_industrialization:sulfuric_acid", 14000)

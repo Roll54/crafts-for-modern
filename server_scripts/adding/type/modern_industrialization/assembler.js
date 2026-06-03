@@ -717,7 +717,7 @@ event.recipes.modern_industrialization.assembler(32, 10000)
 .itemIn("2x roll_mod:magnalium_engine")
 .itemIn("64x roll_mod:treated_plate")
 .itemIn("4x immersive_aircraft:improved_landing_gear")
-.itemIn("2x ironchest:diamond_chest")
+.itemIn("2x sophisticatedstorage:gold_chest")
 .itemIn("8x modern_industrialization:large_motor")
 .itemOut("1x immersive_aircraft:warship");
 
