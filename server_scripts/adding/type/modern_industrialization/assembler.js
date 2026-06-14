@@ -528,10 +528,13 @@ event.recipes.modern_industrialization.assembler(32, 400)
 .itemOut("1x roll_mod:gravi_engine_mk_1")
 
 event.recipes.modern_industrialization.assembler(32, 1600)
-.itemIn("4x modern_industrialization:titanium_large_plate")
-.itemIn("2x roll_mod:gravi_engine_mk_1")
+.itemIn("32x modern_industrialization:titanium_plate")
+.itemIn("8x modern_industrialization:blastproof_alloy_plate")
+.itemIn("8x modern_industrialization:netherite_plate")
+.itemIn("4x roll_mod:gravi_engine_mk_1")
 .itemIn("1x roll_mod:lapotron_battery_t1")
-.itemOut("1x modern_industrialization:gravichestplate")
+.itemIn("1x roll_mod:lapotron_battery_t1")
+.itemOut("1x roll_mod:multi_protecting_gravi_chestplate")
 
 event.recipes.modern_industrialization.assembler(32, 100)
 .itemIn("4x ae2:quartz_glass")
@@ -752,7 +755,47 @@ event.recipes.modern_industrialization.assembler(32, 100)
 .itemIn("4x modern_industrialization:diamond_plate")
 .itemIn("4x modern_industrialization:steel_large_plate")
 .itemIn("1x modern_industrialization:basic_machine_hull")
-.itemOut("1x roll_mod:research_workbench");
+.itemOut("1x roll_mod:research_workbench"); 
+
+event.recipes.modern_industrialization.assembler(32, 100)
+.itemIn("8x modern_industrialization:aluminum_plate")
+.itemIn("4x modern_industrialization:electronic_circuit")
+.itemIn("4x modern_industrialization:silicon_wafer")
+.itemIn("2x roll_mod:red_lens")
+.itemIn("2x roll_mod:green_lens")
+.itemIn("2x roll_mod:light_blue_lens")
+.itemOut("1x createcybernetics:basecyberware_cybereyes"); 
+
+event.recipes.modern_industrialization.assembler(512, 100)
+.itemIn("16x modern_industrialization:tantalum_fine_wire")
+.itemIn("16x modern_industrialization:rhodium_fine_wire")
+.itemIn("8x roll_mod:carbon_mesh")
+.itemIn("4x modern_industrialization:iridium_plate")
+.itemIn("4x roll_mod:nether_star_plate")
+.fluidIn("250x modern_industrialization:epoxy")
+.registeredCondition({
+          "mi_tweaks:voltage": {
+            "voltage": "ev"
+          }})
+.itemOut("1x roll_mod:iridium_based_board"); 
+
+
+event.recipes.modern_industrialization.assembler(512, 100)
+.itemIn("64x modern_industrialization:rhodium_fine_wire")
+.itemIn("8x roll_mod:smd_capacitor")
+.itemIn("8x roll_mod:standard_chip_pmic")
+.itemIn("4x roll_mod:smd_diode")
+.itemIn("2x roll_mod:emitter")
+.itemIn("2x roll_mod:sensor")
+.itemIn("1x roll_mod:iridium_based_board")
+.fluidIn("250x modern_industrialization:epoxy")
+.registeredCondition({
+          "mi_tweaks:voltage": {
+            "voltage": "ev"
+          }})
+.itemOut("1x roll_mod:iridium_based_board_assembly"); 
+
+
 
 
 

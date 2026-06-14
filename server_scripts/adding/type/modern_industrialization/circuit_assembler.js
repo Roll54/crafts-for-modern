@@ -185,4 +185,41 @@ event.recipes.modern_industrialization.circuit_assembler(24, 100)
 .itemIn("6x ae2:fluix_smart_cable")
 .itemIn("1x roll_mod:quantum_star")
 .itemOut("1x ae2:spatial_pylon")
+
+//smd діталі
+
+event.recipes.modern_industrialization.circuit_assembler(64, 100)
+.itemIn("16x modern_industrialization:tantalum_fine_wire")
+.itemIn("16x modern_industrialization:platinum_fine_wire")
+.itemIn("4x roll_mod:standard_chip_not")
+.fluidIn("1200x modern_industrialization:polytetrafluoroethylene")
+.itemOut("32x roll_mod:smd_diode")
+
+event.recipes.modern_industrialization.circuit_assembler(64, 100)
+.itemIn("64x ae2:quartz_vibrant_glass")
+.itemIn("16x modern_industrialization:tantalum_fine_wire")
+.itemIn("16x modern_industrialization:platinum_fine_wire")
+.itemIn("4x roll_mod:standard_chip_not")
+.itemOut("32x roll_mod:smd_diode")
+
+event.recipes.modern_industrialization.circuit_assembler(64, 100)
+.itemIn("60x roll_mod:alumina_small_ceramic_plate")
+.itemIn("10x modern_industrialization:tantalum_fine_wire")
+.itemIn("10x modern_industrialization:ruthenium_fine_wire")
+.fluidIn("1200x modern_industrialization:polytetrafluoroethylene")
+.itemOut("30x roll_mod:smd_resistor")
+
+event.recipes.modern_industrialization.circuit_assembler(64, 100)
+.itemIn("16x roll_mod:alumina_small_ceramic_plate")
+.itemIn("10x modern_industrialization:tantalum_fine_wire")
+.itemIn("4x modern_industrialization:nickel_plate")
+.fluidIn("1200x modern_industrialization:polytetrafluoroethylene")
+.itemOut("40x roll_mod:smd_capacitor")
+
+event.recipes.modern_industrialization.circuit_assembler(64, 100)
+.itemIn("16x modern_industrialization:tantalum_fine_wire")
+.itemIn("1x modern_industrialization:silicon_wafer")
+.fluidIn("1000x modern_industrialization:polytetrafluoroethylene")
+.itemOut("20x roll_mod:smd_transistor")
+
 })

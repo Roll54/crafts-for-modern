@@ -201,6 +201,11 @@ event.recipes.modern_industrialization.blast_furnace(48, 16000)
 .fluidIn("6000x modern_industrialization:nitrogen")
 .itemOut("1x roll_mod:white_lens")
 
+event.recipes.modern_industrialization.blast_furnace(48, 16000)
+.itemIn("64x #c:dusts/lazurite")
+.fluidIn("6000x modern_industrialization:nitrogen")
+.itemOut("1x roll_mod:light_blue_lens")
+
 
 event.recipes.modern_industrialization.blast_furnace(128, 200)
 .itemIn("64x modern_industrialization:silicon_ingot")
@@ -225,4 +230,12 @@ event.recipes.modern_industrialization.blast_furnace(128, 100)
 .itemIn("16x modern_industrialization:plutonium_ingot")
 .itemOut("1x roll_mod:very_nutritious_candy")
 
+event.recipes.modern_industrialization.blast_furnace(128, 200)
+.itemIn("4x roll_mod:alumina_dust")
+.itemOut("1x roll_mod:alumina_ceramic_plate")
+
+event.recipes.modern_industrialization.blast_furnace(128, 100)
+.itemIn("64x roll_mod:nether_star_dust")
+.fluidIn("8000x extended_industrialization:blazing_essence")
+.itemOut("1x roll_mod:pale_lens")
 })
