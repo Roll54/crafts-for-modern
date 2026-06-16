@@ -101,6 +101,12 @@ ServerEvents.recipes(event => {
   .itemOut("1x modern_industrialization:incoloy_hot_ingot")
 
   //інша ххрінь
+
+event.recipes.modern_industrialization.chemical_reactor(2, 120)
+    .itemIn("roll_mod:sulfur_saltpeter_mixture", 5)
+    .fluidIn("minecraft:water", 1000)
+    .fluidOut("modern_industrialization:sulfuric_acid", 1000)
+  
 event.recipes.modern_industrialization.blast_furnace(64, 400)
   .itemIn("10x roll_mod:ilmenite_dust")
   .itemIn("4x modern_industrialization:carbon_dust")
