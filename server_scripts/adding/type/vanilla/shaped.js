@@ -2475,6 +2475,21 @@ event.shaped(
 )
 
 event.shaped(
+    Item.of('roll_mod:empty_primitive_battery'),
+    [
+        'A A',
+        'BCD',
+        '   '
+    ],
+    {
+        A: 'modern_industrialization:copper_wire',
+        B: 'modern_industrialization:copper_plate',
+        C: 'minecraft:glass_bottle',
+        D: 'modern_industrialization:lead_plate'
+    }
+)
+
+event.shaped(
     Item.of('roll_mod:primitive_battery'),
     [
         'AAA',
