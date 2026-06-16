@@ -468,12 +468,23 @@ event.recipes.modern_industrialization.assembler(32, 100)
   
   //все інше... Нудно..
 
+    event.recipes.modern_industrialization.assembler(128, 400)
+  .itemIn("4x modern_industrialization:space_alloy_large_plate")
+  .itemIn("8x modern_industrialization:fluid_pipe")
+  .itemIn("2x modern_industrialization:advanced_pump")
+  .itemOut("1x modern_industrialization:space_alloy_machine_casing_pipe")
+
     event.recipes.modern_industrialization.assembler(8, 400)
   .itemIn("12x roll_mod:carbon_fiber")
   .itemIn("2x modern_industrialization:emerald_plate")
   .fluidIn("100x modern_industrialization:epoxy")
   .itemOut("1x roll_mod:fr4_sheet")
 
+  event.recipes.modern_industrialization.assembler(128, 400) // 128 EU/t, 20 секунд (400 тіків)
+    .itemIn("modern_industrialization:space_alloy_large_plate", 4)
+    .itemIn("modern_industrialization:fluid_pipe", 8)
+    .itemIn("modern_industrialization:advanced_pump", 2)
+    .itemOut("modern_industrialization:space_alloy_machine_casing_pipe", 1)
 
       event.recipes.modern_industrialization.assembler(32, 400)
   .itemIn("16x modern_industrialization:tungsten_cable")
