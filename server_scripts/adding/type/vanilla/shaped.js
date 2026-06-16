@@ -30,6 +30,22 @@ ServerEvents.recipes(event => {
       B: 'silentgear:crimson_steel_ingot',
 })
 
+event.shaped(
+    Item.of('roll_mod:crop_manager'),
+    [
+        'AAA',
+        'BCB',
+        'DED'
+    ],
+    {
+        B: 'roll_mod:advanced_robot_arm',
+        D: 'modern_industrialization:digital_circuit',
+        E: '#minecraft:hoes',
+        C: 'modern_industrialization:turbo_machine_hull',
+        A: 'modern_industrialization:advanced_motor'
+    }
+)
+
        event.shaped(
     Item.of('silentgear:azure_repair_kit', 1),[
       ' A ',
