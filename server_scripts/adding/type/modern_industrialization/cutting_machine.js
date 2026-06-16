@@ -117,5 +117,8 @@ event.recipes.modern_industrialization.cutting_machine(16, 100)
 .fluidIn("modern_industrialization:lubricant", 160)
 .itemOut("3x roll_mod:alumina_small_ceramic_plate")
 
-
+event.recipes.modern_industrialization.cutting_machine(24, 200)
+.itemIn("1x roll_mod:standard_wafer_not")
+.fluidIn("extended_industrialization:distilled_water", 200)
+.itemOut("8x roll_mod:standard_chip_not")
 })

@@ -139,7 +139,6 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("1x roll_mod:sulfur_jam")
   .itemIn("1x farmersdelight:rice_roll_medley_block")
   .itemIn("1x roll_mod:purple_wafer")
-  .itemIn("1x stellaris:moon_fruit")
   .itemIn("1x sophisticatedbackpacks:upgrade_base")
   .itemIn("1x tide:midas_fish")
   .itemIn("1x minecraft:enchanted_golden_apple")
@@ -159,7 +158,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("1x modern_industrialization:silicon_battery")
   .itemIn("1x ae2:quartz_glass")                            // Шолом і візор – виготовлений із полікарбонату та покритий золотом для відбиття сонячного випромінювання
   .fluidIn("modern_industrialization:nylon", 600)           // Герметичний шар – виготовлений із нейлону
-  .itemOut("1x stellaris:space_suit_helmet")
+  .itemOut("1x ad_astra:space_helmet")
 
   event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x modern_industrialization:stainless_steel_rod")// Фіксатори, кільця для з'єднання
@@ -168,7 +167,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("2x modern_industrialization:advanced_pump")                        // Система життєзабезпечення
   .itemIn("16x modern_industrialization:fluid_pipe")                        // Система життєзабезпечення
   .fluidIn("modern_industrialization:nylon", 1200)          // Герметичний шар – виготовлений із нейлону
-  .itemOut("1x stellaris:space_suit_chestplate")
+  .itemOut("1x ad_astra:space_suit")
 
   event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x modern_industrialization:stainless_steel_rod")// Фіксатори, кільця для з'єднання
@@ -176,7 +175,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("7x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
   .itemIn("4x minecraft:white_wool")                            // з начосом
   .fluidIn("modern_industrialization:nylon", 600)           // Герметичний шар – виготовлений із нейлону
-  .itemOut("1x stellaris:space_suit_leggings")
+  .itemOut("1x ad_astra:space_pants")
 
   event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x modern_industrialization:stainless_steel_rod")// Фіксатори, кільця для з'єднання
@@ -184,7 +183,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("4x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
   .itemIn("6x roll_mod:rubber_ingot")       // Товста підошва для захисту від гострих уламків
   .fluidIn("modern_industrialization:nylon", 600)           // Герметичний шар – виготовлений із нейлону
-  .itemOut("1x stellaris:space_suit_boots")
+  .itemOut("1x ad_astra:space_boots")
 
 // Ракети
   event.recipes.modern_industrialization.assembler(16, 200)
@@ -796,7 +795,18 @@ event.recipes.modern_industrialization.assembler(512, 100)
 .itemOut("1x roll_mod:iridium_based_board_assembly"); 
 
 
+event.recipes.modern_industrialization.assembler(32, 800)
+.itemIn("16x modern_industrialization:titanium_bolt")
+.itemIn("2x roll_mod:nether_star_plate")
+.itemIn("2x modern_industrialization:enderium_plate")
+.itemIn("2x modern_industrialization:niobium_titanium_alloy_plate")
+.itemOut("1x roll_mod:mixed_cosmic_t2"); 
 
-
-
+event.recipes.modern_industrialization.assembler(32, 200)
+.itemIn("9x modern_industrialization:chrome_vanadium_steel_gear")
+.itemIn("9x modern_industrialization:advanced_motor")
+.itemIn("4x roll_mod:advanced_conveyor")
+.itemIn("4x modern_industrialization:netherite_large_plate")
+.itemIn("1x modern_industrialization:turbo_machine_hull")
+.itemOut("1x roll_mod:grinding_wheels")
 })

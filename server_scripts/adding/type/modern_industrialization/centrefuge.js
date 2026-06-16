@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 
 
   event.recipes.modern_industrialization.centrifuge(32, 800)
-  .itemIn("4x stellaris:moon_sand")
+  .itemIn("4x ad_astra:moon_sand")
   .itemOut("1x modern_industrialization:silicon_dust", 0.25)
   .itemOut("2x modern_industrialization:aluminum_tiny_dust")
   .itemOut("1x modern_industrialization:iron_tiny_dust")
@@ -94,14 +94,6 @@ ServerEvents.recipes(event => {
   .fluidIn("modern_industrialization:enriched_uranium_hexafluoride", 1000)
   .fluidOut("modern_industrialization:fluorine", 6000)
   .itemOut("1x modern_industrialization:uranium_235_dust")
-
-  event.recipes.modern_industrialization.centrifuge(1, 1)
-  .fluidIn("modern_industrialization:oxygen", 1000)
-  .fluidOut("stellaris:oxygen", 1000)
-
-  event.recipes.modern_industrialization.centrifuge(1, 1)
-  .fluidIn("modern_industrialization:rocket_propellant", 1000)
-  .fluidOut("stellaris:fuel", 1000)
 
 event.recipes.modern_industrialization.centrifuge(8, 200)
 .itemIn("1x roll_mod:sulfur_berry")

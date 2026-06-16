@@ -11,12 +11,11 @@ server_scripts/
   main.js
   adding/
     type/
-      vanilla/
+      vanilla/@
       tags/
       farmersdelight/
       modern_industrialization/
       railcraft/
-      stellaris/
   changing/
     ae2/
     modern_industrialization/

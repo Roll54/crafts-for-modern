@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
   })
 
   event.shaped(
-    Item.of('stellaris:rocket_station', 1),[
+    Item.of('ad_astra:nasa_workbench', 1),[
       'AAA',
       'BCD',
       'EFG', 
@@ -514,7 +514,7 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('stellaris:rocket_launch_pad'),
+    Item.of('ad_astra:launch_pad'),
     [
         'AAA',
         'BBB'
@@ -1211,7 +1211,7 @@ event.shaped(
     [
         'ABC',
         'DED',
-        'FGH'
+        ' GH'
     ],
     {
         A: 'tide:bedrock_bug',
@@ -1219,7 +1219,6 @@ event.shaped(
         C: 'roll_mod:sulfur_jam',
         D: 'modern_industrialization:processing_unit',
         E: 'sophisticatedstorage:feeding_upgrade',
-        F: 'stellaris:moon_fruit',
         B: 'yet_another_industrialization:configurable_mixed_storage',
         G: 'modern_industrialization:iridium_plate'
     }
@@ -1887,7 +1886,7 @@ event.shaped(
     [
         'ABC',
         'DED',
-        'FGH'
+        ' GH'
     ],
     {
         A: 'tide:bedrock_bug',
@@ -1895,7 +1894,6 @@ event.shaped(
         C: 'roll_mod:sulfur_jam',
         D: 'modern_industrialization:processing_unit',
         E: 'sophisticatedbackpacks:feeding_upgrade',
-        F: 'stellaris:moon_fruit',
         B: 'yet_another_industrialization:configurable_mixed_storage',
         G: 'modern_industrialization:iridium_plate'
     }

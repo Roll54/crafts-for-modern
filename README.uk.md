@@ -16,7 +16,6 @@ server_scripts/
       farmersdelight/
       modern_industrialization/
       railcraft/
-      stellaris/
   changing/
     ae2/
     modern_industrialization/
