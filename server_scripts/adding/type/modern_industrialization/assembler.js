@@ -794,8 +794,8 @@ event.recipes.modern_industrialization.assembler(512, 100)
           }})
 .itemOut("1x roll_mod:iridium_based_board_assembly"); 
 
----Building Gadgets 2---
-  
+//BUILDGIND GUDGHETDS
+
 event.recipes.modern_industrialization.assembler(16, 200)
     .itemIn("4x modern_industrialization:robot_arm")
     .itemIn("4x modern_industrialization:analog_circuit")
