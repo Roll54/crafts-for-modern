@@ -146,5 +146,9 @@ event.recipes.modern_industrialization.centrifuge(128, 1200)
 .itemOut("5x roll_mod:impure_cinnabar_dust") 
 .itemOut("3x roll_mod:impure_pyrite_dust") 
 
+event.recipes.modern_industrialization.centrifuge(16, 200)
+  .itemIn("roll_mod:saltpeter_dust", 2)
+  .itemIn("roll_mod:sulfur_dust", 3)
+  .itemOut("roll_mod:sulfur_saltpeter_mixture", 5)
 
 })

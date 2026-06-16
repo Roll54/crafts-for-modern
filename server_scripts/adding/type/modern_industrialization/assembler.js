@@ -794,6 +794,55 @@ event.recipes.modern_industrialization.assembler(512, 100)
           }})
 .itemOut("1x roll_mod:iridium_based_board_assembly"); 
 
+---Building Gadgets 2---
+  
+event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:robot_arm")
+    .itemIn("4x modern_industrialization:analog_circuit")
+    .itemIn("1x roll_mod:redstone_battery")
+    .itemOut("1x buildinggadgets2:gadget_building");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("8x modern_industrialization:robot_arm")
+    .itemIn("1x roll_mod:redstone_battery")
+    .itemIn("1x modern_industrialization:configurable_chest")
+    .itemIn("8x modern_industrialization:analog_circuit")
+    .itemIn("8x modern_industrialization:bronze_drill")
+    .itemOut("1x buildinggadgets2:gadget_copy_paste");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x roll_mod:redstone_battery")
+    .itemIn("8x modern_industrialization:robot_arm")
+    .itemIn("8x modern_industrialization:analog_circuit")
+    .itemIn("8x modern_industrialization:copper_drill")
+    .itemIn("1x modern_industrialization:trash_can")
+    .itemOut("1x buildinggadgets2:gadget_exchanging");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x roll_mod:redstone_battery")
+    .itemIn("8x modern_industrialization:analog_circuit")
+    .itemIn("1x modern_industrialization:trash_can")
+    .itemIn("8x modern_industrialization:steel_drill")
+    .itemIn("8x modern_industrialization:robot_arm")
+    .itemOut("1x buildinggadgets2:gadget_cut_paste");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+    .itemIn("1x roll_mod:redstone_battery")
+    .itemIn("4x modern_industrialization:aluminum_drill")
+    .itemIn("2x modern_industrialization:electronic_circuit")
+    .itemIn("4x modern_industrialization:robot_arm")
+    .itemIn("1x modern_industrialization:trash_can")
+    .itemIn("1x modern_industrialization:configurable_chest")
+    .itemOut("1x buildinggadgets2:gadget_destruction");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:analog_circuit")
+    .itemIn("32x modern_industrialization:redstone_alloy_fine_wire")
+    .itemIn("1x toms_storage:paint_kit")
+    .itemIn("4x modern_industrialization:steel_rod_magnetic")
+    .itemIn("4x modern_industrialization:steel_gear")
+    .itemIn("1x modern_industrialization:basic_machine_hull")
+    .itemOut("1x buildinggadgets2:template_manager");
 
 event.recipes.modern_industrialization.assembler(32, 800)
 .itemIn("16x modern_industrialization:titanium_bolt")
