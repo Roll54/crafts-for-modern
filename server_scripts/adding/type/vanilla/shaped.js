@@ -2521,5 +2521,16 @@ event.shaped(
     }
 )
 
+	event.shaped(
+    Item.of('roll_mod:superconducting_magnet_base'),
+    [
+        'A A',
+        'A A',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:niobium_titanium_alloy_ingot'
+    }
+)
 
 })
