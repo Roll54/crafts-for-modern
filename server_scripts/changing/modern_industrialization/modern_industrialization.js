@@ -24,4 +24,10 @@ event.replaceInput(
   { input: 'minecraft:redstone' },
   'minecraft:redstone',
   '#c:dusts/redstone')
+
+event.replaceInput(
+  { input: 'modern_industrialization:redstone_battery' },
+  'modern_industrialization:redstone_battery',
+  'roll_mod:battaries_tier_one')
+
 })
