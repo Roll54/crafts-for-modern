@@ -1147,20 +1147,6 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('sophisticatedstorage:everlasting_upgrade'),
-    [
-        'ABA',
-        'BCB',
-        'ABA'
-    ],
-    {
-        B: 'roll_mod:nether_star_plate',
-        C: 'sophisticatedstorage:upgrade_base',
-        A: 'roll_mod:quantum_star'
-    }
-)
-
-event.shaped(
     Item.of('toms_storage:polymorphic_item_filter'),
     [
         'ABA',
