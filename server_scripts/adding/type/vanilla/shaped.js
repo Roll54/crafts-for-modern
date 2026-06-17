@@ -19,8 +19,22 @@ ServerEvents.recipes(event => {
       A: 'modern_industrialization:steel_rod',
       B: 'modern_industrialization:iron_plate',
 })  
+
+event.shaped(
+    Item.of('roll_mod:syringe'),
+    [
+        ' AB',
+        ' CA',
+        'B  '
+    ],
+    {
+        A: 'minecraft:glass',
+        B: 'minecraft:glass_pane',
+        C: 'minecraft:glass_bottle'
+    }
+)	
     
-       event.shaped(
+event.shaped(
     Item.of('silentgear:crimson_repair_kit', 1),[
       ' A ',
       'B B',
