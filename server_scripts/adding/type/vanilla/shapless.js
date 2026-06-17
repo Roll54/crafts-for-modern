@@ -25,6 +25,15 @@ event.shapeless(
         '#c:dusts/zinc'
     ]
 )
+
+event.shapeless(
+    Item.of('patchouli:guide_book'),
+    [
+        'modern_industrialization:copper_drill',
+        'minecraft:book',
+        'modern_industrialization:analog_circuit'
+    ]
+)
   
 event.shapeless(
     Item.of('modern_industrialization:sulfur_dust'),
