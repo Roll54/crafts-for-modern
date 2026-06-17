@@ -2447,8 +2447,7 @@ event.shaped(
     Item.of('roll_mod:empty_primitive_battery'),
     [
         'A A',
-        'BCD',
-        '   '
+        'BCD'
     ],
     {
         A: 'modern_industrialization:copper_wire',
