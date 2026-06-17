@@ -21,5 +21,5 @@ event.remove({ output: "tide:fishing_line" })
 event.remove({ output: "silentgear:prospector_hammer_blueprint" })
 event.remove({ output: "silentgear:prospector_hammer_template" })
 
-
+event.remove({ mod: 'buildinggadgets2' })
 })
