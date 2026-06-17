@@ -119,6 +119,11 @@ event.recipes.modern_industrialization.cutting_machine(16, 100)
 
 event.recipes.modern_industrialization.cutting_machine(24, 200)
 .itemIn("1x roll_mod:standard_wafer_not")
-.fluidIn("extended_industrialization:distilled_water", 200)
+.fluidIn("extended_industrialization:distilled_water", 1000)
 .itemOut("8x roll_mod:standard_chip_not")
+
+event.recipes.modern_industrialization.cutting_machine(8, 1600)
+.itemIn("1x roll_mod:blue_boule")
+.fluidIn("extended_industrialization:distilled_water", 1000)
+.itemOut("48x roll_mod:blue_wafer")
 })

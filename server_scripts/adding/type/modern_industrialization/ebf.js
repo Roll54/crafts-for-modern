@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
 
   //інша ххрінь
 
-event.recipes.modern_industrialization.chemical_reactor(2, 120)
+event.recipes.modern_industrialization.blast_furnace(2, 120)
     .itemIn("5x roll_mod:sulfur_saltpeter_mixture")
     .fluidIn("minecraft:water", 1000)
     .fluidOut("modern_industrialization:sulfuric_acid", 1000)
