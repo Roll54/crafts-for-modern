@@ -371,7 +371,14 @@ event.recipes.modern_industrialization.chemical_reactor(256, 100)
 .itemIn("1x modern_industrialization:plutonium_ingot")
 .fluidIn("16000x modern_industrialization:liquid_air") 
 .itemOut("4x modern_industrialization:uranium_235_ingot")
-.fluidOut("4000x modern_industrialization:radon");         
+.fluidOut("4000x modern_industrialization:radon");  
+
+event.recipes.modern_industrialization.chemical_reactor(256, 120)
+.itemIn("32x roll_mod:thorium_dust")
+.itemIn("4x modern_industrialization:uranium_235_ingot")
+.fluidIn("16000x modern_industrialization:liquid_air")
+.itemOut("2x modern_industrialization:plutonium_dust")
+.fluidOut("4000x modern_industrialization:radon");
   
 
 event.recipes.modern_industrialization.chemical_reactor(64, 100)
