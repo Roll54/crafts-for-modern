@@ -21,6 +21,21 @@ ServerEvents.recipes(event => {
 })  
 
 event.shaped(
+    Item.of('roll_mod:empty_cartridge'),
+    [
+        'AAA',
+        'ABA',
+        'CDC'
+    ],
+    {
+        D: 'modern_industrialization:digital_circuit',
+        B: 'ae2:cell_component_4k',
+        C: 'modern_industrialization:electrum_wire',
+        A: 'modern_industrialization:polytetrafluoroethylene_plate'
+    }
+)
+
+event.shaped(
     Item.of('roll_mod:syringe'),
     [
         ' AB',
