@@ -1191,24 +1191,6 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('sophisticatedstorage:feeding_upgrade'),
-    [
-        'ABA',
-        'CDE',
-        'FGF'
-    ],
-    {
-        F: 'roll_mod:advanced_robot_arm',
-        G: 'modern_industrialization:digital_circuit',
-        C: 'sophisticatedstorage:advanced_alchemy_upgrade',
-        D: 'sophisticatedstorage:upgrade_base',
-        A: 'minecraft:enchanted_golden_apple',
-        E: 'sophisticatedstorage:advanced_refill_upgrade',
-        B: 'extended_industrialization:robot_auto_feeder'
-    }
-)
-
-event.shaped(
     Item.of('sophisticatedstorage:advanced_feeding_upgrade'),
     [
         'ABC',
@@ -1283,21 +1265,6 @@ event.shaped(
         A: 'modern_industrialization:item_pipe',
         B: 'modern_industrialization:configurable_chest',
         D: 'sophisticatedstorage:compacting_upgrade'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:deposit_upgrade'),
-    [
-        'AAA',
-        'BCB',
-        'DDD'
-    ],
-    {
-        A: 'modern_industrialization:item_pipe',
-        D: 'minecraft:hopper',
-        B: 'roll_mod:treated_plate',
-        C: 'sophisticatedstorage:upgrade_base'
     }
 )
 
