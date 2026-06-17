@@ -1,16 +1,16 @@
 ServerEvents.recipes(event => {
 
-    event.custom({
+        event.custom({
         type: "ad_astra:nasa_workbench",
         ingredients: [
             { item: "roll_mod:nose_mk1" },
 
-            { item: "modern_industrialization:cosmic_alloy_two_machine_casing_pipe" },
-            { item: "modern_industrialization:cosmic_alloy_two_machine_casing_pipe" },
-            { item: "modern_industrialization:cosmic_alloy_two_machine_casing_pipe" },
-            { item: "modern_industrialization:cosmic_alloy_two_machine_casing_pipe" },
-            { item: "modern_industrialization:cosmic_alloy_two_machine_casing_pipe" },
-            { item: "modern_industrialization:cosmic_alloy_two_machine_casing_pipe" },
+            { item: "modern_industrialization:space_alloy_machine_casing_pipe" },
+            { item: "modern_industrialization:space_alloy_machine_casing_pipe" },
+            { item: "modern_industrialization:space_alloy_machine_casing_pipe" },
+            { item: "modern_industrialization:space_alloy_machine_casing_pipe" },
+            { item: "modern_industrialization:space_alloy_machine_casing_pipe" },
+            { item: "modern_industrialization:space_alloy_machine_casing_pipe" },
 
             { item: "roll_mod:fin_mk1" },
 
