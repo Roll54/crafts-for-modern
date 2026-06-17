@@ -2507,7 +2507,7 @@ event.shaped(
     }
 )
 
-	event.shaped(
+event.shaped(
     Item.of('roll_mod:superconducting_magnet_base'),
     [
         'A A',
