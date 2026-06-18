@@ -1,5 +1,18 @@
 ServerEvents.recipes(event => {
 
+  event.recipes.modern_industrialization.mixer(32, 400)
+  .itemIn("1x minecraft:honeycomb")
+  .itemIn("1x modern_industrialization:titanium_hot_ingot")
+  .itemIn("1x minecraft:magma_cream")
+  .fluidIn("minecraft:water", 1000)
+  .itemOut("4x roll_mod:hot_titanium_gum")
+
+  event.recipes.modern_industrialization.mixer(2, 200)
+  .itemIn("1x minecraft:redstone")
+  .itemIn("2x minecraft:glowstone_dust")
+  .itemIn("1x minecraft:gunpowder")
+  .itemOut("2x extendedcrafting:luminessence")
+
 // Пил
   event.recipes.modern_industrialization.mixer(2, 100)
   .itemIn("2x minecraft:clay_ball")
