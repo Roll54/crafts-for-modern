@@ -338,7 +338,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("modern_industrialization:aluminum_tank")
   .itemIn("4x modern_industrialization:electrum_fine_wire")
-  .itemOut("createcybernetics:lungsupgrades_hyperoxygenation");
+  .itemOut("createcybernetics:lungsupgrades_oxygen");
 
 
 event.recipes.modern_industrialization.assembler(16, 200)
@@ -443,11 +443,10 @@ event.recipes.modern_industrialization.assembler(16, 200)
 
 
 event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("4x roll_mod:nylon_fabric")
+  .itemIn("6x roll_mod:nylon_fabric")
   .itemIn("4x modern_industrialization:electrum_fine_wire")
   .itemIn("modern_industrialization:aluminum_plate")
   .itemIn("2x minecraft:slime_ball")
-  .itemIn("2x roll_mod:nylon_fabric")
   .itemOut("createcybernetics:legupgrades_ocelotpaws");
 
 event.recipes.modern_industrialization.assembler(16, 200)
@@ -516,7 +515,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
 
 
 event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("modern_industrialization:quantum_circuit")
+  .itemIn("modern_industrialization:processing_unit")
   .itemIn("8x modern_industrialization:platinum_fine_wire")
   .itemIn("4x modern_industrialization:osmiridium_curved_plate")
   .itemOut("createcybernetics:boneupgrades_sandevistan");
