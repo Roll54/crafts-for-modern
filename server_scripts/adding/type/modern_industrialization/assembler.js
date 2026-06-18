@@ -1,6 +1,554 @@
 ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:aluminum_bolt")
+  .itemIn("1x modern_industrialization:aluminum_ring")
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .itemIn("8x modern_industrialization:aluminum_plate")
+  .itemIn("16x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x modern_industrialization:aluminum_rod")
+  .itemIn("1x modern_industrialization:piston")
+  .itemIn("1x modern_industrialization:aluminum_gear")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_rightleg")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:aluminum_bolt")
+  .itemIn("1x modern_industrialization:aluminum_ring")
+  .itemIn("1x roll_mod:2_circuit", 0.0)
+  .itemIn("8x modern_industrialization:aluminum_plate")
+  .itemIn("16x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x modern_industrialization:aluminum_rod")
+  .itemIn("1x modern_industrialization:piston")
+  .itemIn("1x modern_industrialization:aluminum_gear")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_leftleg")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("16x modern_industrialization:electrum_fine_wire")
+  .itemIn("4x modern_industrialization:aluminum_bolt")
+  .itemIn("1x modern_industrialization:aluminum_ring")
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .itemIn("8x modern_industrialization:aluminum_plate")
+  .itemIn("2x modern_industrialization:aluminum_rod")
+  .itemIn("1x modern_industrialization:robot_arm")
+  .itemIn("1x modern_industrialization:aluminum_gear")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_leftarm")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("16x modern_industrialization:electrum_fine_wire")
+  .itemIn("4x modern_industrialization:aluminum_bolt")
+  .itemIn("1x modern_industrialization:aluminum_ring")
+  .itemIn("1x roll_mod:2_circuit", 0.0)
+  .itemIn("8x modern_industrialization:aluminum_plate")
+  .itemIn("2x modern_industrialization:aluminum_rod")
+  .itemIn("1x modern_industrialization:robot_arm")
+  .itemIn("1x modern_industrialization:aluminum_gear")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_rightarm")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:aluminum_plate")
+  .itemIn("2x modern_industrialization:electronic_circuit")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemOut("1x createcybernetics:eyeupgrades_hudjack")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x roll_mod:green_lens")
+  .itemIn("1x roll_mod:light_blue_lens")
+  .itemIn("1x roll_mod:red_lens")
+  .itemIn("1x modern_industrialization:electronic_circuit")
+  .itemIn("1x minecraft:phantom_membrane")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemOut("1x createcybernetics:eyeupgrades_hudlens")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:aluminum_gear")
+  .itemIn("1x modern_industrialization:aluminum_rod")
+  .itemIn("6x modern_industrialization:aluminum_bolt")
+  .itemIn("3x modern_industrialization:aluminum_ring")
+  .itemIn("16x modern_industrialization:electrum_fine_wire")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_linearframe")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:phosphorus_dust")
+  .itemIn("4x modern_industrialization:kanthal_plate")
+  .itemIn("2x minecraft:prismarine_crystals")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("1x modern_industrialization:electronic_circuit")
+  .itemIn("2x roll_mod:green_lens")
+  .itemOut("1x createcybernetics:eyeupgrades_underwatervision")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x modern_industrialization:digital_circuit")
+  .itemIn("1x roll_mod:energium_laser")
+  .itemIn("2x roll_mod:yellow_lens")
+  .itemIn("2x modern_industrialization:aluminum_plate")
+  .itemOut("1x createcybernetics:eyeupgrades_targeting")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:digital_circuit")
+  .itemIn("4x modern_industrialization:chromium_plate")
+  .itemIn("1x roll_mod:yellow_lens")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("1x minecraft:spectral_arrow")
+  .itemOut("1x createcybernetics:eyeupgrades_trajectorycalculator")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:aluminum_ring")
+  .itemIn("4x modern_industrialization:aluminum_plate")
+  .itemIn("2x modern_industrialization:aluminum_rod")
+  .itemIn("1x modern_industrialization:aluminum_gear")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("1x modern_industrialization:piston")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:armupgrades_armcannon")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("3x modern_industrialization:aluminum_rod")
+  .itemIn("1x modern_industrialization:aluminum_gear")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemIn("1x modern_industrialization:piston")
+  .itemIn("2x modern_industrialization:aluminum_bolt")
+  .itemIn("1x modern_industrialization:aluminum_plate")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:armupgrades_claws")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:steel_large_plate")
+  .itemIn("1x modern_industrialization:steel_drill_head")
+  .itemIn("1x modern_industrialization:steel_gear")
+  .fluidIn("modern_industrialization:soldering_alloy", 500)
+  .itemOut("1x createcybernetics:armupgrades_drillfist")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:steel_plate")
+  .itemIn("10x modern_industrialization:steel_bolt")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:armupgrades_reinforcedknuckles")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("4x roll_mod:mirror")
+  .itemIn("2x modern_industrialization:titanium_curved_plate")
+  .itemIn("4x roll_mod:nylon_fabric")
+  .itemOut("1x createcybernetics:skinupgrades_chromatophores")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x roll_mod:nylon_fabric")
+  .itemOut("1x createcybernetics:skinupgrades_synthskin")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:titanium_curved_plate")
+  .itemIn("2x modern_industrialization:cadmium_battery")
+  .itemIn("2x modern_industrialization:annealed_copper_wire")
+  .itemOut("1x createcybernetics:organsupgrade_densebattery")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemIn("1x modern_industrialization:steel_tank")
+  .itemIn("6x modern_industrialization:aluminum_plate")
+  .itemIn("1x modern_industrialization:steel_boiler")
+  .itemIn("2x modern_industrialization:aluminum_rotor")
+  .itemOut("1x createcybernetics:organsupgrades_heatengine")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x modern_industrialization:aluminum_rotor")
+  .itemIn("1x modern_industrialization:large_motor")
+  .itemIn("4x modern_industrialization:chromium_plate")
+  .itemOut("1x createcybernetics:skinupgrades_arterialturbine")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x modern_industrialization:electrum_plate")
+  .itemIn("4x modern_industrialization:aluminum_curved_plate")
+  .itemIn("1x createcybernetics:bodypart_intestines")
+  .itemIn("4x roll_mod:nylon_fabric")
+  .itemOut("1x createcybernetics:organsupgrades_metabolic")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("6x modern_industrialization:aluminum_cable")
+  .itemIn("2x modern_industrialization:digital_circuit")
+  .itemIn("2x modern_industrialization:piston")
+  .itemIn("8x modern_industrialization:titanium_curved_plate")
+  .itemOut("1x createcybernetics:muscleupgrades_wiredreflexes")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:titanium_tank")
+  .itemIn("1x modern_industrialization:advanced_motor")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemIn("8x modern_industrialization:fluid_pipe")
+  .itemOut("1x createcybernetics:organsupgrades_liverfilter")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:copper_gear")
+  .itemIn("1x modern_industrialization:copper_ring")
+  .itemIn("8x modern_industrialization:copper_plate")
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_rightarm_copperplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:copper_gear")
+  .itemIn("1x modern_industrialization:copper_ring")
+  .itemIn("8x modern_industrialization:copper_plate")
+  .itemIn("1x roll_mod:2_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_leftarm_copperplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:iron_gear")
+  .itemIn("1x modern_industrialization:iron_ring")
+  .itemIn("8x modern_industrialization:iron_plate")
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_rightarm_ironplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:iron_gear")
+  .itemIn("1x modern_industrialization:iron_ring")
+  .itemIn("8x modern_industrialization:iron_plate")
+  .itemIn("1x roll_mod:2_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_leftarm_ironplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:gold_gear")
+  .itemIn("1x modern_industrialization:gold_ring")
+  .itemIn("8x modern_industrialization:gold_plate")
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_rightarm_goldplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:gold_gear")
+  .itemIn("1x modern_industrialization:gold_ring")
+  .itemIn("8x modern_industrialization:gold_plate")
+  .itemIn("1x roll_mod:2_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_leftarm_goldplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:iron_ring")
+  .itemIn("12x modern_industrialization:iron_plate")
+  .itemIn("3x modern_industrialization:iron_gear")
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_rightleg_ironplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:iron_ring")
+  .itemIn("12x modern_industrialization:iron_plate")
+  .itemIn("3x modern_industrialization:iron_gear")
+  .itemIn("1x roll_mod:2_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_leftleg_ironplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:copper_ring")
+  .itemIn("12x modern_industrialization:copper_plate")
+  .itemIn("3x modern_industrialization:copper_gear")
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_rightleg_copperplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:copper_ring")
+  .itemIn("12x modern_industrialization:copper_plate")
+  .itemIn("3x modern_industrialization:copper_gear")
+  .itemIn("1x roll_mod:2_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_leftleg_copperplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:gold_ring")
+  .itemIn("12x modern_industrialization:gold_plate")
+  .itemIn("3x modern_industrialization:gold_gear")
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_rightleg_goldplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:gold_ring")
+  .itemIn("12x modern_industrialization:gold_plate")
+  .itemIn("3x modern_industrialization:gold_gear")
+  .itemIn("1x roll_mod:2_circuit", 0.0)
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:basecyberware_leftleg_goldplated")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemIn("1x modern_industrialization:steel_gear")
+  .itemIn("1x modern_industrialization:steel_rod")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:legupgrades_spurs")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:aluminum_rod")
+  .itemIn("4x modern_industrialization:aluminum_curved_plate")
+  .itemIn("1x minecraft:bone")
+  .itemIn("4x modern_industrialization:aluminum_bolt")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:boneupgrades_bonelacing")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:titanium_plate")
+  .itemIn("6x modern_industrialization:titanium_bolt")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x createcybernetics:boneupgrades_cyberskull")
+
+  event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x roll_mod:green_lens")
+  .itemIn("modern_industrialization:electronic_circuit")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("4x modern_industrialization:kanthal_plate")
+  .itemIn("4x modern_industrialization:phosphorus_dust")
+  .itemOut("createcybernetics:eyeupgrades_nightvision");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemIn("modern_industrialization:lv_mv_transformer")
+  .itemIn("8x modern_industrialization:chromium_plate")
+  .itemIn("roll_mod:energium_battery")
+  .itemOut("createcybernetics:organsupgrades_battery");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("6x minecraft:quartz")
+  .itemIn("2x modern_industrialization:diamond_plate")
+  .itemIn("16x modern_industrialization:chromium_plate")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:organsupgrades_diamondwaferstack");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("modern_industrialization:aluminum_ring")
+  .itemIn("6x modern_industrialization:aluminum_curved_plate")
+  .itemIn("3x modern_industrialization:piston")
+  .itemIn("2x modern_industrialization:aluminum_gear")
+  .itemIn("2x modern_industrialization:aluminum_rod")
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:lungsupgrades_hyperoxygenation");
+
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("modern_industrialization:aluminum_tank")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:lungsupgrades_hyperoxygenation");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:stainless_steel_curved_plate")
+  .itemIn("modern_industrialization:stainless_steel_rod")
+  .itemIn("3x modern_industrialization:stainless_steel_rotor")
+  .itemIn("modern_industrialization:digital_circuit")
+  .itemIn("modern_industrialization:large_motor")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:organsupgrades_adrenaline");
+
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("modern_industrialization:large_motor")
+  .itemIn("6x modern_industrialization:stainless_steel_curved_plate")
+  .itemIn("2x modern_industrialization:stainless_steel_bolt")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x roll_mod:injection_regen")
+  .itemOut("createcybernetics:heartupgrades_stemcell");
+
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:fluid_pipe")
+  .itemIn("modern_industrialization:advanced_motor")
+  .itemIn("modern_industrialization:processing_unit")
+  .itemIn("6x modern_industrialization:titanium_plate")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:heartupgrades_platelets");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("modern_industrialization:digital_circuit")
+  .itemIn("2x modern_industrialization:robot_arm")
+  .itemIn("4x modern_industrialization:chromium_plate")
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:brainupgrades_neuralcontextualizer");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("modern_industrialization:assembler")
+  .itemIn("modern_industrialization:digital_circuit")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("minecraft:crafting_table")
+  .itemIn("4x modern_industrialization:chromium_plate")
+  .itemOut("createcybernetics:armupgrades_crafthands");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x roll_mod:nylon_fabric")
+  .itemIn("modern_industrialization:aluminum_rod")
+  .itemIn("2x modern_industrialization:aluminum_gear")
+  .itemOut("createcybernetics:armupgrades_flywheel");
+
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:aluminum_plate")
+  .itemIn("minecraft:flint_and_steel")
+  .itemIn("modern_industrialization:aluminum_bolt")
+  .itemOut("createcybernetics:armupgrades_firestarter");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("roll_mod:advanced_robot_arm")
+  .itemIn("8x modern_industrialization:stainless_steel_plate")
+  .itemIn("2x modern_industrialization:stainless_steel_gear")
+  .itemIn("roll_mod:advanced_piston")
+  .itemOut("createcybernetics:armupgrades_pneumaticwrist");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:stainless_steel_rod")
+  .itemIn("4x modern_industrialization:stainless_steel_curved_plate")
+  .itemIn("modern_industrialization:digital_circuit")
+  .itemIn("5x modern_industrialization:stainless_steel_bolt")
+  .itemIn("16x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:armupgrades_ripperclaw");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:stainless_steel_curved_plate")
+  .itemIn("modern_industrialization:stainless_steel_rod")
+  .itemIn("4x modern_industrialization:aluminum_wire")
+  .itemOut("createcybernetics:armupgrades_arccannon");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:steel_rod_magnetic")
+  .itemIn("8x modern_industrialization:aluminum_plate")
+  .itemIn("2x modern_industrialization:aluminum_bolt")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:legupgrades_metaldetector");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x roll_mod:nylon_fabric")
+  .itemIn("8x modern_industrialization:kanthal_cable")
+  .itemIn("8x modern_industrialization:chromium_plate")
+  .itemIn("2x minecraft:slime_ball")
+  .itemIn("2x modern_industrialization:piston")
+  .itemOut("createcybernetics:legupgrades_jumpboost");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x roll_mod:nylon_fabric")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemIn("modern_industrialization:aluminum_plate")
+  .itemIn("2x minecraft:slime_ball")
+  .itemIn("2x roll_mod:nylon_fabric")
+  .itemOut("createcybernetics:legupgrades_ocelotpaws");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:kanthal_plate")
+  .itemIn("2x modern_industrialization:aluminum_gear")
+  .itemIn("2x modern_industrialization:aluminum_rotor")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("4x modern_industrialization:motor")
+  .itemOut("createcybernetics:legupgrades_propellers");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x minecraft:slime_ball")
+  .itemIn("minecraft:bone")
+  .itemIn("2x modern_industrialization:aluminum_bolt")
+  .itemIn("4x roll_mod:calcium_dust")
+  .itemIn("2x roll_mod:nylon_fabric")
+  .itemOut("createcybernetics:boneupgrades_boneflex");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:sodium_battery")
+  .itemIn("minecraft:bone")
+  .itemIn("4x roll_mod:calcium_dust")
+  .itemIn("2x modern_industrialization:aluminum_bolt")
+  .itemIn("3x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:boneupgrades_bonebattery");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("4x roll_mod:syringe")
+  .itemIn("modern_industrialization:digital_circuit")
+  .itemIn("modern_industrialization:titanium_large_plate")
+  .itemIn("modern_industrialization:titanium_rod")
+  .itemIn("4x modern_industrialization:titanium_bolt")
+  .itemOut("createcybernetics:boneupgrades_spinalinjector");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:kanthal_plate")
+  .itemIn("4x minecraft:quartz_block")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:boneupgrades_piezo");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("6x modern_industrialization:titanium_bolt")
+  .itemIn("3x modern_industrialization:titanium_rod")
+  .itemIn("modern_industrialization:hv_ev_transformer")
+  .itemIn("2x modern_industrialization:osmiridium_curved_plate")
+  .itemIn("3x modern_industrialization:titanium_ring")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:boneupgrades_capacitorframe");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("modern_industrialization:enderium_ring")
+  .itemIn("4x modern_industrialization:osmiridium_curved_plate")
+  .itemIn("6x modern_industrialization:platinum_fine_wire")
+  .itemIn("4x modern_industrialization:enderium_wire")
+  .itemOut("createcybernetics:brainupgrades_eyeofdefender");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("8x modern_industrialization:osmiridium_curved_plate")
+  .itemIn("4x modern_industrialization:processing_unit")
+  .itemIn("2x roll_mod:quantum_star")
+  .itemIn("32x modern_industrialization:platinum_fine_wire")
+  .itemOut("createcybernetics:brainupgrades_cyberbrain");
+
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("modern_industrialization:quantum_circuit")
+  .itemIn("8x modern_industrialization:platinum_fine_wire")
+  .itemIn("4x modern_industrialization:osmiridium_curved_plate")
+  .itemOut("createcybernetics:boneupgrades_sandevistan");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("minecraft:elytra")
+  .itemIn("2x modern_industrialization:titanium_rod")
+  .itemIn("4x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x roll_mod:nylon_fabric")
+  .itemOut("createcybernetics:boneupgrades_elytra");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:cupronickel_wire_magnetic")
+  .itemIn("4x minecraft:ender_pearl")
+  .itemIn("2x modern_industrialization:aluminum_gear")
+  .itemIn("modern_industrialization:chromium_plate")
+  .itemIn("modern_industrialization:steel_rod_magnetic")
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemOut("createcybernetics:brainupgrades_enderjammer");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x minecraft:spider_eye")
+  .itemIn("2x minecraft:bone")
+  .itemIn("minecraft:ender_pearl")
+  .itemIn("2x modern_industrialization:electrum_fine_wire")
+  .itemIn("4x minecraft:rotten_flesh")
+  .itemIn("modern_industrialization:titanium_plate")
+  .itemIn("modern_industrialization:processing_unit")
+  .itemIn("2x modern_industrialization:titanium_bolt")
+  .itemOut("createcybernetics:brainupgrades_matrix");
+
+  event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x modern_industrialization:stainless_steel_rod")
   .itemIn("2x #c:plates/aluminum")
   .itemIn("4x roll_mod:carbon_mesh")
