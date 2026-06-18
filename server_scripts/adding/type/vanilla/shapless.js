@@ -27,7 +27,9 @@ event.shapeless(
 )
 
 event.shapeless(
-    Item.of('patchouli:guide_book'),
+    Item.of('patchouli:guide_book', {
+        'patchouli:book': 'buildinggadgets2:buildinggadgets2book'
+    }),
     [
         'modern_industrialization:copper_drill',
         'minecraft:book',
