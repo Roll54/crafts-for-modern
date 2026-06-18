@@ -1512,51 +1512,6 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('sophisticatedstorage:anvil_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        B: 'minecraft:anvil',
-        A: 'modern_industrialization:bronze_plate',
-        C: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:upgrade_base'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:tank_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        A: 'modern_industrialization:bronze_plate',
-        D: 'sophisticatedstorage:upgrade_base',
-        C: 'modern_industrialization:rubber_sheet',
-        B: 'modern_industrialization:steel_tank'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:smithing_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        B: 'minecraft:smithing_table',
-        A: 'modern_industrialization:bronze_plate',
-        C: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:upgrade_base'
-    }
-)
-
-event.shaped(
     Item.of('sophisticatedstorage:stack_downgrade_tier_2'),
     [
         'ABA',
