@@ -1,6 +1,13 @@
 ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.centrifuge(32, 400)
+  .itemIn("1x minecraft:honeycomb")
+  .itemIn("1x modern_industrialization:titanium_hot_ingot")
+  .itemIn("1x minecraft:magma_cream")
+  .fluidIn("minecraft:water", 1000)
+  .itemOut("4x roll_mod:hot_titanium_gum")
+
+  event.recipes.modern_industrialization.centrifuge(32, 400)
   .itemIn("6x roll_mod:rutile_iron")
   .itemOut("4x roll_mod:rutile_dust")
   .itemOut("2x modern_industrialization:iron_dust")
