@@ -9,6 +9,19 @@ ServerEvents.recipes(event => {
       A: 'modern_industrialization:iron_rod',
       B: '#minecraft:logs',
 })
+
+	event.shaped(
+    Item.of('ad_astra:fan'),
+    [
+        'A A',
+        ' B ',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:chrome_vanadium_steel_blade',
+        B: 'modern_industrialization:chrome_vanadium_steel_rod'
+    }
+)
     
       event.shaped(
     Item.of('silentgear:sturdy_repair_kit', 1),[
