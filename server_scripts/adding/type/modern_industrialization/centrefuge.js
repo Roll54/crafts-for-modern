@@ -13,6 +13,12 @@ ServerEvents.recipes(event => {
   .itemOut("2x modern_industrialization:iron_dust")
   .itemOut("1x modern_industrialization:iron_dust", 0.5)
 
+  event.recipes.modern_industrialization.centrifuge(2, 200)
+  .itemIn("1x minecraft:redstone")
+  .itemIn("2x minecraft:glowstone_dust")
+  .itemIn("1x minecraft:gunpowder")
+  .itemOut("2x extendedcrafting:luminessence")
+
   event.recipes.modern_industrialization.centrifuge(16, 200)
   .fluidIn("modern_industrialization:salt_water", 2000)
   .fluidOut("minecraft:water", 1000)
