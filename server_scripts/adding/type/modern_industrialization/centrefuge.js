@@ -146,5 +146,8 @@ event.recipes.modern_industrialization.centrifuge(128, 1200)
 .itemOut("5x roll_mod:impure_cinnabar_dust") 
 .itemOut("3x roll_mod:impure_pyrite_dust") 
 
-
+event.recipes.modern_industrialization.centrifuge(32, 200)
+.itemIn("8x roll_mod:bort_dust")
+.itemOut("3x roll_mod:diamond_dust")
+.itemOut("3x roll_mod:deepslate_dust")
 })
