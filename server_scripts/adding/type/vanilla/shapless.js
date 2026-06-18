@@ -2,7 +2,26 @@ ServerEvents.recipes(event => {
   
 event.shapeless('4x roll_mod:treated_planks', ['roll_mod:treated_log']);
 
-  
+event.custom({
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "modern_industrialization:copper_drill"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "modern_industrialization:analog_circuit"
+    }
+  ],
+  "result": {
+    "id": "patchouli:guide_book",
+    "components": {
+      "patchouli:book": "buildinggadgets2:buildinggadgets2book"
+    }
+  }
+})
 
 event.shapeless('roll_mod:1_circuit', ['modern_industrialization:analog_circuit']);
 event.shapeless('roll_mod:2_circuit', ['roll_mod:1_circuit']);
