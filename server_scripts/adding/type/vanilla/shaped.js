@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-      event.shaped(
+  event.shaped(
     Item.of('silentgear:crude_repair_kit', 1),[
       ' A ',
       'B B',
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
       B: '#minecraft:logs',
 })
 
-	event.shaped(
+  event.shaped(
     Item.of('ad_astra:fan'),
     [
         'A A',
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     }
 )
     
-      event.shaped(
+  event.shaped(
     Item.of('silentgear:sturdy_repair_kit', 1),[
       ' A ',
       'B B',
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
       B: 'modern_industrialization:iron_plate',
 })  
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:empty_cartridge'),
     [
         'AAA',
@@ -46,9 +46,9 @@ event.shaped(
         C: 'modern_industrialization:electrum_wire',
         A: 'modern_industrialization:polytetrafluoroethylene_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:syringe'),
     [
         ' AB',
@@ -60,9 +60,9 @@ event.shaped(
         B: 'minecraft:glass_pane',
         C: 'minecraft:glass_bottle'
     }
-)	
+  )	
     
-event.shaped(
+  event.shaped(
     Item.of('silentgear:crimson_repair_kit', 1),[
       ' A ',
       'B B',
@@ -70,9 +70,9 @@ event.shaped(
     ],{
       A: 'modern_industrialization:aluminum_rod',
       B: 'silentgear:crimson_steel_ingot',
-})
+  })
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:crop_manager'),
     [
         'AAA',
@@ -86,9 +86,9 @@ event.shaped(
         C: 'modern_industrialization:turbo_machine_hull',
         A: 'modern_industrialization:advanced_motor'
     }
-)
+  )
 
-       event.shaped(
+  event.shaped(
     Item.of('silentgear:azure_repair_kit', 1),[
       ' A ',
       'B B',
@@ -96,7 +96,7 @@ event.shaped(
     ],{
       A: 'modern_industrialization:titanium_rod',
       B: 'silentgear:azure_electrum_ingot',
-})
+  })
 
   event.shaped(
     Item.of('modern_industrialization:pyrolyse_oven', 1),[
@@ -169,7 +169,7 @@ event.shaped(
       W: 'modern_industrialization:annealed_copper_cable',
   })
 
-    event.shaped(
+  event.shaped(
     Item.of('immersive_aircraft:gyrodyne', 1),[
       'ABA',
       'CDC',
@@ -208,7 +208,7 @@ event.shaped(
       C: 'modern_industrialization:basic_machine_hull',
   })
 
-    event.shaped(
+  event.shaped(
     Item.of('travelanchors:travel_anchor', 1),[
       'AAA',
       'ABA',
@@ -218,7 +218,7 @@ event.shaped(
       B: 'minecraft:ender_pearl',
   })
 
-    event.shaped(
+  event.shaped(
     Item.of('travelanchors:travel_staff', 1),[
       ' BC',
       ' AB',
@@ -229,7 +229,7 @@ event.shaped(
       C: 'minecraft:ender_eye',
   })
 
-    event.shaped(
+  event.shaped(
     Item.of('modern_industrialization:circuit_assembler', 1),[
       ' A ',
       'BCB',
@@ -254,7 +254,7 @@ event.shaped(
         C: 'minecraft:waxed_copper_bulb',
         A: 'roll_mod:treated_plate'
     }
-)
+  )
 
   event.shaped(
     Item.of('toms_storage:crafting_terminal'),
@@ -269,7 +269,7 @@ event.shaped(
         D: 'toms_storage:storage_terminal',
         C: 'modern_industrialization:steel_gear'
     }
-)
+  )
   event.shaped(
     Item.of('toms_storage:inventory_connector'),
     [
@@ -283,9 +283,9 @@ event.shaped(
         D: 'minecraft:chest',
         A: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('toms_storage:open_crate'),
     [
         'ABA',
@@ -298,7 +298,7 @@ event.shaped(
         A: 'roll_mod:treated_plate',
         C: 'roll_mod:treated_log'
     }
-)
+  )
 
   event.shaped(
     Item.of('toms_storage:trim', 4),
@@ -313,7 +313,7 @@ event.shaped(
         A: 'roll_mod:treated_log',
         B: 'roll_mod:treated_plate'
     }
-)
+  )
 
   event.shaped(
     Item.of('toms_storage:inventory_cable', 3),
@@ -327,9 +327,9 @@ event.shaped(
         C: 'modern_industrialization:item_pipe',
         A: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('toms_storage:inventory_interface'),
     [
         'ABA',
@@ -342,7 +342,7 @@ event.shaped(
         D: 'minecraft:hopper',
         B: 'minecraft:chest'
     }
-)
+  )
 
   event.shaped(
     Item.of('toms_storage:inventory_cable_connector'),
@@ -356,7 +356,7 @@ event.shaped(
         C: 'toms_storage:inventory_connector',
         B: 'toms_storage:inventory_cable'
     }
-)
+  )
 
   event.shaped(
     Item.of('toms_storage:inventory_proxy'),
@@ -370,11 +370,9 @@ event.shaped(
         B: 'minecraft:dropper',
         C: 'minecraft:repeater'
     }
-)
+  )
 
-
-
-event.shaped(
+  event.shaped(
     Item.of('modern_industrialization:thermal_centrefuge'),
     [
         'ABA',
@@ -389,9 +387,9 @@ event.shaped(
         D: 'modern_industrialization:centrifuge',
         F: 'modern_industrialization:large_pump'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('modern_industrialization:lv_ore_washer'),
     [
         'ABA',
@@ -405,9 +403,9 @@ event.shaped(
         D: 'modern_industrialization:chemical_reactor',
         C: 'modern_industrialization:large_pump'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:io_port'),
     [
         'ABA',
@@ -422,9 +420,9 @@ event.shaped(
         B: 'ae2:cell_component_4k',
         D: 'ae2:fluix_smart_cable'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:drive'),
     [
         'ABA',
@@ -437,8 +435,8 @@ event.shaped(
         A: 'modern_industrialization:aluminum_plate',
         C: 'ae2:fluix_smart_cable'
     }
-)
-event.shaped(
+  )
+  event.shaped(
     Item.of('ae2:pattern_provider'),
     [
         'ABA',
@@ -451,9 +449,9 @@ event.shaped(
         C: 'modern_industrialization:electrum_plate',
         A: 'modern_industrialization:aluminum_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:crafting_unit'),
     [
         'ABA',
@@ -465,9 +463,9 @@ event.shaped(
         C: 'modern_industrialization:electronic_circuit',
         A: 'modern_industrialization:aluminum_large_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:chest'),
     [
         'ABA',
@@ -480,9 +478,9 @@ event.shaped(
         A: 'ae2:quartz_glass',
         C: 'ae2:fluix_smart_cable'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:memory_card'),
     [
         'ABC',
@@ -494,9 +492,9 @@ event.shaped(
         D: 'modern_industrialization:gold_wire',
         A: 'ae2:cell_component_1k'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2netanalyser:network_analyser'),
     [
         'A A',
@@ -508,9 +506,9 @@ event.shaped(
         A: 'modern_industrialization:gold_rod',
         C: 'minecraft:redstone_lamp'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:energy_cell'),
     [
         'ABA',
@@ -522,9 +520,9 @@ event.shaped(
         B: 'ae2:fluix_block',
         A: 'modern_industrialization:aluminum_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('railcraft:steam_locomotive'),
     [
         ' AA',
@@ -537,9 +535,9 @@ event.shaped(
         D: 'minecraft:minecart',
         A: 'modern_industrialization:steel_tank'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('railcraft:electric_locomotive'),
     [
         'AB ',
@@ -555,9 +553,9 @@ event.shaped(
         G: 'minecraft:minecart',
         A: 'minecraft:redstone_lamp'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:meteorite_compass'),
     [
         ' A ',
@@ -569,9 +567,9 @@ event.shaped(
         B: 'modern_industrialization:iron_plate',
         A: 'ae2:charged_certus_quartz_crystal'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ad_astra:launch_pad'),
     [
         'AAA',
@@ -581,9 +579,9 @@ event.shaped(
         A: 'modern_industrialization:netherite_plate',
         B: 'extended_industrialization:steel_plated_bricks'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:tank_upgrade'),
     [
         'A',
@@ -594,9 +592,9 @@ event.shaped(
         B: 'sophisticatedbackpacks:upgrade_base',
         A: 'modern_industrialization:steel_tank'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:feeding_upgrade'),
     [
         ' A ',
@@ -610,9 +608,9 @@ event.shaped(
         D: 'minecraft:enchanted_golden_apple',
         E: 'minecraft:cake'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:wireless_receiver'),
     [
         'A B',
@@ -625,9 +623,9 @@ event.shaped(
         C: 'modern_industrialization:stainless_steel_rod',
         B: 'roll_mod:quantum_star'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:wireless_access_point'),
     [
         'ABA',
@@ -638,8 +636,8 @@ event.shaped(
         C: 'ae2:fluix_smart_dense_cable',
         B: 'ae2:wireless_receiver'
     }
-)
-event.shaped(
+  )
+  event.shaped(
     Item.of('modern_industrialization:titanium_64_machine_casing'),
     [
         'AAA',
@@ -650,9 +648,9 @@ event.shaped(
         A: 'modern_industrialization:titanium_64_plate',
         B: 'modern_industrialization:titanium_gear'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('extendedae:caner'),
     [
         'ABC',
@@ -666,9 +664,9 @@ event.shaped(
         B: 'extended_industrialization:electric_canning_machine',
         D: 'modern_industrialization:stainless_steel_rod'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('extendedae:ex_import_bus_part'),
     [
         ' AB',
@@ -680,9 +678,9 @@ event.shaped(
         B: 'roll_mod:advanced_robot_arm',
         C: 'ae2:import_bus'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('extendedae:ex_export_bus_part'),
     [
         ' AB',
@@ -694,9 +692,9 @@ event.shaped(
         B: 'roll_mod:advanced_robot_arm',
         C: 'ae2:export_bus'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('extendedae:wireless_tool'),
     [
         'ABA',
@@ -707,10 +705,9 @@ event.shaped(
         B: 'ae2:cell_component_1k',
         A: 'ae2:wireless_receiver'
     }
-)
+  )
 
-
-event.shaped(
+  event.shaped(
     Item.of('tide:fishing_line'),
     [
         ' AA',
@@ -720,9 +717,9 @@ event.shaped(
     {
         A: 'minecraft:string'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:cell_workbench'),
     [
         'ABA',
@@ -736,9 +733,9 @@ event.shaped(
         A: 'modern_industrialization:robot_arm',
         C: 'modern_industrialization:aluminum_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:prospector_pickaxe'),
     [
         'AB',
@@ -750,9 +747,9 @@ event.shaped(
         A: 'minecraft:iron_ingot',
         C: 'minecraft:stick'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('railcraft:powered_rolling_machine'),
     [
         'ABA',
@@ -765,9 +762,9 @@ event.shaped(
         D: 'modern_industrialization:electric_compressor',
         A: 'modern_industrialization:steel_gear'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:redstone_tube'),
     [
         'AAA',
@@ -782,9 +779,9 @@ event.shaped(
         B: 'modern_industrialization:redstone_alloy_rod',
         E: 'modern_industrialization:redstone_alloy_bolt'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('modern_industrialization:analog_circuit'),
     [
         'AAA',
@@ -795,9 +792,9 @@ event.shaped(
         B: 'modern_industrialization:resistor',
         C: 'modern_industrialization:analog_circuit_board'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:amethyst_oscillator'),
     [
         'ABA',
@@ -810,9 +807,9 @@ event.shaped(
         B: 'modern_industrialization:electrum_wire',
         A: 'modern_industrialization:steel_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('modern_industrialization:laser_engraver'),
     [
         'ABA',
@@ -827,9 +824,9 @@ event.shaped(
         D: 'modern_industrialization:advanced_machine_hull',
         B: 'roll_mod:mirror'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('ae2:spatial_io_port'),
     [
         'ABA',
@@ -844,9 +841,9 @@ event.shaped(
         B: 'megacells:accumulation_processor',
         A: 'modern_industrialization:osmiridium_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:golden_potato'),
     [
         'AAA',
@@ -857,9 +854,9 @@ event.shaped(
         A: 'minecraft:gold_nugget',
         B: 'minecraft:potato'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('immersive_aircraft:propeller'),
     [
         'AA ',
@@ -870,9 +867,9 @@ event.shaped(
         B: 'modern_industrialization:steel_rod',
         A: 'modern_industrialization:steel_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:backpack'),
     [
         'ABA',
@@ -881,12 +878,12 @@ event.shaped(
     ],
     {
         B: 'minecraft:leather',
-        C: 'sophisticatedstorage:iron_chest',
+        C: 'sophisticatedbackpacks:iron_backpack',
         A: 'minecraft:string'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:magnet_upgrade'),
     [
         'ABA',
@@ -899,9 +896,9 @@ event.shaped(
         C: 'sophisticatedbackpacks:upgrade_base',
         D: 'modern_industrialization:steel_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_magnet_upgrade'),
     [
         'AAA',
@@ -913,9 +910,9 @@ event.shaped(
         B: 'sophisticatedbackpacks:magnet_upgrade',
         C: 'modern_industrialization:stainless_steel_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier'),
     [
         'AAA',
@@ -926,9 +923,9 @@ event.shaped(
         A: 'modern_industrialization:bronze_block',
         B: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:upgrade_base'),
     [
         'ABA',
@@ -940,9 +937,9 @@ event.shaped(
         A: 'modern_industrialization:bronze_plate',
         B: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_tier_2'),
     [
         'ABA',
@@ -955,9 +952,9 @@ event.shaped(
         D: 'roll_mod:treated_plate',
         B: 'modern_industrialization:electronic_circuit'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_tier_1'),
     [
         'ABA',
@@ -970,9 +967,9 @@ event.shaped(
         D: 'roll_mod:treated_plate',
         B: 'sophisticatedbackpacks:stack_upgrade_starter_tier'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_tier_4'),
     [
         'AAA',
@@ -984,9 +981,9 @@ event.shaped(
         B: 'sophisticatedbackpacks:stack_upgrade_tier_3',
         C: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_tier_3'),
     [
         'AAA',
@@ -998,9 +995,9 @@ event.shaped(
         C: 'roll_mod:treated_plate',
         A: 'modern_industrialization:stainless_steel_block'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_omega_tier'),
     [
         'ABA',
@@ -1012,9 +1009,9 @@ event.shaped(
         A: 'modern_industrialization:processing_unit',
         C: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:pump_upgrade'),
     [
         'ABA',
@@ -1027,9 +1024,9 @@ event.shaped(
         D: 'sophisticatedbackpacks:upgrade_base',
         A: 'modern_industrialization:rubber_sheet'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:everlasting_upgrade'),
     [
         'ABA',
@@ -1041,706 +1038,9 @@ event.shaped(
         C: 'sophisticatedbackpacks:upgrade_base',
         A: 'roll_mod:quantum_star'
     }
-)
+  )
 
-event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_1' })
-
-event.shaped(
-    Item.of('sophisticatedstorage:magnet_upgrade'),
-    [
-        'ABA',
-        'ACA',
-        'DDD'
-    ],
-    {
-        B: 'modern_industrialization:steel_rod_magnetic',
-        A: 'roll_mod:raw_magnetite',
-        C: 'sophisticatedstorage:upgrade_base',
-        D: 'modern_industrialization:steel_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_magnet_upgrade'),
-    [
-        'AAA',
-        'ABA',
-        'CCC'
-    ],
-    {
-        A: 'modern_industrialization:stainless_steel_rod_magnetic',
-        B: 'sophisticatedstorage:magnet_upgrade',
-        C: 'modern_industrialization:stainless_steel_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_upgrade_tier_1_plus'),
-    [
-        'AAA',
-        'ABA',
-        'AAA'
-    ],
-    {
-        A: 'modern_industrialization:bronze_block',
-        B: 'sophisticatedstorage:upgrade_base'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:upgrade_base'),
-    [
-        'ABA',
-        'BCB',
-        'ABA'
-    ],
-    {
-        C: '#minecraft:logs',
-        A: 'modern_industrialization:bronze_plate',
-        B: 'roll_mod:treated_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_upgrade_tier_2'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        A: 'modern_industrialization:aluminum_block',
-        C: 'sophisticatedstorage:stack_upgrade_tier_1',
-        D: 'roll_mod:treated_plate',
-        B: 'modern_industrialization:electronic_circuit'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_upgrade_tier_1_plus'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        A: 'modern_industrialization:steel_block',
-        C: 'modern_industrialization:analog_circuit',
-        D: 'roll_mod:treated_plate',
-        B: 'sophisticatedstorage:stack_upgrade_tier_1_plus'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_upgrade_tier_4'),
-    [
-        'AAA',
-        'BCB',
-        'AAA'
-    ],
-    {
-        A: 'modern_industrialization:titanium_block',
-        B: 'sophisticatedstorage:stack_upgrade_tier_3',
-        C: 'roll_mod:treated_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_upgrade_tier_3'),
-    [
-        'AAA',
-        'BCB',
-        'AAA'
-    ],
-    {
-        B: 'sophisticatedstorage:stack_upgrade_tier_2',
-        C: 'roll_mod:treated_plate',
-        A: 'modern_industrialization:stainless_steel_block'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_upgrade_omega_tier'),
-    [
-        'ABA',
-        'BCB',
-        'ABA'
-    ],
-    {
-        B: 'sophisticatedstorage:stack_upgrade_tier_4',
-        A: 'modern_industrialization:processing_unit',
-        C: 'roll_mod:treated_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:pump_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        C: 'minecraft:bucket',
-        B: 'modern_industrialization:bronze_water_pump',
-        D: 'sophisticatedstorage:upgrade_base',
-        A: 'modern_industrialization:rubber_sheet'
-    }
-)
-
-event.shaped(
-    Item.of('toms_storage:polymorphic_item_filter'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        C: 'modern_industrialization:item_pipe',
-        A: 'modern_industrialization:diamond_dust',
-        B: 'modern_industrialization:configurable_chest',
-        D: 'toms_storage:item_filter'
-    }
-)
-
-event.shaped(
-    Item.of('toms_storage:item_filter'),
-    [
-        'ABA',
-        'BCB',
-        'ABA'
-    ],
-    {
-        B: 'modern_industrialization:item_pipe',
-        C: 'minecraft:hopper',
-        A: 'modern_industrialization:iron_dust'
-    }
-)
-
-event.shaped(
-    Item.of('toms_storage:tag_item_filter'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        B: 'modern_industrialization:item_pipe',
-        A: 'modern_industrialization:gold_dust',
-        C: 'modern_industrialization:configurable_chest',
-        D: 'toms_storage:item_filter'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_feeding_upgrade'),
-    [
-        'ABC',
-        'DED',
-        ' GH'
-    ],
-    {
-        A: 'tide:bedrock_bug',
-        H: 'roll_mod:very_nutritious_candy',
-        C: 'roll_mod:sulfur_jam',
-        D: 'modern_industrialization:processing_unit',
-        E: 'sophisticatedstorage:feeding_upgrade',
-        B: 'yet_another_industrialization:configurable_mixed_storage',
-        G: 'modern_industrialization:iridium_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:filter_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        A: 'modern_industrialization:item_pipe',
-        B: 'minecraft:hopper',
-        D: 'sophisticatedstorage:upgrade_base',
-        C: 'toms_storage:item_filter'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:compacting_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        C: 'minecraft:crafting_table',
-        A: 'modern_industrialization:item_pipe',
-        B: 'minecraft:hopper',
-        D: 'sophisticatedstorage:upgrade_base'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_filter_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        A: 'modern_industrialization:item_pipe',
-        C: 'modern_industrialization:configurable_chest',
-        D: 'sophisticatedstorage:filter_upgrade',
-        B: 'toms_storage:item_filter'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_compacting_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        C: 'minecraft:crafter',
-        A: 'modern_industrialization:item_pipe',
-        B: 'modern_industrialization:configurable_chest',
-        D: 'sophisticatedstorage:compacting_upgrade'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:smelting_upgrade'),
-    [
-        'ABA',
-        'BCB',
-        'ADA'
-    ],
-    {
-        A: 'modern_industrialization:bronze_plate',
-        B: 'roll_mod:treated_plate',
-        C: 'sophisticatedstorage:upgrade_base',
-        D: 'minecraft:furnace'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:void_upgrade'),
-    [
-        'ABA',
-        'ACA',
-        'ADA'
-    ],
-    {
-        A: 'modern_industrialization:item_pipe',
-        B: 'minecraft:hopper',
-        C: 'sophisticatedstorage:upgrade_base',
-        D: 'modern_industrialization:trash_can'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:auto_smelting_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'AEA'
-    ],
-    {
-        C: 'modern_industrialization:item_pipe',
-        B: 'modern_industrialization:configurable_chest',
-        E: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:smelting_upgrade',
-        A: 'modern_industrialization:steel_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_void_upgrade'),
-    [
-        'ABA',
-        'ACA',
-        'ADA'
-    ],
-    {
-        A: 'modern_industrialization:item_pipe',
-        C: 'sophisticatedstorage:void_upgrade',
-        B: 'modern_industrialization:configurable_chest',
-        D: 'modern_industrialization:trash_can'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:blasting_upgrade'),
-    [
-        'ABA',
-        'BCB',
-        'ADA'
-    ],
-    {
-        A: 'modern_industrialization:bronze_plate',
-        B: 'roll_mod:treated_plate',
-        C: 'sophisticatedstorage:upgrade_base',
-        D: 'minecraft:blast_furnace'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:smoking_upgrade'),
-    [
-        'ABA',
-        'BCB',
-        'ADA'
-    ],
-    {
-        A: 'modern_industrialization:bronze_plate',
-        B: 'roll_mod:treated_plate',
-        C: 'sophisticatedstorage:upgrade_base',
-        D: 'minecraft:smoker'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:auto_blasting_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'AEA'
-    ],
-    {
-        D: 'sophisticatedstorage:blasting_upgrade',
-        C: 'modern_industrialization:item_pipe',
-        B: 'modern_industrialization:configurable_chest',
-        E: 'roll_mod:treated_plate',
-        A: 'modern_industrialization:steel_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:alchemy_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'AEA'
-    ],
-    {
-        E: 'extended_industrialization:steel_brewery',
-        A: 'modern_industrialization:bronze_plate',
-        C: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:upgrade_base',
-        B: 'minecraft:glass_bottle'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:jukebox_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'AEA'
-    ],
-    {
-        B: 'minecraft:chest',
-        A: 'modern_industrialization:bronze_plate',
-        C: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:upgrade_base',
-        E: 'minecraft:jukebox'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_alchemy_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'AEA'
-    ],
-    {
-        E: 'modern_industrialization:analog_circuit',
-        B: 'modern_industrialization:robot_arm',
-        D: 'sophisticatedstorage:alchemy_upgrade',
-        C: 'roll_mod:treated_plate',
-        A: 'modern_industrialization:steel_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_jukebox_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'AEA'
-    ],
-    {
-        E: 'modern_industrialization:analog_circuit',
-        B: 'sophisticatedstorage:iron_chest',
-        D: 'sophisticatedstorage:jukebox_upgrade',
-        C: 'roll_mod:treated_plate',
-        A: 'modern_industrialization:steel_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stonecutter_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        A: 'modern_industrialization:bronze_plate',
-        C: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:upgrade_base',
-        B: 'minecraft:stonecutter'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:crafting_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        B: 'minecraft:crafter',
-        A: 'modern_industrialization:bronze_plate',
-        C: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:upgrade_base'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_downgrade_tier_2'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        A: 'modern_industrialization:bronze_plate',
-        D: 'sophisticatedstorage:stack_downgrade_tier_1',
-        B: 'modern_industrialization:creosote_bucket',
-        C: 'roll_mod:treated_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_downgrade_tier_1'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        A: 'modern_industrialization:bronze_plate',
-        B: 'modern_industrialization:creosote_bucket',
-        C: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:upgrade_base'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:stack_downgrade_tier_3'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        D: 'sophisticatedstorage:stack_downgrade_tier_2',
-        A: 'modern_industrialization:bronze_plate',
-        B: 'modern_industrialization:creosote_bucket',
-        C: 'roll_mod:treated_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:refill_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'AEA'
-    ],
-    {
-        B: 'minecraft:hopper',
-        A: 'modern_industrialization:bronze_plate',
-        E: 'modern_industrialization:robot_arm',
-        C: 'roll_mod:treated_plate',
-        D: 'sophisticatedstorage:upgrade_base'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_refill_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        B: 'modern_industrialization:analog_circuit',
-        D: 'sophisticatedstorage:refill_upgrade',
-        C: 'roll_mod:treated_plate',
-        A: 'modern_industrialization:steel_plate'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:hopper_upgrade'),
-    [
-        ' A ',
-        ' B ',
-        ' C '
-    ],
-    {
-        A: 'minecraft:hopper',
-        C: 'modern_industrialization:configurable_chest',
-        B: 'sophisticatedstorage:upgrade_base'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_hopper_upgrade'),
-    [
-        ' A ',
-        'DBD',
-        ' C '
-    ],
-    {
-        A: 'minecraft:hopper',
-        C: 'extended_industrialization:large_configurable_chest',
-        B: 'sophisticatedstorage:upgrade_base',
-		D: 'roll_mod:advanced_robot_arm'
-    }
-)
-
-event.shaped(
-    Item.of('sophisticatedstorage:compression_upgrade'),
-    [
-        'ABA',
-        'CDE',
-        'AFA'
-    ],
-    {
-        F: 'minecraft:hopper',
-        C: 'modern_industrialization:packer_double_ingot_template',
-        E: 'modern_industrialization:packer_block_template',
-        D: 'sophisticatedstorage:upgrade_base',
-        A: 'modern_industrialization:steel_plate',
-        B: 'minecraft:piston'
-    }
-)
-
-
-// --- sophisticated storage tier upgrades ---
-
-ServerEvents.recipes(event => {
-    // Remove all existing tier upgrade recipes to avoid conflicts
-    event.remove({ id: /sophisticatedstorage:.*_tier_upgrade/ });
-
-    // Important: keep this specific removal to prevent duplicate recipe issues
-    event.remove({ id: 'sophisticatedstorage:basic_to_iron_tier_from_basic_to_copper_tier' })
-
-    // Material definitions for each tier
-    // Each material provides a plate and a rod for crafting
-    const mats = {
-        bronze:    { p: "modern_industrialization:bronze_plate", r: "modern_industrialization:bronze_rod" },
-        steel:     { p: "modern_industrialization:steel_plate", r: "modern_industrialization:steel_rod" },
-        aluminum:  { p: "modern_industrialization:aluminum_plate", r: "modern_industrialization:aluminum_rod" },
-        stainless: { p: "modern_industrialization:stainless_steel_plate", r: "modern_industrialization:stainless_steel_rod" },
-        titanium:  { p: "modern_industrialization:titanium_plate", r: "modern_industrialization:titanium_rod" }
-    };
-
-    // Helper function to create a shaped tier upgrade recipe
-    // Pattern: plates in corners, rods on edges, input upgrade in center
-    const addUpgrade = (input, output, matKey) => {
-        event.shaped(`sophisticatedstorage:${output}_tier_upgrade`, ["PRP", "RSR", "PRP"], {
-            P: mats[matKey].p,  // Plate material
-            R: mats[matKey].r,  // Rod material
-            S: input             // Source upgrade (what we're upgrading from)
-        });
-    };
-
-    // ----- Basic tier upgrade chain -----
-    // Basic -> Copper -> Iron -> Gold -> Diamond -> Netherite
-    addUpgrade("sophisticatedstorage:basic_tier_upgrade", "basic_to_copper", "bronze");
-    addUpgrade("sophisticatedstorage:basic_to_copper_tier_upgrade", "basic_to_iron", "steel");
-    addUpgrade("sophisticatedstorage:basic_to_iron_tier_upgrade", "basic_to_gold", "aluminum");
-    addUpgrade("sophisticatedstorage:basic_to_gold_tier_upgrade", "basic_to_diamond", "stainless");
-    addUpgrade("sophisticatedstorage:basic_to_diamond_tier_upgrade", "basic_to_netherite", "titanium");
-
-    // ----- Copper tier upgrade chain -----
-    // Upgrade Base -> Copper -> Iron -> Gold -> Diamond -> Netherite
-    addUpgrade("sophisticatedstorage:upgrade_base", "copper_to_iron", "steel");
-    addUpgrade("sophisticatedstorage:copper_to_iron_tier_upgrade", "copper_to_gold", "aluminum");
-    addUpgrade("sophisticatedstorage:copper_to_gold_tier_upgrade", "copper_to_diamond", "stainless");
-    addUpgrade("sophisticatedstorage:copper_to_diamond_tier_upgrade", "copper_to_netherite", "titanium");
-
-    // ----- Iron tier upgrade chain -----
-    // Upgrade Base -> Iron -> Gold -> Diamond -> Netherite
-    addUpgrade("sophisticatedstorage:upgrade_base", "iron_to_gold", "aluminum");
-    addUpgrade("sophisticatedstorage:iron_to_gold_tier_upgrade", "iron_to_diamond", "stainless");
-    addUpgrade("sophisticatedstorage:iron_to_diamond_tier_upgrade", "iron_to_netherite", "titanium");
-
-    // ----- Gold tier upgrade chain -----
-    // Upgrade Base -> Gold -> Diamond -> Netherite
-    addUpgrade("sophisticatedstorage:upgrade_base", "gold_to_diamond", "stainless");
-    addUpgrade("sophisticatedstorage:gold_to_diamond_tier_upgrade", "gold_to_netherite", "titanium");
-
-    // ----- Diamond tier upgrade chain -----
-    // Upgrade Base -> Diamond -> Netherite
-    addUpgrade("sophisticatedstorage:upgrade_base", "diamond_to_netherite", "titanium");
-});
-
-// --- sophisticated storage tier upgrades ---
-
-event.shaped(
-    Item.of('toms_storage:polymorphic_item_filter'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        C: 'modern_industrialization:item_pipe',
-        A: 'modern_industrialization:diamond_dust',
-        B: 'modern_industrialization:configurable_chest',
-        D: 'toms_storage:item_filter'
-    }
-)
-
-event.shaped(
-    Item.of('toms_storage:item_filter'),
-    [
-        'ABA',
-        'BCB',
-        'ABA'
-    ],
-    {
-        B: 'modern_industrialization:item_pipe',
-        C: 'minecraft:hopper',
-        A: 'modern_industrialization:iron_dust'
-    }
-)
-
-event.shaped(
-    Item.of('toms_storage:tag_item_filter'),
-    [
-        'ABA',
-        'CDC',
-        'ABA'
-    ],
-    {
-        B: 'modern_industrialization:item_pipe',
-        A: 'modern_industrialization:gold_dust',
-        C: 'modern_industrialization:configurable_chest',
-        D: 'toms_storage:item_filter'
-    }
-)
-
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:feeding_upgrade'),
     [
         'ABA',
@@ -1756,9 +1056,9 @@ event.shaped(
         E: 'sophisticatedbackpacks:advanced_refill_upgrade',
         B: 'extended_industrialization:robot_auto_feeder'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_feeding_upgrade'),
     [
         'ABC',
@@ -1774,9 +1074,9 @@ event.shaped(
         B: 'yet_another_industrialization:configurable_mixed_storage',
         G: 'modern_industrialization:iridium_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:filter_upgrade'),
     [
         'ABA',
@@ -1789,9 +1089,9 @@ event.shaped(
         D: 'sophisticatedbackpacks:upgrade_base',
         C: 'toms_storage:item_filter'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:compacting_upgrade'),
     [
         'ABA',
@@ -1804,9 +1104,9 @@ event.shaped(
         B: 'minecraft:hopper',
         D: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_filter_upgrade'),
     [
         'ABA',
@@ -1819,9 +1119,9 @@ event.shaped(
         D: 'sophisticatedbackpacks:filter_upgrade',
         B: 'toms_storage:item_filter'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_compacting_upgrade'),
     [
         'ABA',
@@ -1834,9 +1134,9 @@ event.shaped(
         B: 'modern_industrialization:configurable_chest',
         D: 'sophisticatedbackpacks:compacting_upgrade'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:deposit_upgrade'),
     [
         'AAA',
@@ -1849,9 +1149,9 @@ event.shaped(
         B: 'roll_mod:treated_plate',
         C: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:restock_upgrade'),
     [
         'AAA',
@@ -1864,9 +1164,9 @@ event.shaped(
         B: 'roll_mod:treated_plate',
         C: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_restock_upgrade'),
     [
         'AAA',
@@ -1879,9 +1179,9 @@ event.shaped(
         A: 'modern_industrialization:configurable_chest',
         B: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:pickup_upgrade'),
     [
         'ABA',
@@ -1894,9 +1194,9 @@ event.shaped(
         C: 'modern_industrialization:robot_arm',
         D: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_pickup_upgrade'),
     [
         'ABA',
@@ -1908,9 +1208,9 @@ event.shaped(
         C: 'sophisticatedbackpacks:pickup_upgrade',
         B: 'modern_industrialization:configurable_chest'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_pump_upgrade'),
     [
         'ABA',
@@ -1923,9 +1223,9 @@ event.shaped(
         D: 'modern_industrialization:steel_water_pump',
         A: 'modern_industrialization:rubber_sheet'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:xp_pump_upgrade'),
     [
         'ABA',
@@ -1938,9 +1238,9 @@ event.shaped(
         A: 'modern_industrialization:pump',
         B: 'minecraft:experience_bottle'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:smelting_upgrade'),
     [
         'ABA',
@@ -1953,9 +1253,9 @@ event.shaped(
         C: 'sophisticatedbackpacks:upgrade_base',
         D: 'minecraft:furnace'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:void_upgrade'),
     [
         'ABA',
@@ -1968,9 +1268,9 @@ event.shaped(
         C: 'sophisticatedbackpacks:upgrade_base',
         D: 'modern_industrialization:trash_can'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:auto_smelting_upgrade'),
     [
         'ABA',
@@ -1984,9 +1284,9 @@ event.shaped(
         D: 'sophisticatedbackpacks:smelting_upgrade',
         A: 'modern_industrialization:steel_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_void_upgrade'),
     [
         'ABA',
@@ -1999,9 +1299,9 @@ event.shaped(
         B: 'modern_industrialization:configurable_chest',
         D: 'modern_industrialization:trash_can'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:blasting_upgrade'),
     [
         'ABA',
@@ -2014,9 +1314,9 @@ event.shaped(
         C: 'sophisticatedbackpacks:upgrade_base',
         D: 'minecraft:blast_furnace'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:smoking_upgrade'),
     [
         'ABA',
@@ -2029,9 +1329,9 @@ event.shaped(
         C: 'sophisticatedbackpacks:upgrade_base',
         D: 'minecraft:smoker'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:auto_blasting_upgrade'),
     [
         'ABA',
@@ -2045,25 +1345,9 @@ event.shaped(
         E: 'roll_mod:treated_plate',
         A: 'modern_industrialization:steel_plate'
     }
-)
+  )
 
-event.shaped(
-    Item.of('sophisticatedbackpacks:auto_blasting_upgrade'),
-    [
-        'ABA',
-        'CDC',
-        'AEA'
-    ],
-    {
-        D: 'sophisticatedbackpacks:blasting_upgrade',
-        C: 'modern_industrialization:item_pipe',
-        B: 'modern_industrialization:configurable_chest',
-        E: 'roll_mod:treated_plate',
-        A: 'modern_industrialization:steel_plate'
-    }
-)
-
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:alchemy_upgrade'),
     [
         'ABA',
@@ -2077,9 +1361,9 @@ event.shaped(
         D: 'sophisticatedbackpacks:upgrade_base',
         B: 'minecraft:glass_bottle'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:jukebox_upgrade'),
     [
         'ABA',
@@ -2093,9 +1377,9 @@ event.shaped(
         D: 'sophisticatedbackpacks:upgrade_base',
         E: 'minecraft:jukebox'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_alchemy_upgrade'),
     [
         'ABA',
@@ -2109,9 +1393,9 @@ event.shaped(
         C: 'roll_mod:treated_plate',
         A: 'modern_industrialization:steel_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_jukebox_upgrade'),
     [
         'ABA',
@@ -2120,14 +1404,14 @@ event.shaped(
     ],
     {
         E: 'modern_industrialization:analog_circuit',
-        B: 'sophisticatedstorage:iron_chest',
+        B: 'sophisticatedbackpacks:iron_backpack',
         D: 'sophisticatedbackpacks:jukebox_upgrade',
         C: 'roll_mod:treated_plate',
         A: 'modern_industrialization:steel_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stonecutter_upgrade'),
     [
         'ABA',
@@ -2140,9 +1424,9 @@ event.shaped(
         D: 'sophisticatedbackpacks:upgrade_base',
         B: 'minecraft:stonecutter'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:crafting_upgrade'),
     [
         'ABA',
@@ -2155,9 +1439,9 @@ event.shaped(
         C: 'roll_mod:treated_plate',
         D: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:anvil_upgrade'),
     [
         'ABA',
@@ -2170,9 +1454,9 @@ event.shaped(
         C: 'roll_mod:treated_plate',
         D: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:tank_upgrade'),
     [
         'ABA',
@@ -2185,9 +1469,9 @@ event.shaped(
         C: 'modern_industrialization:rubber_sheet',
         B: 'modern_industrialization:steel_tank'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:smithing_upgrade'),
     [
         'ABA',
@@ -2200,9 +1484,9 @@ event.shaped(
         C: 'roll_mod:treated_plate',
         D: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_downgrade_tier_2'),
     [
         'ABA',
@@ -2215,9 +1499,9 @@ event.shaped(
         B: 'modern_industrialization:creosote_bucket',
         C: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_downgrade_tier_1'),
     [
         'ABA',
@@ -2230,9 +1514,9 @@ event.shaped(
         C: 'roll_mod:treated_plate',
         D: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:stack_downgrade_tier_3'),
     [
         'ABA',
@@ -2245,9 +1529,9 @@ event.shaped(
         B: 'modern_industrialization:creosote_bucket',
         C: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:refill_upgrade'),
     [
         'ABA',
@@ -2261,9 +1545,9 @@ event.shaped(
         C: 'roll_mod:treated_plate',
         D: 'sophisticatedbackpacks:upgrade_base'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('sophisticatedbackpacks:advanced_refill_upgrade'),
     [
         'ABA',
@@ -2276,9 +1560,9 @@ event.shaped(
         C: 'roll_mod:treated_plate',
         A: 'modern_industrialization:steel_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('toms_storage:basic_inventory_hopper', 2),
     [
         'ABA',
@@ -2291,9 +1575,9 @@ event.shaped(
         D: 'minecraft:hopper',
         A: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('toms_storage:level_emitter', 2),
     [
         'ABA',
@@ -2306,9 +1590,9 @@ event.shaped(
         C: 'modern_industrialization:bronze_plate',
         A: 'roll_mod:treated_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:rocket_controller'),
     [
         'ABA',
@@ -2320,9 +1604,9 @@ event.shaped(
         B: 'modern_industrialization:tungsten_large_plate',
         C: 'modern_industrialization:turbo_machine_hull'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('modern_industrialization:incoloy_casing'),
     [
         'ABA',
@@ -2334,9 +1618,9 @@ event.shaped(
         B: 'modern_industrialization:incoloy_large_plate',
         C: 'modern_industrialization:titanium_gear'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('modern_industrialization:incoloy_machine_casing_pipe'),
     [
         'ABA',
@@ -2349,9 +1633,9 @@ event.shaped(
         B: 'modern_industrialization:incoloy_rotor',
         C: 'modern_industrialization:large_advanced_motor'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:empty_primitive_battery'),
     [
         'A A',
@@ -2364,9 +1648,9 @@ event.shaped(
         C: 'minecraft:glass_bottle',
         D: 'modern_industrialization:lead_plate'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:primitive_battery'),
     [
         'AAA',
@@ -2380,9 +1664,9 @@ event.shaped(
         D: 'modern_industrialization:zinc_plate',
         E: 'minecraft:glass'
     }
-)
+  )
 
-event.shaped(
+  event.shaped(
     Item.of('roll_mod:superconducting_magnet_base'),
     [
         'A A',
@@ -2392,6 +1676,50 @@ event.shaped(
     {
         A: 'modern_industrialization:niobium_titanium_alloy_ingot'
     }
-)
+  )
+
+  event.shaped(
+    Item.of('toms_storage:polymorphic_item_filter'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'modern_industrialization:item_pipe',
+        A: 'modern_industrialization:diamond_dust',
+        B: 'modern_industrialization:configurable_chest',
+        D: 'toms_storage:item_filter'
+    }
+  )
+
+  event.shaped(
+    Item.of('toms_storage:item_filter'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:item_pipe',
+        C: 'minecraft:hopper',
+        A: 'modern_industrialization:iron_dust'
+    }
+  )
+
+  event.shaped(
+    Item.of('toms_storage:tag_item_filter'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:item_pipe',
+        A: 'modern_industrialization:gold_dust',
+        C: 'modern_industrialization:configurable_chest',
+        D: 'toms_storage:item_filter'
+    }
+  )
 
 })
