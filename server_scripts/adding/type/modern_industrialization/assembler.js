@@ -493,7 +493,7 @@ event.recipes.modern_industrialization.assembler(32, 100)
 event.recipes.modern_industrialization.assembler(32, 100)
 .itemIn("4x modern_industrialization:palladium_plate")
 .itemIn("4x modern_industrialization:emerald_plate")
-.itemIn("2x roll_mod:engraved_crystal_chip")
+.itemIn("2x modern_industrialization:processing_unit")
 .itemIn("1x roll_mod:nether_star_ring")
 .itemOut("1x roll_mod:emitter")
 
