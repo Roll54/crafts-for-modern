@@ -85,7 +85,7 @@ event.recipes.modern_industrialization.mixer(16, 200)
   .itemIn("2x roll_mod:sulfur_berry_pie")
   .itemIn("1x roll_mod:syringe")
   .fluidIn("modern_industrialization:sulfuric_acid", 2000)
-  .itemOut("4x roll_mod:injection_fire_resistance")
+  .itemOut("1x roll_mod:injection_fire_resistance")
 
 event.recipes.modern_industrialization.mixer(24, 300)
   .itemIn("4x minecraft:obsidian")
