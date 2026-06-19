@@ -1,8 +1,13 @@
-ServerEvents.recipes(event => {
-  // Видалення крафтів ракет Tier 1 та Tier 2
-  event.remove({ output: 'ad_astra:tier_1_rocket' })
-  event.remove({ output: 'ad_astra:tier_2_rocket' })
+// kubejs/server_scripts/remove_rockets.js
 
-    event.remove({ output: 'ad_astra:tier_1_rocket' })
-  event.remove({ output: 'ad_astra:tier_2_rocket' })
+ServerEvents.recipes(event => {
+  // Прибираємо самі предмети з гри
+  event.remove({ id: 'ad_astra:tier_1_rocket' })
+  event.remove({ id: 'ad_astra:tier_2_rocket' })
+})
+
+// Ховаємо їх в JEI
+JEIEvents.hideItems(event => {
+  event.hide('ad_astra:tier_1_rocket')
+  event.hide('ad_astra:tier_2_rocket')
 })
