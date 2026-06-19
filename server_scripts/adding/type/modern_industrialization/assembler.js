@@ -1,6 +1,31 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:stainless_steel_tank")
+  .itemIn("1x modern_industrialization:stainless_steel_bolt")
+  .itemIn("2x modern_industrialization:stainless_steel_plate")
+  .itemIn("4x modern_industrialization:stainless_steel_curved_plate")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x ad_astra:gas_tank")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:stainless_steel_tank")
+  .itemIn("1x modern_industrialization:stainless_steel_bolt")
+  .itemIn("1x modern_industrialization:stainless_steel_plate")
+  .itemIn("4x modern_industrialization:stainless_steel_large_plate")
+  .itemIn("1x ad_astra:gas_tank")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x ad_astra:large_gas_tank")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x ad_astra:large_gas_tank")
+  .itemIn("1x modern_industrialization:stainless_steel_rod")
+  .itemIn("1x ad_astra:large_gas_tank")
+  .itemIn("2x modern_industrialization:stainless_steel_large_plate")
+  .fluidIn("modern_industrialization:soldering_alloy", 250)
+  .itemOut("1x ad_astra:oxygen_gear")
+  
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
   .itemIn("12x modern_industrialization:titanium_64_plate")
   .itemIn("4x roll_mod:advanced_robot_arm")
