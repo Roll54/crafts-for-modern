@@ -290,7 +290,7 @@ event.recipes.modern_industrialization.circuit_assembler(32, 600)
 .itemOut("1x modern_industrialization:memory_management_unit")
 
 event.recipes.modern_industrialization.circuit_assembler(64, 100)
-.itemIn("16x modern_industrialization:ruthenium_plate")
+.itemIn("16x modern_industrialization:rhodium_fine_wire")
 .itemIn("2x roll_mod:blue_chip_cpu")
 .itemIn("2x modern_industrialization:or_gate")
 .itemIn("2x modern_industrialization:and_gate")
