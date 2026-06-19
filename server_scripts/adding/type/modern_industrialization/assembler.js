@@ -1,5 +1,30 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.assembler(8, 400)
+  .itemIn("roll_mod:lapotron_laser")
+  .itemIn("4x modern_industrialization:osmiridium_plate")
+  .itemIn("roll_mod:sensor")
+  .itemIn("6x modern_industrialization:processing_unit")
+  .itemIn("8x modern_industrialization:platinum_fine_wire")
+  .itemOut("createcybernetics:brainupgrades_cyberdeck")
+
+event.recipes.modern_industrialization.assembler(8, 400)
+  .itemIn("10x modern_industrialization:aluminum_bolt")
+  .itemIn("4x roll_mod:nylon_fabric")
+  .itemIn("8x roll_mod:nylon_string")
+  .itemIn("8x minecraft:slime_ball")
+  .itemOut("createcybernetics:skinupgrades_syntheticsetules")
+
+event.recipes.modern_industrialization.assembler(8, 400)
+  .itemIn("16x roll_mod:injection_resistance")
+  .itemIn("4x roll_mod:ammonium_chloride_dust")
+  .itemIn("4x modern_industrialization:platinum_fine_wire")
+  .itemIn("modern_industrialization:titanium_large_plate")
+  .itemIn("2x modern_industrialization:titanium_tank")
+  .fluidIn("2000x modern_industrialization:benzene")
+  .fluidIn("1000x extended_industrialization:phosphoric_acid")
+  .itemOut("createcybernetics:skinupgrades_immuno")
+
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x createcybernetics:basecyberware_rightleg")
   .itemIn("1x minecraft:copper_block")
