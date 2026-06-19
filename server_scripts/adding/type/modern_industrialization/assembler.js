@@ -1,6 +1,11 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .fluidIn("modern_industrialization:nylon", 20)
+  .itemOut("1x roll_mod:nylon_string")
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("32x modern_industrialization:platinum_fine_wire")
   .itemIn("6x modern_industrialization:titanium_64_plate")
   .itemIn("8x modern_industrialization:titanium_64_curved_plate")
