@@ -13,6 +13,12 @@ ServerEvents.recipes(event => {
   .itemIn("1x minecraft:gunpowder")
   .itemOut("2x extendedcrafting:luminessence")
 
+event.recipes.modern_industrialization.mixer(16, 200)
+  .itemIn("2x #c:dusts/redstone")
+  .itemIn("1x minecraft:slime_ball")
+  .itemIn("2x #createcybernetics:graphene")
+  .itemOut("4x createcybernetics:graphene_elastomer")
+  
 // Пил
   event.recipes.modern_industrialization.mixer(2, 100)
   .itemIn("2x minecraft:clay_ball")
