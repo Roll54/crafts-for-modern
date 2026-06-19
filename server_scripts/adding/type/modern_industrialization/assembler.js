@@ -1,6 +1,14 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("32x modern_industrialization:platinum_fine_wire")
+  .itemIn("6x modern_industrialization:titanium_64_plate")
+  .itemIn("8x modern_industrialization:titanium_64_curved_plate")
+  .itemIn("1x modern_industrialization:titanium_64_large_plate")
+  .fluidIn("modern_industrialization:soldering_alloy", 2000)
+  .itemOut("1x createcybernetics:exosuit1")
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x modern_industrialization:copper_wire")
   .itemIn("1x modern_industrialization:copper_plate")
   .itemIn("1x minecraft:glass_bottle")
