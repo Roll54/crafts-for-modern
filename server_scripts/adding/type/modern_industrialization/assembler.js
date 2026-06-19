@@ -19,7 +19,8 @@ event.recipes.modern_industrialization.assembler(32, 200)
   .itemOut("createcybernetics:wetware_dragonskin");
 
 event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("createcybernetics:wetware_dragonskin")
+  .itemIn("createcybernetics:bodypart_lungs")
+  .itemIn("createcybernetics:bodypart_firegland")
   .itemIn("#c:tools/knife", 0.0)
   .itemIn("#c:tools/shears", 0.0)
   .fluidIn("modern_industrialization:blood", 1000)
@@ -64,7 +65,7 @@ event.recipes.modern_industrialization.assembler(32, 200)
   .itemIn("#c:tools/knife", 0.0)
   .itemIn("#c:tools/shears", 0.0)
   .fluidIn("modern_industrialization:blood", 1000)
-  .itemOut("modern_industrialization:calcium_sulfate_dust");
+  .itemOut("createcybernetics:wetware_gooeymuscle");
 
 event.recipes.modern_industrialization.assembler(32, 200)
   .itemIn("4x minecraft:cobweb")
@@ -92,7 +93,10 @@ event.recipes.modern_industrialization.assembler(32, 200)
   .itemOut("createcybernetics:wetware_webshooting_leftarm");
 
 event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("createcybernetics:wetware_webshooting_leftarm")
+  .itemIn("createcybernetics:bodypart_lungs")
+  .itemIn("minecraft:elytra")
+  .itemIn("createcybernetics:bodypart_gyroscopicbladder")
+  .itemIn("2x createcybernetics:bodypart_skin")
   .itemIn("#c:tools/knife", 0.0)
   .itemIn("#c:tools/shears", 0.0)
   .fluidIn("modern_industrialization:blood", 1000)
