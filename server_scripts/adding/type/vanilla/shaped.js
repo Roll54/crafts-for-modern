@@ -18,6 +18,20 @@ event.shaped(
 )
 
 event.shaped(
+    Item.of('createcybernetics:graphene_elastomer'),
+    [
+        ' A ',
+        'BCA',
+        ' B '
+    ],
+    {
+        A: '#c:dusts/redstone',
+        C: 'minecraft:slime_ball',
+        B: '##createcybernetics:graphene'
+    }
+)
+    
+event.shaped(
     Item.of('sophisticatedbackpacks:advanced_deposit_upgrade'),
     [
         'ABA',
