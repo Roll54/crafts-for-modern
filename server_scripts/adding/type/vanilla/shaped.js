@@ -86,10 +86,11 @@ event.shaped(
     [
         ' AB',
         ' CA',
-        'B  '
+        'N  '
     ],
     {
         A: 'minecraft:glass',
+        N: 'modern_industrialization:iron_bolt',
         B: 'minecraft:glass_pane',
         C: 'minecraft:glass_bottle'
     }
