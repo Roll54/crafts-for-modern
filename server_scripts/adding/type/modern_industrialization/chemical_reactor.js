@@ -1,10 +1,10 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.chemical_reactor(16, 200)
-.itemIn("1x #c:dusts/fluorite")
+.itemIn("3x #c:dusts/fluorite")
 .fluidIn("modern_industrialization:sulfuric_acid", 14000)
 .fluidOut("modern_industrialization:hydrofluoric_acid", 4000) 
-.itemOut("2x modern_industrialization:calcium_sulfate_dust")
+.itemOut("4x modern_industrialization:calcium_sulfate_dust")
 
 event.recipes.modern_industrialization.chemical_reactor(8, 200)
 .fluidIn("modern_industrialization:ethylene", 1000)
