@@ -1,6 +1,10 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("9x roll_mod:nylon_string")
+  .itemOut("1x roll_mod:nylon_fabric")
+  
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x modern_industrialization:stainless_steel_tank")
   .itemIn("1x modern_industrialization:stainless_steel_bolt")
   .itemIn("2x modern_industrialization:stainless_steel_plate")
