@@ -13,6 +13,8 @@ event.remove({output: 'industrialization_overdrive:pyrolyse_oven'})
 event.remove({output: 'modern_industrialization:magnetite_dust'})
 event.remove({output: 'modern_industrialization:magnalium_ingot'})
 event.remove({output: 'modern_industrialization:replicator'})
+event.remove({ output: "modern_industrialization:quantum_circuit" })
+event.remove({ output: "modern_industrialization:processing_unit" })
 //видалення руди
 event.remove({output: 'modern_industrialization:raw_lead'})
 event.remove({output: 'modern_industrialization:salt_crushed_dust'})
