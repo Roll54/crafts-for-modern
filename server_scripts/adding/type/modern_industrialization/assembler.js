@@ -973,6 +973,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("2x modern_industrialization:advanced_pump")                        // Система життєзабезпечення
   .itemIn("16x modern_industrialization:fluid_pipe")                        // Система життєзабезпечення
   .fluidIn("modern_industrialization:nylon", 1200)          // Герметичний шар – виготовлений із нейлону
+  .itemIn("1x ad_astra:oxygen_gear")
   .itemOut("1x ad_astra:space_suit")
 
   event.recipes.modern_industrialization.assembler(16, 200)
