@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
 
 event.recipes.extended_industrialization.electric_alloy_smelter(4, 400)
-  .itemIn("minecraft:copper_ingot")
-  .itemIn("modern_industrialization:redstone_alloy_ingot")
-  .itemOut("8x ad_astra:calorite_ingot")
+  .itemIn("1x minecraft:copper_ingot")
+  .itemIn("1x modern_industrialization:redstone_alloy_ingot")
+  .itemOut("8x ad_astra:calorite_ingot");
 
 event.recipes.extended_industrialization.electric_alloy_smelter(4, 400)
   .itemIn("roll_mod:bismuth_dust")
