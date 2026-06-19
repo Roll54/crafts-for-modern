@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+  event.remove({ output: "ad_astra:radio" })
   event.remove({ output: "ad_astra:jet_suit" })
   event.remove({ output: "ad_astra:jet_suit_boots" })
   event.remove({ output: "ad_astra:jet_suit_helmet" })
