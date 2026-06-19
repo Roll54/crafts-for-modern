@@ -2,6 +2,13 @@ ServerEvents.recipes(event => {
   
 event.shapeless('4x roll_mod:treated_planks', ['roll_mod:treated_log']);
 
+event.shapeless(
+    Item.of('roll_mod:nylon_fabric'),
+    [
+        '9x roll_mod:nylon_string'
+    ]
+)
+
 event.custom({
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
