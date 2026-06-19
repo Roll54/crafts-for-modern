@@ -1,5 +1,159 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:bodypart_gills")
+  .itemIn("4x minecraft:prismarine_crystals")
+  .itemIn("2x createcybernetics:bodypart_skin")
+  .itemIn("createcybernetics:bodypart_lungs")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_waterbreathinglungs");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("4x createcybernetics:bodypart_skin")
+  .itemIn("3x createcybernetics:bodypart_dragonscale")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_dragonskin");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:wetware_dragonskin")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_firebreathinglungs");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("2x createcybernetics:bodypart_muscle")
+  .itemIn("minecraft:ominous_bottle")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_ravagertendons");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:bodypart_eyeballs")
+  .itemIn("createcybernetics:bodypart_guardianretina")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_guardianeye");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("8x roll_mod:skulk_spores")
+  .itemIn("createcybernetics:bodypart_lungs")
+  .itemIn("2x minecraft:echo_shard")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_sculklungs");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:bodypart_muscle")
+  .itemIn("16x modern_industrialization:electrum_fine_wire")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_electrocytemuscle");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:bodypart_muscle")
+  .itemIn("4x minecraft:slime_ball")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("modern_industrialization:calcium_sulfate_dust");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("4x minecraft:cobweb")
+  .itemIn("createcybernetics:bodypart_intestines")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_webshootingintestines");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:bodypart_skin")
+  .itemIn("8x minecraft:string")
+  .itemIn("4x minecraft:spider_eye")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_spidereyes");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("4x minecraft:cobweb")
+  .itemIn("createcybernetics:bodypart_leftarm")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_webshooting_leftarm");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:wetware_webshooting_leftarm")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_aerostasisgyrobladder");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("4x createcybernetics:bodypart_skin")
+  .itemIn("8x minecraft:short_grass")
+  .itemIn("4x createcybernetics:bodypart_intestines")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_grassfedstomach");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("4x minecraft:cobweb")
+  .itemIn("createcybernetics:bodypart_rightarm")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_webshooting_rightarm");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("8x roll_mod:calcium_dust")
+  .itemIn("4x minecraft:porkchop")
+  .itemIn("2x createcybernetics:bodypart_skin")
+  .itemIn("3x minecraft:rotten_flesh")
+  .itemIn("createcybernetics:bodypart_axolotlmarrow")
+  .itemIn("8x minecraft:bone")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_blastemaskeleton");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:bodypart_intestines")
+  .itemIn("2x createcybernetics:bodypart_skin")
+  .itemIn("4x minecraft:ink_sac")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_tacticalinksac");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("createcybernetics:bodypart_heart")
+  .itemIn("4x minecraft:sculk")
+  .itemIn("4x roll_mod:skulk_spores")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_sculkheart");
+
+event.recipes.modern_industrialization.assembler(32, 200)
+  .itemIn("2x minecraft:sculk")
+  .itemIn("2x minecraft:echo_shard")
+  .itemIn("2x roll_mod:skulk_spores")
+  .itemIn("#c:tools/knife", 0.0)
+  .itemIn("#c:tools/shears", 0.0)
+  .fluidIn("modern_industrialization:blood", 1000)
+  .itemOut("createcybernetics:wetware_wardenantlers");
+  
 event.recipes.modern_industrialization.assembler(8, 400)
   .itemIn("roll_mod:lapotron_laser")
   .itemIn("4x modern_industrialization:osmiridium_plate")
@@ -24,64 +178,6 @@ event.recipes.modern_industrialization.assembler(8, 400)
   .fluidIn("2000x modern_industrialization:benzene")
   .fluidIn("1000x extended_industrialization:phosphoric_acid")
   .itemOut("createcybernetics:skinupgrades_immuno")
-
-event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("createcybernetics:bodypart_gills")
-  .itemIn("4x minecraft:prismarine_crystals")
-  .itemIn("2x createcybernetics:bodypart_skin")
-  .itemIn("createcybernetics:bodypart_lungs")
-  .itemIn("#c:tools/knife", 0.0)
-  .itemIn("#c:tools/shears", 0.0)
-  .fluidOut("modern_industrialization:blood", 1000)
-  .itemOut("createcybernetics:wetware_waterbreathinglungs");
-
-event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("4x createcybernetics:bodypart_skin")
-  .itemIn("3x createcybernetics:bodypart_dragonscale")
-  .itemIn("#c:tools/knife", 0.0)
-  .itemIn("#c:tools/shears", 0.0)
-  .fluidOut("modern_industrialization:blood", 1000)
-  .itemOut("createcybernetics:wetware_dragonskin");
-
-event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("createcybernetics:wetware_dragonskin")
-  .itemIn("#c:tools/knife", 0.0)
-  .itemIn("#c:tools/shears", 0.0)
-  .fluidOut("modern_industrialization:blood", 1000)
-  .itemOut("createcybernetics:wetware_firebreathinglungs");
-
-event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("2x createcybernetics:bodypart_muscle")
-  .itemIn("minecraft:ominous_bottle")
-  .itemIn("#c:tools/knife", 0.0)
-  .itemIn("#c:tools/shears", 0.0)
-  .fluidOut("modern_industrialization:blood", 1000)
-  .itemOut("createcybernetics:wetware_ravagertendons");
-
-event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("createcybernetics:bodypart_eyeballs")
-  .itemIn("createcybernetics:bodypart_guardianretina")
-  .itemIn("#c:tools/knife", 0.0)
-  .itemIn("#c:tools/shears", 0.0)
-  .fluidOut("modern_industrialization:blood", 1000)
-  .itemOut("createcybernetics:wetware_guardianeye");
-
-event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("8x roll_mod:skulk_spores")
-  .itemIn("createcybernetics:bodypart_lungs")
-  .itemIn("2x minecraft:echo_shard")
-  .itemIn("#c:tools/knife", 0.0)
-  .itemIn("#c:tools/shears", 0.0)
-  .fluidOut("modern_industrialization:blood", 1000)
-  .itemOut("createcybernetics:wetware_sculklungs");
-
-event.recipes.modern_industrialization.assembler(32, 200)
-  .itemIn("createcybernetics:bodypart_muscle")
-  .itemIn("16x modern_industrialization:electrum_fine_wire")
-  .itemIn("#c:tools/knife", 0.0)
-  .itemIn("#c:tools/shears", 0.0)
-  .fluidOut("modern_industrialization:blood", 1000)
-  .itemOut("createcybernetics:wetware_electrocytemuscle");
 
 event.recipes.modern_industrialization.assembler(32, 200)
   .itemIn("createcybernetics:bodypart_muscle")
