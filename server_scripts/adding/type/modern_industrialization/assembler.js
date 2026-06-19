@@ -329,7 +329,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x modern_industrialization:titanium_curved_plate")
   .itemIn("2x modern_industrialization:cadmium_battery")
   .itemIn("2x modern_industrialization:annealed_copper_wire")
-  .itemOut("1x createcybernetics:organsupgrade_densebattery")
+  .itemOut("1x createcybernetics:organsupgrades_battery")
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x modern_industrialization:electrum_fine_wire")
@@ -498,7 +498,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("modern_industrialization:lv_mv_transformer")
   .itemIn("8x modern_industrialization:chromium_plate")
   .itemIn("roll_mod:energium_battery")
-  .itemOut("createcybernetics:organsupgrades_battery");
+  .itemOut("createcybernetics:organsupgrade_densebattery");
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("6x minecraft:quartz")
