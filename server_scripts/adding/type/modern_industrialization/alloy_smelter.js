@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-event.recipes.modern_industrialization.compressor(4, 400)
+event.recipes.extended_industrialization.electric_alloy_smelter(4, 400)
   .itemIn("minecraft:copper_ingot")
   .itemIn("modern_industrialization:redstone_alloy_ingot")
   .itemOut("8x ad_astra:calorite_ingot")
