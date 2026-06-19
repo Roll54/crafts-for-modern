@@ -390,7 +390,7 @@ event.recipes.modern_industrialization.chemical_reactor(64, 100)
 
 event.recipes.modern_industrialization.chemical_reactor(32, 600)
 .itemIn("8x #roll_mod:good_for_crystal_chip")
-.fluidIn("extended_industrialization:phosphoric_acid", 1000)
+.fluidIn("1000x extended_industrialization:phosphoric_acid")
 .itemOut("1x roll_mod:raw_crystal_chip_parts")
 .itemOut("1x roll_mod:raw_crystal_chip_parts", 0.5)
 .itemOut("1x roll_mod:obsidian_dust")
@@ -399,6 +399,16 @@ event.recipes.modern_industrialization.chemical_reactor(32, 600)
 .itemIn("30x roll_mod:raw_crystal_chip_parts")
 .itemIn("16x modern_industrialization:ruthenium_fine_wire")
 .itemIn("4x modern_industrialization:gold_plate")
-.fluidIn("extended_industrialization:phosphoric_acid", 1000)
+.fluidIn("1000x extended_industrialization:phosphoric_acid")
 .itemOut("1x roll_mod:raw_crystal_chip")
+
+event.recipes.modern_industrialization.chemical_reactor(32, 400)
+.itemIn("21x roll_mod:apatite_dust")
+.fluidIn("35000x modern_industrialization:sulfuric_acid")
+.fluidOut("24000x extended_industrialization:phosphoric_acid")
+.fluidOut("2000x modern_industrialization:hydrofluoric_acid")
+.itemOut("30x modern_industrialization:calcium_sulfate_dust")
+
+
+
 })
