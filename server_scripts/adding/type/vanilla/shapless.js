@@ -9,6 +9,11 @@ event.shapeless(
     ]
 )
 
+event.shapeless('8x createcybernetics:andouille_sausage', [
+    '4x createcybernetics:ground_offal',
+    'createcybernetics:bodypart_intestines'
+])
+
 event.custom({
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
