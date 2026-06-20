@@ -237,7 +237,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x minecraft:glass_bottle")
   .itemIn("1x modern_industrialization:lead_plate")
   .fluidIn("modern_industrialization:soldering_alloy", 1000)
-  .itemOut("1x roll_mod:primitive_battery")
+  .itemOut("1x roll_mod:empty_primitive_battery")
 
 event.recipes.modern_industrialization.assembler(4, 200)
   .itemIn("8x roll_mod:nylon_string")
