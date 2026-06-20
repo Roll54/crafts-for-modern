@@ -41,7 +41,6 @@ ServerEvents.recipes(event => {
   event.remove({ output: "sophisticatedstorage:advanced_alchemy_upgrade" })
   event.remove({ output: "sophisticatedstorage:hopper_upgrade" })
   event.remove({ output: "sophisticatedstorage:advanced_hopper_upgrade" })
-  event.remove({ output: "sophisticatedstorage:upgrade_base" })
   event.remove({ output: "sophisticatedstorage:chipped/carpenters_table_upgrade" })
   event.remove({ output: "sophisticatedstorage:chipped/loom_table_upgrade" })
   event.remove({ output: "sophisticatedstorage:chipped/mason_table_upgrade" })
