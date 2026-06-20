@@ -912,7 +912,7 @@ event.shaped(
     ],
     {
         B: 'minecraft:leather',
-        C: 'sophisticatedbackpacks:iron_backpack',
+        C: '#c:chests',
         A: 'minecraft:string'
     }
   )
