@@ -1,5 +1,24 @@
 ServerEvents.recipes(event => {
 
+event.custom({
+      type: 'farmersdelight:cooking',
+      container: {
+          id: 'minecraft:bowl',
+          count: 1
+      },
+      cookingtime: 200,
+      experience: 0.35,
+      ingredients: [
+          { item: 'createcybernetics:cooked_brain' },
+          { item: 'minecraft:potato' },
+          { item: 'farmersdelight:onion' }
+      ],
+      recipe_book_tab: 'meals',
+      result: {
+          id: 'createcybernetics:brain_stew',
+          count: 1
+      }
+  })
 
 event.custom({
   type: 'farmersdelight:cooking',
