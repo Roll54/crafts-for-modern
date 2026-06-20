@@ -15,6 +15,10 @@ event.custom({
     count: 1,
     id: "roll_mod:herbicide_tier_1"
   },
+  container: {
+    count: 1,
+    id: "minecraft:glass_bottle"
+  },
   unit: "millibuckets"
 })
 
