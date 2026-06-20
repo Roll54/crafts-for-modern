@@ -1,4 +1,7 @@
 ServerEvents.recipes(event => {
+  event.remove({ output: "ad_astra:steel_engine" })
+  event.remove({ output: "ad_astra:oxygen_gear" })
+  event.remove({ output: "ad_astra:rocket_nose_cone" })
   event.remove({ output: "ad_astra:ti_69" })
   event.remove({ output: "ad_astra:etrionic_blast_furnace" })
   event.remove({ output: "ad_astra:fuel_refinery" })
