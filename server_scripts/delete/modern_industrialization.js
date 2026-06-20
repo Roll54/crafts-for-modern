@@ -1,5 +1,13 @@
 ServerEvents.recipes(event => {
 
+event.remove({ output: "extended_industrialization:electric_mining_drill" })
+event.remove({ output: "extended_industrialization:electric_chainsaw" })
+event.remove({ output: "modern_industrialization:quantum_circuit_board" })
+event.remove({ output: "modern_industrialization:arithmetic_logic_unit" })
+event.remove({ output: "modern_industrialization:random_access_memory" })
+event.remove({ output: "modern_industrialization:qubit" })
+event.remove({ output: "modern_industrialization:memory_management_unit" })
+event.remove({ output: "modern_industrialization:gravichestplate" })
 event.remove({ output: "modern_industrialization:quantum_helmet" })
 event.remove({ output: "modern_industrialization:quantum_chestplate" })
 event.remove({ output: "modern_industrialization:quantum_leggings" })
