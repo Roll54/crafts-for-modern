@@ -14,7 +14,6 @@ event.smelting('createcybernetics:cooked_brain', 'createcybernetics:bodypart_bra
 event.smelting('createcybernetics:cooked_heart', 'createcybernetics:bodypart_heart').xp(0.35)
 event.smelting('createcybernetics:cooked_liver', 'createcybernetics:bodypart_liver').xp(0.35)
 event.smelting('createcybernetics:roasted_andouille', 'createcybernetics:andouille_sausage').xp(0.35)
-event.smelting('createcybernetics:cooked_ground_offal', 'createcybernetics:ground_offal').xp(0.35)
 event.smelting('createcybernetics:bone_marrow', 'minecraft:bone').xp(0.35)
 
 event.smelting('modern_industrialization:antimony_ingot', '#roll_mod:ores/antimony')
