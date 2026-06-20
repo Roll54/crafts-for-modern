@@ -60,6 +60,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: "ad_astra:wheel" })
   event.remove({ output: "ad_astra:photovoltaic_etrium_cell" })
   event.remove({ output: "ad_astra:etrionic_capacitor" })
+  event.remove({ output: "ad_astra:steel_block" })
 
   event.remove({ id: "ad_astra:nasa_workbench/tier_1_rocket_from_nasa_workbench" })
   event.remove({ id: "ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench" })
