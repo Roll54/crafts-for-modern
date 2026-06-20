@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-
     event.custom({
         type: 'farmersdelight:cutting',
         ingredients: [
@@ -9,6 +8,6 @@ ServerEvents.recipes(event => {
             { item: 'createcybernetics:ground_offal', count: 1 }
         ],
         sound: 'farmersdelight:block.cutting_board.knife',
-        tool: { tag: 'c:tools/knives' }
+        tool: { tag: 'c:tools/knife' }
     })
 })
