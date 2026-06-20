@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.photolithographer(256, 400)
-    .itemIn("2x roll_mod:lapotron_laser", 0.005)
+    .itemIn("2x roll_mod:energium_laser", 0.005)
     .itemIn("1x roll_mod:advanced_robot_arm", 0.0)
     .itemIn("1x roll_mod:quartz_lamp", 0.005)
     .itemIn("24x roll_mod:carbon_fiber")
