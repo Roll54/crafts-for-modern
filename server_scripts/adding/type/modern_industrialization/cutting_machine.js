@@ -1,5 +1,10 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.cutting_machine(8, 1600)
+    .itemIn("1x roll_mod:blue_wafer_ram")
+    .fluidIn("extended_industrialization:distilled_water", 1000)
+    .itemOut("48x roll_mod:blue_chip_ram")
+  
 // Шестерні
   event.recipes.modern_industrialization.cutting_machine(8, 400)
   .itemIn("1x modern_industrialization:bronze_block")
