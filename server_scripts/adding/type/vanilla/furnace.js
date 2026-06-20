@@ -10,6 +10,13 @@ event.smelting('2x minecraft:lapis_lazuli', 'roll_mod:raw_lapis_lazuli')
 
 
 //mods
+event.smelting('createcybernetics:cooked_bodypart_brain', 'createcybernetics:bodypart_brain').xp(0.35)
+event.smelting('createcybernetics:cooked_bodypart_heart', 'createcybernetics:bodypart_heart').xp(0.35)
+event.smelting('createcybernetics:cooked_bodypart_liver', 'createcybernetics:bodypart_liver').xp(0.35)
+event.smelting('createcybernetics:cooked_andouille_sausage', 'createcybernetics:andouille_sausage').xp(0.35)
+event.smelting('createcybernetics:cooked_ground_offal', 'createcybernetics:ground_offal').xp(0.35)
+event.smelting('createcybernetics:bone_marrow', 'minecraft:bone').xp(0.35)
+
 event.smelting('modern_industrialization:antimony_ingot', '#roll_mod:ores/antimony')
 event.smelting('modern_industrialization:silver_ingot', '#roll_mod:ores/silver')
 event.smelting('modern_industrialization:nickel_ingot', '#roll_mod:ores/nickel')
