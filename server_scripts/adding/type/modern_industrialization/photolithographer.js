@@ -1,5 +1,18 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.photolithographer(256, 400)
+    .itemIn("24x roll_mod:carbon_fiber")
+    .itemIn("16x modern_industrialization:antimony_dust")
+    .itemIn("2x modern_industrialization:chrome_vanadium_steel_plate")
+    .itemIn("24x modern_industrialization:platinum_fine_wire")
+    .itemIn("1x roll_mod:blue_wafer")
+    .itemIn("16x modern_industrialization:titanium_dust")
+    .itemIn("2x roll_mod:lapotron_laser", 0.005)
+    .itemIn("1x roll_mod:advanced_robot_arm", 0.0)
+    .itemIn("1x roll_mod:quartz_lamp", 0.005)
+    .fluidIn("modern_industrialization:argon", 1000)
+    .itemOut("1x roll_mod:blue_wafer_ram")
+
   // ===== AE2 PROCESSORS =====
 
   event.recipes.modern_industrialization.photolithographer(64, 100)
