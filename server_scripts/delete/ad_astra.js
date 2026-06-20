@@ -1,4 +1,11 @@
 ServerEvents.recipes(event => {
+  event.remove({ output: "ad_astra:ti_69" })
+  event.remove({ output: "ad_astra:etrionic_blast_furnace" })
+  event.remove({ output: "ad_astra:fuel_refinery" })
+  event.remove({ output: "ad_astra:oxygen_loader" })
+  event.remove({ output: "ad_astra:cable_duct" })
+  event.remove({ output: "ad_astra:fluid_pipe_duct" })
+  event.remove({ output: "ad_astra:oxygen_sensor" })
   event.remove({ output: "ad_astra:calorite_engine" })
   event.remove({ output: "ad_astra:calorite_ingot" })
   event.remove({ output: "ad_astra:calorite_plate" })
