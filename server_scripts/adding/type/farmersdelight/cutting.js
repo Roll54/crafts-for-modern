@@ -13,7 +13,6 @@ event.custom({
             }
         }
     ],
-    sound: 'farmersdelight:block.cutting_board.knife',
     tool: {
         tag: 'c:tools/knife'
     }
