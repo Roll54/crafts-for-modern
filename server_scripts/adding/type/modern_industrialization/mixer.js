@@ -165,7 +165,7 @@ event.recipes.modern_industrialization.mixer(24, 300)
 
 event.recipes.modern_industrialization.mixer(4, 100)
 .itemIn("5x modern_industrialization:steel_dust")
-.itemIn("3x modern_industrialization:nickel_dust")
+.itemIn("3x #c:dusts/nickel")
 .itemIn("1x #c:dusts/gold")
 .itemIn("1x #c:dusts/silver")
 .itemOut("10x modern_industrialization:black_steel_dust")
