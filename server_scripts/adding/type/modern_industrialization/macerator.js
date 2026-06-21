@@ -38,6 +38,6 @@ event.recipes.modern_industrialization.macerator(64, 20)
 
 event.recipes.modern_industrialization.macerator(2, 100)
 .itemIn("8x roll_mod:sulfur_berry")
-.itemOut("1x modern_industrialization:sulfur_dust")
+.itemOut("1x roll_mod:sulfur_dust")
   
 })
