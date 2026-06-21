@@ -9,7 +9,9 @@ event.shapeless(
     ]
 )
 
-event.shapeless("roll_mod:coal_dust", ["9x modern_industrialization:coal_tiny_dust"])
+event.shapeless('roll_mod:coal_dust', [
+    '9x modern_industrialization:coal_tiny_dust'
+])
   
 event.shapeless('8x createcybernetics:andouille_sausage', [
     '4x createcybernetics:ground_offal',
