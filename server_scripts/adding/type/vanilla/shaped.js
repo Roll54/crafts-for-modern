@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('chipped:carpenters_table'),
+    [
+        'A B',
+        'CDC',
+        'CCC'
+    ],
+    {
+        D: 'minecraft:crafting_table',
+        B: 'minecraft:iron_ingot',
+        C: '##minecraft:planks',
+        A: '##minecraft:axes'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:weed_manager'),
     [
         'ABA',
