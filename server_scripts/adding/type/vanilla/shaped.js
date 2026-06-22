@@ -1,6 +1,18 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('minecraft:clay_ball'),
+    [
+        'AA ',
+        'AA ',
+        '   '
+    ],
+    {
+        A: 'roll_mod:clay_dust'
+    }
+)
+
+event.shaped(
     Item.of('modern_industrialization:fire_clay_dust', 3),
     [
         'ABC',
