@@ -1,5 +1,20 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.assembler(2, 200)
+  .itemIn("sophisticatedbackpacks:upgrade_base")
+  .itemIn("ae2:spatial_storage_cell_2")
+  .itemIn("2x ae2:wireless_receiver")
+  .itemIn("4x modern_industrialization:processing_unit")
+  .itemIn("modern_industrialization:osmiridium_large_plate")
+  .itemOut("sophisticatedbackpacks:mob_catcher_upgrade")
+
+event.recipes.modern_industrialization.assembler(2, 200)
+  .itemIn("ae2:spatial_storage_cell_16")
+  .itemIn("roll_mod:quantum_star")
+  .itemIn("sophisticatedbackpacks:mob_catcher_upgrade")
+  .itemIn("minecraft:wither_skeleton_skull")
+  .itemOut("sophisticatedbackpacks:advanced_mob_catcher_upgrade")
+  
 event.recipes.modern_industrialization.assembler(32, 200)
   .itemIn("createcybernetics:bodypart_gills")
   .itemIn("4x minecraft:prismarine_crystals")
