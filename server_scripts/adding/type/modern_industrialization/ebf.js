@@ -53,6 +53,11 @@ ServerEvents.recipes(event => {
   
 
 // Пил у рідини
+
+  event.recipes.modern_industrialization.blast_furnace(4, 100)
+  .itemIn("1x #c:dusts/redstone")
+  .fluidOut("modern_industrialization:molten_redstone", 90)
+  
   event.recipes.modern_industrialization.blast_furnace(4, 1200)
   .itemIn("1x modern_industrialization:soldering_alloy_block")
   .fluidOut("modern_industrialization:soldering_alloy", 1000)
