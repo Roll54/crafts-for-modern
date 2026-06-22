@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 
+event.remove({ id: "modern_industrialization:materials/electrolyzer/bauxite" })
 event.remove({ id: "modern_industrialization:materials/mixer/lubricant" })
 event.remove({ output: "industrialization_overdrive:vajra" })
 event.remove({ output: "extended_industrialization:electric_mining_drill" })
