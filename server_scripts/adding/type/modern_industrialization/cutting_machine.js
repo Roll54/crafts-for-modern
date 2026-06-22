@@ -57,6 +57,11 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemOut("4x modern_industrialization:stainless_steel_gear")
 
   event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x #c:storage_blocks/netherite")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:netherite_gear")
+    
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemIn("1x modern_industrialization:titanium_block")
   .fluidIn("modern_industrialization:lubricant", 20)
   .itemOut("4x modern_industrialization:titanium_gear")
