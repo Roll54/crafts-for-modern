@@ -8,6 +8,10 @@ event.recipes.modern_industrialization.macerator(16, 800)
 event.recipes.modern_industrialization.macerator(2, 100)
 .itemIn("1x roll_mod:agar_gel")
 .itemOut("1x roll_mod:agar_dust")
+
+event.recipes.modern_industrialization.macerator(2, 100)
+.itemIn("1x minecraft:clay_ball")
+.itemOut("1x roll_mod:clay_dust")
 /*
 event.recipes.modern_industrialization.macerator(2, 200)
 .itemIn("1x #c:magnetite_ores")
