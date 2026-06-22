@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+event.remove({ id: "modern_industrialization:materials/mixer/fire_clay_dust" })
+event.remove({ id: "modern_industrialization:materials/fire_clay_dust" })
 event.remove({ id: "modern_industrialization:materials/mixer/oil_to_rubber_sheet" })
 event.remove({ id: "modern_industrialization:materials/mixer/rubber_sheet_from_synthetic" })
 event.remove({ id: "modern_industrialization:materials/electrolyzer/bauxite" })
