@@ -2,6 +2,16 @@ ServerEvents.recipes(event => {
   
 event.shapeless('4x roll_mod:treated_planks', ['roll_mod:treated_log']);
 
+event.shapeless("toms_storage:paint_kit", [
+      "sophisticatedstorage:paintbrush",
+      "minecraft:green_dye",
+      "minecraft:black_dye",
+      "minecraft:white_dye",
+      "minecraft:blue_dye",
+      "minecraft:red_dye",
+      "minecraft:bucket"
+  ])
+
 event.shapeless(
     Item.of('roll_mod:nylon_fabric'),
     [
