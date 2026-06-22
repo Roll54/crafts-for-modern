@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
   .fluidOut("modern_industrialization:creosote", 12000, 0.5)
 
   event.recipes.modern_industrialization.pyrolyse_oven(48, 400)
-  .itemIn("16x modern_industrialization:coal_dust")
+  .itemIn("16x #c:dusts/coal")
   .fluidIn("modern_industrialization:steam", 1000)
   .itemOut("16x modern_industrialization:coke_dust")
   .fluidOut("modern_industrialization:creosote", 8000, 0.5)
