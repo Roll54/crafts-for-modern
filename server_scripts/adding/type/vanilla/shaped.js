@@ -2,12 +2,13 @@ ServerEvents.recipes(event => {
 
 event.shaped("modern_industrialization:fire_clay_dust", 3, [
     "BCA",
-    "BCA"
-    ], {
-        C: "modern_industrialization:brick_dust",
-        B: "roll_mod:clay_dust",                     
-        A: "#c:dusts/bauxite"                   
-    })
+    "BCA",
+    "   "  // додаємо порожній третій рядок
+], {
+    C: "modern_industrialization:brick_dust",
+    B: "roll_mod:clay_dust",                     
+    A: "#c:dusts/bauxite"                   
+})
     
 event.shaped(
     Item.of('chipped:carpenters_table'),
