@@ -10,6 +10,21 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemIn("1x modern_industrialization:bronze_block")
   .fluidIn("modern_industrialization:lubricant", 20)
   .itemOut("4x modern_industrialization:bronze_gear")
+    
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x #c:storage_blocks/gold")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:gold_gear")
+
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x #c:storage_blocks/iron")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:iron_gear")
+
+   event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x #c:storage_blocks/tin")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:tin_gear")
 
   event.recipes.modern_industrialization.cutting_machine(8, 400)
   .itemIn("1x #c:storage_blocks/copper")
