@@ -26,9 +26,9 @@ event.recipes.modern_industrialization.mixer(16, 200)
   
 // Пил
   event.recipes.modern_industrialization.mixer(2, 100)
-  .itemIn("2x minecraft:clay_ball")
+  .itemIn("2x roll_mod:clay_dust")
   .itemIn("2x modern_industrialization:brick_dust")
-  .itemIn("2x modern_industrialization:bauxite_dust")
+  .itemIn("2x #c:dusts/bauxite")
   .itemOut("6x modern_industrialization:fire_clay_dust")
 
   event.recipes.modern_industrialization.mixer(2, 100)
