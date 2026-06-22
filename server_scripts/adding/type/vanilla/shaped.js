@@ -631,19 +631,6 @@ event.shaped(
   )
 
   event.shaped(
-    Item.of('sophisticatedbackpacks:tank_upgrade'),
-    [
-        'A',
-        'B',
-        'A'
-    ],
-    {
-        B: 'sophisticatedbackpacks:upgrade_base',
-        A: 'modern_industrialization:steel_tank'
-    }
-  )
-
-  event.shaped(
     Item.of('sophisticatedbackpacks:feeding_upgrade'),
     [
         ' A ',
