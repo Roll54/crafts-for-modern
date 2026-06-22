@@ -11,7 +11,7 @@ event.recipes.modern_industrialization.electrolyzer(32, 100)
 .fluidOut("modern_industrialization:ammonia", 1000)
 
 event.recipes.modern_industrialization.electrolyzer(32, 1200)
-.itemIn("10x c:dusts/bauxite")
+.itemIn("10x #c:dusts/bauxite")
 .itemOut("4x modern_industrialization:aluminum_dust")
 .fluidOut("modern_industrialization:oxygen", 2000, 0.5)
     
