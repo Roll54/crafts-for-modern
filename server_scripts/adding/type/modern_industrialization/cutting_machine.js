@@ -38,6 +38,16 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
 
 // Ротори
 
+   event.recipes.modern_industrialization.cutting_machine(512, 600)
+  .itemIn("4x modern_industrialization:chrome_vanadium_steel_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 200)
+  .itemOut("5x modern_industrialization:chrome_vanadium_steel_rotor")
+    
+  event.recipes.modern_industrialization.cutting_machine(512, 600)
+  .itemIn("4x modern_industrialization:incoloy_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 200)
+  .itemOut("5x modern_industrialization:incoloy_rotor")
+
   event.recipes.modern_industrialization.cutting_machine(96, 300)
   .itemIn("4x modern_industrialization:aluminum_large_plate")
   .fluidIn("modern_industrialization:lubricant", 100)
