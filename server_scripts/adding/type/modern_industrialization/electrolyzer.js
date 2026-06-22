@@ -9,6 +9,11 @@ event.recipes.modern_industrialization.electrolyzer(32, 100)
 .itemIn("2x roll_mod:ammonium_chloride_dust")
 .fluidOut("modern_industrialization:chlorine", 1000)
 .fluidOut("modern_industrialization:ammonia", 1000)
+
+event.recipes.modern_industrialization.electrolyzer(32, 1200)
+.itemIn("10x c:dusts/bauxite")
+.itemOut("4x modern_industrialization:aluminum_dust")
+.fluidOut("modern_industrialization:oxygen", 2000, 0.5)
     
 event.recipes.modern_industrialization.electrolyzer(32, 200)
 .itemIn("3x roll_mod:raw_platinum_dust")
