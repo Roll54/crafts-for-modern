@@ -20,7 +20,6 @@ event.recipes.modern_industrialization.electrolyzer(32, 200)
 .itemOut("2x modern_industrialization:platinum_dust")
 .fluidOut("modern_industrialization:chlorine", 1000)
 
-
 event.recipes.modern_industrialization.electrolyzer(32, 200)
 .fluidIn("modern_industrialization:rhodium_sulfate", 1000)
 .itemOut("1x modern_industrialization:rhodium_dust")
@@ -54,7 +53,7 @@ event.recipes.modern_industrialization.electrolyzer(32, 1200)
 .fluidOut("modern_industrialization:oxygen", 2000, 0.5)
 
 event.recipes.modern_industrialization.electrolyzer(32, 100)
-.fluidIn("modern_industrializxation:magnesium_chloride", 1000)
+.fluidIn("modern_industrialization:magnesium_chloride", 1000)
 .itemOut("1x modern_industrialization:magnesium_dust")
 .fluidOut("modern_industrialization:chlorine", 2000)
 
