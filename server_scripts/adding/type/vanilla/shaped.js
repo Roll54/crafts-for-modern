@@ -1,6 +1,19 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('utilitarian:trowel'),
+    [
+        ' AA',
+        ' BA',
+        'B  '
+    ],
+    {
+        A: 'minecraft:iron_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
     Item.of('minecraft:clay_ball'),
     [
         'AA ',
