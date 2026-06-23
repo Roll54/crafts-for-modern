@@ -321,7 +321,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:pyrite_dust",
     centrifuge_byproduct: "roll_mod:chalcopyrite_dust",
-    washer_byproduct: "roll_mod:purified_sulfur_ore"
+    washer_byproduct: "modern_industrialization:calcium_sulfate_dust"
 },
 {
     ore_name: "sphalerite",
