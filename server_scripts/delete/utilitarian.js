@@ -1,13 +1,5 @@
 ServerEvents.recipes(event => {
-  // Toms Storage
-  event.remove({output: 'toms_storage:adv_wireless_terminal'})
-  event.remove({output: 'toms_storage:wireless_terminal'})
-  event.remove({output: 'toms_storage:polymorphic_item_filter'})
-  event.remove({output: 'toms_storage:tag_item_filter'})
-  event.remove({output: 'toms_storage:item_filter'})
-  event.remove({output: 'toms_storage:level_emitter'})
-  event.remove({output: 'toms_storage:basic_inventory_hopper'})
-
+  event.remove({output: 'utilitarian:trowel'})
   event.remove({output: 'utilitarian:snad'})
   event.remove({output: 'utilitarian:red_snad'})
   event.remove({output: 'utilitarian:soul_snad'})
