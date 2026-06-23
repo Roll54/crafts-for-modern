@@ -1,3 +1,10 @@
 ServerEvents.recipes(event => {
     event.remove({output: "toms_storage:paint_kit"})
+    event.remove({output: 'toms_storage:adv_wireless_terminal'})
+    event.remove({output: 'toms_storage:wireless_terminal'})
+    event.remove({output: 'toms_storage:polymorphic_item_filter'})
+    event.remove({output: 'toms_storage:tag_item_filter'})
+    event.remove({output: 'toms_storage:item_filter'})
+    event.remove({output: 'toms_storage:level_emitter'})
+    event.remove({output: 'toms_storage:basic_inventory_hopper'})
 })
