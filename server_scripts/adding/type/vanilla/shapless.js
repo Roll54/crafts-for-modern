@@ -1,4 +1,19 @@
 ServerEvents.recipes(event => {
+
+event.shapeless(
+    Item.of('modern_industrialization:bauxite_block'),
+    [
+        '#c:dusts/bauxite',
+        '#c:dusts/bauxite',
+        '#c:dusts/bauxite',
+        '#c:dusts/bauxite',
+        '#c:dusts/bauxite',
+        '#c:dusts/bauxite',
+        '#c:dusts/bauxite',
+        '#c:dusts/bauxite',
+        '#c:dusts/bauxite'
+    ]
+)
   
 event.shapeless('4x roll_mod:treated_planks', ['roll_mod:treated_log']);
 
