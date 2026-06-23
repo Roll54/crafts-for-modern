@@ -154,8 +154,8 @@ event.recipes.modern_industrialization.mixer(24, 300)
 
 // Tech Reborn
   event.recipes.modern_industrialization.mixer(64, 200)
-  .itemIn("8x minecraft:redstone")
-  .itemIn("4x modern_industrialization:diamond_dust")
+  .itemIn("8x #c:dusts/redstone")
+  .itemIn("4x #c:dusts/diamond")
   .itemIn("4x modern_industrialization:silicon_dust")
   .itemOut("16x roll_mod:energium_dust")
 
