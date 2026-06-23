@@ -2,39 +2,46 @@
 
 ServerEvents.recipes(event => {
   event.custom({
-    type: 'silentgear:conversion',
-    category: 'misc',
-    ingredients: [
-      { item: 'roll_mod:meteorite_sword' }
+    "type": "silentgear:conversion",
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "roll_mod:meteorite_sword"
+      }
     ],
-    result: {
-      id: 'silentgear:sword',
-      count: 1,
-      parts: [
+    "result": {
+      "item": "silentgear:sword",
+      "parts": [
         {
-          item: {
-            id: 'silentgear:sword_blade',
-            count: 1,
-            components: {
-              'silentgear:material_list': [
-                { material: 'silentgear:meteorite_metal' },
-                { material: 'silentgear:meteorite_metal' }
+          "item": {
+            "components": {
+              "silentgear:material_list": [
+                {
+                  "material": "silentgear:meteorite_metal"
+                },
+                {
+                  "material": "silentgear:meteorite_metal"
+                }
               ]
-            }
+            },
+            "count": 1,
+            "id": "silentgear:sword_blade"
           },
-          part: 'silentgear:sword_blade'
+          "part": "silentgear:sword_blade"
         },
         {
-          item: {
-            id: 'silentgear:rod',
-            count: 1,
-            components: {
-              'silentgear:material_list': [
-                { material: 'silentgear:wood' }
+          "item": {
+            "components": {
+              "silentgear:material_list": [
+                {
+                  "material": "silentgear:wood"
+                }
               ]
-            }
+            },
+            "count": 1,
+            "id": "silentgear:rod"
           },
-          part: 'silentgear:rod'
+          "part": "silentgear:rod"
         }
       ]
     }
