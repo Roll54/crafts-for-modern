@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.centrifuge(32, 100)
   .itemIn("2x roll_mod:cinnabar_dust")
-  .itemOut("1x modern_industrialization:sulfur_dust")
+  .itemOut("1x roll_mod:sulfur_dust")
   .fluidOut("modern_industrialization:mercury", 1000)
 
   event.recipes.modern_industrialization.centrifuge(32, 100)
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.centrifuge(8, 200)
 .itemIn("1x roll_mod:sulfur_berry")
-.fluidOut("modern_industrialization:sulfuric_acid", 1000)
+.fluidOut("modern_industrialization:sulfuric_acid", 100)
 
 event.recipes.modern_industrialization.centrifuge(128, 1200)
 .itemIn("32x roll_mod:stone_dust")
