@@ -1,5 +1,10 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.assembler(8, 600)
+  .itemIn("8x modern_industrialization:enderium_plate")
+  .itemIn("1x modern_industrialization:enderium_gear")
+  .itemOut("1x modern_industrialization:enderium_casing")
+  
 event.recipes.modern_industrialization.assembler(64, 600)
   .itemIn("4x modern_industrialization:copper_plate")
   .itemIn("4x modern_industrialization:stainless_steel_gear")
