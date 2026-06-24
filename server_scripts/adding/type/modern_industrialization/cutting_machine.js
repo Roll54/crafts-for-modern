@@ -51,6 +51,11 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .fluidIn("modern_industrialization:lubricant", 20)
   .itemOut("4x modern_industrialization:aluminum_gear")
 
+  event.recipes.modern_industrialization.cutting_machine(8, 800)
+  .itemIn("1x modern_industrialization:magnalium_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:magnalium_gear")
+
   event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemIn("1x modern_industrialization:stainless_steel_block")
   .fluidIn("modern_industrialization:lubricant", 20)
@@ -65,6 +70,26 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemIn("1x modern_industrialization:titanium_block")
   .fluidIn("modern_industrialization:lubricant", 20)
   .itemOut("4x modern_industrialization:titanium_gear")
+
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:titanium_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:titanium_gear")
+
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:chrome_vanadium_steel_gear")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:chrome_vanadium_steel_block")
+
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:polytetrafluoroethylene_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:polytetrafluoroethylene_gear")
+
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:incoloy_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:incoloy_gear")
 
 // Ротори
 
@@ -82,6 +107,16 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemIn("4x modern_industrialization:aluminum_large_plate")
   .fluidIn("modern_industrialization:lubricant", 100)
   .itemOut("5x modern_industrialization:aluminum_rotor")
+
+  event.recipes.modern_industrialization.cutting_machine(64, 200)
+  .itemIn("4x modern_industrialization:bronze_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 100)
+  .itemOut("5x modern_industrialization:bronze_rotor")
+
+  event.recipes.modern_industrialization.cutting_machine(64, 200)
+  .itemIn("4x modern_industrialization:copper_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 100)
+  .itemOut("5x modern_industrialization:copper_rotor")
 
   event.recipes.modern_industrialization.cutting_machine(256, 600)
   .itemIn("4x modern_industrialization:stainless_steel_large_plate")
