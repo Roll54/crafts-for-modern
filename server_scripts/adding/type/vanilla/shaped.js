@@ -14,6 +14,19 @@ event.shaped(
 )
 
 event.shaped(
+    Item.of('modern_industrialization:enderium_casing'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:enderium_plate',
+        B: 'modern_industrialization:enderium_gear'
+    }
+)
+    
+event.shaped(
     Item.of('minecraft:clay_ball'),
     [
         'AA ',
