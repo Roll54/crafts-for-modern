@@ -77,9 +77,9 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemOut("4x modern_industrialization:titanium_gear")
 
   event.recipes.modern_industrialization.cutting_machine(8, 1600)
-  .itemIn("1x modern_industrialization:chrome_vanadium_steel_gear")
+  .itemIn("1x modern_industrialization:chrome_vanadium_steel_block")
   .fluidIn("modern_industrialization:lubricant", 20)
-  .itemOut("4x modern_industrialization:chrome_vanadium_steel_block")
+  .itemOut("4x modern_industrialization:chrome_vanadium_steel_gear")
 
   event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemIn("1x modern_industrialization:polytetrafluoroethylene_block")
@@ -117,6 +117,11 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemIn("4x modern_industrialization:copper_large_plate")
   .fluidIn("modern_industrialization:lubricant", 100)
   .itemOut("5x modern_industrialization:copper_rotor")
+
+  event.recipes.modern_industrialization.cutting_machine(64, 200)
+  .itemIn("4x modern_industrialization:tin_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 100)
+  .itemOut("5x modern_industrialization:tin_rotor")
 
   event.recipes.modern_industrialization.cutting_machine(256, 600)
   .itemIn("4x modern_industrialization:stainless_steel_large_plate")
