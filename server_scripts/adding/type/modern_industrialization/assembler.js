@@ -4,6 +4,12 @@ event.recipes.modern_industrialization.assembler(8, 600)
   .itemIn("8x modern_industrialization:enderium_plate")
   .itemIn("1x modern_industrialization:enderium_gear")
   .itemOut("1x modern_industrialization:enderium_casing")
+
+event.recipes.modern_industrialization.assembler(8, 300)
+    .itemIn('5x modern_industrialization:platinum_plate')
+    .itemIn('1x modern_industrialization:polytetrafluoroethylene_gear')
+    .itemIn('1x modern_industrialization:chemically_inert_ptfe_casing')
+    .itemOut('1x modern_industrialization:polytetrafluoroethylene_machine_casing_pipe')
   
 event.recipes.modern_industrialization.assembler(64, 600)
   .itemIn("4x modern_industrialization:copper_plate")
