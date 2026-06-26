@@ -13,4 +13,9 @@ event.add('roll_mod:good_for_crystal_chip', [
     
 ]);
 
+event.add('c:foods/milk', [
+"minecraft:milk_bucket"
+]);
+
+
 })
