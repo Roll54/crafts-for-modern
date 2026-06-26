@@ -1824,4 +1824,19 @@ event.shaped(
     }
   )
 
+event.shaped(
+    Item.of('silentgear:advanced_upgrade_base'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        D: 'minecraft:gold_ingot',
+        A: 'minecraft:diamond',
+        B: 'minecraft:lapis_lazuli',
+        C: 'silentgear:upgrade_base'
+    }
+)
+
 })

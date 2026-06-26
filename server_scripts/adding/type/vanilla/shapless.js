@@ -117,4 +117,12 @@ event.shapeless(
         'railcraft:sulfur_dust'
     ]
 )
+
+event.shapeless(
+    Item.of('railcraft:tank_minecart'),
+    [
+        'minecraft:minecart',
+        'modern_industrialization:steel_tank'
+    ]
+)
 })

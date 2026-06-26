@@ -2029,4 +2029,11 @@ event.recipes.modern_industrialization.assembler(16, 100)
 .itemIn("1x modern_industrialization:stainless_steel_tank")
 .itemIn("1x modern_industrialization:chrome_vanadium_steel_rotor")
 .itemOut("1x ad_astra:zip_gun")
+
+
+event.recipes.modern_industrialization.assembler(8, 100)
+.itemIn("1x roll_mod:1_circuit", 0.0)
+.itemIn("6x modern_industrialization:iron_plate")
+.itemIn("2x minecraft:glass")
+.itemOut("1x railcraft:white_strengthened_glass")
 })
