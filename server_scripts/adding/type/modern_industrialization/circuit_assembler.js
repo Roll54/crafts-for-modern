@@ -320,7 +320,11 @@ event.recipes.modern_industrialization.circuit_assembler(32, 100)
 .fluidIn("200x modern_industrialization:helium")
 .itemOut("1x roll_mod:blue_wafer_ram")
 
-
+event.recipes.modern_industrialization.circuit_assembler(32, 200)
+.itemIn("4x modern_industrialization:turbo_upgrade")
+.itemIn("1x scannable_unofficial:blank_module")
+.itemIn("1x roll_mod:lapotron_large_crystal")
+.itemOut("1x scannable_unofficial:range_module")
 
 
 
