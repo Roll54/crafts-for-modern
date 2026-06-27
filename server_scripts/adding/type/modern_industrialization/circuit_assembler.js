@@ -317,7 +317,7 @@ event.recipes.modern_industrialization.circuit_assembler(32, 100)
 .itemIn("1x roll_mod:blue_wafer")
 .itemIn("10x roll_mod:lazurite_dust")
 .fluidIn("1000x modern_industrialization:argon")
-.fluidIn("200x modern_industrialization:helium_bucket")
+.fluidIn("200x modern_industrialization:helium")
 .itemOut("1x roll_mod:blue_wafer_ram")
 
 
