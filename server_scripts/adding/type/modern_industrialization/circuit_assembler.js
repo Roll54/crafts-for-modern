@@ -309,4 +309,25 @@ event.recipes.modern_industrialization.circuit_assembler(64, 800)
 .fluidIn("250x modern_industrialization:hydrofluoric_acid")
 .fluidIn("750x modern_industrialization:nitric_acid")
 .itemOut("1x roll_mod:blue_wafer_cpu")
+
+event.recipes.modern_industrialization.circuit_assembler(32, 100)
+.itemIn("8x modern_industrialization:kanthal_cable")
+.itemIn("8x modern_industrialization:annealed_copper_fine_wire")
+.itemIn("8x roll_mod:carbon_fiber")
+.itemIn("1x roll_mod:blue_wafer")
+.itemIn("10x roll_mod:lazurite_dust")
+.fluidIn("1000x modern_industrialization:argon")
+.fluidIn("200x modern_industrialization:helium_bucket")
+.itemOut("1x roll_mod:blue_wafer_ram")
+
+
+
+
+
+
+
+
+
+
+
 })

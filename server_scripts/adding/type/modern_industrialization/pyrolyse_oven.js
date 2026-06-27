@@ -43,10 +43,7 @@ ServerEvents.recipes(event => {
   .itemOut("1x modern_industrialization:iron_dust")
   .fluidOut("modern_industrialization:carbon_monoxide", 8000)
     
-    event.recipes.modern_industrialization.pyrolyse_oven(128, 600)
-  .itemIn("4x modern_industrialization:carbon_dust")
-  .fluidIn("modern_industrialization:acrylonitrile", 50)
-  .itemOut("1x roll_mod:carbon_fiber")
+ 
 
   event.recipes.modern_industrialization.pyrolyse_oven(64, 200)
   .itemIn("5x roll_mod:rhodochrosite_dust")
@@ -77,4 +74,31 @@ event.recipes.modern_industrialization.pyrolyse_oven(64, 200)
 .fluidOut("250x modern_industrialization:mercury")
 .itemOut("1x modern_industrialization:silver_dust")
 
+
+//на видалення
+   event.recipes.modern_industrialization.pyrolyse_oven(128, 600)
+  .itemIn("4x modern_industrialization:carbon_dust")
+  .fluidIn("modern_industrialization:acrylonitrile", 50)
+  .itemOut("1x roll_mod:carbon_fiber")
+//не на видалення
+
+event.recipes.modern_industrialization.pyrolyse_oven(128, 600)
+.itemIn("16x modern_industrialization:carbon_dust")
+.fluidIn("1500x modern_industrialization:polyethylene")
+.itemOut("2x roll_mod:carbon_fiber")
+
+event.recipes.modern_industrialization.pyrolyse_oven(128, 600)
+.itemIn("16x modern_industrialization:carbon_dust")
+.fluidIn("1000x modern_industrialization:polyvinyl_chloride")
+.itemOut("4x roll_mod:carbon_fiber")
+
+event.recipes.modern_industrialization.pyrolyse_oven(128, 400)
+.itemIn("16x modern_industrialization:carbon_dust")
+.fluidIn("1000x modern_industrialization:polytetrafluoroethylene")
+.itemOut("6x roll_mod:carbon_fiber")
+
+event.recipes.modern_industrialization.pyrolyse_oven(128, 400)
+.itemIn("32x modern_industrialization:carbon_dust")
+.fluidIn("1000x modern_industrialization:epoxy")
+.itemOut("16x roll_mod:carbon_fiber")
 })
