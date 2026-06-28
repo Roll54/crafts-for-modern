@@ -413,6 +413,9 @@ event.recipes.modern_industrialization.chemical_reactor(32, 400)
 .fluidOut("2000x modern_industrialization:hydrofluoric_acid")
 .itemOut("30x modern_industrialization:calcium_sulfate_dust")
 
-
-
+event.recipes.modern_industrialization.chemical_reactor(256, 120)
+.itemIn("2x roll_mod:calcium_oxide")
+.fluidIn("4000x modern_industrialization:hydrochloric_acid")
+.itemOut("3x roll_mod:calcium_chloride_dust")
+.fluidOut("3000x minecraft:water");
 })

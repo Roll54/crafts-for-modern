@@ -101,4 +101,10 @@ event.recipes.modern_industrialization.pyrolyse_oven(128, 400)
 .itemIn("32x modern_industrialization:carbon_dust")
 .fluidIn("1000x modern_industrialization:epoxy")
 .itemOut("16x roll_mod:carbon_fiber")
+
+
+event.recipes.modern_industrialization.pyrolyse_oven(32, 100)
+.itemIn("10x roll_mod:calcium_carbonate")
+.fluidIn("6000x modern_industrialization:carbon_dioxide")
+.itemOut("4x roll_mod:calcium_oxide")
 })
