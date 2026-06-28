@@ -158,7 +158,7 @@ event.recipes.modern_industrialization.blast_furnace(128, 800)
     .itemOut("1x modern_industrialization:tungsten_ingot")
 
     event.recipes.modern_industrialization.blast_furnace(32, 100)
-  .itemIn("4x modern_industrialization:quartz_dust")
+  .itemIn("4x #c:dusts/quartz")
   .itemIn("3x roll_mod:sodium_carbonate")
   .itemOut("3x ae2:quartz_glass")
 
