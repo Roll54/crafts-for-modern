@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+// Рослинки з fruitsdelight ПОЧАТОК
     if (!Platform.isLoaded('fruitsdelight')) return;
     if (!Platform.isLoaded('yet_another_industrialization')) return;
 
@@ -14,7 +15,6 @@ ServerEvents.recipes(event => {
         'persimmon',
         'peach',
         'orange',
-        'apple',
         'mangosteen'
     ];
 
@@ -83,15 +83,15 @@ ServerEvents.recipes(event => {
             ],
             item_outputs: [
                 {
-                    amount: 8,
+                    amount: 16,
                     item: `fruitsdelight:${tree}`
                 },
                 {
-                    amount: 16,
+                    amount: 32,
                     item: "minecraft:oak_log"
                 },
                 {
-                    amount: 32,
+                    amount: 64,
                     item: `fruitsdelight:${tree}_leaves`
                 },
                 {
@@ -109,4 +109,6 @@ ServerEvents.recipes(event => {
             ]
         });
     });
+// Рослинки з fruitsdelight КІНЕЦЬ
+    
 });
