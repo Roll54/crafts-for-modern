@@ -1,6 +1,13 @@
 ServerEvents.recipes(event => {
 
 event.shapeless(
+    Item.of('modern_industrialization:beryllium_tiny_dust', 9),
+    [
+        'roll_mod:beryllium_dust'
+    ]
+)
+
+event.shapeless(
     Item.of('modern_industrialization:bauxite_block'),
     [
         '#c:dusts/bauxite',
