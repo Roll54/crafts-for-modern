@@ -132,7 +132,7 @@ event.shaped(
       A: 'modern_industrialization:steel_rod',
       B: 'modern_industrialization:iron_plate',
 })  
-
+/*
   event.shaped(
     Item.of('roll_mod:empty_cartridge'),
     [
@@ -147,7 +147,7 @@ event.shaped(
         A: 'modern_industrialization:polytetrafluoroethylene_plate'
     }
   )
-
+*/
   event.shaped(
     Item.of('roll_mod:syringe'),
     [
@@ -1709,7 +1709,7 @@ event.shaped(
         A: 'roll_mod:treated_plate'
     }
   )
-
+/*
   event.shaped(
     Item.of('roll_mod:rocket_controller'),
     [
@@ -1723,7 +1723,7 @@ event.shaped(
         C: 'modern_industrialization:turbo_machine_hull'
     }
   )
-
+*/
   event.shaped(
     Item.of('modern_industrialization:incoloy_casing'),
     [
