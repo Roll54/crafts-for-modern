@@ -1709,7 +1709,7 @@ event.shaped(
         A: 'roll_mod:treated_plate'
     }
   )
-*/
+/*
   event.shaped(
     Item.of('roll_mod:rocket_controller'),
     [
