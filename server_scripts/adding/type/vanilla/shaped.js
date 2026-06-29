@@ -132,7 +132,7 @@ event.shaped(
       A: 'modern_industrialization:steel_rod',
       B: 'modern_industrialization:iron_plate',
 })  
-
+/*
   event.shaped(
     Item.of('roll_mod:empty_cartridge'),
     [
@@ -147,7 +147,7 @@ event.shaped(
         A: 'modern_industrialization:polytetrafluoroethylene_plate'
     }
   )
-
+*/
   event.shaped(
     Item.of('roll_mod:syringe'),
     [
