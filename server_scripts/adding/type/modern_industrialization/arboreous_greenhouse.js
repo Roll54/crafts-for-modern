@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 // Рослинки з fruitsdelight ПОЧАТОК
+// Початок loop
     if (!Platform.isLoaded('fruitsdelight')) return;
     if (!Platform.isLoaded('yet_another_industrialization')) return;
 
@@ -109,6 +110,98 @@ ServerEvents.recipes(event => {
             ]
         });
     });
+// Кінець loop
+
+    event.custom({
+        type: "yet_another_industrialization:arboreous_greenhouse",
+        duration: 1200,
+        eu: 15,
+        fluid_inputs: [
+            {
+                amount: 1000,
+                fluid: "minecraft:water"
+            }
+        ],
+        item_inputs: [
+            {
+                amount: 1,
+                item: "fruitsdelight:blueberry",
+                probability: 0.0
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 6,
+                item: "fruitsdelight:blueberry"
+            },
+            {
+                amount: 4,
+                item: "minecraft:oak_log"
+            },
+            {
+                amount: 8,
+                item: "fruitsdelight:blueberry_bush"
+            },
+            {
+                amount: 1,
+                item: "fruitsdelight:blueberry_bush",
+                probability: 0.5
+            }
+        ],
+        process_conditions: [
+            {
+                type: "yet_another_industrialization:arboreous_greenhouse_tier",
+                model: "fruitsdelight:blueberry_bush",
+                tier_id: "yet_another_industrialization:greenhouse_tier_1"
+            }
+        ]
+    });
+
+    event.custom({
+        type: "yet_another_industrialization:arboreous_greenhouse",
+        duration: 1200,
+        eu: 15,
+        fluid_inputs: [
+            {
+                amount: 250,
+                fluid: "extended_industrialization:distilled_water"
+            }
+        ],
+        item_inputs: [
+            {
+                amount: 1,
+                item: "fruitsdelight:blueberry",
+                probability: 0.0
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 12,
+                item: "fruitsdelight:blueberry"
+            },
+            {
+                amount: 8,
+                item: "minecraft:oak_log"
+            },
+            {
+                amount: 16,
+                item: "fruitsdelight:blueberry_bush"
+            },
+            {
+                amount: 1,
+                item: "fruitsdelight:blueberry_bush",
+                probability: 1.0
+            }
+        ],
+        process_conditions: [
+            {
+                type: "yet_another_industrialization:arboreous_greenhouse_tier",
+                model: "fruitsdelight:blueberry_bush",
+                tier_id: "yet_another_industrialization:greenhouse_tier_2"
+            }
+        ]
+    });
+    
 // Рослинки з fruitsdelight КІНЕЦЬ
     
 });
