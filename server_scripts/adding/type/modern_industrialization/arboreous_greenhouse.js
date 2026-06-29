@@ -1,0 +1,112 @@
+ServerEvents.recipes(event => {
+    if (!Platform.isLoaded('fruitsdelight')) return;
+    if (!Platform.isLoaded('yet_another_industrialization')) return;
+
+    const fruitTrees = [
+        'bayberry',
+        'kiwi',
+        'fig',
+        'durian',
+        'pear',
+        'hawberry',
+        'lychee',
+        'mango',
+        'persimmon',
+        'peach',
+        'orange',
+        'apple',
+        'mangosteen'
+    ];
+
+    fruitTrees.forEach(tree => {
+        event.custom({
+            type: "yet_another_industrialization:arboreous_greenhouse",
+            duration: 1200,
+            eu: 15,
+            fluid_inputs: [
+                {
+                    amount: 1000,
+                    fluid: "minecraft:water"
+                }
+            ],
+            item_inputs: [
+                {
+                    amount: 1,
+                    item: `fruitsdelight:${tree}_sapling`,
+                    probability: 0.0
+                }
+            ],
+            item_outputs: [
+                {
+                    amount: 8,
+                    item: `fruitsdelight:${tree}`
+                },
+                {
+                    amount: 16,
+                    item: "minecraft:oak_log"
+                },
+                {
+                    amount: 32,
+                    item: `fruitsdelight:${tree}_leaves`
+                },
+                {
+                    amount: 1,
+                    item: `fruitsdelight:${tree}_sapling`,
+                    probability: 0.5
+                }
+            ],
+            process_conditions: [
+                {
+                    type: "yet_another_industrialization:arboreous_greenhouse_tier",
+                    model: `fruitsdelight:${tree}_tree`,
+                    tier_id: "yet_another_industrialization:greenhouse_tier_1"
+                }
+            ]
+        });
+
+        event.custom({
+            type: "yet_another_industrialization:arboreous_greenhouse",
+            duration: 1200,
+            eu: 15,
+            fluid_inputs: [
+                {
+                    amount: 250,
+                    fluid: "extended_industrialization:distilled_water"
+                }
+            ],
+            item_inputs: [
+                {
+                    amount: 1,
+                    item: `fruitsdelight:${tree}_sapling`,
+                    probability: 0.0
+                }
+            ],
+            item_outputs: [
+                {
+                    amount: 8,
+                    item: `fruitsdelight:${tree}`
+                },
+                {
+                    amount: 16,
+                    item: "minecraft:oak_log"
+                },
+                {
+                    amount: 32,
+                    item: `fruitsdelight:${tree}_leaves`
+                },
+                {
+                    amount: 1,
+                    item: `fruitsdelight:${tree}_sapling`,
+                    probability: 1.0
+                }
+            ],
+            process_conditions: [
+                {
+                    type: "yet_another_industrialization:arboreous_greenhouse_tier",
+                    model: `fruitsdelight:${tree}_tree`,
+                    tier_id: "yet_another_industrialization:greenhouse_tier_2"
+                }
+            ]
+        });
+    });
+});
