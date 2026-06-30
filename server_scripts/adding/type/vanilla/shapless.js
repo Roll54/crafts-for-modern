@@ -7,6 +7,19 @@ event.shapeless(
     ]
 )
 
+const hatches = [
+    { tier: 'bronze', input: 'yet_another_industrialization:bronze_mixed_input_hatch', output: 'yet_another_industrialization:bronze_mixed_output_hatch' },
+    { tier: 'steel', input: 'yet_another_industrialization:steel_mixed_input_hatch', output: 'yet_another_industrialization:steel_mixed_output_hatch' },
+    { tier: 'advanced', input: 'yet_another_industrialization:advanced_mixed_input_hatch', output: 'yet_another_industrialization:advanced_mixed_output_hatch' },
+    { tier: 'highly_advanced', input: 'yet_another_industrialization:highly_advanced_mixed_input_hatch', output: 'yet_another_industrialization:highly_advanced_mixed_output_hatch' },
+    { tier: 'turbo', input: 'yet_another_industrialization:turbo_mixed_input_hatch', output: 'yet_another_industrialization:turbo_mixed_output_hatch' }
+];
+
+hatches.forEach(hatch => {
+    event.shapeless(hatch.output, [hatch.input]);
+    event.shapeless(hatch.input, [hatch.output]);
+});
+
 event.shapeless(
     Item.of('modern_industrialization:monazite_block'),
     [
