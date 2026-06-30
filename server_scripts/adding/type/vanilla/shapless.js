@@ -8,6 +8,51 @@ event.shapeless(
 )
 
 event.shapeless(
+    Item.of('modern_industrialization:monazite_block'),
+    [
+        '#c:dusts/monazite',
+        '#c:dusts/monazite',
+        '#c:dusts/monazite',
+        '#c:dusts/monazite',
+        '#c:dusts/monazite',
+        '#c:dusts/monazite',
+        '#c:dusts/monazite',
+        '#c:dusts/monazite',
+        '#c:dusts/monazite'
+    ]
+)
+
+event.shapeless(
+    Item.of('modern_industrialization:salt_block'),
+    [
+        '#c:dusts/salt',
+        '#c:dusts/salt',
+        '#c:dusts/salt',
+        '#c:dusts/salt',
+        '#c:dusts/salt',
+        '#c:dusts/salt',
+        '#c:dusts/salt',
+        '#c:dusts/salt',
+        '#c:dusts/salt'
+    ]
+)
+
+event.shapeless(
+    Item.of('modern_industrialization:sulfur_block'),
+    [
+        '#c:dusts/sulfur',
+        '#c:dusts/sulfur',
+        '#c:dusts/sulfur',
+        '#c:dusts/sulfur',
+        '#c:dusts/sulfur',
+        '#c:dusts/sulfur',
+        '#c:dusts/sulfur',
+        '#c:dusts/sulfur',
+        '#c:dusts/sulfur'
+    ]
+)
+
+event.shapeless(
     Item.of('modern_industrialization:bauxite_block'),
     [
         '#c:dusts/bauxite',
