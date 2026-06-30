@@ -1,6 +1,19 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('railcraft:locomotive_detector'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        B: 'minecraft:stone_pressure_plate',
+        A: 'minecraft:deepslate_bricks'
+    }
+)
+
+event.shaped(
     Item.of('utilitarian:trowel'),
     [
         ' AA',
