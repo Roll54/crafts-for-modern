@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
                 {
                     type: "yet_another_industrialization:arboreous_greenhouse_tier",
                     model: `fruitsdelight:${tree}_tree`,
-                    tier_id: "yet_another_industrialization:greenhouse_tier_1"
+                    tier_id: "yet_another_industrialization:grass_block"
                 }
             ]
         });
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
                 {
                     type: "yet_another_industrialization:arboreous_greenhouse_tier",
                     model: `fruitsdelight:${tree}_tree`,
-                    tier_id: "yet_another_industrialization:greenhouse_tier_2"
+                    tier_id: "yet_another_industrialization:grass_block"
                 }
             ]
         });
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
             {
                 type: "yet_another_industrialization:arboreous_greenhouse_tier",
                 model: "fruitsdelight:apple_tree",
-                tier_id: "yet_another_industrialization:greenhouse_tier_1"
+                tier_id: "yet_another_industrialization:grass_block"
             }
         ]
     });
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
             {
                 type: "yet_another_industrialization:arboreous_greenhouse_tier",
                 model: "fruitsdelight:apple_tree",
-                tier_id: "yet_another_industrialization:greenhouse_tier_2"
+                tier_id: "yet_another_industrialization:grass_block"
             }
         ]
     });
@@ -242,7 +242,7 @@ ServerEvents.recipes(event => {
             {
                 type: "yet_another_industrialization:arboreous_greenhouse_tier",
                 model: "fruitsdelight:lemon_tree",
-                tier_id: "yet_another_industrialization:greenhouse_tier_1"
+                tier_id: "yet_another_industrialization:grass_block"
             }
         ]
     });
@@ -287,7 +287,7 @@ ServerEvents.recipes(event => {
             {
                 type: "yet_another_industrialization:arboreous_greenhouse_tier",
                 model: "fruitsdelight:lemon_tree",
-                tier_id: "yet_another_industrialization:greenhouse_tier_2"
+                tier_id: "yet_another_industrialization:grass_block"
             }
         ]
     });
@@ -332,7 +332,7 @@ ServerEvents.recipes(event => {
             {
                 type: "yet_another_industrialization:arboreous_greenhouse_tier",
                 model: "fruitsdelight:blueberry_bush",
-                tier_id: "yet_another_industrialization:greenhouse_tier_1"
+                tier_id: "yet_another_industrialization:grass_block"
             }
         ]
     });
@@ -377,7 +377,7 @@ ServerEvents.recipes(event => {
             {
                 type: "yet_another_industrialization:arboreous_greenhouse_tier",
                 model: "fruitsdelight:blueberry_bush",
-                tier_id: "yet_another_industrialization:greenhouse_tier_2"
+                tier_id: "yet_another_industrialization:grass_block"
             }
         ]
     });
