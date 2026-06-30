@@ -7,6 +7,7 @@ ServerEvents.recipes(event => {
         'railcraft:nickel_iron_battery',
         'railcraft:zinc_silver_battery_empty',
         'railcraft:steel_ingot',
+        'railcraft:steel_nugget',
         'railcraft:steel_block',
         'railcraft:zinc_silver_battery',
         'railcraft:nickel_zinc_battery',
