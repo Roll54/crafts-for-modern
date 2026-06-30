@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 
+event.remove({ type: "industrialization_overdrive:pyrolyse_oven" });
 event.remove({ id: "modern_industrialization:alloy/mixer/kanthal/dust" })
 event.remove({ id: "modern_industrialization:materials/mixer/fire_clay_dust" })
 event.remove({ id: "modern_industrialization:materials/fire_clay_dust" })
