@@ -6,6 +6,8 @@ ServerEvents.recipes(event => {
     const itemsToRemove = [
         'railcraft:nickel_iron_battery',
         'railcraft:zinc_silver_battery_empty',
+        'railcraft:steel_ingot',
+        'railcraft:steel_block',
         'railcraft:zinc_silver_battery',
         'railcraft:nickel_zinc_battery',
         'railcraft:blast_furnace_bricks',
