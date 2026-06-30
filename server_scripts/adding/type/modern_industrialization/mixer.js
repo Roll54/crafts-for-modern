@@ -162,13 +162,18 @@ event.recipes.modern_industrialization.mixer(24, 300)
   .fluidIn("modern_industrialization:adrenaline", 1000)
   .itemOut("1x roll_mod:injection_fire_resistance")
 
-// Tech Reborn
+//альтернативні крафти, не заміна
   event.recipes.modern_industrialization.mixer(64, 200)
   .itemIn("8x #c:dusts/redstone")
   .itemIn("4x #c:dusts/diamond")
   .itemIn("4x modern_industrialization:silicon_dust")
   .itemOut("16x roll_mod:energium_dust")
 
+event.recipes.modern_industrialization.mixer(64, 200)
+.itemIn("16x #c:dusts/ruby")
+.itemIn("4x #c:dusts/diamond")
+.itemIn("4x modern_industrialization:silicon_dust")
+.itemOut("16x roll_mod:energium_dust")
 
 
 
@@ -214,8 +219,8 @@ event.recipes.modern_industrialization.mixer(24, 100)
 .fluidOut("extended_industrialization:npk_fertilizer", 16000)
 
 event.recipes.modern_industrialization.mixer(24, 100)
-.itemIn("16x ae2:ender_dust")
-.itemIn("2x #c:dusts/lead")
+.itemIn("14x ae2:ender_dust")
+.itemIn("4x #c:dusts/lead")
 .itemIn("1x modern_industrialization:tin_dust")
 .itemIn("1x modern_industrialization:platinum_dust")
 .itemOut("4x modern_industrialization:enderium_dust")
