@@ -1,5 +1,72 @@
 ServerEvents.recipes(event => {
 
+// Жахливе дерево ПОЧАТОК
+
+    const woodTypes = [
+        { log: 'silentgear:netherwood_log', wood: 'silentgear:netherwood_wood' },
+        { log: 'ad_astra:glacian_log', wood: null },
+        { log: 'biomeswevegone:pale_mud', wood: null },
+        { log: 'biomeswevegone:aspen_log', wood: 'biomeswevegone:aspen_wood' },
+        { log: 'biomeswevegone:baobab_log', wood: 'biomeswevegone:baobab_wood' },
+        { log: 'biomeswevegone:blue_enchanted_log', wood: 'biomeswevegone:blue_enchanted_wood' },
+        { log: 'biomeswevegone:cika_log', wood: 'biomeswevegone:cika_wood' },
+        { log: 'biomeswevegone:cypress_log', wood: 'biomeswevegone:cypress_wood' },
+        { log: 'biomeswevegone:ebony_log', wood: 'biomeswevegone:ebony_wood' },
+        { log: 'biomeswevegone:fir_log', wood: 'biomeswevegone:fir_wood' },
+        { log: 'biomeswevegone:florus_stem', wood: 'biomeswevegone:florus_wood' },
+        { log: 'biomeswevegone:green_enchanted_log', wood: 'biomeswevegone:green_enchanted_wood' },
+        { log: 'biomeswevegone:holly_log', wood: 'biomeswevegone:holly_wood' },
+        { log: 'biomeswevegone:ironwood_log', wood: 'biomeswevegone:ironwood_wood' },
+        { log: 'biomeswevegone:jacaranda_log', wood: 'biomeswevegone:jacaranda_wood' },
+        { log: 'biomeswevegone:mahogany_log', wood: 'biomeswevegone:mahogany_wood' },
+        { log: 'biomeswevegone:maple_log', wood: 'biomeswevegone:maple_wood' },
+        { log: 'biomeswevegone:palm_log', wood: 'biomeswevegone:palm_wood' },
+        { log: 'biomeswevegone:pine_log', wood: 'biomeswevegone:pine_wood' },
+        { log: 'biomeswevegone:rainbow_eucalyptus_log', wood: 'biomeswevegone:rainbow_eucalyptus_wood' },
+        { log: 'biomeswevegone:redwood_log', wood: 'biomeswevegone:redwood_wood' },
+        { log: 'biomeswevegone:sakura_log', wood: 'biomeswevegone:sakura_wood' },
+        { log: 'biomeswevegone:skyris_log', wood: 'biomeswevegone:skyris_wood' },
+        { log: 'biomeswevegone:spirit_log', wood: 'biomeswevegone:spirit_wood' },
+        { log: 'biomeswevegone:white_mangrove_log', wood: 'biomeswevegone:white_mangrove_wood' },
+        { log: 'biomeswevegone:willow_log', wood: 'biomeswevegone:willow_wood' },
+        { log: 'biomeswevegone:witch_hazel_log', wood: 'biomeswevegone:witch_hazel_wood' },
+        { log: 'biomeswevegone:zelkova_log', wood: 'biomeswevegone:zelkova_wood' },
+        { log: 'biomeswevegone:palo_verde_log', wood: 'biomeswevegone:palo_verde_wood' }
+    ];
+    
+    woodTypes.forEach(wood => {
+        const name = wood.log.split(':')[1].replace('_log', '').replace('_stem', '').replace('_mud', '');
+        
+        event.recipes.modern_industrialization.cutting_machine(100, 2)
+            .itemIn(wood.log)
+            .fluidIn("modern_industrialization:lubricant", 1)
+            .itemOut(`6x ${wood.log.replace('_log', '_planks').replace('_stem', '_planks').replace('_mud', '_planks')}`);
+    
+        if (wood.wood) {
+            event.recipes.modern_industrialization.cutting_machine(100, 2)
+                .itemIn(wood.wood)
+                .fluidIn("modern_industrialization:lubricant", 1)
+                .itemOut(`6x ${wood.wood.replace('_wood', '_planks')}`);
+        }
+    });
+    
+    event.recipes.modern_industrialization.cutting_machine(100, 2)
+        .itemIn("minecraft:bamboo_block")
+        .fluidIn("modern_industrialization:lubricant", 1)
+        .itemOut("2x minecraft:bamboo_planks");
+    
+    event.recipes.modern_industrialization.cutting_machine(100, 2)
+        .itemIn("minecraft:stripped_bamboo_block")
+        .fluidIn("modern_industrialization:lubricant", 1)
+        .itemOut("2x minecraft:bamboo_planks");
+    
+    event.recipes.modern_industrialization.cutting_machine(100, 2)
+        .itemIn("minecraft:bamboo_planks")
+        .fluidIn("modern_industrialization:lubricant", 1)
+        .itemOut("2x minecraft:bamboo_slab");
+
+// Жахливе дерево КІНЕЦЬ
+
 event.recipes.modern_industrialization.cutting_machine(8, 1600)
     .itemIn("1x roll_mod:blue_wafer_ram")
     .fluidIn("extended_industrialization:distilled_water", 1000)
