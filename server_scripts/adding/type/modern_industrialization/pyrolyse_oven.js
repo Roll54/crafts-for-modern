@@ -15,7 +15,8 @@ ServerEvents.recipes(event => {
   event.recipes.modern_industrialization.pyrolyse_oven(48, 300)
   .itemIn("16x #minecraft:logs")
   .fluidIn("modern_industrialization:steam", 1000)
-  .itemOut("16x minecraft:charcoal")
+  .itemOut("20x minecraft:charcoal")
+  .fluidOut("modern_industrialization:creosote", 8000, 0.5)
  // .fluidOut("kubejs:wood_tar", 8000, 0.5)
 
   event.recipes.modern_industrialization.pyrolyse_oven(128, 100)
