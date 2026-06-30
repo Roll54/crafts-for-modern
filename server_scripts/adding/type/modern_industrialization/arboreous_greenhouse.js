@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
         item_inputs: [
             {
                 amount: 1,
-                item: "fruitsdelight:lemon",
+                item: "fruitsdelight:lemon_tree",
                 probability: 0.0
             }
         ],
@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
         item_inputs: [
             {
                 amount: 1,
-                item: "fruitsdelight:lemon",
+                item: "fruitsdelight:lemon_tree",
                 probability: 0.0
             }
         ],
@@ -312,7 +312,7 @@ ServerEvents.recipes(event => {
         item_outputs: [
             {
                 amount: 6,
-                item: "fruitsdelight:blueberry"
+                item: "fruitsdelight:blueberry_bush"
             },
             {
                 amount: 4,
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
         item_inputs: [
             {
                 amount: 1,
-                item: "fruitsdelight:blueberry",
+                item: "fruitsdelight:blueberry_bush",
                 probability: 0.0
             }
         ],
