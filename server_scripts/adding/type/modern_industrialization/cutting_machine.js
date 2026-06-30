@@ -38,30 +38,30 @@ ServerEvents.recipes(event => {
         const name = wood.log.split(':')[1].replace('_log', '').replace('_stem', '').replace('_mud', '');
         
         event.recipes.modern_industrialization.cutting_machine(100, 2)
-            .itemIn(wood.log)
+            .itemIn(`1x ${wood.log}`)
             .fluidIn("modern_industrialization:lubricant", 1)
             .itemOut(`6x ${wood.log.replace('_log', '_planks').replace('_stem', '_planks').replace('_mud', '_planks')}`);
     
         if (wood.wood) {
             event.recipes.modern_industrialization.cutting_machine(100, 2)
-                .itemIn(wood.wood)
+                .itemIn(`1x ${wood.wood}`)
                 .fluidIn("modern_industrialization:lubricant", 1)
                 .itemOut(`6x ${wood.wood.replace('_wood', '_planks')}`);
         }
     });
     
     event.recipes.modern_industrialization.cutting_machine(100, 2)
-        .itemIn("minecraft:bamboo_block")
+        .itemIn("1x minecraft:bamboo_block")
         .fluidIn("modern_industrialization:lubricant", 1)
         .itemOut("2x minecraft:bamboo_planks");
     
     event.recipes.modern_industrialization.cutting_machine(100, 2)
-        .itemIn("minecraft:stripped_bamboo_block")
+        .itemIn("1x minecraft:stripped_bamboo_block")
         .fluidIn("modern_industrialization:lubricant", 1)
         .itemOut("2x minecraft:bamboo_planks");
     
     event.recipes.modern_industrialization.cutting_machine(100, 2)
-        .itemIn("minecraft:bamboo_planks")
+        .itemIn("1x minecraft:bamboo_planks")
         .fluidIn("modern_industrialization:lubricant", 1)
         .itemOut("2x minecraft:bamboo_slab");
 
