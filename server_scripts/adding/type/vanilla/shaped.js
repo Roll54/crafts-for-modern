@@ -1830,7 +1830,7 @@ event.shaped(
     ],
     {
         D: 'minecraft:gold_ingot',
-        A: 'minecraft:diamond',
+        A: 'cosmeticarmoursmod:diamond_shard',
         B: 'minecraft:lapis_lazuli',
         C: 'silentgear:upgrade_base'
     }
