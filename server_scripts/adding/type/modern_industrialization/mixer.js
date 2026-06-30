@@ -224,7 +224,7 @@ event.recipes.modern_industrialization.mixer(24, 100)
 .fluidOut("extended_industrialization:npk_fertilizer", 16000)
 
 event.recipes.modern_industrialization.mixer(24, 100)
-.itemIn("14x ae2:ender_dust")
+.itemIn("8x ae2:ender_dust")
 .itemIn("4x #c:dusts/lead")
 .itemIn("1x modern_industrialization:tin_dust")
 .itemIn("1x modern_industrialization:platinum_dust")
