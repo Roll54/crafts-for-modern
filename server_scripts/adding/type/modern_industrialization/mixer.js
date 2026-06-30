@@ -5,6 +5,16 @@ event.recipes.modern_industrialization.mixer(2, 100)
     .fluidIn("modern_industrialization:creosote", 500)
     .fluidOut("modern_industrialization:lubricant", 500)
 
+event.recipes.modern_industrialization.mixer(2, 100)
+    .itemIn("#c:dusts/redstone", 1)
+    .fluidIn("modern_industrialization:naphtha", 500)
+    .fluidOut("modern_industrialization:lubricant", 500)
+
+event.recipes.modern_industrialization.mixer(2, 100)
+    .itemIn("#c:dusts/redstone", 1)
+    .fluidIn("modern_industrialization:plant_oil", 500)
+    .fluidOut("modern_industrialization:lubricant", 500)
+
   event.recipes.modern_industrialization.mixer(32, 400)
   .itemIn("1x minecraft:honeycomb")
   .itemIn("1x modern_industrialization:titanium_hot_ingot")
