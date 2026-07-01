@@ -1,19 +1,19 @@
 ServerEvents.recipes(event => {
     event.recipes.modern_industrialization.blast_furnace(8, 100)
         .itemIn("1x #c:dusts/electrum")
-        .itemOut("1x modern_industrialization:electrum_ingot")
+        .itemOut("1x #c:ingots/electrum")
 
     event.recipes.modern_industrialization.blast_furnace(64, 200)
         .itemIn("1x #c:dusts/stainless_steel")
-        .itemOut("1x modern_industrialization:stainless_steel_ingot")
+        .itemOut("1x #c:ingots/stainless_steel")
 
     event.recipes.modern_industrialization.blast_furnace(64, 400)
         .itemIn("1x #c:dusts/palladium")
-        .itemOut("1x modern_industrialization:palladium_ingot")
+        .itemOut("1x #c:ingots/palladium")
 
     event.recipes.modern_industrialization.blast_furnace(64, 200)
         .itemIn("1x #c:dusts/ruthenium")
-        .itemOut("1x modern_industrialization:ruthenium_ingot")
+        .itemOut("1x #c:ingots/ruthenium")
 
     event.recipes.modern_industrialization.blast_furnace(256, 100)
         .itemIn("1x #c:dusts/rhodium")
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
     event.recipes.modern_industrialization.blast_furnace(128, 1200)
         .itemIn("4x #c:wires/tungsten")
         .itemIn("4x #c:dusts/titanium")
-        .itemOut("4x modern_industrialization:tungsten_cable")
+        .itemOut("4x #c:cables/tungsten")
 
     event.recipes.modern_industrialization.blast_furnace(256, 200)
         .itemIn("1x #c:dusts/incoloy")
@@ -105,12 +105,12 @@ ServerEvents.recipes(event => {
 
     event.recipes.modern_industrialization.blast_furnace(96, 100)
         .itemIn("1x #c:ancient_debris")
-        .itemOut("6x minecraft:netherite_scrap")
-        .itemOut("6x minecraft:netherite_scrap", 0.5)
+        .itemOut("6x #c:netherite_scraps")
+        .itemOut("6x #c:netherite_scraps", 0.5)
 
     event.recipes.modern_industrialization.blast_furnace(128, 100)
         .itemIn("1x #c:dusts/magnalium")
-        .itemOut("1x modern_industrialization:magnalium_ingot")
+        .itemOut("1x #c:ingots/magnalium")
 
     event.recipes.modern_industrialization.blast_furnace(128, 20)
         .itemIn("2x roll_mod:vanadium_magnetite_dust")
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
     event.recipes.modern_industrialization.blast_furnace(128, 800)
         .itemIn("4x roll_mod:tungsten_trioxide")
         .fluidIn("modern_industrialization:hydrogen", 6000)
-        .itemOut("1x modern_industrialization:tungsten_ingot")
+        .itemOut("1x #c:ingots/tungsten")
 
     event.recipes.modern_industrialization.blast_furnace(32, 100)
         .itemIn("4x #c:dusts/quartz")
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
     event.recipes.modern_industrialization.blast_furnace(8, 100)
         .itemIn("1x #c:sands")
         .itemIn("1x roll_mod:sodium_carbonate")
-        .itemOut("5x minecraft:glass")
+        .itemOut("5x #c:glass_blocks")
 
     event.recipes.modern_industrialization.blast_furnace(32, 100)
         .itemIn("8x #c:glass_blocks")
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
     event.recipes.modern_industrialization.blast_furnace(48, 100)
         .itemIn("1x #c:dusts/enderium")
         .fluidIn("extended_industrialization:blazing_essence", 60)
-        .itemOut("1x modern_industrialization:enderium_ingot")
+        .itemOut("1x #c:ingots/enderium")
 
     event.recipes.modern_industrialization.blast_furnace(48, 16000)
         .itemIn("64x #c:dusts/ruby")
@@ -219,6 +219,6 @@ ServerEvents.recipes(event => {
     event.recipes.modern_industrialization.blast_furnace(128, 60)
         .itemIn("2x #c:dusts/carbon")
         .itemIn("3x roll_mod:flint_dust")
-        .itemOut("1x modern_industrialization:silicon_dust")
+        .itemOut("1x #c:dusts/silicon")
         .fluidOut("modern_industrialization:carbon_dioxide", 4000)
 })
