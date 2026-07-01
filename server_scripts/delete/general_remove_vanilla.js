@@ -7,7 +7,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: "silentgear:prospector_hammer_blueprint" })
     event.remove({ output: "silentgear:prospector_hammer_template" })
     event.remove({ output: "silentgear:advanced_upgrade_base" })
-    event.remove({ output: "ends_delight:end_stove" })
+//  event.remove({ output: "ends_delight:end_stove" })
+    event.remove({ output: "constructionstick:template_destruction" })
     
     event.remove({ mod: 'buildinggadgets2' })
     event.remove({ mod: 'scannable_unofficial' })
