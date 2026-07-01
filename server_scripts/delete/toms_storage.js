@@ -1,21 +1,26 @@
 ServerEvents.recipes(event => {
-    event.remove({output: "toms_storage:paint_kit"})
-    event.remove({output: 'toms_storage:adv_wireless_terminal'})
-    event.remove({output: 'toms_storage:wireless_terminal'})
-    event.remove({output: 'toms_storage:polymorphic_item_filter'})
-    event.remove({output: 'toms_storage:tag_item_filter'})
-    event.remove({output: 'toms_storage:item_filter'})
-    event.remove({output: 'toms_storage:level_emitter'})
-    event.remove({output: 'toms_storage:basic_inventory_hopper'})
-    event.remove({ output: "travelanchors:travel_staff" })
-    event.remove({ output: "travelanchors:travel_anchor" })
-    event.remove({ output: "toms_storage:storage_terminal" })
-    event.remove({ output: "toms_storage:crafting_terminal" })
-    event.remove({ output: "toms_storage:trim" })
-    event.remove({ output: "toms_storage:inventory_cable" })
-    event.remove({ output: "toms_storage:inventory_interface" })
-    event.remove({ output: "toms_storage:inventory_cable_connector" })
-    event.remove({ output: "toms_storage:inventory_proxy" })
-    event.remove({ output: "toms_storage:inventory_interface" })
-    event.remove({ output: "toms_storage:inventory_connector" })
-})
+    const itemsToRemove = [
+        "toms_storage:paint_kit",
+        "toms_storage:adv_wireless_terminal",
+        "toms_storage:wireless_terminal",
+        "toms_storage:polymorphic_item_filter",
+        "toms_storage:tag_item_filter",
+        "toms_storage:item_filter",
+        "toms_storage:level_emitter",
+        "toms_storage:basic_inventory_hopper",
+        "toms_storage:storage_terminal",
+        "toms_storage:crafting_terminal",
+        "toms_storage:trim",
+        "toms_storage:inventory_cable",
+        "toms_storage:inventory_interface",
+        "toms_storage:inventory_cable_connector",
+        "toms_storage:inventory_proxy",
+        "toms_storage:inventory_connector",
+        "travelanchors:travel_staff",
+        "travelanchors:travel_anchor"
+    ];
+
+    itemsToRemove.forEach(item => {
+        event.remove({ output: item });
+    });
+});
