@@ -1,67 +1,95 @@
 ServerEvents.recipes(event => {
+    const modernItems = [
+        "modern_industrialization:quantum_circuit_board",
+        "modern_industrialization:arithmetic_logic_unit",
+        "modern_industrialization:random_access_memory",
+        "modern_industrialization:qubit",
+        "modern_industrialization:memory_management_unit",
+        "modern_industrialization:gravichestplate",
+        "modern_industrialization:quantum_helmet",
+        "modern_industrialization:quantum_chestplate",
+        "modern_industrialization:quantum_leggings",
+        "modern_industrialization:quantum_boots",
+        "modern_industrialization:op_amp",
+        "modern_industrialization:magnetite_dust",
+        "modern_industrialization:magnalium_ingot",
+        "modern_industrialization:replicator",
+        "modern_industrialization:quantum_circuit",
+        "modern_industrialization:processing_unit",
+        "modern_industrialization:raw_lead",
+        "modern_industrialization:salt_crushed_dust",
+        "modern_industrialization:bauxite_crushed_dust",
+        "modern_industrialization:emerald_crushed_dust",
+        "modern_industrialization:redstone_crushed_dust",
+        "modern_industrialization:monazite_crushed_dust",
+        "modern_industrialization:processing_unit_board",
+        "modern_industrialization:stainless_steel_hot_ingot",
+        "modern_industrialization:tungsten_cable",
+        "modern_industrialization:electric_quarry",
+        "modern_industrialization:steam_quarry"
+    ];
 
-event.remove({ type: "industrialization_overdrive:pyrolyse_oven" });
-event.remove({ id: "modern_industrialization:alloy/mixer/kanthal/dust" })
-event.remove({ id: "modern_industrialization:materials/mixer/fire_clay_dust" })
-event.remove({ id: "modern_industrialization:materials/fire_clay_dust" })
-event.remove({ id: "modern_industrialization:materials/mixer/oil_to_rubber_sheet" })
-event.remove({ id: "modern_industrialization:oil/mixer/lubricant_from_plant_oil" })
-event.remove({ id: "modern_industrialization:materials/mixer/lubricant_oil" })
-event.remove({ id: "modern_industrialization:materials/mixer/rubber_sheet_from_synthetic" })
-event.remove({ id: "modern_industrialization:materials/electrolyzer/bauxite" })
-event.remove({ id: "modern_industrialization:materials/mixer/lubricant" })
-event.remove({ output: "industrialization_overdrive:vajra" })
-event.remove({ output: "extended_industrialization:electric_mining_drill" })
-event.remove({ output: "extended_industrialization:electric_chainsaw" })
-event.remove({ output: "modern_industrialization:quantum_circuit_board" })
-event.remove({ output: "modern_industrialization:arithmetic_logic_unit" })
-event.remove({ output: "modern_industrialization:random_access_memory" })
-event.remove({ output: "modern_industrialization:qubit" })
-event.remove({ output: "modern_industrialization:memory_management_unit" })
-event.remove({ output: "modern_industrialization:gravichestplate" })
-event.remove({ output: "modern_industrialization:quantum_helmet" })
-event.remove({ output: "modern_industrialization:quantum_chestplate" })
-event.remove({ output: "modern_industrialization:quantum_leggings" })
-event.remove({ output: "modern_industrialization:quantum_boots" })
-event.remove({ output: "mi_tweaks:flux_transformer" })
-event.remove({ output: 'modern_industrialization:op_amp' })
-event.remove([{ input: 'modern_industrialization:raw_titanium', output: 'modern_industrialization:titanium_hot_ingot' }])
-event.remove([{ input: '#c:dusts/bauxite', output: 'modern_industrialization:titanium_tiny_dust' }])
-event.remove({output: 'industrialization_overdrive:multi_processing_array'})
-event.remove({output: 'industrialization_overdrive:pyrolyse_oven'})
-event.remove({output: 'modern_industrialization:magnetite_dust'})
-event.remove({output: 'modern_industrialization:magnalium_ingot'})
-event.remove({output: 'modern_industrialization:replicator'})
-event.remove({ output: "modern_industrialization:quantum_circuit" })
-event.remove({ output: "modern_industrialization:processing_unit" })
-//видалення руди
-event.remove({output: 'modern_industrialization:raw_lead'})
-event.remove({output: 'modern_industrialization:salt_crushed_dust'})
-event.remove({output: 'modern_industrialization:bauxite_crushed_dust'})
-event.remove({output: 'minecraft:raw_gold'})
-event.remove({output: 'modern_industrialization:emerald_crushed_dust'})
-event.remove({output: 'modern_industrialization:redstone_crushed_dust'})
-event.remove({output: 'modern_industrialization:monazite_crushed_dust'})
-event.remove([{ input: 'modern_industrialization:electrum_dust', output: 'modern_industrialization:electrum_ingot' }])
-event.remove([{ input: 'modern_industrialization:silver_block', output: 'modern_industrialization:electrum_block' }])
+    const modernRecipes = [
+        "modern_industrialization:alloy/mixer/kanthal/dust",
+        "modern_industrialization:materials/mixer/fire_clay_dust",
+        "modern_industrialization:materials/fire_clay_dust",
+        "modern_industrialization:materials/mixer/oil_to_rubber_sheet",
+        "modern_industrialization:oil/mixer/lubricant_from_plant_oil",
+        "modern_industrialization:materials/mixer/lubricant_oil",
+        "modern_industrialization:materials/mixer/rubber_sheet_from_synthetic",
+        "modern_industrialization:materials/electrolyzer/bauxite",
+        "modern_industrialization:materials/mixer/lubricant"
+    ];
 
-event.remove([{ input: '#c:dusts/salt', output: 'modern_industrialization:sodium_dust' }])
+    const modernPairs = [
+        { input: 'modern_industrialization:raw_titanium', output: 'modern_industrialization:titanium_hot_ingot' },
+        { input: '#c:dusts/bauxite', output: 'modern_industrialization:titanium_tiny_dust' },
+        { input: 'modern_industrialization:electrum_dust', output: 'modern_industrialization:electrum_ingot' },
+        { input: 'modern_industrialization:silver_block', output: 'modern_industrialization:electrum_block' },
+        { input: '#c:dusts/salt', output: 'modern_industrialization:sodium_dust' },
+        { input: 'modern_industrialization:osmiridium_dust', output: 'modern_industrialization:osmiridium_ingot' },
+        { input: 'modern_industrialization:titanium_64_dust', output: 'modern_industrialization:titanium_64_ingot' },
+        { input: 'modern_industrialization:rhodium_dust', output: 'modern_industrialization:rhodium_ingot' },
+        { input: 'modern_industrialization:rhodium_plated_palladium_dust', output: 'modern_industrialization:rhodium_plated_palladium_ingot' },
+        { input: 'modern_industrialization:niobium_titanium_alloy_dust', output: 'modern_industrialization:niobium_titanium_alloy_ingot' },
+        { input: 'modern_industrialization:incoloy_dust', output: 'modern_industrialization:incoloy_ingot' },
+        { input: 'modern_industrialization:chrome_vanadium_steel_dust', output: 'modern_industrialization:chrome_vanadium_steel_ingot' },
+        { input: 'modern_industrialization:enderium_dust', output: 'modern_industrialization:enderium_ingot' }
+    ];
 
-event.remove({output: 'modern_industrialization:processing_unit_board'})
-event.remove({output: 'modern_industrialization:stainless_steel_hot_ingot'})
-event.remove({output: 'modern_industrialization:tungsten_cable'})
-event.remove({output: 'modern_industrialization:electric_quarry'})
-event.remove({output: 'modern_industrialization:steam_quarry'})
+    const addonItems = [
+        "industrialization_overdrive:vajra",
+        "industrialization_overdrive:multi_processing_array",
+        "industrialization_overdrive:pyrolyse_oven",
+        "extended_industrialization:electric_mining_drill",
+        "extended_industrialization:electric_chainsaw",
+        "mi_tweaks:flux_transformer"
+    ];
 
-event.remove({ type: 'modern_industrialization:quarry' })
+    const vanillaItems = [
+        "minecraft:raw_gold"
+    ];
 
-event.remove([{ input: 'modern_industrialization:osmiridium_dust', output: 'modern_industrialization:osmiridium_ingot' }])
-event.remove([{ input: 'modern_industrialization:titanium_64_dust', output: 'modern_industrialization:titanium_64_ingot' }])
-event.remove([{ input: 'modern_industrialization:rhodium_dust', output: 'modern_industrialization:rhodium_ingot' }])
-event.remove([{ input: 'modern_industrialization:rhodium_plated_palladium_dust', output:'modern_industrialization:rhodium_plated_palladium_ingot' }])
-event.remove([{ input: 'modern_industrialization:niobium_titanium_alloy_dust', output: 'modern_industrialization:niobium_titanium_alloy_ingot' }])
-event.remove([{ input: 'modern_industrialization:incoloy_dust', output: 'modern_industrialization:incoloy_ingot' }])
-event.remove([{ input: 'modern_industrialization:chrome_vanadium_steel_dust', output: 'modern_industrialization:chrome_vanadium_steel_ingot' }])
-event.remove([{ input: 'modern_industrialization:enderium_dust', output: 'modern_industrialization:enderium_ingot' }])
-  
-})
+    event.remove({ type: "industrialization_overdrive:pyrolyse_oven" });
+    event.remove({ type: 'modern_industrialization:quarry' });
+
+    modernItems.forEach(item => {
+        event.remove({ output: item });
+    });
+
+    addonItems.forEach(item => {
+        event.remove({ output: item });
+    });
+
+    vanillaItems.forEach(item => {
+        event.remove({ output: item });
+    });
+
+    modernRecipes.forEach(id => {
+        event.remove({ id: id });
+    });
+
+    modernPairs.forEach(pair => {
+        event.remove([{ input: pair.input, output: pair.output }]);
+    });
+});
