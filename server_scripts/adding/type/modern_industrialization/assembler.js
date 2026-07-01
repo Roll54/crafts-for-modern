@@ -67,7 +67,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
   
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x modern_industrialization:inductor")
-  .itemIn("2x modern_industrialization:redstone_battery")
+  .itemIn("2x #roll_mod:battaries_tier_one")
   .itemIn("1x modern_industrialization:diode")
   .itemIn("1x modern_industrialization:copper_wire")
   .itemIn("1x minecraft:note_block")
