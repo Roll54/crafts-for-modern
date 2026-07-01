@@ -430,7 +430,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .fluidIn("modern_industrialization:soldering_alloy", 2000)
   .itemOut("1x createcybernetics:exosuit1")
 
-event.recipes.modern_industrialization.assembler(16, 200)
+event.recipes.modern_industrialization.assembler(2, 100)
   .itemIn("2x modern_industrialization:copper_wire")
   .itemIn("1x modern_industrialization:copper_plate")
   .itemIn("1x minecraft:glass_bottle")
