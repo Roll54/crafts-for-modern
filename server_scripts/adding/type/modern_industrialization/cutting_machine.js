@@ -1,4 +1,7 @@
 ServerEvents.recipes(event => {
+
+// Жахливе дерево ПОЧАТОК
+
     const woodTypes = [
         { log: 'silentgear:netherwood_log', wood: 'silentgear:netherwood_wood', planks: 'silentgear:netherwood_planks', slab: 'silentgear:netherwood_slab', stripped_log: 'silentgear:stripped_netherwood_log', stripped_wood: 'silentgear:stripped_netherwood_wood', tag: 'silentgear:netherwood_logs' },
         { log: 'ad_astra:glacian_log', wood: null, planks: 'ad_astra:glacian_planks', slab: 'ad_astra:glacian_slab', stripped_log: 'ad_astra:stripped_glacian_log', stripped_wood: null, tag: 'ad_astra:glacian_logs' },
@@ -30,27 +33,57 @@ ServerEvents.recipes(event => {
         { log: 'biomeswevegone:zelkova_log', wood: 'biomeswevegone:zelkova_wood', planks: 'biomeswevegone:zelkova_planks', slab: 'biomeswevegone:zelkova_slab', stripped_log: 'biomeswevegone:stripped_zelkova_log', stripped_wood: 'biomeswevegone:stripped_zelkova_wood', tag: 'biomeswevegone:zelkova_logs' },
         { log: 'biomeswevegone:palo_verde_log', wood: 'biomeswevegone:palo_verde_wood', planks: 'minecraft:birch_planks', slab: 'minecraft:birch_slab', stripped_log: 'biomeswevegone:stripped_palo_verde_log', stripped_wood: 'biomeswevegone:stripped_palo_verde_wood', tag: 'biomeswevegone:palo_verde_logs' }
     ];
-
+    
     woodTypes.forEach(wood => {
         if (wood.planks && wood.tag) {
             event.custom({
                 type: "modern_industrialization:cutting_machine",
                 duration: 100,
                 eu: 2,
-                fluid_inputs: [{ amount: 1, fluid: "modern_industrialization:lubricant" }],
-                item_inputs: [{ amount: 1, tag: wood.tag }],
-                item_outputs: [{ amount: 6, item: wood.planks }]
+                fluid_inputs: [
+                    {
+                        amount: 1,
+                        fluid: "modern_industrialization:lubricant"
+                    }
+                ],
+                item_inputs: [
+                    {
+                        amount: 1,
+                        tag: wood.tag
+                    }
+                ],
+                item_outputs: [
+                    {
+                        amount: 6,
+                        item: wood.planks
+                    }
+                ]
             });
         }
-
+    
         if (wood.wood && wood.planks) {
             event.custom({
                 type: "modern_industrialization:cutting_machine",
                 duration: 100,
                 eu: 2,
-                fluid_inputs: [{ amount: 1, fluid: "modern_industrialization:lubricant" }],
-                item_inputs: [{ amount: 1, item: wood.wood }],
-                item_outputs: [{ amount: 6, item: wood.planks }]
+                fluid_inputs: [
+                    {
+                        amount: 1,
+                        fluid: "modern_industrialization:lubricant"
+                    }
+                ],
+                item_inputs: [
+                    {
+                        amount: 1,
+                        item: wood.wood
+                    }
+                ],
+                item_outputs: [
+                    {
+                        amount: 6,
+                        item: wood.planks
+                    }
+                ]
             });
         }
 
@@ -59,9 +92,24 @@ ServerEvents.recipes(event => {
                 type: "modern_industrialization:cutting_machine",
                 duration: 100,
                 eu: 2,
-                fluid_inputs: [{ amount: 1, fluid: "modern_industrialization:lubricant" }],
-                item_inputs: [{ amount: 1, item: wood.log }],
-                item_outputs: [{ amount: 1, item: wood.stripped_log }]
+                fluid_inputs: [
+                    {
+                        amount: 1,
+                        fluid: "modern_industrialization:lubricant"
+                    }
+                ],
+                item_inputs: [
+                    {
+                        amount: 1,
+                        item: wood.log
+                    }
+                ],
+                item_outputs: [
+                    {
+                        amount: 1,
+                        item: wood.stripped_log
+                    }
+                ]
             });
         }
 
@@ -70,9 +118,24 @@ ServerEvents.recipes(event => {
                 type: "modern_industrialization:cutting_machine",
                 duration: 100,
                 eu: 2,
-                fluid_inputs: [{ amount: 1, fluid: "modern_industrialization:lubricant" }],
-                item_inputs: [{ amount: 1, item: wood.wood }],
-                item_outputs: [{ amount: 1, item: wood.stripped_wood }]
+                fluid_inputs: [
+                    {
+                        amount: 1,
+                        fluid: "modern_industrialization:lubricant"
+                    }
+                ],
+                item_inputs: [
+                    {
+                        amount: 1,
+                        item: wood.wood
+                    }
+                ],
+                item_outputs: [
+                    {
+                        amount: 1,
+                        item: wood.stripped_wood
+                    }
+                ]
             });
         }
 
@@ -81,223 +144,316 @@ ServerEvents.recipes(event => {
                 type: "modern_industrialization:cutting_machine",
                 duration: 100,
                 eu: 2,
-                fluid_inputs: [{ amount: 1, fluid: "modern_industrialization:lubricant" }],
-                item_inputs: [{ amount: 1, item: wood.planks }],
-                item_outputs: [{ amount: 2, item: wood.slab }]
+                fluid_inputs: [
+                    {
+                        amount: 1,
+                        fluid: "modern_industrialization:lubricant"
+                    }
+                ],
+                item_inputs: [
+                    {
+                        amount: 1,
+                        item: wood.planks
+                    }
+                ],
+                item_outputs: [
+                    {
+                        amount: 2,
+                        item: wood.slab
+                    }
+                ]
             });
         }
     });
-
+    
     event.custom({
         type: "modern_industrialization:cutting_machine",
         duration: 100,
         eu: 2,
-        fluid_inputs: [{ amount: 1, fluid: "modern_industrialization:lubricant" }],
-        item_inputs: [{ amount: 1, item: "minecraft:bamboo_block" }],
-        item_outputs: [{ amount: 2, item: "minecraft:bamboo_planks" }]
+        fluid_inputs: [
+            {
+                amount: 1,
+                fluid: "modern_industrialization:lubricant"
+            }
+        ],
+        item_inputs: [
+            {
+                amount: 1,
+                item: "minecraft:bamboo_block"
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 2,
+                item: "minecraft:bamboo_planks"
+            }
+        ]
     });
-
+    
     event.custom({
         type: "modern_industrialization:cutting_machine",
         duration: 100,
         eu: 2,
-        fluid_inputs: [{ amount: 1, fluid: "modern_industrialization:lubricant" }],
-        item_inputs: [{ amount: 1, item: "minecraft:stripped_bamboo_block" }],
-        item_outputs: [{ amount: 2, item: "minecraft:bamboo_planks" }]
+        fluid_inputs: [
+            {
+                amount: 1,
+                fluid: "modern_industrialization:lubricant"
+            }
+        ],
+        item_inputs: [
+            {
+                amount: 1,
+                item: "minecraft:stripped_bamboo_block"
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 2,
+                item: "minecraft:bamboo_planks"
+            }
+        ]
     });
-
+    
     event.custom({
         type: "modern_industrialization:cutting_machine",
         duration: 100,
         eu: 2,
-        fluid_inputs: [{ amount: 1, fluid: "modern_industrialization:lubricant" }],
-        item_inputs: [{ amount: 1, item: "minecraft:bamboo_planks" }],
-        item_outputs: [{ amount: 2, item: "minecraft:bamboo_slab" }]
+        fluid_inputs: [
+            {
+                amount: 1,
+                fluid: "modern_industrialization:lubricant"
+            }
+        ],
+        item_inputs: [
+            {
+                amount: 1,
+                item: "minecraft:bamboo_planks"
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 2,
+                item: "minecraft:bamboo_slab"
+            }
+        ]
     });
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x roll_mod:blue_wafer_ram")
-        .fluidIn("extended_industrialization:distilled_water", 1000)
-        .itemOut("48x roll_mod:blue_chip_ram")
+// Жахливе дерево КІНЕЦЬ
 
-    event.recipes.modern_industrialization.cutting_machine(8, 400)
-        .itemIn("1x #c:storage_blocks/bronze")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/bronze")
+event.recipes.modern_industrialization.cutting_machine(8, 1600)
+    .itemIn("1x roll_mod:blue_wafer_ram")
+    .fluidIn("extended_industrialization:distilled_water", 1000)
+    .itemOut("48x roll_mod:blue_chip_ram")
+  
+// Шестерні
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x modern_industrialization:bronze_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:bronze_gear")
+    
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x #c:storage_blocks/gold")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:gold_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 400)
-        .itemIn("1x #c:storage_blocks/gold")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/gold")
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x #c:storage_blocks/iron")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:iron_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 400)
-        .itemIn("1x #c:storage_blocks/iron")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/iron")
+   event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x #c:storage_blocks/tin")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:tin_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 400)
-        .itemIn("1x #c:storage_blocks/tin")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/tin")
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x #c:storage_blocks/copper")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:copper_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 400)
-        .itemIn("1x #c:storage_blocks/copper")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/copper")
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x modern_industrialization:invar_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:invar_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 400)
-        .itemIn("1x #c:storage_blocks/invar")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/invar")
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x modern_industrialization:steel_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:steel_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 400)
-        .itemIn("1x #c:storage_blocks/steel")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/steel")
+  event.recipes.modern_industrialization.cutting_machine(8, 800)
+  .itemIn("1x modern_industrialization:aluminum_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:aluminum_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 800)
-        .itemIn("1x #c:storage_blocks/aluminum")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/aluminum")
+  event.recipes.modern_industrialization.cutting_machine(8, 800)
+  .itemIn("1x modern_industrialization:magnalium_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:magnalium_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 800)
-        .itemIn("1x #c:storage_blocks/magnalium")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/magnalium")
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:stainless_steel_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:stainless_steel_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x #c:storage_blocks/stainless_steel")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/stainless_steel")
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x #c:storage_blocks/netherite")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:netherite_gear")
+    
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:titanium_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:titanium_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x #c:storage_blocks/netherite")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/netherite")
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:titanium_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:titanium_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x #c:storage_blocks/titanium")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/titanium")
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:chrome_vanadium_steel_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:chrome_vanadium_steel_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x #c:storage_blocks/chrome_vanadium_steel")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/chrome_vanadium_steel")
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:polytetrafluoroethylene_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:polytetrafluoroethylene_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x #c:storage_blocks/polytetrafluoroethylene")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/polytetrafluoroethylene")
+  event.recipes.modern_industrialization.cutting_machine(8, 1600)
+  .itemIn("1x modern_industrialization:incoloy_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:incoloy_gear")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x #c:storage_blocks/incoloy")
-        .fluidIn("modern_industrialization:lubricant", 20)
-        .itemOut("4x #c:gears/incoloy")
+// Ротори
 
-    event.recipes.modern_industrialization.cutting_machine(512, 600)
-        .itemIn("4x #c:plates/chrome_vanadium_steel")
-        .fluidIn("modern_industrialization:lubricant", 200)
-        .itemOut("5x modern_industrialization:chrome_vanadium_steel_rotor")
+   event.recipes.modern_industrialization.cutting_machine(512, 600)
+  .itemIn("4x modern_industrialization:chrome_vanadium_steel_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 200)
+  .itemOut("5x modern_industrialization:chrome_vanadium_steel_rotor")
+    
+  event.recipes.modern_industrialization.cutting_machine(512, 600)
+  .itemIn("4x modern_industrialization:incoloy_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 200)
+  .itemOut("5x modern_industrialization:incoloy_rotor")
 
-    event.recipes.modern_industrialization.cutting_machine(512, 600)
-        .itemIn("4x #c:plates/incoloy")
-        .fluidIn("modern_industrialization:lubricant", 200)
-        .itemOut("5x modern_industrialization:incoloy_rotor")
+  event.recipes.modern_industrialization.cutting_machine(96, 300)
+  .itemIn("4x modern_industrialization:aluminum_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 100)
+  .itemOut("5x modern_industrialization:aluminum_rotor")
 
-    event.recipes.modern_industrialization.cutting_machine(96, 300)
-        .itemIn("4x #c:plates/aluminum")
-        .fluidIn("modern_industrialization:lubricant", 100)
-        .itemOut("5x modern_industrialization:aluminum_rotor")
+  event.recipes.modern_industrialization.cutting_machine(64, 200)
+  .itemIn("4x modern_industrialization:bronze_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 100)
+  .itemOut("5x modern_industrialization:bronze_rotor")
 
-    event.recipes.modern_industrialization.cutting_machine(64, 200)
-        .itemIn("4x #c:plates/bronze")
-        .fluidIn("modern_industrialization:lubricant", 100)
-        .itemOut("5x modern_industrialization:bronze_rotor")
+  event.recipes.modern_industrialization.cutting_machine(64, 200)
+  .itemIn("4x modern_industrialization:copper_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 100)
+  .itemOut("5x modern_industrialization:copper_rotor")
 
-    event.recipes.modern_industrialization.cutting_machine(64, 200)
-        .itemIn("4x #c:plates/copper")
-        .fluidIn("modern_industrialization:lubricant", 100)
-        .itemOut("5x modern_industrialization:copper_rotor")
+  event.recipes.modern_industrialization.cutting_machine(64, 200)
+  .itemIn("4x modern_industrialization:tin_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 100)
+  .itemOut("5x modern_industrialization:tin_rotor")
 
-    event.recipes.modern_industrialization.cutting_machine(64, 200)
-        .itemIn("4x #c:plates/tin")
-        .fluidIn("modern_industrialization:lubricant", 100)
-        .itemOut("5x modern_industrialization:tin_rotor")
+  event.recipes.modern_industrialization.cutting_machine(256, 600)
+  .itemIn("4x modern_industrialization:stainless_steel_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 200)
+  .itemOut("5x modern_industrialization:stainless_steel_rotor")
 
-    event.recipes.modern_industrialization.cutting_machine(256, 600)
-        .itemIn("4x #c:plates/stainless_steel")
-        .fluidIn("modern_industrialization:lubricant", 200)
-        .itemOut("5x modern_industrialization:stainless_steel_rotor")
+  event.recipes.modern_industrialization.cutting_machine(512, 600)
+  .itemIn("4x modern_industrialization:titanium_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 200)
+  .itemOut("5x modern_industrialization:titanium_rotor")
 
-    event.recipes.modern_industrialization.cutting_machine(512, 600)
-        .itemIn("4x #c:plates/titanium")
-        .fluidIn("modern_industrialization:lubricant", 200)
-        .itemOut("5x modern_industrialization:titanium_rotor")
+  event.recipes.modern_industrialization.cutting_machine(2, 100)
+  .itemIn("1x roll_mod:treated_planks")
+  .itemOut("3x roll_mod:treated_plate")
 
-    event.recipes.modern_industrialization.cutting_machine(2, 100)
-        .itemIn("1x roll_mod:treated_planks")
-        .itemOut("3x roll_mod:treated_plate")
+event.recipes.modern_industrialization.cutting_machine(2, 100)
+  .itemIn("1x roll_mod:treated_log")
+  .itemOut("14x roll_mod:treated_plate")
 
-    event.recipes.modern_industrialization.cutting_machine(2, 100)
-        .itemIn("1x roll_mod:treated_log")
-        .itemOut("14x roll_mod:treated_plate")
+event.recipes.modern_industrialization.cutting_machine(2, 100)
+.itemIn("1x roll_mod:treated_plate")
+.itemOut("4x railcraft:wooden_tie")
 
-    event.recipes.modern_industrialization.cutting_machine(2, 100)
-        .itemIn("1x roll_mod:treated_plate")
-        .itemOut("4x railcraft:wooden_tie")
+event.recipes.modern_industrialization.cutting_machine(128, 100)
+.itemIn("1x roll_mod:lapotron_battery_t1")
+.fluidIn("modern_industrialization:lubricant", 240)
+.itemOut("4x roll_mod:lapotron_lens")
 
-    event.recipes.modern_industrialization.cutting_machine(128, 100)
-        .itemIn("1x roll_mod:lapotron_battery_t1")
-        .fluidIn("modern_industrialization:lubricant", 240)
-        .itemOut("4x roll_mod:lapotron_lens")
+event.recipes.modern_industrialization.cutting_machine(2, 100)
+.itemIn("1x modern_industrialization:tin_bolt")
+.itemOut("8x ae2:cable_anchor")
 
-    event.recipes.modern_industrialization.cutting_machine(2, 100)
-        .itemIn("1x #c:bolts/tin")
-        .itemOut("8x ae2:cable_anchor")
+  
+// Компоненти
+  /*
+  event.recipes.modern_industrialization.cutting_machine(8, 200)
+  .fluidIn("modern_industrialization:lubricant", 1)
+  .itemIn("1x minecraft:glass_pane")
+  .itemOut("1x roll_mod:syringe")
 
-    event.recipes.modern_industrialization.cutting_machine(24, 200)
-        .itemIn("1x roll_mod:standard_wafer_pmic")
-        .fluidIn("extended_industrialization:distilled_water", 200)
-        .itemOut("8x roll_mod:standard_chip_pmic")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x roll_mod:purple_boule")
-        .fluidIn("extended_industrialization:distilled_water", 1000)
-        .itemOut("64x roll_mod:purple_wafer")
+  event.recipes.modern_industrialization.cutting_machine(64, 100)
+  .fluidIn("modern_industrialization:lubricant", 8)
+  .itemIn("1x ae2:quartz_glass")
+  .itemOut("4x roll_mod:petri_dish")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x roll_mod:purple_wafer_accumulation")
-        .fluidIn("extended_industrialization:distilled_water", 1000)
-        .itemOut("48x roll_mod:purple_chip_accumulation")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x roll_mod:purple_wafer_qubit")
-        .fluidIn("extended_industrialization:distilled_water", 1000)
-        .itemOut("48x roll_mod:purple_chip_qubit")
 
-    event.recipes.modern_industrialization.cutting_machine(16, 100)
-        .itemIn("1x roll_mod:alumina_ceramic_plate")
-        .fluidIn("modern_industrialization:lubricant", 160)
-        .itemOut("3x roll_mod:alumina_small_ceramic_plate")
+// СТАРІ КРАФТИ
+  event.recipes.modern_industrialization.cutting_machine(8, 200)
+  .fluidIn("modern_industrialization:lubricant", 10)
+  .itemIn("1x modern_industrialization:ruthenium_plate")
+  .itemOut("1x roll_mod:ruthenium_coin")
+*/
 
-    event.recipes.modern_industrialization.cutting_machine(24, 200)
-        .itemIn("1x roll_mod:standard_wafer_not")
-        .fluidIn("extended_industrialization:distilled_water", 1000)
-        .itemOut("8x roll_mod:standard_chip_not")
+event.recipes.modern_industrialization.cutting_machine(24, 200)
+.itemIn("1x roll_mod:standard_wafer_pmic")
+.fluidIn("extended_industrialization:distilled_water", 200)
+.itemOut("8x roll_mod:standard_chip_pmic")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x roll_mod:blue_boule")
-        .fluidIn("extended_industrialization:distilled_water", 1000)
-        .itemOut("48x roll_mod:blue_wafer")
+event.recipes.modern_industrialization.cutting_machine(8, 1600)
+.itemIn("1x roll_mod:purple_boule")
+.fluidIn("extended_industrialization:distilled_water", 1000)
+.itemOut("64x roll_mod:purple_wafer")
 
-    event.recipes.modern_industrialization.cutting_machine(8, 1600)
-        .itemIn("1x roll_mod:blue_wafer_cpu")
-        .fluidIn("extended_industrialization:distilled_water", 1000)
-        .itemOut("4x roll_mod:blue_chip_cpu")
+event.recipes.modern_industrialization.cutting_machine(8, 1600)
+.itemIn("1x roll_mod:purple_wafer_accumulation")
+.fluidIn("extended_industrialization:distilled_water", 1000)
+.itemOut("48x roll_mod:purple_chip_accumulation")
 
-    event.recipes.modern_industrialization.cutting_machine(32, 100)
-        .itemIn("1x roll_mod:standard_wafer_nand")
-        .fluidIn("extended_industrialization:distilled_water", 1000)
-        .itemOut("16x roll_mod:standard_chip_nand")
+event.recipes.modern_industrialization.cutting_machine(8, 1600)
+.itemIn("1x roll_mod:purple_wafer_qubit")
+.fluidIn("extended_industrialization:distilled_water", 1000)
+.itemOut("48x roll_mod:purple_chip_qubit")
+
+event.recipes.modern_industrialization.cutting_machine(16, 100)
+.itemIn("1x roll_mod:alumina_ceramic_plate")
+.fluidIn("modern_industrialization:lubricant", 160)
+.itemOut("3x roll_mod:alumina_small_ceramic_plate")
+
+event.recipes.modern_industrialization.cutting_machine(24, 200)
+.itemIn("1x roll_mod:standard_wafer_not")
+.fluidIn("extended_industrialization:distilled_water", 1000)
+.itemOut("8x roll_mod:standard_chip_not")
+
+event.recipes.modern_industrialization.cutting_machine(8, 1600)
+.itemIn("1x roll_mod:blue_boule")
+.fluidIn("extended_industrialization:distilled_water", 1000)
+.itemOut("48x roll_mod:blue_wafer")
+
+event.recipes.modern_industrialization.cutting_machine(8, 1600)
+.itemIn("1x roll_mod:blue_wafer_cpu")
+.fluidIn("extended_industrialization:distilled_water", 1000)
+.itemOut("4x roll_mod:blue_chip_cpu")
+
+event.recipes.modern_industrialization.cutting_machine(32, 100)
+.itemIn("1x roll_mod:standard_wafer_nand")
+.fluidIn("extended_industrialization:distilled_water", 1000)
+.itemOut("16x roll_mod:standard_chip_nand")
 })
