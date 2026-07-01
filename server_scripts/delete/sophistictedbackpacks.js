@@ -1,63 +1,67 @@
 ServerEvents.recipes(event => {
+    const itemsToRemove = [
+        "sophisticatedbackpacks:mob_catcher_upgrade",
+        "sophisticatedbackpacks:advanced_mob_catcher_upgrade",
+        "sophisticatedbackpacks:inception_upgrade",
+        "sophisticatedbackpacks:feeding_upgrade",
+        "sophisticatedbackpacks:advanced_feeding_upgrade",
+        "sophisticatedbackpacks:backpack",
+        "sophisticatedbackpacks:copper_backpack",
+        "sophisticatedbackpacks:iron_backpack",
+        "sophisticatedbackpacks:gold_backpack",
+        "sophisticatedbackpacks:diamond_backpack",
+        "sophisticatedbackpacks:netherite_backpack",
+        "sophisticatedbackpacks:pickup_upgrade",
+        "sophisticatedbackpacks:advanced_pickup_upgrade",
+        "sophisticatedbackpacks:filter_upgrade",
+        "sophisticatedbackpacks:advanced_filter_upgrade",
+        "sophisticatedbackpacks:magnet_upgrade",
+        "sophisticatedbackpacks:advanced_magnet_upgrade",
+        "sophisticatedbackpacks:compacting_upgrade",
+        "sophisticatedbackpacks:advanced_compacting_upgrade",
+        "sophisticatedbackpacks:void_upgrade",
+        "sophisticatedbackpacks:advanced_void_upgrade",
+        "sophisticatedbackpacks:restock_upgrade",
+        "sophisticatedbackpacks:advanced_restock_upgrade",
+        "sophisticatedbackpacks:deposit_upgrade",
+        "sophisticatedbackpacks:advanced_deposit_upgrade",
+        "sophisticatedbackpacks:refill_upgrade",
+        "sophisticatedbackpacks:advanced_refill_upgrade",
+        "sophisticatedbackpacks:everlasting_upgrade",
+        "sophisticatedbackpacks:smelting_upgrade",
+        "sophisticatedbackpacks:auto_smelting_upgrade",
+        "sophisticatedbackpacks:smoking_upgrade",
+        "sophisticatedbackpacks:auto_smoking_upgrade",
+        "sophisticatedbackpacks:blasting_upgrade",
+        "sophisticatedbackpacks:auto_blasting_upgrade",
+        "sophisticatedbackpacks:crafting_upgrade",
+        "sophisticatedbackpacks:stonecutter_upgrade",
+        "sophisticatedbackpacks:stack_upgrade_starter_tier",
+        "sophisticatedbackpacks:stack_upgrade_tier_1",
+        "sophisticatedbackpacks:stack_upgrade_tier_2",
+        "sophisticatedbackpacks:stack_upgrade_tier_3",
+        "sophisticatedbackpacks:stack_upgrade_tier_4",
+        "sophisticatedbackpacks:stack_downgrade_tier_1",
+        "sophisticatedbackpacks:stack_downgrade_tier_2",
+        "sophisticatedbackpacks:stack_downgrade_tier_3",
+        "sophisticatedbackpacks:stack_upgrade_omega_tier",
+        "sophisticatedbackpacks:jukebox_upgrade",
+        "sophisticatedbackpacks:advanced_jukebox_upgrade",
+        "sophisticatedbackpacks:tool_swapper_upgrade",
+        "sophisticatedbackpacks:advanced_tool_swapper_upgrade",
+        "sophisticatedbackpacks:tank_upgrade",
+        "sophisticatedbackpacks:battery_upgrade",
+        "sophisticatedbackpacks:pump_upgrade",
+        "sophisticatedbackpacks:advanced_pump_upgrade",
+        "sophisticatedbackpacks:xp_pump_upgrade",
+        "sophisticatedbackpacks:anvil_upgrade",
+        "sophisticatedbackpacks:smithing_upgrade",
+        "sophisticatedbackpacks:alchemy_upgrade",
+        "sophisticatedbackpacks:advanced_alchemy_upgrade",
+        "sophisticatedbackpacks:upgrade_base"
+    ];
 
-        event.remove({ output: "sophisticatedbackpacks:mob_catcher_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_mob_catcher_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:inception_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:feeding_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_feeding_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:backpack" })
-        event.remove({ output: "sophisticatedbackpacks:copper_backpack" })
-        event.remove({ output: "sophisticatedbackpacks:iron_backpack" })
-        event.remove({ output: "sophisticatedbackpacks:gold_backpack" })
-        event.remove({ output: "sophisticatedbackpacks:diamond_backpack" })
-        event.remove({ output: "sophisticatedbackpacks:netherite_backpack" })
-        event.remove({ output: "sophisticatedbackpacks:pickup_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_pickup_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:filter_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_filter_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:magnet_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_magnet_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:compacting_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_compacting_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:void_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_void_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:restock_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_restock_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:deposit_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_deposit_upgrade" }) // немає крафту!!!!
-        event.remove({ output: "sophisticatedbackpacks:refill_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_refill_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:everlasting_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:smelting_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:auto_smelting_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:smoking_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:auto_smoking_upgrade" })// немає крафту
-        event.remove({ output: "sophisticatedbackpacks:blasting_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:auto_blasting_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:crafting_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:stonecutter_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:stack_upgrade_starter_tier" })
-        event.remove({ output: "sophisticatedbackpacks:stack_upgrade_tier_1" })
-        event.remove({ output: "sophisticatedbackpacks:stack_upgrade_tier_2" })
-        event.remove({ output: "sophisticatedbackpacks:stack_upgrade_tier_3" })
-        event.remove({ output: "sophisticatedbackpacks:stack_upgrade_tier_4" })
-        event.remove({ output: "sophisticatedbackpacks:stack_downgrade_tier_1" })
-        event.remove({ output: "sophisticatedbackpacks:stack_downgrade_tier_2" })
-        event.remove({ output: "sophisticatedbackpacks:stack_downgrade_tier_3" })
-        event.remove({ output: "sophisticatedbackpacks:stack_upgrade_omega_tier" })
-        event.remove({ output: "sophisticatedbackpacks:jukebox_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_jukebox_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:tool_swapper_upgrade" })//повністю видалення
-        event.remove({ output: "sophisticatedbackpacks:advanced_tool_swapper_upgrade" })//повністю видалення
-        event.remove({ output: "sophisticatedbackpacks:tank_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:battery_upgrade" })//повністю видалення
-        event.remove({ output: "sophisticatedbackpacks:pump_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_pump_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:xp_pump_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:anvil_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:smithing_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:alchemy_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:advanced_alchemy_upgrade" })
-        event.remove({ output: "sophisticatedbackpacks:upgrade_base" })
-        
-})
+    itemsToRemove.forEach(item => {
+        event.remove({ output: item });
+    });
+});
