@@ -1,13 +1,18 @@
 ServerEvents.recipes(event => {
-  event.remove({output: 'utilitarian:trowel'})
-  event.remove({output: 'utilitarian:snad'})
-  event.remove({output: 'utilitarian:red_snad'})
-  event.remove({output: 'utilitarian:soul_snad'})
-  event.remove({output: 'utilitarian:drit'})
-  event.remove({output: 'utilitarian:grrass'})
-  event.remove({output: 'utilitarian:tiny_coal'})
-  event.remove({output: 'utilitarian:tiny_charcoal'})
-  event.remove({output: 'utilitarian:redstone_clock'})
-  event.remove({output: 'utilitarian:fluid_hopper'})
-  event.remove({output: 'constructionstick:template_destruction'})
-})
+    const itemsToRemove = [
+        "utilitarian:trowel",
+        "utilitarian:snad",
+        "utilitarian:red_snad",
+        "utilitarian:soul_snad",
+        "utilitarian:drit",
+        "utilitarian:grrass",
+        "utilitarian:tiny_coal",
+        "utilitarian:tiny_charcoal",
+        "utilitarian:redstone_clock",
+        "utilitarian:fluid_hopper",
+    ];
+
+    itemsToRemove.forEach(item => {
+        event.remove({ output: item });
+    });
+});
