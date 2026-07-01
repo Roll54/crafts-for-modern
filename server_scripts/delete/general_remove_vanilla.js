@@ -11,5 +11,5 @@ ServerEvents.recipes(event => {
     
     event.remove({ mod: 'buildinggadgets2' })
     event.remove({ mod: 'scannable_unofficial' })
-    
+    event.remove({ mod: 'createcybernetics' })
 })
