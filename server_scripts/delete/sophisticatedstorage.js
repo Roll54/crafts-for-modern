@@ -1,40 +1,46 @@
 ServerEvents.recipes(event => {
-  event.remove({ output: "sophisticatedstorage:advanced_compacting_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_feeding_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_filter_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_jukebox_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_magnet_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_pickup_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_pump_upgrade" })
-  event.remove({ output: "sophisticatedstorage:void_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_void_upgrade" })
-  event.remove({ output: "sophisticatedstorage:auto_blasting_upgrade" })
-  event.remove({ output: "sophisticatedstorage:auto_smelting_upgrade" })
-  event.remove({ output: "sophisticatedstorage:auto_smoking_upgrade" })
-  event.remove({ output: "sophisticatedstorage:blasting_upgrade" })
-  event.remove({ output: "sophisticatedstorage:compression_upgrade" })
-  event.remove({ output: "sophisticatedstorage:crafting_upgrade" })
-  event.remove({ output: "sophisticatedstorage:xp_pump_upgrade" })
-  event.remove({ output: "sophisticatedstorage:feeding_upgrade" })
-  event.remove({ output: "sophisticatedstorage:filter_upgrade" })
-  event.remove({ output: "sophisticatedstorage:jukebox_upgrade" })
-  event.remove({ output: "sophisticatedstorage:magnet_upgrade" })
-  event.remove({ output: "sophisticatedstorage:pickup_upgrade" })
-  event.remove({ output: "sophisticatedstorage:pump_upgrade" })
-  event.remove({ output: "sophisticatedstorage:smelting_upgrade" })
-  event.remove({ output: "sophisticatedstorage:smoking_upgrade" })
-  event.remove({ output: "sophisticatedstorage:stonecutter_upgrade" })
-  event.remove({ output: "sophisticatedstorage:infinity_upgrade" })
-  event.remove({ output: "sophisticatedstorage:survival_infinity_upgrade" })
-  event.remove({ output: "sophisticatedstorage:alchemy_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_alchemy_upgrade" })
-  event.remove({ output: "sophisticatedstorage:hopper_upgrade" })
-  event.remove({ output: "sophisticatedstorage:advanced_hopper_upgrade" })
-  event.remove({ output: "sophisticatedstorage:chipped/carpenters_table_upgrade" })
-  event.remove({ output: "sophisticatedstorage:chipped/loom_table_upgrade" })
-  event.remove({ output: "sophisticatedstorage:chipped/mason_table_upgrade" })
-  event.remove({ output: "sophisticatedstorage:chipped/alchemy_bench_upgrade" })
-  event.remove({ output: "sophisticatedstorage:chipped/glassblower_upgrade" })
-  event.remove({ output: "sophisticatedstorage:chipped/botanist_workbench_upgrade" })
-  event.remove({ output: "sophisticatedstorage:chipped/tinkering_table_upgrade" })
-})
+    const itemsToRemove = [
+        "sophisticatedstorage:advanced_compacting_upgrade",
+        "sophisticatedstorage:advanced_feeding_upgrade",
+        "sophisticatedstorage:advanced_filter_upgrade",
+        "sophisticatedstorage:advanced_jukebox_upgrade",
+        "sophisticatedstorage:advanced_magnet_upgrade",
+        "sophisticatedstorage:advanced_pickup_upgrade",
+        "sophisticatedstorage:advanced_pump_upgrade",
+        "sophisticatedstorage:void_upgrade",
+        "sophisticatedstorage:advanced_void_upgrade",
+        "sophisticatedstorage:auto_blasting_upgrade",
+        "sophisticatedstorage:auto_smelting_upgrade",
+        "sophisticatedstorage:auto_smoking_upgrade",
+        "sophisticatedstorage:blasting_upgrade",
+        "sophisticatedstorage:compression_upgrade",
+        "sophisticatedstorage:crafting_upgrade",
+        "sophisticatedstorage:xp_pump_upgrade",
+        "sophisticatedstorage:feeding_upgrade",
+        "sophisticatedstorage:filter_upgrade",
+        "sophisticatedstorage:jukebox_upgrade",
+        "sophisticatedstorage:magnet_upgrade",
+        "sophisticatedstorage:pickup_upgrade",
+        "sophisticatedstorage:pump_upgrade",
+        "sophisticatedstorage:smelting_upgrade",
+        "sophisticatedstorage:smoking_upgrade",
+        "sophisticatedstorage:stonecutter_upgrade",
+        "sophisticatedstorage:infinity_upgrade",
+        "sophisticatedstorage:survival_infinity_upgrade",
+        "sophisticatedstorage:alchemy_upgrade",
+        "sophisticatedstorage:advanced_alchemy_upgrade",
+        "sophisticatedstorage:hopper_upgrade",
+        "sophisticatedstorage:advanced_hopper_upgrade",
+        "sophisticatedstorage:chipped/carpenters_table_upgrade",
+        "sophisticatedstorage:chipped/loom_table_upgrade",
+        "sophisticatedstorage:chipped/mason_table_upgrade",
+        "sophisticatedstorage:chipped/alchemy_bench_upgrade",
+        "sophisticatedstorage:chipped/glassblower_upgrade",
+        "sophisticatedstorage:chipped/botanist_workbench_upgrade",
+        "sophisticatedstorage:chipped/tinkering_table_upgrade"
+    ];
+
+    itemsToRemove.forEach(item => {
+        event.remove({ output: item });
+    });
+});
