@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
     const itemsToRemove = [
-        "sophisticatedstorage:advanced_compacting_upgrade",
         "sophisticatedstorage:advanced_feeding_upgrade",
         "sophisticatedstorage:advanced_filter_upgrade",
         "sophisticatedstorage:advanced_jukebox_upgrade",
@@ -11,7 +10,6 @@ ServerEvents.recipes(event => {
         "sophisticatedstorage:auto_smelting_upgrade",
         "sophisticatedstorage:auto_smoking_upgrade",
         "sophisticatedstorage:blasting_upgrade",
-        "sophisticatedstorage:compression_upgrade",
         "sophisticatedstorage:crafting_upgrade",
         "sophisticatedstorage:xp_pump_upgrade",
         "sophisticatedstorage:feeding_upgrade",
