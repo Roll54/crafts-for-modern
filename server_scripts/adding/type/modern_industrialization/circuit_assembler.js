@@ -8,6 +8,13 @@ ServerEvents.recipes(event => {
   .fluidIn("modern_industrialization:molten_redstone", 200)
   .itemOut("1x ae2:cell_component_1k")
 
+event.recipes.modern_industrialization.circuit_assembler(4, 100)
+    .itemIn("1x minecraft:amethyst_shard")
+    .itemIn("2x modern_industrialization:analog_circuit")
+    .itemIn("6x modern_industrialization:electrum_wire")
+    .itemIn("6x modern_industrialization:steel_plate")
+    .itemOut("2x roll_mod:amethyst_oscillator");
+  
   event.recipes.modern_industrialization.circuit_assembler(4, 100)
   .itemIn("2x modern_industrialization:gold_fine_wire")
   .itemIn("3x ae2:cell_component_1k")
