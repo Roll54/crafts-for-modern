@@ -51,14 +51,14 @@ function plantToOre (crushedOre, plantItem, numberOfPlants, outputOre, outputOre
     let recipe = event.recipes.modern_industrialization.lv_ore_washer(32, 60)
     .itemIn('1x ${crushedOre}')
     .itemIn('${numberOfPlants}x ${plantItem}')
-    .fluidIn("1500x modern_industrialization:sodium_persulfate")
-    .itemOut("${outputOreNumber}x ${outputOre}") 
+    .fluidIn('1500x modern_industrialization:sodium_persulfate')
+    .itemOut('${outputOreNumber}x ${outputOre}') 
     if (optionalOutput !== null){
-    recipe.itemOut("${optionalOutputNumber}x ${optionalOutput}") 
+    recipe.itemOut('${optionalOutputNumber}x ${optionalOutput}') 
     }
 }
 
-plantToOre("roll_mod:crushed_nickel_ore", "roll_mod:nikelia_flowers", 20, "roll_mod:purified_nickel_ore", "4", "modern_industrialization:platinum_dust", 1)
+plantToOre("roll_mod:crushed_nickel_ore", "roll_mod:nikelia_flowers", 20, "roll_mod:purified_nickel_ore", 4, "modern_industrialization:platinum_dust", 1)
 
 
 })
