@@ -6,11 +6,17 @@ event.recipes.modern_industrialization.assembler(8, 600)
   .itemOut("1x modern_industrialization:enderium_casing")
 
 event.recipes.modern_industrialization.assembler(4, 100)
-    .itemIn("1x minecraft:amethyst_cluster")
-    .itemIn("1x modern_industrialization:analog_circuit")
-    .itemIn("4x modern_industrialization:electrum_wire")
-    .itemIn("4x modern_industrialization:steel_plate")
-    .itemOut("1x roll_mod:amethyst_oscillator");
+  .itemIn("1x minecraft:amethyst_cluster")
+  .itemIn("1x modern_industrialization:analog_circuit")
+  .itemIn("4x modern_industrialization:electrum_wire")
+  .itemIn("4x modern_industrialization:steel_plate")
+  .itemOut("1x roll_mod:amethyst_oscillator");
+
+event.recipes.modern_industrialization.assembler(4, 100)
+  .itemIn("3x roll_mod:redstone_tube")
+  .itemIn("2x modern_industrialization:resistor")
+  .itemIn("1x modern_industrialization:analog_circuit_board")
+  .itemOut("1x modern_industrialization:analog_circuit")
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x roll_mod:treated_plate")
