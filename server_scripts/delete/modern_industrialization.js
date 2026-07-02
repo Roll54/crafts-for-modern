@@ -26,7 +26,8 @@ ServerEvents.recipes(event => {
         "modern_industrialization:stainless_steel_hot_ingot",
         "modern_industrialization:tungsten_cable",
         "modern_industrialization:electric_quarry",
-        "modern_industrialization:steam_quarry"
+        "modern_industrialization:steam_quarry",
+        "modern_industrialization:random_access_memory"
     ];
 
     const modernRecipes = [
