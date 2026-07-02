@@ -7,8 +7,6 @@ ServerEvents.recipes(event => {
         "sophisticatedstorage:advanced_magnet_upgrade",
         "sophisticatedstorage:advanced_pickup_upgrade",
         "sophisticatedstorage:advanced_pump_upgrade",
-        "sophisticatedstorage:void_upgrade",
-        "sophisticatedstorage:advanced_void_upgrade",
         "sophisticatedstorage:auto_blasting_upgrade",
         "sophisticatedstorage:auto_smelting_upgrade",
         "sophisticatedstorage:auto_smoking_upgrade",
