@@ -99,7 +99,7 @@ event.recipes.modern_industrialization.mixer(16, 200)
 
 // Ін'єкції
   event.recipes.modern_industrialization.mixer(24, 100)
-  .fluidIn("modern_industrialization:distilled_water", 10000)
+  .fluidIn("extended_industrialization:distilled_water", 10000)
   .itemIn("1x roll_mod:1_circuit", 0.0)
   .itemIn("1x modern_industrialization:salt_dust")
   .fluidOut("modern_industrialization:saline_solution", 10000)
@@ -112,7 +112,7 @@ event.recipes.modern_industrialization.mixer(16, 200)
   .fluidOut("modern_industrialization:diluted_agar_solution", 250)
 
   event.recipes.modern_industrialization.mixer(24, 300)
-  .fluidIn("modern_industrialization:distilled_water", 2000)
+  .fluidIn("extended_industrialization:distilled_water", 2000)
   .itemIn("10x roll_mod:agar_dust")
   .itemIn("6x roll_mod:calcium_dust")
   .itemIn("4x modern_industrialization:salt_dust")
