@@ -1400,21 +1400,6 @@ event.shaped(
             D: 'modern_industrialization:trash_can'
         }
     )
-    
-    event.shaped(
-        Item.of('sophisticatedbackpacks:advanced_void_upgrade'),
-        [
-            'ABA',
-            'ACA',
-            'ADA'
-        ],
-        {
-            A: 'sophisticatedstorage:diamond_barrel',
-            C: 'sophisticatedbackpacks:void_upgrade',
-            B: 'modern_industrialization:configurable_chest',
-            D: 'modern_industrialization:trash_can'
-        }
-    )
 
   event.shaped(
     Item.of('sophisticatedbackpacks:blasting_upgrade'),
@@ -1519,7 +1504,7 @@ event.shaped(
     ],
     {
         E: 'modern_industrialization:analog_circuit',
-        B: 'sophisticatedbackpacks:iron_backpack',
+        B: 'minecraft:chest',
         D: 'sophisticatedbackpacks:jukebox_upgrade',
         C: 'roll_mod:treated_plate',
         A: 'modern_industrialization:steel_plate'
