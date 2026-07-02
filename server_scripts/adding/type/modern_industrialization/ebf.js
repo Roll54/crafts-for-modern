@@ -117,6 +117,12 @@ event.recipes.modern_industrialization.blast_furnace(64, 400)
   .itemIn("4x modern_industrialization:carbon_dust")
   .itemOut("6x roll_mod:rutile_iron")
 
+event.recipes.modern_industrialization.blast_furnace(64, 400)
+  .itemIn("32x #c:dusts/silicon")
+  .itemIn("1x modern_industrialization:iridium_tiny_dust")
+  .biome("ad_astra:orbit")
+  .itemOut("1x modern_industrialization:monocrystalline_silicon")
+  
   event.recipes.modern_industrialization.blast_furnace(128, 400)
   .itemIn("2x modern_industrialization:magnesium_dust")
   .itemOut("1x modern_industrialization:titanium_hot_ingot")
