@@ -1142,25 +1142,7 @@ event.shaped(
         B: 'extended_industrialization:robot_auto_feeder'
     }
   )
-
-  event.shaped(
-    Item.of('sophisticatedbackpacks:advanced_feeding_upgrade'),
-    [
-        'ABC',
-        'DED',
-        ' GH'
-    ],
-    {
-        A: 'tide:bedrock_bug',
-        H: 'roll_mod:very_nutritious_candy',
-        C: 'roll_mod:sulfur_jam',
-        D: 'modern_industrialization:processing_unit',
-        E: 'sophisticatedbackpacks:feeding_upgrade',
-        B: 'yet_another_industrialization:configurable_mixed_storage',
-        G: 'modern_industrialization:iridium_plate'
-    }
-  )
-
+    
   event.shaped(
     Item.of('sophisticatedbackpacks:filter_upgrade'),
     [
