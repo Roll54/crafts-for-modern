@@ -67,7 +67,8 @@ const removedRecipes = [
   'ad_astra:calorite_plate',
   'ad_astra:steel_plate',
   'ad_astra:steel_ingot',
-  'ad_astra:steel_nugget'
+  'ad_astra:steel_nugget',
+  'ad_astra:wrench'
 ];
 
 removedRecipes.forEach(id => event.remove({ output: id }));
