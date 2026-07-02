@@ -1815,9 +1815,8 @@ event.recipes.modern_industrialization.assembler(32, 200)
 event.recipes.modern_industrialization.assembler(16, 100)
 .itemIn("1x minecraft:glass")
 .itemIn("1x modern_industrialization:redstone_alloy_rod")
-.itemIn("1x modern_industrialization:electrum_plate")
+.itemIn("1x modern_industrialization:electrum_wire")
 .itemIn("1x modern_industrialization:steel_rod")
-.itemIn("2x modern_industrialization:redstone_alloy_bolt")
 .itemIn("1x roll_mod:treated_plate")
 .itemOut("2x roll_mod:redstone_tube");
 
