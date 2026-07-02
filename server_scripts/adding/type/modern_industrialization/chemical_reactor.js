@@ -1,5 +1,13 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.chemical_reactor(12, 400)
+.itemIn("1x #c:dusts/aluminum")
+.itemIn("1x #c:dusts/antimony")
+.itemIn("1x modern_industrialization:silicon_wafer")    
+.fluidIn("modern_industrialization:styrene_butadiene_rubber", 500)
+.biome("ad_astra:orbit")
+.itemOut("2x modern_industrialization:random_access_memory")
+    
 event.recipes.modern_industrialization.chemical_reactor(8, 200)
 .itemIn("3x #c:dusts/fluorite")
 .fluidIn("modern_industrialization:chlorine", 2000)
