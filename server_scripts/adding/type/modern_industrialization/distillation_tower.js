@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 */
   event.recipes.modern_industrialization.distillation_tower(16, 200)
   .fluidIn("modern_industrialization:ethanol_containing_liquid", 1000)
-  .fluidOut("modern_industrialization:distilled_water", 175)
+  .fluidOut("extended_industrialization:distilled_water", 175)
   .fluidOut("modern_industrialization:ethanol", 200)
   .fluidOut("modern_industrialization:carbon_dioxide", 625)
 })

@@ -8,6 +8,22 @@ ServerEvents.recipes(event => {
   .fluidIn("modern_industrialization:molten_redstone", 200)
   .itemOut("1x ae2:cell_component_1k")
 
+  event.recipes.modern_industrialization.circuit_assembler(4, 100)
+  .itemIn("4x modern_industrialization:transistor")
+  .itemIn("4x modern_industrialization:diode")
+  .itemIn("4x modern_industrialization:analog_circuit")
+  .itemIn("2x modern_industrialization:electronic_circuit_board")
+  .fluidIn("modern_industrialization:soldering_alloy", 100)
+  .itemOut("4x modern_industrialization:electronic_circuit")
+
+event.recipes.modern_industrialization.circuit_assembler(4, 100)
+  .itemIn("4x roll_mod:redstone_tube")
+  .itemIn("3x roll_mod:standard_chip_pmic")
+  .itemIn("3x modern_industrialization:analog_circuit_board")
+  .itemIn("4x modern_industrialization:capacitor")
+  .fluidIn("modern_industrialization:soldering_alloy", 100)
+  .itemOut("12x modern_industrialization:analog_circuit")
+
 event.recipes.modern_industrialization.circuit_assembler(4, 100)
     .itemIn("1x minecraft:amethyst_shard")
     .itemIn("2x modern_industrialization:analog_circuit")
