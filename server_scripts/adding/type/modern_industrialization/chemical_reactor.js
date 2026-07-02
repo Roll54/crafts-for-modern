@@ -420,10 +420,10 @@ event.recipes.modern_industrialization.chemical_reactor(256, 120)
 .fluidOut("3000x minecraft:water");
 
 
-event.recipes.modern_industrialization.chemical_reactor(32, 400)
-.itemIn("21x roll_mod:apatite_dust")
-.fluidIn("35000x modern_industrialization:sulfuric_acid")
-.fluidOut("24000x extended_industrialization:phosphoric_acid")
-.fluidOut("15000x modern_industrialization:hydrofluoric_acid")
-.itemOut("30x modern_industrialization:calcium_sulfate_dust")
+event.recipes.modern_industrialization.chemical_reactor(32, 1200)
+.itemIn("10x modern_industrialization:beryllium_dust")
+.itemIn("40x roll_mod:potassium_dust")
+.fluidOut("50000x modern_industrialization:nitrogen")
+.fluidOut("15000x sophisticatedcore:xp_still")
+.itemOut("100x ae2:ender_dust")
 })
