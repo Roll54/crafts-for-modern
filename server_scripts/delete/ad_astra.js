@@ -57,7 +57,9 @@ const removedRecipes = [
   "ad_astra:wheel",
   "ad_astra:photovoltaic_etrium_cell",
   "ad_astra:etrionic_capacitor",
-  "ad_astra:steel_block"
+  "ad_astra:steel_block",
+  "ad_astra:desh_fluid_pipe",
+  "ad_astra:ostrum_fluid_pipe"
 ];
 
 removedRecipes.forEach(id => event.remove({ output: id }));
