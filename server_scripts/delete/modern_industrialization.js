@@ -68,7 +68,8 @@ ServerEvents.recipes(event => {
         "extended_industrialization:nano_chestplate",
         "extended_industrialization:nano_leggings",
         "extended_industrialization:nano_boots",
-        "extended_industrialization:nano_gravichestplate"
+        "extended_industrialization:nano_gravichestplate",
+        'extended_industrialization:nano_saber'
     ];
     
     const vanillaItems = [
