@@ -63,9 +63,14 @@ ServerEvents.recipes(event => {
         "industrialization_overdrive:pyrolyse_oven",
         "extended_industrialization:electric_mining_drill",
         "extended_industrialization:electric_chainsaw",
-        "mi_tweaks:flux_transformer"
+        "mi_tweaks:flux_transformer",
+        "extended_industrialization:nano_helmet",
+        "extended_industrialization:nano_chestplate",
+        "extended_industrialization:nano_leggings",
+        "extended_industrialization:nano_boots",
+        "extended_industrialization:nano_gravichestplate"
     ];
-
+    
     const vanillaItems = [
         "minecraft:raw_gold"
     ];
