@@ -50,8 +50,8 @@ function plantToOre(
   numberOfPlants,
   outputOre,
   outputOreNumber,
-  optionalOutput = null,
-  optionalOutputNumber = 1
+  optionalOutput,
+  optionalOutputNumber
 ) {
   let recipe = event.recipes.modern_industrialization.lv_ore_washer(32, 60)
     .itemIn(`1x ${crushedOre}`)
@@ -68,7 +68,14 @@ function plantToOre(
 
 
 
-plantToOre("roll_mod:crushed_nickel_ore", "roll_mod:nikelia_flowers", 20, "roll_mod:purified_nickel_ore", 4, "modern_industrialization:platinum_dust", 1)
-
+plantToOre(
+  "roll_mod:crushed_nickel_ore",
+  "roll_mod:nikelia_flowers",
+  20,
+  "roll_mod:purified_nickel_ore",
+  4,
+  "modern_industrialization:platinum_dust",
+  1
+)
 
 })
