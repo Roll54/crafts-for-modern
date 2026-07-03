@@ -11,7 +11,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x roll_mod:standard_chip_pmic")
   .itemIn("3x modern_industrialization:capacitor")
   .fluidIn("modern_industrialization:soldering_alloy", 100)
-  .itemOut("1x modern_industrialization:analog_circuit")
+  .itemOut("6x modern_industrialization:analog_circuit")
   
 event.recipes.modern_industrialization.assembler(4, 100)
   .itemIn("1x minecraft:amethyst_cluster")
