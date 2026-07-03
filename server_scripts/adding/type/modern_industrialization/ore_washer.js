@@ -42,19 +42,21 @@ event.recipes.modern_industrialization.lv_ore_washer(32, 20)
 .itemIn("1x roll_mod:crushed_quartz_ore")
 .itemIn("1x roll_mod:crushed_quartz_ore")
 .fluidIn("modern_industrialization:mercury", 500)//todo ЛОРП НАДА ПАМІНЯТЬ ЦИФРИ МІСЦЯМИ БО ЦЕ ЛЕГАСІ КОД!
-.itemOut("1x roll_mod:purified_quartz_ore") 
+.itemOut("1x roll_mod:purified_quartz_ore");
 
 function plantToOre (crushedOre, plantItem, numberOfPlants, outputOre, outputOreNumber, optionalOutput = null, optionalOutputNumber = 1 ){
 
-    
-
     let recipe = event.recipes.modern_industrialization.lv_ore_washer(32, 60)
+
     .itemIn('1x ${crushedOre}')
     .itemIn('${numberOfPlants}x ${plantItem}')
     .fluidIn('1500x modern_industrialization:sodium_persulfate')
     .itemOut('${outputOreNumber}x ${outputOre}') 
+
     if (optionalOutput !== null){
+
     recipe.itemOut('${optionalOutputNumber}x ${optionalOutput}') 
+    
     }
 }
 
