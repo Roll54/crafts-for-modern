@@ -236,7 +236,6 @@ event.recipes.modern_industrialization.electrolyzer(32, 100)
 .itemOut("2x modern_industrialization:iron_dust")
 .fluidOut("8000x modern_industrialization:oxygen")
 
-
 event.recipes.modern_industrialization.electrolyzer(64, 200)
 .itemIn("21x roll_mod:soap_stone_dust")
 .itemOut("4x modern_industrialization:silicon_dust")
@@ -244,11 +243,14 @@ event.recipes.modern_industrialization.electrolyzer(64, 200)
 .fluidOut("modern_industrialization:oxygen", 12000)
 .fluidOut("modern_industrialization:hydrogen", 2000); 
 
-
 event.recipes.modern_industrialization.electrolyzer(128, 1000)
 .itemIn("5x roll_mod:marble_dust")
 .itemOut("1x roll_mod:calcium_dust")
 .itemOut("1x modern_industrialization:carbon_dust")
 .fluidOut("modern_industrialization:oxygen", 3000)
   
+event.recipes.modern_industrialization.electrolyzer(128, 200)
+.itemIn("14x roll_mod:sodium_bisulfate_dust")
+.fluidOut("12000x modern_industrialization:sodium_persulfate")
+.fluidOut("2000x modern_industrialization:hydrogen")
 })

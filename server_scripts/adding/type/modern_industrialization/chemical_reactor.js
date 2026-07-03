@@ -423,7 +423,20 @@ event.recipes.modern_industrialization.chemical_reactor(256, 120)
 event.recipes.modern_industrialization.chemical_reactor(32, 1200)
 .itemIn("10x modern_industrialization:beryllium_dust")
 .itemIn("40x roll_mod:potassium_dust")
-.fluidOut("50000x modern_industrialization:nitrogen")
-.fluidOut("15000x sophisticatedcore:xp_still")
+.fluidIn("50000x modern_industrialization:nitrogen")
+.fluidIn("15000x sophisticatedcore:xp_still")
 .itemOut("100x ae2:ender_dust")
+
+event.recipes.modern_industrialization.chemical_reactor(32, 200)
+.itemIn("7x roll_mod:sodium_sulfate")
+.fluidIn("7000x modern_industrialization:sulfuric_acid")
+.itemOut("14x roll_mod:sodium_bisulfate")
+
+event.recipes.modern_industrialization.chemical_reactor(32, 200)
+.itemIn("6x roll_mod:sodium_carbonate")
+.fluidIn("14000x modern_industrialization:sulfuric_acid")
+.itemOut("14x roll_mod:sodium_bisulfate")
+.fluidOut("3000x modern_industrialization:carbon_dioxide")
+.fluidOut("3000x minecraft:water");
+
 })
