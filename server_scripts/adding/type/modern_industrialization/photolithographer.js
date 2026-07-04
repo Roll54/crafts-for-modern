@@ -152,7 +152,7 @@ event.recipes.modern_industrialization.photolithographer(256, 400)
     .biome("ad_astra:orbit")
     .itemOut("1x roll_mod:purple_wafer_accumulation")
 
-  event.recipes.modern_industrialization.photolithographer(256, 100)
+  event.recipes.modern_industrialization.photolithographer(256, 400)
     .itemIn("2x roll_mod:lapotron_laser", 0.005)
     .itemIn("1x roll_mod:advanced_robot_arm", 0.0)
     .itemIn("1x roll_mod:quartz_lamp", 0.005)
