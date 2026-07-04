@@ -419,10 +419,9 @@ event.recipes.modern_industrialization.chemical_reactor(256, 120)
 .itemOut("3x roll_mod:calcium_chloride_dust")
 .fluidOut("3000x minecraft:water");
 
-
 event.recipes.modern_industrialization.chemical_reactor(32, 1200)
 .itemIn("1x roll_mod:1_circuit", 0.0)
-.itemIn("10x modern_industrialization:beryllium_dust")
+.itemIn("10x #c:dusts/beryllium")
 .itemIn("40x roll_mod:potassium_dust")
 .fluidIn("50000x modern_industrialization:nitrogen")
 .fluidIn("15000x sophisticatedcore:xp_still")
