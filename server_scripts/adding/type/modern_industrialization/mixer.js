@@ -211,10 +211,16 @@ event.recipes.modern_industrialization.mixer(16, 200)
 .itemIn("1x modern_industrialization:magnesium_dust")
 .itemOut("5x modern_industrialization:magnalium_dust")
 
-    event.recipes.modern_industrialization.mixer(2, 300)
-  .itemIn("1x #minecraft:logs")
+event.recipes.modern_industrialization.mixer(2, 300)
+.itemIn("1x #minecraft:logs")
 .fluidIn("modern_industrialization:creosote", 4000)
 .itemOut("1x roll_mod:treated_log")
+
+event.recipes.modern_industrialization.mixer(2, 200)
+.itemIn("4x extendedae:entro_dust")
+.itemIn("4x ae2:fluix_crystal")
+.fluidIn("modern_industrialization:creosote", 1000, 0.0)
+.itemOut("4x extendedae:entro_crystal")
   
 event.recipes.modern_industrialization.mixer(24, 100)
 .fluidIn("10000x minecraft:water")
