@@ -5,7 +5,6 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
-    // Спосіб через event.add
     event.add('ad_astra:freeze_resistant_armor', [
         "extended_industrialization:nano_quantum_leggings",
         "extended_industrialization:nano_quantum_chestplate",
@@ -54,4 +53,4 @@ ServerEvents.tags('item', event => {
         "minecraft:milk_bucket"
     ]);
 
-});
+}).priority('low'); // Спробуйте 'low' або 'lowest'
