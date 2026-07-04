@@ -5,11 +5,12 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
+    // Додаємо до існуючого тегу ad_astra:freeze_resistant_armor
     event.add('ad_astra:freeze_resistant_armor', [
         "extended_industrialization:nano_quantum_leggings",
         "extended_industrialization:nano_quantum_chestplate",
         "extended_industrialization:nano_quantum_boots",
-        "extended_industrialization:nano_quantum_helmet", // <- додано кому
+        "extended_industrialization:nano_quantum_helmet",
         "ad_astra:netherite_space_helmet",
         "ad_astra:netherite_space_suit",
         "ad_astra:netherite_space_pants",
@@ -24,11 +25,12 @@ ServerEvents.tags('item', event => {
         "advanced_ae:quantum_boots",
     ]);
 
+    // Додаємо до існуючого тегу ad_astra:space_suit_items
     event.add('ad_astra:space_suit_items', [
         "extended_industrialization:nano_quantum_leggings",
         "extended_industrialization:nano_quantum_chestplate",
         "extended_industrialization:nano_quantum_boots",
-        "extended_industrialization:nano_quantum_helmet", // <- додано кому
+        "extended_industrialization:nano_quantum_helmet",
         "ad_astra:netherite_space_helmet",
         "ad_astra:netherite_space_suit",
         "ad_astra:netherite_space_pants",
