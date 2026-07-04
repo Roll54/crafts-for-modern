@@ -5,8 +5,13 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
-    event.add('curios:ring', [
+    event.add('curios:curio', [
         "roll_mod:energium_battery",
+        'roll_mod:redstone_battery',
+        'roll_mod:lapotron_battery_t1',
+        'roll_mod:lapotron_battery_t2',
+        'roll_mod:lapotron_battery_t3',
+        'roll_mod:ultra_battery',
     ]);
 
     event.add('ad_astra:freeze_resistant_armor', [
