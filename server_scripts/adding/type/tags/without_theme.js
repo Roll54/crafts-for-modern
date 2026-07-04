@@ -5,6 +5,10 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
+    event.add('curios:slots/charm', [
+        "roll_mod:energium_battery",
+    ]);
+
     event.add('ad_astra:freeze_resistant_armor', [
         "extended_industrialization:nano_quantum_leggings",
         "extended_industrialization:nano_quantum_chestplate",
