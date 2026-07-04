@@ -1,7 +1,0 @@
-ServerEvents.recipes(event => {
-
-event.recipes.modern_industrialization.unpacker(2, 100)
-.itemIn("1x extended_industrialization:nano_gravichestplate")
-.itemOut("1x modern_industrialization:space_alloy_ingot")
-.itemOut("1x roll_mod:multi_protecting_gravi_chestplate")
-})
