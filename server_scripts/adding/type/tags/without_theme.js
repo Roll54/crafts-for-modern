@@ -1,46 +1,29 @@
 ServerEvents.tags('item', event => {
+    
+    // Діагностика - перевіряємо чи існують теги ad_astra
+    console.log('Перевіряємо теги ad_astra:');
+    console.log('freeze_resistant_armor exists? ' + (event.get('ad_astra:freeze_resistant_armor') !== null));
+    console.log('space_suit_items exists? ' + (event.get('ad_astra:space_suit_items') !== null));
+    
+    // Додаємо наші предмети
+    event.get('ad_astra:freeze_resistant_armor').add([
+        "extended_industrialization:nano_quantum_leggings",
+        "extended_industrialization:nano_quantum_chestplate",
+        "extended_industrialization:nano_quantum_boots",
+        "extended_industrialization:nano_quantum_helmet"
+    ]);
 
+    event.get('ad_astra:space_suit_items').add([
+        "extended_industrialization:nano_quantum_leggings",
+        "extended_industrialization:nano_quantum_chestplate",
+        "extended_industrialization:nano_quantum_boots",
+        "extended_industrialization:nano_quantum_helmet"
+    ]);
+
+    // Ваші інші теги
     event.add('roll_mod:battaries_tier_one', [
         "roll_mod:primitive_battery",
         "modern_industrialization:redstone_battery",
-    ]);
-
-    event.add('ad_astra:freeze_resistant_armor', [
-        "extended_industrialization:nano_quantum_leggings",
-        "extended_industrialization:nano_quantum_chestplate",
-        "extended_industrialization:nano_quantum_boots",
-        "extended_industrialization:nano_quantum_helmet",
-        "ad_astra:netherite_space_helmet",
-        "ad_astra:netherite_space_suit",
-        "ad_astra:netherite_space_pants",
-        "ad_astra:netherite_space_boots",
-        "ad_astra:jet_suit_helmet",
-        "ad_astra:jet_suit",
-        "ad_astra:jet_suit_pants",
-        "ad_astra:jet_suit_boots",
-        "advanced_ae:quantum_helmet",
-        "advanced_ae:quantum_chestplate",
-        "advanced_ae:quantum_leggings",
-        "advanced_ae:quantum_boots",
-    ]);
-
-    event.add('ad_astra:space_suit_items', [
-        "extended_industrialization:nano_quantum_leggings",
-        "extended_industrialization:nano_quantum_chestplate",
-        "extended_industrialization:nano_quantum_boots",
-        "extended_industrialization:nano_quantum_helmet",
-        "ad_astra:netherite_space_helmet",
-        "ad_astra:netherite_space_suit",
-        "ad_astra:netherite_space_pants",
-        "ad_astra:netherite_space_boots",
-        "ad_astra:jet_suit_helmet",
-        "ad_astra:jet_suit",
-        "ad_astra:jet_suit_pants",
-        "ad_astra:jet_suit_boots",
-        "advanced_ae:quantum_helmet",
-        "advanced_ae:quantum_chestplate",
-        "advanced_ae:quantum_leggings",
-        "advanced_ae:quantum_boots",
     ]);
 
     event.add('roll_mod:good_for_crystal_chip', [
@@ -53,4 +36,4 @@ ServerEvents.tags('item', event => {
         "minecraft:milk_bucket"
     ]);
 
-}).priority('low'); // Спробуйте 'low' або 'lowest'
+}).priority('low');
