@@ -14,7 +14,8 @@ ServerEvents.recipes(event => {
         "extendedae:wireless_tool",
         "extendedae:crystal_fixer",
         "extendedae:assembler_matrix_wall",
-        "extendedae:assembler_matrix_glass"
+        "extendedae:assembler_matrix_glass",
+        "extendedae:entro_seed"
     ];
 
     const extendedPairs = [
