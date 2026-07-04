@@ -5,7 +5,7 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
-    event.add('curios:charm', [
+    event.add('curios:ring', [
         "roll_mod:energium_battery",
     ]);
 
