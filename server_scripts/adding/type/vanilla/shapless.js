@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shapeless(
+    Item.of('roll_mod:sulfur_dust'),
+    [
+        'modern_industrialization:sulfur_tiny_dust',
+        'modern_industrialization:sulfur_tiny_dust',
+        'modern_industrialization:sulfur_tiny_dust',
+        'modern_industrialization:sulfur_tiny_dust',
+        'modern_industrialization:sulfur_tiny_dust',
+        'modern_industrialization:sulfur_tiny_dust',
+        'modern_industrialization:sulfur_tiny_dust',
+        'modern_industrialization:sulfur_tiny_dust',
+        'modern_industrialization:sulfur_tiny_dust'
+    ]
+)
+
+event.shapeless(
     Item.of('modern_industrialization:sulfur_tiny_dust', 9),
     [
         'roll_mod:sulfur_dust'
