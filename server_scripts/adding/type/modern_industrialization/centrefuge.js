@@ -1,5 +1,9 @@
 ServerEvents.recipes(event => {
 
+  event.recipes.modern_industrialization.centrifuge(8, 200)
+  .itemIn("1x #minecraft:leaves")
+  .fluidOut("modern_industrialization:plant_oil", 300)
+  
   event.recipes.modern_industrialization.centrifuge(32, 600)
   .fluidIn("minecraft:lava", 1000)
   .itemOut("17x roll_mod:sulfur_dust")
