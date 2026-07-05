@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
   event.recipes.modern_industrialization.centrifuge(32, 100)
   .itemIn("8x roll_mod:tetrahedrite_dust")
   .itemOut("3x modern_industrialization:copper_dust")
-  .itemOut("3x modern_industrialization:sulfur_dust")
+  .itemOut("3x roll_mod:sulfur_dust")
   .itemOut("1x modern_industrialization:antimony_dust")
   .itemOut("1x modern_industrialization:iron_dust")
 
