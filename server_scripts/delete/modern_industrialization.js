@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
         "modern_industrialization:electric_quarry",
         "modern_industrialization:steam_quarry",
         "modern_industrialization:fusion_chamber",
+        "modern_industrialization:sulfur_dust",
     ];
 
     const modernRecipes = [
