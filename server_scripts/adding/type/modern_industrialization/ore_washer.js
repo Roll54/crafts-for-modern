@@ -45,19 +45,18 @@ event.recipes.modern_industrialization.lv_ore_washer(32, 20)
 .itemOut("1x roll_mod:purified_quartz_ore");
 
 function plantToOre(
-  crushedOre,
+  oreName,
   plantItem,
   numberOfPlants,
-  outputOre,
   outputOreNumber,
   optionalOutput,
   optionalOutputNumber
 ) {
   let recipe = event.recipes.modern_industrialization.lv_ore_washer(32, 60)
-    .itemIn(`1x ${crushedOre}`)
+    .itemIn(`1x roll_mod:crushed_${oreName}_ore`)
     .itemIn(`${numberOfPlants}x ${plantItem}`)
     .fluidIn(`1500x modern_industrialization:sodium_persulfate`)
-    .itemOut(`${outputOreNumber}x ${outputOre}`)
+    .itemOut(`${outputOreNumber}x roll_mod:purified_${oreName}_ore`)
 
   if (optionalOutput !== null) {
     recipe.itemOut(`${optionalOutputNumber}x ${optionalOutput}`)
@@ -69,13 +68,40 @@ function plantToOre(
 
 
 plantToOre(
-  "roll_mod:crushed_nickel_ore",
+  "nickel",
   "roll_mod:nikelia_flowers",
   20,
-  "roll_mod:purified_nickel_ore",
   4,
   "modern_industrialization:platinum_dust",
   1
 )
+
+plantToOre(
+  "blue_topaz",
+  "roll_mod:fluorite_pineapple",
+  3,
+  5,
+  null,
+  1
+)
+
+plantToOre(
+  "topaz",
+  "roll_mod:fluorite_pineapple",
+  3,
+  5,
+  null,
+  1
+)
+
+plantToOre(
+  "fluorite",
+  "roll_mod:fluorite_pineapple",
+  4,
+  6,
+  null,
+  1
+)
+
 
 })
