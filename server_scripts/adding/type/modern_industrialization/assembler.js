@@ -31,6 +31,8 @@ event.recipes.modern_industrialization.assembler(8, 200)
   .itemIn("4x modern_industrialization:electronic_circuit")
   .itemIn("1x roll_mod:energium_battery")
   .itemIn("4x modern_industrialization:large_motor")
+  .itemIn("2x modern_industrialization:advanced_pump")
+  .itemIn("1x ad_astra:oxygen_gear")
   .itemOut("1x extended_industrialization:nano_chestplate")
 
 event.recipes.modern_industrialization.assembler(8, 200)
@@ -1370,7 +1372,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x modern_industrialization:stainless_steel_rod")// Фіксатори, кільця для з'єднання
   .itemIn("1x #c:plates/aluminum")                          // Шари теплового захисту – з лавсану (Mylar), каптону та алюмінієвих фольг
-  .itemIn("5x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
+  .itemIn("3x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
   .itemIn("1x modern_industrialization:analog_circuit")     // Простенькі аналогові контролери, радіо, клапани, тощо
   .itemIn("1x modern_industrialization:silicon_battery")
   .itemIn("1x ae2:quartz_glass")                            // Шолом і візор – виготовлений із полікарбонату та покритий золотом для відбиття сонячного випромінювання
@@ -1380,9 +1382,9 @@ event.recipes.modern_industrialization.assembler(16, 800)
   event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x modern_industrialization:stainless_steel_rod")// Фіксатори, кільця для з'єднання
   .itemIn("2x #c:plates/aluminum")                          // Шари теплового захисту – з лавсану (Mylar), каптону та алюмінієвих фольг
-  .itemIn("8x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
+  .itemIn("6x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
   .itemIn("2x modern_industrialization:advanced_pump")                        // Система життєзабезпечення
-  .itemIn("16x modern_industrialization:fluid_pipe")                        // Система життєзабезпечення
+  .itemIn("16x modern_industrialization:fluid_pipe")    
   .fluidIn("modern_industrialization:nylon", 1200)          // Герметичний шар – виготовлений із нейлону
   .itemIn("1x ad_astra:oxygen_gear")
   .itemOut("1x ad_astra:space_suit")
@@ -1390,7 +1392,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x modern_industrialization:stainless_steel_rod")// Фіксатори, кільця для з'єднання
   .itemIn("2x #c:plates/aluminum")                          // Шари теплового захисту – з лавсану (Mylar), каптону та алюмінієвих фольг
-  .itemIn("7x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
+  .itemIn("5x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
   .itemIn("4x minecraft:white_wool")                            // з начосом
   .fluidIn("modern_industrialization:nylon", 600)           // Герметичний шар – виготовлений із нейлону
   .itemOut("1x ad_astra:space_pants")
@@ -1398,7 +1400,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x modern_industrialization:stainless_steel_rod")// Фіксатори, кільця для з'єднання
   .itemIn("2x #c:plates/aluminum")                          // Шари теплового захисту – з лавсану (Mylar), каптону та алюмінієвих фольг
-  .itemIn("4x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
+  .itemIn("2x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
   .itemIn("6x roll_mod:rubber_ingot")       // Товста підошва для захисту від гострих уламків
   .fluidIn("modern_industrialization:nylon", 600)           // Герметичний шар – виготовлений із нейлону
   .itemOut("1x ad_astra:space_boots")
