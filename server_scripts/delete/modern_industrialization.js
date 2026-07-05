@@ -71,7 +71,10 @@ ServerEvents.recipes(event => {
         "extended_industrialization:nano_leggings",
         "extended_industrialization:nano_boots",
         "extended_industrialization:nano_gravichestplate",
-        'extended_industrialization:nano_saber'
+        'extended_industrialization:nano_saber',
+        'extended_industrialization:lv_solar_panel',
+        'extended_industrialization:mv_solar_panel',
+        'extended_industrialization:hv_solar_panel',
     ];
     
     const vanillaItems = [
