@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
     main_multiplier: 3,
 
     macerator_byproduct: "roll_mod:chalcopyrite_dust",
-    centrifuge_byproduct: "modern_industrialization:sulfur_dust",
+    centrifuge_byproduct: "roll_mod:sulfur_dust",
     washer_byproduct: "roll_mod:cinnabar_dust"
 },
 {
