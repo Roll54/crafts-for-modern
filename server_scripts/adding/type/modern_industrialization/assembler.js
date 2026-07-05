@@ -8,6 +8,13 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemOut("1x ae2:controller")
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x #c:glass_blocks")
+  .itemIn("1x ae2:annihilation_core")
+  .itemIn("1x ae2:formation_core")
+  .itemIn("4x modern_industrialization:steel_plate")
+  .itemOut("1x ae2:interface")
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x ae2:engineering_processor")
   .itemIn("4x ae2:fluix_smart_cable")
   .itemIn("1x minecraft:chiseled_bookshelf")
