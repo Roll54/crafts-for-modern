@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
   .itemIn("4x modern_industrialization:analog_circuit")
   .itemIn("2x modern_industrialization:electronic_circuit_board")
   .fluidIn("modern_industrialization:soldering_alloy", 100)
-  .itemOut("4x modern_industrialization:electronic_circuit")
+  .itemOut("2x modern_industrialization:electronic_circuit")
 
 event.recipes.modern_industrialization.circuit_assembler(4, 100)
   .itemIn("4x roll_mod:redstone_tube")
