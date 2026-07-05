@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.circuit_assembler(4, 100)
   .itemIn("4x roll_mod:redstone_tube")
-  .itemIn("3x roll_mod:standard_chip_pmic")
+  .itemIn("2x roll_mod:standard_chip_pmic")
   .itemIn("3x modern_industrialization:analog_circuit_board")
   .itemIn("4x modern_industrialization:capacitor")
   .fluidIn("modern_industrialization:soldering_alloy", 100)
