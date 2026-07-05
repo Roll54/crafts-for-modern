@@ -104,8 +104,8 @@ plantToOre(
 plantToOre(
   "rutile",
   "roll_mod:rutile_bell_pepper",
-  64,
-  64,
+  4,
+  6,
   null,
   1
 )
