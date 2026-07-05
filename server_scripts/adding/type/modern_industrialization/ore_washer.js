@@ -65,8 +65,6 @@ function plantToOre(
   return recipe
 }
 
-
-
 plantToOre(
   "nickel",
   "roll_mod:nikelia_flowers",
@@ -103,5 +101,13 @@ plantToOre(
   1
 )
 
+plantToOre(
+  "rutile",
+  "roll_mod:rutile_bell_pepper",
+  64,
+  64,
+  null,
+  1
+)
 
 })
