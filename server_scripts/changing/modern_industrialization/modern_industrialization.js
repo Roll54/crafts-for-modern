@@ -1,5 +1,15 @@
 ServerEvents.recipes(event => {
 
+event.replaceOutput(
+  { input: 'modern_industrialization:sulfur_dust' },
+  'modern_industrialization:sulfur_dust',
+  'roll_mod:sulfur_dust')
+
+event.replaceInput(
+  { input: 'modern_industrialization:sulfur_dust' },
+  'modern_industrialization:sulfur_dust',
+  'roll_mod:sulfur_dust')
+  
 event.replaceInput(
   { input: 'minecraft:netherite_helmet' },
   'minecraft:netherite_helmet',
