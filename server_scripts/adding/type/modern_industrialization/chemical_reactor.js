@@ -441,7 +441,7 @@ event.recipes.modern_industrialization.chemical_reactor(32, 200)
 
 event.recipes.modern_industrialization.chemical_reactor(32, 120)
 .itemIn("1x roll_mod:2_circuit", 0.0)
-.itemIn("1x modern_industrialization:beryllium_dust")
+.itemIn("1x #c:dusts/beryllium")
 .itemIn("4x roll_mod:potassium_dust")
 .fluidIn("5000x modern_industrialization:nitrogen")
 .fluidIn("1500x sophisticatedcore:xp_still")
