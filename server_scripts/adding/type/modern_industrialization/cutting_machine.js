@@ -307,11 +307,6 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemOut("4x modern_industrialization:titanium_gear")
 
   event.recipes.modern_industrialization.cutting_machine(8, 1600)
-  .itemIn("1x modern_industrialization:titanium_block")
-  .fluidIn("modern_industrialization:lubricant", 20)
-  .itemOut("4x modern_industrialization:titanium_gear")
-
-  event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemIn("1x modern_industrialization:chrome_vanadium_steel_block")
   .fluidIn("modern_industrialization:lubricant", 20)
   .itemOut("4x modern_industrialization:chrome_vanadium_steel_gear")
