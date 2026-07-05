@@ -79,13 +79,6 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemOut("1x ae2:cell_workbench")
 
 event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("1x ae2:charged_certus_quartz_crystal")
-  .itemIn("4x modern_industrialization:iron_plate")
-  .itemIn("4x modern_industrialization:gold_ingot")
-  .itemIn("1x roll_mod:raw_magnetite")
-  .itemOut("1x ae2:meteorite_compass")
-
-event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x ae2:drive")
   .itemIn("2x ae2:export_bus")
   .itemIn("2x ae2:import_bus")
