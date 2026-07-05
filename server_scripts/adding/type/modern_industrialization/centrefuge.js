@@ -1,5 +1,12 @@
 ServerEvents.recipes(event => {
 
+  event.recipes.modern_industrialization.centrifuge(32, 600)
+  .fluidIn("minecraft:lava", 1000)
+  .itemOut("17x roll_mod:sulfur_dust")
+  .itemOut("11x modern_industrialization:copper_nugget")
+  .itemOut("3x modern_industrialization:aluminum_nugget", 0.5)
+  .itemOut("1x modern_industrialization:chromium_nugget", 0.25)
+  
   event.recipes.modern_industrialization.centrifuge(16, 200)
   .itemIn("#minecraft:meat")
   .fluidOut("modern_industrialization:blood", 100)
