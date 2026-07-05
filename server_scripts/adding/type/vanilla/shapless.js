@@ -164,12 +164,6 @@ event.shapeless(
 )
   
 event.shapeless(
-    Item.of('modern_industrialization:sulfur_dust'),
-    [
-        'roll_mod:sulfur_dust'
-    ]
-)
-event.shapeless(
     Item.of('extendedae:assembler_matrix_glass'),
     [
         'extendedae:assembler_matrix_wall',
