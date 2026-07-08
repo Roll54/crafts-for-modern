@@ -1,5 +1,154 @@
 ServerEvents.recipes(event => {
 
+ event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("2x createcybernetics:legupgrades_propellers")
+    .itemIn("2x createcybernetics:lungsupgrades_hyperoxygenation")
+    .itemIn("64x modern_industrialization:rubber_sheet")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:swim_speed_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("2x modern_industrialization:turbo_upgrade")
+    .itemIn("6x roll_mod:advanced_piston")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:jump_height_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("4x roll_mod:advanced_piston")
+    .itemIn("8x modern_industrialization:large_advanced_motor")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:step_assist_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("8x modern_industrialization:enderium_wire")
+    .itemIn("4x ae2:speed_card")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:sprint_speed_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("8x modern_industrialization:superconductor_wire")
+    .itemIn("4x ae2:speed_card")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:walk_speed_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("4x minecraft:ender_pearl")
+    .itemIn("8x ae2:speed_card")
+    .itemIn("2x ae2:fluix_pearl")
+    .itemIn("createcybernetics:boneupgrades_sandevistan")
+    .itemIn("createcybernetics:data_shard_purple")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:evasion_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("extended_industrialization:lethal_tesla_coil")
+    .itemIn("2x roll_mod:advanced_piston")
+    .itemIn("roll_mod:ev_electric_saber")
+    .itemIn("2x modern_industrialization:large_advanced_motor")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:strength_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("8x modern_industrialization:large_advanced_motor")
+    .itemIn("8x ae2:speed_card")
+    .itemIn("roll_mod:ev_electric_saber")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:attack_speed_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("2x minecraft:nether_star")
+    .itemIn("minecraft:wither_skeleton_skull")
+    .itemIn("ae2:wireless_access_point")
+    .itemIn("2x minecraft:rabbit_foot")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:luck_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("2x minecraft:echo_shard")
+    .itemIn("12x modern_industrialization:niobium_titanium_alloy_rod")
+    .itemIn("4x roll_mod:advanced_piston")
+    .itemIn("4x roll_mod:advanced_robot_arm")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:reach_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("createcybernetics:eyeupgrades_nightvision")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:night_vision_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("minecraft:totem_of_undying")
+    .itemIn("2x roll_mod:nether_star_plate")
+    .itemIn("2x modern_industrialization:netherite_plate")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:lava_immunity_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("8x modern_industrialization:large_advanced_motor")
+    .itemIn("roll_mod:multi_protecting_gravi_chestplate")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:flight_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("ad_astra:oxygen_loader")
+    .itemIn("2x ad_astra:oxygen_gear")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:water_breathing_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("2x modern_industrialization:large_advanced_motor")
+    .itemIn("ae2:wireless_access_point")
+    .itemIn("sophisticatedbackpacks:advanced_feeding_upgrade")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:auto_feeding_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("2x extended_industrialization:large_configurable_chest")
+    .itemIn("minecraft:shulker_box")
+    .itemIn("ae2:wireless_access_point")
+    .itemIn("ae2:controller")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:auto_stock_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("8x roll_mod:superconducting_magnet")
+    .itemIn("sophisticatedbackpacks:advanced_magnet_upgrade")
+    .itemIn("2x modern_industrialization:large_advanced_motor")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:magnet_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("extended_industrialization:tesla_handheld_receiver")
+    .itemIn("roll_mod:lapotron_battery_t3")
+    .itemIn("8x modern_industrialization:superconductor_wire")
+    .itemIn("6x ae2:energy_card")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:recharging_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("4x roll_mod:superconducting_module")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:flight_drift_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("ae2:cell_workbench")
+    .itemIn("ae2:wireless_access_point")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemOut("advanced_ae:portable_workbench_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("4x minecraft:crafting_table")
+    .itemIn("advanced_ae:quantum_upgrade_base")
+    .itemIn("modern_industrialization:circuit_assembler")
+    .itemOut("advanced_ae:pick_craft_card");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("ae2:cell_component_16k")
+    .itemIn("modern_industrialization:processing_unit")
+    .itemIn("64x modern_industrialization:niobium_titanium_alloy_fine_wire")
+    .itemIn("2x modern_industrialization:osmiridium_plate")
+    .itemOut("advanced_ae:quantum_upgrade_base");
+
   event.recipes.modern_industrialization.circuit_assembler(4, 100)
   .itemIn("1x modern_industrialization:silicon_wafer")
   .itemIn("2x #ae2:all_certus_quartz")
