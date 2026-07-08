@@ -1331,6 +1331,7 @@ event.recipes.modern_industrialization.assembler(32, 300)
   .itemIn("1x roll_mod:energium_battery")
   .itemIn("1x ad_astra:netherite_space_suit")
   .itemIn("1x modern_industrialization:stainless_steel_tank")
+  .itemIn("2x modern_industrialization:rhodium_large_plate")
   .fluidIn("modern_industrialization:nylon", 1000)
   .itemOut("1x ad_astra:jet_suit")
 
