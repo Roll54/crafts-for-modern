@@ -1,6 +1,25 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("minecraft:end_crystal")
+    .itemIn("minecraft:totem_of_undying")
+    .itemIn("minecraft:cake")
+    .itemIn("createcybernetics:heartupgrades_platelets")
+    .itemIn("createcybernetics:heartupgrades_stemcell")
+    .itemIn("2x modern_industrialization:large_advanced_motor")
+    .itemOut("advanced_ae:regeneration_card");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("createcybernetics:brain_stew")
+    .itemIn("2x modern_industrialization:large_advanced_motor")
+    .itemIn("minecraft:honey_bottle")
+    .itemIn("minecraft:enchanted_golden_apple")
+    .itemIn("createcybernetics:heartupgrades_cyberheart")
+    .itemIn("roll_mod:uranium_mush")
+    .itemIn("createcybernetics:cooked_heart")
+    .itemOut("advanced_ae:hp_buffer_card");
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x ae2:fluix_crystal")
   .itemIn("2x ae2:engineering_processor")
   .itemIn("2x ae2:logic_processor")
