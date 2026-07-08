@@ -1,9 +1,57 @@
 ServerEvents.recipes(event => {
-    const extendedItems = [
-      "",
+    const removeItems = [
+        "extendedcrafting:black_iron_nugget",
+        "extendedcrafting:redstone_nugget",
+        "extendedcrafting:enhanced_redstone_nugget",
+        "extendedcrafting:ender_nugget",
+        "extendedcrafting:crystaltine_nugget",
+        "extendedcrafting:enhanced_ender_nugget",
+        "extendedcrafting:crystaltine_component",
+        "extendedcrafting:enhanced_ender_component",
+        "extendedcrafting:ender_component",
+        "extendedcrafting:advanced_component",
+        "extendedcrafting:basic_component",
+        "extendedcrafting:elite_component",
+        "extendedcrafting:ultimate_component",
+        "extendedcrafting:redstone_component",
+        "extendedcrafting:enhanced_redstone_component",
+        "extendedcrafting:enhanced_ender_ingot_block",
+        "extendedcrafting:ender_ingot_block",
+        "extendedcrafting:enhanced_redstone_ingot_block",
+        "extendedcrafting:black_iron_block",
+        "extendedcrafting:redstone_ingot_block",
+        "extendedcrafting:ender_star",
+        "extendedcrafting:flux_star",
+        "extendedcrafting:the_ultimate_component",
+        "extendedcrafting:basic_catalyst",
+        "extendedcrafting:advanced_catalyst",
+        "extendedcrafting:elite_catalyst",
+        "extendedcrafting:the_ultimate_catalyst",
+        "extendedcrafting:ender_alternator",
+        "extendedcrafting:flux_alternator",
+        "extendedcrafting:flux_crafter",
+        "extendedcrafting:crafting_core",
+        "extendedcrafting:pedestal",
+        "extendedcrafting:ender_crafter",
+        "extendedcrafting:enhanced_redstone_nugget",
+        "extendedcrafting:crystaltine_block",
+        "extendedcrafting:crystaltine_ingot",
+        "extendedcrafting:ender_star_block",
+        "extendedcrafting:flux_star_block",
+        "extendedcrafting:frame",
+        "extendedcrafting:black_iron_slate",
+        "extendedcrafting:ender_ingot",
+        "extendedcrafting:redstone_ingot",
+        "extendedcrafting:black_iron_ingot",
+        "extendedcrafting:crystaltine_catalyst",
+        "extendedcrafting:enhanced_ender_catalyst",
+        "extendedcrafting:ender_catalyst",
+        "extendedcrafting:enhanced_redstone_catalyst",
+        "extendedcrafting:redstone_catalyst",
+        "extendedcrafting:ultimate_catalyst"
     ];
 
-    extendedItems.forEach(item => {
+    removeItems.forEach(item => {
         event.remove({ output: item });
     });
 });
