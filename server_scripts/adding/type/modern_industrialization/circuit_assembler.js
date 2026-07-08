@@ -1,6 +1,73 @@
 ServerEvents.recipes(event => {
 
  event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("4x modern_industrialization:titanium_64_plate")
+    .itemIn("extended_industrialization:nano_helmet")
+    .itemIn("8x modern_industrialization:osmiridium_curved_plate")
+    .itemIn("ad_astra:jet_suit_helmet")
+    .itemOut("roll_mod:raw_quantum_helmet");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("4x modern_industrialization:titanium_64_plate")
+    .itemIn("extended_industrialization:nano_chestplate")
+    .itemIn("14x modern_industrialization:osmiridium_curved_plate")
+    .itemIn("ad_astra:jet_suit")
+    .itemOut("roll_mod:raw_quantum_chestplate");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("10x modern_industrialization:osmiridium_curved_plate")
+    .itemIn("ad_astra:jet_suit_pants")
+    .itemIn("extended_industrialization:nano_leggings")
+    .itemIn("4x modern_industrialization:titanium_64_plate")
+    .itemOut("roll_mod:raw_quantum_leggings");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("ad_astra:jet_suit_boots")
+    .itemIn("4x modern_industrialization:titanium_64_plate")
+    .itemIn("extended_industrialization:nano_boots")
+    .itemIn("8x modern_industrialization:osmiridium_curved_plate")
+    .itemOut("roll_mod:raw_quantum_boots");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("roll_mod:raw_quantum_helmet")
+    .itemIn("2x modern_industrialization:quantum_circuit")
+    .itemIn("roll_mod:lapotron_battery_t3")
+    .itemIn("8x modern_industrialization:large_advanced_motor")
+    .itemIn("16x modern_industrialization:rhodium_plated_palladium_plate")
+    .itemOut("advanced_ae:quantum_helmet");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("roll_mod:raw_quantum_chestplate")
+    .itemIn("2x modern_industrialization:quantum_circuit")
+    .itemIn("roll_mod:lapotron_battery_t3")
+    .itemIn("8x modern_industrialization:large_advanced_motor")
+    .itemIn("16x modern_industrialization:rhodium_plated_palladium_plate")
+    .itemOut("advanced_ae:quantum_chestplate");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("roll_mod:raw_quantum_leggings")
+    .itemIn("2x modern_industrialization:quantum_circuit")
+    .itemIn("roll_mod:lapotron_battery_t3")
+    .itemIn("8x modern_industrialization:large_advanced_motor")
+    .itemIn("16x modern_industrialization:rhodium_plated_palladium_plate")
+    .itemOut("advanced_ae:quantum_leggings");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("roll_mod:raw_quantum_boots")
+    .itemIn("2x modern_industrialization:quantum_circuit")
+    .itemIn("roll_mod:lapotron_battery_t3")
+    .itemIn("8x modern_industrialization:large_advanced_motor")
+    .itemIn("16x modern_industrialization:rhodium_plated_palladium_plate")
+    .itemOut("advanced_ae:quantum_boots");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("ae2:cell_component_16k")
+    .itemIn("modern_industrialization:processing_unit")
+    .itemIn("64x modern_industrialization:niobium_titanium_alloy_fine_wire")
+    .itemIn("2x modern_industrialization:osmiridium_plate")
+    .itemOut("advanced_ae:quantum_upgrade_base");
+
+ event.recipes.modern_industrialization.circuit_assembler(64, 300)
     .itemIn("2x createcybernetics:legupgrades_propellers")
     .itemIn("2x createcybernetics:lungsupgrades_hyperoxygenation")
     .itemIn("64x modern_industrialization:rubber_sheet")
