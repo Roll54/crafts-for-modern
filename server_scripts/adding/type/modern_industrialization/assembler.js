@@ -1,5 +1,37 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("modern_industrialization:basic_machine_hull")
+    .itemIn("8x modern_industrialization:motor")
+    .itemIn("16x minecraft:iron_ingot")
+    .itemIn("32x modern_industrialization:black_steel_ingot")
+    .itemIn("9x minecraft:crafting_table")
+    .itemIn("4x modern_industrialization:robot_arm")
+    .itemOut("extendedcrafting:basic_table");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("32x modern_industrialization:black_steel_ingot")
+    .itemIn("8x modern_industrialization:large_motor")
+    .itemIn("2x extendedcrafting:basic_table")
+    .itemIn("16x minecraft:gold_ingot")
+    .itemIn("modern_industrialization:advanced_machine_hull")
+    .itemIn("8x modern_industrialization:robot_arm")
+    .itemOut("extendedcrafting:advanced_table");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:analog_circuit")
+    .itemIn("extendedcrafting:basic_table")
+    .itemIn("modern_industrialization:basic_machine_hull")
+    .itemIn("16x modern_industrialization:silver_cable")
+    .itemOut("extendedcrafting:basic_auto_table");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:electronic_circuit")
+    .itemIn("extendedcrafting:advanced_table")
+    .itemIn("modern_industrialization:advanced_machine_hull")
+    .itemIn("16x modern_industrialization:cupronickel_cable")
+    .itemOut("extendedcrafting:advanced_auto_table");
+
 event.recipes.modern_industrialization.assembler(16, 200)
     .itemIn("minecraft:end_crystal")
     .itemIn("minecraft:totem_of_undying")
