@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.blast_furnace(64, 200)
   .itemIn("1x modern_industrialization:ruthenium_dust")
-  .itemOut("1x modern_industrialization:ruthenium_ingot")
+  .itemOut("1x modern_industrialization:ruthenium_hot_ingot")
 
   event.recipes.modern_industrialization.blast_furnace(256, 100)
   .itemIn("1x modern_industrialization:rhodium_dust")
