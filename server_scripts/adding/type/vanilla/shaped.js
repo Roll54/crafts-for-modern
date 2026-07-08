@@ -1803,4 +1803,19 @@ event.shaped(
     }
 )
 
+
+event.shaped(
+    Item.of('roll_mod:sunnarium_glass_mk1'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'modern_industrialization:analog_circuit',
+        A: 'silentgear:azure_electrum_ingot',
+        B: 'modern_industrialization:silicon_plate',
+        D: 'minecraft:blue_stained_glass_pane'
+    }
+)
 })
