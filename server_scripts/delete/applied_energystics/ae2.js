@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
         "ae2:silicon",
         "ae2:sky_dust",
         "ae2:quartz_glass",
+        "ae2:spatial_anchor",
         "ae2:quartz_vibrant_glass",
         "ae2:cable_anchor",
         "ae2:quartz_fiber",
