@@ -29,6 +29,8 @@ ServerEvents.recipes(event => {
         "modern_industrialization:steam_quarry",
         "modern_industrialization:fusion_chamber",
         "modern_industrialization:sulfur_dust",
+        'modern_industrialization:palladium_ingot',
+        
     ];
 
     const modernRecipes = [
@@ -40,7 +42,11 @@ ServerEvents.recipes(event => {
         "modern_industrialization:materials/mixer/lubricant_oil",
         "modern_industrialization:materials/mixer/rubber_sheet_from_synthetic",
         "modern_industrialization:materials/electrolyzer/bauxite",
-        "modern_industrialization:materials/mixer/lubricant"
+        "modern_industrialization:materials/mixer/lubricant",
+        "modern_industrialization:materials/ruthenium/smelting/dust_to_ingot_blasting",
+        "modern_industrialization:materials/ruthenium/smelting/dust_to_ingot_smelting",
+        "modern_industrialization:materials/palladium/smelting/dust_to_ingot_blasting",
+        "modern_industrialization:materials/palladium/smelting/dust_to_ingot_smelting"
     ];
 
     const modernPairs = [
