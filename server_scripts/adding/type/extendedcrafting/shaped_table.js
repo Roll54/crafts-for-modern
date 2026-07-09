@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
                 item: {
                     id: "roll_mod:lapotron_battery_t3",
                     components: {
-                        "modern_industrialization:energy": 500000000000L
+                        "modern_industrialization:energy": 500000000000
                     }
                 }
             }
