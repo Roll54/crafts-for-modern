@@ -24,9 +24,11 @@ ServerEvents.recipes(event => {
                 item: "modern_industrialization:quantum_circuit"
             },
             "C": {
-                item: "roll_mod:lapotron_battery_t3",
-                components: {
-                    "modern_industrialization:energy": 500000000000
+                item: {
+                    id: "roll_mod:lapotron_battery_t3",
+                    components: {
+                        "modern_industrialization:energy": 500000000000L
+                    }
                 }
             }
         },
