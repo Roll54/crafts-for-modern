@@ -48,7 +48,18 @@ ServerEvents.recipes(event => {
         "extendedcrafting:ender_catalyst",
         "extendedcrafting:enhanced_redstone_catalyst",
         "extendedcrafting:redstone_catalyst",
-        "extendedcrafting:ultimate_catalyst"
+        "extendedcrafting:ultimate_catalyst",
+        'extendedcrafting:enhanced_redstone_ingot',
+        'extendedcrafting:enhanced_ender_ingot',
+        'extendedcrafting:basic_table',
+        'extendedcrafting:advanced_table',
+        'extendedcrafting:elite_table',
+        'extendedcrafting:ultimate_table',
+        'extendedcrafting:basic_auto_table',
+        'extendedcrafting:advanced_auto_table',
+        'extendedcrafting:elite_auto_table',
+        'extendedcrafting:ultimate_auto_table',
+        'extendedcrafting:compressor'
     ];
 
     removeItems.forEach(item => {
