@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
-            "Y  Y  Y  ",
+            "Y   Y   Y",
             " YYYYYYY ",
             " YGYYYGY ",
             " YYGCGYY ",
@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
             " YYGCGYY ",
             " YGYYYGY ",
             " YYYYYYY ",
-            "Y  Y  Y  "
+            "Y   Y   Y"
         ],
         key: {
             "Y": {
