@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.vacuum_freezer(8, 100)
-    .fluidIn("modern_industrialization:polytetrafluoroethylene", 100)
-    .itemOut("1x modern_industrialization:polytetrafluoroethylene_ingot")
-
+  .fluidIn("modern_industrialization:polytetrafluoroethylene", 100)
+  .itemOut("1x modern_industrialization:polytetrafluoroethylene_ingot")
+  
   event.recipes.modern_industrialization.vacuum_freezer(128, 200)
     .biome("ad_astra:orbit")
     .itemIn("1x yet_another_industrialization:tempproof_air_intake", 0.50)
