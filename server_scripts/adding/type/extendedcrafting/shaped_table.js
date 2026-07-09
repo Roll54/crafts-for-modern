@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
             "P": {
                 item: "modern_industrialization:quantum_circuit"
             },
-            "С": {
+            "C": {
                 item: "roll_mod:lapotron_battery_t3"
             }
         },
