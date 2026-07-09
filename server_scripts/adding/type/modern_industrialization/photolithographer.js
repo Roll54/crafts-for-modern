@@ -61,6 +61,7 @@ event.recipes.modern_industrialization.photolithographer(256, 400)
   .itemIn("4x roll_mod:smd_transistor")
   .itemIn("2x roll_mod:fr4_sheet")
   .itemIn("2x modern_industrialization:electronic_circuit")
+  .biome("ad_astra:orbit")
   .itemOut("4x modern_industrialization:digital_circuit")
 
 event.recipes.modern_industrialization.photolithographer(256, 400)
