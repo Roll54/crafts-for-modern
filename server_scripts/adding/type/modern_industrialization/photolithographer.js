@@ -345,6 +345,7 @@ event.recipes.modern_industrialization.photolithographer(64, 300)
   .itemIn("1x modern_industrialization:gold_plate")
   .fluidIn("modern_industrialization:helium", 350)
   .fluidIn("modern_industrialization:epoxy", 50)
+  .biome("ad_astra:orbit")
   .itemOut("4x roll_mod:engraved_crystal_chip")
 
 event.recipes.modern_industrialization.photolithographer(64, 300)
