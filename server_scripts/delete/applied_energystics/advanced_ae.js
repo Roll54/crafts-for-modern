@@ -35,9 +35,5 @@ ServerEvents.recipes(event => {
         event.remove({ output: item });
     });
 
-    rawQuantumItems.forEach(item => {
-        event.remove({ output: item });
-    });
-
     event.remove({ type: "advanced_ae:reaction" });
 });
