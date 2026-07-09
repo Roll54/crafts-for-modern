@@ -14,19 +14,17 @@ ServerEvents.recipes(event => {
     })
     
 
-    /*
     event.custom({
         type: "ad_astra:space_station_recipe",
         dimension: "ad_astra:moon_orbit",
         ingredients: [
-            { count: 64, ingredient: { tag: "ad_astra:iron_plates" } },
-            { count: 32, ingredient: { tag: "ad_astra:steel_ingots" } },
-            { count: 32, ingredient: { tag: "ad_astra:desh_ingots" } },
-            { count: 32, ingredient: { tag: "ad_astra:desh_plates" } }
+            { count: 64, ingredient: { item: "modern_industrialization:steel_block" } },
+            { count: 64, ingredient: { item: "ae2:quartz_glass" } },
+            { count: 64, ingredient: { item: "modern_industrialization:chrome_vanadium_steel_large_plate" } },
+            { count: 32, ingredient: { item: "modern_industrialization:turbo_machine_hull" } }
         ],
         structure: "ad_astra:space_station"
     })
-    */
 
     /*
     event.custom({
