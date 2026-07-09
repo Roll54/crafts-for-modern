@@ -23,9 +23,8 @@ event.recipes.modern_industrialization.mixer(2, 100)
   .itemOut("4x roll_mod:hot_titanium_gum")
 
   event.recipes.modern_industrialization.mixer(2, 200)
-  .itemIn("1x minecraft:redstone")
+  .itemIn("1x #c:dusts/redstone")
   .itemIn("2x minecraft:glowstone_dust")
-  .itemIn("1x minecraft:gunpowder")
   .itemOut("2x extendedcrafting:luminessence")
 
 event.recipes.modern_industrialization.mixer(16, 200)
