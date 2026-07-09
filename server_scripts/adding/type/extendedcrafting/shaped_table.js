@@ -5,23 +5,29 @@ ServerEvents.recipes(event => {
         pattern: [
             "Y  Y  Y  ",
             " YYYYYYY ",
-            " YGYYYG  ",
+            " YGYYYGY ",
             " YYGCGYY ",
-            "YYY C  YY",
+            "YYYCPCYYY",
             " YYGCGYY ",
-            " YGYYYG  ",
+            " YGYYYGY ",
             " YYYYYYY ",
             "Y  Y  Y  "
         ],
         key: {
             "Y": {
-                item: "c:gems/diamond"
+                item: "modern_industrialization:sunnarium_plate"
             },
             "G": {
-                item: "c:gems/lapis"
+                item: "roll_mod:enriched_sunnarium_mk2"
+            },
+            "P": {
+                item: "modern_industrialization:quantum_circuit"
             },
             "C": {
-                item: "roll_mod:lapotron_battery_t3[modern_industrialization:energy=500000000000L]"
+                item: "roll_mod:lapotron_battery_t3",
+                components: {
+                    "modern_industrialization:energy": 500000000000
+                }
             }
         },
         result: {
