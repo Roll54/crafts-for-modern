@@ -1,6 +1,15 @@
 ServerEvents.recipes(event => {
 
 event.shapeless(
+    Item.of('extendedcrafting:luminessence', 2),
+    [
+        'minecraft:glowstone_dust',
+        'minecraft:glowstone_dust',
+        '#c:dusts/redstone'
+    ]
+)
+
+event.shapeless(
     Item.of('roll_mod:sulfur_dust'),
     [
         'modern_industrialization:sulfur_tiny_dust',
