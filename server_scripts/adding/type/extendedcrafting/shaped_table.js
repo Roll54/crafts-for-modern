@@ -24,12 +24,8 @@ ServerEvents.recipes(event => {
                 item: "modern_industrialization:quantum_circuit"
             },
             "C": {
-                item: {
-                    id: "roll_mod:lapotron_battery_t3",
-                    components: {
-                        "modern_industrialization:energy": 500000000000
-                    }
-                }
+                // Використовуємо Item.of() для коректного зчитування компонентів в KubeJS
+                item: Item.of('roll_mod:lapotron_battery_t3', '{ "modern_industrialization:energy": 500000000000L }').toJson()
             }
         },
         result: {
