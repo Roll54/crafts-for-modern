@@ -6,6 +6,10 @@ event.recipes.modern_industrialization.packer(2, 100)
 .itemIn("2x roll_mod:carbon_mesh")
 .itemOut("1x modern_industrialization:space_alloy_ingot")
 
+event.recipes.modern_industrialization.packer(2, 100)
+.itemIn("4x minecraft:glowstone_dust")
+.itemOut("1x minecraft:glowstone")
+
 event.recipes.modern_industrialization.unpacker(2, 100)
   .itemIn("1x #c:storage_blocks/sulfur")
   .itemOut("9x roll_mod:sulfur_dust")
