@@ -33,8 +33,6 @@ ServerEvents.recipes(event => {
       "structure": "ad_astra:space_station"
     })
 
-
-    /*
     event.custom({
       "type": "ad_astra:space_station_recipe",
       "dimension": "ad_astra:moon_orbit",
@@ -66,7 +64,6 @@ ServerEvents.recipes(event => {
       ],
       "structure": "ad_astra:space_station"
     })
-    */
 
     /*
     event.custom({
