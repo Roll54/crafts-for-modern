@@ -4,12 +4,10 @@ event.shaped(
     Item.of('silentgear:paint_mixer'),
     [
         'ABA',
-        'CDC',
-        'AEA'
+        'CBC',
+        'ABA'
     ],
     {
-        E: 'minecraft:bucket',
-        D: 'minecraft:stick',
         A: 'minecraft:smooth_stone',
         B: 'minecraft:white_dye',
         C: 'minecraft:copper_ingot'
