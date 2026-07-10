@@ -79,10 +79,12 @@ removedRecipes.forEach(id => event.remove({ output: id }));
   event.remove({ id: "ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench" })
   event.remove({ id: "ad_astra:nasa_workbench/tier_3_rocket_from_nasa_workbench" })
   event.remove({ id: "ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench" })
+  /*
   event.remove({ id: "ad_astra:space_station/earth_orbit_space_station" })
   event.remove({ id: "ad_astra:space_station/moon_orbit_space_station" })
   event.remove({ id: "ad_astra:space_station/mars_orbit_space_station" })
   event.remove({ id: "ad_astra:space_station/venus_orbit_space_station" })
   event.remove({ id: "ad_astra:space_station/mercury_orbit_space_station" })
   event.remove({ id: "ad_astra:space_station/glacio_orbit_space_station" })
+  */
 })
