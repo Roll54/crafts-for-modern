@@ -8,25 +8,25 @@ ServerEvents.recipes(event => {
         {
           "count": 64,
           "ingredient": {
-            "tag": "ad_astra:iron_plates"
+            "item": "modern_industrialization:steel_block"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "ae2:quartz_glass"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "modern_industrialization:chrome_vanadium_steel_large_plate"
           }
         },
         {
           "count": 32,
           "ingredient": {
-            "tag": "ad_astra:steel_ingots"
-          }
-        },
-        {
-          "count": 32,
-          "ingredient": {
-            "tag": "ad_astra:desh_ingots"
-          }
-        },
-        {
-          "count": 32,
-          "ingredient": {
-            "tag": "ad_astra:desh_plates"
+            "item": "modern_industrialization:turbo_machine_hull"
           }
         }
       ],
@@ -42,25 +42,25 @@ ServerEvents.recipes(event => {
         {
           "count": 64,
           "ingredient": {
-            "tag": "ad_astra:iron_plates"
+            "item": "modern_industrialization:steel_block"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "ae2:quartz_glass"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "modern_industrialization:chrome_vanadium_steel_large_plate"
           }
         },
         {
           "count": 32,
           "ingredient": {
-            "tag": "ad_astra:steel_ingots"
-          }
-        },
-        {
-          "count": 32,
-          "ingredient": {
-            "tag": "ad_astra:desh_ingots"
-          }
-        },
-        {
-          "count": 32,
-          "ingredient": {
-            "tag": "ad_astra:desh_plates"
+            "item": "modern_industrialization:turbo_machine_hull"
           }
         }
       ],
@@ -74,27 +74,27 @@ ServerEvents.recipes(event => {
       "dimension": "ad_astra:mars_orbit",
       "ingredients": [
         {
-          "count": 64,
-          "ingredient": {
-            "tag": "ad_astra:iron_plates"
-          }
-        },
-        {
           "count": 32,
           "ingredient": {
             "tag": "ad_astra:steel_ingots"
           }
         },
         {
-          "count": 32,
+          "count": 64,
           "ingredient": {
-            "tag": "ad_astra:desh_ingots"
+            "tag": "ad_astra:steel_plates"
           }
         },
         {
           "count": 32,
           "ingredient": {
-            "tag": "ad_astra:desh_plates"
+            "tag": "ad_astra:ostrum_ingots"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "tag": "ad_astra:ostrum_plates"
           }
         }
       ],
@@ -110,25 +110,25 @@ ServerEvents.recipes(event => {
         {
           "count": 64,
           "ingredient": {
-            "tag": "ad_astra:iron_plates"
-          }
-        },
-        {
-          "count": 32,
-          "ingredient": {
             "tag": "ad_astra:steel_ingots"
           }
         },
         {
-          "count": 32,
+          "count": 64,
           "ingredient": {
-            "tag": "ad_astra:desh_ingots"
+            "tag": "ad_astra:steel_plates"
           }
         },
         {
           "count": 32,
           "ingredient": {
-            "tag": "ad_astra:desh_plates"
+            "tag": "ad_astra:calorite_ingots"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "tag": "ad_astra:calorite_plates"
           }
         }
       ],
@@ -144,25 +144,25 @@ ServerEvents.recipes(event => {
         {
           "count": 64,
           "ingredient": {
-            "tag": "ad_astra:iron_plates"
-          }
-        },
-        {
-          "count": 32,
-          "ingredient": {
             "tag": "ad_astra:steel_ingots"
           }
         },
         {
-          "count": 32,
+          "count": 64,
           "ingredient": {
-            "tag": "ad_astra:desh_ingots"
+            "tag": "ad_astra:steel_plates"
           }
         },
         {
           "count": 32,
           "ingredient": {
-            "tag": "ad_astra:desh_plates"
+            "tag": "ad_astra:calorite_ingots"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "tag": "ad_astra:calorite_plates"
           }
         }
       ],
@@ -176,15 +176,9 @@ ServerEvents.recipes(event => {
       "dimension": "ad_astra:glacio_orbit",
       "ingredients": [
         {
-          "count": 64,
-          "ingredient": {
-            "tag": "ad_astra:iron_plates"
-          }
-        },
-        {
           "count": 32,
           "ingredient": {
-            "tag": "ad_astra:steel_ingots"
+            "tag": "ad_astra:steel_plates"
           }
         },
         {
@@ -196,7 +190,13 @@ ServerEvents.recipes(event => {
         {
           "count": 32,
           "ingredient": {
-            "tag": "ad_astra:desh_plates"
+            "tag": "ad_astra:ostrum_plates"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "tag": "ad_astra:calorite_plates"
           }
         }
       ],
