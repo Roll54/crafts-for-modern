@@ -9,7 +9,7 @@ event.shaped(
     ],
     {
         E: 'minecraft:bucket',
-        D: 'modern_industrialization:iron_rod',
+        D: 'minecraft:stick',
         A: 'minecraft:smooth_stone',
         B: 'minecraft:white_dye',
         C: 'minecraft:copper_ingot'
