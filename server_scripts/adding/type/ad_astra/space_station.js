@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-
+/*
     event.custom({
       "type": "ad_astra:space_station_recipe",
       "dimension": "ad_astra:earth_orbit",
