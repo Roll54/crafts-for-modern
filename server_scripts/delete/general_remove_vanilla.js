@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: "silentgear:advanced_upgrade_base" })
     event.remove({ output: "moredelight:diced_potatoes" })
     event.remove({ output: "constructionstick:template_destruction" })
+    event.remove({ output: "silentgear:paint_mixer" })
     
     event.remove({ mod: 'buildinggadgets2' })
     event.remove({ mod: 'scannable_unofficial' })
