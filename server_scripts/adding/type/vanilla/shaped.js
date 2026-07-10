@@ -1,6 +1,22 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('silentgear:paint_mixer'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        E: 'minecraft:bucket',
+        D: 'modern_industrialization:iron_rod',
+        A: 'minecraft:smooth_stone',
+        B: 'minecraft:white_dye',
+        C: 'minecraft:copper_ingot'
+    }
+)
+    
+event.shaped(
     Item.of('railcraft:locomotive_detector'),
     [
         'AAA',
