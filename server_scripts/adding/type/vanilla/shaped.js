@@ -1,6 +1,18 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('minecraft:glowstone'),
+    [
+        'AA ',
+        'AA ',
+        '   '
+    ],
+    {
+        A: 'minecraft:glowstone_dust'
+    }
+)
+    
+event.shaped(
     Item.of('silentgear:paint_mixer'),
     [
         'ABA',
