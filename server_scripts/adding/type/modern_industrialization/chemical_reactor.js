@@ -5,7 +5,7 @@ event.recipes.modern_industrialization.chemical_reactor(32, 200)
 .itemIn("1x roll_mod:unactivated_zinc_sulfide_dust")
 .itemIn("1x #c:dusts/copper")
 .itemIn("1x #c:dusts/salf")
-.itemOut("1x roll_mod:raw_luminescent_charge")
+.itemOut("1x roll_mod:luminescent_mixture")
 */
 event.recipes.modern_industrialization.chemical_reactor(8, 200)
 .itemIn("3x #c:dusts/fluorite")
