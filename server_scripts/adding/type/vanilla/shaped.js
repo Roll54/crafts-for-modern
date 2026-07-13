@@ -1844,4 +1844,19 @@ event.shaped(
         D: 'minecraft:blue_stained_glass_pane'
     }
 )
+
+event.shaped(
+    Item.of('roll_mod:sunnarium_glass_mk1'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'modern_industrialization:analog_circuit',
+        A: 'modern_industrialization:aluminum_plate',
+        B: 'modern_industrialization:silicon_wafer',
+        D: 'minecraft:blue_stained_glass_pane'
+    }
+)
 })
