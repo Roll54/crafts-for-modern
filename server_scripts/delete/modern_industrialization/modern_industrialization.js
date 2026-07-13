@@ -46,7 +46,10 @@ ServerEvents.recipes(event => {
         "modern_industrialization:materials/ruthenium/smelting/dust_to_ingot_blasting",
         "modern_industrialization:materials/ruthenium/smelting/dust_to_ingot_smelting",
         "modern_industrialization:materials/palladium/smelting/dust_to_ingot_blasting",
-        "modern_industrialization:materials/palladium/smelting/dust_to_ingot_smelting"
+        "modern_industrialization:materials/palladium/smelting/dust_to_ingot_smelting",
+        "modern_industrialization:electric_age/component/implosion_compressor/singularity",
+        "modern_industrialization:vanilla_recipes/implosion_compressor/nether_star",
+        "modern_industrialization:vanilla_recipes/implosion_compressor/enchanted_golden_apple"
     ];
 
     const modernPairs = [
@@ -65,18 +68,10 @@ ServerEvents.recipes(event => {
         { input: 'modern_industrialization:enderium_dust', output: 'modern_industrialization:enderium_ingot' }
     ];
 
-    const vanillaItems = [
-        "minecraft:raw_gold"
-    ];
-
     event.remove({ type: "industrialization_overdrive:pyrolyse_oven" });
     event.remove({ type: 'modern_industrialization:quarry' });
 
     modernItems.forEach(item => {
-        event.remove({ output: item });
-    });
-
-    vanillaItems.forEach(item => {
         event.remove({ output: item });
     });
 

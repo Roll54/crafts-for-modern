@@ -11,6 +11,15 @@ ServerEvents.recipes(event => {
         "extended_industrialization:lv_solar_panel",
         "extended_industrialization:mv_solar_panel",
         "extended_industrialization:hv_solar_panel",
+        "extended_industrialization:mv_photovoltaic_cell",
+        "extended_industrialization:lv_photovoltaic_cell",
+        "extended_industrialization:nano_quantum_boots",
+        "extended_industrialization:nano_quantum_leggings",
+        "extended_industrialization:nano_quantum_chestplate",
+        "extended_industrialization:nano_quantum_helmet",
+        "extended_industrialization:hv_photovoltaic_cell",
+        "extended_industrialization:netherite_rotary_blade",
+        "extended_industrialization:ultimate_laser_drill"
     ];
 
     addonItems.forEach(item => {

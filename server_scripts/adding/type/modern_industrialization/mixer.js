@@ -1,5 +1,12 @@
 ServerEvents.recipes(event => {
 
+/*    
+event.recipes.modern_industrialization.mixer(2, 100)
+    .itemIn("4x #c:dusts/zinc", 1)
+    .itemIn("2x #c:dusts/sulfur", 1)
+    .itemOut("1x roll_mod:zinc_sulfur_mixture")
+*/
+    
 event.recipes.modern_industrialization.mixer(2, 100)
     .itemIn("#c:dusts/redstone", 1)
     .fluidIn("modern_industrialization:creosote", 500)
@@ -23,9 +30,8 @@ event.recipes.modern_industrialization.mixer(2, 100)
   .itemOut("4x roll_mod:hot_titanium_gum")
 
   event.recipes.modern_industrialization.mixer(2, 200)
-  .itemIn("1x minecraft:redstone")
+  .itemIn("1x #c:dusts/redstone")
   .itemIn("2x minecraft:glowstone_dust")
-  .itemIn("1x minecraft:gunpowder")
   .itemOut("2x extendedcrafting:luminessence")
 
 event.recipes.modern_industrialization.mixer(16, 200)

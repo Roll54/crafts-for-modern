@@ -1,6 +1,32 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('minecraft:glowstone'),
+    [
+        'AA ',
+        'AA ',
+        '   '
+    ],
+    {
+        A: 'minecraft:glowstone_dust'
+    }
+)
+    
+event.shaped(
+    Item.of('silentgear:paint_mixer'),
+    [
+        'ABA',
+        'CBC',
+        'ABA'
+    ],
+    {
+        A: 'minecraft:smooth_stone',
+        B: 'minecraft:white_dye',
+        C: 'minecraft:copper_ingot'
+    }
+)
+    
+event.shaped(
     Item.of('railcraft:locomotive_detector'),
     [
         'AAA',

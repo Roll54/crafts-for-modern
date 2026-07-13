@@ -29,13 +29,10 @@ ServerEvents.recipes(event => {
         "advanced_ae:regeneration_card",
         "advanced_ae:hp_buffer_card",
         "advanced_ae:quantum_upgrade_base",
+        'advanced_ae:reaction_chamber'
     ];
   
     advancedItems.forEach(item => {
-        event.remove({ output: item });
-    });
-
-    rawQuantumItems.forEach(item => {
         event.remove({ output: item });
     });
 

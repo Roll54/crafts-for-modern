@@ -1,6 +1,38 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("2x extendedcrafting:advanced_table")
+    .itemIn("16x minecraft:diamond")
+    .itemIn("32x modern_industrialization:black_steel_ingot")
+    .itemIn("modern_industrialization:turbo_machine_hull")
+    .itemIn("4x roll_mod:advanced_robot_arm")
+    .itemIn("8x modern_industrialization:advanced_motor")
+    .itemOut("extendedcrafting:elite_table");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("8x roll_mod:advanced_robot_arm")
+    .itemIn("8x modern_industrialization:large_advanced_motor")
+    .itemIn("modern_industrialization:highly_advanced_machine_hull")
+    .itemIn("2x extendedcrafting:elite_table")
+    .itemIn("32x modern_industrialization:black_steel_ingot")
+    .itemIn("16x minecraft:emerald")
+    .itemOut("extendedcrafting:ultimate_table");
+
  event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("4x modern_industrialization:digital_circuit")
+    .itemIn("modern_industrialization:turbo_machine_hull")
+    .itemIn("extendedcrafting:elite_table")
+    .itemIn("16x modern_industrialization:kanthal_cable")
+    .itemOut("extendedcrafting:elite_auto_table");
+
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
+    .itemIn("4x modern_industrialization:processing_unit")
+    .itemIn("extendedcrafting:ultimate_table")
+    .itemIn("modern_industrialization:highly_advanced_machine_hull")
+    .itemIn("16x modern_industrialization:annealed_copper_cable")
+    .itemOut("extendedcrafting:ultimate_auto_table");
+ 
+event.recipes.modern_industrialization.circuit_assembler(64, 300)
     .itemIn("4x modern_industrialization:titanium_64_plate")
     .itemIn("extended_industrialization:nano_helmet")
     .itemIn("8x modern_industrialization:osmiridium_curved_plate")
