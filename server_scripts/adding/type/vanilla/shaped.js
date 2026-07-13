@@ -1813,7 +1813,7 @@ event.shaped(
     ],
     {
         C: 'modern_industrialization:analog_circuit',
-        A: 'silentgear:azure_electrum_ingot',
+        A: 'modern_industrialization:aluminum_plate',
         B: 'modern_industrialization:silicon_plate',
         D: 'minecraft:blue_stained_glass_pane'
     }

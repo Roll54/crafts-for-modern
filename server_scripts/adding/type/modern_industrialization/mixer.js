@@ -252,4 +252,11 @@ event.recipes.modern_industrialization.mixer(4, 100)
 .itemIn("3x #c:dusts/zinc")
 .itemIn("2x #c:dusts/bismuth")
 .itemOut("9x modern_industrialization:bismuth_bronze_dust")
+
+
+
+event.recipes.modern_industrialization.mixer(16, 200)
+.itemIn("4x #c:dusts/tantalum")
+.itemIn("2x #c:dusts/rhenium")
+.itemOut("6x modern_industrialization:tantalum_rhenium_dust")
 })
