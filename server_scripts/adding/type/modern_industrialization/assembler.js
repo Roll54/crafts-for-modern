@@ -1,6 +1,20 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:aluminum_plate")
+  .itemIn("2x modern_industrialization:analog_circuit")
+  .itemIn("2x modern_industrialization:silicon_plate")
+  .itemIn("1x minecraft:blue_stained_glass_pane")
+  .itemOut("1x roll_mod:sunnarium_glass_mk1")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("4x modern_industrialization:aluminum_plate")
+  .itemIn("2x modern_industrialization:analog_circuit")
+  .itemIn("2x modern_industrialization:silicon_wafer")
+  .itemIn("1x minecraft:blue_stained_glass_pane")
+  .itemOut("1x roll_mod:sunnarium_glass_mk1")
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("3x roll_mod:sunnarium_glass_mk1")
   .itemIn("2x modern_industrialization:analog_circuit")
   .itemIn("1x modern_industrialization:basic_machine_hull")
