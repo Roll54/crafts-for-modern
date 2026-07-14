@@ -9,32 +9,6 @@ ServerEvents.recipes(event => {
   .itemIn("1x roll_mod:unactivated_zinc_sulfide_powder")
   .itemOut("1x roll_mod:synthetic_glowstone_dust")
 */
-//соляри
-  /*
-  event.recipes.modern_industrialization.blast_furnace(128, 800)
-  .itemIn("8x modern_industrialization:magnesium_dust")
-  .itemIn("2x roll_mod:sunnarium_glass_mk1")
-  .fluidIn("modern_industrialization:argon", 1000)
-  .itemOut("1x roll_mod:sunnarium_glass_mk2")
-    
-  event.recipes.modern_industrialization.blast_furnace(128, 800)
-  .itemIn("4x modern_industrialization:sunnarium_dust")
-  .itemIn("2x roll_mod:sunnarium_glass_mk2")
-  .fluidIn("modern_industrialization:helium", 2500)
-  .itemOut("1x roll_mod:sunnarium_glass_mk3")
-    
-  event.recipes.modern_industrialization.blast_furnace(512, 800)
-  .itemIn("16x modern_industrialization:plutonium_dust")
-  .itemIn("3x roll_mod:sunnarium_glass_mk3")
-  .fluidIn("modern_industrialization:xenon", 500)
-  .itemOut("1x roll_mod:sunnarium_glass_mk4")
-
-  event.recipes.modern_industrialization.blast_furnace(512, 3200)
-  .itemIn("4x megacells:bulk_cell_component")
-  .itemIn("4x roll_mod:sunnarium_glass_mk4")
-  .fluidIn("kubejs:blockbenchiy", 500)
-  .itemOut("1x roll_mod:sunnarium_glass_mk5")    
-*/    
 // Пил у злитки
   event.recipes.modern_industrialization.blast_furnace(8, 100)
   .itemIn("1x modern_industrialization:electrum_dust")
@@ -197,7 +171,6 @@ event.recipes.modern_industrialization.blast_furnace(8, 100)
 .itemIn("4x #c:dusts/lapis")
 .itemIn("1x modern_industrialization:silver_ingot")
 .itemOut("2x silentgear:azure_electrum_ingot")
-
 
 event.recipes.modern_industrialization.blast_furnace(48, 100)
 .itemIn("1x roll_mod:energium_dust")
