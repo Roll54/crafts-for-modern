@@ -11,6 +11,22 @@ event.shaped(
         A: 'minecraft:glowstone_dust'
     }
 )
+
+event.shaped(
+    Item.of('roll_mod:solar_panel_1'),
+    [
+        'AAA',
+        'BCB',
+        'DED'
+    ],
+    {
+        E: 'modern_industrialization:netherite_large_plate',
+        B: 'modern_industrialization:analog_circuit',
+        C: 'modern_industrialization:basic_machine_hull',
+        A: 'roll_mod:sunnarium_glass_mk1',
+        D: 'modern_industrialization:tin_cable'
+    }
+)
     
 event.shaped(
     Item.of('silentgear:paint_mixer'),
