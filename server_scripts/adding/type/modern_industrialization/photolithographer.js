@@ -11,7 +11,7 @@ event.recipes.modern_industrialization.photolithographer(256, 400)
   .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
   .itemIn("4x roll_mod:solar_panel_11")
   .fluidIn("modern_industrialization:cryofluid", 500)
-  .biome("#ad_astra:is_mars")
+  .biome("ad_astra:is_mars")
   .itemOut("1x roll_mod:solar_panel_12")
 
 event.recipes.modern_industrialization.photolithographer(256, 400)
