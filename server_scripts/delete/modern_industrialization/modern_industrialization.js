@@ -49,7 +49,9 @@ ServerEvents.recipes(event => {
         "modern_industrialization:materials/palladium/smelting/dust_to_ingot_smelting",
         "modern_industrialization:electric_age/component/implosion_compressor/singularity",
         "modern_industrialization:vanilla_recipes/implosion_compressor/nether_star",
-        "modern_industrialization:vanilla_recipes/implosion_compressor/enchanted_golden_apple"
+        "modern_industrialization:vanilla_recipes/implosion_compressor/enchanted_golden_apple",
+        "modern_industrialization:materials/sunnarium/smelting/dust_to_ingot_smelting",
+        "modern_industrialization:materials/sunnarium/smelting/dust_to_ingot_blasting"
     ];
 
     const modernPairs = [
