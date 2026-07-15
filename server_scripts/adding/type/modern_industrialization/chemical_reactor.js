@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 event.recipes.modern_industrialization.chemical_reactor(32, 200)
 .itemIn("1x roll_mod:unactivated_zinc_sulfide_powder")
 .itemIn("1x #c:dusts/copper")
-.itemIn("1x #c:dusts/salf")
+.itemIn("1x #c:dusts/salt")
 .itemOut("1x roll_mod:luminescent_mixture")
 
 event.recipes.modern_industrialization.chemical_reactor(8, 200)
