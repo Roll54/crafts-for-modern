@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     ];
 
     event.remove({ type: 'extendedae:ex_charger' });
-    event.remove({ type: 'extendedae:assebler' });
+    event.remove({ type: 'extendedae:crystal_assembler' });
 
     extendedItems.forEach(item => {
         event.remove({ output: item });
