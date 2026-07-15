@@ -1,11 +1,9 @@
 ServerEvents.recipes(event => {
-
-/*    
+ 
 event.recipes.modern_industrialization.mixer(2, 100)
     .itemIn("4x #c:dusts/zinc", 1)
     .itemIn("2x #c:dusts/sulfur", 1)
     .itemOut("1x roll_mod:zinc_sulfur_mixture")
-*/
     
 event.recipes.modern_industrialization.mixer(2, 100)
     .itemIn("#c:dusts/redstone", 1)
