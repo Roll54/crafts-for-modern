@@ -1,6 +1,32 @@
 ServerEvents.recipes(event => {
 
-
+  event.custom({
+    type: "brewinandchewin:fermenting",
+    base_fluid: {
+      amount: 1000,
+      ingredient: {
+        tag: "c:honey"
+      },
+      unit: "millibuckets"
+    },
+    experience: 1.0,
+    ingredients: [
+      {
+        item: "minecraft:wheat"
+      },
+      {
+        item: "minecraft:wheat_seeds"
+      },
+      {
+        item: "minecraft:sweet_berries"
+      }
+    ],
+    result: {
+      amount: 1000,
+      id: "brewinandchewin:mead"
+    },
+    unit: "millibuckets"
+  })
 
 const alcohols = [
   "brewinandchewin:vodka",
