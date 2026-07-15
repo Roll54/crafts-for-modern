@@ -5,15 +5,10 @@ ServerEvents.recipes(event => {
         "industrialization_overdrive:pyrolyse_oven",
     ];
 
-    const addonRecipes = [
-        "industrialization_overdrive:pyrolyse_oven",
-    ];
-
     addonItems.forEach(item => {
         event.remove({ output: item });
     });
 
-    addonRecipes.forEach(id => {
-        event.remove({ id: id });
-    });
+    event.remove({ type: "industrialization_overdrive:pyrolyse_oven" });
+    
 });
