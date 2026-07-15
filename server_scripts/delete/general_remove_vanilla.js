@@ -13,7 +13,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: "minecraft:glowstone" })
     
     event.remove({ id: "modern_industrialization:vanilla_recipes/packer/glowstone_block" })
-  
+    event.remove({ id: "brewinandchewin:fermenting/mead_from_honey" })
+    
     event.remove({ mod: 'buildinggadgets2' })
     event.remove({ mod: 'scannable_unofficial' })
     event.remove({ mod: 'createcybernetics' })
