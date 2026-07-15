@@ -496,6 +496,19 @@ event.recipes.modern_industrialization.chemical_reactor(128, 900)
           "mi_tweaks:voltage": {
             "voltage": "ev"
           }});
+
+event.recipes.modern_industrialization.chemical_reactor(128, 900)
+.itemIn("4x roll_mod:enriched_sunnarium")
+.itemIn("2x roll_mod:quantum_star")
+.itemIn("2x roll_mod:sunnarium_glass_mk3")
+.fluidIn("3000x modern_industrialization:rocket_propellant")
+.fluidIn("2000x modern_industrialization:radon")
+.biome("ad_astra:orbit")
+.itemOut("1x roll_mod:sunnarium_glass_mk4")
+.registeredCondition({
+          "mi_tweaks:voltage": {
+            "voltage": "ev"
+          }});
 /*
 event.recipes.modern_industrialization.chemical_reactor(128, 900)
 .itemIn("4x roll_mod:enriched_sunnarium")
