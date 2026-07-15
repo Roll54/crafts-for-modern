@@ -14,10 +14,6 @@ ServerEvents.tags('item', event => {
         'roll_mod:ultra_battery',
     ]);
 
-    event.add('curios:back', [
-        'createcybernetics:exosuit1',
-    ]);
-
     event.add('ad_astra:freeze_resistant_armor', [
         "extended_industrialization:nano_quantum_leggings",
         "extended_industrialization:nano_quantum_chestplate",
