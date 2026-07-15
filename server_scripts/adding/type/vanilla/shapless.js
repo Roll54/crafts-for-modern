@@ -3,8 +3,8 @@ ServerEvents.recipes(event => {
 event.shapeless(
     Item.of('extendedcrafting:luminessence', 2),
     [
-        'minecraft:glowstone_dust',
-        'minecraft:glowstone_dust',
+        '#roll_mod:glowstone_dust',
+        '#roll_mod:glowstone_dust',
         '#c:dusts/redstone'
     ]
 )
