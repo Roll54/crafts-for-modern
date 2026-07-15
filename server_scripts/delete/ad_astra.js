@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  
+
 const removedRecipes = [
   "ad_astra:steel_engine",
   "ad_astra:oxygen_gear",
@@ -75,14 +75,27 @@ const removedRecipes = [
 
 removedRecipes.forEach(id => event.remove({ output: id }));
 
-  event.remove({ id: "ad_astra:nasa_workbench/tier_1_rocket_from_nasa_workbench" })
-  event.remove({ id: "ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench" })
-  event.remove({ id: "ad_astra:nasa_workbench/tier_3_rocket_from_nasa_workbench" })
-  event.remove({ id: "ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench" })
-  event.remove({ id: "ad_astra:space_station/earth_orbit_space_station" })
-  event.remove({ id: "ad_astra:space_station/moon_orbit_space_station" })
-  event.remove({ id: "ad_astra:space_station/mars_orbit_space_station" })
-  event.remove({ id: "ad_astra:space_station/venus_orbit_space_station" })
-  event.remove({ id: "ad_astra:space_station/mercury_orbit_space_station" })
-  event.remove({ id: "ad_astra:space_station/glacio_orbit_space_station" })
+const removedTypes = [
+  "ad_astra:alloying",
+  "ad_astra:compressing",
+  "ad_astra:cryo_freezing",
+  "ad_astra:oxygen_loading",
+  "ad_astra:refining",
+  "ad_astra:space_station_recipe",
+  "ad_astra:nasa_workbench"
+];
+
+removedTypes.forEach(type => event.remove({ type: type }));
+/*
+event.remove({ id: "ad_astra:nasa_workbench/tier_1_rocket_from_nasa_workbench" })
+event.remove({ id: "ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench" })
+event.remove({ id: "ad_astra:nasa_workbench/tier_3_rocket_from_nasa_workbench" })
+event.remove({ id: "ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench" })
+event.remove({ id: "ad_astra:space_station/earth_orbit_space_station" })
+event.remove({ id: "ad_astra:space_station/moon_orbit_space_station" })
+event.remove({ id: "ad_astra:space_station/mars_orbit_space_station" })
+event.remove({ id: "ad_astra:space_station/venus_orbit_space_station" })
+event.remove({ id: "ad_astra:space_station/mercury_orbit_space_station" })
+event.remove({ id: "ad_astra:space_station/glacio_orbit_space_station" })
+*/
 })
