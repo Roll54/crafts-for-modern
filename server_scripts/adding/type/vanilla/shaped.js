@@ -1,6 +1,20 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('ae2:charger'),
+    [
+        'ABA',
+        'ACA',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:analog_circuit',
+        A: 'modern_industrialization:iron_plate',
+        C: 'ae2:fluix_block'
+    }
+)
+    
+event.shaped(
     Item.of('minecraft:glowstone'),
     [
         'AA ',
