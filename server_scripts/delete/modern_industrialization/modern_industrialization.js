@@ -70,7 +70,6 @@ ServerEvents.recipes(event => {
         { input: 'modern_industrialization:enderium_dust', output: 'modern_industrialization:enderium_ingot' }
     ];
 
-    event.remove({ type: "industrialization_overdrive:pyrolyse_oven" });
     event.remove({ type: 'modern_industrialization:quarry' });
 
     modernItems.forEach(item => {
