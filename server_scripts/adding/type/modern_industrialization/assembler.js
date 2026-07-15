@@ -27,7 +27,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("3x roll_mod:sunnarium_glass_mk1")
   .itemIn("2x modern_industrialization:analog_circuit")
   .itemIn("1x modern_industrialization:basic_machine_hull")
-  .itemIn("2x modern_industrialization:motor")
+  .itemIn("2x modern_industrialization:tin_cable")
   .itemIn("1x modern_industrialization:netherite_large_plate")
   .itemOut("1x roll_mod:solar_panel_1")
 
