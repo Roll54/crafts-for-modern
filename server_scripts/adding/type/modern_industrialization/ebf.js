@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.blast_furnace(64, 400)
-  .itemIn("1x roll_mod:luminescent_mixture")
+  .itemIn("1x roll_mod:synthetic_glowstone_dust")
   .itemOut("1x roll_mod:unactivated_zinc_sulfide_powder")
 
   event.recipes.modern_industrialization.blast_furnace(64, 400)
-  .itemIn("1x roll_mod:unactivated_zinc_sulfide_powder")
+  .itemIn("1x roll_mod:luminescent_mixture")
   .itemOut("1x roll_mod:synthetic_glowstone_dust")
 
 // Пил у злитки
