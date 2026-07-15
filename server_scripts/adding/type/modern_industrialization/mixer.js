@@ -29,7 +29,7 @@ event.recipes.modern_industrialization.mixer(2, 100)
 
   event.recipes.modern_industrialization.mixer(2, 200)
   .itemIn("1x #c:dusts/redstone")
-  .itemIn("2x roll_mod:synthetic_glowstone_dust")
+  .itemIn("2x #roll_mod:glowstone_dust")
   .itemOut("2x extendedcrafting:luminessence")
 
 event.recipes.modern_industrialization.mixer(16, 200)
