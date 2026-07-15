@@ -40,10 +40,9 @@ event.replaceInput(
   'modern_industrialization:redstone_battery',
   '#roll_mod:battaries_tier_one')
 
-  /*
   event.replaceInput(
   { input: 'minecraft:glowstone_dust' },
   'minecraft:glowstone_dust',
   '#roll_mod:glowstone_dust')
-  */
+  
 })
