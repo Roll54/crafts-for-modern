@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.blast_furnace(64, 400)
-  .itemIn("1x roll_mod:synthetic_glowstone_dust")
+  .itemIn("1x roll_mod:zinc_sulfur_mixture")
   .itemOut("1x roll_mod:unactivated_zinc_sulfide_powder")
 
   event.recipes.modern_industrialization.blast_furnace(64, 400)
