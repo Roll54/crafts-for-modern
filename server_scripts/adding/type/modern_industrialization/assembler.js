@@ -1,5 +1,14 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.assembler(64, 600)
+  .itemIn("4x roll_mod:energium_laser")
+  .itemIn("4x modern_industrialization:digital_circuit")
+  .itemIn("4x roll_mod:mirror")
+  .itemIn("8x modern_industrialization:chromium_plate")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("2x modern_industrialization:advanced_machine_hull")
+  .itemOut("1x createcybernetics:holoprojector")
+  
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x modern_industrialization:aluminum_plate")
   .itemIn("2x modern_industrialization:analog_circuit")
