@@ -10,9 +10,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: "moredelight:diced_potatoes" })
     event.remove({ output: "constructionstick:template_destruction" })
     event.remove({ output: "silentgear:paint_mixer" })
+    event.remove({ output: "minecraft:glowstone" })
     
     event.remove({ id: "modern_industrialization:vanilla_recipes/packer/glowstone_block" })
-    event.remove({ id: "minecraft:glowstone" })
   
     event.remove({ mod: 'buildinggadgets2' })
     event.remove({ mod: 'scannable_unofficial' })
