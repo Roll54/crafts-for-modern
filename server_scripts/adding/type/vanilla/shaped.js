@@ -53,7 +53,7 @@ event.shaped(
         B: 'modern_industrialization:analog_circuit',
         C: 'modern_industrialization:basic_machine_hull',
         A: 'roll_mod:sunnarium_glass_mk1',
-        D: 'modern_industrialization:motor'
+        D: 'modern_industrialization:tin_cable'
     }
 )
     
