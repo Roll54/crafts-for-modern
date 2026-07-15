@@ -281,13 +281,6 @@ event.recipes.modern_industrialization.circuit_assembler(64, 300)
     .itemIn("modern_industrialization:circuit_assembler")
     .itemOut("advanced_ae:pick_craft_card");
 
-event.recipes.modern_industrialization.circuit_assembler(64, 300)
-    .itemIn("ae2:cell_component_16k")
-    .itemIn("modern_industrialization:processing_unit")
-    .itemIn("64x modern_industrialization:niobium_titanium_alloy_fine_wire")
-    .itemIn("2x modern_industrialization:osmiridium_plate")
-    .itemOut("advanced_ae:quantum_upgrade_base");
-
   event.recipes.modern_industrialization.circuit_assembler(4, 100)
   .itemIn("1x modern_industrialization:silicon_wafer")
   .itemIn("2x #ae2:all_certus_quartz")
