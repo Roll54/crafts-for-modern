@@ -12,11 +12,7 @@ event.recipes.modern_industrialization.macerator(2, 100)
 event.recipes.modern_industrialization.macerator(2, 100)
 .itemIn("1x minecraft:clay_ball")
 .itemOut("1x roll_mod:clay_dust")
-/*
-event.recipes.modern_industrialization.macerator(2, 200)
-.itemIn("1x #c:magnetite_ores")
-.itemOut("4x modern_industrialization:raw_magnetite")
-*/
+
 event.recipes.modern_industrialization.macerator(2, 100)
 .itemIn("1x #c:mushrooms")
 .itemOut("1x modern_industrialization:yeast_tiny_dust")
@@ -24,7 +20,7 @@ event.recipes.modern_industrialization.macerator(2, 100)
 .itemOut("1x modern_industrialization:yeast_tiny_dust", 0.25)
     
 event.recipes.modern_industrialization.macerator(2, 100)
-.itemIn("1x #c:foods/berries")
+.itemIn("1x #c:foods/berry")
 .itemOut("1x modern_industrialization:yeast_tiny_dust", 0.5)
 .itemOut("1x modern_industrialization:yeast_tiny_dust", 0.25)
 
