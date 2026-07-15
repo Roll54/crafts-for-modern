@@ -88,10 +88,10 @@ ServerEvents.tags('item', event => {
     event.add('c:foods/milk', [
         "minecraft:milk_bucket"
     ]);
-/*
+
     event.add('roll_mod:glowstone_dust', [
         "minecraft:glowstone_dust",
-        'roll_mod:activated_zinc_sulfide_dust',
+        'roll_mod:synthetic_glowstone_dust',
     ]);
-*/
+
 });
