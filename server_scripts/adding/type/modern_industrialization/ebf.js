@@ -212,7 +212,7 @@ event.recipes.modern_industrialization.blast_furnace(128, 200)
 .itemOut("1x modern_industrialization:monocrystalline_silicon")
 .fluidIn("modern_industrialization:helium", 1250)
 
-event.recipes.modern_industrialization.blast_furnace(256, 200)
+event.recipes.modern_industrialization.blast_furnace(64, 200)
 .itemIn("1x modern_industrialization:monocrystalline_silicon")
 .itemIn("2x roll_mod:lapotron_large_crystal")
 .itemOut("1x roll_mod:blue_boule")
