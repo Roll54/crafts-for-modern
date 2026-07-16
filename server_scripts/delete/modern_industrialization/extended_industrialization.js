@@ -19,7 +19,8 @@ ServerEvents.recipes(event => {
         "extended_industrialization:nano_quantum_helmet",
         "extended_industrialization:hv_photovoltaic_cell",
         "extended_industrialization:netherite_rotary_blade",
-        "extended_industrialization:ultimate_laser_drill"
+        "extended_industrialization:ultimate_laser_drill",
+        'extended_industrialization:nano_quantum_saber'
     ];
 
     addonItems.forEach(item => {
