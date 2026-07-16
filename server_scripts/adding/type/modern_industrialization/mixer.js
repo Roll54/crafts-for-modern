@@ -1,22 +1,30 @@
 ServerEvents.recipes(event => {
+
+event.recipes.modern_industrialization.mixer(2, 100)
+    .itemIn("1x minecraft:cobblestone")
+    .itemIn("1x #c:dusts/sulfur")
+    .itemIn("1x #c:tiny_dusts/ruby")
+    .itemIn("1x #c:tiny_dusts/redstone")
+    .fluidIn("minecraft:lava", 500, 0.0)
+    .itemOut("3x minecraft:netherrack")
  
 event.recipes.modern_industrialization.mixer(2, 100)
-    .itemIn("4x #c:dusts/zinc", 1)
-    .itemIn("2x #c:dusts/sulfur", 1)
+    .itemIn("4x #c:dusts/zinc")
+    .itemIn("2x #c:dusts/sulfur")
     .itemOut("1x roll_mod:zinc_sulfur_mixture")
     
 event.recipes.modern_industrialization.mixer(2, 100)
-    .itemIn("#c:dusts/redstone", 1)
+    .itemIn("#c:dusts/redstone")
     .fluidIn("modern_industrialization:creosote", 500)
     .fluidOut("modern_industrialization:lubricant", 500)
 
 event.recipes.modern_industrialization.mixer(2, 100)
-    .itemIn("#c:dusts/redstone", 1)
+    .itemIn("#c:dusts/redstone")
     .fluidIn("modern_industrialization:naphtha", 500)
     .fluidOut("modern_industrialization:lubricant", 500)
 
 event.recipes.modern_industrialization.mixer(2, 100)
-    .itemIn("#c:dusts/redstone", 1)
+    .itemIn("#c:dusts/redstone")
     .fluidIn("modern_industrialization:plant_oil", 500)
     .fluidOut("modern_industrialization:lubricant", 500)
 
