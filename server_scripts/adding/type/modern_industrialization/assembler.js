@@ -1,5 +1,15 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.assembler(64, 200)
+  .itemIn("6x roll_mod:advanced_conveyor")
+  .itemIn("4x modern_industrialization:digital_circuit")
+  .itemIn("16x modern_industrialization:enderium_plate")
+  .itemIn("1x modern_industrialization:electric_macerator")
+  .itemIn("16x modern_industrialization:platinum_wire")
+  .itemIn("8x modern_industrialization:advanced_motor")
+  .itemIn("2x modern_industrialization:chrome_vanadium_steel_gear")
+  .itemOut("1x mi_tweaks:maceration_tower")
+
 event.recipes.modern_industrialization.assembler(64, 600)
   .itemIn("4x roll_mod:energium_laser")
   .itemIn("4x modern_industrialization:digital_circuit")
