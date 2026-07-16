@@ -3,8 +3,7 @@ ServerEvents.recipes(event => {
 event.recipes.modern_industrialization.mixer(2, 100)
     .itemIn("1x minecraft:cobblestone")
     .itemIn("1x #c:dusts/sulfur")
-    .itemIn("1x #c:tiny_dusts/ruby")
-    .itemIn("1x #c:tiny_dusts/redstone")
+    .itemIn("1x #roll_mod:netherrack_craft_dust")
     .fluidIn("minecraft:lava", 500, 0.0)
     .itemOut("3x minecraft:netherrack")
  
