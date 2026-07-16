@@ -5,6 +5,11 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
+    event.add('roll_mod:netherrack_craft_dust', [
+        "#c:tiny_dusts/ruby",
+        "#c:tiny_dusts/redstone",
+    ]);
+    
     event.add('curios:curio', [
         "roll_mod:energium_battery",
         'roll_mod:redstone_battery',
