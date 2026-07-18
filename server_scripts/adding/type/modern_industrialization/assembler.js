@@ -1,5 +1,39 @@
 ServerEvents.recipes(event => {
 
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x roll_mod:treated_plate")
+  .itemIn("1x modern_industrialization:bronze_gear")
+  .itemIn("1x modern_industrialization:item_pipe")
+  .itemIn("1x minecraft:hopper")
+  .itemOut("2x toms_storage:basic_inventory_hopper")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x roll_mod:treated_plate")
+  .itemIn("1x modern_industrialization:analog_circuit")
+  .itemIn("1x modern_industrialization:bronze_plate")
+  .itemIn("1x minecraft:redstone_torch")
+  .itemOut("2x toms_storage:level_emitter")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:item_pipe")
+  .itemIn("1x minecraft:hopper")
+  .itemIn("4x #c:dusts/iron")
+  .itemOut("1x toms_storage:item_filter")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:item_pipe")
+  .itemIn("2x #c:dusts/diamond")
+  .itemIn("1x modern_industrialization:configurable_chest")
+  .itemIn("1x toms_storage:item_filter")
+  .itemOut("1x toms_storage:polymorphic_item_filter")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:item_pipe")
+  .itemIn("2x #c:dusts/gold")
+  .itemIn("1x modern_industrialization:configurable_chest")
+  .itemIn("1x toms_storage:item_filter")
+  .itemOut("1x toms_storage:tag_item_filter")
+  
 event.recipes.modern_industrialization.assembler(64, 200)
   .itemIn("6x roll_mod:advanced_conveyor")
   .itemIn("4x modern_industrialization:digital_circuit")
