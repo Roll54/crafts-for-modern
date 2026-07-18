@@ -1839,7 +1839,7 @@ event.shaped(
     {
         B: 'modern_industrialization:item_pipe',
         C: 'minecraft:hopper',
-        A: 'modern_industrialization:iron_dust'
+        A: '#c:dusts/iron'
     }
   )
 
@@ -1852,7 +1852,7 @@ event.shaped(
     ],
     {
         B: 'modern_industrialization:item_pipe',
-        A: 'modern_industrialization:gold_dust',
+        A: '#c:dusts/gold',
         C: 'modern_industrialization:configurable_chest',
         D: 'toms_storage:item_filter'
     }
