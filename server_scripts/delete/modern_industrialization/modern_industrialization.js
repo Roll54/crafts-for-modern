@@ -30,7 +30,8 @@ ServerEvents.recipes(event => {
         "modern_industrialization:fusion_chamber",
         "modern_industrialization:sulfur_dust",
         'modern_industrialization:palladium_ingot',
-        'modern_industrialization:quantum_sword'
+        'modern_industrialization:quantum_sword',
+        'modern_industrialization:plasma_handling_iridium_machine_casing'
     ];
 
     const modernRecipes = [
