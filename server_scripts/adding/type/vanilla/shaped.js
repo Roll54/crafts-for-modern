@@ -1453,21 +1453,6 @@ event.shaped(
     }
   )
 
-      event.shaped(
-        Item.of('sophisticatedbackpacks:void_upgrade'),
-        [
-            'ABA',
-            'ACA',
-            'ADA'
-        ],
-        {
-            A: 'sophisticatedstorage:copper_barrel',
-            B: 'minecraft:hopper',
-            C: 'sophisticatedbackpacks:upgrade_base',
-            D: 'modern_industrialization:trash_can'
-        }
-    )
-
   event.shaped(
     Item.of('sophisticatedbackpacks:blasting_upgrade'),
     [
