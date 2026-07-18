@@ -15,7 +15,8 @@ ServerEvents.recipes(event => {
         "extendedae:crystal_fixer",
         "extendedae:assembler_matrix_wall",
         "extendedae:assembler_matrix_glass",
-        "extendedae:entro_seed"
+        "extendedae:entro_seed",
+        'extendedae:assembler_matrix_frame'
     ];
 
     const extendedPairs = [
