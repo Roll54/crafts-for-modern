@@ -25,6 +25,12 @@ ServerEvents.recipes(event => {
   .itemOut("1x roll_mod:golden_baton")
 
   event.recipes.modern_industrialization.implosion_compressor(1, 10)
+  .itemIn("16x minecraft:gold_block")
+  .itemIn("1x modern_industrialization:industrial_tnt")
+  .itemIn("1x roll_mod:xp_burger")
+  .itemOut("1x roll_mod:golden_xp_burger")
+
+  event.recipes.modern_industrialization.implosion_compressor(1, 10)
   .itemIn("1x roll_mod:mixed_cosmic_t2")
   .itemIn("1x modern_industrialization:industrial_tnt")
   .itemOut("3x modern_industrialization:cosmic_alloy_two_ingot")
@@ -35,12 +41,12 @@ ServerEvents.recipes(event => {
   .itemIn("64x modern_industrialization:nuke")
   .itemOut("1x modern_industrialization:singularity")
   
-event.recipes.modern_industrialization.implosion_compressor(1, 1024)
-.itemIn("16x modern_industrialization:enderium_plate")
-.itemIn("8x modern_industrialization:iridium_plate")
-.itemIn("4x roll_mod:quantum_star")
-.itemIn("4x modern_industrialization:industrial_tnt")
-.itemOut("1x megacells:accumulation_processor_press")
+  event.recipes.modern_industrialization.implosion_compressor(1, 1024)
+  .itemIn("16x modern_industrialization:enderium_plate")
+  .itemIn("8x modern_industrialization:iridium_plate")
+  .itemIn("4x roll_mod:quantum_star")
+  .itemIn("4x modern_industrialization:industrial_tnt")
+  .itemOut("1x megacells:accumulation_processor_press")
 
   event.recipes.modern_industrialization.implosion_compressor(1,100)
   .itemIn("40x ae2:ender_dust")
