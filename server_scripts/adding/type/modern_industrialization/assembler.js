@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 event.recipes.modern_industrialization.assembler(64, 200)
   .itemIn("6x roll_mod:advanced_conveyor")
   .itemIn("4x modern_industrialization:digital_circuit")
-  .itemIn("16x modern_industrialization:enderium_plate")
+  .itemIn("16x modern_industrialization:titanium_plate")
   .itemIn("1x modern_industrialization:electric_macerator")
   .itemIn("16x modern_industrialization:platinum_wire")
   .itemIn("8x modern_industrialization:advanced_motor")
