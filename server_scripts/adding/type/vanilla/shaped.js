@@ -1838,7 +1838,7 @@ event.shaped(
     ],
     {
         C: 'modern_industrialization:item_pipe',
-        A: 'modern_industrialization:diamond_dust',
+        A: '#c:dusts/diamond',
         B: 'modern_industrialization:configurable_chest',
         D: 'toms_storage:item_filter'
     }
