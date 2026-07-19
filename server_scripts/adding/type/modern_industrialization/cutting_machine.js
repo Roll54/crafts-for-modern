@@ -445,7 +445,7 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
 event.recipes.modern_industrialization.cutting_machine(8, 1600)
 .itemIn("1x roll_mod:blue_wafer_cpu")
 .fluidIn("extended_industrialization:distilled_water", 1000)
-.itemOut("4x roll_mod:blue_chip_cpu")
+.itemOut("48x roll_mod:blue_chip_cpu")
 
 event.recipes.modern_industrialization.cutting_machine(32, 100)
 .itemIn("1x roll_mod:standard_wafer_nand")
