@@ -1,11 +1,9 @@
 ServerEvents.recipes(event => {
-
-event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("8x modern_industrialization:processing_unit")
-  .itemIn("1x roll_mod:lapotron_battery_t2")
-  .itemIn("4x modern_industrialization:platinum_fine_wire")
-  .itemIn("3x modern_industrialization:osmiridium_plate")
-  .itemOut("1x createcybernetics:data_shard_biochip")
+  
+event.recipes.modern_industrialization.assembler(8, 200)
+  .itemIn("1x roll_mod:1_circuit", 0.0)
+  .itemIn("8x modern_industrialization:battery_alloy_plate")
+  .itemOut("1x yet_another_industrialization:battery_casing")
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x roll_mod:treated_plate")
