@@ -290,10 +290,10 @@ event.recipes.modern_industrialization.circuit_assembler(64, 300)
   .itemOut("1x ae2:cell_component_1k")
 
   event.recipes.modern_industrialization.circuit_assembler(4, 100)
-  .itemIn("4x modern_industrialization:transistor")
-  .itemIn("4x modern_industrialization:diode")
+  .itemIn("3x modern_industrialization:transistor")
+  .itemIn("3x modern_industrialization:diode")
   .itemIn("4x modern_industrialization:analog_circuit")
-  .itemIn("2x modern_industrialization:electronic_circuit_board")
+  .itemIn("1x modern_industrialization:electronic_circuit_board")
   .fluidIn("modern_industrialization:soldering_alloy", 100)
   .itemOut("2x modern_industrialization:electronic_circuit")
 
