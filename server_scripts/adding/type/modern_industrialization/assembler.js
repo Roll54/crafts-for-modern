@@ -2308,12 +2308,13 @@ event.recipes.modern_industrialization.assembler(512, 100)
           }})
 .itemOut("1x roll_mod:iridium_based_board_assembly"); 
 
-//BUILDGIND GUDGHETDS
+//BUILDGIND GADGETS
 
 event.recipes.modern_industrialization.assembler(16, 200)
     .itemIn("4x modern_industrialization:robot_arm")
     .itemIn("4x modern_industrialization:analog_circuit")
     .itemIn("1x roll_mod:redstone_battery")
+    .itemIn("1x #constructionstick:construction_sticks")
     .itemOut("1x buildinggadgets2:gadget_building");
 
 event.recipes.modern_industrialization.assembler(16, 200)
