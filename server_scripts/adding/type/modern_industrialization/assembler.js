@@ -1,5 +1,9 @@
 ServerEvents.recipes(event => {
   
+event.recipes.modern_industrialization.assembler(2, 100)
+  .itemIn("4x minecraft:string")
+  .itemOut("1x minecraft:white_wool")
+  
 event.recipes.modern_industrialization.assembler(8, 200)
   .itemIn("1x roll_mod:1_circuit", 0.0)
   .itemIn("8x modern_industrialization:battery_alloy_plate")
