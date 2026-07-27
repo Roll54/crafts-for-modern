@@ -1,6 +1,10 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.packer(2, 100)
+  .itemIn("4x minecraft:string")
+  .itemOut("1x minecraft:white_wool")
+  
+event.recipes.modern_industrialization.packer(2, 100)
 .itemIn("1x modern_industrialization:aluminum_ingot")
 .itemIn("1x modern_industrialization:black_steel_ingot")
 .itemIn("2x roll_mod:carbon_mesh")
