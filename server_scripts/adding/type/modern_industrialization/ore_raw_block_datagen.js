@@ -1,5 +1,3 @@
-// server_scripts/raw_blocks.js
-
 ServerEvents.recipes(event => {
 
     const rawBlocks = [
@@ -102,17 +100,24 @@ ServerEvents.recipes(event => {
         "roll_mod:raw_rheniite_block"
     ];
 
-    rawBlocks.forEach(block => {
-        const dustId = block.replace("_block", "");
-        event.recipes.modern_industrialization.unpacker(2, 100)
-            .itemIn(`1x ${block}`)
-            .itemOut(`9x ${dustId}`);
-    });
+    const validBlocks = [];
 
     rawBlocks.forEach(block => {
         const dustId = block.replace("_block", "");
+        if (Item.of(block).exists()) {
+            validBlocks.push({ block: block, dust: dustId });
+        }
+    });
+
+    validBlocks.forEach(({ block, dust }) => {
+        event.recipes.modern_industrialization.unpacker(2, 100)
+            .itemIn(`1x ${block}`)
+            .itemOut(`9x ${dust}`);
+    });
+
+    validBlocks.forEach(({ block, dust }) => {
         event.recipes.modern_industrialization.packer(2, 100)
-            .itemIn(`9x ${dustId}`)
+            .itemIn(`9x ${dust}`)
             .itemIn("1x modern_industrialization:packer_block_template", 0.0)
             .itemOut(`1x ${block}`);
     });
