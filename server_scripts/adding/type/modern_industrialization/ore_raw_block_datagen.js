@@ -1,5 +1,3 @@
-// server_scripts/raw_blocks.js
-
 ServerEvents.recipes(event => {
 
     const rawBlocks = [
@@ -102,45 +100,16 @@ ServerEvents.recipes(event => {
         "roll_mod:raw_rheniite_block"
     ];
 
-    // Верстакові крафти для розпакування (9 сирої руди з блоку)
     rawBlocks.forEach(block => {
         const dustId = block.replace("_block", "");
-        if (Item.of(block).exists()) {
-            event.shapeless(`9x ${dustId}`, [block]);
-        }
-    });
-
-    // Верстакові крафти для пакування (блок з 9 сирої руди)
-    rawBlocks.forEach(block => {
-        const dustId = block.replace("_block", "");
-        if (Item.of(block).exists()) {
-            event.shaped(block, [
-                'AAA',
-                'AAA',
-                'AAA'
-            ], {
-                A: dustId
-            });
-        }
-    });
-
-    rawBlocks.forEach(block => {
-        const dustId = block.replace("_block", "");
-        if (Item.of(block).exists()) {
-            event.recipes.modern_industrialization.unpacker(2, 100)
-                .itemIn(`1x ${block}`)
-                .itemOut(`9x ${dustId}`);
-        }
-    });
-
-    rawBlocks.forEach(block => {
-        const dustId = block.replace("_block", "");
-        if (Item.of(block).exists()) {
-            event.recipes.modern_industrialization.packer(2, 100)
-                .itemIn(`9x ${dustId}`)
-                .itemIn("1x modern_industrialization:packer_block_template", 0.0)
-                .itemOut(`1x ${block}`);
-        }
+        try {
+            if (Item.of(block).getId() !== "minecraft:air") {
+                event.shapeless(`9x ${dustId}`, [block]);
+                event.shaped(block, ['AAA','AAA','AAA'], { A: dustId });
+                event.recipes.modern_industrialization.unpacker(2, 100).itemIn(`1x ${block}`).itemOut(`9x ${dustId}`);
+                event.recipes.modern_industrialization.packer(2, 100).itemIn(`9x ${dustId}`).itemIn("1x modern_industrialization:packer_block_template", 0.0).itemOut(`1x ${block}`);
+            }
+        } catch (e) {}
     });
 
 });
