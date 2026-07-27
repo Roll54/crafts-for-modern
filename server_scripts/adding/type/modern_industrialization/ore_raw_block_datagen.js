@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
         "roll_mod:raw_lead_block",
         "roll_mod:raw_nickel_block",
         "roll_mod:raw_iridium_block",
+        "roll_mod:raw_ilmenite",
         "roll_mod:raw_thorium_block",
         "roll_mod:raw_molybdenum_block",
         "roll_mod:raw_mica_block",
