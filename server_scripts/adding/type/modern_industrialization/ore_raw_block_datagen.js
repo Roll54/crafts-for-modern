@@ -1,3 +1,5 @@
+// server_scripts/raw_blocks.js
+
 ServerEvents.recipes(event => {
 
     const rawBlocks = [
@@ -102,28 +104,17 @@ ServerEvents.recipes(event => {
 
     rawBlocks.forEach(block => {
         const dustId = block.replace("_block", "");
-        event.shapeless(`9x ${dustId}`, [block]);
+        event.recipes.modern_industrialization.unpacker(2, 100)
+            .itemIn(`1x ${block}`)
+            .itemOut(`9x ${dustId}`);
     });
 
     rawBlocks.forEach(block => {
         const dustId = block.replace("_block", "");
-        event.shaped(block, [
-            'AAA',
-            'AAA',
-            'AAA'
-        ], {
-            A: dustId
-        });
+        event.recipes.modern_industrialization.packer(2, 100)
+            .itemIn(`9x ${dustId}`)
+            .itemIn("1x modern_industrialization:packer_block_template", 0.0)
+            .itemOut(`1x ${block}`);
     });
-
-    event.recipes.modern_industrialization.unpacker(2, 100)
-        .itemIn("1x extended_industrialization:nano_gravichestplate")
-        .itemOut("1x extended_industrialization:nano_chestplate")
-        .itemOut("1x roll_mod:multi_protecting_gravi_chestplate");
-
-    event.recipes.modern_industrialization.packer(2, 100)
-        .itemIn("4x extendedae:entro_crystal")
-        .itemIn("1x modern_industrialization:packer_block_template", 0.0)
-        .itemOut("1x extendedae:concurrent_processor_print");
 
 });
