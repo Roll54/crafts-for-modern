@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 event.smelting('minecraft:iron_ingot', '#roll_mod:ores/iron')
 event.smelting('minecraft:copper_ingot', '#roll_mod:ores/copper')
 event.smelting('minecraft:gold_ingot', '#roll_mod:ores/gold')
-event.smelting('4x minecraft:redstone', 'roll_mod:raw_redstone')
+event.smelting('4x roll_mod:redstone_dust', 'roll_mod:raw_redstone')
 event.smelting('2x minecraft:emerald', 'roll_mod:raw_emerald')
 event.smelting('2x minecraft:lapis_lazuli', 'roll_mod:raw_lapis_lazuli')
 
