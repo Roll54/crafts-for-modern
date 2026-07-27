@@ -207,7 +207,11 @@ event.recipes.modern_industrialization.electrolyzer(64, 100)
   .itemOut("3x roll_mod:lithium_dust")
   .itemOut("1x roll_mod:potassium_dust")
   .fluidOut("modern_industrialization:oxygen", 10000)
-  .fluidOut("modern_industrialization:fluorine", 2000); 
+  .fluidOut("modern_industrialization:fluorine", 2000)
+  .registeredCondition({
+          "mi_tweaks:voltage": {
+            "voltage": "hv"
+          }});
 
 event.recipes.modern_industrialization.electrolyzer(64, 100)
 .itemIn("16x roll_mod:lapis_lazuli_dust")
