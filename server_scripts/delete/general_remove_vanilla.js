@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: "constructionstick:template_destruction" })
     event.remove({ output: "silentgear:paint_mixer" })
     event.remove({ output: "minecraft:glowstone" })
+    event.remove({ output: 'minecraft:raw_gold' });
     
     event.remove({ id: "modern_industrialization:vanilla_recipes/packer/glowstone_block" })
     event.remove({ id: "brewinandchewin:fermenting/mead_from_honey" })
