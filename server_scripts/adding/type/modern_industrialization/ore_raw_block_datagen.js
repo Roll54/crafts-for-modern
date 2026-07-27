@@ -1,5 +1,3 @@
-// server_scripts/raw_blocks.js
-
 ServerEvents.recipes(event => {
 
     const rawBlocks = [
@@ -18,11 +16,13 @@ ServerEvents.recipes(event => {
         "roll_mod:raw_bauxite_block",
         "roll_mod:raw_gold_block",
         "roll_mod:raw_silver_block",
+        "roll_mod:raw_lead_block",
         "roll_mod:raw_nickel_block",
         "roll_mod:raw_platinum_block",
         "roll_mod:raw_iridium_block",
         "roll_mod:raw_tin_block",
         "roll_mod:raw_uranium_block",
+        "roll_mod:raw_thorium_block",
         "roll_mod:raw_molybdenum_block",
         "roll_mod:raw_tungsten_block",
         "roll_mod:raw_lithium_block",
@@ -43,8 +43,6 @@ ServerEvents.recipes(event => {
         "roll_mod:raw_vanadium_magnetite_block",
         "roll_mod:raw_pitchblende_block",
         "roll_mod:raw_uraninite_block",
-        "roll_mod:raw_lead_block",
-        "roll_mod:raw_thorium_block",
         "roll_mod:raw_mica_block",
         "roll_mod:raw_yellow_limonite_block",
         "roll_mod:raw_biotite_block",
@@ -117,5 +115,15 @@ ServerEvents.recipes(event => {
             A: dustId
         });
     });
+
+    event.recipes.modern_industrialization.unpacker(2, 100)
+        .itemIn("1x extended_industrialization:nano_gravichestplate")
+        .itemOut("1x extended_industrialization:nano_chestplate")
+        .itemOut("1x roll_mod:multi_protecting_gravi_chestplate");
+
+    event.recipes.modern_industrialization.packer(2, 100)
+        .itemIn("4x extendedae:entro_crystal")
+        .itemIn("1x modern_industrialization:packer_block_template", 0.0)
+        .itemOut("1x extendedae:concurrent_processor_print");
 
 });
