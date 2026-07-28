@@ -15,7 +15,8 @@ event.smelting('createcybernetics:cooked_heart', 'createcybernetics:bodypart_hea
 event.smelting('createcybernetics:cooked_liver', 'createcybernetics:bodypart_liver').xp(0.35)
 event.smelting('createcybernetics:roasted_andouille', 'createcybernetics:andouille_sausage').xp(0.35)
 event.smelting('createcybernetics:bone_marrow', 'minecraft:bone').xp(0.35)
-
+event.smelting('roll_mod:roasted_bell_pepper_rutile', 'roll_mod:rutile_bell_pepper').xp(0.35)
+  
 event.smelting('modern_industrialization:antimony_ingot', '#roll_mod:ores/antimony')
 event.smelting('modern_industrialization:silver_ingot', '#roll_mod:ores/silver')
 event.smelting('modern_industrialization:nickel_ingot', '#roll_mod:ores/nickel')
