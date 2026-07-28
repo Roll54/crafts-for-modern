@@ -21,6 +21,27 @@ event.custom({
   })
 
 event.custom({
+        "type": "farmersdelight:cooking",
+        "experience": 1.0,
+        "ingredients": [
+          {
+            "item": "roll_mod:rutile_bell_pepper"
+          },
+          {
+            "tag": "c:crops/rice"
+          },
+          {
+            "tag": "rusticdelight:stuffed_bell_pepper_ingredients"
+          }
+        ],
+        "recipe_book_tab": "meals",
+        "result": {
+          "count": 1,
+          "id": "roll_mod:stuffed_bell_pepper_rutile"
+        }
+  })
+      
+event.custom({
   type: 'farmersdelight:cooking',
   container: {
     id: 'minecraft:glass_bottle',
