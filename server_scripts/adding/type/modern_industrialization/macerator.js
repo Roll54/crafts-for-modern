@@ -14,6 +14,10 @@ event.recipes.modern_industrialization.macerator(2, 100)
 .itemOut("1x roll_mod:clay_dust")
 
 event.recipes.modern_industrialization.macerator(2, 100)
+.itemIn("1x ae2:sky_stone_block")
+.itemOut("1x ae2:sky_dust")
+    
+event.recipes.modern_industrialization.macerator(2, 100)
 .itemIn("1x #c:mushrooms")
 .itemOut("1x modern_industrialization:yeast_tiny_dust")
 .itemOut("1x modern_industrialization:yeast_tiny_dust", 0.5)
