@@ -2,6 +2,10 @@ ServerEvents.recipes(event => {
     const megaItems = [
         "megacells:sky_steel_ingot",
         "megacells:sky_steel_block",
+        "megacells:sky_bronze_ingot",
+        "megacells:sky_bronze_block",
+        "megacells:sky_osmium_ingot",
+        "megacells:sky_osmium_block",
         "megacells:accumulation_processor_press",
         "megacells:printed_accumulation_processor",
         "megacells:accumulation_processor",
@@ -19,16 +23,16 @@ ServerEvents.recipes(event => {
     ];
 
     const megaPairs = [
-        { input: 'minecraft:iron_ingot', output: 'megacells:item_storage_cell_1m' },
-        { input: 'minecraft:iron_ingot', output: 'megacells:item_storage_cell_4m' },
-        { input: 'minecraft:iron_ingot', output: 'megacells:item_storage_cell_16m' },
-        { input: 'minecraft:iron_ingot', output: 'megacells:item_storage_cell_64m' },
-        { input: 'minecraft:iron_ingot', output: 'megacells:item_storage_cell_256m' },
-        { input: 'minecraft:copper_ingot', output: 'megacells:fluid_storage_cell_1m' },
-        { input: 'minecraft:copper_ingot', output: 'megacells:fluid_storage_cell_4m' },
-        { input: 'minecraft:copper_ingot', output: 'megacells:fluid_storage_cell_16m' },
-        { input: 'minecraft:copper_ingot', output: 'megacells:fluid_storage_cell_64m' },
-        { input: 'minecraft:copper_ingot', output: 'megacells:fluid_storage_cell_256m' }
+        { input: 'megacells:sky_steel_ingot', output: 'megacells:item_storage_cell_1m' },
+        { input: 'megacells:sky_steel_ingot', output: 'megacells:item_storage_cell_4m' },
+        { input: 'megacells:sky_steel_ingot', output: 'megacells:item_storage_cell_16m' },
+        { input: 'megacells:sky_steel_ingot', output: 'megacells:item_storage_cell_64m' },
+        { input: 'megacells:sky_steel_ingot', output: 'megacells:item_storage_cell_256m' },
+        { input: 'megacells:sky_bronze_ingot', output: 'megacells:fluid_storage_cell_1m' },
+        { input: 'megacells:sky_bronze_ingot', output: 'megacells:fluid_storage_cell_4m' },
+        { input: 'megacells:sky_bronze_ingot', output: 'megacells:fluid_storage_cell_16m' },
+        { input: 'megacells:sky_bronze_ingot', output: 'megacells:fluid_storage_cell_64m' },
+        { input: 'megacells:sky_bronze_ingot', output: 'megacells:fluid_storage_cell_256m' }
     ];
 
     megaItems.forEach(item => {
