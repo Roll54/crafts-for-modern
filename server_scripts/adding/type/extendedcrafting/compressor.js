@@ -10,9 +10,9 @@ ServerEvents.recipes(event => {
             item: "extendedcrafting:ultimate_catalyst"
         },
         result: {
-            id: "extendedcrafting:singularity",
-            components: {
-                "extendedcrafting:singularity_id": "extendedcrafting:redstone"
+            item: "extendedcrafting:singularity",
+            nbt: {
+                singularity_id: "extendedcrafting:redstone"
             }
         }
     })
