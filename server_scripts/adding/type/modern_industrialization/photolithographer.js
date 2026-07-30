@@ -14,7 +14,7 @@ event.recipes.modern_industrialization.photolithographer(256, 400)
   .itemIn("3x modern_industrialization:silicon_wafer")
   .itemOut("3x roll_mod:standard_wafer_not")
   
-event.recipes.modern_industrialization.photolithographe  r(256, 400)
+event.recipes.modern_industrialization.photolithographer(256, 400)
   .itemIn("1x roll_mod:lapotron_laser", 0.0)
   .itemIn("1x roll_mod:advanced_robot_arm", 0.0)
   .itemIn("1x roll_mod:white_lens", 0.0)
