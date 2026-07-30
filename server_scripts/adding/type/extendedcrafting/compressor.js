@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
     event.custom({
         type: "extendedcrafting:compressor",
-        powerCost: 500000,
-        inputCount: 25000,
+        power_cost: 500000,
+        input_count: 25000,
         ingredient: {
             tag: "c:dusts/redstone"
         },
