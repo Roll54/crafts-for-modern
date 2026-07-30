@@ -6,6 +6,13 @@ event.recipes.modern_industrialization.assembler(8, 200)
   .itemOut("1x yet_another_industrialization:battery_casing")
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("6x modern_industrialization:titanium_plate")
+  .itemIn("1x modern_industrialization:titanium_tank")
+  .itemIn("1x modern_industrialization:electric_macerator")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemOut("1x createcybernetics:organsupgrades_oregrinder")
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x roll_mod:treated_plate")
   .itemIn("1x modern_industrialization:bronze_gear")
   .itemIn("1x modern_industrialization:item_pipe")
