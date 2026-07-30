@@ -2357,7 +2357,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
     .itemIn("1x modern_industrialization:basic_machine_hull")
     .itemOut("1x buildinggadgets2:template_manager");
 
-  event.recipes.modern_industrialization.assembler(32, 300)
+event.recipes.modern_industrialization.assembler(32, 300)
   .itemIn("16x modern_industrialization:cosmic_alloy_two_curved_plate")
   .itemIn("8x modern_industrialization:titanium_gear")
   .itemIn("4x modern_industrialization:chrome_vanadium_steel_plate")
