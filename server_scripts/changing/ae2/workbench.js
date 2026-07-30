@@ -1,6 +1,19 @@
 ServerEvents.recipes(event => {
+
 event.replaceInput({ output: 'extendedae:ingredient_buffer' },
     'minecraft:iron_ingot', 'modern_industrialization:aluminum_plate'
+  )
+
+event.replaceInput({ output: 'ae2:interface' },
+    'minecraft:iron_ingot', 'modern_industrialization:steel_plate'
+  )
+
+event.replaceInput({ output: 'ae2:storage_bus' },
+    'minecraft:piston', 'modern_industrialization:robot_arm'
+  )
+
+event.replaceInput({ input: 'advanced_ae:quantum_processor' },
+    'advanced_ae:quantum_processor', 'megacells:accumulation_processor'
   )
 
   function extending(output, component, processor) {
@@ -40,15 +53,5 @@ event.replaceInput({ output: 'extendedae:ingredient_buffer' },
 
   extending_upgrade('extendedae:pattern_provider_upgrade',
   '#ae2:pattern_provider', 'ae2:engineering_processor')
-  
-
-
-   event.replaceInput({ output: 'ae2:interface' },
-    'minecraft:iron_ingot', 'modern_industrialization:steel_plate'
-  )
-
-  event.replaceInput({ output: 'ae2:storage_bus' },
-    'minecraft:piston', 'modern_industrialization:robot_arm'
-  )
 
 })
