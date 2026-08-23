@@ -29,7 +29,12 @@ ServerEvents.recipes(event => {
         "advanced_ae:regeneration_card",
         "advanced_ae:hp_buffer_card",
         "advanced_ae:quantum_upgrade_base",
-        'advanced_ae:reaction_chamber'
+        'advanced_ae:reaction_chamber',
+        'advanced_ae:quantum_alloy',
+        'advanced_ae:quantum_alloy_block',
+        'advanced_ae:quantum_alloy_stairs',
+        'advanced_ae:quantum_alloy_wall',
+        'advanced_ae:quantum_alloy_slab'
     ];
   
     advancedItems.forEach(item => {
