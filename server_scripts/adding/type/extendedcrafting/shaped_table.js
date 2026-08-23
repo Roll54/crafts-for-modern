@@ -82,5 +82,30 @@ ServerEvents.recipes(event => {
             count: 1
         }
     })
-
+    
+    event.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            "B     B",
+            "B     B",
+            "B     B",
+            "BBBSBBB",
+            "B     B",
+            "B     B",
+            "B     B"
+        ],
+        key: {
+            "S": {
+                item: "yet_another_industrialization:singularity_block"
+            },
+            "B": {
+                item: "modern_industrialization:block_blencium_plate"
+            }
+        },
+        result: {
+            id: "roll_mod:letter_n",
+            count: 1
+        }
+    })
+    
 })
