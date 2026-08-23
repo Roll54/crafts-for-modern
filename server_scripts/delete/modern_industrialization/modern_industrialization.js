@@ -40,7 +40,8 @@ ServerEvents.recipes(event => {
         'modern_industrialization:bauxite_crushed_dust',
         'modern_industrialization:monazite_crushed_dust',
         'modern_industrialization:quartz_crushed_dust',
-        'modern_industrialization:redstone_crushed_dust'
+        'modern_industrialization:redstone_crushed_dust',
+        'modern_industrialization:raw_tin'
     ];
 
     const modernRecipes = [
