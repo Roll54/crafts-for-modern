@@ -33,29 +33,54 @@ ServerEvents.recipes(event => {
         }
     })
 
-event.custom({
-    type: 'extendedcrafting:shaped_table',
-    pattern: [
-        "BBBBBB ",
-        "B      ",
-        "B      ",
-        "SBBBBB ",
-        "B     B",
-        "B     B",
-        "BBBBBB "
-    ],
-    key: {
-        "S": {
-            item: "yet_another_industrialization:singularity_block"
+    event.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            "BBBBBB ",
+            "B      ",
+            "B      ",
+            "SBBBBB ",
+            "B     B",
+            "B     B",
+            "BBBBBB "
+        ],
+        key: {
+            "S": {
+                item: "yet_another_industrialization:singularity_block"
+            },
+            "B": {
+                item: "modern_industrialization:block_blencium_plate"
+            }
         },
-        "B": {
-            item: "modern_industrialization:block_blencium_plate"
+        result: {
+            id: "roll_mod:letter_b",
+            count: 1
         }
-    },
-    result: {
-        id: "roll_mod:letter_b",
-        count: 1
-    }
-})
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            "B     B",
+            " B   B ",
+            "  B B  ",
+            "   B   ",
+            "   S   ",
+            "B  B   ",
+            " BB    "
+        ],
+        key: {
+            "S": {
+                item: "yet_another_industrialization:singularity_block"
+            },
+            "B": {
+                item: "modern_industrialization:block_blencium_plate"
+            }
+        },
+        result: {
+            id: "roll_mod:letter_oo",
+            count: 1
+        }
+    })
 
 })
