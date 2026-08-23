@@ -31,7 +31,16 @@ ServerEvents.recipes(event => {
         "modern_industrialization:sulfur_dust",
         'modern_industrialization:palladium_ingot',
         'modern_industrialization:quantum_sword',
-        'modern_industrialization:plasma_handling_iridium_machine_casing'
+        'modern_industrialization:plasma_handling_iridium_machine_casing',
+        'modern_industrialization:coal_crushed_dust',
+        'modern_industrialization:diamond_crushed_dust',
+        'modern_industrialization:emerald_crushed_dust',
+        'modern_industrialization:lapis_crushed_dust',
+        'modern_industrialization:lignite_coal_crushed_dust',
+        'modern_industrialization:bauxite_crushed_dust',
+        'modern_industrialization:monazite_crushed_dust',
+        'modern_industrialization:quartz_crushed_dust',
+        'modern_industrialization:redstone_crushed_dust'
     ];
 
     const modernRecipes = [
