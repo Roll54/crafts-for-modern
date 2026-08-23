@@ -140,8 +140,7 @@ event.shaped(
     Item.of('modern_industrialization:fire_clay_dust', 3),
     [
         'ABC',
-        'ABC',
-        '   '
+        'ABC'
     ],
     {
         A: 'roll_mod:clay_dust',
