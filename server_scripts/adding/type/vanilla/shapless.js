@@ -10,6 +10,14 @@ event.shapeless(
 )
 
 event.shapeless(
+    Item.of('megacells:bulk_item_cell', 1),
+    [
+        'megacells:mega_item_cell_housing',
+        'megacells:bulk_cell_component'
+    ]
+)
+
+event.shapeless(
     Item.of('roll_mod:sulfur_dust'),
     [
         'modern_industrialization:sulfur_tiny_dust',
