@@ -1,6 +1,20 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('createcybernetics:empty_autoinjector'),
+    [
+        'A  ',
+        'B  ',
+        'C  '
+    ],
+    {
+        A: 'modern_industrialization:digital_circuit',
+        C: 'roll_mod:syringe',
+        B: 'modern_industrialization:piston'
+    }
+)
+
+event.shaped(
     Item.of('advanced_ae:adv_pattern_provider_upgrade'),
     [
         'ABA',
