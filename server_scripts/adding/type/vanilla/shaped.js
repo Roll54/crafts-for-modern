@@ -1,6 +1,83 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('advanced_ae:adv_pattern_provider_upgrade'),
+    [
+        'ABA',
+        'C C',
+        'ABA'
+    ],
+    {
+        C: 'extendedae:concurrent_processor',
+        A: 'modern_industrialization:polytetrafluoroethylene_plate',
+        B: 'modern_industrialization:enderium_gear'
+    }
+)
+    
+event.shaped(
+    Item.of('advanced_ae:small_adv_pattern_provider'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        D: 'ae2:pattern_provider',
+        C: 'extendedae:concurrent_processor',
+        A: 'modern_industrialization:polytetrafluoroethylene_plate',
+        B: 'modern_industrialization:enderium_gear'
+    }
+)
+    
+event.shaped(
+    Item.of('advanced_ae:adv_pattern_provider'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        D: 'extendedae:ex_pattern_provider',
+        C: 'extendedae:concurrent_processor',
+        A: 'modern_industrialization:polytetrafluoroethylene_plate',
+        B: 'modern_industrialization:enderium_gear'
+    }
+)
+    
+event.shaped(
+    Item.of('extendedae:infinity_water_cell'),
+    [
+        'ABA',
+        'BCB',
+        'DED'
+    ],
+    {
+        A: 'ae2:quartz_glass',
+        D: 'modern_industrialization:stainless_steel_ingot',
+        B: 'minecraft:water_bucket',
+        E: 'ae2:fluid_cell_housing',
+        C: 'ae2:cell_component_16k'
+    }
+)
+    
+event.shaped(
+    Item.of('extendedae:infinity_cobblestone_cell'),
+    [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+        A: 'ae2:quartz_glass',
+        E: 'modern_industrialization:stainless_steel_ingot',
+        C: 'minecraft:water_bucket',
+        B: 'minecraft:lava_bucket',
+        F: 'ae2:fluid_cell_housing',
+        D: 'ae2:cell_component_16k'
+    }
+)
+    
+event.shaped(
     Item.of('ae2:charger'),
     [
         'ABA',
