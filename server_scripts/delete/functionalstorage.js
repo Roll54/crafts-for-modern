@@ -9,7 +9,8 @@ ServerEvents.recipes(event => {
         "functionalstorage:framed_fluid_2",
         "functionalstorage:framed_fluid_1",
         "functionalstorage:dripping_upgrade",
-        "functionalstorage:water_generator_upgrade"
+        "functionalstorage:water_generator_upgrade",
+        'functionalstorage:obsidian_upgrade'
     ];
 
     removeItems.forEach(item => {
