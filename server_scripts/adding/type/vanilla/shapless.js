@@ -1,6 +1,14 @@
 ServerEvents.recipes(event => {
 
 event.shapeless(
+    Item.of('advanced_ae:adv_pattern_provider_capacity_upgrade'),
+    [
+        'advanced_ae:adv_pattern_provider_upgrade',
+        'modern_industrialization:enderium_gear'
+    ]
+)
+    
+event.shapeless(
     Item.of('extendedcrafting:luminessence', 2),
     [
         '#roll_mod:glowstone_dust',
