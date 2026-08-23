@@ -36,10 +36,10 @@ ServerEvents.recipes(event => {
 event.custom({
     type: 'extendedcrafting:shaped_table',
     pattern: [
-        "BBBBBB ",
-        "B      ",
-        "B      ",
-        "SBBBBB ",
+        "BBBBBB  ",
+        "B       ",
+        "B       ",
+        "SBBBBB  ",
         "B      B",
         "B      B",
         "BBBBBBB "
