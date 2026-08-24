@@ -1,5 +1,42 @@
 ServerEvents.tags('item', event => {
 
+    event.add('roll_mod:metalbarrels_upgrades', [
+        'metalbarrels:wood_to_crystal',
+        'metalbarrels:copper_to_crystal',
+        'metalbarrels:iron_to_crystal',
+        'metalbarrels:silver_to_crystal',
+        'metalbarrels:gold_to_crystal',
+        'metalbarrels:diamond_to_crystal',
+        'metalbarrels:wood_to_obsidian',
+        'metalbarrels:silver_to_diamond',
+        'metalbarrels:silver_to_netherite',
+        'metalbarrels:wood_to_netherite',
+        'metalbarrels:wood_to_diamond',
+        'metalbarrels:iron_to_gold',
+        'metalbarrels:copper_to_obsidian',
+        'metalbarrels:copper_to_silver',
+        'metalbarrels:iron_to_diamond',
+        'metalbarrels:diamond_to_obsidian',
+        'metalbarrels:wood_to_copper',
+        'metalbarrels:silver_to_obsidian',
+        'metalbarrels:silver_to_gold',
+        'metalbarrels:copper_to_netherite',
+        'metalbarrels:gold_to_obsidian',
+        'metalbarrels:wood_to_gold',
+        'metalbarrels:gold_to_netherite',
+        'metalbarrels:copper_to_iron',
+        'metalbarrels:gold_to_diamond',
+        'metalbarrels:iron_to_obsidian',
+        'metalbarrels:wood_to_silver',
+        'metalbarrels:iron_to_netherite',
+        'metalbarrels:wood_to_iron',
+        'metalbarrels:iron_to_silver',
+        'metalbarrels:copper_to_gold',
+        'metalbarrels:obsidian_to_netherite',
+        'metalbarrels:copper_to_diamond',
+        'metalbarrels:diamond_to_netherite'
+    ]);
+
     event.add('roll_mod:battaries_tier_one', [
         "roll_mod:primitive_battery",
         "modern_industrialization:redstone_battery",
