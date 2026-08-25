@@ -3,12 +3,12 @@ ServerEvents.recipes(event => {
     const spawnerMods = [
         {
             file: "burning",
-            mainhand: "modern_industrialization:large_motor",
+            mainhand: "minecraft:blaze_rod",
             stat_changes: [{ type: "apothic_spawners:burning", value: true }]
         },
         {
             file: "burning",
-            mainhand: "modern_industrialization:large_motor",
+            mainhand: "minecraft:blaze_rod",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
             stat_changes: [{ type: "apothic_spawners:burning", value: false }]
