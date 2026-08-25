@@ -2,134 +2,160 @@ ServerEvents.recipes(event => {
 
     const spawnerMods = [
         {
-            mainhand: "modern_industrialization:advanced_piston",
-            stat_changes: [{ type: "apothic_spawners:spawn_range", value: 2, max: 32 }]
+            file: "burning",
+            mainhand: "modern_industrialization:large_motor",
+            stat_changes: [{ type: "apothic_spawners:burning", value: true }]
         },
         {
-            mainhand: "modern_industrialization:advanced_piston",
+            file: "burning",
+            mainhand: "modern_industrialization:large_motor",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
-            stat_changes: [{ type: "apothic_spawners:spawn_range", value: -2, min: 1 }]
+            stat_changes: [{ type: "apothic_spawners:burning", value: false }]
         },
         {
-            mainhand: "modern_industrialization:redstone_control_module",
-            stat_changes: [{ type: "apothic_spawners:redstone_control", value: true }]
-        },
-        {
-            mainhand: "modern_industrialization:redstone_control_module",
-            offhand: "minecraft:quartz",
-            consumes_offhand: false,
-            stat_changes: [{ type: "apothic_spawners:redstone_control", value: false }]
-        },
-        {
-            mainhand: "ae2:quartz_fixture",
-            stat_changes: [{ type: "apothic_spawners:ignore_light", value: true }]
-        },
-        {
-            mainhand: "ae2:quartz_fixture",
-            offhand: "minecraft:quartz",
-            consumes_offhand: false,
-            stat_changes: [{ type: "apothic_spawners:ignore_light", value: false }]
-        },
-        {
-            mainhand: "modern_industrialization:aluminum_drill",
-            stat_changes: [{ type: "apothic_spawners:initial_health", value: -0.05, min: 0.20 }]
-        },
-        {
-            mainhand: "modern_industrialization:aluminum_drill",
-            offhand: "minecraft:quartz",
-            consumes_offhand: false,
-            stat_changes: [{ type: "apothic_spawners:initial_health", value: 0.05, max: 1 }]
-        },
-        {
+            file: "echoing",
             mainhand: "extended_industrialization:looting_module",
             stat_changes: [{ type: "apothic_spawners:echoing", value: 1, max: 3 }]
         },
         {
+            file: "echoing",
             mainhand: "extended_industrialization:looting_module",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
             stat_changes: [{ type: "apothic_spawners:echoing", value: -1, min: 0 }]
         },
         {
-            mainhand: "modern_industrialization:advanced_upgrade",
-            stat_changes: [{ type: "apothic_spawners:min_delay", value: -10, min: 20 }]
+            file: "ignore_conditions",
+            mainhand: "modern_industrialization:chrome_vanadium_steel_rotor",
+            stat_changes: [{ type: "apothic_spawners:ignore_conditions", value: true }]
         },
         {
-            mainhand: "modern_industrialization:advanced_upgrade",
+            file: "ignore_conditions",
+            mainhand: "modern_industrialization:chrome_vanadium_steel_rotor",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
-            stat_changes: [{ type: "apothic_spawners:min_delay", value: 10, max: 1600 }]
+            stat_changes: [{ type: "apothic_spawners:ignore_conditions", value: false }]
         },
         {
+            file: "ignore_light",
+            mainhand: "ae2:quartz_fixture",
+            stat_changes: [{ type: "apothic_spawners:ignore_light", value: true }]
+        },
+        {
+            file: "ignore_light",
+            mainhand: "ae2:quartz_fixture",
+            offhand: "minecraft:quartz",
+            consumes_offhand: false,
+            stat_changes: [{ type: "apothic_spawners:ignore_light", value: false }]
+        },
+        {
+            file: "ignore_players",
             mainhand: "roll_mod:quantum_star",
             stat_changes: [{ type: "apothic_spawners:ignore_players", value: true }]
         },
         {
+            file: "ignore_players",
             mainhand: "roll_mod:quantum_star",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
             stat_changes: [{ type: "apothic_spawners:ignore_players", value: false }]
         },
         {
-            mainhand: "modern_industrialization:large_motor",
+            file: "initial_health",
+            mainhand: "modern_industrialization:aluminum_drill",
+            stat_changes: [{ type: "apothic_spawners:initial_health", value: -0.05, min: 0.20 }]
+        },
+        {
+            file: "initial_health",
+            mainhand: "modern_industrialization:aluminum_drill",
+            offhand: "minecraft:quartz",
+            consumes_offhand: false,
+            stat_changes: [{ type: "apothic_spawners:initial_health", value: 0.05, max: 1 }]
+        },
+        {
+            file: "max_delay",
+            mainhand: "roll_mod:magnalium_engine",
             stat_changes: [{ type: "apothic_spawners:max_delay", value: -20, min: 20 }]
         },
         {
-            mainhand: "modern_industrialization:large_motor",
+            file: "max_delay",
+            mainhand: "roll_mod:magnalium_engine",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
             stat_changes: [{ type: "apothic_spawners:max_delay", value: 20, max: 1600 }]
         },
         {
-            mainhand: "modern_industrialization:large_pump",
+            file: "max_nearby",
+            mainhand: "modern_industrialization:digital_circuit",
             stat_changes: [{ type: "apothic_spawners:max_nearby_entities", value: 2, max: 32 }]
         },
         {
-            mainhand: "modern_industrialization:large_pump",
+            file: "max_nearby",
+            mainhand: "modern_industrialization:digital_circuit",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
             stat_changes: [{ type: "apothic_spawners:max_nearby_entities", value: -2, min: 1 }]
         },
         {
-            mainhand: "roll_mod:energium_battery",
-            stat_changes: [{ type: "apothic_spawners:spawn_count", value: 2, max: 16 }]
+            file: "min_delay",
+            mainhand: "modern_industrialization:advanced_upgrade",
+            stat_changes: [{ type: "apothic_spawners:min_delay", value: -10, min: 20 }]
         },
         {
-            mainhand: "roll_mod:energium_battery",
+            file: "min_delay",
+            mainhand: "modern_industrialization:advanced_upgrade",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
-            stat_changes: [{ type: "apothic_spawners:spawn_count", value: -2, min: 1 }]
+            stat_changes: [{ type: "apothic_spawners:min_delay", value: 10, max: 1600 }]
         },
         {
+            file: "player_range",
             mainhand: "modern_industrialization:large_advanced_pump",
             stat_changes: [{ type: "apothic_spawners:req_player_range", value: 4, max: 48 }]
         },
         {
+            file: "player_range",
             mainhand: "modern_industrialization:large_advanced_pump",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
             stat_changes: [{ type: "apothic_spawners:req_player_range", value: -4, min: 1 }]
         },
         {
-            mainhand: "modern_industrialization:conduit",
-            stat_changes: [{ type: "apothic_spawners:ignore_conditions", value: true }]
+            file: "redstone_control",
+            mainhand: "modern_industrialization:redstone_control_module",
+            stat_changes: [{ type: "apothic_spawners:redstone_control", value: true }]
         },
         {
-            mainhand: "modern_industrialization:conduit",
+            file: "redstone_control",
+            mainhand: "modern_industrialization:redstone_control_module",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
-            stat_changes: [{ type: "apothic_spawners:ignore_conditions", value: false }]
+            stat_changes: [{ type: "apothic_spawners:redstone_control", value: false }]
         },
         {
-            mainhand: "modern_industrialization:advanced_motor",
-            stat_changes: [{ type: "apothic_spawners:burning", value: true }]
+            file: "spawn_count",
+            mainhand: "roll_mod:energium_battery",
+            stat_changes: [{ type: "apothic_spawners:spawn_count", value: 2, max: 16 }]
         },
         {
-            mainhand: "modern_industrialization:advanced_motor",
+            file: "spawn_count",
+            mainhand: "roll_mod:energium_battery",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
-            stat_changes: [{ type: "apothic_spawners:burning", value: false }]
+            stat_changes: [{ type: "apothic_spawners:spawn_count", value: -2, min: 1 }]
+        },
+        {
+            file: "spawn_range",
+            mainhand: "modern_industrialization:advanced_piston",
+            stat_changes: [{ type: "apothic_spawners:spawn_range", value: 2, max: 32 }]
+        },
+        {
+            file: "spawn_range",
+            mainhand: "modern_industrialization:advanced_piston",
+            offhand: "minecraft:quartz",
+            consumes_offhand: false,
+            stat_changes: [{ type: "apothic_spawners:spawn_range", value: -2, min: 1 }]
         }
     ];
 
