@@ -134,6 +134,11 @@ ServerEvents.recipes(event => {
             stat_changes: [{ type: "apothic_spawners:redstone_control", value: false }]
         },
         {
+            file: "silent",
+            mainhand: "#minecraft:wool",
+            stat_changes: [{ type: "apothic_spawners:silent", value: true }]
+        },
+        {
             file: "spawn_count",
             mainhand: "roll_mod:energium_battery",
             stat_changes: [{ type: "apothic_spawners:spawn_count", value: 2, max: 16 }]
@@ -156,6 +161,11 @@ ServerEvents.recipes(event => {
             offhand: "minecraft:quartz",
             consumes_offhand: false,
             stat_changes: [{ type: "apothic_spawners:spawn_range", value: -2, min: 1 }]
+        },
+        {
+            file: "youthful",
+            mainhand: "minecraft:turtle_egg",
+            stat_changes: [{ type: "apothic_spawners:youthful", value: true }]
         }
     ];
 
