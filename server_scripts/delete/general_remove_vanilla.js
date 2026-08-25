@@ -15,6 +15,9 @@ ServerEvents.recipes(event => {
     
     event.remove({ id: "modern_industrialization:vanilla_recipes/packer/glowstone_block" })
     event.remove({ id: "brewinandchewin:fermenting/mead_from_honey" })
+
+    event.remove({ id: "apothic_spawners:spawner_modifiers/no_ai" })
+    event.remove({ id: "apothic_spawners:spawner_modifiers/_inverse/no_ai" })
     
     event.remove({ mod: 'buildinggadgets2' })
     event.remove({ mod: 'scannable_unofficial' })
