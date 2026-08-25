@@ -1,5 +1,3 @@
-// server_scripts/spawner_modifiers.js
-
 ServerEvents.recipes(event => {
 
     const spawnerMods = [
