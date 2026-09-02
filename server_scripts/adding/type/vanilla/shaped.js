@@ -1,184 +1,27 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
-    Item.of('roll_mod:black_steel_helmet'),
-    [
-        'AAA',
-        'A A'
-    ],
-    {
-        A: '#c:ingots/steel'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_steel_chestplate'),
-    [
-        'A A',
-        'AAA',
-        'AAA'
-    ],
-    {
-        A: '#c:ingots/steel'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_steel_leggings'),
-    [
-        'AAA',
-        'A A',
-        'A A'
-    ],
-    {
-        A: '#c:ingots/steel'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_steel_boots'),
-    [
-        'A A',
-        'A A'
-    ],
-    {
-        A: '#c:ingots/steel'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_steel_pickaxe'),
-    [
-        'AAA',
-        ' B ',
-        ' B '
-    ],
-    {
-        A: '#c:ingots/steel',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_steel_axe'),
-    [
-        'AA',
-        'AB',
-        ' B'
-    ],
-    {
-        A: '#c:ingots/steel',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_steel_shovel'),
+    Item.of('roll_mod:bismuth_bronze_shovel'),
     [
         'A',
         'B',
         'B'
     ],
     {
-        A: '#c:ingots/steel',
+        A: 'modern_industrialization:bismuth_bronze_ingot',
         B: 'minecraft:stick'
     }
 )
 
 event.shaped(
-    Item.of('roll_mod:black_steel_sword'),
-    [
-        'A',
-        'A',
-        'B'
-    ],
-    {
-        A: '#c:ingots/steel',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_steel_hoe'),
+    Item.of('roll_mod:bismuth_bronze_hoe'),
     [
         'AA',
         ' B',
         ' B'
     ],
     {
-        A: '#c:ingots/steel',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_bronze_helmet'),
-    [
-        'AAA',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:black_bronze_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_bronze_chestplate'),
-    [
-        'A A',
-        'AAA',
-        'AAA'
-    ],
-    {
-        A: 'modern_industrialization:black_bronze_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_bronze_leggings'),
-    [
-        'AAA',
-        'A A',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:black_bronze_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_bronze_boots'),
-    [
-        'A A',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:black_bronze_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_bronze_pickaxe'),
-    [
-        'AAA',
-        ' B ',
-        ' B '
-    ],
-    {
-        A: 'modern_industrialization:black_bronze_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_bronze_axe'),
-    [
-        'AA',
-        'AB',
-        ' B'
-    ],
-    {
-        A: 'modern_industrialization:black_bronze_ingot',
+        A: 'modern_industrialization:bismuth_bronze_ingot',
         B: 'minecraft:stick'
     }
 )
@@ -188,19 +31,6 @@ event.shaped(
     [
         'A',
         'B',
-        'B'
-    ],
-    {
-        A: 'modern_industrialization:black_bronze_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:black_bronze_sword'),
-    [
-        'A',
-        'A',
         'B'
     ],
     {
@@ -223,86 +53,27 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:bismuth_bronze_helmet'),
-    [
-        'AAA',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:bismuth_bronze_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:bismuth_bronze_chestplate'),
-    [
-        'A A',
-        'AAA',
-        'AAA'
-    ],
-    {
-        A: 'modern_industrialization:bismuth_bronze_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:bismuth_bronze_leggings'),
-    [
-        'AAA',
-        'A A',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:bismuth_bronze_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:bismuth_bronze_boots'),
-    [
-        'A A',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:bismuth_bronze_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:bismuth_bronze_pickaxe'),
-    [
-        'AAA',
-        ' B ',
-        ' B '
-    ],
-    {
-        A: 'modern_industrialization:bismuth_bronze_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:bismuth_bronze_axe'),
-    [
-        'AA',
-        'AB',
-        ' B'
-    ],
-    {
-        A: 'modern_industrialization:bismuth_bronze_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:bismuth_bronze_shovel'),
+    Item.of('roll_mod:black_steel_shovel'),
     [
         'A',
         'B',
         'B'
     ],
     {
-        A: 'modern_industrialization:bismuth_bronze_ingot',
+        A: '#c:ingots/steel',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_hoe'),
+    [
+        'AA',
+        ' B',
+        ' B'
+    ],
+    {
+        A: '#c:ingots/steel',
         B: 'minecraft:stick'
     }
 )
@@ -321,14 +92,105 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:bismuth_bronze_hoe'),
+    Item.of('roll_mod:black_bronze_sword'),
+    [
+        'A',
+        'A',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_sword'),
+    [
+        'A',
+        'A',
+        'B'
+    ],
+    {
+        A: '#c:ingots/steel',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: '#c:ingots/steel',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_axe'),
     [
         'AA',
-        ' B',
+        'AB',
         ' B'
     ],
     {
         A: 'modern_industrialization:bismuth_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_axe'),
+    [
+        'AA',
+        'AB',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_axe'),
+    [
+        'AA',
+        'AB',
+        ' B'
+    ],
+    {
+        A: '#c:ingots/steel',
         B: 'minecraft:stick'
     }
 )
