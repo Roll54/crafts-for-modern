@@ -184,7 +184,6 @@ ServerEvents.recipes(event => {
             };
             recipe.consumes_offhand = mod.consumes_offhand !== undefined ? mod.consumes_offhand : false;
         }
-
         event.custom(recipe);
     });
 
