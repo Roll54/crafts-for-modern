@@ -166,11 +166,6 @@ event.recipes.modern_industrialization.blast_furnace(32, 100)
 .itemIn("4x #c:dusts/certus_quartz")
 .itemOut("5x ae2:quartz_fiber")
 
-event.recipes.modern_industrialization.blast_furnace(8, 100)
-.itemIn("4x #c:dusts/lapis")
-.itemIn("1x modern_industrialization:silver_ingot")
-.itemOut("2x silentgear:azure_electrum_ingot")
-
 event.recipes.modern_industrialization.blast_furnace(48, 100)
 .itemIn("1x roll_mod:energium_dust")
 .fluidOut("modern_industrialization:molten_energium", 50)
