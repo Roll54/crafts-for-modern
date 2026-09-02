@@ -356,20 +356,7 @@ event.shaped(
         D: 'modern_industrialization:tin_cable'
     }
 )
-    
-event.shaped(
-    Item.of('silentgear:paint_mixer'),
-    [
-        'ABA',
-        'CBC',
-        'ABA'
-    ],
-    {
-        A: 'minecraft:smooth_stone',
-        B: 'minecraft:white_dye',
-        C: 'minecraft:copper_ingot'
-    }
-)
+
     
 event.shaped(
     Item.of('railcraft:locomotive_detector'),
