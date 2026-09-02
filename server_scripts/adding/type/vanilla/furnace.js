@@ -28,6 +28,5 @@ event.smelting('modern_industrialization:zinc_ingot', '#roll_mod:ores/sphalerite
 event.smelting('4x modern_industrialization:bauxite_dust', 'roll_mod:raw_bauxite')
 event.smelting('2x minecraft:diamond', 'roll_mod:raw_diamond')
 event.smelting('4x roll_mod:sulfur_dust', '#c:ores/sulfur')
-event.smelting('1x silentgear:crimson_iron_ingot', '#c:crimson_iron')
 event.smelting('1x modern_industrialization:tin_ingot', '#c:stannite')
 })
