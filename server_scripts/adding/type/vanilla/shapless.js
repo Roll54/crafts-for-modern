@@ -144,7 +144,7 @@ event.shapeless(
 event.shapeless('4x roll_mod:treated_planks', ['roll_mod:treated_log']);
 
 event.shapeless("toms_storage:paint_kit", [
-      "sophisticatedstorage:paintbrush",
+      "minecraft:feather",
       "minecraft:green_dye",
       "minecraft:black_dye",
       "minecraft:white_dye",
