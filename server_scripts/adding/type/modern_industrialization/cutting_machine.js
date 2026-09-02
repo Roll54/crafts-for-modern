@@ -3,7 +3,6 @@ ServerEvents.recipes(event => {
 // Жахливе дерево ПОЧАТОК
 
     const woodTypes = [
-        { log: 'silentgear:netherwood_log', wood: 'silentgear:netherwood_wood', planks: 'silentgear:netherwood_planks', slab: 'silentgear:netherwood_slab', stripped_log: 'silentgear:stripped_netherwood_log', stripped_wood: 'silentgear:stripped_netherwood_wood', tag: 'silentgear:netherwood_logs' },
         { log: 'ad_astra:glacian_log', wood: null, planks: 'ad_astra:glacian_planks', slab: 'ad_astra:glacian_slab', stripped_log: 'ad_astra:stripped_glacian_log', stripped_wood: null, tag: 'ad_astra:glacian_logs' },
         { log: 'biomeswevegone:pale_mud', wood: null, planks: null, slab: null, stripped_log: null, stripped_wood: null, tag: null },
         { log: 'biomeswevegone:aspen_log', wood: 'biomeswevegone:aspen_wood', planks: 'biomeswevegone:aspen_planks', slab: 'biomeswevegone:aspen_slab', stripped_log: 'biomeswevegone:stripped_aspen_log', stripped_wood: 'biomeswevegone:stripped_aspen_wood', tag: 'biomeswevegone:aspen_logs' },
