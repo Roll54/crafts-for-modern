@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         },
         {
             file: "spawn_count",
-            mainhand: "'modern_industrialization:turbo_upgrade'",
+            mainhand: "modern_industrialization:turbo_upgrade",
             stat_changes: [{ type: "apothic_spawners:spawn_count", value: 2, max: 16 }]
         },
         {
@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
         },
         {
             file: "spawn_count",
-            mainhand: "'modern_industrialization:turbo_upgrade'",
+            mainhand: "modern_industrialization:turbo_upgrade",
             offhand: "minecraft:quartz",
             consumes_offhand: false,
             stat_changes: [{ type: "apothic_spawners:spawn_count", value: -2, min: 1 }]
