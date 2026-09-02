@@ -60,7 +60,7 @@ event.shaped(
         'B'
     ],
     {
-        A: '#c:ingots/steel',
+        A: 'modern_industrialization:black_steel_ingot',
         B: 'minecraft:stick'
     }
 )
@@ -73,7 +73,7 @@ event.shaped(
         ' B'
     ],
     {
-        A: '#c:ingots/steel',
+        A: 'modern_industrialization:black_steel_ingot',
         B: 'minecraft:stick'
     }
 )
@@ -112,7 +112,7 @@ event.shaped(
         'B'
     ],
     {
-        A: '#c:ingots/steel',
+        A: 'modern_industrialization:black_steel_ingot',
         B: 'minecraft:stick'
     }
 )
@@ -151,7 +151,7 @@ event.shaped(
         ' B '
     ],
     {
-        A: '#c:ingots/steel',
+        A: 'modern_industrialization:black_steel_ingot',
         B: 'minecraft:stick'
     }
 )
@@ -190,7 +190,7 @@ event.shaped(
         ' B'
     ],
     {
-        A: '#c:ingots/steel',
+        A: 'modern_industrialization:black_steel_ingot',
         B: 'minecraft:stick'
     }
 )
