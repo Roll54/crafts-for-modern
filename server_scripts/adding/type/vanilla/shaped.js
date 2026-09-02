@@ -513,26 +513,7 @@ event.shaped(
         C: 'minecraft:glass_bottle'
     }
   )	
-    
-  event.shaped(
-    Item.of('silentgear:crimson_repair_kit', 1),[
-      ' A ',
-      'B B',
-      'BBB',
-    ],{
-      A: 'modern_industrialization:aluminum_rod',
-      B: 'silentgear:crimson_steel_ingot',
-  })
 
-  event.shaped(
-    Item.of('silentgear:azure_repair_kit', 1),[
-      ' A ',
-      'B B',
-      'BBB',
-    ],{
-      A: 'modern_industrialization:titanium_rod',
-      B: 'silentgear:azure_electrum_ingot',
-  })
 
   event.shaped(
     Item.of('modern_industrialization:pyrolyse_oven', 1),[
@@ -2110,22 +2091,6 @@ event.shaped(
         D: 'toms_storage:item_filter'
     }
   )
-
-event.shaped(
-    Item.of('silentgear:advanced_upgrade_base'),
-    [
-        'AAA',
-        'BCB',
-        'DDD'
-    ],
-    {
-        D: 'minecraft:gold_ingot',
-        A: 'cosmeticarmoursmod:diamond_shard',
-        B: 'minecraft:lapis_lazuli',
-        C: 'silentgear:upgrade_base'
-    }
-)
-
 
 event.shaped(
     Item.of('roll_mod:sunnarium_glass_mk1'),
