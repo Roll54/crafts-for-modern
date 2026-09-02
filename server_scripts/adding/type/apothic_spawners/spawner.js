@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         },
         {
             file: "silent",
-            mainhand: "minecraft:wool",
+            mainhand: "minecraft:white_wool",
             stat_changes: [{ type: "apothic_spawners:silent", value: true }]
         },
         {
