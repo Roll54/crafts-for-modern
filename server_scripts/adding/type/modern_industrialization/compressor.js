@@ -8,6 +8,10 @@ ServerEvents.recipes(event => {
   .itemIn("5x modern_industrialization:diamond_dust")
   .itemOut("2x modern_industrialization:diamond_plate")
 
+  event.recipes.modern_industrialization.compressor(2, 800)
+  .itemIn("1x roll_mod:diamond_alloy_ingot")
+  .itemOut("1x roll_mod:diamond_alloy_plate")
+  
   event.recipes.modern_industrialization.compressor(2, 400)
     .itemIn("ad_astra:ostrum_ingot")
     .itemOut("ad_astra:ostrum_plate")
