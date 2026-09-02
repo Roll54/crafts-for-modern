@@ -1,124 +1,13 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
-    Item.of('roll_mod:meteorite_helmet'),
-    [
-        'AAA',
-        'A A'
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:meteorite_chestplate'),
-    [
-        'A A',
-        'AAA',
-        'AAA'
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:meteorite_leggings'),
-    [
-        'AAA',
-        'A A',
-        'A A'
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:meteorite_boots'),
-    [
-        'A A',
-        'A A'
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:meteorite_pickaxe'),
-    [
-        'AAA',
-        ' B ',
-        ' B '
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:meteorite_axe'),
-    [
-        'AA',
-        'AB',
-        ' B'
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:meteorite_shovel'),
-    [
-        'A',
-        'B',
-        'B'
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:meteorite_sword'),
-    [
-        'A',
-        'A',
-        'B'
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:meteorite_hoe'),
-    [
-        'AA',
-        ' B',
-        ' B'
-    ],
-    {
-        A: 'roll_mod:meteorite_metal_ingot',
-        B: 'minecraft:stick'
-    }
-)
-
-event.shaped(
     Item.of('roll_mod:black_steel_helmet'),
     [
         'AAA',
         'A A'
     ],
     {
-        A: 'modern_industrialization:steel_ingot'
+        A: '#c:ingots/steel'
     }
 )
 
@@ -130,7 +19,7 @@ event.shaped(
         'AAA'
     ],
     {
-        A: 'modern_industrialization:steel_ingot'
+        A: '#c:ingots/steel'
     }
 )
 
@@ -142,7 +31,7 @@ event.shaped(
         'A A'
     ],
     {
-        A: 'modern_industrialization:steel_ingot'
+        A: '#c:ingots/steel'
     }
 )
 
@@ -153,7 +42,7 @@ event.shaped(
         'A A'
     ],
     {
-        A: 'modern_industrialization:steel_ingot'
+        A: '#c:ingots/steel'
     }
 )
 
@@ -165,7 +54,7 @@ event.shaped(
         ' B '
     ],
     {
-        A: 'modern_industrialization:steel_ingot',
+        A: '#c:ingots/steel',
         B: 'minecraft:stick'
     }
 )
@@ -178,7 +67,7 @@ event.shaped(
         ' B'
     ],
     {
-        A: 'modern_industrialization:steel_ingot',
+        A: '#c:ingots/steel',
         B: 'minecraft:stick'
     }
 )
@@ -191,7 +80,7 @@ event.shaped(
         'B'
     ],
     {
-        A: 'modern_industrialization:steel_ingot',
+        A: '#c:ingots/steel',
         B: 'minecraft:stick'
     }
 )
@@ -204,7 +93,7 @@ event.shaped(
         'B'
     ],
     {
-        A: 'modern_industrialization:steel_ingot',
+        A: '#c:ingots/steel',
         B: 'minecraft:stick'
     }
 )
@@ -217,7 +106,7 @@ event.shaped(
         ' B'
     ],
     {
-        A: 'modern_industrialization:steel_ingot',
+        A: '#c:ingots/steel',
         B: 'minecraft:stick'
     }
 )
