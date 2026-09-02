@@ -622,16 +622,6 @@ event.shaped(
 )
 
   event.shaped(
-    Item.of('silentgear:crude_repair_kit', 1),[
-      ' A ',
-      'B B',
-      'BBB',
-    ],{
-      A: 'modern_industrialization:iron_rod',
-      B: '#minecraft:logs',
-})
-
-  event.shaped(
     Item.of('ad_astra:fan'),
     [
         'A A',
