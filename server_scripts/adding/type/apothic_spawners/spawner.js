@@ -172,18 +172,15 @@ ServerEvents.recipes(event => {
     spawnerMods.forEach(mod => {
         const recipe = {
             type: "apothic_spawners:spawner_modifier",
-            mainhand: {
-                item: mod.mainhand
-            },
+            mainhand: mod.mainhand,
             stat_changes: mod.stat_changes
         };
 
         if (mod.offhand) {
-            recipe.offhand = {
-                item: mod.offhand
-            };
+            recipe.offhand = mod.offhand;
             recipe.consumes_offhand = mod.consumes_offhand !== undefined ? mod.consumes_offhand : false;
         }
+
         event.custom(recipe);
     });
 
