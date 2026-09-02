@@ -1,6 +1,131 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:meteorite_metal_prospector_pickaxe'),
+    [
+        'AB',
+        'C ',
+        'C '
+    ],
+    {
+        B: 'minecraft:iron_nugget',
+        A: 'roll_mod:meteorite_metal_ingot',
+        C: 'minecraft:stick'
+    }
+  )
+
+event.shaped(
+    Item.of('roll_mod:meteorite_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_axe'),
+    [
+        'AA',
+        'AB',
+        ' B'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_shovel'),
+    [
+        'A',
+        'B',
+        'B'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_sword'),
+    [
+        'A',
+        'A',
+        'B'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_hoe'),
+    [
+        'AA',
+        ' B',
+        ' B'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:bismuth_bronze_shovel'),
     [
         'A',
