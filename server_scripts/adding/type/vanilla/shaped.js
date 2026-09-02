@@ -483,15 +483,6 @@ event.shaped(
     }
 )
     
-  event.shaped(
-    Item.of('silentgear:sturdy_repair_kit', 1),[
-      ' A ',
-      'B B',
-      'BBB',
-    ],{
-      A: 'modern_industrialization:steel_rod',
-      B: 'modern_industrialization:iron_plate',
-})  
 /*
   event.shaped(
     Item.of('roll_mod:empty_cartridge'),
