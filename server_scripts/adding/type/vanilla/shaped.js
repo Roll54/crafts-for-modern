@@ -1,6 +1,450 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:meteorite_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_axe'),
+    [
+        'AA',
+        'AB',
+        ' B'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_shovel'),
+    [
+        'A',
+        'B',
+        'B'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_sword'),
+    [
+        'A',
+        'A',
+        'B'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_hoe'),
+    [
+        'AA',
+        ' B',
+        ' B'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_axe'),
+    [
+        'AA',
+        'AB',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_shovel'),
+    [
+        'A',
+        'B',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_sword'),
+    [
+        'A',
+        'A',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_hoe'),
+    [
+        'AA',
+        ' B',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_axe'),
+    [
+        'AA',
+        'AB',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_shovel'),
+    [
+        'A',
+        'B',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_sword'),
+    [
+        'A',
+        'A',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_hoe'),
+    [
+        'AA',
+        ' B',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_axe'),
+    [
+        'AA',
+        'AB',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_shovel'),
+    [
+        'A',
+        'B',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_sword'),
+    [
+        'A',
+        'A',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_hoe'),
+    [
+        'AA',
+        ' B',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
     Item.of('createcybernetics:empty_autoinjector'),
     [
         'A  ',
