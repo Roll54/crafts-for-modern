@@ -1,6 +1,30 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('railcraft:track_parts'),
+    [
+        'AA ',
+        '   ',
+        '   '
+    ],
+    {
+        A: 'modern_industrialization:steel_rod'
+    }
+)
+    
+event.shaped(
+    Item.of('railcraft:track_parts'),
+    [
+        'A A',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:iron_rod'
+    }
+)
+
+event.shaped(
     Item.of('roll_mod:diamond_blockogriz'),
     [
         'ABC',
