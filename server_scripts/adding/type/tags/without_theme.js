@@ -54,22 +54,18 @@ ServerEvents.tags('item', event => {
     ]);
 
     event.add('roll_mod:controller_circuit', [
-        "railcraft:controller_circuit",
         "modern_industrialization:analog_circuit",
     ]);
 
     event.add('roll_mod:receiver_circuit', [
-        "railcraft:receiver_circuit",
         "roll_mod:1_circuit",
     ]);
 
     event.add('roll_mod:signal_circuit', [
-        "railcraft:signal_circuit",
         "roll_mod:2_circuit",
     ]);
 
     event.add('roll_mod:radio_circuit', [
-        "railcraft:radio_circuit",
         "roll_mod:3_circuit",
     ]);
     
