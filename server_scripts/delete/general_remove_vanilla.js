@@ -4,12 +4,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: "minecraft:ender_eye" })
     event.remove({ output: "blahaj:blue_shark" })
     event.remove({ output: "tide:fishing_line" })
-    event.remove({ output: "silentgear:prospector_hammer_blueprint" })
-    event.remove({ output: "silentgear:prospector_hammer_template" })
-    event.remove({ output: "silentgear:advanced_upgrade_base" })
     event.remove({ output: "moredelight:diced_potatoes" })
     event.remove({ output: "constructionstick:template_destruction" })
-    event.remove({ output: "silentgear:paint_mixer" })
     event.remove({ output: "minecraft:glowstone" })
     event.remove({ output: 'minecraft:raw_gold' });
     
@@ -19,5 +15,4 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'buildinggadgets2' })
     event.remove({ mod: 'scannable_unofficial' })
     event.remove({ mod: 'createcybernetics' })
-    event.remove({ mod: 'apothic_spawners' })
 })
