@@ -82,7 +82,8 @@ ServerEvents.recipes(event => {
         'railcraft:steel_leggings',
         'railcraft:steel_boots',
         'railcraft:energy_minecart',
-        'railcraft:tank_minecart'
+        'railcraft:tank_minecart',
+        'railcraft:track_parts'
     ];
 
     itemsToRemove.forEach(item => {
