@@ -1,6 +1,126 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:diamond_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'minecraft:diamond_shovel',
+        A: 'minecraft:diamond_axe',
+        D: 'minecraft:stick',
+        B: 'minecraft:diamond_pickaxe'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_metal_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'roll_mod:meteorite_shovel',
+        A: 'roll_mod:meteorite_axe',
+        D: 'minecraft:stick',
+        B: 'roll_mod:meteorite_pickaxe'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:iron_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'minecraft:iron_shovel',
+        A: 'minecraft:iron_axe',
+        D: 'minecraft:stick',
+        B: 'minecraft:iron_pickaxe'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'roll_mod:black_steel_shovel',
+        A: 'roll_mod:black_steel_axe',
+        D: 'minecraft:stick',
+        B: 'roll_mod:black_steel_pickaxe'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:netherite_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'minecraft:netherite_shovel',
+        A: 'minecraft:netherite_axe',
+        D: 'minecraft:stick',
+        B: 'minecraft:netherite_pickaxe'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'roll_mod:black_steel_shovel',
+        A: 'roll_mod:black_steel_axe',
+        D: 'minecraft:stick',
+        B: 'roll_mod:black_steel_pickaxe'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'roll_mod:bismuth_bronze_shovel',
+        A: 'roll_mod:bismuth_bronze_axe',
+        D: 'minecraft:stick',
+        B: 'roll_mod:bismuth_bronze_pickaxe'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'roll_mod:black_bronze_shovel',
+        A: 'roll_mod:black_bronze_axe',
+        D: 'minecraft:stick',
+        B: 'roll_mod:black_bronze_pickaxe'
+    }
+)
+
+event.shaped(
     Item.of('roll_mod:meteorite_metal_prospector_pickaxe'),
     [
         'AB',
