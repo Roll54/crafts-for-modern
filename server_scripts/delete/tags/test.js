@@ -16,6 +16,19 @@ ServerEvents.tags('block', event => {
   event.remove('#c:gears/zinc', 'railcraft:zinc_gear')
   event.remove('#c:gears/steel', 'railcraft:steel_gear')
 
+  event.remove('#c:plates/brass', 'railcraft:brass_plate')
+  event.remove('#c:plates/bronze', 'railcraft:bronze_plate')
+  event.remove('#c:plates/invar', 'railcraft:invar_plate')
+  event.remove('#c:plates/iron', 'railcraft:iron_plate')
+  event.remove('#c:plates/copper', 'railcraft:copper_plate')
+  event.remove('#c:plates/gold', 'railcraft:gold_plate')
+  event.remove('#c:plates/lead', 'railcraft:lead_plate')
+  event.remove('#c:plates/nickel', 'railcraft:nickel_plate')
+  event.remove('#c:plates/silver', 'railcraft:silver_plate')
+  event.remove('#c:plates/tin', 'railcraft:tin_plate')
+  event.remove('#c:plates/zinc', 'railcraft:zinc_plate')
+  event.remove('#c:plates/steel', 'railcraft:steel_plate')
+
   // Якщо десь ще засвітиться — підстрахуємось
   event.removeAll('modern_industrialization:deepslate_iridium_ore');
 });
