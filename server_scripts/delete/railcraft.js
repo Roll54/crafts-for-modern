@@ -67,7 +67,10 @@ ServerEvents.recipes(event => {
         'railcraft:receiver_circuit',
         'railcraft:signal_circuit',
         'railcraft:radio_circuit',
-        'railcraft:electric_locomotive'
+        'railcraft:electric_locomotive',
+        'railcraft:brass_gear',
+        'railcraft:zinc_gear',
+        'railcraft:tin_gear'
     ];
 
     itemsToRemove.forEach(item => {
