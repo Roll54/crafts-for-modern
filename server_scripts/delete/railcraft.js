@@ -62,7 +62,11 @@ ServerEvents.recipes(event => {
         'railcraft:stone_tie',
         'minecraft:powered_rail',
         'minecraft:detector_rail',
-        'minecraft:activator_rail'
+        'minecraft:activator_rail',
+        'railcraft:controller_circuit',
+        'railcraft:receiver_circuit',
+        'railcraft:signal_circuit',
+        'railcraft:radio_circuit'
     ];
 
     itemsToRemove.forEach(item => {
