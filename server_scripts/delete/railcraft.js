@@ -70,7 +70,8 @@ ServerEvents.recipes(event => {
         'railcraft:electric_locomotive',
         'railcraft:brass_gear',
         'railcraft:zinc_gear',
-        'railcraft:tin_gear'
+        'railcraft:tin_gear',
+        'railcraft:bushing_gear'
     ];
 
     itemsToRemove.forEach(item => {
