@@ -40,7 +40,11 @@ ServerEvents.recipes(event => {
         "advanced_ae:quantum_accelerator",
         "advanced_ae:data_entangler",
         "advanced_ae:quantum_core",
-        "advanced_ae:quantum_multi_threader"
+        "advanced_ae:quantum_multi_threader",
+        'advanced_ae:adv_pattern_provider_upgrade',
+        'advanced_ae:adv_pattern_provider_capacity_upgrade',
+        'advanced_ae:adv_pattern_provider',
+        'advanced_ae:small_adv_pattern_provider'
     ];
 
     advancedItems.forEach(item => {
