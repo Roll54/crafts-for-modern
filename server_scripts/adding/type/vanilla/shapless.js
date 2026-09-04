@@ -1,6 +1,14 @@
 ServerEvents.recipes(event => {
 
 event.shapeless(
+    Item.of('railcraft:energy_minecart'),
+    [
+        'minecraft:minecart',
+        'modern_industrialization:lv_storage_unit'
+    ]
+)
+
+event.shapeless(
     Item.of('advanced_ae:adv_pattern_provider_capacity_upgrade'),
     [
         'advanced_ae:adv_pattern_provider_upgrade',
