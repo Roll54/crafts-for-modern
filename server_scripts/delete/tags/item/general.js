@@ -1,3 +1,4 @@
 ServerEvents.tags('item', event => {
-  event.remove('c:plates/bronze', 'ultramarine:bronze_ingot')
+  event.remove('c:ingots/bronze', 'ultramarine:bronze_ingot')
+  
 })
