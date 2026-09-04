@@ -2,23 +2,27 @@ ServerEvents.recipes(event => {
 
 event.replaceInput(
   { input: 'railcraft:controller_circuit' },
+  'railcraft:controller_circuit',
   'roll_mod:controller_circuit')
 
 event.replaceInput(
   { input: 'railcraft:receiver_circuit' },
+  'railcraft:receiver_circuit',
   'roll_mod:receiver_circuit')
 
 event.replaceInput(
   { input: 'railcraft:signal_circuit' },
+  'railcraft:signal_circuit',
   'roll_mod:signal_circuit')
 
 event.replaceInput(
   { input: 'railcraft:radio_circuit' },
+  'railcraft:radio_circuit',
   'roll_mod:radio_circuit')
   
 event.replaceOutput(
   { input: 'railcraft:sulfur_dust' },
-  'modern_industrialization:sulfur_dust',
+  'railcraft:sulfur_dust',
   'roll_mod:sulfur_dust')
 
 event.replaceInput(
@@ -56,9 +60,9 @@ event.replaceInput(
   'modern_industrialization:redstone_battery',
   '#roll_mod:battaries_tier_one')
 
-  event.replaceInput(
+event.replaceInput(
   { input: 'minecraft:glowstone_dust' },
   'minecraft:glowstone_dust',
   '#roll_mod:glowstone_dust')
-  
+
 })
