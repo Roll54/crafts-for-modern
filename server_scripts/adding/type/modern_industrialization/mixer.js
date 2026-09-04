@@ -1,6 +1,12 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.mixer(2, 100)
+    .itemIn("4x #c:dusts/diamond")
+    .itemIn("2x #c:dusts/electrum")
+    .itemIn("1x #c:dusts/nickel")
+    .itemOut("4x roll_mod:diamond_alloy_dust")
+    
+event.recipes.modern_industrialization.mixer(2, 100)
     .itemIn("1x minecraft:cobblestone")
     .itemIn("1x #c:tiny_dusts/silicon")
     .itemIn("1x #c:tiny_dusts/iron")
