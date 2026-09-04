@@ -3,22 +3,22 @@ ServerEvents.recipes(event => {
 event.replaceInput(
   { input: 'railcraft:controller_circuit' },
   'railcraft:controller_circuit',
-  'roll_mod:controller_circuit')
+  '#roll_mod:controller_circuit')
 
 event.replaceInput(
   { input: 'railcraft:receiver_circuit' },
   'railcraft:receiver_circuit',
-  'roll_mod:receiver_circuit')
+  '#roll_mod:receiver_circuit')
 
 event.replaceInput(
   { input: 'railcraft:signal_circuit' },
   'railcraft:signal_circuit',
-  'roll_mod:signal_circuit')
+  '#roll_mod:signal_circuit')
 
 event.replaceInput(
   { input: 'railcraft:radio_circuit' },
   'railcraft:radio_circuit',
-  'roll_mod:radio_circuit')
+  '#roll_mod:radio_circuit')
   
 event.replaceOutput(
   { input: 'railcraft:sulfur_dust' },
