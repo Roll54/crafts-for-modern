@@ -42,9 +42,24 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
-    event.add('roll_mod:netherrack_craft_dust', [
-        "#c:tiny_dusts/ruby",
-        "#c:tiny_dusts/redstone",
+    event.add('roll_mod:controller_circuit', [
+        "railcraft:controller_circuit",
+        "modern_industrialization:analog_circuit",
+    ]);
+
+    event.add('roll_mod:receiver_circuit', [
+        "railcraft:receiver_circuit",
+        "roll_mod:1_circuit",
+    ]);
+
+    event.add('roll_mod:signal_circuit', [
+        "railcraft:signal_circuit",
+        "roll_mod:2_circuit",
+    ]);
+
+    event.add('roll_mod:radio_circuit', [
+        "railcraft:radio_circuit",
+        "roll_mod:3_circuit",
     ]);
     
     event.add('curios:curio', [
