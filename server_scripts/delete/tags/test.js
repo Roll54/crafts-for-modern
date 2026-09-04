@@ -3,6 +3,9 @@ ServerEvents.tags('block', event => {
   event.remove('minecraft:needs_stone_tool', 'modern_industrialization:deepslate_iridium_ore');
   event.remove('minecraft:mineable/pickaxe', 'modern_industrialization:deepslate_iridium_ore');
 
+  event.remove('c:plates/iron', 'ad_astra:iron_plate')
+  event.remove('c:plates/steel', 'ad_astra:steel_plate')
+
   event.remove('c:ingots/lead', 'railcraft:lead_ingot')
   event.remove('c:ingots/nickel', 'railcraft:nickel_ingot')
   event.remove('c:ingots/silver', 'railcraft:silver_ingot')
