@@ -11,6 +11,8 @@ ServerEvents.tags('item', event => {
   event.remove('c:ingots/brass', 'railcraft:brass_ingot')
   event.remove('c:ingots/bronze', 'railcraft:bronze_ingot')
   event.remove('c:ingots/invar', 'railcraft:invar_ingot')
+
+  event.remove('c:coal_coke', 'railcraft:coal_coke')
   
   event.remove('c:nuggets/invar', 'railcraft:invar_nugget')
   event.remove('c:nuggets/bronze', 'railcraft:bronze_nugget')
