@@ -42,6 +42,17 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
+    event.add('roll_mod:blockogriz', [
+        "roll_mod:diamond_blockogriz",
+        "roll_mod:meteorite_metal_blockogriz",
+        "roll_mod:iron_blockogriz",
+        "roll_mod:steel_blockogriz",
+        "roll_mod:netherite_blockogriz",
+        "roll_mod:black_steel_blockogriz",
+        "roll_mod:bismuth_bronze_blockogriz",
+        "roll_mod:black_bronze_blockogriz"
+    ]);
+
     event.add('roll_mod:controller_circuit', [
         "railcraft:controller_circuit",
         "modern_industrialization:analog_circuit",
