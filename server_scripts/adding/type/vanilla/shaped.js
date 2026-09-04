@@ -1,6 +1,33 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('railcraft:electric_rail', 3),
+    [
+        'AB ',
+        'AB ',
+        'AB '
+    ],
+    {
+        A: 'railcraft:standard_rail',
+        B: 'modern_industrialization:copper_plate'
+    }
+)
+    
+event.shaped(
+    Item.of('railcraft:high_speed_rail', 3),
+    [
+        'AB ',
+        'AC ',
+        'AB '
+    ],
+    {
+        B: 'minecraft:gold_ingot',
+        C: 'minecraft:blaze_powder',
+        A: 'railcraft:standard_rail'
+    }
+)
+    
+event.shaped(
     Item.of('railcraft:track_parts'),
     [
         'AA ',
