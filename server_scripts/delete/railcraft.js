@@ -71,7 +71,16 @@ ServerEvents.recipes(event => {
         'railcraft:brass_gear',
         'railcraft:zinc_gear',
         'railcraft:tin_gear',
-        'railcraft:bushing_gear'
+        'railcraft:bushing_gear',
+        'railcraft:steel_shovel',
+        'railcraft:steel_pickaxe',
+        'railcraft:steel_axe',
+        'railcraft:steel_sword',
+        'railcraft:steel_hoe',
+        'railcraft:steel_helmet',
+        'railcraft:steel_chestplate',
+        'railcraft:steel_leggings',
+        'railcraft:steel_boots'
     ];
 
     itemsToRemove.forEach(item => {
