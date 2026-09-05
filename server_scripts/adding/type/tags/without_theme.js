@@ -37,10 +37,6 @@ ServerEvents.tags('item', event => {
         'metalbarrels:diamond_to_netherite'
     ]);
 
-    event.add('minecraft:pickaxes', [
-        "modern_industrialization:steam_mining_drill",
-    ]);
-
     event.add('roll_mod:battaries_tier_one', [
         "roll_mod:primitive_battery",
         "modern_industrialization:redstone_battery",
