@@ -207,21 +207,6 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:black_steel_blockogriz'),
-    [
-        'ABC',
-        ' D ',
-        ' D '
-    ],
-    {
-        C: 'roll_mod:black_steel_shovel',
-        A: 'roll_mod:black_steel_axe',
-        D: 'minecraft:stick',
-        B: 'roll_mod:black_steel_pickaxe'
-    }
-)
-
-event.shaped(
     Item.of('roll_mod:bismuth_bronze_blockogriz'),
     [
         'ABC',
