@@ -66,52 +66,6 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:steel_helmet'),
-    [
-        'AAA',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:steel_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:steel_chestplate'),
-    [
-        'A A',
-        'AAA',
-        'AAA'
-    ],
-    {
-        A: 'modern_industrialization:steel_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:steel_leggings'),
-    [
-        'AAA',
-        'A A',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:steel_ingot'
-    }
-)
-
-event.shaped(
-    Item.of('roll_mod:steel_boots'),
-    [
-        'A A',
-        'A A'
-    ],
-    {
-        A: 'modern_industrialization:steel_ingot'
-    }
-)
-
-event.shaped(
     Item.of('roll_mod:steel_blockogriz'),
     [
         'ABC',
