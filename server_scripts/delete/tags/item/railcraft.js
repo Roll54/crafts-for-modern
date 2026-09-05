@@ -57,4 +57,6 @@ ServerEvents.tags('item', event => {
   event.remove('c:plates/tin', 'railcraft:tin_plate')
   event.remove('c:plates/zinc', 'railcraft:zinc_plate')
   event.remove('c:plates/steel', 'railcraft:steel_plate')
+
+  event.remove('c:storage_blocks/steel', 'railcraft:steel_block')
 })
