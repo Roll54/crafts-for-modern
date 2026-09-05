@@ -1,6 +1,18 @@
 ServerEvents.recipes(event => {
 
 event.replaceInput(
+  { output: 'modern_industrialization:steam_mining_drill' },
+  'minecraft:diamond',
+  'roll_mod:diamond_alloy_plate'
+)
+
+event.replaceInput(
+  { output: 'extended_industrialization:steam_chainsaw' },
+  'minecraft:diamond',
+  'roll_mod:diamond_alloy_plate'
+)
+
+event.replaceInput(
   { input: 'railcraft:controller_circuit' },
   'railcraft:controller_circuit',
   '#roll_mod:controller_circuit')
