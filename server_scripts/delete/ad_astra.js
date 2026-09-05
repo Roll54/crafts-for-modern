@@ -70,7 +70,8 @@ const removedRecipes = [
   'ad_astra:steel_nugget',
   'ad_astra:wrench',
   'ad_astra:steel_tank',
-  'ad_astra:rocket_fin'
+  'ad_astra:rocket_fin',
+  'ad_astra:steel_rod'
 ];
 
 removedRecipes.forEach(id => event.remove({ output: id }));
