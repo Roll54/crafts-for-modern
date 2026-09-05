@@ -177,7 +177,7 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:steel_blockogriz'),
+    Item.of('roll_mod:black_steel_blockogriz'),
     [
         'ABC',
         ' D ',
