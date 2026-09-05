@@ -216,7 +216,7 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:black_steel_blockogriz'),
+    Item.of('roll_mod:black_steel_blockogriz').enchant('minecraft:efficiency', 4),
     [
         'ABC',
         ' D ',
@@ -246,7 +246,7 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:bismuth_bronze_blockogriz'),
+    Item.of('roll_mod:bismuth_bronze_blockogriz').enchant('minecraft:efficiency', 2).enchant('minecraft:unbreaking', 1),
     [
         'ABC',
         ' D ',
@@ -261,7 +261,7 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:black_bronze_blockogriz'),
+    Item.of('roll_mod:black_bronze_blockogriz').enchant('minecraft:fortune', 1),
     [
         'ABC',
         ' D ',
