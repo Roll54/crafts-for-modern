@@ -95,4 +95,8 @@ event.remove({ id: "ad_astra:space_station/venus_orbit_space_station" })
 event.remove({ id: "ad_astra:space_station/mercury_orbit_space_station" })
 event.remove({ id: "ad_astra:space_station/glacio_orbit_space_station" })
 */
+
+event.remove({ output: 'ad_astra:steel_rod' });
+event.remove({ input: 'ad_astra:steel_rod' });
+
 })
