@@ -1,6 +1,45 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('ad_astra:calorite_plateblock', 64),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'ad_astra:calorite_plate',
+        B: 'modern_industrialization:steel_rod'
+    }
+)
+
+event.shaped(
+    Item.of('ad_astra:ostrum_plateblock', 64),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'ad_astra:ostrum_plate',
+        B: 'modern_industrialization:steel_rod'
+    }
+)
+
+event.shaped(
+    Item.of('ad_astra:desh_plateblock', 64),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'ad_astra:desh_plate',
+        B: 'modern_industrialization:steel_rod'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:steel_shovel'),
     [
         'A',
@@ -2482,4 +2521,26 @@ event.shaped(
         D: 'minecraft:blue_stained_glass_pane'
     }
 )
+
+const colors = [
+    'white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 
+    'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 
+    'brown', 'green', 'red', 'black'
+];
+
+colors.forEach(color => {
+    event.shaped(
+        Item.of(`ad_astra:${color}_flag`),
+        [
+            'ABB',
+            'ABB',
+            'A  '
+        ],
+        {
+            A: 'modern_industrialization:steel_rod',
+            B: `minecraft:${color}_wool`
+        }
+    );
+});
+    
 })
