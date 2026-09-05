@@ -85,7 +85,8 @@ ServerEvents.recipes(event => {
         'railcraft:tank_minecart',
         'railcraft:track_parts',
         'railcraft:high_speed_rail',
-        'railcraft:electric_rail'
+        'railcraft:electric_rail',
+        'railcraft:cut_firestone'
     ];
 
     itemsToRemove.forEach(item => {
