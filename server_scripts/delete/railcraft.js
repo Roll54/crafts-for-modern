@@ -92,7 +92,15 @@ ServerEvents.recipes(event => {
         'railcraft:charge_coil',
         'railcraft:charge_spool_large',
         'railcraft:charge_spool_medium',
-        'railcraft:charge_spool_small'
+        'railcraft:charge_spool_small',
+        'railcraft:lead_block',
+        'railcraft:nickel_block',
+        'railcraft:silver_block',
+        'railcraft:tin_block',
+        'railcraft:zinc_block',
+        'railcraft:brass_block',
+        'railcraft:bronze_block',
+        'railcraft:invar_block'
     ];
 
     itemsToRemove.forEach(item => {
