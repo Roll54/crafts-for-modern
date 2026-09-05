@@ -42,26 +42,6 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
-    const toolTags = [
-        'roll_mod:blockogriz'
-        'c:tools',
-        'minecraft:enchantable/vanishing',
-        'minecraft:breaks_decorated_pots',
-        'functionalstorage:armory_cabinet_insertable',
-        'minecraft:enchantable/durability',
-        'c:enchantables',
-        'minecraft:enchantable/sharp_weapon',
-        'minecraft:enchantable/mining',
-        'minecraft:axes',
-        'c:tools/melee_weapons',
-        'minecraft:enchantable/mining_loot',
-        'c:tools/melee_weapon',
-        'minecraft:enchantable/weapon',
-        'minecraft:cluster_max_harvestables',
-        'minecraft:pickaxes',
-        'minecraft:shovels'
-    ];
-    
     const blockogriz = [
         "roll_mod:diamond_blockogriz",
         "roll_mod:meteorite_metal_blockogriz",
@@ -72,13 +52,25 @@ ServerEvents.tags('item', event => {
         "roll_mod:bismuth_bronze_blockogriz",
         "roll_mod:black_bronze_blockogriz"
     ];
-    
-    ServerEvents.tags('item', event => {
-        toolTags.forEach(tag => {
-            blockogriz.forEach(item => {
-                event.add(tag, item);
-            });
-        });
+
+    blockogriz.forEach(item => {
+        event.add('roll_mod:blockogriz', item);
+        event.add('c:tools', item);
+        event.add('minecraft:enchantable/vanishing', item);
+        event.add('minecraft:breaks_decorated_pots', item);
+        event.add('functionalstorage:armory_cabinet_insertable', item);
+        event.add('minecraft:enchantable/durability', item);
+        event.add('c:enchantables', item);
+        event.add('minecraft:enchantable/sharp_weapon', item);
+        event.add('minecraft:enchantable/mining', item);
+        event.add('minecraft:axes', item);
+        event.add('c:tools/melee_weapons', item);
+        event.add('minecraft:enchantable/mining_loot', item);
+        event.add('c:tools/melee_weapon', item);
+        event.add('minecraft:enchantable/weapon', item);
+        event.add('minecraft:cluster_max_harvestables', item);
+        event.add('minecraft:pickaxes', item);
+        event.add('minecraft:shovels', item);
     });
 
     event.add('roll_mod:controller_circuit', [
