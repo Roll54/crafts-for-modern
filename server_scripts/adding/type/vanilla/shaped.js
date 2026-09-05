@@ -1,6 +1,19 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('farmersdelight:organic_compost'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'roll_mod:biomass',
+        B: 'minecraft:dirt'
+    }
+)
+
+event.shaped(
     Item.of('ad_astra:calorite_plateblock', 64),
     [
         'AAA',
