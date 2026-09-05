@@ -1,11 +1,6 @@
 ServerEvents.recipes(event => {
 
 event.replaceInput(
-  { input: 'ad_astra:steel_rod' },
-  'modern_industrialization:steel_rod',
-  '#c:rods/steel')
-  
-event.replaceInput(
   { input: 'railcraft:controller_circuit' },
   'railcraft:controller_circuit',
   '#roll_mod:controller_circuit')
