@@ -295,6 +295,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
     .itemIn("createcybernetics:heartupgrades_platelets")
     .itemIn("createcybernetics:heartupgrades_stemcell")
     .itemIn("2x modern_industrialization:large_advanced_motor")
+    .itemIn("1x advanced_ae:quantum_upgrade_base")
     .itemOut("advanced_ae:regeneration_card");
 
 event.recipes.modern_industrialization.assembler(16, 200)
