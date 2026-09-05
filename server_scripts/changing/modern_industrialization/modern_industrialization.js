@@ -34,6 +34,11 @@ event.replaceInput(
   'railcraft:charge_coil',
   'modern_industrialization:cupronickel_coil'
 )
+
+event.replaceInput(
+  { input: 'modern_industrialization:coal_dust' },
+  'roll_mod:coal_dust',
+  '#c:dusts/coal')
   
 event.replaceInput(
   { output: 'modern_industrialization:steam_mining_drill' },
