@@ -1,6 +1,132 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:steel_shovel'),
+    [
+        'A',
+        'B',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_hoe'),
+    [
+        'AA',
+        ' B',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_sword'),
+    [
+        'A',
+        'A',
+        'B'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_pickaxe'),
+    [
+        'AAA',
+        ' B ',
+        ' B '
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_axe'),
+    [
+        'AA',
+        'AB',
+        ' B'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot',
+        B: 'minecraft:stick'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_blockogriz'),
+    [
+        'ABC',
+        ' D ',
+        ' D '
+    ],
+    {
+        C: 'roll_mod:steel_shovel',
+        A: 'roll_mod:steel_axe',
+        D: 'minecraft:stick',
+        B: 'roll_mod:steel_pickaxe'
+    }
+)
+    
+event.shaped(
     Item.of('railcraft:electric_rail', 3),
     [
         'AB ',
