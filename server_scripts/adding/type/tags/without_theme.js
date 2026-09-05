@@ -42,7 +42,27 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
-    event.add('roll_mod:blockogriz', [
+    const toolTags = [
+        'roll_mod:blockogriz'
+        'c:tools',
+        'minecraft:enchantable/vanishing',
+        'minecraft:breaks_decorated_pots',
+        'functionalstorage:armory_cabinet_insertable',
+        'minecraft:enchantable/durability',
+        'c:enchantables',
+        'minecraft:enchantable/sharp_weapon',
+        'minecraft:enchantable/mining',
+        'minecraft:axes',
+        'c:tools/melee_weapons',
+        'minecraft:enchantable/mining_loot',
+        'c:tools/melee_weapon',
+        'minecraft:enchantable/weapon',
+        'minecraft:cluster_max_harvestables',
+        'minecraft:pickaxes',
+        'minecraft:shovels'
+    ];
+    
+    const blockogriz = [
         "roll_mod:diamond_blockogriz",
         "roll_mod:meteorite_metal_blockogriz",
         "roll_mod:iron_blockogriz",
@@ -51,7 +71,15 @@ ServerEvents.tags('item', event => {
         "roll_mod:black_steel_blockogriz",
         "roll_mod:bismuth_bronze_blockogriz",
         "roll_mod:black_bronze_blockogriz"
-    ]);
+    ];
+    
+    ServerEvents.tags('item', event => {
+        toolTags.forEach(tag => {
+            blockogriz.forEach(item => {
+                event.add(tag, item);
+            });
+        });
+    });
 
     event.add('roll_mod:controller_circuit', [
         "modern_industrialization:analog_circuit",
