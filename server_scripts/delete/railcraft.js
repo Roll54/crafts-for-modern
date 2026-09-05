@@ -88,7 +88,11 @@ ServerEvents.recipes(event => {
         'railcraft:electric_rail',
         'railcraft:cut_firestone',
         'railcraft:refined_firestone',
-        'railcraft:charge_motor'
+        'railcraft:charge_motor',
+        'railcraft:charge_coil',
+        'railcraft:charge_spool_large',
+        'railcraft:charge_spool_medium',
+        'railcraft:charge_spool_small'
     ];
 
     itemsToRemove.forEach(item => {
