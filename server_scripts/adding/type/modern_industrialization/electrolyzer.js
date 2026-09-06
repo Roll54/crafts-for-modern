@@ -135,7 +135,7 @@ event.recipes.modern_industrialization.electrolyzer(32, 200)
 
 event.recipes.modern_industrialization.electrolyzer(32, 100)
   .itemIn("2x roll_mod:galena_dust")
-  .itemOut("1x modern_industrialization:lead_dust")
+  .itemOut("1x roll_mod:lead_dust")
   .itemOut("1x roll_mod:sulfur_dust")
 
 event.recipes.modern_industrialization.electrolyzer(64, 100)
@@ -187,7 +187,7 @@ event.recipes.modern_industrialization.electrolyzer(64, 200)
 
 event.recipes.modern_industrialization.electrolyzer(64, 200)
   .itemIn("6x roll_mod:wulfenite_dust")
-  .itemOut("1x modern_industrialization:lead_dust")
+  .itemOut("1x roll_mod:lead_dust")
   .itemOut("1x roll_mod:molybdenum_dust")
   .fluidOut("modern_industrialization:oxygen", 4000)
 
