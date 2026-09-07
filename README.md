@@ -19,13 +19,13 @@ server_scripts/
   changing/
     ae2/
     modern_industrialization/
-    silentgear/
+    ad_astra/
   delete/
     applied_energystics/
     railcraft/
     sopphistictedbackpacks/
     tags/
-    general_remove_vanilla.js
+    general.js
     ...
 ```
 
