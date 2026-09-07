@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-/*
     event.custom({
       "type": "ad_astra:space_station_recipe",
       "dimension": "ad_astra:earth_orbit",
@@ -65,7 +64,7 @@ ServerEvents.recipes(event => {
       "structure": "ad_astra:space_station"
     })
 
-    /*
+
     event.custom({
       "type": "ad_astra:space_station_recipe",
       "dimension": "ad_astra:mars_orbit",
@@ -97,9 +96,9 @@ ServerEvents.recipes(event => {
       ],
       "structure": "ad_astra:space_station"
     })
-    */
+    
 
-    /*
+    
     event.custom({
       "type": "ad_astra:space_station_recipe",
       "dimension": "ad_astra:venus_orbit",
@@ -131,9 +130,9 @@ ServerEvents.recipes(event => {
       ],
       "structure": "ad_astra:space_station"
     })
-    */
+    
 
-    /*
+    
     event.custom({
       "type": "ad_astra:space_station_recipe",
       "dimension": "ad_astra:mercury_orbit",
@@ -165,9 +164,9 @@ ServerEvents.recipes(event => {
       ],
       "structure": "ad_astra:space_station"
     })
-    */
+    
 
-    /*
+    
     event.custom({
       "type": "ad_astra:space_station_recipe",
       "dimension": "ad_astra:glacio_orbit",
@@ -199,6 +198,6 @@ ServerEvents.recipes(event => {
       ],
       "structure": "ad_astra:space_station"
     })
-    */
+    
 
 })
