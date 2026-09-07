@@ -87,14 +87,14 @@ const removedTypes = [
 ];
 
 removedTypes.forEach(type => event.remove({ type: type }));
-/*
+
 event.remove({ id: "ad_astra:space_station/earth_orbit_space_station" })
 event.remove({ id: "ad_astra:space_station/moon_orbit_space_station" })
 event.remove({ id: "ad_astra:space_station/mars_orbit_space_station" })
 event.remove({ id: "ad_astra:space_station/venus_orbit_space_station" })
 event.remove({ id: "ad_astra:space_station/mercury_orbit_space_station" })
 event.remove({ id: "ad_astra:space_station/glacio_orbit_space_station" })
-*/
+
 
 event.remove({ output: 'ad_astra:steel_rod' });
 event.remove({ input: 'ad_astra:steel_rod' });
