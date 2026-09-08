@@ -2140,6 +2140,7 @@ event.recipes.modern_industrialization.assembler(32, 100)
 .itemIn("2x modern_industrialization:electrum_cable")
 .itemIn("2x modern_industrialization:electronic_circuit")
 .itemIn("1x roll_mod:energium_large_dirty_crystal")
+.itemIn("1x roll_mod:standard_chip_pmic")
 .itemOut("1x roll_mod:energium_battery")
 
 event.recipes.modern_industrialization.assembler(32, 400)
