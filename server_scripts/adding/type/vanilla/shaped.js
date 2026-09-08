@@ -1,5 +1,17 @@
 ServerEvents.recipes(event => {
-
+    
+event.shaped(
+    Item.of('ultramarine:bronze_parts'),
+    [
+        '  A',
+        ' A',
+        'A  '
+    ],
+    {
+        A: '#c:ingots/bronze'
+    }
+)
+    
 event.shaped(
     Item.of('farmersdelight:organic_compost'),
     [
