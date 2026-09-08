@@ -8,6 +8,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: "constructionstick:template_destruction" })
     event.remove({ output: "minecraft:glowstone" })
     event.remove({ output: 'minecraft:raw_gold' });
+    event.remove({ output: 'ultramarine:bronze_parts' });
+    event.remove({ output: 'ultramarine:bronze_dust' });
     
     event.remove({ id: "modern_industrialization:vanilla_recipes/packer/glowstone_block" })
     event.remove({ id: "brewinandchewin:fermenting/mead_from_honey" })
