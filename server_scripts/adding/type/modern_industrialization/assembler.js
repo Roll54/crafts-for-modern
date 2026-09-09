@@ -309,13 +309,6 @@ event.recipes.modern_industrialization.assembler(16, 200)
     .itemOut("advanced_ae:hp_buffer_card");
 
 event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("4x ae2:fluix_crystal")
-  .itemIn("2x ae2:engineering_processor")
-  .itemIn("2x ae2:logic_processor")
-  .itemIn("4x modern_industrialization:aluminum_plate")
-  .itemOut("1x ae2:controller")
-
-event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x #c:glass_blocks")
   .itemIn("1x ae2:annihilation_core")
   .itemIn("1x ae2:formation_core")
