@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
         item_inputs: [
             {
                 amount: 1,
-                item: "minecraft:apple",
+                item: "fruitsdelight:apple_sapling",
                 probability: 0.0
             }
         ],
@@ -305,14 +305,14 @@ ServerEvents.recipes(event => {
         item_inputs: [
             {
                 amount: 1,
-                item: "fruitsdelight:blueberry",
+                item: "fruitsdelight:blueberry_bush",
                 probability: 0.0
             }
         ],
         item_outputs: [
             {
                 amount: 6,
-                item: "fruitsdelight:blueberry_bush"
+                item: "fruitsdelight:blueberry"
             },
             {
                 amount: 4,
