@@ -1,5 +1,17 @@
 ServerEvents.recipes(event => {
 
+  event.recipes.modern_industrialization.centrifuge(32, 400)
+  .itemIn("3x roll_mod:azure_silver_dust")
+  .itemOut("1x roll_mod:silver_dust")
+  .itemOut("1x roll_mod:lazurite_dust")
+  .itemOut("1x modern_industrialization:silicon_dust", 0.25)
+
+  event.recipes.modern_industrialization.centrifuge(32, 400)
+  .itemIn("3x roll_mod:crimson_iron_dust")
+  .itemOut("1x modern_industrialization:iron_dust")
+  .itemOut("1x roll_mod:redstone_dust")
+  .itemOut("1x minecraft:netherite_scrap", 0.25)
+  
   event.recipes.modern_industrialization.centrifuge(8, 200)
   .itemIn("1x #minecraft:leaves")
   .fluidOut("modern_industrialization:plant_oil", 300)
