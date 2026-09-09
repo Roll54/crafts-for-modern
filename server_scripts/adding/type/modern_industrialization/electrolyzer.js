@@ -43,7 +43,7 @@ event.recipes.modern_industrialization.electrolyzer(32, 400)
 .itemOut("1x modern_industrialization:magnesium_dust")
 .itemOut("1x modern_industrialization:iron_dust")
 .itemOut("3x modern_industrialization:silicon_dust")
-.itemOut("1x minecraft:redstone")
+.itemOut("1x roll_mod:redstone_dust")
 .fluidOut("modern_industrialization:oxygen", 6000)
 
 event.recipes.modern_industrialization.electrolyzer(32, 100)
