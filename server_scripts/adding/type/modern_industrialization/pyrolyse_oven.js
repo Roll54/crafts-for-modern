@@ -2,19 +2,16 @@ ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.pyrolyse_oven(48, 500)
   .itemIn("16x minecraft:coal")
-  .fluidIn("modern_industrialization:steam", 1000)
   .itemOut("16x modern_industrialization:coke")
   .fluidOut("modern_industrialization:creosote", 12000, 0.5)
 
   event.recipes.modern_industrialization.pyrolyse_oven(48, 400)
   .itemIn("16x #c:dusts/coal")
-  .fluidIn("modern_industrialization:steam", 1000)
   .itemOut("16x modern_industrialization:coke_dust")
   .fluidOut("modern_industrialization:creosote", 8000, 0.5)
 
   event.recipes.modern_industrialization.pyrolyse_oven(48, 300)
   .itemIn("16x #minecraft:logs")
-  .fluidIn("modern_industrialization:steam", 1000)
   .itemOut("20x minecraft:charcoal")
   .fluidOut("modern_industrialization:creosote", 8000, 0.5)
  // .fluidOut("kubejs:wood_tar", 8000, 0.5)
