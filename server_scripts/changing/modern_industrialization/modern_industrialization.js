@@ -36,6 +36,16 @@ event.replaceInput(
 )
 
 event.replaceInput(
+  { input: 'modern_industrialization:nickel_dust' },
+  'roll_mod:nickel_dust',
+  '#c:dusts/nickel')
+    
+event.replaceInput(
+  { input: 'modern_industrialization:coal_dust' },
+  'roll_mod:coal_dust',
+  '#c:dusts/coal')
+
+event.replaceInput(
   { input: 'modern_industrialization:coal_dust' },
   'roll_mod:coal_dust',
   '#c:dusts/coal')
