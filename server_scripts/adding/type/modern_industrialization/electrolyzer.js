@@ -34,7 +34,7 @@ event.recipes.modern_industrialization.electrolyzer(32, 200)
 
 event.recipes.modern_industrialization.electrolyzer(32, 200)
 .fluidIn("modern_industrialization:sulfuric_nickel_solution", 1000)
-.itemOut("1x modern_industrialization:nickel_dust")
+.itemOut("1x roll_mod:nickel_dust")
 .fluidOut("modern_industrialization:sulfuric_acid", 250)
 .fluidOut("modern_industrialization:oxygen", 1000)
 
@@ -98,7 +98,7 @@ event.recipes.modern_industrialization.electrolyzer(32, 200)
 
 event.recipes.modern_industrialization.electrolyzer(32, 200)
   .itemIn("17x roll_mod:garnierite_dust")
-  .itemOut("5x modern_industrialization:nickel_dust")
+  .itemOut("5x roll_mod:nickel_dust")
   .itemOut("4x modern_industrialization:iron_dust")
   .itemOut("8x roll_mod:sulfur_dust")
   
