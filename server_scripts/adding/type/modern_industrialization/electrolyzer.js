@@ -96,22 +96,11 @@ event.recipes.modern_industrialization.electrolyzer(32, 200)
   .fluidOut("modern_industrialization:oxygen", 11000)
   .fluidOut("modern_industrialization:hydrogen", 4000);
 
-event.recipes.modern_industrialization.electrolyzer(32, 100)
-  .itemIn("2x roll_mod:garnierite_dust")
-  .itemOut("1x modern_industrialization:nickel_dust")
-  .fluidOut("modern_industrialization:oxygen", 1000); 
-
 event.recipes.modern_industrialization.electrolyzer(32, 200)
   .itemIn("17x roll_mod:garnierite_dust")
   .itemOut("5x modern_industrialization:nickel_dust")
   .itemOut("4x modern_industrialization:iron_dust")
   .itemOut("8x roll_mod:sulfur_dust")
-
-event.recipes.modern_industrialization.electrolyzer(32, 200)
-  .itemIn("3x roll_mod:garnierite_dust")
-  .itemOut("1x modern_industrialization:copper_dust")
-  .itemOut("1x modern_industrialization:iron_dust")
-  .itemOut("2x roll_mod:sulfur_dust")
   
 event.recipes.modern_industrialization.electrolyzer(128, 100)
   .itemIn("11x roll_mod:pyrochlore_dust")
