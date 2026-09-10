@@ -20,6 +20,7 @@ event.smelting('roll_mod:roasted_bell_pepper_rutile', 'roll_mod:rutile_bell_pepp
 event.smelting('modern_industrialization:antimony_ingot', '#roll_mod:ores/antimony')
 event.smelting('modern_industrialization:silver_ingot', '#roll_mod:ores/silver')
 event.smelting('modern_industrialization:nickel_ingot', '#roll_mod:ores/nickel')
+event.smelting('modern_industrialization:nickel_ingot', '#c:dusts/nickel')
 event.smelting('modern_industrialization:lead_ingot', '#roll_mod:ores/lead')
 event.smelting('modern_industrialization:tin_ingot', '#roll_mod:ores/cassiterite')
 event.smelting('modern_industrialization:tin_ingot', '#c:cassiterite_sand')
