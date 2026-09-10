@@ -65,12 +65,12 @@ ServerEvents.recipes(event => {
 event.recipes.modern_industrialization.pyrolyse_oven(64, 200)
 .itemIn("1x roll_mod:gold_amalgam_dust")
 .fluidOut("250x modern_industrialization:mercury")
-.itemOut("1x modern_industrialization:gold_dust")
+.itemOut("1x roll_mod:gold_dust")
     
 event.recipes.modern_industrialization.pyrolyse_oven(64, 200)
 .itemIn("1x roll_mod:silver_amalgam_dust")
 .fluidOut("250x modern_industrialization:mercury")
-.itemOut("1x modern_industrialization:silver_dust")
+.itemOut("1x roll_mod:silver_dust")
 
 
 //на видалення
@@ -99,7 +99,6 @@ event.recipes.modern_industrialization.pyrolyse_oven(128, 400)
 .itemIn("32x modern_industrialization:carbon_dust")
 .fluidIn("1000x modern_industrialization:epoxy")
 .itemOut("16x roll_mod:carbon_fiber")
-
 
 event.recipes.modern_industrialization.pyrolyse_oven(32, 100)
 .itemIn("10x roll_mod:calcium_carbonate")
