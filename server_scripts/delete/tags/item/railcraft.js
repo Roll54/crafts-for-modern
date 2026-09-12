@@ -7,10 +7,10 @@ ServerEvents.tags('item', event => {
   event.remove('c:ingots/silver', 'railcraft:silver_ingot')
   event.remove('c:ingots/tin', 'railcraft:tin_ingot')
   event.remove('c:ingots/zinc', 'railcraft:zinc_ingot')
-  event.remove('c:ingots/steel', 'railcraft:steel_ingot')
+//  event.remove('c:ingots/steel', 'railcraft:steel_ingot')
   event.remove('c:ingots/brass', 'railcraft:brass_ingot')
-  event.remove('c:ingots/bronze', 'railcraft:bronze_ingot')
-  event.remove('c:ingots/invar', 'railcraft:invar_ingot')
+//  event.remove('c:ingots/bronze', 'railcraft:bronze_ingot')
+//  event.remove('c:ingots/invar', 'railcraft:invar_ingot')
 
   event.remove('c:coal_coke', 'railcraft:coal_coke')
   
