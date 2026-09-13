@@ -42,6 +42,15 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
 
+    event.add('roll_mod:copper_block', [
+        "minecraft:weathered_copper",
+        "minecraft:waxed_weathered_copper",
+        "minecraft:exposed_copper",
+        "minecraft:waxed_exposed_copper",
+        "minecraft:oxidized_copper",
+        "minecraft:waxed_oxidized_copper",
+    ]);
+
     const blockogriz = [
         "roll_mod:diamond_blockogriz",
         "roll_mod:meteorite_metal_blockogriz",
