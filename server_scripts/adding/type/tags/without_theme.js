@@ -71,6 +71,8 @@ ServerEvents.tags('item', event => {
         event.add('minecraft:cluster_max_harvestables', item);
         event.add('minecraft:pickaxes', item);
         event.add('minecraft:shovels', item);
+        event.add('minecraft:enchantable/looting', item);
+        event.add('minecraft:enchantable/fire_aspect', item);
     });
 
     event.add('roll_mod:controller_circuit', [
