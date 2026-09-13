@@ -9,6 +9,13 @@ event.shapeless(
 )
 
 event.shapeless(
+    Item.of('minecraft:copper_ingot', 9),
+    [
+        '#roll_mod:copper_block',
+    ]
+)
+
+event.shapeless(
     Item.of('advanced_ae:adv_pattern_provider_capacity_upgrade'),
     [
         'advanced_ae:adv_pattern_provider_upgrade',
