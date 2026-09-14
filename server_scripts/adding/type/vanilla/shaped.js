@@ -1886,6 +1886,149 @@ event.shaped(
         B: 'extended_industrialization:robot_auto_feeder'
     }
   )
+
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion'),
+        [
+            'ABA',
+            'CDC',
+            'ABA'
+        ],
+        {
+            A: 'modern_industrialization:steel_block',
+            C: 'modern_industrialization:analog_circuit',
+            D: 'roll_mod:treated_plate',
+            B: 'sophisticatedbackpacks:stack_upgrade_starter_tier'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_2_conversion'),
+        [
+            'ABA',
+            'CDC',
+            'ABA'
+        ],
+        {
+            A: 'modern_industrialization:aluminum_block',
+            C: 'sophisticatedbackpacks:stack_upgrade_tier_1',
+            D: 'roll_mod:treated_plate',
+            B: 'modern_industrialization:electronic_circuit'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_3_conversion'),
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],
+        {
+            B: 'sophisticatedbackpacks:stack_upgrade_tier_2',
+            C: 'roll_mod:treated_plate',
+            A: 'modern_industrialization:stainless_steel_block'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_4_conversion'),
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],
+        {
+            A: 'modern_industrialization:titanium_block',
+            B: 'sophisticatedbackpacks:stack_upgrade_tier_3',
+            C: 'roll_mod:treated_plate'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_2_conversion'),
+        [
+            'ABA',
+            'CDC',
+            'ABA'
+        ],
+        {
+            A: 'modern_industrialization:aluminum_block',
+            C: 'sophisticatedbackpacks:stack_upgrade_tier_1',
+            D: 'roll_mod:treated_plate',
+            B: 'modern_industrialization:electronic_circuit'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_3_conversion'),
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],
+        {
+            B: 'sophisticatedbackpacks:stack_upgrade_tier_2',
+            C: 'roll_mod:treated_plate',
+            A: 'modern_industrialization:stainless_steel_block'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_4_conversion'),
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],
+        {
+            A: 'modern_industrialization:titanium_block',
+            B: 'sophisticatedbackpacks:stack_upgrade_tier_3',
+            C: 'roll_mod:treated_plate'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_3_conversion'),
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],
+        {
+            B: 'sophisticatedbackpacks:stack_upgrade_tier_2',
+            C: 'roll_mod:treated_plate',
+            A: 'modern_industrialization:stainless_steel_block'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_4_conversion'),
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],
+        {
+            A: 'modern_industrialization:titanium_block',
+            B: 'sophisticatedbackpacks:stack_upgrade_tier_3',
+            C: 'roll_mod:treated_plate'
+        }
+    )
+    
+    event.shaped(
+        Item.of('sophisticatedbackpacks:stack_upgrade_tier_3_to_tier_4_conversion'),
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],
+        {
+            A: 'modern_industrialization:titanium_block',
+            B: 'sophisticatedbackpacks:stack_upgrade_tier_3',
+            C: 'roll_mod:treated_plate'
+        }
+    )
     
   event.shaped(
     Item.of('sophisticatedbackpacks:filter_upgrade'),
