@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
   event.recipes.extended_industrialization.composter(4, 200)
   .itemIn("2x roll_mod:latex_dandelion_stem")
@@ -12,7 +11,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.extended_industrialization.composter(4, 100)
   .itemIn("8x roll_mod:biomass")
-  .itemIn("1x minecraft:soul_fire_base_blocks")
+  .itemIn("1x minecraft:soul_sand")
   .itemOut("1x mynethersdelight:letios_compost")
 
   event.recipes.extended_industrialization.composter(4, 100)
