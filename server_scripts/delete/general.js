@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'minecraft:raw_gold' });
     event.remove({ output: 'ultramarine:bronze_parts' });
     event.remove({ output: 'ultramarine:bronze_dust' });
+    event.remove({ output: 'framedblocks:powered_framing_saw' });
     
     event.remove({ id: "modern_industrialization:vanilla_recipes/packer/glowstone_block" })
     event.remove({ id: "brewinandchewin:fermenting/mead_from_honey" })
