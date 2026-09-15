@@ -1,4 +1,58 @@
 ServerEvents.recipes(event => {
+    const civilianPlanes = [
+        'civilian_aviation:pzl37los_green', 'civilian_aviation:pzl37los_tan', 'civilian_aviation:trimotor_blue', 
+        'civilian_aviation:vulcanair_red', 'civilian_aviation:vulcanair_blackred', 'civilian_aviation:vulcanair_blackyellow', 
+        'civilian_aviation:vulcanair_blank', 'civilian_aviation:vulcanair_blue', 'civilian_aviation:vulcanair_bluestripe', 
+        'civilian_aviation:e500_red', 'civilian_aviation:e500_blackred', 'civilian_aviation:e500_blue', 
+        'civilian_aviation:e500_extravagant', 'civilian_aviation:e500_green', 'civilian_aviation:e500_rusty', 
+        'civilian_aviation:e500_silver', 'civilian_aviation:e500_yellow', 'civilian_aviation:bell206_blackstripe', 
+        'civilian_aviation:bell206_black', 'civilian_aviation:bell206_blank', 'civilian_aviation:bell206_blue', 
+        'civilian_aviation:bell206_brown', 'civilian_aviation:bell206_gray', 'civilian_aviation:bell206_green', 
+        'civilian_aviation:bell47g_blue', 'civilian_aviation:bell47g_olive', 'civilian_aviation:pzlp11', 
+        'civilian_aviation:pzlp11_brown', 'civilian_aviation:pzlp11_green', 'civilian_aviation:pzlp11_tan', 
+        'civilian_aviation:pzl37los', 'civilian_aviation:pzl37los_arctic', 'civilian_aviation:pzl37los_brown',
+        'civilian_aviation:comanche_orangebrown', 'civilian_aviation:comanche_seagreen', 'civilian_aviation:comanche_blank', 
+        'civilian_aviation:skyhawk_pr_red', 'civilian_aviation:skyhawk_pr_coffee', 'civilian_aviation:skyhawk_pr_bluestripe', 
+        'civilian_aviation:skyhawk_pr_green', 'civilian_aviation:skyhawk_red', 'civilian_aviation:skyhawk_coffee', 
+        'civilian_aviation:bell206_olive', 'civilian_aviation:bell206_orange', 'civilian_aviation:bell206_police', 
+        'civilian_aviation:bell206_red', 'civilian_aviation:bell206_seagreen', 'civilian_aviation:bell206_skyblue', 
+        'civilian_aviation:bell47g_black', 'civilian_aviation:bell47g', 'civilian_aviation:bell206_yellow', 
+        'civilian_aviation:vulcanair_cow', 'civilian_aviation:vulcanair_gray', 'civilian_aviation:vulcanair_green', 
+        'civilian_aviation:vulcanair_orange', 'civilian_aviation:vulcanair_police', 'civilian_aviation:vulcanair_redsnail', 
+        'civilian_aviation:vulcanair_redyellow', 'civilian_aviation:vulcanair_seagreen', 'civilian_aviation:vulcanair_white', 
+        'civilian_aviation:vulcanair_winged', 'civilian_aviation:vulcanair_yellow', 'civilian_aviation:trimotor_black', 
+        'civilian_aviation:trimotor_red', 'civilian_aviation:trimotor_white', 'civilian_aviation:comanche_red', 
+        'civilian_aviation:comanche_blue', 'civilian_aviation:comanche_blackredstripe', 'civilian_aviation:comanche_yellow',
+        'civilian_aviation:skyhawk_pr_butter', 'civilian_aviation:skyhawk_red2', 'civilian_aviation:skyhawk_pr_red2', 
+        'civilian_aviation:skyhawk_bluestripe', 'civilian_aviation:skyhawk_green', 
+        'civilian_aviation:skyhawk_blackorange', 'civilian_aviation:skyhawk_pr_blackorange', 'civilian_aviation:skyhawk_blackred', 
+        'civilian_aviation:skyhawk_pr_blackred', 'civilian_aviation:skyhawk_blackyellow', 'civilian_aviation:skyhawk_pr_blackyellow', 
+        'civilian_aviation:skyhawk_blank', 'civilian_aviation:skyhawk_pr_blank', 'civilian_aviation:skyhawk_blue', 
+        'civilian_aviation:skyhawk_pr_blue', 'civilian_aviation:skyhawk_bluered', 'civilian_aviation:skyhawk_pr_bluered', 
+        'civilian_aviation:skyhawk_brown', 'civilian_aviation:skyhawk_pr_brown', 'civilian_aviation:skyhawk_butter'
+    ];
+
+    civilianPlanes.forEach(item => {
+        event.recipes.modern_industrialization.assembler(32, 400)
+            .itemIn("8x modern_industrialization:aluminum_curved_plate")
+            .itemIn("4x modern_industrialization:aluminum_large_plate")
+            .itemIn("2x immersive_aircraft:propeller")
+            .itemIn("1x immersive_aircraft:hull")
+            .itemIn("1x immersive_aircraft:engine")
+            .itemIn("4x modern_industrialization:electronic_circuit")
+            .itemIn("8x modern_industrialization:copper_fine_wire")
+            .itemIn("2x modern_industrialization:advanced_motor")
+            .fluidIn("modern_industrialization:soldering_alloy", 500)
+            .itemOut("1x " + item)
+      
+  event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("4x modern_industrialization:iron_plate")
+      .itemIn("2x modern_industrialization:iron_rod")
+      .itemIn("1x minecraft:glass_bottle")
+      .itemIn("1x modern_industrialization:piston")
+      .itemIn("2x modern_industrialization:analog_circuit")
+      .fluidIn("modern_industrialization:soldering_alloy", 250)
+      .itemOut("1x civilian_aviation:paint_spray")
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x modern_industrialization:electronic_circuit")
