@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('framedblocks:powered_framing_saw'),
+    [
+        'AAA',
+        'BCB',
+        'DDD'
+    ],
+    {
+        A: '#c:glass_blocks',
+        B: 'modern_industrialization:redstone_battery',
+        C: 'framedblocks:framing_saw',
+        D: 'modern_industrialization:tin_cable'
+    }
+)
+    
+event.shaped(
     Item.of('sophisticatedcore:ender_linker'),
     [
         'AAA',
