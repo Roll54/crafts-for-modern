@@ -195,19 +195,6 @@ event.shaped(
         A: '#c:ingots/bronze'
     }
 )
-    
-event.shaped(
-    Item.of('farmersdelight:organic_compost'),
-    [
-        'AAA',
-        'ABA',
-        'AAA'
-    ],
-    {
-        A: 'roll_mod:biomass',
-        B: 'minecraft:dirt'
-    }
-)
 
 event.shaped(
     Item.of('ad_astra:calorite_plateblock', 64),
