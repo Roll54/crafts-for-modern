@@ -1,6 +1,19 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('sophisticatedcore:ender_linker'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        B: 'minecraft:ender_chest',
+        A: 'roll_mod:diamond_alloy_plate'
+    }
+)
+    
+event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion'),
     [
         'ABA',
