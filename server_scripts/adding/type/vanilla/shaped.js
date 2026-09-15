@@ -1,4 +1,188 @@
 ServerEvents.recipes(event => {
+
+event.shaped(
+    Item.of('roll_mod:steel_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:steel_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:black_steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_steel_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:bismuth_bronze_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:bismuth_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_helmet'),
+    [
+        'AAA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_chestplate'),
+    [
+        'A A',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_leggings'),
+    [
+        'AAA',
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:black_bronze_boots'),
+    [
+        'A A',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
     
 event.shaped(
     Item.of('ultramarine:bronze_parts'),
