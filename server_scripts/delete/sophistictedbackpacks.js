@@ -58,7 +58,18 @@ ServerEvents.recipes(event => {
         "sophisticatedbackpacks:smithing_upgrade",
         "sophisticatedbackpacks:alchemy_upgrade",
         "sophisticatedbackpacks:advanced_alchemy_upgrade",
-        "sophisticatedbackpacks:upgrade_base"
+        "sophisticatedbackpacks:upgrade_base",
+        "sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion",
+        "sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_2_conversion",
+        "sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_3_conversion",
+        "sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_4_conversion",
+        "sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_2_conversion",
+        "sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_3_conversion",
+        "sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_4_conversion",
+        "sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_3_conversion",
+        "sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_4_conversion",
+        "sophisticatedbackpacks:stack_upgrade_tier_3_to_tier_4_conversion",
+        "sophisticatedcore:ender_linker"
     ];
 
     itemsToRemove.forEach(item => {
