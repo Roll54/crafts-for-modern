@@ -31,15 +31,14 @@ event.shaped(
 event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion'),
     [
-        'ABA',
+        'A A',
         'CDC',
-        'ABA'
+        'A A'
     ],
     {
         A: 'modern_industrialization:steel_block',
         C: 'modern_industrialization:analog_circuit',
-        D: 'roll_mod:treated_plate',
-        B: 'sophisticatedbackpacks:stack_upgrade_starter_tier'
+        D: 'roll_mod:treated_plate'
     }
 )
 
@@ -89,15 +88,14 @@ event.shaped(
 event.shaped(
     Item.of('sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_2_conversion'),
     [
-        'ABA',
+        'A A',
         'CDC',
-        'ABA'
+        'A A'
     ],
     {
         A: 'modern_industrialization:aluminum_block',
         C: 'sophisticatedbackpacks:stack_upgrade_tier_1',
-        D: 'roll_mod:treated_plate',
-        B: 'modern_industrialization:electronic_circuit'
+        D: 'roll_mod:treated_plate'
     }
 )
 
