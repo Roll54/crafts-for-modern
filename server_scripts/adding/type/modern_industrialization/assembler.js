@@ -1,14 +1,14 @@
 ServerEvents.recipes(event => {
     const planeTypes = {
-        'pzl37los': { engine: 'roll_mod:magnalium_engine', plates: 8, motors: 2, circuits: 2, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 2 },
-        'pzlp11': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
-        'trimotor': { engine: 'roll_mod:magnalium_engine', plates: 10, motors: 3, circuits: 2, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 3 },
-        'vulcanair': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
-        'e500': { engine: 'roll_mod:magnalium_engine', plates: 8, motors: 2, circuits: 2, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
-        'bell206': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
-        'bell47g': { engine: 'roll_mod:magnalium_engine', plates: 4, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
-        'comanche': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 2, circuits: 2, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
-        'skyhawk': { engine: 'roll_mod:magnalium_engine', plates: 4, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 }
+        'pzl37los': { plates: 8, circuits: 2, extraCount: 2, motor: 'modern_industrialization:large_motor', motorCount: 4 },
+        'pzlp11': { plates: 6, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 4 },
+        'trimotor': { plates: 10, circuits: 2, extraCount: 3, motor: 'modern_industrialization:large_motor', motorCount: 6 },
+        'vulcanair': { plates: 6, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 4 },
+        'e500': { plates: 8, circuits: 2, extraCount: 1, motor: 'modern_industrialization:large_motor', motorCount: 4 },
+        'bell206': { plates: 6, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 4 },
+        'bell47g': { plates: 4, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 2 },
+        'comanche': { plates: 6, circuits: 2, extraCount: 1, motor: 'modern_industrialization:large_motor', motorCount: 4 },
+        'skyhawk': { plates: 4, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 2 }
     };
 
     const colorMap = {
@@ -92,45 +92,25 @@ ServerEvents.recipes(event => {
         event.recipes.modern_industrialization.assembler(32, 400)
             .itemIn(t.plates + "x modern_industrialization:magnalium_curved_plate")
             .itemIn(t.plates + "x modern_industrialization:magnalium_large_plate")
-            .itemIn(t.extraCount + "x " + t.extra)
+            .itemIn("3x roll_mod:magnalium_engine")
+            .itemIn("1x immersive_aircraft:enhanced_propeller")
             .itemIn("1x roll_mod:transmission")
-            .itemIn("3x " + t.engine)
             .itemIn(t.circuits + "x modern_industrialization:electronic_circuit")
             .itemIn((t.plates * 2) + "x modern_industrialization:copper_fine_wire")
-            .itemIn(t.motors + "x modern_industrialization:advanced_motor")
+            .itemIn(t.motorCount + "x " + t.motor)
             .itemIn("4x " + dye)
             .fluidIn("modern_industrialization:soldering_alloy", 500)
             .itemOut("1x " + item);
     });
 
-event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("4x modern_industrialization:iron_plate")
-    .itemIn("2x modern_industrialization:iron_rod")
-    .itemIn("1x minecraft:glass_bottle")
-    .itemIn("1x modern_industrialization:piston")
-    .itemIn("2x modern_industrialization:analog_circuit")
-    .fluidIn("modern_industrialization:soldering_alloy", 250)
-    .itemOut("1x civilian_aviation:paint_spray")
-    
-event.recipes.modern_industrialization.assembler(32, 300)
-    .itemIn("4x modern_industrialization:steel_plate")
-    .itemIn("2x modern_industrialization:steel_rod")
-    .itemIn("1x modern_industrialization:electronic_circuit")
-    .itemIn("1x minecraft:glass_bottle")
-    .itemIn("1x modern_industrialization:analog_circuit")
-    .itemIn("8x modern_industrialization:electrum_fine_wire")
-    .fluidIn("modern_industrialization:soldering_alloy", 250)
-    .itemOut("1x civilian_aviation:gunobserver")
-
-event.recipes.modern_industrialization.assembler(32, 400)
-    .itemIn("6x modern_industrialization:steel_large_plate")
-    .itemIn("4x modern_industrialization:steel_rod")
-    .itemIn("2x modern_industrialization:steel_gear")
-    .itemIn("2x modern_industrialization:piston")
-    .itemIn("2x modern_industrialization:electronic_circuit")
-    .itemIn("2x minecraft:tnt")
-    .fluidIn("modern_industrialization:soldering_alloy", 500)
-    .itemOut("1x civilian_aviation:basicbomb_hardpoint")
+    event.recipes.modern_industrialization.assembler(16, 200)
+        .itemIn("4x modern_industrialization:iron_plate")
+        .itemIn("2x modern_industrialization:iron_rod")
+        .itemIn("1x minecraft:glass_bottle")
+        .itemIn("1x modern_industrialization:piston")
+        .itemIn("2x modern_industrialization:analog_circuit")
+        .fluidIn("modern_industrialization:soldering_alloy", 250)
+        .itemOut("1x civilian_aviation:paint_spray")
 
     event.recipes.modern_industrialization.assembler(32, 300)
         .itemIn("8x modern_industrialization:steel_plate")
@@ -141,6 +121,26 @@ event.recipes.modern_industrialization.assembler(32, 400)
         .itemIn("16x modern_industrialization:copper_fine_wire")
         .fluidIn("modern_industrialization:soldering_alloy", 250)
         .itemOut("1x civilian_aviation:gunm1919")
+
+    event.recipes.modern_industrialization.assembler(32, 300)
+        .itemIn("4x modern_industrialization:steel_plate")
+        .itemIn("2x modern_industrialization:steel_rod")
+        .itemIn("1x modern_industrialization:electronic_circuit")
+        .itemIn("1x minecraft:glass_bottle")
+        .itemIn("1x modern_industrialization:analog_circuit")
+        .itemIn("8x modern_industrialization:electrum_fine_wire")
+        .fluidIn("modern_industrialization:soldering_alloy", 250)
+        .itemOut("1x civilian_aviation:gunobserver")
+
+    event.recipes.modern_industrialization.assembler(32, 400)
+        .itemIn("6x modern_industrialization:steel_large_plate")
+        .itemIn("4x modern_industrialization:steel_rod")
+        .itemIn("2x modern_industrialization:steel_gear")
+        .itemIn("2x modern_industrialization:piston")
+        .itemIn("2x modern_industrialization:electronic_circuit")
+        .itemIn("2x minecraft:tnt")
+        .fluidIn("modern_industrialization:soldering_alloy", 500)
+        .itemOut("1x civilian_aviation:basicbomb_hardpoint")
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x modern_industrialization:electronic_circuit")
