@@ -44,6 +44,7 @@ ServerEvents.recipes(event => {
             .itemIn("2x modern_industrialization:advanced_motor")
             .fluidIn("modern_industrialization:soldering_alloy", 500)
             .itemOut("1x " + item)
+    });   
       
   event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("4x modern_industrialization:iron_plate")
