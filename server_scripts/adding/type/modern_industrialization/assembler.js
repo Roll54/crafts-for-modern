@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
             .itemIn(t.plates + "x modern_industrialization:magnalium_large_plate")
             .itemIn(t.extraCount + "x " + t.extra)
             .itemIn("1x roll_mod:transmission")
-            .itemIn("1x " + t.engine)
+            .itemIn("3x " + t.engine)
             .itemIn(t.circuits + "x modern_industrialization:electronic_circuit")
             .itemIn((t.plates * 2) + "x modern_industrialization:copper_fine_wire")
             .itemIn(t.motors + "x modern_industrialization:advanced_motor")
