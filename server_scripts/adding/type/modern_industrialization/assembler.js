@@ -1,14 +1,14 @@
 ServerEvents.recipes(event => {
     const planeTypes = {
-        'pzl37los': { engine: 'roll_mod:magnalium_engine', plates: 8, motors: 2, circuits: 2, extra: 'immersive_aircraft:propeller', extraCount: 2 },
-        'pzlp11': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:propeller', extraCount: 1 },
-        'trimotor': { engine: 'roll_mod:magnalium_engine', plates: 10, motors: 3, circuits: 2, extra: 'immersive_aircraft:propeller', extraCount: 3 },
-        'vulcanair': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:propeller', extraCount: 1 },
-        'e500': { engine: 'roll_mod:magnalium_engine', plates: 8, motors: 2, circuits: 2, extra: 'immersive_aircraft:propeller', extraCount: 1 },
-        'bell206': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:propeller', extraCount: 1 },
-        'bell47g': { engine: 'roll_mod:magnalium_engine', plates: 4, motors: 1, circuits: 1, extra: 'immersive_aircraft:propeller', extraCount: 1 },
-        'comanche': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 2, circuits: 2, extra: 'immersive_aircraft:propeller', extraCount: 1 },
-        'skyhawk': { engine: 'roll_mod:magnalium_engine', plates: 4, motors: 1, circuits: 1, extra: 'immersive_aircraft:propeller', extraCount: 1 }
+        'pzl37los': { engine: 'roll_mod:magnalium_engine', plates: 8, motors: 2, circuits: 2, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 2 },
+        'pzlp11': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
+        'trimotor': { engine: 'roll_mod:magnalium_engine', plates: 10, motors: 3, circuits: 2, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 3 },
+        'vulcanair': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
+        'e500': { engine: 'roll_mod:magnalium_engine', plates: 8, motors: 2, circuits: 2, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
+        'bell206': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
+        'bell47g': { engine: 'roll_mod:magnalium_engine', plates: 4, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
+        'comanche': { engine: 'roll_mod:magnalium_engine', plates: 6, motors: 2, circuits: 2, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 },
+        'skyhawk': { engine: 'roll_mod:magnalium_engine', plates: 4, motors: 1, circuits: 1, extra: 'immersive_aircraft:enhanced_propeller', extraCount: 1 }
     };
 
     const colorMap = {
