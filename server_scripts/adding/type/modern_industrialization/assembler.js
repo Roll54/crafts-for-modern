@@ -1941,7 +1941,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("2x modern_industrialization:stainless_steel_rod")// Фіксатори, кільця для з'єднання
   .itemIn("2x #c:plates/aluminum")                          // Шари теплового захисту – з лавсану (Mylar), каптону та алюмінієвих фольг
   .itemIn("2x roll_mod:carbon_mesh")                       // Мікрометеоритний шар – кевлароподібна тканина
-  .itemIn("6x roll_mod:rubber_ingot")       // Товста підошва для захисту від гострих уламків
+  .itemIn("12x modern_industrialization:rubber_sheet")
   .fluidIn("modern_industrialization:nylon", 600)           // Герметичний шар – виготовлений із нейлону
   .itemOut("1x ad_astra:space_boots")
 
