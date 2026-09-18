@@ -10,6 +10,12 @@ event.recipes.modern_industrialization.mixer(2, 100)
     .itemIn("2x #c:dusts/electrum")
     .itemIn("1x #c:dusts/nickel")
     .itemOut("4x roll_mod:diamond_alloy_dust")
+
+event.recipes.modern_industrialization.mixer(2, 100)
+    .itemIn("8x #c:dusts/bort")
+    .itemIn("2x #c:dusts/electrum")
+    .itemIn("1x #c:dusts/nickel")
+    .itemOut("4x roll_mod:diamond_alloy_dust")
     
 event.recipes.modern_industrialization.mixer(2, 100)
     .itemIn("1x minecraft:cobblestone")
