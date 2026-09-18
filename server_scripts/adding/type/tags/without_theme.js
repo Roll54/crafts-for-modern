@@ -47,6 +47,16 @@ ServerEvents.tags('item', event => {
         "#c:ingots/nickel",
     ]);
 
+    event.add('roll_mod:iron_recipe', [
+        "#c:dusts/iron",
+        "#c:ingots/iron",
+    ]);
+
+    event.add('roll_mod:copper_recipe', [
+        "#c:dusts/copper",
+        "#c:ingots/copper",
+    ]);
+
     event.add('roll_mod:copper_block', [
         "minecraft:weathered_copper",
         "minecraft:waxed_weathered_copper",
