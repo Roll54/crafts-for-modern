@@ -1,4 +1,14 @@
 ServerEvents.recipes(event => {
+    event.recipes.extended_industrialization.alloy_smelter(2, 200)
+    .itemIn("2x roll_mod:bismuth_dust")
+    .itemIn("#roll_mod:nickel_recipe")
+    .itemOut("8x ad_astra:ostrum_ingot")
+  
+  event.recipes.extended_industrialization.alloy_smelter(2, 200)
+    .itemIn("roll_mod:bismuth_dust")
+    .itemIn("#roll_mod:nickel_recipe")
+    .itemOut("8x ad_astra:ostrum_ingot")
+  
   event.recipes.extended_industrialization.alloy_smelter(2, 200)
     .itemIn("roll_mod:bismuth_dust")
     .itemIn("minecraft:copper_ingot")
