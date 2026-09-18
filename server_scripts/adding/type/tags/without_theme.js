@@ -41,6 +41,11 @@ ServerEvents.tags('item', event => {
         "roll_mod:primitive_battery",
         "modern_industrialization:redstone_battery",
     ]);
+   
+    event.add('roll_mod:nickel_recipe', [
+        "#c:dusts/nickel",
+        "#c:ingots/nickel",
+    ]);
 
     event.add('roll_mod:copper_block', [
         "minecraft:weathered_copper",
