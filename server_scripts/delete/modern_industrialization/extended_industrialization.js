@@ -22,6 +22,15 @@ ServerEvents.recipes(event => {
         'extended_industrialization:nano_quantum_saber'
     ];
 
+    const modernRecipes = [
+        "extended_industrialization:materials/invar/alloy_smelter/ingot",
+        "extended_industrialization:materials/cupronickel/alloy_smelter/ingot"
+    ];
+
+    modernRecipes.forEach(id => {
+        event.remove({ id: id });
+    });
+
     addonItems.forEach(item => {
         event.remove({ output: item });
     });
