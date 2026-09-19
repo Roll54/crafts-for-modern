@@ -4,7 +4,7 @@ event.recipes.modern_industrialization.packer(2, 100)
   .itemIn("4x minecraft:string")
   .itemOut("1x minecraft:white_wool")
 
-event.recipes.modern_industrialization.packer(2, 100)
+event.recipes.modern_industrialization.packer(2, 200)
   .itemIn("4x roll_mod:diamond_alloy_plate")
   .itemOut("1x roll_mod:diamond_alloy_large_plate")
   
