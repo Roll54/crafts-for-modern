@@ -142,6 +142,13 @@ ServerEvents.recipes(event => {
         .fluidIn("modern_industrialization:soldering_alloy", 500)
         .itemOut("1x civilian_aviation:basicbomb_hardpoint")
 
+event.recipes.modern_industrialization.assembler(8, 200)
+    .itemIn("1x roll_mod:bismuth_plate")
+    .itemIn("2x modern_industrialization:aluminum_cable")
+    .itemIn("4x roll_mod:bismuth_curved_plate")
+    .itemIn("2x roll_mod:lithium_sulfate_dust")
+    .itemOut("1x roll_mod:bismuth_lithium_battery")
+
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x modern_industrialization:electronic_circuit")
   .itemIn("1x ad_astra:oxygen_gear")
