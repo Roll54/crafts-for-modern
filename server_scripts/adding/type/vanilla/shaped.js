@@ -1,6 +1,18 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:diamond_alloy_large_plate'),
+    [
+        'AA ',
+        'AA ',
+        '   '
+    ],
+    {
+        A: 'roll_mod:diamond_alloy_plate'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:netherite_steam_mining_drill'),
     [
         'ABB',
