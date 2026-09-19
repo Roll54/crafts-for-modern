@@ -241,7 +241,7 @@ ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.cutting_machine(8, 800)
     .itemIn("1x roll_mod:meteorite_metal_ingot")
-    .fluidIn("extended_industrialization:lubricant", 1000)
+    .fluidIn("modern_industrialization:lubricant", 1)
     .itemOut("2x roll_mod:meteorite_metal_rod")
 
 event.recipes.modern_industrialization.cutting_machine(8, 1600)
