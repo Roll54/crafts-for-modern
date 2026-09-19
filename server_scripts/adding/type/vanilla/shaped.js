@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:netherite_steam_mining_drill'),
+    [
+        'ABB',
+        'ACB',
+        'DAA'
+    ],
+    {
+        C: 'minecraft:netherite_upgrade_smithing_template',
+        B: 'minecraft:netherite_ingot',
+        D: 'modern_industrialization:steam_mining_drill',
+        A: 'modern_industrialization:black_steel_ingot'
+    }
+)
+    
+event.shaped(
     Item.of('framedblocks:powered_framing_saw'),
     [
         'AAA',
