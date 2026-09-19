@@ -104,6 +104,11 @@ event.replaceInput(
   '#roll_mod:battaries_tier_one')
 
 event.replaceInput(
+  { input: 'modern_industrialization:sodium_battery' },
+  'modern_industrialization:sodium_battery',
+  '#roll_mod:battaries_tier_three')
+
+event.replaceInput(
   { input: 'minecraft:glowstone_dust' },
   'minecraft:glowstone_dust',
   '#roll_mod:glowstone_dust')
