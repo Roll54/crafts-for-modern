@@ -155,6 +155,15 @@ ServerEvents.tags('item', event => {
         "advanced_ae:quantum_leggings",
         "advanced_ae:quantum_boots",
     ]);
+
+    event.add('roll_mod:ores/bismuth', [
+        'roll_mod:raw_bismuth',
+        'roll_mod:crushed_bismuth_ore',
+        'roll_mod:purified_bismuth_ore',
+        'roll_mod:refined_bismuth_ore',
+        'roll_mod:impure_bismuth_dust',
+        'roll_mod:bismuth_dust'
+    ]);
     
     event.add('ad_astra:space_suit_items', [
         "extended_industrialization:nano_quantum_leggings",
