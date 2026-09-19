@@ -4,6 +4,10 @@ ServerEvents.recipes(event => {
   .itemIn("1x roll_mod:bismuth_ingot")
   .itemOut("1x roll_mod:bismuth_plate")
 
+  event.recipes.modern_industrialization.compressor(8, 800)
+  .itemIn("1x roll_mod:meteorite_metal_ingot")
+  .itemOut("1x roll_mod:meteorite_metal_plate")
+
   event.recipes.modern_industrialization.compressor(2, 200)
   .itemIn("1x roll_mod:bismuth_plate")
   .itemOut("1x roll_mod:bismuth_curved_plate")
