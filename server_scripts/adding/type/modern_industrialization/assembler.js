@@ -779,7 +779,7 @@ event.recipes.modern_industrialization.assembler(64, 600)
   .itemOut("1x createcybernetics:armupgrades_mantisblade_titanium")
 
 event.recipes.modern_industrialization.assembler(64, 600)
-  .itemIn("4x modern_industrialization:diamond_plate")
+  .itemIn("4x roll_mod:diamond_alloy_plate")
   .itemIn("4x modern_industrialization:stainless_steel_gear")
   .itemIn("2x modern_industrialization:stainless_steel_rod")
   .itemIn("8x modern_industrialization:electrum_fine_wire")
