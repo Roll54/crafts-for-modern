@@ -66,6 +66,17 @@ ServerEvents.tags('item', event => {
         "minecraft:waxed_oxidized_copper",
     ]);
 
+    event.add('roll_mod:ores/nickel', [
+        'roll_mod:impure_nickel_dust',
+        'roll_mod:stone_nickel',
+        'roll_mod:raw_nickel',
+        'roll_mod:nickel_dust',
+        'roll_mod:crushed_nickel_ore',
+        'roll_mod:refined_nickel_ore',
+        'roll_mod:purified_nickel_ore',
+        'roll_mod:pure_nickel_dust'
+    ]);
+
     const blockogriz = [
         "roll_mod:diamond_blockogriz",
         "roll_mod:meteorite_metal_blockogriz",
