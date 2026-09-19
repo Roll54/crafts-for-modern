@@ -1,4 +1,12 @@
 ServerEvents.recipes(event => {
+
+  event.recipes.modern_industrialization.compressor(2, 200)
+  .itemIn("1x roll_mod:bismuth_ingot")
+  .itemOut("1x roll_mod:bismuth_plate")
+
+  event.recipes.modern_industrialization.compressor(2, 200)
+  .itemIn("1x roll_mod:bismuth_plate")
+  .itemOut("1x roll_mod:bismuth_curved_plate")
   
   event.recipes.modern_industrialization.compressor(2, 200)
   .itemIn("1x roll_mod:rubber_ingot")
