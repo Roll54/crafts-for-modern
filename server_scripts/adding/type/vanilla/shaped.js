@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:bismuth_lithium_battery'),
+    [
+        'ABA',
+        'CDC',
+        'CDC'
+    ],
+    {
+        C: 'roll_mod:bismuth_curved_plate',
+        D: 'roll_mod:lithium_sulfate_dust',
+        B: 'roll_mod:bismuth_plate',
+        A: 'modern_industrialization:aluminum_cable'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:diamond_alloy_large_plate'),
     [
         'AA ',
