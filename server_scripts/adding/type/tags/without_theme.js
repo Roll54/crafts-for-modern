@@ -41,6 +41,11 @@ ServerEvents.tags('item', event => {
         "roll_mod:primitive_battery",
         "modern_industrialization:redstone_battery",
     ]);
+    
+    event.add('roll_mod:battaries_tier_three', [
+        "roll_mod:bismuth_lithium_battery",
+        "modern_industrialization:sodium_battery",
+    ]);
    
     event.add('roll_mod:nickel_recipe', [
         "#c:dusts/nickel",
