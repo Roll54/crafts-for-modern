@@ -36,6 +36,33 @@ ServerEvents.recipes(event => {
         }
     })
 
+event.custom({
+      "type": "farmersdelight:cutting",
+      "ingredients": [
+        {
+          "item": "roll_mod:roasted_bell_pepper_rutile"
+        }
+      ],
+      "result": [
+        {
+          "item": {
+            "count": 2,
+            "id": "roll_mod:roasted_bell_pepper_rutile_slice"
+          }
+        },
+        {
+          "chance": 0.1,
+          "item": {
+            "count": 1,
+            "id": "roll_mod:rutile_bell_pepper_seeds"
+          }
+        }
+      ],
+      "tool": {
+        "tag": "c:tools/knife"
+      }
+    })
+    
     event.custom({
       "type": "farmersdelight:cutting",
       "ingredients": [
