@@ -7,6 +7,10 @@ event.recipes.modern_industrialization.packer(2, 100)
 event.recipes.modern_industrialization.packer(2, 200)
   .itemIn("4x roll_mod:diamond_alloy_plate")
   .itemOut("1x roll_mod:diamond_alloy_large_plate")
+
+event.recipes.modern_industrialization.packer(2, 200)
+  .itemIn("4x roll_mod:meteorite_metal_plate")
+  .itemOut("1x roll_mod:meteorite_metal_large_plate")
   
 event.recipes.modern_industrialization.packer(2, 100)
 .itemIn("1x modern_industrialization:aluminum_ingot")
