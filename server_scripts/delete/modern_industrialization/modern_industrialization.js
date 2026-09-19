@@ -44,7 +44,8 @@ ServerEvents.recipes(event => {
         'modern_industrialization:raw_tin',
         'modern_industrialization:raw_nickel',
         'modern_industrialization:raw_antimony',
-        'modern_industrialization:raw_silver'
+        'modern_industrialization:raw_silver',
+        'modern_industrialization:diesel_mining_drill'
     ];
 
     const modernRecipes = [
