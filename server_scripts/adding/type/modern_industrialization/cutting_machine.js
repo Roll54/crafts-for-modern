@@ -239,6 +239,11 @@ ServerEvents.recipes(event => {
 
 // Жахливе дерево КІНЕЦЬ
 
+event.recipes.modern_industrialization.cutting_machine(8, 800)
+    .itemIn("1x roll_mod:meteorite_metal_ingot")
+    .fluidIn("extended_industrialization:lubricant", 1000)
+    .itemOut("2x roll_mod:meteorite_metal_rod")
+
 event.recipes.modern_industrialization.cutting_machine(8, 1600)
     .itemIn("1x roll_mod:blue_wafer_ram")
     .fluidIn("extended_industrialization:distilled_water", 1000)
@@ -386,10 +391,6 @@ event.recipes.modern_industrialization.cutting_machine(2, 100)
   
 // Компоненти
   /*
-  event.recipes.modern_industrialization.cutting_machine(8, 200)
-  .fluidIn("modern_industrialization:lubricant", 1)
-  .itemIn("1x minecraft:glass_pane")
-  .itemOut("1x roll_mod:syringe")
 
 
   event.recipes.modern_industrialization.cutting_machine(64, 100)
