@@ -1444,13 +1444,12 @@ event.shaped(
 
   event.shaped(
     Item.of('travelanchors:travel_staff', 1),[
-      ' BC',
-      ' AB',
+      ' AC',
+      ' AA',
       'A  ',
     ],{
       A: 'modern_industrialization:black_steel_ingot',
-      B: 'modern_industrialization:enderium_ingot',
-      C: 'minecraft:ender_eye',
+      C: 'minecraft:ender_pearl',
   })
 
   event.shaped(
