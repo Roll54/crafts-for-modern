@@ -78,6 +78,7 @@ event.replaceInput(
   'roll_mod:diamond_alloy_ingot'
 )
 
+event.replaceInput(
   { output: 'cosmeticarmoursmod:diamond_halo_helmet' },
   'minecraft:diamond',
   'roll_mod:diamond_alloy_plate'
