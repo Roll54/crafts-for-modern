@@ -1,6 +1,13 @@
 ServerEvents.recipes(event => {
 
 event.shapeless(
+    Item.of('roll_mod:crop_manager_mk2'),
+    [
+        'roll_mod:crop_manager'
+    ]
+)
+    
+event.shapeless(
     Item.of('railcraft:energy_minecart'),
     [
         'minecraft:minecart',
