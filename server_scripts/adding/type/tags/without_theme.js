@@ -62,6 +62,12 @@ ServerEvents.tags('item', event => {
         "#c:ingots/copper",
     ]);
 
+    event.add('minecraft:chicken_food', [
+        "#c:seeds",
+        "#agricraft:seeds",
+        "#forge:seeds",
+    ]);
+    
     event.add('roll_mod:copper_block', [
         "minecraft:weathered_copper",
         "minecraft:waxed_weathered_copper",
