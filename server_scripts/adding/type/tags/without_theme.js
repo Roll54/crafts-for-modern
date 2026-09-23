@@ -121,6 +121,29 @@ ServerEvents.tags('item', event => {
         event.add('minecraft:enchantable/fire_aspect', item);
     });
 
+    event.add('createcybernetics:lungs_items', [
+        "roll_mod:lungsupgrade_sulfur_resistance",
+    ]);    
+    
+    event.add('createcybernetics:lungs_replacements', [
+        "roll_mod:lungsupgrade_sulfur_resistance",
+    ]);
+
+    event.add('createcybernetics:lung_upgrades', [
+        "roll_mod:lungsupgrade_sulfur_resistance",
+    ]);
+    
+    event.add('createcybernetics:cyberware_item', [
+        "roll_mod:crop_analyzer_lense",
+        "roll_mod:crop_analyzer_module",
+        "roll_mod:lungsupgrade_sulfur_resistance",
+    ]);
+    
+    event.add('createcybernetics:eye_upgrades', [
+        "roll_mod:crop_analyzer_module",
+        "roll_mod:crop_analyzer_lense",
+    ]);  
+    
     event.add('roll_mod:controller_circuit', [
         "modern_industrialization:analog_circuit",
     ]);
