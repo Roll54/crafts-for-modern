@@ -236,6 +236,13 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemOut("1x createcybernetics:lungsupgrades_synthlungs")
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x modern_industrialization:digital_circuit")
+  .itemIn("1x ad_astra:oxygen_gear")
+  .itemIn("1x roll_mod:lungsupgrade_sulfur_resistance")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemOut("1x createcybernetics:lungsupgrades_synthlungs")
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("64x ae2:wireless_booster")
   .itemIn("16x modern_industrialization:niobium_titanium_alloy_wire")
   .itemIn("2x ae2:singularity")
@@ -1386,6 +1393,13 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemOut("1x createcybernetics:eyeupgrades_hudlens")
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x createcybernetics:eyeupgrades_hudlens")
+  .itemIn("1x roll_mod:green_lens")
+  .itemIn("1x agricraft:magnifying_glass")
+  .itemIn("6x modern_industrialization:electrum_fine_wire")
+  .itemOut("1x roll_mod:crop_analyzer_lense")
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x modern_industrialization:aluminum_gear")
   .itemIn("1x modern_industrialization:aluminum_rod")
   .itemIn("6x modern_industrialization:aluminum_bolt")
@@ -1529,6 +1543,15 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x modern_industrialization:kanthal_plate")
   .itemIn("4x modern_industrialization:phosphorus_dust")
   .itemOut("createcybernetics:eyeupgrades_nightvision");
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("2x roll_mod:green_lens")
+  .itemIn("1x agricraft:magnifying_glass")
+  .itemIn("modern_industrialization:electronic_circuit")
+  .itemIn("8x modern_industrialization:electrum_fine_wire")
+  .itemIn("4x modern_industrialization:kanthal_plate")
+  .itemIn("4x modern_industrialization:phosphorus_dust")
+  .itemOut("roll_mod:crop_analyzer_module");
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x modern_industrialization:electrum_fine_wire")
