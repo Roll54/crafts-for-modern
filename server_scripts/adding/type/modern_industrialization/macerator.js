@@ -10,6 +10,11 @@ event.recipes.modern_industrialization.macerator(2, 100)
 .itemOut("1x roll_mod:agar_dust")
 
 event.recipes.modern_industrialization.macerator(2, 100)
+.itemIn("1x minecraft:wheat")
+.itemOut("1x minecraft:wheat_seeds")
+.itemOut("1x minecraft:wheat_seeds", 0.5)
+    
+event.recipes.modern_industrialization.macerator(2, 100)
 .itemIn("1x minecraft:clay_ball")
 .itemOut("1x roll_mod:clay_dust")
 
