@@ -80,7 +80,6 @@ const removedTypes = [
   "ad_astra:alloying",
   "ad_astra:compressing",
   "ad_astra:cryo_freezing",
-  "ad_astra:oxygen_loading",
   "ad_astra:refining",
   "ad_astra:space_station_recipe",
   "ad_astra:nasa_workbench"
