@@ -1245,23 +1245,6 @@ event.shaped(
 )
     
 event.shaped(
-    Item.of('roll_mod:weed_manager'),
-    [
-        'ABA',
-        'CDC',
-        'EFE'
-    ],
-    {
-        C: 'modern_industrialization:large_motor',
-        D: 'modern_industrialization:aluminum_tank',
-        B: 'modern_industrialization:aluminum_rotor',
-        F: 'modern_industrialization:advanced_machine_hull',
-        E: 'modern_industrialization:electronic_circuit',
-        A: 'modern_industrialization:piston'
-    }
-)
-    
-event.shaped(
     Item.of('sophisticatedbackpacks:advanced_deposit_upgrade'),
     [
         'ABA',
