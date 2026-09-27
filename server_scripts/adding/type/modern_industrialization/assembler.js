@@ -154,7 +154,7 @@ event.recipes.modern_industrialization.assembler(48, 400)
 event.recipes.modern_industrialization.assembler(96, 600)
   .itemIn("2x modern_industrialization:stainless_steel_curved_plate")
   .itemIn("2x modern_industrialization:digital_circuit")
-  .itemIn("4x modern_industrialization:roll_mod:injection_resistance")
+  .itemIn("4x roll_mod:injection_resistance")
   .itemIn("4x modern_industrialization:electrum_fine_wire")
   .itemOut("1x createcybernetics:brainupgrades_berserk")
 
