@@ -1619,7 +1619,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x modern_industrialization:stainless_steel_plate")
   .itemIn("1x modern_industrialization:stainless_steel_gear")
-  .itemIn("2x roll_mod:piston")
+  .itemIn("2x modern_industrialization:piston")
   .itemOut("createcybernetics:armupgrades_pneumaticwrist");
 
 
