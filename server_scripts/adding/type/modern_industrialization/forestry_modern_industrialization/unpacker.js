@@ -1,9 +1,8 @@
 // server_scripts/forestry/unpacker.js
 // Forestry crates: ящик -> 9 предметів (modern_industrialization:unpacker). Порожній ящик НЕ повертається.
 
-const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
-
 ServerEvents.recipes(event => {
+  const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
   if (!IS_FORESTRY_LOADED) return;
   console.info('[forestry unpacker] loaded');
 
