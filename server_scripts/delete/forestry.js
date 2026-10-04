@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     if (Platform.isLoaded('forestry')) {
-        const forestryRemovedRecipes = [
+        [
             'forestry:worktable',
             'forestry:peat_engine',
             'forestry:biogas_engine',
@@ -33,11 +33,9 @@ ServerEvents.recipes(event => {
             'forestry:bronze_ingot',
             'forestry:thermionic_fabricator',
             'forestry:sturdy_casing'
-        ];
+        ].forEach(id => event.remove({ output: id }));
 
-        forestryRemovedRecipes.forEach(id => event.remove({ output: id }));
-
-        const forestryRemovedTypes = [
+        [
             'forestry:carpenter',
             'forestry:thermionic_fabricator',
             'forestry:squeezer',
@@ -46,8 +44,6 @@ ServerEvents.recipes(event => {
             'forestry:moistener',
             'forestry:bottler',
             'forestry:smelter'
-        ];
-
-        forestryRemovedTypes.forEach(type => event.remove({ type: type }));
+        ].forEach(type => event.remove({ type: type }));
     }
 });
