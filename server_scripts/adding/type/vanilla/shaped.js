@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('railcraft:tunnel_bore'),
+    [
+        'AAA',
+        'BCD',
+        'AAA'
+    ],
+    {
+        C: 'modern_industrialization:large_motor',
+        D: 'modern_industrialization:aluminum_drill',
+        A: 'modern_industrialization:aluminum_plate',
+        B: 'modern_industrialization:advanced_machine_hull'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:bismuth_lithium_battery'),
     [
         'ABA',
