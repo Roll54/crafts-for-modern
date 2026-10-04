@@ -99,41 +99,6 @@ ServerEvents.recipes(event => {
     .fluidIn("minecraft:water", 1000)
     .itemOut("1x forestry:iodine_capsule");
 
-  // kit_axe
-  event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("3x #c:ingots/bronze")
-    .itemIn("2x minecraft:stick")
-    .itemIn("1x forestry:carton")
-    .itemOut("1x forestry:axe_kit");
-
-  // kit_hoe
-  event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("2x #c:ingots/bronze")
-    .itemIn("2x minecraft:stick")
-    .itemIn("1x forestry:carton")
-    .itemOut("1x forestry:hoe_kit");
-
-  // kit_pickaxe
-  event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("3x #c:ingots/bronze")
-    .itemIn("2x minecraft:stick")
-    .itemIn("1x forestry:carton")
-    .itemOut("1x forestry:pickaxe_kit");
-
-  // kit_shovel
-  event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("1x #c:ingots/bronze")
-    .itemIn("2x minecraft:stick")
-    .itemIn("1x forestry:carton")
-    .itemOut("1x forestry:shovel_kit");
-
-  // kit_sword
-  event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("2x #c:ingots/bronze")
-    .itemIn("1x minecraft:stick")
-    .itemIn("1x forestry:carton")
-    .itemOut("1x forestry:sword_kit");
-
   // paper
   event.recipes.modern_industrialization.assembler(16, 100)
     .itemIn("2x modern_industrialization:wood_pulp")
@@ -155,31 +120,6 @@ ServerEvents.recipes(event => {
     .itemIn("1x #c:gems/diamond")
     .fluidIn("minecraft:water", 2000)
     .itemOut("1x forestry:portable_analyzer");
-
-  // reclaim_bronze_axe
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("1x forestry:broken_survivalists_axe")
-    .itemOut("2x forestry:bronze_ingot");
-
-  // reclaim_bronze_hoe
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("1x forestry:broken_survivalists_hoe")
-    .itemOut("1x forestry:bronze_ingot");
-
-  // reclaim_bronze_pickaxe
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("1x forestry:broken_survivalists_pickaxe")
-    .itemOut("2x forestry:bronze_ingot");
-
-  // reclaim_bronze_shovel
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("1x forestry:broken_survivalists_shovel")
-    .itemOut("1x forestry:bronze_ingot");
-
-  // reclaim_bronze_sword
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("1x forestry:broken_survivalists_sword")
-    .itemOut("1x forestry:bronze_ingot");
 
   // scented_paneling
   event.recipes.modern_industrialization.assembler(16, 500)
