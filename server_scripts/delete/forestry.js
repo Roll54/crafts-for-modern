@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
-    const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
-
-    if (IS_FORESTRY_LOADED) {
+    if (Platform.isLoaded('forestry')) {
         const forestryRemovedRecipes = [
             'forestry:worktable',
             'forestry:peat_engine',
@@ -40,14 +38,14 @@ ServerEvents.recipes(event => {
         forestryRemovedRecipes.forEach(id => event.remove({ output: id }));
 
         const forestryRemovedTypes = [
-            "forestry:carpenter",
-            "forestry:thermionic_fabricator",
-            "forestry:squeezer",
-            "forestry:fermenter",
-            "forestry:still",
-            "forestry:moistener",
-            "forestry:bottler",
-            "forestry:smelter"
+            'forestry:carpenter',
+            'forestry:thermionic_fabricator',
+            'forestry:squeezer',
+            'forestry:fermenter',
+            'forestry:still',
+            'forestry:moistener',
+            'forestry:bottler',
+            'forestry:smelter'
         ];
 
         forestryRemovedTypes.forEach(type => event.remove({ type: type }));
