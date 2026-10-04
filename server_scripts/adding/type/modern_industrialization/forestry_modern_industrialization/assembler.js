@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
   const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
   if (!IS_FORESTRY_LOADED) return;
   console.info('[forestry assembler] loaded (v4, explicit recipes)');
-
+  
    event.recipes.modern_industrialization.assembler(16, 200)
     .itemIn("1x ae2:quartz_glass")
     .itemIn("8x modern_industrialization:cupronickel_wire")
