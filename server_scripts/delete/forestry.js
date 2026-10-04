@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
 
     if (IS_FORESTRY_LOADED) {
-        const removedRecipes = [
+        const forestryRemovedRecipes = [
             'forestry:worktable',
             'forestry:peat_engine',
             'forestry:biogas_engine',
@@ -37,15 +37,19 @@ ServerEvents.recipes(event => {
             'forestry:sturdy_casing'
         ];
 
-        removedRecipes.forEach(id => event.remove({ output: id }));
+        forestryRemovedRecipes.forEach(id => event.remove({ output: id }));
 
-        event.remove({ type: "forestry:carpenter" });
-        event.remove({ type: "forestry:thermionic_fabricator" });
-        event.remove({ type: "forestry:squeezer" });
-        event.remove({ type: "forestry:fermenter" });
-        event.remove({ type: "forestry:still" });
-        event.remove({ type: "forestry:moistener" });
-        event.remove({ type: "forestry:bottler" });
-        event.remove({ type: "forestry:smelter" });
+        const forestryRemovedTypes = [
+            "forestry:carpenter",
+            "forestry:thermionic_fabricator",
+            "forestry:squeezer",
+            "forestry:fermenter",
+            "forestry:still",
+            "forestry:moistener",
+            "forestry:bottler",
+            "forestry:smelter"
+        ];
+
+        forestryRemovedTypes.forEach(type => event.remove({ type: type }));
     }
 });
