@@ -3,93 +3,81 @@ ServerEvents.recipes(event => {
   if (!IS_FORESTRY_LOADED) return;
   console.info('[forestry assembler] loaded (v4, explicit recipes)');
 
-     event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x ae2:quartz_glass")
-      .itemIn("8x modern_industrialization:cupronickel_wire")
-      .itemIn("4x modern_industrialization:platinum_plate")
-      .fluidIn("extended_industrialization:blazing_essence", 100)
-      .itemOut("1x forestry:blazing_electron_tube")
+   event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x ae2:quartz_glass")
+    .itemIn("8x modern_industrialization:cupronickel_wire")
+    .itemIn("4x modern_industrialization:platinum_plate")
+    .fluidIn("extended_industrialization:blazing_essence", 100)
+    .itemOut("1x forestry:blazing_electron_tube")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x ae2:quartz_glass")
-      .itemIn("8x modern_industrialization:cupronickel_wire")
-      .itemIn("8x roll_mod:lapis_lazuli_dust")    
-      .fluidIn("extended_industrialization:blazing_essence", 100)
-      .itemOut("1x forestry:lapis_electron_tube")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x ae2:quartz_glass")
+    .itemIn("8x modern_industrialization:cupronickel_wire")
+    .itemIn("8x roll_mod:lapis_lazuli_dust")    
+    .fluidIn("extended_industrialization:blazing_essence", 100)
+    .itemOut("1x forestry:lapis_electron_tube")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x ae2:quartz_glass")
-      .itemIn("16x modern_industrialization:cupronickel_wire")
-      .fluidIn("extended_industrialization:blazing_essence", 100)
-      .itemOut("1x forestry:apatite_electron_tube")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x ae2:quartz_glass")
+    .itemIn("16x modern_industrialization:cupronickel_wire")
+    .fluidIn("extended_industrialization:blazing_essence", 100)
+    .itemOut("1x forestry:apatite_electron_tube")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x ae2:quartz_glass")
-      .itemIn("8x modern_industrialization:cupronickel_wire")
-      .itemIn("4x modern_industrialization:emerald_plate")
-      .itemOut("1x forestry:emerald_electron_tube")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x ae2:quartz_glass")
+    .itemIn("8x modern_industrialization:cupronickel_wire")
+    .itemIn("4x modern_industrialization:emerald_plate")
+    .itemOut("1x forestry:emerald_electron_tube")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x ae2:quartz_glass")
-      .itemIn("8x modern_industrialization:cupronickel_wire")
-      .itemIn("4x modern_industrialization:diamond_plate")
-      .itemOut("1x forestry:diamantine_electron_tube")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x ae2:quartz_glass")
+    .itemIn("8x modern_industrialization:cupronickel_wire")
+    .itemIn("4x modern_industrialization:diamond_plate")
+    .itemOut("1x forestry:diamantine_electron_tube")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x ae2:quartz_glass")
-      .itemIn("8x modern_industrialization:cupronickel_wire")
-      .itemIn("4x modern_industrialization:annealed_copper_plate")
-      .itemOut("1x forestry:copper_electron_tube")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x ae2:quartz_glass")
+    .itemIn("8x modern_industrialization:cupronickel_wire")
+    .itemIn("4x modern_industrialization:annealed_copper_plate")
+    .itemOut("1x forestry:copper_electron_tube")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x ae2:quartz_glass")
-      .itemIn("8x modern_industrialization:cupronickel_wire")
-      .itemIn("4x modern_industrialization:gold_plate")
-      .itemOut("1x forestry:golden_electron_tube")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x ae2:quartz_glass")
+    .itemIn("8x modern_industrialization:cupronickel_wire")
+    .itemIn("4x modern_industrialization:gold_plate")
+    .itemOut("1x forestry:golden_electron_tube")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("4x modern_industrialization:emerald_plate")
-      .itemIn("4x modern_industrialization:tin_cable")
-      .itemIn("1x modern_industrialization:analog_circuit")
-      .itemOut("1x forestry:basic_circuit_board")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:emerald_plate")
+    .itemIn("4x modern_industrialization:tin_cable")
+    .itemIn("1x modern_industrialization:analog_circuit")
+    .itemOut("1x forestry:basic_circuit_board")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("4x modern_industrialization:emerald_plate")
-      .itemIn("4x modern_industrialization:copper_cable")
-      .itemIn("1x modern_industrialization:electronic_circuit")
-      .itemOut("1x forestry:enhanced_circuit_board")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:emerald_plate")
+    .itemIn("4x modern_industrialization:copper_cable")
+    .itemIn("1x modern_industrialization:electronic_circuit")
+    .itemOut("1x forestry:enhanced_circuit_board")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("4x modern_industrialization:emerald_plate")
-      .itemIn("4x modern_industrialization:silver_cable")
-      .itemIn("1x modern_industrialization:electronic_circuit")
-      .itemOut("1x forestry:refined_circuit_board")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:emerald_plate")
+    .itemIn("4x modern_industrialization:silver_cable")
+    .itemIn("1x modern_industrialization:electronic_circuit")
+    .itemOut("1x forestry:refined_circuit_board")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("4x modern_industrialization:emerald_plate")
-      .itemIn("4x modern_industrialization:kanthal_cable")
-      .itemIn("1x modern_industrialization:digital_circuit")
-      .itemOut("1x forestry:intricate_circuit_board")
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:emerald_plate")
+    .itemIn("4x modern_industrialization:kanthal_cable")
+    .itemIn("1x modern_industrialization:digital_circuit")
+    .itemOut("1x forestry:intricate_circuit_board")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("4x modern_industrialization:large_advanced_motor")
-      .itemIn("4x modern_industrialization:processing_unit")
-      .itemIn("16x modern_industrialization:osmiridium_plate")
-      .itemIn("6x roll_mod:gravi_engine_mk_1")
-      .itemIn("8x roll_mod:carbon_mesh")
-      .itemOut("1x forestry:rainmaker")
-
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("2x forestry:ash")
-    .fluidIn("minecraft:water", 50)
-    .itemOut("1x forestry:ash_brick");
-
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("4x minecraft:dirt")
-    .itemIn("4x #c:sands")
-    .itemIn("1x forestry:mulch")
-    .fluidIn("minecraft:water", 1000)
-    .itemOut("8x forestry:bog_earth");
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("4x modern_industrialization:large_advanced_motor")
+    .itemIn("4x modern_industrialization:processing_unit")
+    .itemIn("16x modern_industrialization:osmiridium_plate")
+    .itemIn("6x roll_mod:gravi_engine_mk_1")
+    .itemIn("8x roll_mod:carbon_mesh")
+    .itemOut("1x forestry:rainmaker")
 
   event.recipes.modern_industrialization.assembler(16, 100)
     .itemIn("4x forestry:beeswax")
@@ -100,11 +88,6 @@ ServerEvents.recipes(event => {
     .itemIn("4x modern_industrialization:wood_pulp")
     .fluidIn("minecraft:water", 1000)
     .itemOut("2x forestry:carton");
-
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("4x #c:sawdust")
-    .fluidIn("minecraft:water", 200)
-    .itemOut("4x forestry:cork");
 
   event.recipes.modern_industrialization.assembler(16, 100)
     .itemIn("2x forestry:honeydew")
@@ -123,18 +106,6 @@ ServerEvents.recipes(event => {
     .fluidIn("forestry:seed_oil", 500)
     .itemOut("1x forestry:escritoire");
 
-  event.recipes.modern_industrialization.assembler(16, 750)
-    .itemIn("4x #c:gems/diamond")
-    .itemIn("1x forestry:sturdy_casing")
-    .fluidIn("minecraft:water", 5000)
-    .itemOut("1x forestry:hardened_casing");
-
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("8x minecraft:dirt")
-    .itemIn("1x forestry:mulch")
-    .fluidIn("minecraft:water", 1000)
-    .itemOut("9x forestry:humus");
-
   event.recipes.modern_industrialization.assembler(16, 500)
     .itemIn("8x #minecraft:logs")
     .fluidIn("forestry:seed_oil", 250)
@@ -152,12 +123,6 @@ ServerEvents.recipes(event => {
     .itemIn("2x minecraft:gunpowder")
     .fluidIn("minecraft:water", 1000)
     .itemOut("1x forestry:iodine_capsule");
-
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("3x #minecraft:wooden_slabs")
-    .itemIn("3x #c:sawdust")
-    .fluidIn("minecraft:water", 100)
-    .itemOut("24x forestry:plywood");
 
   event.recipes.modern_industrialization.assembler(16, 1000)
     .itemIn("4x #c:ingots/tin")
@@ -180,11 +145,6 @@ ServerEvents.recipes(event => {
     .itemIn("1x #c:ingots/bronze")
     .fluidIn("minecraft:water", 1000)
     .itemOut("1x forestry:soldering_iron");
-
-  event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("4x minecraft:grass_block")
-    .fluidIn("minecraft:water", 100)
-    .itemOut("4x forestry:turf_block");
 
   event.recipes.modern_industrialization.assembler(16, 100)
     .itemIn("4x forestry:silk_wisp")
