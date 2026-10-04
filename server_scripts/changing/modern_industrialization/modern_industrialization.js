@@ -30,6 +30,12 @@ trackKits.forEach(item => {
 });
 
 event.replaceInput(
+  { output: 'forestry:genetic_filter' },
+  '#minecraft:planks',
+  'roll_mod:treated_planks'
+)
+    
+event.replaceInput(
   { output: 'railcraft:force_track_emitter' },
   'railcraft:charge_coil',
   'modern_industrialization:cupronickel_coil'
