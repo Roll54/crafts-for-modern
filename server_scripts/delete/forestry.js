@@ -1,20 +1,7 @@
 ServerEvents.recipes(event => {
     const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
 
-    const removeItems = [
-        "functionalstorage_three_drawers:framed_fluid_3",
-        "functionalstorage:fluid_4",
-        "functionalstorage_three_drawers:fluid_3",
-        "functionalstorage:fluid_2",
-        "functionalstorage:fluid_1",
-        "functionalstorage:framed_fluid_4",
-        "functionalstorage:framed_fluid_2",
-        "functionalstorage:framed_fluid_1",
-        "functionalstorage:dripping_upgrade",
-        "functionalstorage:water_generator_upgrade",
-        'functionalstorage:obsidian_upgrade',
-        'functionalstorage_three_drawers:bamboo_3'
-    ];
+    const removeItems = [];
 
     if (IS_FORESTRY_LOADED) {
         removeItems.push(
@@ -54,4 +41,21 @@ ServerEvents.recipes(event => {
     removeItems.forEach(item => {
         event.remove({ output: item });
     });
+
+    if (IS_FORESTRY_LOADED) {
+        const forestryTypes = [
+            "forestry:carpenter",
+            "forestry:thermionic_fabricator",
+            "forestry:squeezer",
+            "forestry:fermenter",
+            "forestry:still",
+            "forestry:moistener",
+            "forestry:bottler",
+            "forestry:smelter"
+        ];
+
+        forestryTypes.forEach(type => {
+            event.remove({ type: type });
+        });
+    }
 });
