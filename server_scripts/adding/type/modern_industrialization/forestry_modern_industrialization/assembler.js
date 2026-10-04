@@ -203,12 +203,6 @@ ServerEvents.recipes(event => {
     .fluidIn("minecraft:water", 100)
     .itemOut("4x forestry:turf_block");
 
-  // wood_pulp
-  event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("1x #minecraft:logs")
-    .fluidIn("minecraft:water", 250)
-    .itemOut("4x modern_industrialization:wood_pulp");
-
   // woven_silk
   event.recipes.modern_industrialization.assembler(16, 100)
     .itemIn("4x forestry:silk_wisp")
