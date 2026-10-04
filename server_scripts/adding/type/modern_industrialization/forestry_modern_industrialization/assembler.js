@@ -124,13 +124,12 @@ ServerEvents.recipes(event => {
     .fluidIn("minecraft:water", 1000)
     .itemOut("1x forestry:iodine_capsule");
 
-  event.recipes.modern_industrialization.assembler(16, 1000)
-    .itemIn("4x #c:ingots/tin")
-    .itemIn("2x #c:glass_panes")
-    .itemIn("2x #c:dusts/redstone")
-    .itemIn("1x #c:gems/diamond")
-    .fluidIn("minecraft:water", 2000)
-    .itemOut("1x forestry:portable_analyzer");
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x ae2:monitor")
+    .itemIn("16x modern_industrialization:redstone_alloy_fine_wire")
+    .itemIn("8x modern_industrialization:electronic_circuit")
+    .itemIn("4x modern_industrialization:aluminum_plate")
+    .itemOut("1x forestry:portable_analyzer")
 
   event.recipes.modern_industrialization.assembler(16, 500)
     .itemIn("1x forestry:royal_jelly")
@@ -139,12 +138,15 @@ ServerEvents.recipes(event => {
     .itemIn("1x forestry:pollen_cluster")
     .fluidIn("forestry:honey", 500)
     .itemOut("1x forestry:scented_paneling");
-
-  event.recipes.modern_industrialization.assembler(16, 400)
-    .itemIn("3x #c:ingots/iron")
-    .itemIn("1x #c:ingots/bronze")
-    .fluidIn("minecraft:water", 1000)
-    .itemOut("1x forestry:soldering_iron");
+  
+  event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("1x minecraft:lever")
+    .itemIn("2x modern_industrialization:kanthal_wire")
+    .itemIn("4x modern_industrialization:rubber_sheet")
+    .itemIn("4x modern_industrialization:kanthal_plate")
+    .itemIn("2x modern_industrialization:steel_rod")
+    .itemIn("4x modern_industrialization:resistor")
+    .itemOut("1x forestry:soldering_iron")
 
   event.recipes.modern_industrialization.assembler(16, 100)
     .itemIn("4x forestry:silk_wisp")
