@@ -30,6 +30,18 @@ trackKits.forEach(item => {
 });
 
 event.replaceInput(
+  { output: 'forestry:mailbox' },
+  'forestry:sturdy_casing',
+  'modern_industrialization:bronze_machine_casing'
+)
+
+event.replaceInput(
+  { output: 'forestry:bottler' },
+  'forestry:sturdy_casing',
+  'modern_industrialization:basic_machine_hull'
+)
+    
+event.replaceInput(
   { output: 'forestry:genetic_filter' },
   '#minecraft:planks',
   'roll_mod:treated_planks'
