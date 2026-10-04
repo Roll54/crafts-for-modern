@@ -1,12 +1,8 @@
-// server_scripts/forestry/packer.js
-// Forestry crates: 9 предметів + forestry:crate -> ящик (modern_industrialization:packer)
-
 ServerEvents.recipes(event => {
   const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
   if (!IS_FORESTRY_LOADED) return;
   console.info('[forestry packer] loaded');
 
-  // [що пакуємо, ящик з цим предметом]
   const CRATES = [
     ['#c:gems/apatite', 'forestry:crated_apatite'],
     ['forestry:ash', 'forestry:crated_ash'],
