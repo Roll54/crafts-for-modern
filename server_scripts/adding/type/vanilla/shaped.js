@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('forestry:trade_station'),
+    [
+        'AAA',
+        'ABA',
+        'CDC'
+    ],
+    {
+        B: 'modern_industrialization:bronze_machine_casing',
+        C: 'minecraft:chest',
+        D: 'forestry:basic_circuit_board',
+        A: 'modern_industrialization:steel_plate'
+    }
+)
+    
+event.shaped(
     Item.of('forestry:escritoire'),
     [
         'ABC',
