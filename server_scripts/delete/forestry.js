@@ -33,7 +33,18 @@ ServerEvents.recipes(event => {
             'forestry:bronze_ingot',
             'forestry:thermionic_fabricator',
             'forestry:sturdy_casing',
-            'forestry:solar_cell'
+            'forestry:solar_cell',
+            'forestry:pickaxe_kit',
+            'forestry:shovel_kit',
+            'forestry:axe_kit',
+            'forestry:sword_kit',
+            'forestry:hoe_kit',
+            'forestry:survivalists_pickaxe',
+            'forestry:survivalists_shovel',
+            'forestry:survivalists_axe',
+            'forestry:survivalists_axe',
+            'forestry:survivalists_hoe',
+            'forestry:silicon_block'
         ].forEach(id => event.remove({ output: id }));
 
         [
