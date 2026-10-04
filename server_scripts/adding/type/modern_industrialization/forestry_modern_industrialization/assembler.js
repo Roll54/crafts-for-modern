@@ -5,6 +5,7 @@ const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
 
 ServerEvents.recipes(event => {
   if (!IS_FORESTRY_LOADED) return;
+  console.info('[FORESTRY_ASSEMBLER_V2] loaded');
 
   // ----------------------- налаштування -----------------------
   const CARPENTER_EU = 16;
@@ -19,16 +20,18 @@ ServerEvents.recipes(event => {
   const HONEY = 'forestry:honey';
 
   // ----------------------- хелпери -----------------------
-  const asm = (eu, ticks, ins, fluid, out) => {
+  // Увага: Rhino (KubeJS) не любить const/let всередині try та вкладених функцій -> тут лише var
+  function asm(eu, ticks, ins, fluid, out) {
+    var recipe;
     try {
-      const r = event.recipes.modern_industrialization.assembler(eu, ticks);
-      ins.forEach(i => r.itemIn(i));
-      if (fluid) r.fluidIn(fluid[0], fluid[1]);
-      r.itemOut(out);
+      recipe = event.recipes.modern_industrialization.assembler(eu, ticks);
+      for (var i = 0; i < ins.length; i++) recipe.itemIn(ins[i]);
+      if (fluid) recipe.fluidIn(fluid[0], fluid[1]);
+      recipe.itemOut(out);
     } catch (e) {
       console.error('[forestry -> assembler] ' + out + ': ' + e);
     }
-  };
+  }
   const carpenter = (time, fluid, ins, out) => asm(CARPENTER_EU, carpenterTicks(time), ins, fluid, out);
   const fabricator = (fluid, ins, out) => asm(FABRICATOR_EU, FABRICATOR_TICKS, ins, fluid, out);
 
@@ -194,9 +197,8 @@ ServerEvents.recipes(event => {
   ];
   FIREPROOF_FORMS.forEach(({ form, count, input }) => {
     VANILLA_WOODS.concat(FORESTRY_WOODS).forEach(wood => {
-      const vanilla = VANILLA_WOODS.includes(wood);
       fabricator([GLASS, 500],
-        [count + 'x ' + input(wood, vanilla), '1x forestry:refractory_wax'],
+        [count + 'x ' + input(wood, VANILLA_WOODS.includes(wood)), '1x forestry:refractory_wax'],
         count + 'x forestry:' + wood + '_fireproof_' + form);
     });
   });
