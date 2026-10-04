@@ -1,9 +1,8 @@
 // server_scripts/forestry/assembler.js
 // Forestry: carpenter + thermionic_fabricator (+ metal_plating) -> modern_industrialization:assembler
 
-const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
-
 ServerEvents.recipes(event => {
+  const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
   if (!IS_FORESTRY_LOADED) return;
   console.info('[forestry assembler] loaded (v3, without crate packing)');
 
