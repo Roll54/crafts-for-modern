@@ -253,15 +253,6 @@ ServerEvents.recipes(event => {
   // THERMIONIC FABRICATOR: сонячна комірка та електронні лампи
   // ============================================================
 
-  // solar_cell
-  event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("1x #c:nuggets/tin")
-    .itemIn("2x #c:gems/lapis")
-    .itemIn("1x forestry:phosphorescent_jelly")
-    .itemIn("1x #c:silicon")
-    .fluidIn("forestry:liquid_glass", 50)
-    .itemOut("1x forestry:solar_cell");
-
   // electron_tubes/amber
   event.recipes.modern_industrialization.assembler(16, 200)
     .itemIn("5x #c:gems/amber")
