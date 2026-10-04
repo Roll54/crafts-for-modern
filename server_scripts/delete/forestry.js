@@ -1,10 +1,8 @@
 ServerEvents.recipes(event => {
     const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
 
-    const removeItems = [];
-
     if (IS_FORESTRY_LOADED) {
-        removeItems.push(
+        const removedRecipes = [
             'forestry:worktable',
             'forestry:peat_engine',
             'forestry:biogas_engine',
@@ -37,27 +35,17 @@ ServerEvents.recipes(event => {
             'forestry:bronze_ingot',
             'forestry:thermionic_fabricator',
             'forestry:sturdy_casing'
-        );
-    }
-
-    removeItems.forEach(item => {
-        event.remove({ output: item });
-    });
-
-    if (IS_FORESTRY_LOADED) {
-        const forestryRecipeTypes = [
-            "forestry:carpenter",
-            "forestry:thermionic_fabricator",
-            "forestry:squeezer",
-            "forestry:fermenter",
-            "forestry:still",
-            "forestry:moistener",
-            "forestry:bottler",
-            "forestry:smelter"
         ];
 
-        forestryRecipeTypes.forEach(type => {
-            event.remove({ type: type });
-        });
+        removedRecipes.forEach(id => event.remove({ output: id }));
+
+        event.remove({ type: "forestry:carpenter" });
+        event.remove({ type: "forestry:thermionic_fabricator" });
+        event.remove({ type: "forestry:squeezer" });
+        event.remove({ type: "forestry:fermenter" });
+        event.remove({ type: "forestry:still" });
+        event.remove({ type: "forestry:moistener" });
+        event.remove({ type: "forestry:bottler" });
+        event.remove({ type: "forestry:smelter" });
     }
 });
