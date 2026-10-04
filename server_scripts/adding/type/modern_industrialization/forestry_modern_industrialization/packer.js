@@ -1,9 +1,8 @@
 // server_scripts/forestry/packer.js
 // Forestry crates: 9 предметів + forestry:crate -> ящик (modern_industrialization:packer)
 
-const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
-
 ServerEvents.recipes(event => {
+  const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
   if (!IS_FORESTRY_LOADED) return;
   console.info('[forestry packer] loaded');
 
