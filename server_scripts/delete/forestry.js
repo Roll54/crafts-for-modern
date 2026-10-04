@@ -32,7 +32,8 @@ ServerEvents.recipes(event => {
             'forestry:builder_backpack',
             'forestry:bronze_ingot',
             'forestry:thermionic_fabricator',
-            'forestry:sturdy_casing'
+            'forestry:sturdy_casing',
+            'forestry:solar_cell'
         ].forEach(id => event.remove({ output: id }));
 
         [
