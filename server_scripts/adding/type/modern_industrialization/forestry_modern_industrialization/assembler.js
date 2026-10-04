@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 
   // carton
   event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("4x forestry:wood_pulp")
+    .itemIn("4x modern_industrialization:wood_pulp")
     .fluidIn("minecraft:water", 1000)
     .itemOut("2x forestry:carton");
 
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
 
   // paper
   event.recipes.modern_industrialization.assembler(16, 100)
-    .itemIn("2x forestry:wood_pulp")
+    .itemIn("2x modern_industrialization:wood_pulp")
     .fluidIn("minecraft:water", 250)
     .itemOut("1x minecraft:paper");
 
@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
   event.recipes.modern_industrialization.assembler(16, 100)
     .itemIn("1x #minecraft:logs")
     .fluidIn("minecraft:water", 250)
-    .itemOut("4x forestry:wood_pulp");
+    .itemOut("4x modern_industrialization:wood_pulp");
 
   // woven_silk
   event.recipes.modern_industrialization.assembler(16, 100)
