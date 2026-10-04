@@ -5,7 +5,7 @@ const IS_FORESTRY_LOADED = Platform.isLoaded('forestry');
 
 ServerEvents.recipes(event => {
   if (!IS_FORESTRY_LOADED) return;
-  console.info('[FORESTRY_ASSEMBLER_V2] loaded');
+  console.info('[forestry assembler] loaded (v3, without crate packing)');
 
   // ----------------------- налаштування -----------------------
   const CARPENTER_EU = 16;
@@ -73,97 +73,6 @@ ServerEvents.recipes(event => {
   carpenter(80, [WATER, 1000], ['6x #c:dusts/redstone', '3x #c:ingots/gold'], '1x forestry:intricate_circuit_board[minecraft:custom_data={T:3}]'); // circuits/intricate
   carpenter(80, [WATER, 1000], ['6x #c:dusts/redstone', '3x #c:ingots/iron'], '1x forestry:refined_circuit_board[minecraft:custom_data={T:2}]'); // circuits/refined
   carpenter(20, [WATER, 1000], ['4x #minecraft:logs'], '24x forestry:crate'); // crates/empty
-
-  // Ящики: [що пакуємо, ящик, що отримуємо при розпаковці]
-  const CRATES = [
-    ['#c:gems/apatite', 'forestry:crated_apatite', 'forestry:apatite'],
-    ['forestry:ash', 'forestry:crated_ash', 'forestry:ash'],
-    ['forestry:beeswax', 'forestry:crated_beeswax', 'forestry:beeswax'],
-    ['forestry:bog_earth', 'forestry:crated_bog_earth', 'forestry:bog_earth'],
-    ['#c:ingots/bronze', 'forestry:crated_bronze', 'forestry:bronze_ingot'],
-    ['forestry:cocoa_comb', 'forestry:crated_cocoa_comb', 'forestry:cocoa_comb'],
-    ['forestry:crystalline_pollen_cluster', 'forestry:crated_pollen_cluster_crystalline', 'forestry:crystalline_pollen_cluster'],
-    ['forestry:dripping_comb', 'forestry:crated_dripping_comb', 'forestry:dripping_comb'],
-    ['forestry:fertilizer', 'forestry:crated_fertilizer_compound', 'forestry:fertilizer'],
-    ['forestry:frozen_comb', 'forestry:crated_frozen_comb', 'forestry:frozen_comb'],
-    ['forestry:honey_comb', 'forestry:crated_honey_comb', 'forestry:honey_comb'],
-    ['forestry:honeydew', 'forestry:crated_honeydew', 'forestry:honeydew'],
-    ['forestry:humus', 'forestry:crated_humus', 'forestry:humus'],
-    ['forestry:kaolin_comb', 'forestry:crated_kaolin_comb', 'forestry:kaolin_comb'],
-    ['forestry:mellow_comb', 'forestry:crated_mellow_comb', 'forestry:mellow_comb'],
-    ['forestry:mossy_comb', 'forestry:crated_mossy_comb', 'forestry:mossy_comb'],
-    ['forestry:mulch', 'forestry:crated_mulch', 'forestry:mulch'],
-    ['forestry:mysterious_comb', 'forestry:crated_mysterious_comb', 'forestry:mysterious_comb'],
-    ['forestry:parched_comb', 'forestry:crated_parched_comb', 'forestry:parched_comb'],
-    ['forestry:peat', 'forestry:crated_peat', 'forestry:peat'],
-    ['forestry:phosphor', 'forestry:crated_phosphor', 'forestry:phosphor'],
-    ['forestry:pollen_cluster', 'forestry:crated_pollen_cluster_normal', 'forestry:pollen_cluster'],
-    ['forestry:powdery_comb', 'forestry:crated_powdery_comb', 'forestry:powdery_comb'],
-    ['forestry:propolis', 'forestry:crated_propolis', 'forestry:propolis'],
-    ['forestry:refractory_wax', 'forestry:crated_refractory_wax', 'forestry:refractory_wax'],
-    ['forestry:royal_jelly', 'forestry:crated_royal_jelly', 'forestry:royal_jelly'],
-    ['forestry:sculken_comb', 'forestry:crated_sculken_comb', 'forestry:sculken_comb'],
-    ['forestry:silky_comb', 'forestry:crated_silky_comb', 'forestry:silky_comb'],
-    ['forestry:simmering_comb', 'forestry:crated_simmering_comb', 'forestry:simmering_comb'],
-    ['forestry:spongy_comb', 'forestry:crated_spongy_comb', 'forestry:spongy_comb'],
-    ['forestry:stringy_comb', 'forestry:crated_stringy_comb', 'forestry:stringy_comb'],
-    ['#c:ingots/tin', 'forestry:crated_tin', 'forestry:tin_ingot'],
-    ['forestry:vintage_comb', 'forestry:crated_vintage_comb', 'forestry:vintage_comb'],
-    ['forestry:wheaten_comb', 'forestry:crated_wheaten_comb', 'forestry:wheaten_comb'],
-    ['minecraft:acacia_log', 'forestry:crated_acacia_log', 'minecraft:acacia_log'],
-    ['minecraft:acacia_sapling', 'forestry:crated_acacia_sapling', 'minecraft:acacia_sapling'],
-    ['minecraft:andesite', 'forestry:crated_andesite', 'minecraft:andesite'],
-    ['minecraft:apple', 'forestry:crated_apple', 'minecraft:apple'],
-    ['#c:crops/beetroot', 'forestry:crated_beetroot', 'minecraft:beetroot'],
-    ['minecraft:birch_log', 'forestry:crated_birch_log', 'minecraft:birch_log'],
-    ['minecraft:birch_sapling', 'forestry:crated_birch_sapling', 'minecraft:birch_sapling'],
-    ['minecraft:bricks', 'forestry:crated_bricks', 'minecraft:bricks'],
-    ['minecraft:cactus', 'forestry:crated_cactus', 'minecraft:cactus'],
-    ['#c:crops/carrot', 'forestry:crated_carrot', 'minecraft:carrot'],
-    ['minecraft:charcoal', 'forestry:crated_charcoal', 'minecraft:charcoal'],
-    ['minecraft:clay_ball', 'forestry:crated_clay_ball', 'minecraft:clay_ball'],
-    ['minecraft:coal', 'forestry:crated_coal', 'minecraft:coal'],
-    ['#c:cobblestones', 'forestry:crated_cobblestone', 'minecraft:cobblestone'],
-    ['minecraft:cookie', 'forestry:crated_cookie', 'minecraft:cookie'],
-    ['#c:ingots/copper', 'forestry:crated_copper', 'minecraft:copper_ingot'],
-    ['minecraft:dark_oak_log', 'forestry:crated_dark_oak_log', 'minecraft:dark_oak_log'],
-    ['minecraft:dark_oak_sapling', 'forestry:crated_dark_oak_sapling', 'minecraft:dark_oak_sapling'],
-    ['minecraft:dark_prismarine', 'forestry:crated_dark_prismarine', 'minecraft:dark_prismarine'],
-    ['minecraft:diorite', 'forestry:crated_diorite', 'minecraft:diorite'],
-    ['minecraft:dirt', 'forestry:crated_dirt', 'minecraft:dirt'],
-    ['#c:dusts/glowstone', 'forestry:crated_glowstone', 'minecraft:glowstone_dust'],
-    ['minecraft:granite', 'forestry:crated_granite', 'minecraft:granite'],
-    ['minecraft:grass_block', 'forestry:crated_grass_block', 'minecraft:grass_block'],
-    ['#c:gravels', 'forestry:crated_gravel', 'minecraft:gravel'],
-    ['minecraft:jungle_log', 'forestry:crated_jungle_log', 'minecraft:jungle_log'],
-    ['minecraft:jungle_sapling', 'forestry:crated_jungle_sapling', 'minecraft:jungle_sapling'],
-    ['#c:gems/lapis', 'forestry:crated_lapis', 'minecraft:lapis_lazuli'],
-    ['minecraft:mycelium', 'forestry:crated_mycelium', 'minecraft:mycelium'],
-    ['minecraft:nether_bricks', 'forestry:crated_nether_bricks', 'minecraft:nether_bricks'],
-    ['#c:crops/nether_wart', 'forestry:crated_nether_wart', 'minecraft:nether_wart'],
-    ['#c:netherracks', 'forestry:crated_netherrack', 'minecraft:netherrack'],
-    ['minecraft:oak_log', 'forestry:crated_oak_log', 'minecraft:oak_log'],
-    ['minecraft:oak_sapling', 'forestry:crated_oak_sapling', 'minecraft:oak_sapling'],
-    ['#c:obsidians', 'forestry:crated_obsidian', 'minecraft:obsidian'],
-    ['#c:crops/potato', 'forestry:crated_potato', 'minecraft:potato'],
-    ['minecraft:prismarine', 'forestry:crated_prismarine', 'minecraft:prismarine'],
-    ['minecraft:prismarine_bricks', 'forestry:crated_prismarine_bricks', 'minecraft:prismarine_bricks'],
-    ['minecraft:red_sand', 'forestry:crated_red_sand', 'minecraft:red_sand'],
-    ['#c:dusts/redstone', 'forestry:crated_redstone', 'minecraft:redstone'],
-    ['minecraft:sand', 'forestry:crated_sand', 'minecraft:sand'],
-    ['#c:sandstone/blocks', 'forestry:crated_sandstone', 'minecraft:sandstone'],
-    ['minecraft:soul_sand', 'forestry:crated_soul_sand', 'minecraft:soul_sand'],
-    ['minecraft:spruce_log', 'forestry:crated_spruce_log', 'minecraft:spruce_log'],
-    ['minecraft:spruce_sapling', 'forestry:crated_spruce_sapling', 'minecraft:spruce_sapling'],
-    ['minecraft:stone', 'forestry:crated_stone', 'minecraft:stone'],
-    ['minecraft:sugar_cane', 'forestry:crated_sugar_cane', 'minecraft:sugar_cane'],
-    ['#c:crops/wheat', 'forestry:crated_wheat', 'minecraft:wheat'],
-    ['minecraft:wheat_seeds', 'forestry:crated_seeds', 'minecraft:wheat_seeds'],
-  ];
-  CRATES.forEach(([item, crated, unpacked]) => {
-    carpenter(5, [WATER, 100], ['9x ' + item, '1x forestry:crate'], '1x ' + crated);
-    carpenter(5, null, ['1x ' + crated], '9x ' + unpacked);
-  });
 
   // ======================= FABRICATOR =======================
   // fabricator(fluid, ingredients, output)
