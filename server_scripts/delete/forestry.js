@@ -44,7 +44,14 @@ ServerEvents.recipes(event => {
             'forestry:survivalists_axe',
             'forestry:survivalists_axe',
             'forestry:survivalists_hoe',
-            'forestry:silicon_block'
+            'forestry:silicon_block',
+            'forestry:obsidian_electron_tube',
+            'forestry:iron_electron_tube',
+            'forestry:ender_electron_tube',
+            'forestry:silicon_electron_tube',
+            'forestry:tin_electron_tube',
+            'forestry:bronze_electron_tube',
+            'forestry:amber_electron_tube'
         ].forEach(id => event.remove({ output: id }));
 
         [
