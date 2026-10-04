@@ -52,7 +52,8 @@ ServerEvents.recipes(event => {
             'forestry:tin_electron_tube',
             'forestry:bronze_electron_tube',
             'forestry:amber_electron_tube',
-            'forestry:trade_station'
+            'forestry:trade_station',
+            'forestry:analyzer'
         ].forEach(id => event.remove({ output: id }));
 
         [
