@@ -1,6 +1,22 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('forestry:escritoire'),
+    [
+        'ABC',
+        'DDD',
+        'E E'
+    ],
+    {
+        E: 'roll_mod:treated_planks',
+        B: 'minecraft:ink_sac',
+        D: 'roll_mod:treated_plate',
+        A: 'minecraft:glass_bottle',
+        C: 'minecraft:feather'
+    }
+)
+    
+event.shaped(
     Item.of('railcraft:tunnel_bore'),
     [
         'AAA',
