@@ -34,7 +34,9 @@ ServerEvents.recipes(event => {
             'forestry:woven_miner_backpack',
             'forestry:woven_digger_backpack',
             'forestry:builder_backpack',
-            'forestry:bronze_ingot'
+            'forestry:bronze_ingot',
+            'forestry:thermionic_fabricator',
+            'forestry:sturdy_casing'
         );
     }
 
@@ -43,7 +45,7 @@ ServerEvents.recipes(event => {
     });
 
     if (IS_FORESTRY_LOADED) {
-        const forestryTypes = [
+        const forestryRecipeTypes = [
             "forestry:carpenter",
             "forestry:thermionic_fabricator",
             "forestry:squeezer",
@@ -54,7 +56,7 @@ ServerEvents.recipes(event => {
             "forestry:smelter"
         ];
 
-        forestryTypes.forEach(type => {
+        forestryRecipeTypes.forEach(type => {
             event.remove({ type: type });
         });
     }
