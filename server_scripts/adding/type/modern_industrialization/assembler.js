@@ -558,9 +558,8 @@ event.recipes.modern_industrialization.assembler(16, 200)
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x ae2:logic_processor")
-  .itemIn("4x ae2:fluix_smart_cable")
   .itemIn("1x minecraft:crafting_table")
-  .itemIn("4x modern_industrialization:electrum_plate")
+  .itemIn("2x modern_industrialization:electrum_plate")
   .itemIn("4x modern_industrialization:aluminum_plate")
   .itemOut("1x ae2:pattern_provider")
 
