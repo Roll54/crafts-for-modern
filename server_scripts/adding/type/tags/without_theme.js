@@ -1,5 +1,12 @@
 ServerEvents.tags('item', event => {
 
+    event.add('functionalstorage:drawer_storage_denylist', [
+        '#sophisticatedbackpacks:backpacks',
+        '#minecraft:shulker_boxes',
+        '#functionalstorage:drawers',
+        '#modern_industrialization:barrels'
+    ]);
+    
     event.add('roll_mod:metalbarrels_upgrades', [
         'metalbarrels:wood_to_crystal',
         'metalbarrels:copper_to_crystal',
