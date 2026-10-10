@@ -30,6 +30,12 @@ trackKits.forEach(item => {
 });
 
 event.replaceInput(
+{},
+'forestry:impregnated_casing',
+'modern_industrialization:bronze_machine_casing'
+)
+    
+event.replaceInput(
   { output: 'forestry:mailbox' },
   'forestry:sturdy_casing',
   'modern_industrialization:bronze_machine_casing'
