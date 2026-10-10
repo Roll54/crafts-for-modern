@@ -1,5 +1,10 @@
 ServerEvents.tags('item', event => {
 
+    event.add('roll_mod:netherrack_craft_dust', [
+        'modern_industrialization:ruby_tiny_dust',
+        'modern_industrialization:redstone_tiny_dust'
+    ]);
+    
     event.add('functionalstorage:drawer_storage_denylist', [
         '#sophisticatedbackpacks:backpacks',
         '#minecraft:shulker_boxes',
