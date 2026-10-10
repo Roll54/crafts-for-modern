@@ -4,7 +4,6 @@ ServerEvents.recipes(event => {
   console.info('[forestry packer] loaded');
 
   const CRATES = [
-    ['#c:gems/apatite', 'forestry:crated_apatite'],
     ['forestry:ash', 'forestry:crated_ash'],
     ['forestry:beeswax', 'forestry:crated_beeswax'],
     ['forestry:bog_earth', 'forestry:crated_bog_earth'],
