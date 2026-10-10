@@ -89,38 +89,38 @@ ServerEvents.recipes(event => {
     ['minecraft:wheat_seeds', 'forestry:crated_seeds'],
   ];
 
-    event.recipes.modern_industrialization.packer(16, 100)
+  event.recipes.modern_industrialization.packer(16, 100)
     .itemIn("2x forestry:ash")
-    .fluidIn("minecraft:water", 50)
+    .itemIn("1x minecraft:water_bucket")
     .itemOut("1x forestry:ash_brick");
 
   event.recipes.modern_industrialization.packer(16, 100)
     .itemIn("4x minecraft:dirt")
     .itemIn("4x #c:sands")
     .itemIn("1x forestry:mulch")
-    .fluidIn("minecraft:water", 1000)
+    .itemIn("1x minecraft:water_bucket")
     .itemOut("8x forestry:bog_earth");
 
   event.recipes.modern_industrialization.packer(16, 100)
     .itemIn("4x #c:sawdust")
-    .fluidIn("minecraft:water", 200)
+    .itemIn("1x minecraft:water_bucket")
     .itemOut("4x forestry:cork");
 
   event.recipes.modern_industrialization.packer(16, 100)
     .itemIn("8x minecraft:dirt")
     .itemIn("1x forestry:mulch")
-    .fluidIn("minecraft:water", 1000)
+    .itemIn("1x minecraft:water_bucket")
     .itemOut("9x forestry:humus");
 
   event.recipes.modern_industrialization.packer(16, 100)
     .itemIn("3x #minecraft:wooden_slabs")
     .itemIn("3x #c:sawdust")
-    .fluidIn("minecraft:water", 100)
+    .itemIn("1x minecraft:water_bucket")
     .itemOut("24x forestry:plywood");
 
   event.recipes.modern_industrialization.packer(16, 200)
     .itemIn("4x minecraft:grass_block")
-    .fluidIn("minecraft:water", 100)
+    .itemIn("1x minecraft:water_bucket")
     .itemOut("4x forestry:turf_block");
 
   CRATES.forEach(row => {
