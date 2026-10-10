@@ -4,11 +4,20 @@ ServerEvents.tags('item', event => {
         'modern_industrialization:ruby_tiny_dust',
         'modern_industrialization:redstone_tiny_dust'
     ]);
+
+    event.add('sophisticatedbackpacks:backpacks', [
+        'sophisticatedbackpacks:backpack',
+        'sophisticatedbackpacks:copper_backpack',
+        'sophisticatedbackpacks:iron_backpack',
+        'sophisticatedbackpacks:gold_backpack',
+        'sophisticatedbackpacks:diamond_backpack',
+        'sophisticatedbackpacks:netherite_backpack'
+    ]);
     
     event.add('functionalstorage:drawer_storage_denylist', [
         '#sophisticatedbackpacks:backpacks',
-        '#minecraft:shulker_boxes',
-        '#functionalstorage:drawers',
+        '#c:shulker_boxes',
+        '#functionalstorage:drawer',
         '#modern_industrialization:barrels'
     ]);
     
