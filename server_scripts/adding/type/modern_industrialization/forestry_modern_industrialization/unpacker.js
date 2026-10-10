@@ -4,11 +4,10 @@ ServerEvents.recipes(event => {
   console.info('[forestry unpacker] loaded');
 
   const CRATES = [
-    ['forestry:crated_apatite', 'forestry:apatite'],
     ['forestry:crated_ash', 'forestry:ash'],
     ['forestry:crated_beeswax', 'forestry:beeswax'],
     ['forestry:crated_bog_earth', 'forestry:bog_earth'],
-    ['forestry:crated_bronze', 'forestry:bronze_ingot'],
+    ['forestry:crated_bronze', 'modern_industrialization:bronze_ingot'],
     ['forestry:crated_cocoa_comb', 'forestry:cocoa_comb'],
     ['forestry:crated_pollen_cluster_crystalline', 'forestry:crystalline_pollen_cluster'],
     ['forestry:crated_dripping_comb', 'forestry:dripping_comb'],
@@ -35,7 +34,7 @@ ServerEvents.recipes(event => {
     ['forestry:crated_simmering_comb', 'forestry:simmering_comb'],
     ['forestry:crated_spongy_comb', 'forestry:spongy_comb'],
     ['forestry:crated_stringy_comb', 'forestry:stringy_comb'],
-    ['forestry:crated_tin', 'forestry:tin_ingot'],
+    ['forestry:crated_tin', 'modern_industrialization:tin_ingot'],
     ['forestry:crated_vintage_comb', 'forestry:vintage_comb'],
     ['forestry:crated_wheaten_comb', 'forestry:wheaten_comb'],
     ['forestry:crated_acacia_log', 'minecraft:acacia_log'],
