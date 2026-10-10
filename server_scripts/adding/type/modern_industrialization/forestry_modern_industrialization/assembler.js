@@ -108,11 +108,6 @@ ServerEvents.recipes(event => {
     .itemOut("1x forestry:escritoire");
 
   event.recipes.modern_industrialization.assembler(16, 500)
-    .itemIn("8x #minecraft:logs")
-    .fluidIn("forestry:seed_oil", 250)
-    .itemOut("1x forestry:impregnated_casing");
-
-  event.recipes.modern_industrialization.assembler(16, 500)
     .itemIn("2x #minecraft:logs")
     .fluidIn("forestry:seed_oil", 100)
     .itemOut("2x forestry:impregnated_stick");
