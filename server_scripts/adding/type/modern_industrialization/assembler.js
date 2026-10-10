@@ -1391,7 +1391,6 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemOut("1x createcybernetics:basecyberware_linearframe")
 
 event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("4x modern_industrialization:phosphorus_dust")
   .itemIn("4x modern_industrialization:chromium_plate")
   .itemIn("2x minecraft:prismarine_crystals")
   .itemIn("8x modern_industrialization:electrum_fine_wire")
@@ -1518,7 +1517,6 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("modern_industrialization:electronic_circuit")
   .itemIn("8x modern_industrialization:electrum_fine_wire")
   .itemIn("4x modern_industrialization:chromium_plate")
-  .itemIn("4x modern_industrialization:phosphorus_dust")
   .itemOut("createcybernetics:eyeupgrades_nightvision");
 
 event.recipes.modern_industrialization.assembler(16, 200)
@@ -1527,7 +1525,6 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("modern_industrialization:electronic_circuit")
   .itemIn("8x modern_industrialization:electrum_fine_wire")
   .itemIn("4x modern_industrialization:chromium_plate")
-  .itemIn("4x modern_industrialization:phosphorus_dust")
   .itemOut("roll_mod:crop_analyzer_module");
 
 event.recipes.modern_industrialization.assembler(16, 200)
