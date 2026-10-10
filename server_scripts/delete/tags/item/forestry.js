@@ -6,8 +6,8 @@ ServerEvents.tags('item', event => {
   event.remove('c:gears/tin', 'forestry:tin_gear')
   event.remove('c:gears/iron', 'forestry:iron_gear')
 
-  event.remove('c:ingots/steel', 'forestry:tin_ingot')
-  event.remove('c:ingots/nuggets', 'forestry:tin_nugget')
+  event.remove('c:ingots/tin', 'forestry:tin_ingot')
+  event.remove('c:nuggets/tin', 'forestry:tin_nugget')
   
   event.remove('c:silicon', 'forestry:silicon')
 })
