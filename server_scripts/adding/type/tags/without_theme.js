@@ -18,7 +18,11 @@ ServerEvents.tags('item', event => {
         '#sophisticatedbackpacks:backpacks',
         '#c:shulker_boxes',
         '#functionalstorage:drawer',
-        '#modern_industrialization:barrels'
+        '#modern_industrialization:barrels',
+        'functionalstorage:compacting_drawer',
+        'functionalstorage:compacting_framed_drawer',
+        'functionalstorage:simple_compacting_drawer',
+        'functionalstorage:framed_simple_compacting_drawer'
     ]);
     
     event.add('roll_mod:metalbarrels_upgrades', [
