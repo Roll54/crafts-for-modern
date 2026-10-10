@@ -1667,7 +1667,7 @@ ServerEvents.recipes(event => {
     .itemOut("8x forestry:metal_plating_blue");
 
   event.recipes.modern_industrialization.assembler(16, 200)
-    .itemIn("8x forestry:bronze_ingot")
+    .itemIn("8x #c:ingots/bronze")
     .fluidIn("forestry:wax", 50)
     .itemOut("8x forestry:metal_plating_bronze");
 
