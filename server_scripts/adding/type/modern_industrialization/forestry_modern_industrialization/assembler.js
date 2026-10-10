@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     .itemIn("1x ae2:quartz_glass")
     .itemIn("16x modern_industrialization:cupronickel_wire")
     .fluidIn("extended_industrialization:blazing_essence", 100)
-    .itemOut("1x forestry:apatite_electron_tube")
+    .itemOut("1x forestry:apatine_electron_tube")
 
   event.recipes.modern_industrialization.assembler(16, 200)
     .itemIn("1x ae2:quartz_glass")
