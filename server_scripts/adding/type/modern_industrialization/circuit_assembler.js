@@ -640,7 +640,13 @@ event.recipes.modern_industrialization.circuit_assembler(32, 200)
 .itemIn("1x roll_mod:lapotron_large_crystal")
 .itemOut("1x scannable_unofficial:range_module")
 
-
+event.recipes.modern_industrialization.circuit_assembler(32, 600)
+.fluidIn("2000x modern_industrialization:hydrofluoric_acid")
+.itemIn("16x modern_industrialization:tantalum_fine_wire")
+.itemIn("16x modern_industrialization:rhodium_fine_wire")
+.itemIn("4x roll_mod:carbon_fiber")
+.itemIn("1x roll_mod:blue_wafer")
+.itemOut("16x modern_industrialization:op_amp")
 
 
 

@@ -37,9 +37,9 @@ ServerEvents.recipes(event => {
 
             main_multiplier: 2,
 
-            macerator_byproduct: "minecraft:quartz",
+            macerator_byproduct: "roll_mod:flint_dust",
             centrifuge_byproduct: "roll_mod:redstone_dust",
-            washer_byproduct: "roll_mod:raw_monazite"
+            washer_byproduct: "roll_mod:monazite_dust"
         },
         {
             ore_name: "magnetite",
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:fluorite_dust",
     centrifuge_byproduct: "roll_mod:apatite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "galena",
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:pyrolusite_dust",
     centrifuge_byproduct: "roll_mod:sphalerite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "chromite",
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
 
     main_multiplier: 2,
 
-    macerator_byproduct: "minecraft:quartz",
+    macerator_byproduct: "roll_mod:flint_dust",
     centrifuge_byproduct: "roll_mod:mica_dust",
     washer_byproduct: "roll_mod:fluorite_dust"
 },
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:fluorite_dust",
     centrifuge_byproduct: "minecraft:lapis_lazuli",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "tetrahedrite",
@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:pyrite_dust",
     centrifuge_byproduct: "roll_mod:tetrahedrite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "rutile",
@@ -280,7 +280,7 @@ ServerEvents.recipes(event => {
     main_multiplier: 2,
 
     macerator_byproduct: "roll_mod:fluorite_dust",
-    centrifuge_byproduct: "minecraft:quartz",
+    centrifuge_byproduct: "roll_mod:flint_dust",
     washer_byproduct: "roll_mod:hematite_dust"
 },
 {
@@ -291,7 +291,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:fluorite_dust",
     centrifuge_byproduct: "roll_mod:mica_dust",
-    washer_byproduct: "roll_mod:raw_monazite"
+    washer_byproduct: "roll_mod:monazite_dust"
 },
 {
     ore_name: "chalcocite",
@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:chalcopyrite_dust",
     centrifuge_byproduct: "roll_mod:bornite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "bornite",
@@ -311,7 +311,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:chalcopyrite_dust",
     centrifuge_byproduct: "roll_mod:chalcocite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "sulfur",
@@ -339,9 +339,9 @@ ServerEvents.recipes(event => {
 
     main_multiplier: 2,
 
-    macerator_byproduct: "minecraft:quartz",
+    macerator_byproduct: "roll_mod:flint_dust",
     centrifuge_byproduct: "roll_mod:fluorite_dust",
-    washer_byproduct: "roll_mod:raw_redstone"
+    washer_byproduct: "roll_mod:redstone_dust"
 },
 {
     ore_name: "ruby",
@@ -351,7 +351,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:hematite_dust",
     centrifuge_byproduct: "roll_mod:chromite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "redstone",
@@ -361,7 +361,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:hematite_dust",
     centrifuge_byproduct: "roll_mod:pyrite_dust",
-    washer_byproduct: "roll_mod:raw_ruby"
+    washer_byproduct: "modern_industrialization:neodymium_tiny_dust"
 },
 {
     ore_name: "saltpeter",
@@ -369,9 +369,9 @@ ServerEvents.recipes(event => {
 
     main_multiplier: 4,
 
-    macerator_byproduct: "roll_mod:sulfur_dust",
+    macerator_byproduct: "roll_mod:saltpeter_dust",
     centrifuge_byproduct: "roll_mod:rock_salt_dust",
-    washer_byproduct: "roll_mod:raw_salt"
+    washer_byproduct: "roll_mod:saltpeter_dust"
 },
 {
     ore_name: "emerald",
@@ -391,7 +391,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:lepidolite_dust",
     centrifuge_byproduct: "roll_mod:emerald_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "molybdenum",
@@ -411,7 +411,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:pyrolusite_dust",
     centrifuge_byproduct: "roll_mod:magnetite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "molybdenite",
@@ -421,7 +421,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:chalcopyrite_dust",
     centrifuge_byproduct: "roll_mod:scheelite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "wulfenite",
@@ -441,7 +441,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:molybdenite_dust",
     centrifuge_byproduct: "roll_mod:scheelite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "gold",
@@ -451,7 +451,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:magnetite_dust",
     centrifuge_byproduct: "roll_mod:silver_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "goethite",
@@ -481,7 +481,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:galena_dust",
     centrifuge_byproduct: "roll_mod:silver_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "bauxite",
@@ -491,7 +491,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:goethite_dust",
     centrifuge_byproduct: "roll_mod:hematite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "lepidolite",
@@ -501,7 +501,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:rock_salt_dust",
     centrifuge_byproduct: "roll_mod:salt_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "rock_salt",
@@ -531,7 +531,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:scheelite_dust",
     centrifuge_byproduct: "modern_industrialization:tungsten_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "scheelite",
@@ -541,7 +541,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:tungstate_dust",
     centrifuge_byproduct: "roll_mod:fluorite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "lithium",
@@ -551,7 +551,7 @@ ServerEvents.recipes(event => {
 
     macerator_byproduct: "roll_mod:tungstate_dust",
     centrifuge_byproduct: "roll_mod:scheelite_dust",
-    washer_byproduct: "minecraft:quartz"
+    washer_byproduct: "roll_mod:flint_dust"
 },
 {
     ore_name: "sheldonite",

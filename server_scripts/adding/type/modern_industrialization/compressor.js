@@ -25,20 +25,18 @@ ServerEvents.recipes(event => {
   .itemOut("1x roll_mod:diamond_alloy_plate")
   
   event.recipes.modern_industrialization.compressor(2, 400)
-    .itemIn("ad_astra:ostrum_ingot")
-    .itemOut("ad_astra:ostrum_plate")
+  .itemIn("ad_astra:ostrum_ingot")
+  .itemOut("ad_astra:ostrum_plate")
 
   event.recipes.modern_industrialization.compressor(2, 400)
-    .itemIn("ad_astra:desh_ingot")
-    .itemOut("ad_astra:desh_plate")
+  .itemIn("ad_astra:desh_ingot")
+  .itemOut("ad_astra:desh_plate")
 
   event.recipes.modern_industrialization.compressor(2, 400)
-    .itemIn("ad_astra:calorite_ingot")
-    .itemOut("ad_astra:calorite_plate")
+  .itemIn("ad_astra:calorite_ingot")
+  .itemOut("ad_astra:calorite_plate")
 
-  /* Tech Reborn
-  event.recipes.modern_industrialization.compressor(32, 800)
-  .itemIn("8x kubejs:energium_dust")
-  .itemOut("1x kubejs:energium_tiny_crystal")
-  */
+  event.recipes.modern_industrialization.compressor(2, 200)
+  .itemIn("1x roll_mod:flint_dust")
+  .itemOut("1x minecraft:flint")
 })
