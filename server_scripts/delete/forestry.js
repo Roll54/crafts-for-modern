@@ -62,6 +62,7 @@ ServerEvents.recipes(event => {
 
         [
             'forestry:carpenter',
+            'forestry:centrifuge',
             'forestry:fabricator',
             'forestry:squeezer',
             'forestry:fermenter',
