@@ -149,7 +149,7 @@ ServerEvents.tags('item', event => {
     event.add('createcybernetics:lungs_items', [
         "roll_mod:lungsupgrade_sulfur_resistance",
     ]);    
-    
+
     event.add('createcybernetics:lungs_replacements', [
         "roll_mod:lungsupgrade_sulfur_resistance",
     ]);
@@ -283,4 +283,214 @@ ServerEvents.tags('item', event => {
         'roll_mod:synthetic_glowstone_dust',
     ]);
 
+    event.add('roll_mod:aviation', [
+        'civilian_aviation:pzl37los',
+        'civilian_aviation:pzl37los_green',
+        'civilian_aviation:pzl37los_tan',
+        'civilian_aviation:pzl37los_arctic',
+        'civilian_aviation:pzl37los_brown',
+        'civilian_aviation:pzlp11',
+        'civilian_aviation:pzlp11_brown',
+        'civilian_aviation:pzlp11_green',
+        'civilian_aviation:pzlp11_tan',
+        'civilian_aviation:trimotor_blue',
+        'civilian_aviation:trimotor_black',
+        'civilian_aviation:trimotor_red',
+        'civilian_aviation:trimotor_white',
+        'civilian_aviation:vulcanair_red',
+        'civilian_aviation:vulcanair_blackred',
+        'civilian_aviation:vulcanair_blackyellow',
+        'civilian_aviation:vulcanair_blank',
+        'civilian_aviation:vulcanair_blue',
+        'civilian_aviation:vulcanair_bluestripe',
+        'civilian_aviation:vulcanair_cow',
+        'civilian_aviation:vulcanair_gray',
+        'civilian_aviation:vulcanair_green',
+        'civilian_aviation:vulcanair_orange',
+        'civilian_aviation:vulcanair_police',
+        'civilian_aviation:vulcanair_redsnail',
+        'civilian_aviation:vulcanair_redyellow',
+        'civilian_aviation:vulcanair_seagreen',
+        'civilian_aviation:vulcanair_white',
+        'civilian_aviation:vulcanair_winged',
+        'civilian_aviation:vulcanair_yellow',
+        'civilian_aviation:e500_red',
+        'civilian_aviation:e500_blackred',
+        'civilian_aviation:e500_blue',
+        'civilian_aviation:e500_extravagant',
+        'civilian_aviation:e500_green',
+        'civilian_aviation:e500_rusty',
+        'civilian_aviation:e500_silver',
+        'civilian_aviation:e500_yellow',
+        'civilian_aviation:bell206_blackstripe',
+        'civilian_aviation:bell206_black',
+        'civilian_aviation:bell206_blank',
+        'civilian_aviation:bell206_blue',
+        'civilian_aviation:bell206_brown',
+        'civilian_aviation:bell206_gray',
+        'civilian_aviation:bell206_green',
+        'civilian_aviation:bell206_olive',
+        'civilian_aviation:bell206_orange',
+        'civilian_aviation:bell206_police',
+        'civilian_aviation:bell206_red',
+        'civilian_aviation:bell206_seagreen',
+        'civilian_aviation:bell206_skyblue',
+        'civilian_aviation:bell206_yellow',
+        'civilian_aviation:bell47g_blue',
+        'civilian_aviation:bell47g_olive',
+        'civilian_aviation:bell47g_black',
+        'civilian_aviation:bell47g',
+        'civilian_aviation:comanche_orangebrown',
+        'civilian_aviation:comanche_seagreen',
+        'civilian_aviation:comanche_blank',
+        'civilian_aviation:comanche_red',
+        'civilian_aviation:comanche_blue',
+        'civilian_aviation:comanche_blackredstripe',
+        'civilian_aviation:comanche_yellow',
+        'civilian_aviation:skyhawk_red',
+        'civilian_aviation:skyhawk_coffee',
+        'civilian_aviation:skyhawk_bluestripe',
+        'civilian_aviation:skyhawk_green',
+        'civilian_aviation:skyhawk_blackorange',
+        'civilian_aviation:skyhawk_blackred',
+        'civilian_aviation:skyhawk_blackyellow',
+        'civilian_aviation:skyhawk_blank',
+        'civilian_aviation:skyhawk_blue',
+        'civilian_aviation:skyhawk_bluered',
+        'civilian_aviation:skyhawk_brown',
+        'civilian_aviation:skyhawk_butter',
+        'civilian_aviation:skyhawk_red2',
+        'civilian_aviation:skyhawk_pr_red',
+        'civilian_aviation:skyhawk_pr_coffee',
+        'civilian_aviation:skyhawk_pr_bluestripe',
+        'civilian_aviation:skyhawk_pr_green',
+        'civilian_aviation:skyhawk_pr_butter',
+        'civilian_aviation:skyhawk_pr_red2',
+        'civilian_aviation:skyhawk_pr_blackorange',
+        'civilian_aviation:skyhawk_pr_blackred',
+        'civilian_aviation:skyhawk_pr_blackyellow',
+        'civilian_aviation:skyhawk_pr_blank',
+        'civilian_aviation:skyhawk_pr_blue',
+        'civilian_aviation:skyhawk_pr_bluered',
+        'civilian_aviation:skyhawk_pr_brown'
+    ]);
+
+    event.add('roll_mod:aviation/pzl37los', [
+        'civilian_aviation:pzl37los',
+        'civilian_aviation:pzl37los_green',
+        'civilian_aviation:pzl37los_tan',
+        'civilian_aviation:pzl37los_arctic',
+        'civilian_aviation:pzl37los_brown'
+    ]);
+
+    event.add('roll_mod:aviation/pzlp11', [
+        'civilian_aviation:pzlp11',
+        'civilian_aviation:pzlp11_brown',
+        'civilian_aviation:pzlp11_green',
+        'civilian_aviation:pzlp11_tan'
+    ]);
+
+    event.add('roll_mod:aviation/trimotor', [
+        'civilian_aviation:trimotor_blue',
+        'civilian_aviation:trimotor_black',
+        'civilian_aviation:trimotor_red',
+        'civilian_aviation:trimotor_white'
+    ]);
+
+    event.add('roll_mod:aviation/vulcanair', [
+        'civilian_aviation:vulcanair_red',
+        'civilian_aviation:vulcanair_blackred',
+        'civilian_aviation:vulcanair_blackyellow',
+        'civilian_aviation:vulcanair_blank',
+        'civilian_aviation:vulcanair_blue',
+        'civilian_aviation:vulcanair_bluestripe',
+        'civilian_aviation:vulcanair_cow',
+        'civilian_aviation:vulcanair_gray',
+        'civilian_aviation:vulcanair_green',
+        'civilian_aviation:vulcanair_orange',
+        'civilian_aviation:vulcanair_police',
+        'civilian_aviation:vulcanair_redsnail',
+        'civilian_aviation:vulcanair_redyellow',
+        'civilian_aviation:vulcanair_seagreen',
+        'civilian_aviation:vulcanair_white',
+        'civilian_aviation:vulcanair_winged',
+        'civilian_aviation:vulcanair_yellow'
+    ]);
+
+    event.add('roll_mod:aviation/e500', [
+        'civilian_aviation:e500_red',
+        'civilian_aviation:e500_blackred',
+        'civilian_aviation:e500_blue',
+        'civilian_aviation:e500_extravagant',
+        'civilian_aviation:e500_green',
+        'civilian_aviation:e500_rusty',
+        'civilian_aviation:e500_silver',
+        'civilian_aviation:e500_yellow'
+    ]);
+
+    event.add('roll_mod:aviation/bell206', [
+        'civilian_aviation:bell206_blackstripe',
+        'civilian_aviation:bell206_black',
+        'civilian_aviation:bell206_blank',
+        'civilian_aviation:bell206_blue',
+        'civilian_aviation:bell206_brown',
+        'civilian_aviation:bell206_gray',
+        'civilian_aviation:bell206_green',
+        'civilian_aviation:bell206_olive',
+        'civilian_aviation:bell206_orange',
+        'civilian_aviation:bell206_police',
+        'civilian_aviation:bell206_red',
+        'civilian_aviation:bell206_seagreen',
+        'civilian_aviation:bell206_skyblue',
+        'civilian_aviation:bell206_yellow'
+    ]);
+
+    event.add('roll_mod:aviation/bell47g', [
+        'civilian_aviation:bell47g_blue',
+        'civilian_aviation:bell47g_olive',
+        'civilian_aviation:bell47g_black',
+        'civilian_aviation:bell47g'
+    ]);
+
+    event.add('roll_mod:aviation/comanche', [
+        'civilian_aviation:comanche_orangebrown',
+        'civilian_aviation:comanche_seagreen',
+        'civilian_aviation:comanche_blank',
+        'civilian_aviation:comanche_red',
+        'civilian_aviation:comanche_blue',
+        'civilian_aviation:comanche_blackredstripe',
+        'civilian_aviation:comanche_yellow'
+    ]);
+
+    event.add('roll_mod:aviation/skyhawk', [
+        'civilian_aviation:skyhawk_red',
+        'civilian_aviation:skyhawk_coffee',
+        'civilian_aviation:skyhawk_bluestripe',
+        'civilian_aviation:skyhawk_green',
+        'civilian_aviation:skyhawk_blackorange',
+        'civilian_aviation:skyhawk_blackred',
+        'civilian_aviation:skyhawk_blackyellow',
+        'civilian_aviation:skyhawk_blank',
+        'civilian_aviation:skyhawk_blue',
+        'civilian_aviation:skyhawk_bluered',
+        'civilian_aviation:skyhawk_brown',
+        'civilian_aviation:skyhawk_butter',
+        'civilian_aviation:skyhawk_red2'
+    ]);
+
+    event.add('roll_mod:aviation/skyhawk_pr', [
+        'civilian_aviation:skyhawk_pr_red',
+        'civilian_aviation:skyhawk_pr_coffee',
+        'civilian_aviation:skyhawk_pr_bluestripe',
+        'civilian_aviation:skyhawk_pr_green',
+        'civilian_aviation:skyhawk_pr_butter',
+        'civilian_aviation:skyhawk_pr_red2',
+        'civilian_aviation:skyhawk_pr_blackorange',
+        'civilian_aviation:skyhawk_pr_blackred',
+        'civilian_aviation:skyhawk_pr_blackyellow',
+        'civilian_aviation:skyhawk_pr_blank',
+        'civilian_aviation:skyhawk_pr_blue',
+        'civilian_aviation:skyhawk_pr_bluered',
+        'civilian_aviation:skyhawk_pr_brown'
+    ]);
 });
