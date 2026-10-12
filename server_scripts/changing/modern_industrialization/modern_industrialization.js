@@ -73,7 +73,7 @@ event.replaceInput(
   { input: 'modern_industrialization:coal_dust' },
   'roll_mod:coal_dust',
   '#c:dusts/coal')
-
+/*
 event.replaceInput(
   {},
   'forestry:apatite',
@@ -85,7 +85,7 @@ event.replaceOutput(
   'forestry:apatite',
   'roll_mod:apatite_dust'
 )
-    
+     */  
 event.replaceInput(
   { output: 'modern_industrialization:steam_mining_drill' },
   'minecraft:diamond',
