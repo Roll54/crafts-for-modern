@@ -77,7 +77,7 @@ event.custom({
   recipe_book_tab: 'meals',
   result: {
     id: 'roll_mod:sulfur_berry_pie',
-    count: 4
+    count: 1
   }
 })
   
