@@ -14,7 +14,7 @@ event.shaped(
         A: 'modern_industrialization:steel_plate'
     }
 )
- */
+
 event.shaped(
     Item.of('forestry:escritoire'),
     [
@@ -30,7 +30,7 @@ event.shaped(
         C: 'minecraft:feather'
     }
 )
-    
+     */  
 event.shaped(
     Item.of('railcraft:tunnel_bore'),
     [
