@@ -28,13 +28,13 @@ trackKits.forEach(item => {
         'modern_industrialization:redstone_alloy_ingot'
     );
 });
-
+/*
 event.replaceInput(
 {},
 'forestry:impregnated_casing',
 'modern_industrialization:bronze_machine_casing'
 )
-    
+  */  
 event.replaceInput(
   { output: 'forestry:mailbox' },
   'forestry:sturdy_casing',
