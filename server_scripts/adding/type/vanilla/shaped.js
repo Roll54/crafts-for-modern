@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-
+/*
 event.shaped(
     Item.of('forestry:trade_station'),
     [
@@ -14,7 +14,7 @@ event.shaped(
         A: 'modern_industrialization:steel_plate'
     }
 )
-    
+ */
 event.shaped(
     Item.of('forestry:escritoire'),
     [
