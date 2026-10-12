@@ -34,7 +34,7 @@ event.replaceInput(
 'forestry:impregnated_casing',
 'modern_industrialization:bronze_machine_casing'
 )
-  */  
+ 
 event.replaceInput(
   { output: 'forestry:mailbox' },
   'forestry:sturdy_casing',
@@ -52,7 +52,7 @@ event.replaceInput(
   '#minecraft:planks',
   'roll_mod:treated_planks'
 )
-    
+  */     
 event.replaceInput(
   { output: 'railcraft:force_track_emitter' },
   'railcraft:charge_coil',
