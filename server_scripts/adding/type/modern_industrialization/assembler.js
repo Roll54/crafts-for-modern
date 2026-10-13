@@ -2488,7 +2488,7 @@ event.recipes.modern_industrialization.assembler(32, 200)
 .itemIn("1x roll_mod:lapotron_battery_t2")
 .itemIn("1x roll_mod:ev_mining_drill")
 .itemOut("1x roll_mod:advanced_ev_mining_drill")
-/*
+
 event.recipes.modern_industrialization.assembler(32, 100)
 .itemIn("4x modern_industrialization:palladium_plate")
 .itemIn("3x modern_industrialization:digital_circuit")
@@ -2497,7 +2497,7 @@ event.recipes.modern_industrialization.assembler(32, 100)
 .itemOut("1x roll_mod:hv_storm_scanner")
 .itemOut("4x modern_industrialization:analog_circuit")
 .itemOut("4x modern_industrialization:iron_plate")
-
+/*
 event.recipes.modern_industrialization.assembler(32, 100)
 .itemIn("8x modern_industrialization:steel_plate")
 .itemIn("8x modern_industrialization:motor")
