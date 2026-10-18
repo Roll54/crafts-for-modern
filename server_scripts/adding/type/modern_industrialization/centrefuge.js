@@ -38,6 +38,14 @@ ServerEvents.recipes(event => {
   .fluidOut("minecraft:water", 1000)
   .itemOut("2x modern_industrialization:salt_dust")
 
+  event.recipes.modern_industrialization.centrifuge(32, 400)
+  .itemIn("10x minecraft:glowstone_dust")
+  .itemOut("3x roll_mod:flint_dust")
+  .itemOut("2x roll_mod:chalcopyrite_dust")
+  .itemOut("2x roll_mod:netherrack_dust")
+ .itemOut("1x modern_industrialization:sunnarium_dust")
+ .fluidOut("modern_industrialization:xenon", 500)
+ .fluidOut("modern_industrialization:sulfur_dioxide", 1500)
 
   event.recipes.modern_industrialization.centrifuge(32, 800)
   .itemIn("4x ad_astra:moon_sand")
@@ -73,14 +81,14 @@ ServerEvents.recipes(event => {
   event.recipes.modern_industrialization.centrifuge(32, 200)
   .itemIn("1x minecraft:soul_sand")
   .itemOut("1x modern_industrialization:calcium_sulfate_dust", 0.5)
-  .itemOut("1x techreborn:clay_dust", 0.5)
+  .itemOut("1x roll_mod:clay_dust", 0.5)
   .itemOut("1x minecraft:sand")
   .fluidOut("modern_industrialization:crude_oil", 500)
     
   event.recipes.modern_industrialization.centrifuge(32, 200)
   .itemIn("1x minecraft:soul_soil")
   .itemOut("1x modern_industrialization:calcium_sulfate_dust", 0.5)
-  .itemOut("1x techreborn:clay_dust", 0.5)
+  .itemOut("1x roll_mod:clay_dust", 0.5)
   .itemOut("1x minecraft:sand")
   .fluidOut("modern_industrialization:crude_oil", 500)
   */
