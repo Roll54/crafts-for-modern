@@ -1,4 +1,47 @@
 ServerEvents.recipes(event => {
+    const oreProcessing = [
+        { ore_name: "hematite" }, { ore_name: "mica" }, { ore_name: "yellow_limonite" }, 
+        { ore_name: "biotite" }, { ore_name: "magnetite" }, { ore_name: "garnierite" }, 
+        { ore_name: "pentlandite" }, { ore_name: "chalcopyrite" }, { ore_name: "certus_quartz" }, 
+        { ore_name: "galena" }, { ore_name: "pyrolusite" }, { ore_name: "pyrochlore" }, 
+        { ore_name: "pyrope" }, { ore_name: "apatite" }, { ore_name: "rhodochrosite" }, 
+        { ore_name: "chromite" }, { ore_name: "malachite" }, { ore_name: "fluorite" }, 
+        { ore_name: "pyrite" }, { ore_name: "cinnabar" }, { ore_name: "peridot" }, 
+        { ore_name: "lazurite" }, { ore_name: "sodalite" }, { ore_name: "tetrahedrite" }, 
+        { ore_name: "stibnite" }, { ore_name: "rutile" }, { ore_name: "ilmenite" }, 
+        { ore_name: "topaz" }, { ore_name: "blue_topaz" }, { ore_name: "chalcocite" }, 
+        { ore_name: "bornite" }, { ore_name: "sulfur" }, { ore_name: "sphalerite" }, 
+        { ore_name: "monazite" }, { ore_name: "ruby" }, { ore_name: "redstone" }, 
+        { ore_name: "saltpeter" }, { ore_name: "emerald" }, { ore_name: "beryllium" }, 
+        { ore_name: "molybdenum" }, { ore_name: "tantalite" }, { ore_name: "molybdenite" }, 
+        { ore_name: "wulfenite" }, { ore_name: "powellite" }, { ore_name: "gold" }, 
+        { ore_name: "goethite" }, { ore_name: "vanadium_magnetite" }, { ore_name: "silver" }, 
+        { ore_name: "bauxite" }, { ore_name: "lepidolite" }, { ore_name: "rock_salt" }, 
+        { ore_name: "salt" }, { ore_name: "tungstate" }, { ore_name: "scheelite" }, 
+        { ore_name: "lithium" }, { ore_name: "sheldonite" }, { ore_name: "pitchblende" }, 
+        { ore_name: "uraninite" }, { ore_name: "thorium" }, { ore_name: "lead" }, 
+        { ore_name: "cassiterite" }, { ore_name: "lapis_lazuli" }, { ore_name: "bismuth" }, 
+        { ore_name: "trona" }, { ore_name: "azure_silver" }, { ore_name: "cassiterite_sand" }, 
+        { ore_name: "bort" }, { ore_name: "diamond" }, { ore_name: "quartz" }, 
+        { ore_name: "gold_amalgam" }, { ore_name: "silver_amalgam" }, { ore_name: "coal" }, 
+        { ore_name: "lignite_coal" }, { ore_name: "iridium" }, { ore_name: "olivine" }, 
+        { ore_name: "crimson_iron" }, { ore_name: "stannite" }, { ore_name: "nickel" }
+    ];
+
+    oreProcessing.forEach(ore => {
+        const rawOre = `roll_mod:raw_${ore.ore_name}`;
+        const impureDust = `roll_mod:impure_${ore.ore_name}_dust`;
+
+        event.custom({
+            type: 'modern_industrialization:forge_hammer',
+            ingredient: {
+                item: rawOre
+            },
+            result: {
+                count: 4,
+                id: impureDust
+            }
+        });
 
     const oreProcessing = [
         {
