@@ -76,8 +76,6 @@ ServerEvents.recipes(event => {
   .itemOut("2x modern_industrialization:wood_pulp")
   .fluidOut("modern_industrialization:glue", 200)
   
-  /*
-  ТРЕБА ЗМІНИТИ НА СВІЙ ПИЛ!!!
   event.recipes.modern_industrialization.centrifuge(32, 200)
   .itemIn("1x minecraft:soul_sand")
   .itemOut("1x modern_industrialization:calcium_sulfate_dust", 0.5)
@@ -91,7 +89,6 @@ ServerEvents.recipes(event => {
   .itemOut("1x roll_mod:clay_dust", 0.5)
   .itemOut("1x minecraft:sand")
   .fluidOut("modern_industrialization:crude_oil", 500)
-  */
 
   event.recipes.modern_industrialization.centrifuge(32, 100)
   .itemIn("2x roll_mod:cinnabar_dust")
