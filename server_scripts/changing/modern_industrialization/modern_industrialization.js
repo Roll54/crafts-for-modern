@@ -52,7 +52,20 @@ event.replaceInput(
   '#minecraft:planks',
   'roll_mod:treated_planks'
 )
-  */     
+  */   
+
+event.replaceInput(
+  {},
+  'modern_industrialization:iridium_dust',
+  '#c:dusts/iridium'
+)
+
+event.replaceOutput(
+  {},
+  'modern_industrialization:iridium_dust',
+  '#c:dusts/iridium'
+)
+    
 event.replaceInput(
   { output: 'railcraft:force_track_emitter' },
   'railcraft:charge_coil',
