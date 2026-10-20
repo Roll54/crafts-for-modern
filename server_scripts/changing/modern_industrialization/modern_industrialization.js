@@ -29,13 +29,8 @@ trackKits.forEach(item => {
     );
 });
 
+// Заміна тільки на вході (тег як вихід не підтримується)
 event.replaceInput(
-  {},
-  'modern_industrialization:iridium_dust',
-  '#c:dusts/iridium'
-)
-
-event.replaceOutput(
   {},
   'modern_industrialization:iridium_dust',
   '#c:dusts/iridium'
