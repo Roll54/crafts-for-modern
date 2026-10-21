@@ -1169,7 +1169,7 @@ event.shaped(
     Item.of('roll_mod:solar_panel_2'),
     [
         'ABC',
-        'BDB',
+        ' D ',
         'CBA'
     ],
     {
@@ -1184,7 +1184,7 @@ event.shaped(
     Item.of('roll_mod:solar_panel_3'),
     [
         'ABA',
-        'BCB',
+        ' C ',
         'ABA'
     ],
     {
@@ -1198,7 +1198,7 @@ event.shaped(
     Item.of('roll_mod:solar_panel_1'),
     [
         'AAA',
-        'BCB',
+        ' C ',
         'DED'
     ],
     {
