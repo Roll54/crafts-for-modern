@@ -13,4 +13,8 @@ ServerEvents.recipes(event => {
     .itemIn("1x roll_mod:superconducting_magnet_base")
     .itemOut("1x roll_mod:superconducting_magnet")
     
+  event.recipes.modern_industrialization.vacuum_freezer(512, 100)
+  .fluidIn("modern_industrialization:molten_rhenium", 1000)
+  .itemOut("1x modern_industrialization:rhenium_dust")
+
 })

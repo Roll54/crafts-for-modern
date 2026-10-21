@@ -82,7 +82,8 @@ ServerEvents.recipes(event => {
         { input: 'modern_industrialization:niobium_titanium_alloy_dust', output: 'modern_industrialization:niobium_titanium_alloy_ingot' },
         { input: 'modern_industrialization:incoloy_dust', output: 'modern_industrialization:incoloy_ingot' },
         { input: 'modern_industrialization:chrome_vanadium_steel_dust', output: 'modern_industrialization:chrome_vanadium_steel_ingot' },
-        { input: 'modern_industrialization:enderium_dust', output: 'modern_industrialization:enderium_ingot' }
+        { input: 'modern_industrialization:enderium_dust', output: 'modern_industrialization:enderium_ingot' },
+        { input: 'modern_industrialization:tantalum_rhenium_dust', output: 'modern_industrialization:tantalum_rhenium_ingot' }
     ];
 
     event.remove({ type: 'modern_industrialization:quarry' });
