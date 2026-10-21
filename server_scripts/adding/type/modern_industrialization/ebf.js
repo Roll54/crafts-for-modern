@@ -44,6 +44,11 @@ ServerEvents.recipes(event => {
   event.recipes.modern_industrialization.blast_furnace(4, 100)
   .itemIn("1x #c:dusts/redstone")
   .fluidOut("modern_industrialization:molten_redstone", 90)
+
+  // Рідкий літій (температура плавлення ~180 °C)
+  event.recipes.modern_industrialization.blast_furnace(8, 100)
+  .itemIn("1x roll_mod:lithium_dust")
+  .fluidOut("modern_industrialization:molten_lithium", 100)
   
   event.recipes.modern_industrialization.blast_furnace(4, 1200)
   .itemIn("1x modern_industrialization:soldering_alloy_block")
@@ -233,6 +238,13 @@ event.recipes.modern_industrialization.blast_furnace(128, 100)
 event.recipes.modern_industrialization.blast_furnace(128, 200)
 .itemIn("4x roll_mod:alumina_dust")
 .itemOut("1x roll_mod:alumina_ceramic_plate")
+
+// Літієва склокераміка (Li2O-Al2O3-SiO2): літій знижує температуру спікання
+event.recipes.modern_industrialization.blast_furnace(128, 200)
+.itemIn("3x roll_mod:alumina_dust")
+.itemIn("2x modern_industrialization:silicon_dust")
+.itemIn("1x roll_mod:lithium_dust")
+.itemOut("2x roll_mod:alumina_ceramic_plate")
 
 event.recipes.modern_industrialization.blast_furnace(128, 100)
 .itemIn("64x roll_mod:nether_star_dust")
