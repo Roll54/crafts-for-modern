@@ -106,6 +106,12 @@ event.recipes.modern_industrialization.mixer(16, 200)
   .itemIn("3x modern_industrialization:silicon_tiny_dust")
   .itemOut("9x modern_industrialization:chrome_vanadium_steel_dust")
 
+  event.recipes.modern_industrialization.mixer(16, 200)
+  .itemIn("7x modern_industrialization:titanium_dust")
+  .itemIn("2x modern_industrialization:aluminum_dust")
+  .itemIn("1x roll_mod:vanadium_dust_clean")
+  .itemOut("10x modern_industrialization:titanium_64_dust")
+
   event.recipes.modern_industrialization.mixer(8, 100)
   .itemIn("2x modern_industrialization:titanium_dust")
   .itemIn("2x modern_industrialization:niobium_dust")
