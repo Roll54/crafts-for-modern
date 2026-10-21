@@ -108,4 +108,60 @@ ServerEvents.recipes(event => {
         }
     })
     
+
+    event.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            'AAABB AAC',
+            ' BBAAAADA',
+            '  EEEFAAA',
+            '    BGFA ',
+            '   BEBEAB',
+            '  BEB EAB',
+            ' BEB  EBA',
+            'BEB    BA',
+            'EB      A'
+        ],
+        key: {
+            A: { item: 'modern_industrialization:block_blencium_plate' },
+            B: { item: 'modern_industrialization:niobium_titanium_alloy_plate' },
+            C: { item: 'roll_mod:ultra_battery'},
+            D: { item: 'modern_industrialization:quantum_upgrade' },
+            E: { item: 'modern_industrialization:sunnarium_plate' },
+            F: { item: 'modern_industrialization:quantum_circuit' },
+            G: { item: 'roll_mod:advanced_ev_mining_drill' }
+        },
+        result: {
+            id: 'roll_mod:iv_electric_pickaxe'
+        }
+    }).id('roll_mod:advanced_drill_crafting')
+
+
+    event.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            '   ABA   ',
+            '   CBC   ',
+            '   CBC   ',
+            '   ABA   ',
+            '   ADA   ',
+            ' AA E AA ',
+            '   A A   ',
+            '  BFGFB  ',
+            '   BBB   '
+        ],
+        key: {
+            A: { item: 'modern_industrialization:block_blencium_plate' },
+            B: { item: 'modern_industrialization:sunnarium_plate' },
+            C: { item: 'modern_industrialization:niobium_titanium_alloy_plate' },
+            D: { item: 'roll_mod:ultra_battery' },
+            E: { item: 'modern_industrialization:quantum_upgrade' },
+            F: { item: 'modern_industrialization:quantum_circuit' },
+            G: { item: 'roll_mod:ev_electric_saber' }
+        },
+        result: {
+            id: 'roll_mod:iv_electric_saber'
+        }
+    }).id('roll_mod:advanced_saber_crafting')
+
 })
