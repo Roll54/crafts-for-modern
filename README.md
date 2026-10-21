@@ -11,22 +11,29 @@ server_scripts/
   main.js
   adding/
     type/
-      vanilla/@
-      tags/
+      ad_astra/
+      extendedcrafting/
       farmersdelight/
+      functionalstorage/
       modern_industrialization/
       railcraft/
+      roll_mod/
+      sophisticatedbackpacks/
+      tags/
+      vanilla/
   changing/
-    ae2/
-    modern_industrialization/
-    ad_astra/
+    ae2.js            # AE2 / ExtendedAE
+    diamond_alloy.js  # diamond -> diamond alloy plate
+    railcraft.js      # track kits, force track emitter
+    unification.js    # item -> tag in all recipes (loads last)
   delete/
-    applied_energystics/
-    railcraft/
-    sopphistictedbackpacks/
+    applied_energistics/
+    modern_industrialization/
     tags/
+      block/
+      item/
     general.js
-    ...
+    <mod>.js
 ```
 
 ### Folder meaning

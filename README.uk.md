@@ -11,22 +11,29 @@ server_scripts/
   main.js
   adding/
     type/
-      vanilla/
-      tags/
+      ad_astra/
+      extendedcrafting/
       farmersdelight/
+      functionalstorage/
       modern_industrialization/
       railcraft/
+      roll_mod/
+      sophisticatedbackpacks/
+      tags/
+      vanilla/
   changing/
-    ae2/
-    modern_industrialization/
-    ad_astra/
+    ae2.js            # AE2 / ExtendedAE
+    diamond_alloy.js  # алмаз -> пластина алмазного сплаву
+    railcraft.js      # трек-кіти, force track emitter
+    unification.js    # предмет -> тег в усіх рецептах (вантажиться останнім)
   delete/
-    applied_energystics/
-    railcraft/
-    sopphistictedbackpacks/
+    applied_energistics/
+    modern_industrialization/
     tags/
+      block/
+      item/
     general.js
-    ...
+    <мод>.js
 ```
 
 ### Значення папок

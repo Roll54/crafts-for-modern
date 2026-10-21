@@ -1,0 +1,47 @@
+ServerEvents.recipes(event => {
+
+  // Заміна інгредієнтів у рецептах AE2 та аддонів
+  event.replaceInput({ output: 'extendedae:ingredient_buffer' },
+    'minecraft:iron_ingot', 'modern_industrialization:aluminum_plate')
+
+  event.replaceInput({ output: 'ae2:interface' },
+    'minecraft:iron_ingot', 'modern_industrialization:steel_plate')
+
+  event.replaceInput({ output: 'ae2:storage_bus' },
+    'minecraft:piston', 'modern_industrialization:robot_arm')
+
+  event.replaceInput({ input: 'advanced_ae:quantum_processor' },
+    'advanced_ae:quantum_processor', 'megacells:accumulation_processor')
+
+  // Нові рецепти ExtendedAE (платинова рамка + компонент + процесор)
+  function extending(output, component, processor) {
+    event.shaped(Item.of(output, 1), [
+      'ACA',
+      'CPC',
+      'ACA',
+    ], {
+      A: 'modern_industrialization:platinum_plate',
+      C: component,
+      P: processor,
+    })
+  }
+
+  function extendingUpgrade(output, component, processor) {
+    event.shaped(Item.of(output, 1), [
+      'A A',
+      'CPC',
+      'ACA',
+    ], {
+      A: 'modern_industrialization:platinum_plate',
+      C: component,
+      P: processor,
+    })
+  }
+
+  extending('extendedae:ex_interface', '#ae2:interface', 'ae2:logic_processor')
+  extending('extendedae:ex_pattern_provider', '#ae2:pattern_provider', 'ae2:engineering_processor')
+
+  extendingUpgrade('extendedae:interface_upgrade', '#ae2:interface', 'ae2:logic_processor')
+  extendingUpgrade('extendedae:pattern_provider_upgrade', '#ae2:pattern_provider', 'ae2:engineering_processor')
+
+})

@@ -1,36 +1,4 @@
 ServerEvents.recipes(event => {
-/*
-event.shaped(
-    Item.of('forestry:trade_station'),
-    [
-        'AAA',
-        'ABA',
-        'CDC'
-    ],
-    {
-        B: 'modern_industrialization:bronze_machine_casing',
-        C: 'minecraft:chest',
-        D: 'forestry:basic_circuit_board',
-        A: 'modern_industrialization:steel_plate'
-    }
-)
-
-event.shaped(
-    Item.of('forestry:escritoire'),
-    [
-        'ABC',
-        'DDD',
-        'E E'
-    ],
-    {
-        E: 'roll_mod:treated_planks',
-        B: 'minecraft:ink_sac',
-        D: 'roll_mod:treated_plate',
-        A: 'minecraft:glass_bottle',
-        C: 'minecraft:feather'
-    }
-)
-     */  
 event.shaped(
     Item.of('railcraft:tunnel_bore'),
     [
@@ -1198,7 +1166,7 @@ event.shaped(
     Item.of('roll_mod:solar_panel_1'),
     [
         'AAA',
-        ' C ',
+        'BCB',
         'DED'
     ],
     {
@@ -1884,7 +1852,7 @@ event.shaped(
         'AAA'
     ],
     {
-        A: 'modern_industrialization:titanium_64_plate',
+        A: 'modern_industrialization:niobium_titanium_alloy_plate',
         B: 'modern_industrialization:titanium_gear'
     }
   )

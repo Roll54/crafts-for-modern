@@ -79,10 +79,6 @@ ServerEvents.recipes(event => {
   .itemIn("1x modern_industrialization:niobium_titanium_alloy_dust")
   .itemOut("1x modern_industrialization:niobium_titanium_alloy_hot_ingot")
 
-  event.recipes.modern_industrialization.blast_furnace(512, 200)
-  .itemIn("1x modern_industrialization:titanium_64_dust")
-  .itemOut("1x modern_industrialization:titanium_64_hot_ingot")
-
   event.recipes.modern_industrialization.blast_furnace(128, 1200)
   .itemIn("4x modern_industrialization:tungsten_wire")
   .itemIn("4x modern_industrialization:titanium_tiny_dust")
