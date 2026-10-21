@@ -118,7 +118,7 @@ event.recipes.modern_industrialization.mixer(16, 200)
   .itemOut("4x modern_industrialization:niobium_titanium_alloy_dust")
 
   event.recipes.modern_industrialization.mixer(8, 100)
-  .itemIn("3x modern_industrialization:iridium_dust")
+  .itemIn("3x #c:dusts/iridium")
   .itemIn("1x modern_industrialization:osmium_dust")
   .itemOut("4x modern_industrialization:osmiridium_dust")
 

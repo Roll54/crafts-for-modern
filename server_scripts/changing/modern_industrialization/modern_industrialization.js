@@ -28,31 +28,14 @@ trackKits.forEach(item => {
         'modern_industrialization:redstone_alloy_ingot'
     );
 });
-/*
-event.replaceInput(
-{},
-'forestry:impregnated_casing',
-'modern_industrialization:bronze_machine_casing'
-)
- 
-event.replaceInput(
-  { output: 'forestry:mailbox' },
-  'forestry:sturdy_casing',
-  'modern_industrialization:bronze_machine_casing'
-)
 
+// Заміна тільки на вході (тег як вихід не підтримується)
 event.replaceInput(
-  { output: 'forestry:bottler' },
-  'forestry:sturdy_casing',
-  'modern_industrialization:basic_machine_hull'
+  {},
+  'modern_industrialization:iridium_dust',
+  '#c:dusts/iridium'
 )
     
-event.replaceInput(
-  { output: 'forestry:genetic_filter' },
-  '#minecraft:planks',
-  'roll_mod:treated_planks'
-)
-  */     
 event.replaceInput(
   { output: 'railcraft:force_track_emitter' },
   'railcraft:charge_coil',
@@ -73,19 +56,7 @@ event.replaceInput(
   { input: 'modern_industrialization:coal_dust' },
   'roll_mod:coal_dust',
   '#c:dusts/coal')
-/*
-event.replaceInput(
-  {},
-  'forestry:apatite',
-  'roll_mod:apatite_dust'
-)
 
-event.replaceOutput(
-  {},
-  'forestry:apatite',
-  'roll_mod:apatite_dust'
-)
-     */  
 event.replaceInput(
   { output: 'modern_industrialization:steam_mining_drill' },
   'minecraft:diamond',

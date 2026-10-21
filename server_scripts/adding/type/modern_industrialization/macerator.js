@@ -6,9 +6,13 @@ event.recipes.modern_industrialization.macerator(16, 800)
 .itemOut("1x roll_mod:obsidian_dust", 0.5)
 
 event.recipes.modern_industrialization.macerator(2, 100)
+.itemIn("1x extendedae:entro_crystal")
+.itemOut("1x extendedae:entro_dust")
+
+event.recipes.modern_industrialization.macerator(2, 100)
 .itemIn("1x roll_mod:agar_gel")
 .itemOut("1x roll_mod:agar_dust")
-
+    
 event.recipes.modern_industrialization.macerator(2, 100)
 .itemIn("1x minecraft:wheat")
 .itemOut("1x minecraft:wheat_seeds")
