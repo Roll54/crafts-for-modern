@@ -77,6 +77,10 @@ ServerEvents.recipes(event => {
   .itemOut("1x modern_industrialization:chrome_vanadium_steel_hot_ingot")
 
   event.recipes.modern_industrialization.blast_furnace(512, 200)
+  .itemIn("1x modern_industrialization:tunstensteel_dust")
+  .itemOut("1x modern_industrialization:tunstensteel_hot_ingot")
+  
+  event.recipes.modern_industrialization.blast_furnace(512, 200)
   .itemIn("1x modern_industrialization:osmiridium_dust")
   .itemOut("1x modern_industrialization:osmiridium_hot_ingot")
 
