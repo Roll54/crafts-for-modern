@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: "minecraft:glowstone" })
     event.remove({ output: 'minecraft:raw_gold' });
     event.remove({ output: 'ultramarine:bronze_parts' });
+    event.remove({ output: 'ultramarine:gold_parts' });
     event.remove({ output: 'ultramarine:bronze_dust' });
     event.remove({ output: 'framedblocks:powered_framing_saw' });
     event.remove({ output: 'roll_mod:netherite_steam_mining_drill' });

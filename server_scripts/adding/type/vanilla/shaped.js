@@ -1,4 +1,119 @@
 ServerEvents.recipes(event => {
+
+event.shaped(
+    Item.of('modern_industrialization:tungsten_steel_heat_proof_casing'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_plate',
+        B: 'modern_industrialization:fire_clay_bricks'
+    }
+)
+
+event.shaped(
+    Item.of('modern_industrialization:tunstensteel_machine_casing'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_plate',
+        B: 'modern_industrialization:tunstensteel_gear'
+    }
+)
+
+event.shaped(
+    Item.of('modern_industrialization:tunstensteel_machine_casing_pipe'),
+    [
+        'A A',
+        'ABA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_curved_plate',
+        B: 'modern_industrialization:tunstensteel_machine_casing'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:highly_advanced_motor'),
+    [
+        'ABC',
+        'BDB',
+        'CBA'
+    ],
+    {
+        D: 'modern_industrialization:stainless_steel_rod_magnetic',
+        C: 'modern_industrialization:tunstensteel_rod',
+        B: 'modern_industrialization:niobium_titanium_alloy_wire',
+        A: 'modern_industrialization:superconductor_cable'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:highly_advanced_robot_arm'),
+    [
+        'AAA',
+        'BCB',
+        'DEC'
+    ],
+    {
+        C: 'modern_industrialization:tunstensteel_rod',
+        D: 'roll_mod:highly_advanced_piston',
+        E: 'modern_industrialization:quantum_circuit',
+        B: 'roll_mod:highly_advanced_motor',
+        A: 'modern_industrialization:superconductor_cable'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:highly_advanced_pump'),
+    [
+        'AAA',
+        'BCB',
+        'DBD'
+    ],
+    {
+        D: 'modern_industrialization:tunstensteel_bolt',
+        B: 'modern_industrialization:tunstensteel_rotor',
+        C: 'roll_mod:highly_advanced_motor',
+        A: '#modern_industrialization:fluid_pipes'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:highly_advanced_large_motor'),
+    [
+        'AAA',
+        'BCC',
+        'AAA'
+    ],
+    {
+        C: 'modern_industrialization:tunstensteel_rod',
+        B: 'modern_industrialization:quantum_circuit',
+        A: 'roll_mod:highly_advanced_motor'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:highly_advanced_large_pump'),
+    [
+        'AAA',
+        'BCB',
+        'DBD'
+    ],
+    {
+        C: 'roll_mod:highly_advanced_large_motor',
+        B: 'modern_industrialization:tunstensteel_rotor',
+        D: 'modern_industrialization:quantum_circuit',
+        A: 'roll_mod:highly_advanced_pump'
+    }
+)
+    
 event.shaped(
     Item.of('railcraft:tunnel_bore'),
     [
@@ -406,6 +521,18 @@ event.shaped(
     ],
     {
         A: 'modern_industrialization:black_bronze_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('ultramarine:gold_parts'),
+    [
+        '  A',
+        ' A ',
+        'A  '
+    ],
+    {
+        A: '#c:ingots/gold'
     }
 )
     

@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.modern_industrialization.blast_furnace(64, 200)
   .itemIn("1x modern_industrialization:stainless_steel_dust")
-  .itemOut("1x modern_industrialization:stainless_steel_hot_ingot")
+  .itemOut("1x modern_industrialization:stainless_steel_ingot")
 
   event.recipes.modern_industrialization.blast_furnace(64, 400)
   .itemIn("1x modern_industrialization:palladium_dust")
@@ -76,6 +76,10 @@ ServerEvents.recipes(event => {
   .itemIn("1x modern_industrialization:chrome_vanadium_steel_dust")
   .itemOut("1x modern_industrialization:chrome_vanadium_steel_hot_ingot")
 
+  event.recipes.modern_industrialization.blast_furnace(512, 200)
+  .itemIn("1x modern_industrialization:tunstensteel_dust")
+  .itemOut("1x modern_industrialization:tunstensteel_hot_ingot")
+  
   event.recipes.modern_industrialization.blast_furnace(512, 200)
   .itemIn("1x modern_industrialization:osmiridium_dust")
   .itemOut("1x modern_industrialization:osmiridium_hot_ingot")

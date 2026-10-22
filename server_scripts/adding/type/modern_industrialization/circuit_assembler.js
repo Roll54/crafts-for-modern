@@ -648,6 +648,16 @@ event.recipes.modern_industrialization.circuit_assembler(32, 600)
 .itemIn("1x roll_mod:blue_wafer")
 .itemOut("16x modern_industrialization:op_amp")
 
+// 24 години реального часу: 24 * 60 * 60 * 20 = 1 728 000 тіків
+event.recipes.modern_industrialization.circuit_assembler(64, 1728000)
+.itemIn("1x advanced_ae:quantum_boots")
+.itemIn("1x advanced_ae:quantum_leggings")
+.itemIn("1x advanced_ae:quantum_chestplate")
+.itemIn("1x advanced_ae:quantum_helmet")
+.itemIn("1x roll_mod:iv_electric_pickaxe")
+.itemIn("1x roll_mod:iv_electric_saber")
+.itemOut("1x roll_mod:nonub")
+
 
 
 

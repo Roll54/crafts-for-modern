@@ -1,6 +1,11 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.mixer(2, 100)
+    .itemIn("5x modern_industrialization:tungsten_dust")    
+    .itemIn("2x modern_industrialization:steel_dust")
+    .itemOut("3x modern_industrialization:tunstensteel_dust")
+    
+event.recipes.modern_industrialization.mixer(2, 100)
     .itemIn("3x minecraft:slime_ball")    
     .itemIn("3x createcybernetics:graphene_elastomer")
     .itemIn("3x minecraft:bone_meal")

@@ -256,6 +256,11 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   
 // Шестерні
   event.recipes.modern_industrialization.cutting_machine(8, 400)
+  .itemIn("1x modern_industrialization:tunstensteel_block")
+  .fluidIn("modern_industrialization:lubricant", 20)
+  .itemOut("4x modern_industrialization:tunstensteel_gear")
+    
+  event.recipes.modern_industrialization.cutting_machine(8, 400)
   .itemIn("1x modern_industrialization:bronze_block")
   .fluidIn("modern_industrialization:lubricant", 20)
   .itemOut("4x modern_industrialization:bronze_gear")
@@ -331,7 +336,12 @@ event.recipes.modern_industrialization.cutting_machine(8, 1600)
   .itemOut("4x modern_industrialization:incoloy_gear")
 
 // Ротори
-
+ 
+event.recipes.modern_industrialization.cutting_machine(512, 600)
+  .itemIn("4x modern_industrialization:tunstensteel_large_plate")
+  .fluidIn("modern_industrialization:lubricant", 200)
+  .itemOut("5x modern_industrialization:tunstensteel_rotor")
+    
    event.recipes.modern_industrialization.cutting_machine(512, 600)
   .itemIn("4x modern_industrialization:chrome_vanadium_steel_large_plate")
   .fluidIn("modern_industrialization:lubricant", 200)
