@@ -16,7 +16,7 @@ event.recipes.modern_industrialization.packer(2, 100)
 .itemIn("1x modern_industrialization:aluminum_ingot")
 .itemIn("1x modern_industrialization:black_steel_ingot")
 .itemIn("2x roll_mod:carbon_mesh")
-.itemOut("1x modern_industrialization:space_alloy_ingot")
+.itemOut("1x roll_mod:mixed_cosmic_t1")
 
 event.recipes.modern_industrialization.packer(2, 100)
 .itemIn("4x minecraft:glowstone_dust")

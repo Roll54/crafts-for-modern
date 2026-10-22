@@ -93,7 +93,7 @@ event.custom({
     c: { item: "modern_industrialization:enderium_rod" },
     d: { item: "sophisticatedbackpacks:diamond_backpack" },
     e: { item: "modern_industrialization:blastproof_alloy_large_plate" },
-    f: { item: "modern_industrialization:space_alloy_large_plate" }
+    f: { item: "modern_industrialization:cosmic_alloy_one_large_plate" }
   },
   pattern: [
     "aba",

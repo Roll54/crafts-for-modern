@@ -282,7 +282,7 @@ event.recipes.modern_industrialization.blast_furnace(24, 600)
 .itemOut("32x ae2:quartz_glass")
 
 
-event.recipes.modern_industrialization.blast_furnace(1024, 200)
+event.recipes.modern_industrialization.blast_furnace(512, 200)
 .itemIn("1x modern_industrialization:tantalum_rhenium_dust")
 .itemIn("2x roll_mod:nether_star_dust")
 .itemIn("2x modern_industrialization:tungsten_dust")

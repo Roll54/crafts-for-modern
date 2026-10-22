@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-
+/*
     event.custom({
       type: "roll_mod:item_research",
       output: {
@@ -93,5 +93,5 @@ ServerEvents.recipes(event => {
     ],
     duration: 1200
     });
-
+*/
 });

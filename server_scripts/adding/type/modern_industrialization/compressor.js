@@ -39,4 +39,8 @@ ServerEvents.recipes(event => {
   event.recipes.modern_industrialization.compressor(2, 200)
   .itemIn("1x roll_mod:flint_dust")
   .itemOut("1x minecraft:flint")
+
+  event.recipes.modern_industrialization.compressor(16, 800)
+  .itemIn("roll_mod:mixed_cosmic_t1")
+  .itemOut("modern_industrialization:cosmic_alloy_one_ingot")
 })

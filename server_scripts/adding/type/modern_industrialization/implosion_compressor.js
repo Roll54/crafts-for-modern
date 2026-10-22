@@ -52,4 +52,9 @@ ServerEvents.recipes(event => {
   .itemIn("40x ae2:ender_dust")
   .itemIn("10x modern_industrialization:industrial_tnt")
   .itemOut("30x minecraft:ender_pearl")
+
+  event.recipes.modern_industrialization.implosion_compressor(1, 10)
+  .itemIn("1x roll_mod:mixed_cosmic_t1")
+  .itemIn("1x modern_industrialization:industrial_tnt")
+  .itemOut("3x modern_industrialization:cosmic_alloy_one_ingot")
 })
