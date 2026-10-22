@@ -408,6 +408,18 @@ event.shaped(
         A: 'modern_industrialization:black_bronze_ingot'
     }
 )
+
+event.shaped(
+    Item.of('ultramarine:gold_parts'),
+    [
+        '  A',
+        ' A ',
+        'A  '
+    ],
+    {
+        A: '#c:ingots/gold'
+    }
+)
     
 event.shaped(
     Item.of('ultramarine:bronze_parts'),
