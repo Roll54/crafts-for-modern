@@ -1852,7 +1852,7 @@ event.shaped(
         'AAA'
     ],
     {
-        A: 'modern_industrialization:niobium_titanium_alloy_plate',
+        A: 'modern_industrialization:titanium_64_plate',
         B: 'modern_industrialization:titanium_gear'
     }
   )
