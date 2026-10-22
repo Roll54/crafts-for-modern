@@ -2879,13 +2879,12 @@ event.recipes.modern_industrialization.assembler(16, 800)
 .itemIn("4x #roll_mod:battaries_tier_three")
 .itemOut("1x scannable_unofficial:block_module")
 
-//TODO тут має бути композит замість злітка.
 event.recipes.modern_industrialization.assembler(64, 100)
 .itemIn("16x modern_industrialization:enderium_bolt")
 .itemIn("1x modern_industrialization:tantalum_rhenium_plate")
 .itemIn("1x modern_industrialization:osmiridium_plate")
 .itemIn("1x modern_industrialization:incoloy_plate")
-.itemOut("1x modern_industrialization:cosmic_alloy_three_ingot")
+.itemOut("1x roll_mod:mixed_cosmic_t3")
 
 
 event.recipes.modern_industrialization.assembler(16, 400)
