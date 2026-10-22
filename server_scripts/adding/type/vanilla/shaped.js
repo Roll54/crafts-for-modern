@@ -1,4 +1,44 @@
 ServerEvents.recipes(event => {
+
+event.shaped(
+    Item.of('modern_industrialization:tungsten_steel_heat_proof_casing'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_plate',
+        B: 'modern_industrialization:fire_clay_bricks'
+    }
+)
+
+event.shaped(
+    Item.of('modern_industrialization:tunstensteel_machine_casing'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_plate',
+        B: 'modern_industrialization:tunstensteel_gear'
+    }
+)
+
+event.shaped(
+    Item.of('modern_industrialization:tunstensteel_machine_casing_pipe'),
+    [
+        'A A',
+        'ABA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_curved_plate',
+        B: 'modern_industrialization:tunstensteel_machine_casing'
+    }
+)
+    
 event.shaped(
     Item.of('railcraft:tunnel_bore'),
     [
