@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
     success_chance: 0.1
     },
     {
-    item: "modern_industrialization:space_alloy_plate",
+    item: "modern_industrialization:cosmic_alloy_one_plate",
     success_chance: 0.05
     },
     {
