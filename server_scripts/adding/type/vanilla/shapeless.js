@@ -1,6 +1,22 @@
 ServerEvents.recipes(event => {
 
 event.shapeless(
+    Item.of('extendedae:active_formation_plane'),
+    [
+        'extendedae:concurrent_processor',
+        'ae2:formation_plane'
+    ]
+)
+    
+event.shapeless(
+    Item.of('extendedae:ex_pattern_access_part'),
+    [
+        'extendedae:concurrent_processor',
+        'ae2:pattern_access_terminal'
+    ]
+)
+    
+event.shapeless(
     Item.of('roll_mod:crop_manager_mk2'),
     [
         'roll_mod:crop_manager'
