@@ -129,7 +129,7 @@ event.recipes.modern_industrialization.blast_furnace(64, 400)
   .fluidOut("modern_industrialization:molten_rhenium", 50)
 
   event.recipes.modern_industrialization.blast_furnace(512, 500)
-  .itemIn("15x modern_industrialization:raw_tungsten")
+  .itemIn("15x roll_mod:raw_tantalite")
   .itemIn("10x modern_industrialization:carbon_dust")
   .fluidIn("modern_industrialization:sulfuric_acid", 1000)
   .itemOut("15x modern_industrialization:tantalum_dust")
