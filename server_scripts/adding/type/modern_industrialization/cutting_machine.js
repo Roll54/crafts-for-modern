@@ -239,7 +239,6 @@ ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.cutting_machine(8, 800)
     .itemIn("1x roll_mod:treated_log")
-    .fluidIn("modern_industrialization:lubricant")
     .itemOut("6x roll_mod:treated_planks")
     
 // Жахливе дерево КІНЕЦЬ
@@ -384,12 +383,10 @@ event.recipes.modern_industrialization.cutting_machine(512, 600)
 
   event.recipes.modern_industrialization.cutting_machine(2, 100)
   .itemIn("1x roll_mod:treated_planks")
-  .fluidIn("modern_industrialization:lubricant")
   .itemOut("3x roll_mod:treated_plate")
 
 event.recipes.modern_industrialization.cutting_machine(2, 100)
   .itemIn("1x roll_mod:treated_log")
-  .fluidIn("modern_industrialization:lubricant")
   .itemOut("12x roll_mod:treated_plate")
 
 event.recipes.modern_industrialization.cutting_machine(2, 100)
