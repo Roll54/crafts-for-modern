@@ -1,6 +1,23 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:brainupgrade_radio'),
+    [
+        'AAA',
+        'BCA',
+        'DEF'
+    ],
+    {
+        C: '#roll_mod:battaries_tier_one',
+        B: 'modern_industrialization:capacitor',
+        D: 'modern_industrialization:copper_wire',
+        F: 'modern_industrialization:inductor',
+        A: 'modern_industrialization:aluminum_plate',
+        E: 'modern_industrialization:diode'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:sulfur_berry_pie'),
     [
         'ABA',
