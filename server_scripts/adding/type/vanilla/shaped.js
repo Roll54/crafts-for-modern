@@ -1,6 +1,22 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:highly_advanced_piston'),
+    [
+        'AAA',
+        'BCC',
+        'BDE'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_plate',
+        C: 'modern_industrialization:tunstensteel_rod',
+        D: 'roll_mod:highly_advanced_motor',
+        B: 'modern_industrialization:superconductor_cable',
+        E: 'modern_industrialization:tunstensteel_gear'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:brainupgrade_radio'),
     [
         'AAA',
