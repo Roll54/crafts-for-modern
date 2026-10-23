@@ -3,13 +3,13 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'farmersdelight:cutting',
         ingredients: [
-            { tag: 'createcybernetics:offal' }
+            { item: 'roll_mod:sulfur_berry_pie' }
         ],
         result: [
             {
                 item: {
-                    id: 'createcybernetics:ground_offal',
-                    count: 1
+                    id: 'roll_mod:sulfur_berry_pie_slice',
+                    count: 4
                 }
             }
         ],
