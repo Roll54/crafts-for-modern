@@ -1,26 +1,6 @@
 ServerEvents.recipes(event => {
 
 event.custom({
-      type: 'farmersdelight:cooking',
-      container: {
-          id: 'minecraft:bowl',
-          count: 1
-      },
-      cookingtime: 200,
-      experience: 0.35,
-      ingredients: [
-          { item: 'createcybernetics:cooked_brain' },
-          { item: 'minecraft:potato' },
-          { item: 'farmersdelight:onion' }
-      ],
-      recipe_book_tab: 'meals',
-      result: {
-          id: 'createcybernetics:brain_stew',
-          count: 1
-      }
-  })
-
-event.custom({
         "type": "farmersdelight:cooking",
         "experience": 1.0,
         "ingredients": [
@@ -40,28 +20,6 @@ event.custom({
           "id": "roll_mod:stuffed_bell_pepper_rutile"
         }
   })
-      
-event.custom({
-  type: 'farmersdelight:cooking',
-  container: {
-    id: 'minecraft:glass_bottle',
-    count: 1
-  },
-  experience: 0.5,
-  ingredients: [
-    { item: 'roll_mod:sulfur_berry' },
-    { item: 'roll_mod:sulfur_berry' },
-    { item: 'roll_mod:sulfur_berry' },
-    { item: 'roll_mod:sulfur_berry' },
-    { item: 'minecraft:sugar' },
-    { item: 'fruitsdelight:lemon_slice' }
-  ],
-  recipe_book_tab: 'drinks',
-  result: {
-    id: 'roll_mod:sulfur_jam',
-    count: 1
-  }
-})
 
 event.custom({
   type: 'farmersdelight:cooking',
