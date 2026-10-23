@@ -62,4 +62,12 @@ ServerEvents.recipes(event => {
   .itemIn("1x roll_mod:mixed_cosmic_t3")
   .itemIn("1x modern_industrialization:industrial_tnt")
   .itemOut("3x modern_industrialization:cosmic_alloy_three_ingot")
+
+
+  event.recipes.modern_industrialization.implosion_compressor(1, 1000)
+  .itemIn("60x roll_mod:olivine_dust")
+  .itemIn("60x roll_mod:olivine_dust")
+  .itemIn("60x roll_mod:olivine_dust")
+  .itemIn("1x modern_industrialization:industrial_tnt")
+  .itemOut("12x roll_mod:raw_olivine")
 })

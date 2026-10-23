@@ -532,4 +532,13 @@ event.recipes.modern_industrialization.chemical_reactor(128, 900)
             "voltage": "superconductor"
           }});
 */
+
+
+event.recipes.modern_industrialization.chemical_reactor(16, 400)
+.itemIn("2x modern_industrialization:iron_dust")
+.itemIn("2x modern_industrialization:magnesium_dust")
+.itemIn("2x modern_industrialization:silicon_dust")
+.fluidIn("modern_industrialization:oxygen", 8000)
+.itemOut("14x roll_mod:olivine_dust")
+
 })
