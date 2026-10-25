@@ -117,7 +117,82 @@ ServerEvents.recipes(event => {
         { ore_name: "olivine", input: "#c:ores/olivine", main_multiplier: 7, macerator_byproduct: "roll_mod:pyrope_dust", centrifuge_byproduct: "roll_mod:obsidian_dust", washer_byproduct: "roll_mod:peridot_dust" },
         { ore_name: "crimson_iron", input: "#c:ores/crimson_iron", main_multiplier: 3, macerator_byproduct: "roll_mod:redstone_dust", centrifuge_byproduct: "minecraft:netherite_scrap", washer_byproduct: "roll_mod:hematite_dust" },
         { ore_name: "stannite", input: "#c:ores/stannite", main_multiplier: 4, macerator_byproduct: "roll_mod:crushed_cassiterite_sand_ore", centrifuge_byproduct: "roll_mod:cassiterite_sand_dust", washer_byproduct: "roll_mod:pyrite_dust" },
-        { ore_name: "nickel", input: "#c:ores/nickel", main_multiplier: 3, macerator_byproduct: "roll_mod:stibnite_dust", centrifuge_byproduct: "modern_industrialization:magnesium_dust", washer_byproduct: "roll_mod:garnierite_dust" }
+        { ore_name: "nickel", input: "#c:ores/nickel", main_multiplier: 3, macerator_byproduct: "roll_mod:stibnite_dust", centrifuge_byproduct: "modern_industrialization:magnesium_dust", washer_byproduct: "roll_mod:garnierite_dust" },
+
+        // ТЕ ЩО ВИЩЕ ЇБАНТНЯ НА ФОРМАТУВАННІ ЯКУ НЕМОЖЛИВО ЧИТАТИ НАХУЙ
+        // Мені шкода людину яка буде читати це ...
+
+        {
+        ore_name: "nickel",
+        input: "#c:ores/nickel",
+        main_multiplier: 3,
+        macerator_byproduct: "roll_mod:stibnite_dust",
+        centrifuge_byproduct: "modern_industrialization:magnesium_dust",
+        washer_byproduct: "roll_mod:garnierite_dust"
+        },
+
+        {
+        ore_name: "livingstonite",
+        input: "#c:ores/livingstonite",
+        main_multiplier: 2,
+        macerator_byproduct: "roll_mod:cinnabar_dust",
+        centrifuge_byproduct: "roll_mod:stibnite_dust",
+        washer_byproduct: "roll_mod:sulfur_dust"
+        },
+
+        {
+        ore_name: "borax",
+        input: "#c:ores/borax",
+        main_multiplier: 4,
+        macerator_byproduct: "roll_mod:rock_salt_dust",
+        centrifuge_byproduct: "roll_mod:salt_dust",
+        washer_byproduct: "roll_mod:trona_dust"
+        },
+
+        {
+        ore_name: "sunnarium_orthosilicate",
+        input: "#c:ores/sunnarium_orthosilicate",
+        main_multiplier: 2,
+        macerator_byproduct: "roll_mod:olivine_dust",
+        centrifuge_byproduct: "roll_mod:sunnarium_sulfophosphoorthosilicate_dust",
+        washer_byproduct: "roll_mod:flint_dust"
+        },
+
+        {
+        ore_name: "sunnarium_sulfophosphoorthosilicate",
+        input: "#c:ores/sunnarium_sulfophosphoorthosilicate",
+        main_multiplier: 2,
+        macerator_byproduct: "roll_mod:sulfur_dust",
+        centrifuge_byproduct: "roll_mod:apatite_dust",
+        washer_byproduct: "roll_mod:sunnarium_orthosilicate_dust"
+        },
+
+        {
+        ore_name: "fluosunnarite",
+        input: "#c:ores/fluosunnarite",
+        main_multiplier: 2,
+        macerator_byproduct: "roll_mod:fluorite_dust",
+        centrifuge_byproduct: "roll_mod:sunnarium_orthosilicate_dust",
+        washer_byproduct: "roll_mod:flint_dust"
+        },
+
+        {
+        ore_name: "rheniite",
+        input: "#c:ores/rheniite",
+        main_multiplier: 1,
+        macerator_byproduct: "roll_mod:molybdenite_dust",
+        centrifuge_byproduct: "roll_mod:sulfur_dust",
+        washer_byproduct: "roll_mod:flint_dust"
+        },
+
+        {
+        ore_name: "antimony",
+        input: "#c:ores/antimony",
+        main_multiplier: 3,
+        macerator_byproduct: "roll_mod:stibnite_dust",
+        centrifuge_byproduct: "roll_mod:tetrahedrite_dust",
+        washer_byproduct: "roll_mod:flint_dust"
+        }
     ];
 
     oreProcessing.forEach(ore => {

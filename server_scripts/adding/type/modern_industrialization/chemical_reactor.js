@@ -541,4 +541,11 @@ event.recipes.modern_industrialization.chemical_reactor(16, 400)
 .fluidIn("modern_industrialization:oxygen", 8000)
 .itemOut("14x roll_mod:olivine_dust")
 
+
+event.recipes.modern_industrialization.chemical_reactor(32, 1200)
+.itemIn("10x #c:dusts/saltpeter")
+.fluidIn("7000x modern_industrialization:sulfuric_acid")
+.fluidOut("10000x modern_industrialization:nitric_acid");
+
+
 })
