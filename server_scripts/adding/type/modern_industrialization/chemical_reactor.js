@@ -472,6 +472,7 @@ event.recipes.modern_industrialization.chemical_reactor(128, 120)
 event.recipes.modern_industrialization.chemical_reactor(32, 400)
 .itemIn("4x modern_industrialization:emerald_plate")
 .itemIn("4x minecraft:ender_eye")
+.fluidIn("500x modern_industrialization:molten_lithium")
 .itemIn("2x roll_mod:sunnarium_glass_mk1")
 .itemOut("1x roll_mod:sunnarium_glass_mk2")
 .registeredCondition({
@@ -482,7 +483,7 @@ event.recipes.modern_industrialization.chemical_reactor(32, 400)
 event.recipes.modern_industrialization.chemical_reactor(128, 400)
 .itemIn("4x modern_industrialization:sunnarium_plate")
 .itemIn("2x roll_mod:blue_wafer")
-.itemIn("2x roll_mod:lithium_dust")
+.fluidIn("500x modern_industrialization:molten_lithium")
 .itemIn("2x roll_mod:sunnarium_glass_mk2")
 .itemOut("1x roll_mod:sunnarium_glass_mk3")
 .registeredCondition({
@@ -498,26 +499,13 @@ event.recipes.modern_industrialization.chemical_reactor(128, 900)
 .itemIn("2x roll_mod:sunnarium_glass_mk3")
 .fluidIn("3000x modern_industrialization:rocket_propellant")
 .fluidIn("2000x modern_industrialization:radon")
-.fluidIn("1000x modern_industrialization:argon")
+.fluidIn("500x modern_industrialization:molten_lithium")
 .itemOut("1x roll_mod:sunnarium_glass_mk4")
 .registeredCondition({
           "mi_tweaks:voltage": {
             "voltage": "ev"
           }});
 
-event.recipes.modern_industrialization.chemical_reactor(128, 900)
-.itemIn("4x roll_mod:enriched_sunnarium")
-.itemIn("2x roll_mod:quantum_star")
-.itemIn("4x roll_mod:lithium_dust")
-.itemIn("2x roll_mod:sunnarium_glass_mk3")
-.fluidIn("3000x modern_industrialization:rocket_propellant")
-.fluidIn("2000x modern_industrialization:radon")
-.biome("ad_astra:orbit")
-.itemOut("1x roll_mod:sunnarium_glass_mk4")
-.registeredCondition({
-          "mi_tweaks:voltage": {
-            "voltage": "ev"
-          }});
 /*
 event.recipes.modern_industrialization.chemical_reactor(128, 900)
 .itemIn("4x roll_mod:enriched_sunnarium")
