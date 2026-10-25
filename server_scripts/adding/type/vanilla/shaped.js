@@ -3109,4 +3109,30 @@ colors.forEach(color => {
     );
 });
     
+
+event.shaped(
+    Item.of('roll_mod:rotary_hearth_furnace'),
+    [
+        'AAA',
+        'BCB',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:electric_blast_furnace'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:netherite_frame'),
+    [
+        'A A',
+        ' A ',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:netherite_rod'
+    }
+)
 })

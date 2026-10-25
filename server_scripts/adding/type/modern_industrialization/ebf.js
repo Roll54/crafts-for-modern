@@ -299,6 +299,12 @@ event.recipes.modern_industrialization.blast_furnace(1024, 200)
 .itemIn("1x modern_industrialization:sunnarium_dust")
 .fluidOut("modern_industrialization:molten_sunnarium", 1000)
 
+event.recipes.modern_industrialization.blast_furnace(1024, 200)
+.itemIn("1x roll_mod:1_circuit")
+.itemIn("1x modern_industrialization:tungsten_dust")
+.fluidOut("modern_industrialization:molten_tungsten", 1000)
+
+
 event.recipes.modern_industrialization.blast_furnace(1024, 100)
 .itemIn("1x roll_mod:2_circuit")
 .itemIn("4x modern_industrialization:sunnarium_dust")
@@ -309,4 +315,5 @@ event.recipes.modern_industrialization.blast_furnace(1024, 100)
 .itemIn("16x #roll_mod:good_for_block_blencium")
 .fluidIn("1000x roll_mod:block_blencium")
 .itemOut("1x modern_industrialization:block_blencium_ingot")
+
 })
