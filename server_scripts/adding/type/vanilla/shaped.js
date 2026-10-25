@@ -1,6 +1,20 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('ae2_inventory_connector:me_inventory_connector'),
+    [
+        'AAA',
+        'BCB',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:analog_circuit',
+        C: 'modern_industrialization:basic_machine_hull',
+        B: 'ae2:storage_bus'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:fluorite_pineapple_pizza'),
     [
         'AA ',
