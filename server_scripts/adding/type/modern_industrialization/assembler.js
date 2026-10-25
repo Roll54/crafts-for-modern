@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
       .itemOut("1x modern_industrialization:tunstensteel_machine_casing")
     
     event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("4x modern_industrialization:tunstensteel_curved_plate")
+      .itemIn("6x modern_industrialization:tunstensteel_curved_plate")
       .itemIn("1x modern_industrialization:tunstensteel_machine_casing")
       .itemOut("1x modern_industrialization:tunstensteel_machine_casing_pipe")
     
