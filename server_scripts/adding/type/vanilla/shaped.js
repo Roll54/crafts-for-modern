@@ -15,7 +15,7 @@ event.shaped(
 event.shaped(
     Item.of('roll_mod:fluorite_pineapple_pizza'),
     [
-        ' A ',
+        'QAQ',
         'BCB',
         'DDD'
     ],
@@ -23,7 +23,8 @@ event.shaped(
         A: '#brewinandchewin:foods/cheese_wedge',
         D: 'minecraft:wheat',
         B: 'roll_mod:fluorite_pineapple_slice',
-        C: 'farmersdelight:tomato_sauce'
+        C: 'farmersdelight:tomato_sauce',
+        Q: '#brewinandchewin:foods/cheese_wedge'
     }
 )
     
