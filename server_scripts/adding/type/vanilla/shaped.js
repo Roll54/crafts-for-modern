@@ -20,7 +20,7 @@ event.shaped(
         'DDD'
     ],
     {
-        A: '#brewinandchewin:foods/cheese_wed',
+        A: 'roll_mod:fluorite_pineapple_slice',
         D: 'minecraft:wheat',
         B: '#brewinandchewin:foods/pizza_topp',
         C: 'farmersdelight:tomato_sauce'
