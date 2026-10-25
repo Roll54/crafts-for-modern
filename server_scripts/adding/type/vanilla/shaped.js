@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('mi_tweaks:steam_ore_washer'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:analog_circuit',
+        C: 'modern_industrialization:steel_machine_casing_pipe',
+        D: 'minecraft:cauldron',
+        A: 'modern_industrialization:steel_machine_casing'
+    }
+)
+    
+event.shaped(
     Item.of('ae2_inventory_connector:me_inventory_connector'),
     [
         'AAA',
