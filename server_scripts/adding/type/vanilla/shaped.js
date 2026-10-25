@@ -1,6 +1,33 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:fluorite_pineapple_pizza'),
+    [
+        'AA ',
+        'AA ',
+        '   '
+    ],
+    {
+        A: 'roll_mod:fluorite_pineapple_pizza_slice'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:fluorite_pineapple_pizza'),
+    [
+        ' A ',
+        'BCB',
+        'DDD'
+    ],
+    {
+        A: '#brewinandchewin:foods/cheese_wed',
+        D: 'minecraft:wheat',
+        B: '#brewinandchewin:foods/pizza_topp',
+        C: 'farmersdelight:tomato_sauce'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:large_alloy_smelter'),
     [
         'AAA',
