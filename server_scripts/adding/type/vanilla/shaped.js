@@ -1,6 +1,22 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('hostile_neural_industrialization:electric_simulation_chamber'),
+    [
+        'ABA',
+        'CDC',
+        'EBE'
+    ],
+    {
+        A: 'extended_industrialization:netherite_rotary_blade',
+        B: 'modern_industrialization:netherite_large_plate',
+        C: 'modern_industrialization:large_motor',
+        D: 'modern_industrialization:advanced_machine_hull',
+        E: 'modern_industrialization:electronic_circuit'
+    }
+)
+
+event.shaped(
     Item.of('mi_tweaks:steam_ore_washer'),
     [
         'ABA',
