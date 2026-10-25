@@ -493,4 +493,12 @@ ServerEvents.tags('item', event => {
         'civilian_aviation:skyhawk_pr_bluered',
         'civilian_aviation:skyhawk_pr_brown'
     ]);
+
+
+        event.add('roll_mod:good_for_block_blencium', [
+        'roll_mod:meteorite_metal_rod',
+        'modern_industrialization:niobium_titanium_alloy_rod',
+        'modern_industrialization:rhodium_plated_palladium_rod',
+        'modern_industrialization:chrome_vanadium_steel_rod',
+    ]);
 });

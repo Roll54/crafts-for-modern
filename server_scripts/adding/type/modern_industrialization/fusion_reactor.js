@@ -10,4 +10,11 @@ ServerEvents.recipes(event => {
   .fluidOut("modern_industrialization:tritium", 1100)
   .fluidOut("modern_industrialization:helium", 1000)
 
+
+  event.recipes.modern_industrialization.fusion_reactor(20000, 100)
+  .fluidIn("2000x modern_industrialization:molten_sunnarium")
+  .fluidIn("2000x modern_industrialization:molten_tungsten")
+  .fluidIn("1000x modern_industrialization:helium_plasma")
+  .fluidOut("1000x roll_mod:block_blencium")
+
 })
