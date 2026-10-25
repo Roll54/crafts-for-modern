@@ -1,6 +1,81 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('roll_mod:large_alloy_smelter'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        D: 'extended_industrialization:electric_alloy_smelter',
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:highly_advanced_large_furnace'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull',
+        D: 'extended_industrialization:large_electric_furnace'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:highly_advanced_heat_exchanger'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull',
+        D: 'modern_industrialization:heat_exchanger'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:parallel_pyrolyse_oven'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull',
+        D: 'modern_industrialization:pyrolyse_oven'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:rotary_hearth_furnace'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull',
+        D: 'modern_industrialization:electric_blast_furnace'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:highly_advanced_piston'),
     [
         'AAA',
