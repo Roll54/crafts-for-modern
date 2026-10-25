@@ -102,7 +102,74 @@ ServerEvents.recipes(event => {
             .fluidIn("modern_industrialization:soldering_alloy", 500)
             .itemOut("1x " + item);
     });
-
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("6x modern_industrialization:tunstensteel_machine_casing_pipe")
+      .itemIn("2x modern_industrialization:processing_unit")
+      .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
+      .itemIn("1x extended_industrialization:electric_alloy_smelter")
+      .itemOut("1x roll_mod:large_alloy_smelter")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("6x modern_industrialization:tunstensteel_machine_casing_pipe")
+      .itemIn("2x modern_industrialization:processing_unit")
+      .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
+      .itemIn("1x extended_industrialization:large_electric_furnace")
+      .itemOut("1x roll_mod:highly_advanced_large_furnace")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("6x modern_industrialization:tunstensteel_machine_casing_pipe")
+      .itemIn("2x modern_industrialization:processing_unit")
+      .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
+      .itemIn("1x modern_industrialization:heat_exchanger")
+      .itemOut("1x roll_mod:highly_advanced_heat_exchanger")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("6x modern_industrialization:tunstensteel_machine_casing_pipe")
+      .itemIn("2x modern_industrialization:processing_unit")
+      .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
+      .itemIn("1x modern_industrialization:pyrolyse_oven")
+      .itemOut("1x roll_mod:parallel_pyrolyse_oven")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("6x modern_industrialization:tunstensteel_machine_casing_pipe")
+      .itemIn("2x modern_industrialization:processing_unit")
+      .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
+      .itemIn("1x modern_industrialization:electric_blast_furnace")
+      .itemOut("1x roll_mod:rotary_hearth_furnace")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("3x modern_industrialization:tunstensteel_plate")
+      .itemIn("2x modern_industrialization:tunstensteel_rod")
+      .itemIn("1x roll_mod:highly_advanced_motor")
+      .itemIn("2x modern_industrialization:superconductor_cable")
+      .itemIn("1x modern_industrialization:tunstensteel_gear")
+      .itemOut("1x roll_mod:highly_advanced_piston")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("5x modern_industrialization:aluminum_plate")
+      .itemIn("1x #roll_mod:battaries_tier_one")
+      .itemIn("1x modern_industrialization:capacitor")
+      .itemIn("1x modern_industrialization:copper_wire")
+      .itemIn("1x modern_industrialization:diode")
+      .itemIn("1x modern_industrialization:inductor")
+      .itemOut("1x roll_mod:brainupgrade_radio")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("8x modern_industrialization:tunstensteel_plate")
+      .itemIn("1x modern_industrialization:fire_clay_bricks")
+      .itemOut("1x modern_industrialization:tungsten_steel_heat_proof_casing")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("8x modern_industrialization:tunstensteel_plate")
+      .itemIn("1x modern_industrialization:tunstensteel_gear")
+      .itemOut("1x modern_industrialization:tunstensteel_machine_casing")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("4x modern_industrialization:tunstensteel_curved_plate")
+      .itemIn("1x modern_industrialization:tunstensteel_machine_casing")
+      .itemOut("1x modern_industrialization:tunstensteel_machine_casing_pipe")
+    
     event.recipes.modern_industrialization.assembler(16, 200)
         .itemIn("4x modern_industrialization:iron_plate")
         .itemIn("2x modern_industrialization:iron_rod")
