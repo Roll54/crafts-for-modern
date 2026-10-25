@@ -109,21 +109,6 @@ event.shaped(
 )
     
 event.shaped(
-    Item.of('roll_mod:sulfur_berry_pie'),
-    [
-        'ABA',
-        'ACA',
-        ' D '
-    ],
-    {
-        C: 'minecraft:sugar',
-        B: '#c:eggs',
-        A: 'roll_mod:sulfur_berry',
-        D: 'farmersdelight:pie_crust'
-    }
-)
-    
-event.shaped(
     Item.of('modern_industrialization:tungsten_steel_heat_proof_casing'),
     [
         'AAA',
@@ -162,6 +147,21 @@ event.shaped(
     }
 )
 
+event.shaped(
+    Item.of('roll_mod:sulfur_berry_pie'),
+    [
+        'ABA',
+        'ACA',
+        ' D '
+    ],
+    {
+        C: 'minecraft:sugar',
+        B: '#c:eggs',
+        A: 'roll_mod:sulfur_berry',
+        D: 'farmersdelight:pie_crust'
+    }
+)
+    
 event.shaped(
     Item.of('roll_mod:highly_advanced_motor'),
     [
