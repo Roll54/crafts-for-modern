@@ -123,8 +123,9 @@ ServerEvents.generateData('after_mods', event => {
         data.fabricator_drops = data.fabricator_drops
             .filter(drop => removed.indexOf(drop.id) == -1)
             .concat(addDrops[name] || []);
-        // Симуляційна камера більше не дає узагальнених передбачень
-        data.base_drop = { id: 'minecraft:air' };
+        // Замість узагальненого передбачення. Порожнім base_drop бути не може:
+        // клієнт не отримає дані моделі й гравця викине з сервера
+        data.base_drop = { id: 'minecraft:paper' };
         model(name, data);
     });
 });
