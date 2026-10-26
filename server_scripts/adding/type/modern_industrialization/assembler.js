@@ -265,6 +265,7 @@ ServerEvents.recipes(event => {
       .itemIn("4x modern_industrialization:processing_unit")
       .itemIn("6x modern_industrialization:platinum_fine_wire")
       .itemIn("2x modern_industrialization:cadmium_battery")
+      .itemIn("1x roll_mod:battery_module_iii")
       .itemOut("1x roll_mod:battery_module_iv")
     
     event.recipes.modern_industrialization.assembler(16, 200)
