@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('railcraft:tunnel_bore'),
+    [
+        'ABC',
+        'DCB',
+        'DDA'
+    ],
+    {
+        C: 'modern_industrialization:steel_bolt',
+        D: 'modern_industrialization:aluminum_bolt',
+        B: 'modern_industrialization:steel_large_plate',
+        A: 'modern_industrialization:aluminum_large_plate'
+    }
+)
+
+event.shaped(
     Item.of('hostile_neural_industrialization:electric_simulation_chamber'),
     [
         'ABA',
