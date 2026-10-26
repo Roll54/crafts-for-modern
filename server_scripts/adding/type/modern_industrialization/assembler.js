@@ -103,6 +103,13 @@ ServerEvents.recipes(event => {
             .itemOut("1x " + item);
     });
     event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("8x cosmeticarmoursmod:rose_gold_ingot")
+      .itemIn("4x modern_industrialization:diamond_plate")
+      .itemIn("2x modern_industrialization:robot_arm")
+      .itemIn("minecraft:enchanted_book[stored_enchantments={levels:{\"minecraft:silk_touch\":1}}]")
+      .itemOut("1x roll_mod:silk_touch_module")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("4x modern_industrialization:analog_circuit")
       .itemIn("6x modern_industrialization:gold_fine_wire")
       .itemIn("4x modern_industrialization:tin_plate")
