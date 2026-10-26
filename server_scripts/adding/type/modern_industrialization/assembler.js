@@ -187,6 +187,15 @@ ServerEvents.recipes(event => {
       .itemIn("4x modern_industrialization:diamond_plate")
       .itemIn("6x modern_industrialization:gold_fine_wire")
       .itemOut("1x roll_mod:fortune_module_i")
+
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("4x modern_industrialization:analog_circuit")
+      .itemIn("minecraft:enchanted_book[stored_enchantments={levels:{\"minecraft:looting\":3}}]")
+      .itemIn("8x modern_industrialization:black_steel_ingot")
+      .itemIn("4x modern_industrialization:bismuth_bronze_ingot")
+      .itemIn("4x modern_industrialization:diamond_plate")
+      .itemIn("6x modern_industrialization:gold_fine_wire")
+      .itemOut("1x roll_mod:fortune_module_i")
     
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("4x modern_industrialization:electronic_circuit")
