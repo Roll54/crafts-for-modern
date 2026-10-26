@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     .itemOut("2x modern_industrialization:cupronickel_ingot")
 
   event.recipes.extended_industrialization.alloy_smelter(4, 200)
-    .itemIn("modern_industrialization:lead_ingot")
+    .itemIn("#roll_mod:lead_recipe")
     .itemIn("modern_industrialization:antimony_ingot")
     .itemOut("2x modern_industrialization:battery_alloy_ingot")
   

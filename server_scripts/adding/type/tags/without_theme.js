@@ -87,6 +87,11 @@ ServerEvents.tags('item', event => {
         "#c:ingots/copper",
     ]);
 
+    event.add('roll_mod:lead_recipe', [
+        "#c:dusts/lead",
+        "#c:ingots/lead",
+    ]);
+
     event.add('minecraft:chicken_food', [
         "#c:seeds",
         "#agricraft:seeds",
