@@ -45,7 +45,7 @@ event.shaped(
         A: 'modern_industrialization:steel_machine_casing'
     }
 )
-    
+    /*
 event.shaped(
     Item.of('ae2_inventory_connector:me_inventory_connector'),
     [
@@ -59,7 +59,7 @@ event.shaped(
         B: 'ae2:storage_bus'
     }
 )
-    
+   */ 
 event.shaped(
     Item.of('roll_mod:fluorite_pineapple_pizza'),
     [
