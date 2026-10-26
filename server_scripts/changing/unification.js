@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
   unify('minecraft:redstone', '#c:dusts/redstone')
   unify('minecraft:glowstone_dust', '#roll_mod:glowstone_dust')
   unify('modern_industrialization:sulfur_dust', 'roll_mod:sulfur_dust')
+  unify('modern_industrialization:antimony_dust', '#c:dusts/antimony')
 
   // TODO: фільтр шукає пил MI, а замінюється пил roll_mod — спрацює лише
   // в рецептах, де є обидва. Мабуть, мало бути unify('roll_mod:..._dust', ...)
