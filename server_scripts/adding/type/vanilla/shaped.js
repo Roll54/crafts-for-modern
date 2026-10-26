@@ -236,6 +236,32 @@ event.shaped(
 )
 
 event.shaped(
+    Item.of('modern_industrialization:osmirium_casing'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        B: 'modern_industrialization:osmiridium_gear',
+        A: 'modern_industrialization:osmiridium_plate'
+    }
+)
+
+event.shaped(
+    Item.of('modern_industrialization:osmiridium_machine_casing_pipe'),
+    [
+        'A A',
+        'ABA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:osmiridium_curved_plate',
+        B: 'modern_industrialization:osmirium_casing'
+    }
+)
+
+event.shaped(
     Item.of('roll_mod:sulfur_berry_pie'),
     [
         'ABA',
