@@ -8,6 +8,11 @@ ServerEvents.recipes(event => {
     .itemIn("#roll_mod:copper_recipe")
     .itemIn("#roll_mod:nickel_recipe")
     .itemOut("2x modern_industrialization:cupronickel_ingot")
+
+  event.recipes.extended_industrialization.alloy_smelter(4, 200)
+    .itemIn("#roll_mod:lead_recipe")
+    .itemIn("modern_industrialization:antimony_ingot")
+    .itemOut("2x modern_industrialization:battery_alloy_ingot")
   
   event.recipes.extended_industrialization.alloy_smelter(2, 200)
     .itemIn("roll_mod:bismuth_dust")

@@ -161,7 +161,16 @@ ServerEvents.tags('item', event => {
     "roll_mod:refined_stibnite_ore",
     "roll_mod:pure_stibnite_dust",
     "roll_mod:purified_stibnite_ore",
-    "roll_mod:stibnite_dust"
+    "roll_mod:stibnite_dust",
+
+    "roll_mod:mercury_antimony",
+    "roll_mod:crushed_antimony_ore",
+    "roll_mod:impure_antimony_dust",
+    "roll_mod:refined_antimony_ore",
+    "roll_mod:pure_antimony_dust",
+    "roll_mod:purified_antimony_ore",
+    "roll_mod:antimony_dust",
+    "roll_mod:raw_antimony"
   ];
 
   //

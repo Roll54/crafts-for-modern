@@ -3,6 +3,24 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'farmersdelight:cutting',
         ingredients: [
+            { item: 'roll_mod:fluorite_pineapple_pizza' }
+        ],
+        result: [
+            {
+                item: {
+                    id: 'roll_mod:fluorite_pineapple_pizza_slice',
+                    count: 4
+                }
+            }
+        ],
+        tool: {
+            tag: 'c:tools/knife'
+        }
+    })
+    
+    event.custom({
+        type: 'farmersdelight:cutting',
+        ingredients: [
             { item: 'roll_mod:sulfur_berry_pie' }
         ],
         result: [
@@ -27,7 +45,7 @@ ServerEvents.recipes(event => {
             {
                 item: {
                     id: 'roll_mod:fluorite_pineapple_slice',
-                    count: 4
+                    count: 6
                 }
             }
         ],

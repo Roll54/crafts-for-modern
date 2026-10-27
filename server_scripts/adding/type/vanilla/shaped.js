@@ -1,6 +1,169 @@
 ServerEvents.recipes(event => {
 
 event.shaped(
+    Item.of('railcraft:tunnel_bore'),
+    [
+        'ABC',
+        'DCB',
+        'DDA'
+    ],
+    {
+        C: 'modern_industrialization:steel_bolt',
+        D: 'modern_industrialization:aluminum_bolt',
+        B: 'modern_industrialization:steel_large_plate',
+        A: 'modern_industrialization:aluminum_large_plate'
+    }
+)
+
+// event.shaped(
+//     Item.of('hostile_neural_industrialization:electric_simulation_chamber'),
+//     [
+//         'ABA',
+//         'CDC',
+//         'EBE'
+//     ],
+//     {
+//         A: 'extended_industrialization:netherite_rotary_blade',
+//         B: 'modern_industrialization:netherite_large_plate',
+//         C: 'modern_industrialization:large_motor',
+//         D: 'modern_industrialization:advanced_machine_hull',
+//         E: 'modern_industrialization:electronic_circuit'
+//     }
+// )
+
+event.shaped(
+    Item.of('mi_tweaks:steam_ore_washer'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:analog_circuit',
+        C: 'modern_industrialization:steel_machine_casing_pipe',
+        D: 'minecraft:cauldron',
+        A: 'modern_industrialization:steel_machine_casing'
+    }
+)
+    /*
+event.shaped(
+    Item.of('ae2_inventory_connector:me_inventory_connector'),
+    [
+        'AAA',
+        'BCB',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:analog_circuit',
+        C: 'modern_industrialization:basic_machine_hull',
+        B: 'ae2:storage_bus'
+    }
+)
+   */ 
+event.shaped(
+    Item.of('roll_mod:fluorite_pineapple_pizza'),
+    [
+        'AA ',
+        'AA ',
+        '   '
+    ],
+    {
+        A: 'roll_mod:fluorite_pineapple_pizza_slice'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:fluorite_pineapple_pizza'),
+    [
+        'QAQ',
+        'BCB',
+        'DDD'
+    ],
+    {
+        A: '#brewinandchewin:foods/cheese_wedge',
+        D: 'minecraft:wheat',
+        B: 'roll_mod:fluorite_pineapple_slice',
+        C: 'farmersdelight:tomato_sauce',
+        Q: '#brewinandchewin:foods/cheese_wedge'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:large_alloy_smelter'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        D: 'extended_industrialization:electric_alloy_smelter',
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:highly_advanced_large_furnace'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull',
+        D: 'extended_industrialization:large_electric_furnace'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:highly_advanced_heat_exchanger'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull',
+        D: 'modern_industrialization:heat_exchanger'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:parallel_pyrolyse_oven'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull',
+        D: 'modern_industrialization:pyrolyse_oven'
+    }
+)
+    
+event.shaped(
+    Item.of('roll_mod:rotary_hearth_furnace'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        C: 'modern_industrialization:highly_advanced_machine_hull',
+        D: 'modern_industrialization:electric_blast_furnace'
+    }
+)
+    
+event.shaped(
     Item.of('roll_mod:highly_advanced_piston'),
     [
         'AAA',
@@ -30,21 +193,6 @@ event.shaped(
         F: 'modern_industrialization:inductor',
         A: 'modern_industrialization:aluminum_plate',
         E: 'modern_industrialization:diode'
-    }
-)
-    
-event.shaped(
-    Item.of('roll_mod:sulfur_berry_pie'),
-    [
-        'ABA',
-        'ACA',
-        ' D '
-    ],
-    {
-        C: 'minecraft:sugar',
-        B: '#c:eggs',
-        A: 'roll_mod:sulfur_berry',
-        D: 'farmersdelight:pie_crust'
     }
 )
     
@@ -87,6 +235,47 @@ event.shaped(
     }
 )
 
+event.shaped(
+    Item.of('modern_industrialization:osmirium_casing'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        B: 'modern_industrialization:osmiridium_gear',
+        A: 'modern_industrialization:osmiridium_plate'
+    }
+)
+
+event.shaped(
+    Item.of('modern_industrialization:osmiridium_machine_casing_pipe'),
+    [
+        'A A',
+        'ABA',
+        'A A'
+    ],
+    {
+        A: 'modern_industrialization:osmiridium_curved_plate',
+        B: 'modern_industrialization:osmirium_casing'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:sulfur_berry_pie'),
+    [
+        'ABA',
+        'ACA',
+        ' D '
+    ],
+    {
+        C: 'minecraft:sugar',
+        B: '#c:eggs',
+        A: 'roll_mod:sulfur_berry',
+        D: 'farmersdelight:pie_crust'
+    }
+)
+    
 event.shaped(
     Item.of('roll_mod:highly_advanced_motor'),
     [
@@ -3108,21 +3297,7 @@ colors.forEach(color => {
         }
     );
 });
-    
 
-event.shaped(
-    Item.of('roll_mod:rotary_hearth_furnace'),
-    [
-        'AAA',
-        'BCB',
-        'AAA'
-    ],
-    {
-        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
-        B: 'modern_industrialization:processing_unit',
-        C: 'modern_industrialization:electric_blast_furnace'
-    }
-)
 
 event.shaped(
     Item.of('roll_mod:netherite_frame'),

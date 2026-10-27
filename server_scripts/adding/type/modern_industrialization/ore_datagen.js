@@ -220,13 +220,13 @@ ServerEvents.recipes(event => {
 
         event.recipes.modern_industrialization.lv_ore_washer(32, 16)
             .itemIn(`1x ${crushed}`)
-            .fluidIn("minecraft:water", 1000)
+            .fluidIn("1000x minecraft:water")
             .itemOut(`1x ${purified}`)
             .itemOut(`1x ${ore.washer_byproduct}`);
 
         event.recipes.modern_industrialization.lv_ore_washer(32, 16)
             .itemIn(`1x ${crushed}`)
-            .fluidIn("extended_industrialization:distilled_water", 250)
+            .fluidIn("250x extended_industrialization:distilled_water")
             .itemOut(`1x ${purified}`)
             .itemOut(`1x ${ore.washer_byproduct}`)
             .itemOut(`1x ${macerator_byproduct}`, 0.5);
