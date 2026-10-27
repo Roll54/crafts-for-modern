@@ -103,6 +103,16 @@ ServerEvents.recipes(event => {
             .itemOut("1x " + item);
     });
     event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("6x modern_industrialization:advanced_motor")
+      .itemIn("12x modern_industrialization:advanced_pump")
+      .itemIn("6x roll_mod:advanced_conveyor")
+      .itemIn("16x modern_industrialization:stainless_steel_plate")
+      .itemIn("16x modern_industrialization:platinum_wire")
+      .itemIn("1x modern_industrialization:lv_ore_washer")
+      .itemIn("6x modern_industrialization:rhodium_plated_palladium_bolt")
+      .itemOut("1x roll_mod:ore_washer")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("8x cosmeticarmoursmod:rose_gold_ingot")
       .itemIn("4x modern_industrialization:diamond_plate")
       .itemIn("2x modern_industrialization:robot_arm")
