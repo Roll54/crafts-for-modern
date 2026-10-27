@@ -202,4 +202,14 @@ event.recipes.modern_industrialization.centrifuge(128, 500)
 .itemOut("2x roll_mod:vanadium_magnetite_dust")
 .itemOut("2x roll_mod:chromite_dust")
 .fluidOut("250x modern_industrialization:helium_3")
+
+event.recipes.modern_industrialization.centrifuge(128, 1200)
+.itemIn("15x roll_mod:mars_stone_dust")
+.itemOut("5x roll_mod:olivine_dust")
+.itemOut("4x roll_mod:hematite_dust")
+.itemOut("3x roll_mod:tantalite_dust")
+.itemOut("2x roll_mod:bauxite_dust")
+.itemOut("1x roll_mod:platinum_group_sludge")
+
+
 })
