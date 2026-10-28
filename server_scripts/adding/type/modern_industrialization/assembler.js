@@ -103,6 +103,14 @@ ServerEvents.recipes(event => {
             .itemOut("1x " + item);
     });
     event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("6x modern_industrialization:rhodium_plated_palladium_bolt")
+      .itemIn("1x modern_industrialization:enderium_plate")
+      .itemIn("1x roll_mod:nether_star_plate")
+      .itemIn("1x roll_mod:diamond_alloy_plate")
+      .fluidIn("250x extended_industrialization:blazing_essence")
+      .itemOut("1x roll_mod:simulation_composite")
+    
+    event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("6x modern_industrialization:advanced_motor")
       .itemIn("12x modern_industrialization:advanced_pump")
       .itemIn("6x roll_mod:advanced_conveyor")
