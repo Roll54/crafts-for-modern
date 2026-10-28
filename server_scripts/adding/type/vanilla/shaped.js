@@ -32,7 +32,7 @@ event.shaped(
 // )
 
 event.shaped(
-    Item.of('mi_tweaks:steam_ore_washer'),
+    Item.of('roll_mod:steam_ore_washer'),
     [
         'ABA',
         'CDC',
