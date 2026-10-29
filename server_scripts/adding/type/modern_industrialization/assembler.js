@@ -129,6 +129,7 @@ ServerEvents.recipes(event => {
       .itemIn("16x modern_industrialization:advanced_motor")
       .itemIn("16x modern_industrialization:titanium_plate")
       .itemIn("16x modern_industrialization:platinum_wire")
+      .itemIn("8x extended_industrialization:netherite_rotary_blade")
       .itemIn("1x modern_industrialization:electric_cutting_machine")
       .itemOut("1x roll_mod:large_cutting_machine")
 
@@ -662,7 +663,7 @@ ServerEvents.recipes(event => {
       .itemIn("5x modern_industrialization:tunstensteel_machine_casing_pipe")
       .itemIn("2x modern_industrialization:processing_unit")
       .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
-      .itemIn("1x modern_industrialization:pyrolyse_oven")
+      .itemIn("1x roll_mod:advanced_pyrolyse_oven")
       .itemOut("1x roll_mod:parallel_pyrolyse_oven")
     
     event.recipes.modern_industrialization.assembler(16, 200)
@@ -671,7 +672,15 @@ ServerEvents.recipes(event => {
       .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
       .itemIn("1x modern_industrialization:electric_blast_furnace")
       .itemOut("1x roll_mod:rotary_hearth_furnace")
-    
+ 
+    event.recipes.modern_industrialization.assembler(32, 400)
+      .itemIn("16x modern_industrialization:incoloy_plate")
+      .itemIn("2x modern_industrialization:highly_advanced_machine_hull")
+      .itemIn("1x modern_industrialization:assembler")
+      .itemIn("6x roll_mod:highly_advanced_robot_arm")
+      .itemIn("2x roll_mod:highly_advanced_large_motor")
+      .itemOut("1x roll_mod:assembly_line")
+
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("3x modern_industrialization:tunstensteel_plate")
       .itemIn("2x modern_industrialization:tunstensteel_rod")
