@@ -33,6 +33,7 @@ ServerEvents.recipes(event => {
         }
     })
 
+    // ВИПРАВЛЕНО: Додано ID для result
     event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -46,29 +47,30 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "A": {
-            "item": "modern_industrialization:chrome_vanadium_steel_block"
+                "item": "modern_industrialization:chrome_vanadium_steel_block"
             },
             "B": {
-            "item": "minecraft:netherite_block"
+                "item": "minecraft:netherite_block"
             },
             "C": {
-            "item": "roll_mod:highly_advanced_large_motor"
+                "item": "roll_mod:highly_advanced_large_motor"
             },
             "D": {
-            "item": "modern_industrialization:tungsten_block"
+                "item": "modern_industrialization:tungsten_block"
             },
             "E": {
-            "item": "extendedcrafting:nether_star_block"
+                "item": "extendedcrafting:nether_star_block"
             },
             "F": {
-            "item": "modern_industrialization:quantum_circuit"
+                "item": "modern_industrialization:quantum_circuit"
             },
             "G": {
-            "item": "modern_industrialization:electric_compressor"
+                "item": "modern_industrialization:electric_compressor"
             }
         },
         "result": {
-            "id": ""
+            "id": "roll_mod:ТУТ_МАЄ_БУТИ_ID_ПРЕДМЕТА", // <--- ЗАМІНИ ЦЕ
+            "count": 1
         }
     })
 
@@ -147,7 +149,6 @@ ServerEvents.recipes(event => {
         }
     })
     
-
     event.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
@@ -174,7 +175,6 @@ ServerEvents.recipes(event => {
             id: 'roll_mod:iv_electric_pickaxe'
         }
     }).id('roll_mod:advanced_drill_crafting')
-
 
     event.custom({
         type: 'extendedcrafting:shaped_table',

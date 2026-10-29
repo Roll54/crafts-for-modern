@@ -4,35 +4,13 @@ ServerEvents.recipes(event => {
 
     const woodTypes = [
         { log: 'ad_astra:glacian_log', wood: null, planks: 'ad_astra:glacian_planks', slab: 'ad_astra:glacian_slab', stripped_log: 'ad_astra:stripped_glacian_log', stripped_wood: null, tag: 'ad_astra:glacian_logs' },
-        { log: 'biomeswevegone:pale_mud', wood: null, planks: null, slab: null, stripped_log: null, stripped_wood: null, tag: null },
-        { log: 'biomeswevegone:aspen_log', wood: 'biomeswevegone:aspen_wood', planks: 'biomeswevegone:aspen_planks', slab: 'biomeswevegone:aspen_slab', stripped_log: 'biomeswevegone:stripped_aspen_log', stripped_wood: 'biomeswevegone:stripped_aspen_wood', tag: 'biomeswevegone:aspen_logs' },
-        { log: 'biomeswevegone:baobab_log', wood: 'biomeswevegone:baobab_wood', planks: 'biomeswevegone:baobab_planks', slab: 'biomeswevegone:baobab_slab', stripped_log: 'biomeswevegone:stripped_baobab_log', stripped_wood: 'biomeswevegone:stripped_baobab_wood', tag: 'biomeswevegone:baobab_logs' },
-        { log: 'biomeswevegone:blue_enchanted_log', wood: 'biomeswevegone:blue_enchanted_wood', planks: 'biomeswevegone:blue_enchanted_planks', slab: 'biomeswevegone:blue_enchanted_slab', stripped_log: 'biomeswevegone:stripped_blue_enchanted_log', stripped_wood: 'biomeswevegone:stripped_blue_enchanted_wood', tag: 'biomeswevegone:blue_enchanted_logs' },
-        { log: 'biomeswevegone:cika_log', wood: 'biomeswevegone:cika_wood', planks: 'biomeswevegone:cika_planks', slab: 'biomeswevegone:cika_slab', stripped_log: 'biomeswevegone:stripped_cika_log', stripped_wood: 'biomeswevegone:stripped_cika_wood', tag: 'biomeswevegone:cika_logs' },
-        { log: 'biomeswevegone:cypress_log', wood: 'biomeswevegone:cypress_wood', planks: 'biomeswevegone:cypress_planks', slab: 'biomeswevegone:cypress_slab', stripped_log: 'biomeswevegone:stripped_cypress_log', stripped_wood: 'biomeswevegone:stripped_cypress_wood', tag: 'biomeswevegone:cypress_logs' },
-        { log: 'biomeswevegone:ebony_log', wood: 'biomeswevegone:ebony_wood', planks: 'biomeswevegone:ebony_planks', slab: 'biomeswevegone:ebony_slab', stripped_log: 'biomeswevegone:stripped_ebony_log', stripped_wood: 'biomeswevegone:stripped_ebony_wood', tag: 'biomeswevegone:ebony_logs' },
-        { log: 'biomeswevegone:fir_log', wood: 'biomeswevegone:fir_wood', planks: 'biomeswevegone:fir_planks', slab: 'biomeswevegone:fir_slab', stripped_log: 'biomeswevegone:stripped_fir_log', stripped_wood: 'biomeswevegone:stripped_fir_wood', tag: 'biomeswevegone:fir_logs' },
-        { log: 'biomeswevegone:florus_stem', wood: 'biomeswevegone:florus_wood', planks: 'biomeswevegone:florus_planks', slab: 'biomeswevegone:florus_slab', stripped_log: 'biomeswevegone:stripped_florus_stem', stripped_wood: 'biomeswevegone:stripped_florus_wood', tag: 'biomeswevegone:florus_stems' },
-        { log: 'biomeswevegone:green_enchanted_log', wood: 'biomeswevegone:green_enchanted_wood', planks: 'biomeswevegone:green_enchanted_planks', slab: 'biomeswevegone:green_enchanted_slab', stripped_log: 'biomeswevegone:stripped_green_enchanted_log', stripped_wood: 'biomeswevegone:stripped_green_enchanted_wood', tag: 'biomeswevegone:green_enchanted_logs' },
-        { log: 'biomeswevegone:holly_log', wood: 'biomeswevegone:holly_wood', planks: 'biomeswevegone:holly_planks', slab: 'biomeswevegone:holly_slab', stripped_log: 'biomeswevegone:stripped_holly_log', stripped_wood: 'biomeswevegone:stripped_holly_wood', tag: 'biomeswevegone:holly_logs' },
-        { log: 'biomeswevegone:ironwood_log', wood: 'biomeswevegone:ironwood_wood', planks: 'biomeswevegone:ironwood_planks', slab: 'biomeswevegone:ironwood_slab', stripped_log: 'biomeswevegone:stripped_ironwood_log', stripped_wood: 'biomeswevegone:stripped_ironwood_wood', tag: 'biomeswevegone:ironwood_logs' },
-        { log: 'biomeswevegone:jacaranda_log', wood: 'biomeswevegone:jacaranda_wood', planks: 'biomeswevegone:jacaranda_planks', slab: 'biomeswevegone:jacaranda_slab', stripped_log: 'biomeswevegone:stripped_jacaranda_log', stripped_wood: 'biomeswevegone:stripped_jacaranda_wood', tag: 'biomeswevegone:jacaranda_logs' },
-        { log: 'biomeswevegone:mahogany_log', wood: 'biomeswevegone:mahogany_wood', planks: 'biomeswevegone:mahogany_planks', slab: 'biomeswevegone:mahogany_slab', stripped_log: 'biomeswevegone:stripped_mahogany_log', stripped_wood: 'biomeswevegone:stripped_mahogany_wood', tag: 'biomeswevegone:mahogany_logs' },
-        { log: 'biomeswevegone:maple_log', wood: 'biomeswevegone:maple_wood', planks: 'biomeswevegone:maple_planks', slab: 'biomeswevegone:maple_slab', stripped_log: 'biomeswevegone:stripped_maple_log', stripped_wood: 'biomeswevegone:stripped_maple_wood', tag: 'biomeswevegone:maple_logs' },
-        { log: 'biomeswevegone:palm_log', wood: 'biomeswevegone:palm_wood', planks: 'biomeswevegone:palm_planks', slab: 'biomeswevegone:palm_slab', stripped_log: 'biomeswevegone:stripped_palm_log', stripped_wood: 'biomeswevegone:stripped_palm_wood', tag: 'biomeswevegone:palm_logs' },
-        { log: 'biomeswevegone:pine_log', wood: 'biomeswevegone:pine_wood', planks: 'biomeswevegone:pine_planks', slab: 'biomeswevegone:pine_slab', stripped_log: 'biomeswevegone:stripped_pine_log', stripped_wood: 'biomeswevegone:stripped_pine_wood', tag: 'biomeswevegone:pine_logs' },
-        { log: 'biomeswevegone:rainbow_eucalyptus_log', wood: 'biomeswevegone:rainbow_eucalyptus_wood', planks: 'biomeswevegone:rainbow_eucalyptus_planks', slab: 'biomeswevegone:rainbow_eucalyptus_slab', stripped_log: 'biomeswevegone:stripped_rainbow_eucalyptus_log', stripped_wood: 'biomeswevegone:stripped_rainbow_eucalyptus_wood', tag: 'biomeswevegone:rainbow_eucalyptus_logs' },
-        { log: 'biomeswevegone:redwood_log', wood: 'biomeswevegone:redwood_wood', planks: 'biomeswevegone:redwood_planks', slab: 'biomeswevegone:redwood_slab', stripped_log: 'biomeswevegone:stripped_redwood_log', stripped_wood: 'biomeswevegone:stripped_redwood_wood', tag: 'biomeswevegone:redwood_logs' },
-        { log: 'biomeswevegone:sakura_log', wood: 'biomeswevegone:sakura_wood', planks: 'biomeswevegone:sakura_planks', slab: 'biomeswevegone:sakura_slab', stripped_log: 'biomeswevegone:stripped_sakura_log', stripped_wood: 'biomeswevegone:stripped_sakura_wood', tag: 'biomeswevegone:sakura_logs' },
-        { log: 'biomeswevegone:skyris_log', wood: 'biomeswevegone:skyris_wood', planks: 'biomeswevegone:skyris_planks', slab: 'biomeswevegone:skyris_slab', stripped_log: 'biomeswevegone:stripped_skyris_log', stripped_wood: 'biomeswevegone:stripped_skyris_wood', tag: 'biomeswevegone:skyris_logs' },
-        { log: 'biomeswevegone:spirit_log', wood: 'biomeswevegone:spirit_wood', planks: 'biomeswevegone:spirit_planks', slab: 'biomeswevegone:spirit_slab', stripped_log: 'biomeswevegone:stripped_spirit_log', stripped_wood: 'biomeswevegone:stripped_spirit_wood', tag: 'biomeswevegone:spirit_logs' },
-        { log: 'biomeswevegone:white_mangrove_log', wood: 'biomeswevegone:white_mangrove_wood', planks: 'biomeswevegone:white_mangrove_planks', slab: 'biomeswevegone:white_mangrove_slab', stripped_log: 'biomeswevegone:stripped_white_mangrove_log', stripped_wood: 'biomeswevegone:stripped_white_mangrove_wood', tag: 'biomeswevegone:white_mangrove_logs' },
-        { log: 'biomeswevegone:willow_log', wood: 'biomeswevegone:willow_wood', planks: 'biomeswevegone:willow_planks', slab: 'biomeswevegone:willow_slab', stripped_log: 'biomeswevegone:stripped_willow_log', stripped_wood: 'biomeswevegone:stripped_willow_wood', tag: 'biomeswevegone:willow_logs' },
-        { log: 'biomeswevegone:witch_hazel_log', wood: 'biomeswevegone:witch_hazel_wood', planks: 'biomeswevegone:witch_hazel_planks', slab: 'biomeswevegone:witch_hazel_slab', stripped_log: 'biomeswevegone:stripped_witch_hazel_log', stripped_wood: 'biomeswevegone:stripped_witch_hazel_wood', tag: 'biomeswevegone:witch_hazel_logs' },
-        { log: 'biomeswevegone:zelkova_log', wood: 'biomeswevegone:zelkova_wood', planks: 'biomeswevegone:zelkova_planks', slab: 'biomeswevegone:zelkova_slab', stripped_log: 'biomeswevegone:stripped_zelkova_log', stripped_wood: 'biomeswevegone:stripped_zelkova_wood', tag: 'biomeswevegone:zelkova_logs' },
-        { log: 'biomeswevegone:palo_verde_log', wood: 'biomeswevegone:palo_verde_wood', planks: 'minecraft:birch_planks', slab: 'minecraft:birch_slab', stripped_log: 'biomeswevegone:stripped_palo_verde_log', stripped_wood: 'biomeswevegone:stripped_palo_verde_wood', tag: 'biomeswevegone:palo_verde_logs' }
+        
+        { log: 'nomansland:pine_log', wood: 'nomansland:pine_wood', planks: 'nomansland:pine_planks', slab: 'nomansland:pine_slab', stripped_log: 'nomansland:stripped_pine_log', stripped_wood: 'nomansland:stripped_pine_wood', tag: 'nomansland:pine_logs' },
+        { log: 'nomansland:maple_log', wood: 'nomansland:maple_wood', planks: 'nomansland:maple_planks', slab: 'nomansland:maple_slab', stripped_log: 'nomansland:stripped_maple_log', stripped_wood: 'nomansland:stripped_maple_wood', tag: 'nomansland:maple_logs' },
+        { log: 'nomansland:walnut_log', wood: 'nomansland:walnut_wood', planks: 'nomansland:walnut_planks', slab: 'nomansland:walnut_slab', stripped_log: 'nomansland:stripped_walnut_log', stripped_wood: 'nomansland:stripped_walnut_wood', tag: 'nomansland:walnut_logs' },
+        { log: 'nomansland:willow_log', wood: 'nomansland:willow_wood', planks: 'nomansland:willow_planks', slab: 'nomansland:willow_slab', stripped_log: 'nomansland:stripped_willow_log', stripped_wood: 'nomansland:stripped_willow_wood', tag: 'nomansland:willow_logs' }
     ];
-    
+
     woodTypes.forEach(wood => {
         if (wood.planks && wood.tag) {
             event.custom({
@@ -59,7 +37,7 @@ ServerEvents.recipes(event => {
                 ]
             });
         }
-    
+
         if (wood.wood && wood.planks) {
             event.custom({
                 type: "modern_industrialization:cutting_machine",
