@@ -709,6 +709,11 @@ ServerEvents.recipes(event => {
       .itemOut("1x roll_mod:iv_fluid_output_hatch")  
 
     event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("8x modern_industrialization:simulation_composite_plate")
+      .itemIn("1x modern_industrialization:simulation_composite_gear")
+      .itemOut("1x hostile_neural_industrialization:prediction_machine_casing") 
+
+    event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("8x modern_industrialization:tunstensteel_plate")
       .itemIn("1x modern_industrialization:fire_clay_bricks")
       .itemOut("1x modern_industrialization:tungsten_steel_heat_proof_casing")

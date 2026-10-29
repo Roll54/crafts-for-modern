@@ -36,6 +36,11 @@ ServerEvents.recipes(event => {
   .itemOut("3x modern_industrialization:cosmic_alloy_two_ingot")
 
   event.recipes.modern_industrialization.implosion_compressor(1, 10)
+  .itemIn("1x roll_mod:simulation_composite")
+  .itemIn("1x modern_industrialization:industrial_tnt")
+  .itemOut("3x modern_industrialization:simulation_composite_ingot")
+
+  event.recipes.modern_industrialization.implosion_compressor(1, 10)
   .itemIn("8x modern_industrialization:ultradense_metal_ball")
   .itemIn("4x modern_industrialization:block_blencium_plate")
   .itemIn("64x modern_industrialization:nuke")

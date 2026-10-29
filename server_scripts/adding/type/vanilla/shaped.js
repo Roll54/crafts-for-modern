@@ -72,6 +72,19 @@ event.shaped(
 )
 
 event.shaped(
+    Item.of('hostile_neural_industrialization:prediction_machine_casing'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'modern_industrialization:simulation_composite_plate',
+        B: 'modern_industrialization:simulation_composite_gear'
+    }
+)
+
+event.shaped(
     Item.of('roll_mod:iv_fluid_input_hatch'),
     [
         ' A ',
