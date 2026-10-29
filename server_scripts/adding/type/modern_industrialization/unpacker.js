@@ -5,6 +5,21 @@ ServerEvents.recipes(event => {
     .itemOut("1x extended_industrialization:nano_chestplate")
     .itemOut("1x roll_mod:multi_protecting_gravi_chestplate")
 
+  event.recipes.modern_industrialization.unpacker(2, 100)
+    .itemIn("1x extended_industrialization:nano_gravichestplate")
+    .itemOut("1x extended_industrialization:nano_chestplate")
+    .itemOut("1x roll_mod:multi_protecting_gravi_chestplate")
+
+  event.recipes.modern_industrialization.unpacker(2, 100)
+    .itemIn("1x roll_mod:iv_fluid_output_hatch")
+    .itemOut("1x modern_industrialization:quantum_machine_hull")
+    .itemOut("1x modern_industrialization:osmiridium_tank")
+
+  event.recipes.modern_industrialization.unpacker(2, 100)
+    .itemIn("1x roll_mod:iv_fluid_input_hatch")
+    .itemOut("1x modern_industrialization:osmiridium_tank")
+    .itemOut("1x modern_industrialization:quantum_machine_hull")
+
   event.recipes.modern_industrialization.packer(2, 100)
     .itemIn("9x #c:dusts/sulfur")
     .itemIn("1x modern_industrialization:packer_block_template", 0.0)

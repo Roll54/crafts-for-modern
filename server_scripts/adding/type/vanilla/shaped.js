@@ -46,6 +46,56 @@ event.shaped(
 )
 
 event.shaped(
+    Item.of('roll_mod:iv_fluid_input_hatch'),
+    [
+        'A  ',
+        'B  ',
+        '   '
+    ],
+    {
+        A: 'modern_industrialization:osmiridium_tank',
+        B: 'modern_industrialization:quantum_machine_hull'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:iv_fluid_input_hatch'),
+    [
+        'B  ',
+        'A  ',
+        '   '
+    ],
+    {
+        A: 'modern_industrialization:osmiridium_tank',
+        B: 'modern_industrialization:quantum_machine_hull'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:iv_fluid_input_hatch'),
+    [
+        ' A ',
+        '   ',
+        '   '
+    ],
+    {
+        A: 'roll_mod:iv_fluid_output_hatch'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:iv_fluid_output_hatch'),
+    [
+        '   ',
+        ' A ',
+        '   '
+    ],
+    {
+        A: 'roll_mod:iv_fluid_input_hatch'
+    }
+)
+
+event.shaped(
     Item.of('roll_mod:highly_advanced_distillery'),
     [
         'AAA',

@@ -697,7 +697,17 @@ ServerEvents.recipes(event => {
       .itemIn("1x modern_industrialization:diode")
       .itemIn("1x modern_industrialization:inductor")
       .itemOut("1x roll_mod:brainupgrade_radio")
-    
+ 
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("1x modern_industrialization:osmiridium_tank")
+      .itemIn("1x modern_industrialization:quantum_machine_hull")
+      .itemOut("1x roll_mod:iv_fluid_input_hatch")      
+
+    event.recipes.modern_industrialization.assembler(16, 200)
+      .itemIn("1x modern_industrialization:quantum_machine_hull")
+      .itemIn("1x modern_industrialization:osmiridium_tank")
+      .itemOut("1x roll_mod:iv_fluid_output_hatch")  
+
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("8x modern_industrialization:tunstensteel_plate")
       .itemIn("1x modern_industrialization:fire_clay_bricks")
