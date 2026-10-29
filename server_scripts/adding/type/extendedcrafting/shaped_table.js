@@ -34,6 +34,45 @@ ServerEvents.recipes(event => {
     })
 
     event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            "AAAAAAA",
+            "ABBBBBA",
+            "ACDEDCA",
+            "ACFGFCA",
+            "ACDEDCA",
+            "ABBBBBA",
+            "AAAAAAA"
+        ],
+        "key": {
+            "A": {
+            "item": "modern_industrialization:chrome_vanadium_steel_block"
+            },
+            "B": {
+            "item": "minecraft:netherite_block"
+            },
+            "C": {
+            "item": "roll_mod:highly_advanced_large_motor"
+            },
+            "D": {
+            "item": "modern_industrialization:tungsten_block"
+            },
+            "E": {
+            "item": "extendedcrafting:nether_star_block"
+            },
+            "F": {
+            "item": "modern_industrialization:quantum_circuit"
+            },
+            "G": {
+            "item": "modern_industrialization:electric_compressor"
+            }
+        },
+        "result": {
+            "id": ""
+        }
+    })
+
+    event.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
             "BBBBBB ",

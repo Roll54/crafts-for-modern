@@ -15,21 +15,50 @@ event.shaped(
     }
 )
 
-// event.shaped(
-//     Item.of('hostile_neural_industrialization:electric_simulation_chamber'),
-//     [
-//         'ABA',
-//         'CDC',
-//         'EBE'
-//     ],
-//     {
-//         A: 'extended_industrialization:netherite_rotary_blade',
-//         B: 'modern_industrialization:netherite_large_plate',
-//         C: 'modern_industrialization:large_motor',
-//         D: 'modern_industrialization:advanced_machine_hull',
-//         E: 'modern_industrialization:electronic_circuit'
-//     }
-// )
+event.shaped(
+    Item.of('hostile_neural_industrialization:electric_simulation_chamber'),
+     [
+        'ABA',
+        'CDC',
+        'EBE'
+     ],
+     {
+         A: 'extended_industrialization:netherite_rotary_blade',
+         B: 'modern_industrialization:netherite_large_plate',
+         C: 'modern_industrialization:large_motor',
+         D: 'modern_industrialization:advanced_machine_hull',
+         E: 'modern_industrialization:electronic_circuit'
+     } )
+
+event.shaped(
+    Item.of('roll_mod:advanced_pyrolyse_oven'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'modern_industrialization:advanced_pump',
+        A: 'modern_industrialization:digital_circuit',
+        C: 'modern_industrialization:cupronickel_wire_magnetic',
+        D: 'modern_industrialization:pyrolyse_oven'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:highly_advanced_distillery'),
+    [
+        'AAA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
+        B: 'modern_industrialization:processing_unit',
+        D: 'modern_industrialization:highly_advanced_machine_hull',
+        C: 'modern_industrialization:distillation_tower'
+    }
+)
 
 event.shaped(
     Item.of('roll_mod:steam_ore_washer'),
