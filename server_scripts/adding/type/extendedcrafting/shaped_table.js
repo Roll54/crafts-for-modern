@@ -33,7 +33,6 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // ВИПРАВЛЕНО: Додано ID для result
     event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -46,30 +45,16 @@ ServerEvents.recipes(event => {
             "AAAAAAA"
         ],
         "key": {
-            "A": {
-                "item": "modern_industrialization:chrome_vanadium_steel_block"
-            },
-            "B": {
-                "item": "minecraft:netherite_block"
-            },
-            "C": {
-                "item": "roll_mod:highly_advanced_large_motor"
-            },
-            "D": {
-                "item": "modern_industrialization:tungsten_block"
-            },
-            "E": {
-                "item": "extendedcrafting:nether_star_block"
-            },
-            "F": {
-                "item": "modern_industrialization:quantum_circuit"
-            },
-            "G": {
-                "item": "modern_industrialization:electric_compressor"
-            }
+            "A": { "item": "modern_industrialization:chrome_vanadium_steel_block" },
+            "B": { "item": "minecraft:netherite_block" },
+            "C": { "item": "roll_mod:highly_advanced_large_motor" },
+            "D": { "item": "modern_industrialization:tungsten_block" },
+            "E": { "item": "extendedcrafting:nether_star_block" },
+            "F": { "item": "modern_industrialization:quantum_circuit" },
+            "G": { "item": "modern_industrialization:electric_compressor" }
         },
         "result": {
-            "id": "roll_mod:ТУТ_МАЄ_БУТИ_ID_ПРЕДМЕТА", // <--- ЗАМІНИ ЦЕ
+            "id": "roll_mod:hephaestus_compressor",
             "count": 1
         }
     })

@@ -8,7 +8,8 @@ ServerEvents.recipes(event => {
         { sapling: 'nomansland:yellow_birch_sapling', leaves: 'nomansland:yellow_birch_leaves', log: 'minecraft:birch_log', fruit: null, fruit_count: 0 },
         { sapling: 'nomansland:maple_sapling', leaves: 'nomansland:maple_leaves', log: 'minecraft:oak_log', fruit: null, fruit_count: 0 },
         { sapling: 'nomansland:red_maple_sapling', leaves: 'nomansland:red_maple_leaves', log: 'minecraft:oak_log', fruit: null, fruit_count: 0 },
-        { sapling: 'nomansland:walnut_sapling', leaves: 'nomansland:walnut_leaves', log: 'minecraft:oak_log', fruit: 'nomansland:walnut', fruit_count: 8 },
+        // Замінив nomansland:walnut на minecraft:apple, бо такого ID немає
+        { sapling: 'nomansland:walnut_sapling', leaves: 'nomansland:walnut_leaves', log: 'minecraft:oak_log', fruit: 'minecraft:apple', fruit_count: 8 },
         { sapling: 'nomansland:willow_sapling', leaves: 'nomansland:willow_leaves', log: 'minecraft:oak_log', fruit: null, fruit_count: 0 },
         { sapling: 'nomansland:pale_cherry_sapling', leaves: 'nomansland:pale_cherry_leaves', log: 'minecraft:cherry_log', fruit: null, fruit_count: 0 }
     ];
@@ -35,19 +36,8 @@ ServerEvents.recipes(event => {
             type: "yet_another_industrialization:arboreous_greenhouse",
             duration: 1200,
             eu: 15,
-            fluid_inputs: [
-                {
-                    amount: 1000,
-                    fluid: "minecraft:water"
-                }
-            ],
-            item_inputs: [
-                {
-                    amount: 1,
-                    item: tree.sapling,
-                    probability: 0.0
-                }
-            ],
+            fluid_inputs: [ { amount: 1000, fluid: "minecraft:water" } ],
+            item_inputs: [ { amount: 1, item: tree.sapling, probability: 0.0 } ],
             item_outputs: waterOutputs,
             process_conditions: [
                 {
@@ -62,19 +52,8 @@ ServerEvents.recipes(event => {
             type: "yet_another_industrialization:arboreous_greenhouse",
             duration: 1200,
             eu: 15,
-            fluid_inputs: [
-                {
-                    amount: 250,
-                    fluid: "extended_industrialization:distilled_water"
-                }
-            ],
-            item_inputs: [
-                {
-                    amount: 1,
-                    item: tree.sapling,
-                    probability: 0.0
-                }
-            ],
+            fluid_inputs: [ { amount: 250, fluid: "extended_industrialization:distilled_water" } ],
+            item_inputs: [ { amount: 1, item: tree.sapling, probability: 0.0 } ],
             item_outputs: distilledOutputs,
             process_conditions: [
                 {
