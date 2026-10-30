@@ -1,6 +1,35 @@
 ServerEvents.recipes(event => {
 
   event.custom({
+    "type": "brewinandchewin:fermenting",
+    "base_fluid": {
+      "amount": 1000,
+      "ingredient": {
+        "tag": "#c:water"
+      },
+      "unit": "millibuckets"
+    },
+    "experience": 1.0,
+    "ingredients": [
+      {
+        "item": "roll_mod:hops_leaf"
+      },
+      {
+        "item": "roll_mod:hops_leaf"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      []
+    ],
+    "result": {
+      "amount": 1000,
+      "id": "brewinandchewin:beer"
+    },
+    "unit": "millibuckets"
+  })
+  
+  event.custom({
     type: "brewinandchewin:fermenting",
     base_fluid: {
       amount: 1000,
