@@ -26,10 +26,4 @@ ServerEvents.recipes(event => {
   unify('railcraft:receiver_circuit', '#roll_mod:receiver_circuit')
   unify('railcraft:signal_circuit', '#roll_mod:signal_circuit')
   unify('railcraft:radio_circuit', '#roll_mod:radio_circuit')
-
-  event.replaceInput(
-          { type: 'brewinandchewin:fermenting', input: 'brewinandchewin:beer' }, 
-          'minecraft:wheat', 
-          'roll_mod:hops_leaf'
-  )
 })
