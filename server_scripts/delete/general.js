@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
     
     event.remove({ id: "modern_industrialization:vanilla_recipes/packer/glowstone_block" })
     event.remove({ id: "brewinandchewin:fermenting/mead_from_honey" })
+    event.remove({ id: "brewinandchewin:fermenting/beer_from_water" })
     
     event.remove({ mod: 'buildinggadgets2' })
     event.remove({ mod: 'scannable_unofficial' })
