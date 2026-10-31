@@ -4,9 +4,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'extendedae:ingredient_buffer' },
     'minecraft:iron_ingot', 'modern_industrialization:aluminum_plate')
 
-  event.replaceInput({ output: 'ae2:interface' },
-    'minecraft:iron_ingot', 'modern_industrialization:steel_plate')
-
   event.replaceInput({ output: 'ae2:storage_bus' },
     'minecraft:piston', 'modern_industrialization:robot_arm')
 

@@ -2174,6 +2174,21 @@ event.shaped(
   )
 
   event.shaped(
+    Item.of('ae2:interface'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: '#c:glass_blocks',
+        C: 'modern_industrialization:conveyor',
+        D: 'ae2:logic_processor',
+        A: 'modern_industrialization:steel_plate'
+    }
+  )
+
+  event.shaped(
     Item.of('ae2:chest'),
     [
         'ABA',

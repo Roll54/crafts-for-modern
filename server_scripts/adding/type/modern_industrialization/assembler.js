@@ -1207,8 +1207,8 @@ event.recipes.modern_industrialization.assembler(16, 200)
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x #c:glass_blocks")
-  .itemIn("1x ae2:annihilation_core")
-  .itemIn("1x ae2:formation_core")
+  .itemIn("2x modern_industrialization:conveyor")
+  .itemIn("1x ae2:logic_processor")
   .itemIn("4x modern_industrialization:steel_plate")
   .itemOut("1x ae2:interface")
 

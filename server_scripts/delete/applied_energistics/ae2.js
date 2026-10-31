@@ -53,6 +53,7 @@ ServerEvents.recipes(event => {
         "ae2:memory_card",
         "ae2:chest",
         "ae2:terminal",
+        "ae2:interface",
         "ae2:crafting_unit",
         "ae2:io_port",
         "ae2:growth_accelerator",
