@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         'bell206': { plates: 6, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 4 },
         'bell47g': { plates: 4, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 2 },
         'comanche': { plates: 6, circuits: 2, extraCount: 1, motor: 'modern_industrialization:large_motor', motorCount: 4 },
-        'skyhawk': { plates: 4, circuits: 1, extraCount: 1, motor: 'modernsimu_industrialization:motor', motorCount: 2 }
+        'skyhawk': { plates: 4, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 2 }
     };
 
     const colorMap = {
@@ -102,6 +102,7 @@ ServerEvents.recipes(event => {
             .fluidIn("500x modern_industrialization:soldering_alloy")
             .itemOut("1x " + item);
     });
+    
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("6x modern_industrialization:rhodium_plated_palladium_bolt")
       .itemIn("1x modern_industrialization:enderium_plate")
