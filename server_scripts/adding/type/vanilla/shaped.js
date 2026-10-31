@@ -2158,6 +2158,22 @@ event.shaped(
   )
 
   event.shaped(
+    Item.of('ae2:terminal'),
+    [
+        ' B ',
+        'CDC',
+        'AEA'
+    ],
+    {
+        B: '#ae2:illuminated_panel',
+        C: 'modern_industrialization:electronic_circuit',
+        D: 'ae2:logic_processor',
+        E: 'ae2:fluix_glass_cable',
+        A: 'modern_industrialization:aluminum_plate'
+    }
+  )
+
+  event.shaped(
     Item.of('ae2:chest'),
     [
         'ABA',
