@@ -2756,7 +2756,6 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("32x modern_industrialization:fluid_pipe")
   .itemOut("1x modern_industrialization:cosmic_alloy_one_machine_casing_pipe")
 
-//ae 2 applied energystics ЛЕГЕНДА!
   event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x ae2:fluix_glass_cable")
   .itemIn("2x #minecraft:wool")
@@ -2953,10 +2952,10 @@ event.recipes.modern_industrialization.assembler(64, 200)
 
 
 event.recipes.modern_industrialization.assembler(8, 100)
-.itemIn("8x modern_industrialization:redstone_alloy_fine_wire")
+.itemIn("6x modern_industrialization:redstone_alloy_fine_wire")
 .itemIn("4x ae2:fluix_crystal")
 .itemIn("2x ae2:quartz_fiber")
-.itemOut("1x ae2:fluix_glass_cable")
+.itemOut("3x ae2:fluix_glass_cable")
 
 event.recipes.modern_industrialization.assembler(16, 1600)
 .itemIn("8x modern_industrialization:stainless_steel_rod")
