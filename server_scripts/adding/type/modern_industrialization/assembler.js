@@ -1213,6 +1213,18 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemOut("1x ae2:interface")
 
 event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:robot_arm")
+  .itemIn("1x ae2:logic_processor")
+  .itemIn("2x modern_industrialization:steel_plate")
+  .itemOut("1x ae2:import_bus")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:conveyor")
+  .itemIn("1x ae2:logic_processor")
+  .itemIn("2x modern_industrialization:steel_plate")
+  .itemOut("1x ae2:export_bus")
+
+event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("2x ae2:engineering_processor")
   .itemIn("4x ae2:fluix_smart_cable")
   .itemIn("1x minecraft:chiseled_bookshelf")

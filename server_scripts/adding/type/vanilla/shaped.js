@@ -2189,6 +2189,32 @@ event.shaped(
   )
 
   event.shaped(
+    Item.of('ae2:import_bus'),
+    [
+        ' B ',
+        'ACA'
+    ],
+    {
+        B: 'modern_industrialization:robot_arm',
+        C: 'ae2:logic_processor',
+        A: 'modern_industrialization:steel_plate'
+    }
+  )
+
+  event.shaped(
+    Item.of('ae2:export_bus'),
+    [
+        ' B ',
+        'ACA'
+    ],
+    {
+        B: 'modern_industrialization:conveyor',
+        C: 'ae2:logic_processor',
+        A: 'modern_industrialization:steel_plate'
+    }
+  )
+
+  event.shaped(
     Item.of('ae2:chest'),
     [
         'ABA',
