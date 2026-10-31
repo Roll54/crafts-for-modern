@@ -246,4 +246,17 @@ event.recipes.modern_industrialization.electrolyzer(32, 300)
 .itemIn("14x roll_mod:sodium_bisulfate")
 .fluidOut("12000x modern_industrialization:sodium_persulfate")
 .fluidOut("2000x modern_industrialization:hydrogen")
+
+// Досвід з узагальнених передбачень
+const xpPredictions = [
+  ['hostilenetworks:overworld_prediction', 25],
+  ['hostilenetworks:nether_prediction', 50],
+  ['hostilenetworks:end_prediction', 75]
+]
+
+xpPredictions.forEach(p => {
+  event.recipes.modern_industrialization.electrolyzer(32, 100)
+  .itemIn(`1x ${p[0]}`)
+  .fluidOut(`${p[1]}x sophisticatedcore:xp_still`)
+})
 })
