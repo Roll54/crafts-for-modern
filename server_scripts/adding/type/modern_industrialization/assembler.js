@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         'bell206': { plates: 6, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 4 },
         'bell47g': { plates: 4, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 2 },
         'comanche': { plates: 6, circuits: 2, extraCount: 1, motor: 'modern_industrialization:large_motor', motorCount: 4 },
-        'skyhawk': { plates: 4, circuits: 1, extraCount: 1, motor: 'modern_industrialization:motor', motorCount: 2 }
+        'skyhawk': { plates: 4, circuits: 1, extraCount: 1, motor: 'modernsimu_industrialization:motor', motorCount: 2 }
     };
 
     const colorMap = {
@@ -705,8 +705,8 @@ ServerEvents.recipes(event => {
       .itemIn("8x modern_industrialization:processing_unit")
       .itemIn("1x hostile_neural_industrialization:large_simulation_chamber")
       .itemIn("2x modern_industrialization:large_advanced_motor")
-      .itemOut("1x hostile_neural_industrialization:quantum_simulation_chamber")
-
+      .itemOut("1x hostile_neural_industrialization:electric_simulation_chamber")
+    
     event.recipes.modern_industrialization.assembler(32, 400)
       .itemIn("1x hostile_neural_industrialization:mono_loot_fabricator")
       .itemIn("2x modern_industrialization:large_advanced_motor")
@@ -714,7 +714,7 @@ ServerEvents.recipes(event => {
       .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
       .itemIn("6x hostile_neural_industrialization:prediction_machine_casing")
       .itemIn("1x hostile_neural_industrialization:large_loot_fabricator")
-      .itemOut("1x hostile_neural_industrialization:quantum_loot_fabricator")
+      .itemOut("1x hostile_neural_industrialization:mono_loot_fabricator")
 
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("1x modern_industrialization:osmiridium_tank")
