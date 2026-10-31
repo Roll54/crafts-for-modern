@@ -16,7 +16,7 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('hostile_neural_industrialization:electric_simulation_chamber'),
+    Item.of('hostile_neural_industrialization:mono_loot_fabricator'),
      [
         'ABA',
         'CDC',
@@ -29,6 +29,22 @@ event.shaped(
          D: 'modern_industrialization:advanced_machine_hull',
          E: 'modern_industrialization:electronic_circuit'
      } )
+
+event.shaped(
+    Item.of('hostile_neural_industrialization:electric_simulation_chamber'),
+    [
+        'AAA',
+        'BCB',
+        'DED'
+    ],
+    {
+        A: 'modern_industrialization:netherite_large_plate',
+        B: 'modern_industrialization:large_motor',
+        C: 'minecraft:spawner',
+        E: 'modern_industrialization:advanced_machine_hull',
+        D: 'modern_industrialization:electronic_circuit'
+    }
+)
 
 event.shaped(
     Item.of('roll_mod:advanced_pyrolyse_oven'),
@@ -3236,21 +3252,7 @@ event.shaped(
         A: 'roll_mod:treated_plate'
     }
   )
-/*
-  event.shaped(
-    Item.of('roll_mod:rocket_controller'),
-    [
-        'ABA',
-        'CDC',
-    ],
-    {
-        A: 'modern_industrialization:netherite_large_plate',
-        D: 'roll_mod:research_rocket_controller',
-        B: 'modern_industrialization:tungsten_large_plate',
-        C: 'modern_industrialization:turbo_machine_hull'
-    }
-  )
-*/
+
   event.shaped(
     Item.of('modern_industrialization:incoloy_casing'),
     [
