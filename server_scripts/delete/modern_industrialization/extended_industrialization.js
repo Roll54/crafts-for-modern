@@ -19,7 +19,9 @@ ServerEvents.recipes(event => {
         "extended_industrialization:nano_quantum_helmet",
         "extended_industrialization:hv_photovoltaic_cell",
         "extended_industrialization:ultimate_laser_drill",
-        'extended_industrialization:nano_quantum_saber'
+        'extended_industrialization:nano_quantum_saber',
+        'extended_industrialization:steam_farmer',
+        'extended_industrialization:electric_farmer'
     ];
 
     const modernRecipes = [
