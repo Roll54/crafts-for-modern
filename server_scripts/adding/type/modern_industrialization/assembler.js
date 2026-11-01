@@ -704,9 +704,8 @@ ServerEvents.recipes(event => {
       .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
       .itemIn("6x hostile_neural_industrialization:prediction_machine_casing")
       .itemIn("8x modern_industrialization:processing_unit")
-      .itemIn("1x hostile_neural_industrialization:large_simulation_chamber")
       .itemIn("2x modern_industrialization:large_advanced_motor")
-      .itemOut("1x hostile_neural_industrialization:electric_simulation_chamber")
+      .itemOut("1x hostile_neural_industrialization:large_simulation_chamber")
     
     event.recipes.modern_industrialization.assembler(32, 400)
       .itemIn("1x hostile_neural_industrialization:mono_loot_fabricator")
@@ -714,8 +713,7 @@ ServerEvents.recipes(event => {
       .itemIn("8x modern_industrialization:processing_unit")
       .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
       .itemIn("6x hostile_neural_industrialization:prediction_machine_casing")
-      .itemIn("1x hostile_neural_industrialization:large_loot_fabricator")
-      .itemOut("1x hostile_neural_industrialization:mono_loot_fabricator")
+      .itemOut("1x hostile_neural_industrialization:large_loot_fabricator")
 
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("1x modern_industrialization:osmiridium_tank")
