@@ -123,15 +123,6 @@ ServerEvents.recipes(event => {
         // Мені шкода людину яка буде читати це ...
 
         {
-        ore_name: "nickel",
-        input: "#c:ores/nickel",
-        main_multiplier: 3,
-        macerator_byproduct: "roll_mod:stibnite_dust",
-        centrifuge_byproduct: "modern_industrialization:magnesium_dust",
-        washer_byproduct: "roll_mod:garnierite_dust"
-        },
-
-        {
         ore_name: "livingstonite",
         input: "#c:ores/livingstonite",
         main_multiplier: 2,
