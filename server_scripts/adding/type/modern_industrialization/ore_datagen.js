@@ -233,12 +233,16 @@ ServerEvents.recipes(event => {
         event.recipes.modern_industrialization.steam_ore_washer(4, 100)
             .itemIn(`1x ${impure}`)
             .fluidIn("100x minecraft:water")
-            .itemOut(`1x ${pure}`);
+            .itemOut(`1x ${pure}`)
+            .itemOut("1x roll_mod:clay_dust", 0.25)
+            .itemOut("1x roll_mod:stone_dust", 0.25);
 
         event.recipes.modern_industrialization.lv_ore_washer(32, 16)
             .itemIn(`1x ${impure}`)
             .fluidIn("100x minecraft:water")
-            .itemOut(`1x ${pure}`);
+            .itemOut(`1x ${pure}`)
+            .itemOut("1x roll_mod:clay_dust", 0.25)
+            .itemOut("1x roll_mod:stone_dust", 0.25);
 
         event.recipes.modern_industrialization.thermal_centrefuge(32, 16)
             .itemIn(`1x ${crushed}`)
