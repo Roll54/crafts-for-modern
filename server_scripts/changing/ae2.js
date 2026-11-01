@@ -7,6 +7,9 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'ae2:storage_bus' },
     'minecraft:piston', 'modern_industrialization:robot_arm')
 
+  event.replaceInput({ output: 'ae2_inventory_connector:me_inventory_connector' },
+    '#c:ingots/iron', 'modern_industrialization:steel_plate')
+
   event.replaceInput({ input: 'advanced_ae:quantum_processor' },
     'advanced_ae:quantum_processor', 'megacells:accumulation_processor')
 
