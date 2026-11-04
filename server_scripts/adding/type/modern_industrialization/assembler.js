@@ -1533,7 +1533,7 @@ event.recipes.modern_industrialization.assembler(32, 200)
   .itemOut("createcybernetics:wetware_waterbreathinglungs")
 
 event.recipes.modern_industrialization.assembler(32, 200)
-    .itemIn("3x ad_astra:fan")
+    .itemIn("3x modern_industrialization:chrome_vanadium_steel_rotor")
     .itemIn("modern_industrialization:turbo_machine_hull")
     .itemIn("modern_industrialization:processing_unit")
     .itemIn("4x modern_industrialization:gold_fine_wire")
