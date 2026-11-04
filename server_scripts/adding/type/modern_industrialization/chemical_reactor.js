@@ -535,4 +535,19 @@ event.recipes.modern_industrialization.chemical_reactor(32, 1200)
 .fluidOut("10000x modern_industrialization:nitric_acid");
 
 
+// Бор: бура + сірчана кислота -> борна кислота
+// Na2B4O7 + H2SO4 + 5H2O -> 4H3BO3 + Na2SO4
+event.recipes.modern_industrialization.chemical_reactor(32, 200)
+.itemIn("1x roll_mod:borax_dust")
+.fluidIn("1000x modern_industrialization:sulfuric_acid")
+.fluidIn("1000x minecraft:water")
+.itemOut("4x roll_mod:boric_acid")
+
+// Хлорування: B2O3 + 3C + 3Cl2 -> 2BCl3 + 3CO
+event.recipes.modern_industrialization.chemical_reactor(64, 300)
+.itemIn("1x roll_mod:boron_oxide")
+.itemIn("3x modern_industrialization:carbon_dust")
+.fluidIn("3000x modern_industrialization:chlorine")
+.fluidOut("2000x roll_mod:boron_trichloride")
+.fluidOut("3000x modern_industrialization:carbon_monoxide")
 })

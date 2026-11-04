@@ -154,10 +154,10 @@ ServerEvents.recipes(event => {
             D: { item: 'modern_industrialization:quantum_upgrade' },
             E: { item: 'modern_industrialization:sunnarium_plate' },
             F: { item: 'modern_industrialization:quantum_circuit' },
-            G: { item: 'roll_mod:advanced_ev_mining_drill' }
+            G: { item: 'roll_mod:ev_modular_drill' }
         },
         result: {
-            id: 'roll_mod:iv_electric_pickaxe'
+            id: 'roll_mod:iv_modular_drill'
         }
     }).id('roll_mod:advanced_drill_crafting')
 
@@ -181,10 +181,10 @@ ServerEvents.recipes(event => {
             D: { item: 'roll_mod:ultra_battery' },
             E: { item: 'modern_industrialization:quantum_upgrade' },
             F: { item: 'modern_industrialization:quantum_circuit' },
-            G: { item: 'roll_mod:ev_electric_saber' }
+            G: { item: 'roll_mod:ev_modular_saber' }
         },
         result: {
-            id: 'roll_mod:iv_electric_saber'
+            id: 'roll_mod:iv_modular_saber'
         }
     }).id('roll_mod:advanced_saber_crafting')
 

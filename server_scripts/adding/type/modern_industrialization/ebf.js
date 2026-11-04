@@ -323,4 +323,25 @@ event.recipes.modern_industrialization.blast_furnace(512, 200)
 .fluidIn("1000x roll_mod:block_blencium")
 .itemOut("1x roll_mod:sunnarium_glass_mk5")
 
+// Бор: 2H3BO3 -> B2O3 + 3H2O
+event.recipes.modern_industrialization.blast_furnace(64, 200)
+.itemIn("2x roll_mod:boric_acid")
+.itemOut("1x roll_mod:boron_oxide")
+.fluidOut("300x minecraft:water")
+
+// Борні волокна: осадження бору на розпечений вольфрамовий дріт
+// 2BCl3 + 3H2 -> 2B + 6HCl
+event.recipes.modern_industrialization.blast_furnace(128, 400)
+.itemIn("1x modern_industrialization:tungsten_wire")
+.fluidIn("1000x roll_mod:boron_trichloride")
+.fluidIn("1500x modern_industrialization:hydrogen")
+.itemOut("4x roll_mod:boron_fiber")
+.fluidOut("3000x modern_industrialization:hydrochloric_acid")
+
+// Боросилікатне скло: пісок + оксид бору
+event.recipes.modern_industrialization.blast_furnace(32, 200)
+.itemIn("4x #c:sands")
+.itemIn("1x roll_mod:boron_oxide")
+.itemOut("4x roll_mod:borosilicate_glass")
+
 })

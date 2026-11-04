@@ -1606,36 +1606,7 @@ event.shaped(
 )
 
 event.shaped(
-    Item.of('roll_mod:solar_panel_2'),
-    [
-        'ABC',
-        ' D ',
-        'CBA'
-    ],
-    {
-        A: 'modern_industrialization:transistor',
-        B: 'roll_mod:solar_panel_1',
-        D: 'modern_industrialization:basic_machine_hull',
-        C: 'modern_industrialization:diode'
-    }
-)
-
-event.shaped(
     Item.of('roll_mod:solar_panel_3'),
-    [
-        'ABA',
-        ' C ',
-        'ABA'
-    ],
-    {
-        B: 'roll_mod:solar_panel_2',
-        C: 'modern_industrialization:basic_machine_hull',
-        A: 'modern_industrialization:electronic_circuit'
-    }
-)
-    
-event.shaped(
-    Item.of('roll_mod:solar_panel_1'),
     [
         'AAA',
         'BCB',
