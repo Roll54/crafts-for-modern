@@ -3113,14 +3113,6 @@ event.recipes.modern_industrialization.assembler(16, 100)
 .itemIn("1x roll_mod:treated_plate")
 .itemOut("2x roll_mod:redstone_tube");
 
-event.recipes.modern_industrialization.assembler(16, 540)
-.itemIn("6x roll_mod:meteorite_metal_ingot")
-.itemIn("4x minecraft:netherite_ingot")
-.itemIn("2x modern_industrialization:electronic_circuit")
-.itemIn("1x roll_mod:amethyst_oscillator")
-.itemIn("1x roll_mod:energium_battery")
-.itemOut("1x roll_mod:meteorite_metal_nano_saber");
-
 event.recipes.modern_industrialization.assembler(32, 200)
 .itemIn("32x modern_industrialization:stainless_steel_blade")
 .itemIn("8x modern_industrialization:polytetrafluoroethylene_plate")
