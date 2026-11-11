@@ -60,8 +60,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-
-        event.custom({
+            event.custom({
         type: "ad_astra:nasa_workbench",
         ingredients: [
             { item: "roll_mod:nose_mk3" },
