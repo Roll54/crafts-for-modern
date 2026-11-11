@@ -22,5 +22,9 @@ event.recipes.modern_industrialization.laser_engraver(32, 400)
 .itemIn("1x roll_mod:white_lens", 0.04)
 .itemOut("1x roll_mod:standard_wafer_nand")
 
-
+event.recipes.modern_industrialization.laser_engraver(32, 400)
+.itemIn("1x roll_mod:blue_wafer")
+.itemIn("2x roll_mod:carbon_fiber")
+.itemIn("1x roll_mod:light_blue_lens", 0.0)
+.itemOut("1x roll_mod:blue_wafer_cpu")
 });
