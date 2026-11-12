@@ -112,12 +112,6 @@ event.recipes.modern_industrialization.blast_furnace(64, 400)
   .itemIn("10x roll_mod:ilmenite_dust")
   .itemIn("4x modern_industrialization:carbon_dust")
   .itemOut("6x roll_mod:rutile_iron")
-
-event.recipes.modern_industrialization.blast_furnace(64, 400)
-  .itemIn("32x #c:dusts/silicon")
-  .itemIn("1x modern_industrialization:iridium_tiny_dust")
-  .biome("ad_astra:orbit")
-  .itemOut("1x modern_industrialization:monocrystalline_silicon")
   
   event.recipes.modern_industrialization.blast_furnace(128, 400)
   .itemIn("2x modern_industrialization:magnesium_dust")
@@ -223,8 +217,8 @@ event.recipes.modern_industrialization.blast_furnace(128, 200)
 .fluidIn("1250x modern_industrialization:helium")
 
 event.recipes.modern_industrialization.blast_furnace(64, 200)
-.itemIn("1x modern_industrialization:monocrystalline_silicon")
-.itemIn("2x roll_mod:lapotron_large_crystal")
+.itemIn("32x modern_industrialization:silicon_block")
+.itemIn("16x roll_mod:lapotron_large_crystal")
 .itemOut("1x roll_mod:blue_boule")
 .fluidIn("500x modern_industrialization:helium")
 
@@ -338,10 +332,15 @@ event.recipes.modern_industrialization.blast_furnace(128, 400)
 .itemOut("4x roll_mod:boron_fiber")
 .fluidOut("3000x modern_industrialization:hydrochloric_acid")
 
-// Боросилікатне скло: пісок + оксид бору
-event.recipes.modern_industrialization.blast_furnace(32, 200)
-.itemIn("4x #c:sands")
-.itemIn("1x roll_mod:boron_oxide")
+event.recipes.modern_industrialization.blast_furnace(128, 200)
+.itemIn("4x ae2:quartz_glass")
+.itemIn("4x roll_mod:boron_oxide")
 .itemOut("4x roll_mod:borosilicate_glass")
+
+event.recipes.modern_industrialization.blast_furnace(32, 1200)
+.fluidIn("1500x modern_industrialization:argon")
+.itemIn("64x #c:ingots/silicon")
+.itemIn("1x modern_industrialization:silicon_nugget")
+.itemOut("1x modern_industrialization:monocrystalline_silicon")
 
 })
