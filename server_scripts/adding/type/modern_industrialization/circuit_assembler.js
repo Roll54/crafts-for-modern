@@ -498,14 +498,6 @@ event.recipes.modern_industrialization.circuit_assembler(64, 100)
 .fluidIn("1000x modern_industrialization:polytetrafluoroethylene")
 .itemOut("20x roll_mod:smd_transistor")
 
-event.recipes.modern_industrialization.circuit_assembler(32, 200)
-.itemIn("32x modern_industrialization:annealed_copper_fine_wire")
-.itemIn("6x roll_mod:blue_chip_ram")
-.itemIn("4x modern_industrialization:polytetrafluoroethylene_plate")
-.fluidIn("400x modern_industrialization:soldering_alloy")
-.itemOut("1x modern_industrialization:random_access_memory")
-
-
 event.recipes.modern_industrialization.circuit_assembler(128, 200)
 .itemIn("64x modern_industrialization:annealed_copper_fine_wire")
 .itemIn("6x modern_industrialization:niobium_titanium_alloy_plate")
