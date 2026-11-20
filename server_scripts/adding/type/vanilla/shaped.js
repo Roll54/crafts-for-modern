@@ -1865,7 +1865,7 @@ event.shaped(
 
   event.shaped(
     Item.of('modern_industrialization:circuit_assembler', 1),[
-      ' A ',
+      'EAE',
       'BCB',
       'DAD',
     ],{
@@ -1873,6 +1873,7 @@ event.shaped(
       B: 'roll_mod:advanced_robot_arm',
       C: 'modern_industrialization:assembler',
       D: 'modern_industrialization:advanced_motor',
+      E: 'modern_industrialization:rhodium_fine_wire'
   })
 
   event.shaped(
