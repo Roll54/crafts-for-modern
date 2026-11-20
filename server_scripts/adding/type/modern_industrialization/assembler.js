@@ -102,6 +102,13 @@ ServerEvents.recipes(event => {
             .fluidIn("500x modern_industrialization:soldering_alloy")
             .itemOut("1x " + item);
     });
+
+    event.recipes.modern_industrialization.assembler(16, 200)
+    .itemIn("32x modern_industrialization:annealed_copper_fine_wire")
+    .itemIn("6x roll_mod:blue_chip_ram")
+    .itemIn("4x modern_industrialization:polytetrafluoroethylene_plate")
+    .fluidIn("400x modern_industrialization:soldering_alloy")
+    .itemOut("1x modern_industrialization:random_access_memory")
     
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("6x modern_industrialization:rhodium_plated_palladium_bolt")
