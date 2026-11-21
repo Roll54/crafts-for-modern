@@ -149,6 +149,12 @@ ServerEvents.recipes(event => {
       .itemIn("1x modern_industrialization:electric_mixer")
       .itemOut("1x roll_mod:large_mixer")
 
+    event.recipes.modern_industrialization.assembler(2, 200)
+    .itemIn("8x roll_mod:gravi_engine_mk_1")
+    .itemIn("4x modern_industrialization:sodium_battery")
+    .itemIn("16x modern_industrialization:titanium_curved_plate")
+    .itemOut("1x roll_mod:bodyupgrade_aerial_mining")
+
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("3x roll_mod:highly_advanced_large_motor")
       .itemIn("3x roll_mod:highly_advanced_large_pump")
