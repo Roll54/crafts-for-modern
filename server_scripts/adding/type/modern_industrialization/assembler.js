@@ -2635,7 +2635,7 @@ event.recipes.modern_industrialization.assembler(16, 800)
   .itemIn("1x roll_mod:golden_xp_burger")
   .itemIn("1x minecraft:enchanted_golden_apple")
   .itemIn("1x fruitsdelight:mangosteen_cake")
-  .itemIn("1x moredelight:chicken_sandwich_with_egg_and_tomato")
+  .itemIn("1x roll_mod:mutagen_bucket")
   .itemOut("1x sophisticatedbackpacks:advanced_feeding_upgrade")
 
 
