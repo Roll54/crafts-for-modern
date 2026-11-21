@@ -550,4 +550,15 @@ event.recipes.modern_industrialization.chemical_reactor(64, 300)
 .fluidIn("3000x modern_industrialization:chlorine")
 .fluidOut("2000x roll_mod:boron_trichloride")
 .fluidOut("3000x modern_industrialization:carbon_monoxide")
+
+
+event.recipes.modern_industrialization.chemical_reactor(128, 100)
+.itemIn("1x roll_mod:raw_crystal_chip_parts")
+.itemIn("12x #roll_mod:good_for_crystal_chip")
+.fluidIn("2000x roll_mod:mutagen")
+.itemOut("1x roll_mod:raw_crystal_chip")
+.registeredCondition({
+          "mi_tweaks:voltage": {
+            "voltage": "ev"
+          }});
 })
