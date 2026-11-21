@@ -259,4 +259,9 @@ xpPredictions.forEach(p => {
   .itemIn(`1x ${p[0]}`)
   .fluidOut(`${p[1]}x sophisticatedcore:xp_still`)
 })
+
+event.recipes.modern_industrialization.electrolyzer(128, 1000)
+.itemIn("4x minecraft:sugar")
+.itemOut("1x modern_industrialization:carbon_dust")
+.fluidOut("3000x minecraft:water")
 })

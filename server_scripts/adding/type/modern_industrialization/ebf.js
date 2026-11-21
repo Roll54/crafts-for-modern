@@ -114,6 +114,7 @@ event.recipes.modern_industrialization.blast_furnace(64, 400)
   .itemOut("6x roll_mod:rutile_iron")
   
   event.recipes.modern_industrialization.blast_furnace(128, 400)
+  .biome("ad_astra:orbit")
   .itemIn("2x modern_industrialization:magnesium_dust")
   .itemOut("1x modern_industrialization:titanium_hot_ingot")
   .fluidIn("1000x modern_industrialization:titanium_tetrachloride")
@@ -319,9 +320,9 @@ event.recipes.modern_industrialization.blast_furnace(512, 200)
 
 // Бор: 2H3BO3 -> B2O3 + 3H2O
 event.recipes.modern_industrialization.blast_furnace(64, 200)
-.itemIn("2x roll_mod:boric_acid")
-.itemOut("1x roll_mod:boron_oxide")
-.fluidOut("300x minecraft:water")
+.itemIn("14x roll_mod:boric_acid")
+.itemOut("5x roll_mod:boron_oxide")
+.fluidOut("9000x minecraft:water")
 
 // Борні волокна: осадження бору на розпечений вольфрамовий дріт
 // 2BCl3 + 3H2 -> 2B + 6HCl
