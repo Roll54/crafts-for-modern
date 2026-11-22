@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
 event.recipes.modern_industrialization.circuit_assembler(4, 100)
-  .itemIn("2x modern_industrialization:titanium_large_plate")
   .itemIn("4x modern_industrialization:advanced_pump")
   .itemIn("4x modern_industrialization:processing_unit")
   .itemIn("2x modern_industrialization:titanium_64_large_plate")
   .itemIn("2x roll_mod:solar_panel_6")
+  .itemIn("3x roll_mod:sunnarium_glass_mk3")
   .itemIn("1x modern_industrialization:turbo_machine_hull")
   .fluidIn("500x modern_industrialization:moon_air")
   .biome("ad_astra:orbit")
@@ -607,10 +607,10 @@ event.recipes.modern_industrialization.circuit_assembler(64, 1728000)
 .itemIn("1x roll_mod:iv_modular_saber")
 .itemOut("1x roll_mod:nonub")
 
-
-
-
-
-
-
+event.recipes.modern_industrialization.circuit_assembler(32, 200)
+    .itemIn("1x modern_industrialization:aluminum_tank")
+    .itemIn("4x modern_industrialization:aluminum_plate")
+    .itemIn("2x modern_industrialization:electronic_circuit")
+    .fluidIn("1000x modern_industrialization:oxygen")
+    .itemOut("1x roll_mod:oxygen_tank_card");
 })

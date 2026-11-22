@@ -76,4 +76,20 @@ event.custom({
   }
 })
 
+event.custom({
+  type: 'farmersdelight:cooking',
+  experience: 1.0,
+  cookingtime: 200,
+  ingredients: [
+    { item: 'roll_mod:borosilicate_glass' },
+    { item: 'fruitsdelight:blueberry_jello' },
+    { item: 'fruitsdelight:melon_jello' },
+    { item: 'fruitsdelight:durian_jello' }
+  ],
+  result: {
+    id: 'roll_mod:broken_glass_literally',
+    count: 1
+  }
+})
+
 })

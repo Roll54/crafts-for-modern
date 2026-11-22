@@ -561,4 +561,12 @@ event.recipes.modern_industrialization.chemical_reactor(128, 100)
           "mi_tweaks:voltage": {
             "voltage": "ev"
           }});
+
+// Адреналін (епінефрин): хлорування ароматики + аміноалкілювання (спрощено)
+event.recipes.modern_industrialization.chemical_reactor(32, 400)
+.fluidIn("500x modern_industrialization:benzene")
+.fluidIn("250x modern_industrialization:chlorine")
+.fluidIn("250x modern_industrialization:ammonia")
+.itemIn("1x modern_industrialization:salt_dust")
+.fluidOut("500x modern_industrialization:adrenaline")
 })

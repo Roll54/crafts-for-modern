@@ -160,54 +160,24 @@ event.recipes.modern_industrialization.mixer(16, 200)
   .itemIn("4x modern_industrialization:salt_dust")
   .fluidOut("2000x modern_industrialization:raw_nutrient_solution")
 
-  event.recipes.modern_industrialization.mixer(24, 300)
-  .itemIn("32x minecraft:magma_cream")
-  .itemIn("2x roll_mod:sulfur_jam")
-  .itemIn("2x roll_mod:sulfur_berry_pie_slice")
-  .itemIn("1x roll_mod:syringe")
-  .fluidIn("2000x modern_industrialization:sulfuric_acid")
-  .itemOut("1x roll_mod:injection_fire_resistance")
+// Ін'єкції: шприц + 250 мБ адреналіну + розчинник + діюча речовина
+const injections = [
+    ['injection_resistance',      '250x extended_industrialization:distilled_water', ['2x roll_mod:calcium_dust', '1x modern_industrialization:salt_dust']],
+    ['injection_haste',           '250x extended_industrialization:distilled_water', ['4x minecraft:sugar']],
+    ['injection_speed',           '250x extended_industrialization:distilled_water', ['4x minecraft:cocoa_beans', '2x minecraft:sugar']],
+    ['injection_regen',           '250x modern_industrialization:raw_nutrient_solution', ['1x minecraft:glistering_melon_slice', '1x minecraft:ghast_tear']],
+    ['injection_fire_resistance', '250x extended_industrialization:distilled_water', ['2x minecraft:magma_cream', '2x roll_mod:sulfur_dust']]
+]
 
-event.recipes.modern_industrialization.mixer(24, 300)
-  .itemIn("4x minecraft:obsidian")
-  .itemIn("1x roll_mod:syringe")
-  .fluidIn("1000x modern_industrialization:adrenaline")
-  .itemOut("1x roll_mod:injection_resistance")
-
-event.recipes.modern_industrialization.mixer(24, 300)
-  .itemIn("8x minecraft:sugar")
-  .itemIn("1x roll_mod:syringe")
-  .fluidIn("1000x modern_industrialization:adrenaline")
-  .itemOut("1x roll_mod:injection_haste")
-
-event.recipes.modern_industrialization.mixer(24, 300)
-  .itemIn("8x roll_mod:sulfur_berry")
-  .itemIn("3x minecraft:black_wool")
-  .itemIn("3x minecraft:red_wool")
-  .itemIn("1x roll_mod:syringe")
-  .fluidIn("2000x modern_industrialization:lubricant")
-  .itemOut("1x roll_mod:injection_resistance")
-
-event.recipes.modern_industrialization.mixer(24, 300)
-  .itemIn("1x minecraft:cactus")
-  .itemIn("16x modern_industrialization:gold_ring")
-  .itemIn("1x roll_mod:syringe")
-  .fluidIn("1000x modern_industrialization:adrenaline")
-  .itemOut("1x roll_mod:injection_speed")
-
-event.recipes.modern_industrialization.mixer(24, 300)
-  .itemIn("1x minecraft:ghast_tear")
-  .itemIn("1x roll_mod:syringe")
-  .fluidIn("1000x modern_industrialization:adrenaline")
-  .itemOut("1x roll_mod:injection_regen")
-
-event.recipes.modern_industrialization.mixer(24, 300)
-  .itemIn("8x roll_mod:sulfur_berry")
-  .itemIn("1x minecraft:magma_cream")
-  .itemIn("4x roll_mod:sulfur_dust")
-  .itemIn("1x roll_mod:syringe")
-  .fluidIn("1000x modern_industrialization:adrenaline")
-  .itemOut("1x roll_mod:injection_fire_resistance")
+injections.forEach(([injection, solvent, items]) => {
+    const recipe = event.recipes.modern_industrialization.mixer(24, 300)
+      .itemIn("1x roll_mod:syringe")
+    items.forEach(item => recipe.itemIn(item))
+    recipe
+      .fluidIn("250x modern_industrialization:adrenaline")
+      .fluidIn(solvent)
+      .itemOut(`1x roll_mod:${injection}`)
+})
 
 //альтернативні крафти, не заміна
   event.recipes.modern_industrialization.mixer(64, 200)

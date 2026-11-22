@@ -1119,6 +1119,7 @@ event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("4x roll_mod:standard_chip_pmic")
   .itemIn("4x modern_industrialization:digital_circuit")
   .itemIn("2x roll_mod:solar_panel_3")
+  .itemIn("3x roll_mod:sunnarium_glass_mk2")
   .itemIn("1x modern_industrialization:advanced_machine_hull")
   .itemIn("2x modern_industrialization:stainless_steel_large_plate")
   .itemIn("4x modern_industrialization:large_pump")
@@ -2532,7 +2533,7 @@ event.recipes.modern_industrialization.assembler(32, 200)
   .itemIn("4x modern_industrialization:advanced_motor")
   .itemIn("4x modern_industrialization:digital_circuit")
   .itemIn("1x modern_industrialization:chemical_reactor")
-  .itemOut("1x mi_tweaks:large_chemical_reactor")
+  .itemOut("1x roll_mod:large_chemical_reactor")
 
 event.recipes.modern_industrialization.assembler(32, 200)
   .itemIn("1x modern_industrialization:diode")
@@ -3028,7 +3029,6 @@ event.recipes.modern_industrialization.assembler(32, 1600)
 .itemIn("8x modern_industrialization:blastproof_alloy_plate")
 .itemIn("8x modern_industrialization:netherite_plate")
 .itemIn("4x roll_mod:gravi_engine_mk_1")
-.itemIn("1x roll_mod:lapotron_battery_t1")
 .itemIn("1x roll_mod:lapotron_battery_t1")
 .itemOut("1x roll_mod:multi_protecting_gravi_chestplate")
 
@@ -3562,4 +3562,96 @@ event.recipes.modern_industrialization.assembler(32, 200)
   .itemIn("4x roll_mod:boron_fiber")
   .fluidIn("250x modern_industrialization:epoxy")
   .itemOut("1x roll_mod:boron_epoxy_plate")
+
+// XP-модуль реактора
+event.recipes.modern_industrialization.assembler(2, 200)
+  .itemIn("6x minecraft:experience_bottle")
+  .itemIn("1x roll_mod:lapotron_battery_t1")
+  .itemIn("8x roll_mod:carbon_mesh")
+  .itemIn("4x modern_industrialization:electronic_circuit")
+  .itemOut("1x roll_mod:xp_reactor_module")
+
+// Сканери руд
+event.recipes.modern_industrialization.assembler(32, 400)
+  .itemIn("1x roll_mod:lv_ore_scanner")
+  .itemIn("2x modern_industrialization:digital_circuit")
+  .itemIn("1x modern_industrialization:advanced_machine_hull")
+  .itemIn("4x modern_industrialization:stainless_steel_plate")
+  .itemIn("4x modern_industrialization:annealed_copper_wire")
+  .itemIn("1x roll_mod:energium_battery")
+  .itemOut("1x roll_mod:hv_ore_scanner")
+
+event.recipes.modern_industrialization.assembler(128, 400)
+  .itemIn("1x roll_mod:hv_ore_scanner")
+  .itemIn("2x modern_industrialization:processing_unit")
+  .itemIn("1x modern_industrialization:turbo_machine_hull")
+  .itemIn("4x modern_industrialization:titanium_plate")
+  .itemIn("6x modern_industrialization:platinum_fine_wire")
+  .itemIn("1x roll_mod:lapotron_battery_t1")
+  .itemOut("1x roll_mod:ev_ore_scanner")
+
+// Люки roll_mod
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:osmiridium_barrel")
+  .itemIn("1x modern_industrialization:quantum_machine_hull")
+  .itemOut("1x roll_mod:iv_item_input_hatch")
+
+event.recipes.modern_industrialization.assembler(16, 200)
+  .itemIn("1x modern_industrialization:quantum_machine_hull")
+  .itemIn("1x modern_industrialization:osmiridium_barrel")
+  .itemOut("1x roll_mod:iv_item_output_hatch")
+
+// Мульти-рідинні люки: 4 звичайні люки свого рівня
+const multiFluidHatches = [
+    ['lv', 'steel', 'analog_circuit', 16],
+    ['mv', 'advanced', 'electronic_circuit', 32],
+    ['hv', 'turbo', 'digital_circuit', 64],
+    ['ev', 'highly_advanced', 'processing_unit', 128]
+]
+
+multiFluidHatches.forEach(([tier, miTier, circuit, eu]) => {
+    ['input', 'output'].forEach(side => {
+        event.recipes.modern_industrialization.assembler(eu, 200)
+          .itemIn(`4x modern_industrialization:${miTier}_fluid_${side}_hatch`)
+          .itemIn(`2x modern_industrialization:${circuit}`)
+          .itemIn("4x modern_industrialization:fluid_pipe")
+          .itemOut(`1x roll_mod:${tier}_multi_fluid_${side}_hatch`)
+    })
+})
+
+;['input', 'output'].forEach(side => {
+    event.recipes.modern_industrialization.assembler(256, 200)
+      .itemIn(`4x roll_mod:iv_fluid_${side}_hatch`)
+      .itemIn("2x modern_industrialization:quantum_circuit")
+      .itemIn("4x modern_industrialization:fluid_pipe")
+      .itemOut(`1x roll_mod:iv_multi_fluid_${side}_hatch`)
+
+    // Змішаний IV люк: предметний + рідинний
+    event.recipes.modern_industrialization.assembler(256, 200)
+      .itemIn(`1x roll_mod:iv_item_${side}_hatch`)
+      .itemIn(`1x roll_mod:iv_fluid_${side}_hatch`)
+      .itemIn("2x modern_industrialization:quantum_circuit")
+      .itemOut(`1x roll_mod:iv_mixed_${side}_hatch`)
+
+    // ME люки: IV люк + інтерфейс AE2
+    ;[['item', 'iv_item'], ['fluid', 'iv_fluid'], ['mixed', 'iv_mixed']].forEach(([kind, base]) => {
+        event.recipes.modern_industrialization.assembler(256, 200)
+          .itemIn(`1x roll_mod:${base}_${side}_hatch`)
+          .itemIn("1x ae2:interface")
+          .itemIn("2x ae2:engineering_processor")
+          .itemIn("2x ae2:logic_processor")
+          .itemOut(`1x roll_mod:me_${kind}_${side}_hatch`)
+    })
+})
+
+// Метеоритні кібер-кінцівки
+;['rightarm', 'leftarm', 'rightleg', 'leftleg'].forEach(limb => {
+    event.recipes.modern_industrialization.assembler(32, 400)
+      .itemIn(`1x createcybernetics:basecyberware_${limb}`)
+      .itemIn("1x roll_mod:meteorite_metal_block")
+      .itemIn("2x roll_mod:meteorite_metal_large_plate")
+      .itemIn("4x roll_mod:meteorite_metal_rod")
+      .itemIn("4x modern_industrialization:electrum_fine_wire")
+      .itemOut(`1x roll_mod:basecyberware_${limb}_meteorite_metal`)
+})
 })

@@ -4,7 +4,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: "minecraft:ender_eye" })
     event.remove({ output: "blahaj:blue_shark" })
     event.remove({ output: "tide:fishing_line" })
-    event.remove({ output: "moredelight:diced_potatoes" })
     event.remove({ output: "constructionstick:template_destruction" })
     event.remove({ output: "minecraft:glowstone" })
     event.remove({ output: 'minecraft:raw_gold' });

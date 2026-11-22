@@ -14,17 +14,6 @@ ServerEvents.tags('item', event => {
         'sophisticatedbackpacks:netherite_backpack'
     ]);
     
-    event.add('functionalstorage:drawer_storage_denylist', [
-        '#sophisticatedbackpacks:backpacks',
-        '#c:shulker_boxes',
-        '#functionalstorage:drawer',
-        '#modern_industrialization:barrels',
-        'functionalstorage:compacting_drawer',
-        'functionalstorage:compacting_framed_drawer',
-        'functionalstorage:simple_compacting_drawer',
-        'functionalstorage:framed_simple_compacting_drawer'
-    ]);
-
     event.add('roll_mod:battaries_tier_one', [
         "roll_mod:primitive_battery",
         "modern_industrialization:redstone_battery",
@@ -97,7 +86,6 @@ ServerEvents.tags('item', event => {
         event.add('c:tools', item);
         event.add('minecraft:enchantable/vanishing', item);
         event.add('minecraft:breaks_decorated_pots', item);
-        event.add('functionalstorage:armory_cabinet_insertable', item);
         event.add('minecraft:enchantable/durability', item);
         event.add('c:enchantables', item);
         event.add('minecraft:enchantable/sharp_weapon', item);

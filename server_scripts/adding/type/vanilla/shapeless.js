@@ -277,4 +277,44 @@ event.shapeless(
         'modern_industrialization:steel_tank'
     ]
 )
+
+event.shapeless(
+    Item.of('roll_mod:meteorite_metal_nugget', 9),
+    [
+        'roll_mod:meteorite_metal_ingot'
+    ]
+)
+
+event.shapeless(
+    Item.of('roll_mod:meteorite_metal_ingot'),
+    [
+        '9x roll_mod:meteorite_metal_nugget'
+    ]
+)
+
+event.shapeless(
+    Item.of('roll_mod:meteorite_metal_ingot', 9),
+    [
+        'roll_mod:meteorite_metal_block'
+    ]
+)
+
+// Перемикання вхід <-> вихід для люків roll_mod
+const rollModHatchPairs = [
+    ['iv_item_input_hatch', 'iv_item_output_hatch'],
+    ['lv_multi_fluid_input_hatch', 'lv_multi_fluid_output_hatch'],
+    ['mv_multi_fluid_input_hatch', 'mv_multi_fluid_output_hatch'],
+    ['hv_multi_fluid_input_hatch', 'hv_multi_fluid_output_hatch'],
+    ['ev_multi_fluid_input_hatch', 'ev_multi_fluid_output_hatch'],
+    ['iv_multi_fluid_input_hatch', 'iv_multi_fluid_output_hatch'],
+    ['iv_mixed_input_hatch', 'iv_mixed_output_hatch'],
+    ['me_item_input_hatch', 'me_item_output_hatch'],
+    ['me_fluid_input_hatch', 'me_fluid_output_hatch'],
+    ['me_mixed_input_hatch', 'me_mixed_output_hatch']
+]
+
+rollModHatchPairs.forEach(([input, output]) => {
+    event.shapeless(`roll_mod:${output}`, [`roll_mod:${input}`])
+    event.shapeless(`roll_mod:${input}`, [`roll_mod:${output}`])
+})
 })

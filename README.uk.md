@@ -14,7 +14,6 @@ server_scripts/
       ad_astra/
       extendedcrafting/
       farmersdelight/
-      functionalstorage/
       modern_industrialization/
       railcraft/
       roll_mod/
@@ -24,6 +23,7 @@ server_scripts/
   changing/
     ae2.js            # AE2 / ExtendedAE
     diamond_alloy.js  # алмаз -> пластина алмазного сплаву
+    mi_tweaks.js      # мультиблоки mi_tweaks -> відповідники roll_mod
     railcraft.js      # трек-кіти, force track emitter
     unification.js    # предмет -> тег в усіх рецептах (вантажиться останнім)
   delete/

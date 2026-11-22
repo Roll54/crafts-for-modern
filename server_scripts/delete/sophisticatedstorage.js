@@ -1,5 +1,11 @@
 ServerEvents.recipes(event => {
     const itemsToRemove = [
+        "sophisticatedstorage:tank",
+        "sophisticatedstorage:copper_tank",
+        "sophisticatedstorage:iron_tank",
+        "sophisticatedstorage:gold_tank",
+        "sophisticatedstorage:diamond_tank",
+        "sophisticatedstorage:netherite_tank",
         "sophisticatedstorage:advanced_feeding_upgrade",
         "sophisticatedstorage:advanced_filter_upgrade",
         "sophisticatedstorage:advanced_jukebox_upgrade",

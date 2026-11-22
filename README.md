@@ -14,7 +14,6 @@ server_scripts/
       ad_astra/
       extendedcrafting/
       farmersdelight/
-      functionalstorage/
       modern_industrialization/
       railcraft/
       roll_mod/
@@ -24,6 +23,7 @@ server_scripts/
   changing/
     ae2.js            # AE2 / ExtendedAE
     diamond_alloy.js  # diamond -> diamond alloy plate
+    mi_tweaks.js      # mi_tweaks multiblocks -> roll_mod counterparts
     railcraft.js      # track kits, force track emitter
     unification.js    # item -> tag in all recipes (loads last)
   delete/

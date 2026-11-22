@@ -3404,4 +3404,158 @@ event.shaped(
         A: 'modern_industrialization:netherite_rod'
     }
 )
+
+event.shaped(
+    Item.of('roll_mod:electric_fishing_rod'),
+    [
+        ' AB',
+        'ABC',
+        'BD '
+    ],
+    {
+        A: 'roll_mod:carbon_mesh',
+        B: 'modern_industrialization:annealed_copper_wire',
+        C: 'roll_mod:carbon_fiber_rod',
+        D: 'modern_industrialization:advanced_motor'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_metal_fishing_rod'),
+    [
+        '  A',
+        ' AB',
+        'CD '
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_rod',
+        B: 'minecraft:fishing_rod',
+        C: 'roll_mod:meteorite_metal_plate',
+        D: 'minecraft:string'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_hook'),
+    [
+        '  A',
+        'B B',
+        ' B '
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot',
+        B: 'roll_mod:meteorite_metal_nugget'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:lv_ore_scanner'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        A: 'modern_industrialization:steel_plate',
+        B: 'minecraft:compass',
+        C: 'modern_industrialization:analog_circuit',
+        D: 'modern_industrialization:basic_machine_hull',
+        E: 'roll_mod:redstone_battery'
+    }
+)
+
+// Баки Sophisticated Storage
+event.shaped(
+    Item.of('sophisticatedstorage:tank'),
+    [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:iron_plate',
+        B: 'modern_industrialization:iron_rod',
+        C: 'modern_industrialization:iron_tank'
+    }
+)
+
+const sophisticatedTanks = [
+    ['copper_tank', 'tank', 'bronze_plate'],
+    ['iron_tank', 'copper_tank', 'steel_plate'],
+    ['gold_tank', 'iron_tank', 'aluminum_plate'],
+    ['diamond_tank', 'gold_tank', 'stainless_steel_plate'],
+    ['netherite_tank', 'diamond_tank', 'titanium_plate']
+]
+
+sophisticatedTanks.forEach(([tank, previous, plate]) => {
+    event.shaped(
+        Item.of(`sophisticatedstorage:${tank}`),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: `modern_industrialization:${plate}`,
+            B: `sophisticatedstorage:${previous}`
+        }
+    )
+})
+
+event.shaped(
+    Item.of('sophisticatedstorage:pump_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:rubber_sheet',
+        B: 'modern_industrialization:bronze_water_pump',
+        C: 'minecraft:bucket',
+        D: 'sophisticatedstorage:upgrade_base'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:advanced_pump_upgrade'),
+    [
+        'ABA',
+        'BCB',
+        'ADA'
+    ],
+    {
+        A: 'modern_industrialization:rubber_sheet',
+        B: 'modern_industrialization:fluid_pipe',
+        C: 'sophisticatedstorage:pump_upgrade',
+        D: 'modern_industrialization:steel_water_pump'
+    }
+)
+
+event.shaped(
+    Item.of('sophisticatedstorage:xp_pump_upgrade'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'modern_industrialization:pump',
+        B: 'minecraft:experience_bottle',
+        C: 'minecraft:ender_eye',
+        D: 'sophisticatedstorage:advanced_pump_upgrade'
+    }
+)
+
+event.shaped(
+    Item.of('roll_mod:meteorite_metal_block'),
+    [
+        'AAA',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'roll_mod:meteorite_metal_ingot'
+    }
+)
 })
