@@ -3421,7 +3421,7 @@ event.recipes.modern_industrialization.assembler(256, 500)
   .itemIn("8x modern_industrialization:tunstensteel_plate")
   .itemIn("4x modern_industrialization:quantum_circuit")
   .itemIn("3x modern_industrialization:osmiridium_gear")
-  .itemIn("2x roll_mod:carbon_mesh")
+  .itemIn("2x roll_mod:boron_epoxy_plate")
   .itemOut("1x roll_mod:nose_mk3")
 
 event.recipes.modern_industrialization.assembler(256, 500)
@@ -3653,5 +3653,25 @@ multiFluidHatches.forEach(([tier, miTier, circuit, eu]) => {
       .itemIn("4x roll_mod:meteorite_metal_rod")
       .itemIn("4x modern_industrialization:electrum_fine_wire")
       .itemOut(`1x roll_mod:basecyberware_${limb}_meteorite_metal`)
+})
+
+// Баки Sophisticated Storage (асемблерні версії; вміст не зберігається)
+event.recipes.modern_industrialization.assembler(8, 200)
+  .itemIn("1x modern_industrialization:iron_tank")
+  .itemIn("4x modern_industrialization:iron_plate")
+  .itemIn("4x modern_industrialization:iron_rod")
+  .itemOut("1x sophisticatedstorage:tank")
+
+;[
+    ['copper_tank', 'tank', 'bronze_plate', 8],
+    ['iron_tank', 'copper_tank', 'steel_plate', 16],
+    ['gold_tank', 'iron_tank', 'aluminum_plate', 32],
+    ['diamond_tank', 'gold_tank', 'stainless_steel_plate', 64],
+    ['netherite_tank', 'diamond_tank', 'titanium_plate', 128]
+].forEach(([tank, previous, plate, eu]) => {
+    event.recipes.modern_industrialization.assembler(eu, 200)
+      .itemIn(`1x sophisticatedstorage:${previous}`)
+      .itemIn(`8x modern_industrialization:${plate}`)
+      .itemOut(`1x sophisticatedstorage:${tank}`)
 })
 })

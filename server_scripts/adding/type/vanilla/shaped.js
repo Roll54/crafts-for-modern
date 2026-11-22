@@ -3487,19 +3487,22 @@ const sophisticatedTanks = [
     ['netherite_tank', 'diamond_tank', 'titanium_plate']
 ]
 
+// Формат Sophisticated Storage: вміст бака зберігається при покращенні
 sophisticatedTanks.forEach(([tank, previous, plate]) => {
-    event.shaped(
-        Item.of(`sophisticatedstorage:${tank}`),
-        [
+    event.custom({
+        type: 'sophisticatedstorage:storage_tier_upgrade',
+        category: 'misc',
+        key: {
+            A: { item: `modern_industrialization:${plate}` },
+            B: { item: `sophisticatedstorage:${previous}` }
+        },
+        pattern: [
             'AAA',
             'ABA',
             'AAA'
         ],
-        {
-            A: `modern_industrialization:${plate}`,
-            B: `sophisticatedstorage:${previous}`
-        }
-    )
+        result: { count: 1, id: `sophisticatedstorage:${tank}` }
+    })
 })
 
 event.shaped(
@@ -3517,35 +3520,40 @@ event.shaped(
     }
 )
 
-event.shaped(
-    Item.of('sophisticatedstorage:advanced_pump_upgrade'),
-    [
+// Формат Sophisticated Core: налаштування апгрейду зберігаються
+event.custom({
+    type: 'sophisticatedcore:upgrade_next_tier',
+    category: 'misc',
+    key: {
+        A: { item: 'modern_industrialization:rubber_sheet' },
+        B: { item: 'modern_industrialization:fluid_pipe' },
+        C: { item: 'sophisticatedstorage:pump_upgrade' },
+        D: { item: 'modern_industrialization:steel_water_pump' }
+    },
+    pattern: [
         'ABA',
         'BCB',
         'ADA'
     ],
-    {
-        A: 'modern_industrialization:rubber_sheet',
-        B: 'modern_industrialization:fluid_pipe',
-        C: 'sophisticatedstorage:pump_upgrade',
-        D: 'modern_industrialization:steel_water_pump'
-    }
-)
+    result: { count: 1, id: 'sophisticatedstorage:advanced_pump_upgrade' }
+})
 
-event.shaped(
-    Item.of('sophisticatedstorage:xp_pump_upgrade'),
-    [
+event.custom({
+    type: 'sophisticatedcore:upgrade_next_tier',
+    category: 'misc',
+    key: {
+        A: { item: 'modern_industrialization:pump' },
+        B: { item: 'minecraft:experience_bottle' },
+        C: { item: 'minecraft:ender_eye' },
+        D: { item: 'sophisticatedstorage:advanced_pump_upgrade' }
+    },
+    pattern: [
         'ABA',
         'CDC',
         'ABA'
     ],
-    {
-        A: 'modern_industrialization:pump',
-        B: 'minecraft:experience_bottle',
-        C: 'minecraft:ender_eye',
-        D: 'sophisticatedstorage:advanced_pump_upgrade'
-    }
-)
+    result: { count: 1, id: 'sophisticatedstorage:xp_pump_upgrade' }
+})
 
 event.shaped(
     Item.of('roll_mod:meteorite_metal_block'),
