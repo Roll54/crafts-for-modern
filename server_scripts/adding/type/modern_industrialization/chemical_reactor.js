@@ -569,4 +569,29 @@ event.recipes.modern_industrialization.chemical_reactor(32, 400)
 .fluidIn("250x modern_industrialization:ammonia")
 .itemIn("1x modern_industrialization:salt_dust")
 .fluidOut("500x modern_industrialization:adrenaline")
+
+// Гербіцид 2-го рівня (за мотивами 2,4-Д): фенол + хлор + оцтова кислота
+event.recipes.modern_industrialization.chemical_reactor(32, 300)
+.fluidIn("500x modern_industrialization:phenol")
+.fluidIn("1000x modern_industrialization:chlorine")
+.fluidIn("500x modern_industrialization:acetic_acid")
+.fluidOut("1000x roll_mod:herbicide_tier_2")
+.fluidOut("1000x modern_industrialization:hydrochloric_acid")
+.registeredCondition({
+          "mi_tweaks:voltage": {
+            "voltage": "mv"
+          }})
+
+// Гербіцид 3-го рівня (за мотивами гліфосату): метанол + аміак + фосфорна кислота
+event.recipes.modern_industrialization.chemical_reactor(128, 400)
+.fluidIn("500x modern_industrialization:methanol")
+.fluidIn("500x modern_industrialization:ammonia")
+.fluidIn("500x extended_industrialization:phosphoric_acid")
+.itemIn("1x modern_industrialization:phosphorus_dust")
+.fluidOut("1000x roll_mod:herbicide_tier_3")
+.fluidOut("500x minecraft:water")
+.registeredCondition({
+          "mi_tweaks:voltage": {
+            "voltage": "hv"
+          }})
 })
