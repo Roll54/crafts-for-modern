@@ -57,7 +57,7 @@ event.shaped(
         B: 'modern_industrialization:advanced_pump',
         A: 'modern_industrialization:digital_circuit',
         C: 'modern_industrialization:cupronickel_wire_magnetic',
-        D: 'modern_industrialization:pyrolyse_oven'
+        D: 'roll_mod:pyrolyse_oven'
     }
 )
 
@@ -252,7 +252,7 @@ event.shaped(
         A: 'modern_industrialization:tunstensteel_machine_casing_pipe',
         B: 'modern_industrialization:processing_unit',
         C: 'modern_industrialization:highly_advanced_machine_hull',
-        D: 'modern_industrialization:pyrolyse_oven'
+        D: 'roll_mod:pyrolyse_oven'
     }
 )
     
@@ -1734,7 +1734,7 @@ event.shaped(
 
 
   event.shaped(
-    Item.of('modern_industrialization:pyrolyse_oven', 1),[
+    Item.of('roll_mod:pyrolyse_oven', 1),[
       'CAC',
       'DBD',
       'CAC',
@@ -3566,4 +3566,42 @@ event.shaped(
         A: 'roll_mod:meteorite_metal_ingot'
     }
 )
+
+// Апгрейди баків roll_mod: на 1 рівень — 8 пластин рівня навколо рідинної труби,
+// на кілька рівнів — поєднання послідовних апгрейдів
+const tankTiers = ['basic', 'copper', 'iron', 'gold', 'diamond', 'netherite']
+const tankTierPlates = {
+    copper: 'bronze_plate',
+    iron: 'steel_plate',
+    gold: 'aluminum_plate',
+    diamond: 'stainless_steel_plate',
+    netherite: 'titanium_plate'
+}
+
+for (let i = 0; i < tankTiers.length - 1; i++) {
+    const from = tankTiers[i]
+    const to = tankTiers[i + 1]
+    event.shaped(
+        Item.of(`roll_mod:${from}_to_${to}_tank_upgrade`),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: `modern_industrialization:${tankTierPlates[to]}`,
+            B: 'modern_industrialization:fluid_pipe'
+        }
+    )
+}
+
+for (let i = 0; i < tankTiers.length; i++) {
+    for (let j = i + 2; j < tankTiers.length; j++) {
+        const steps = []
+        for (let k = i; k < j; k++) {
+            steps.push(`roll_mod:${tankTiers[k]}_to_${tankTiers[k + 1]}_tank_upgrade`)
+        }
+        event.shapeless(`roll_mod:${tankTiers[i]}_to_${tankTiers[j]}_tank_upgrade`, steps)
+    }
+}
 })

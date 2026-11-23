@@ -457,4 +457,43 @@ ServerEvents.tags('item', event => {
         'modern_industrialization:rhodium_plated_palladium_rod',
         'modern_industrialization:chrome_vanadium_steel_rod',
     ]);
+
+    // Апгрейди рівня Sophisticated Storage
+    event.add('roll_mod:storage_tier_upgrades', [
+        'sophisticatedstorage:basic_tier_upgrade',
+        'sophisticatedstorage:basic_to_copper_tier_upgrade',
+        'sophisticatedstorage:basic_to_iron_tier_upgrade',
+        'sophisticatedstorage:basic_to_gold_tier_upgrade',
+        'sophisticatedstorage:basic_to_diamond_tier_upgrade',
+        'sophisticatedstorage:basic_to_netherite_tier_upgrade',
+        'sophisticatedstorage:copper_to_iron_tier_upgrade',
+        'sophisticatedstorage:copper_to_gold_tier_upgrade',
+        'sophisticatedstorage:copper_to_diamond_tier_upgrade',
+        'sophisticatedstorage:copper_to_netherite_tier_upgrade',
+        'sophisticatedstorage:iron_to_gold_tier_upgrade',
+        'sophisticatedstorage:iron_to_diamond_tier_upgrade',
+        'sophisticatedstorage:iron_to_netherite_tier_upgrade',
+        'sophisticatedstorage:gold_to_diamond_tier_upgrade',
+        'sophisticatedstorage:gold_to_netherite_tier_upgrade',
+        'sophisticatedstorage:diamond_to_netherite_tier_upgrade'
+    ]);
+
+    // Апгрейди рівня баків roll_mod
+    event.add('roll_mod:tank_tier_upgrades', [
+        'roll_mod:basic_to_copper_tank_upgrade',
+        'roll_mod:basic_to_iron_tank_upgrade',
+        'roll_mod:basic_to_gold_tank_upgrade',
+        'roll_mod:basic_to_diamond_tank_upgrade',
+        'roll_mod:basic_to_netherite_tank_upgrade',
+        'roll_mod:copper_to_iron_tank_upgrade',
+        'roll_mod:copper_to_gold_tank_upgrade',
+        'roll_mod:copper_to_diamond_tank_upgrade',
+        'roll_mod:copper_to_netherite_tank_upgrade',
+        'roll_mod:iron_to_gold_tank_upgrade',
+        'roll_mod:iron_to_diamond_tank_upgrade',
+        'roll_mod:iron_to_netherite_tank_upgrade',
+        'roll_mod:gold_to_diamond_tank_upgrade',
+        'roll_mod:gold_to_netherite_tank_upgrade',
+        'roll_mod:diamond_to_netherite_tank_upgrade'
+    ]);
 });

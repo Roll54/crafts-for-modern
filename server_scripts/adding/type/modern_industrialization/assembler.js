@@ -3003,7 +3003,7 @@ event.recipes.modern_industrialization.assembler(32, 100)
   .itemIn("1x modern_industrialization:highly_advanced_machine_hull")
   .itemIn("1x modern_industrialization:circuit_assembler")
   .fluidIn("1000x modern_industrialization:polyvinyl_chloride")
-  .itemOut("1x modern_industrialization:photolithographer")
+  .itemOut("1x roll_mod:photolithographer")
 
 event.recipes.modern_industrialization.assembler(32, 100)
 .itemIn("3x minecraft:stone")
@@ -3198,7 +3198,7 @@ event.recipes.modern_industrialization.assembler(32, 200)
 .itemIn("4x modern_industrialization:large_advanced_motor")
 .itemIn("1x modern_industrialization:incoloy_machine_casing_pipe")
 //.itemIn("1x roll_mod:research_high_efficiency_steam_turbine", 0.0 ) //todo: add this when research is 
-.itemOut("1x modern_industrialization:high_efficiency_steam_turbine");
+.itemOut("1x roll_mod:high_efficiency_steam_turbine");
 
 
 event.recipes.modern_industrialization.assembler(32, 100)
@@ -3571,34 +3571,32 @@ event.recipes.modern_industrialization.assembler(2, 200)
   .itemIn("4x modern_industrialization:electronic_circuit")
   .itemOut("1x roll_mod:xp_reactor_module")
 
-// Сканери руд
-event.recipes.modern_industrialization.assembler(32, 400)
-  .itemIn("1x roll_mod:lv_ore_scanner")
-  .itemIn("2x modern_industrialization:digital_circuit")
-  .itemIn("1x modern_industrialization:advanced_machine_hull")
-  .itemIn("4x modern_industrialization:stainless_steel_plate")
-  .itemIn("4x modern_industrialization:annealed_copper_wire")
-  .itemIn("1x roll_mod:energium_battery")
-  .itemOut("1x roll_mod:hv_ore_scanner")
-
-event.recipes.modern_industrialization.assembler(128, 400)
-  .itemIn("1x roll_mod:hv_ore_scanner")
-  .itemIn("2x modern_industrialization:processing_unit")
-  .itemIn("1x modern_industrialization:turbo_machine_hull")
-  .itemIn("4x modern_industrialization:titanium_plate")
-  .itemIn("6x modern_industrialization:platinum_fine_wire")
-  .itemIn("1x roll_mod:lapotron_battery_t1")
-  .itemOut("1x roll_mod:ev_ore_scanner")
+// Сканери руд: кожен наступний робиться з попереднього
+;[
+    ['mv', 'lv', 32,  'electronic_circuit', 'advanced_machine_hull',        'aluminum_plate',        'electrum_fine_wire',  'roll_mod:energium_battery'],
+    ['hv', 'mv', 64,  'digital_circuit',    'turbo_machine_hull',           'stainless_steel_plate', 'annealed_copper_wire', 'roll_mod:lapotron_battery_t1'],
+    ['ev', 'hv', 128, 'processing_unit',    'highly_advanced_machine_hull', 'osmiridium_plate',      'platinum_fine_wire',  'roll_mod:lapotron_battery_t2']
+].forEach(([tier, previous, eu, circuit, hull, plate, wire, battery]) => {
+    event.recipes.modern_industrialization.assembler(eu, 400)
+      .itemIn(`1x roll_mod:${previous}_ore_scanner`)
+      .itemIn(`2x modern_industrialization:${circuit}`)
+      .itemIn(`1x modern_industrialization:${hull}`)
+      .itemIn(`4x modern_industrialization:${plate}`)
+      .itemIn(`4x modern_industrialization:${wire}`)
+      .itemIn(`1x ${battery}`)
+      .itemIn("1x roll_mod:standard_chip_pmic")
+      .itemOut(`1x roll_mod:${tier}_ore_scanner`)
+})
 
 // Люки roll_mod
 event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("1x modern_industrialization:osmiridium_barrel")
+  .itemIn("1x modern_industrialization:titanium_barrel")
   .itemIn("1x modern_industrialization:quantum_machine_hull")
   .itemOut("1x roll_mod:iv_item_input_hatch")
 
 event.recipes.modern_industrialization.assembler(16, 200)
   .itemIn("1x modern_industrialization:quantum_machine_hull")
-  .itemIn("1x modern_industrialization:osmiridium_barrel")
+  .itemIn("1x modern_industrialization:titanium_barrel")
   .itemOut("1x roll_mod:iv_item_output_hatch")
 
 // Мульти-рідинні люки: 4 звичайні люки свого рівня
