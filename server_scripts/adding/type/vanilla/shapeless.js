@@ -302,6 +302,7 @@ event.shapeless(
 // Перемикання вхід <-> вихід для люків roll_mod
 const rollModHatchPairs = [
     ['iv_item_input_hatch', 'iv_item_output_hatch'],
+    ['iv_fluid_input_hatch', 'iv_fluid_output_hatch'],
     ['lv_multi_fluid_input_hatch', 'lv_multi_fluid_output_hatch'],
     ['mv_multi_fluid_input_hatch', 'mv_multi_fluid_output_hatch'],
     ['hv_multi_fluid_input_hatch', 'hv_multi_fluid_output_hatch'],

@@ -1,5 +1,13 @@
 ServerEvents.recipes(event => {
 
+// Люки й шлюзи roll_mod рівня IV — як у Modern Industrialization: деталь над корпусом — вхідний,
+// під корпусом — вихідний (воронка для шлюзу, бак для люка). Перемикання вхід/вихід — у shapeless.js.
+;[['item', 'minecraft:hopper'], ['fluid', 'modern_industrialization:osmiridium_tank']].forEach(([kind, part]) => {
+    event.shaped(`roll_mod:iv_${kind}_input_hatch`, ['U', 'V'], { U: part, V: 'modern_industrialization:quantum_machine_hull' })
+    event.shaped(`roll_mod:iv_${kind}_output_hatch`, ['U', 'V'], { U: 'modern_industrialization:quantum_machine_hull', V: part })
+})
+
+
 event.shaped(
     Item.of('railcraft:tunnel_bore'),
     [
@@ -61,31 +69,7 @@ event.shaped(
     }
 )
 
-event.shaped(
-    Item.of('roll_mod:iv_fluid_input_hatch'),
-    [
-        'A  ',
-        'B  ',
-        '   '
-    ],
-    {
-        A: 'modern_industrialization:osmiridium_tank',
-        B: 'modern_industrialization:quantum_machine_hull'
-    }
-)
 
-event.shaped(
-    Item.of('roll_mod:iv_fluid_input_hatch'),
-    [
-        'B  ',
-        'A  ',
-        '   '
-    ],
-    {
-        A: 'modern_industrialization:osmiridium_tank',
-        B: 'modern_industrialization:quantum_machine_hull'
-    }
-)
 
 event.shaped(
     Item.of('hostile_neural_industrialization:prediction_machine_casing'),
@@ -100,29 +84,7 @@ event.shaped(
     }
 )
 
-event.shaped(
-    Item.of('roll_mod:iv_fluid_input_hatch'),
-    [
-        ' A ',
-        '   ',
-        '   '
-    ],
-    {
-        A: 'roll_mod:iv_fluid_output_hatch'
-    }
-)
 
-event.shaped(
-    Item.of('roll_mod:iv_fluid_output_hatch'),
-    [
-        '   ',
-        ' A ',
-        '   '
-    ],
-    {
-        A: 'roll_mod:iv_fluid_input_hatch'
-    }
-)
 
 event.shaped(
     Item.of('roll_mod:highly_advanced_distillery'),
@@ -3578,30 +3540,28 @@ const tankTierPlates = {
     netherite: 'titanium_plate'
 }
 
-for (let i = 0; i < tankTiers.length - 1; i++) {
-    const from = tankTiers[i]
-    const to = tankTiers[i + 1]
+// Rhino rejects const/let declared inside a loop body ("redeclaration of var"): each step is a function call instead.
+tankTiers.slice(0, -1).forEach((tierFrom, i) => {
+    let tierTo = tankTiers[i + 1]
     event.shaped(
-        Item.of(`roll_mod:${from}_to_${to}_tank_upgrade`),
+        Item.of(`roll_mod:${tierFrom}_to_${tierTo}_tank_upgrade`),
         [
             'AAA',
             'ABA',
             'AAA'
         ],
         {
-            A: `modern_industrialization:${tankTierPlates[to]}`,
+            A: `modern_industrialization:${tankTierPlates[tierTo]}`,
             B: 'modern_industrialization:fluid_pipe'
         }
     )
-}
+})
 
-for (let i = 0; i < tankTiers.length; i++) {
-    for (let j = i + 2; j < tankTiers.length; j++) {
-        const steps = []
-        for (let k = i; k < j; k++) {
-            steps.push(`roll_mod:${tankTiers[k]}_to_${tankTiers[k + 1]}_tank_upgrade`)
-        }
-        event.shapeless(`roll_mod:${tankTiers[i]}_to_${tankTiers[j]}_tank_upgrade`, steps)
-    }
-}
+tankTiers.forEach((tierFrom, i) => {
+    tankTiers.forEach((tierTo, j) => {
+        if (j < i + 2) return
+        let steps = tankTiers.slice(i, j).map((tier, k) => `roll_mod:${tier}_to_${tankTiers[i + k + 1]}_tank_upgrade`)
+        event.shapeless(`roll_mod:${tierFrom}_to_${tierTo}_tank_upgrade`, steps)
+    })
+})
 })

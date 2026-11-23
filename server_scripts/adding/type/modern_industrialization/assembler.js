@@ -728,15 +728,7 @@ ServerEvents.recipes(event => {
       .itemIn("6x hostile_neural_industrialization:prediction_machine_casing")
       .itemOut("1x hostile_neural_industrialization:large_loot_fabricator")
 
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x modern_industrialization:osmiridium_tank")
-      .itemIn("1x modern_industrialization:quantum_machine_hull")
-      .itemOut("1x roll_mod:iv_fluid_input_hatch")      
-
-    event.recipes.modern_industrialization.assembler(16, 200)
-      .itemIn("1x modern_industrialization:quantum_machine_hull")
-      .itemIn("1x modern_industrialization:osmiridium_tank")
-      .itemOut("1x roll_mod:iv_fluid_output_hatch")  
+    // IV рідинні люки — разом із предметними, див. «Люки й шлюзи roll_mod рівня IV».
 
     event.recipes.modern_industrialization.assembler(16, 200)
       .itemIn("8x modern_industrialization:simulation_composite_plate")
@@ -3588,16 +3580,20 @@ event.recipes.modern_industrialization.assembler(2, 200)
       .itemOut(`1x roll_mod:${tier}_ore_scanner`)
 })
 
-// Люки roll_mod
-event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("1x modern_industrialization:titanium_barrel")
-  .itemIn("1x modern_industrialization:quantum_machine_hull")
-  .itemOut("1x roll_mod:iv_item_input_hatch")
-
-event.recipes.modern_industrialization.assembler(16, 200)
-  .itemIn("1x modern_industrialization:quantum_machine_hull")
-  .itemIn("1x modern_industrialization:titanium_barrel")
-  .itemOut("1x roll_mod:iv_item_output_hatch")
+// Люки й шлюзи roll_mod рівня IV — як у Modern Industrialization: корпус + воронка (шлюз) або бак (люк),
+// асемблер (8 EU/t, 200 тіків) і розбирання в розпаковувачі.
+;[['item', 'minecraft:hopper'], ['fluid', 'modern_industrialization:osmiridium_tank']].forEach(([kind, part]) => {
+    ;['input', 'output'].forEach(side => {
+        event.recipes.modern_industrialization.assembler(8, 200)
+          .itemIn(`1x ${part}`)
+          .itemIn("1x modern_industrialization:quantum_machine_hull")
+          .itemOut(`1x roll_mod:iv_${kind}_${side}_hatch`)
+        event.recipes.modern_industrialization.unpacker(2, 200)
+          .itemIn(`1x roll_mod:iv_${kind}_${side}_hatch`)
+          .itemOut("1x modern_industrialization:quantum_machine_hull")
+          .itemOut(`1x ${part}`)
+    })
+})
 
 // Мульти-рідинні люки: 4 звичайні люки свого рівня
 const multiFluidHatches = [
@@ -3631,10 +3627,11 @@ multiFluidHatches.forEach(([tier, miTier, circuit, eu]) => {
       .itemIn("2x modern_industrialization:quantum_circuit")
       .itemOut(`1x roll_mod:iv_mixed_${side}_hatch`)
 
-    // ME люки: IV люк + інтерфейс AE2
-    ;[['item', 'iv_item'], ['fluid', 'iv_fluid'], ['mixed', 'iv_mixed']].forEach(([kind, base]) => {
-        event.recipes.modern_industrialization.assembler(256, 200)
-          .itemIn(`1x roll_mod:${base}_${side}_hatch`)
+    // ME люки й шлюзи — рівня MV (корпус «advanced»), тож з MV люка свого виду + інтерфейс AE2
+    ;[['item', 'modern_industrialization:advanced_item'], ['fluid', 'modern_industrialization:advanced_fluid'],
+      ['mixed', 'yet_another_industrialization:advanced_mixed']].forEach(([kind, base]) => {
+        event.recipes.modern_industrialization.assembler(32, 200)
+          .itemIn(`1x ${base}_${side}_hatch`)
           .itemIn("1x ae2:interface")
           .itemIn("2x ae2:engineering_processor")
           .itemIn("2x ae2:logic_processor")
