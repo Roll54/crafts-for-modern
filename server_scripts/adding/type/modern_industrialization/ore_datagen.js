@@ -29,6 +29,7 @@ ServerEvents.recipes(event => {
     hammerOres.forEach(ore_name => {
         event.custom({
             type: 'modern_industrialization:forge_hammer',
+            damage: 30, // потрібен молот, знімає 30 міцності
             ingredient: { item: `roll_mod:raw_${ore_name}` },
             result: { count: 4, id: `roll_mod:impure_${ore_name}_dust` }
         });

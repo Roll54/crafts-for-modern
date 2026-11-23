@@ -279,7 +279,8 @@ event.recipes.modern_industrialization.mixer(32, 1000)
 .fluidOut("10000x roll_mod:mutagen")
 
 // Гербіцид 1-го рівня: оцтовий гербіцид (кислота + вода + сіль)
-event.recipes.modern_industrialization.mixer(8, 200)
+// 2 EU/t — щоб працював і в бронзовому (паровому) змішувачі
+event.recipes.modern_industrialization.mixer(2, 400)
   .fluidIn("500x modern_industrialization:acetic_acid")
   .fluidIn("500x minecraft:water")
   .itemIn("1x modern_industrialization:salt_dust")
