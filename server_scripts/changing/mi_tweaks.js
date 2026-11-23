@@ -2,11 +2,11 @@ ServerEvents.recipes(event => {
 
   // Старі мультиблоки зі стартового скрипта -> відповідники з roll_mod
   const multiblocks = {
-    'mi_tweaks:large_chemical_reactor': 'roll_mod:large_chemical_reactor',
-    'modern_industrialization:high_efficiency_steam_turbine': 'roll_mod:high_efficiency_steam_turbine',
-    'modern_industrialization:photolithographer': 'roll_mod:photolithographer',
+    'roll_mod:large_chemical_reactor': 'roll_mod:large_chemical_reactor',
+    'roll_mod:high_efficiency_steam_turbine': 'roll_mod:high_efficiency_steam_turbine',
+    'roll_mod:photolithographer': 'roll_mod:photolithographer',
     'modern_industrialization:pyrolyse_oven': 'roll_mod:pyrolyse_oven',
-    'modern_industrialization:ore_washer': 'roll_mod:ore_washer'
+    'roll_mod:ore_washer': 'roll_mod:ore_washer'
   }
 
   Object.entries(multiblocks).forEach(([from, to]) => {
