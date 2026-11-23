@@ -318,4 +318,12 @@ rollModHatchPairs.forEach(([input, output]) => {
     event.shapeless(`roll_mod:${output}`, [`roll_mod:${input}`])
     event.shapeless(`roll_mod:${input}`, [`roll_mod:${output}`])
 })
+
+// Змішані IV люки — як у YAI: предметний + рідинний люк
+;['input', 'output'].forEach(side => {
+    event.shapeless(`roll_mod:iv_mixed_${side}_hatch`, [
+        `roll_mod:iv_item_${side}_hatch`,
+        `roll_mod:iv_fluid_${side}_hatch`
+    ])
+})
 })

@@ -59,4 +59,12 @@ event.recipes.modern_industrialization.packer(32, 200)
 .itemIn("1x roll_mod:multi_protecting_gravi_chestplate")
 .itemIn("1x extended_industrialization:nano_chestplate")
 .itemOut("1x extended_industrialization:nano_gravichestplate")
+
+// Змішані IV люки — як у YAI
+;['input', 'output'].forEach(side => {
+    event.recipes.modern_industrialization.packer(2, 100)
+      .itemIn(`1x roll_mod:iv_item_${side}_hatch`)
+      .itemIn(`1x roll_mod:iv_fluid_${side}_hatch`)
+      .itemOut(`1x roll_mod:iv_mixed_${side}_hatch`)
+})
 })

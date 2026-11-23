@@ -3620,13 +3620,6 @@ multiFluidHatches.forEach(([tier, miTier, circuit, eu]) => {
       .itemIn("4x modern_industrialization:fluid_pipe")
       .itemOut(`1x roll_mod:iv_multi_fluid_${side}_hatch`)
 
-    // Змішаний IV люк: предметний + рідинний
-    event.recipes.modern_industrialization.assembler(256, 200)
-      .itemIn(`1x roll_mod:iv_item_${side}_hatch`)
-      .itemIn(`1x roll_mod:iv_fluid_${side}_hatch`)
-      .itemIn("2x modern_industrialization:quantum_circuit")
-      .itemOut(`1x roll_mod:iv_mixed_${side}_hatch`)
-
     // ME люки й шлюзи — рівня MV (корпус «advanced»), тож з MV люка свого виду + інтерфейс AE2
     ;[['item', 'modern_industrialization:advanced_item'], ['fluid', 'modern_industrialization:advanced_fluid'],
       ['mixed', 'yet_another_industrialization:advanced_mixed']].forEach(([kind, base]) => {

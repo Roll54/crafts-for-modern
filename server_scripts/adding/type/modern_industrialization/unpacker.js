@@ -18,5 +18,12 @@ ServerEvents.recipes(event => {
   event.recipes.modern_industrialization.packer(2, 100)
     .itemIn("9x #c:tiny_dusts/sulfur")
     .itemOut("1x roll_mod:sulfur_dust")
-  
+
+  // Змішані IV люки — як у YAI
+  ;['input', 'output'].forEach(side => {
+    event.recipes.modern_industrialization.unpacker(2, 100)
+      .itemIn(`1x roll_mod:iv_mixed_${side}_hatch`)
+      .itemOut(`1x roll_mod:iv_item_${side}_hatch`)
+      .itemOut(`1x roll_mod:iv_fluid_${side}_hatch`)
+  })
 })
