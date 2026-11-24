@@ -19,6 +19,11 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:redstone_battery",
     ]);
     
+    event.add('roll_mod:pmic_chips', [
+        'roll_mod:standard_chip_pmic',
+        'roll_mod:blue_chip_pmic'
+    ]);
+
     event.add('roll_mod:battaries_tier_three', [
         "roll_mod:bismuth_lithium_battery",
         "modern_industrialization:sodium_battery",
