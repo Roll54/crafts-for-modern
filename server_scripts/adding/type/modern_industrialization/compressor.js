@@ -43,4 +43,8 @@ ServerEvents.recipes(event => {
   event.recipes.modern_industrialization.compressor(16, 800)
   .itemIn("roll_mod:mixed_cosmic_t1")
   .itemOut("modern_industrialization:cosmic_alloy_one_ingot")
+
+  event.recipes.modern_industrialization.compressor(2, 400)
+  .itemIn("ad_astra:etrium_ingot")
+  .itemOut("ad_astra:etrium_plate")
 })

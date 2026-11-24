@@ -3564,4 +3564,69 @@ tankTiers.forEach((tierFrom, i) => {
         event.shapeless(`roll_mod:${tierFrom}_to_${tierTo}_tank_upgrade`, steps)
     })
 })
+
+// Етрій: блок і декоративні блоки (за зразком Ad Astra)
+event.shaped(
+    Item.of('ad_astra:etrium_block'),
+    [
+        'AAA',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: 'ad_astra:etrium_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('ad_astra:etrium_plateblock', 64),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'ad_astra:etrium_plate',
+        B: 'modern_industrialization:steel_rod'
+    }
+)
+
+event.shaped(
+    Item.of('ad_astra:etrium_panel', 64),
+    [
+        'ABA',
+        'BBB',
+        'ABA'
+    ],
+    {
+        A: 'ad_astra:etrium_plate',
+        B: 'ad_astra:etrium_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('ad_astra:encased_etrium_block', 64),
+    [
+        'BBB',
+        'AAA',
+        'BBB'
+    ],
+    {
+        A: 'ad_astra:etrium_plate',
+        B: 'modern_industrialization:steel_ingot'
+    }
+)
+
+event.shaped(
+    Item.of('ad_astra:etrium_factory_block', 64),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'ad_astra:etrium_plate',
+        B: 'ad_astra:etrium_ingot'
+    }
+)
 })

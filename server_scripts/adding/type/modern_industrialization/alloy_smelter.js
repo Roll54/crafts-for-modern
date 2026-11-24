@@ -42,5 +42,11 @@ ServerEvents.recipes(event => {
   event.recipes.extended_industrialization.alloy_smelter(8, 400)
     .itemIn("4x minecraft:iron_ingot")
     .itemIn("4x #c:dusts/redstone")
-    .itemOut("6x modern_industrialization:redstone_alloy_ingot")  
+    .itemOut("6x modern_industrialization:redstone_alloy_ingot")
+
+  // Етрій: як острум і калорит, але з синім лазуровим сріблом
+  event.recipes.extended_industrialization.alloy_smelter(2, 200)
+    .itemIn("minecraft:copper_ingot")
+    .itemIn("roll_mod:azure_silver_dust")
+    .itemOut("8x ad_astra:etrium_ingot")
 })
