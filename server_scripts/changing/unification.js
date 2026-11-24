@@ -21,7 +21,6 @@ ServerEvents.recipes(event => {
 
   unify('modern_industrialization:redstone_battery', '#roll_mod:battaries_tier_one')
   unify('modern_industrialization:sodium_battery', '#roll_mod:battaries_tier_three')
-  unify('roll_mod:standard_chip_pmic', '#roll_mod:pmic_chips')
 
   unify('railcraft:controller_circuit', '#roll_mod:controller_circuit')
   unify('railcraft:receiver_circuit', '#roll_mod:receiver_circuit')
