@@ -1,12 +1,16 @@
 ServerEvents.recipes(event => {
 
-// Люки й шлюзи roll_mod рівня IV — як у Modern Industrialization: деталь над корпусом — вхідний,
-// під корпусом — вихідний (воронка для шлюзу, бак для люка). Перемикання вхід/вихід — у shapeless.js.
 ;[['item', 'minecraft:hopper'], ['fluid', 'modern_industrialization:osmiridium_tank']].forEach(([kind, part]) => {
     event.shaped(`roll_mod:iv_${kind}_input_hatch`, ['U', 'V'], { U: part, V: 'modern_industrialization:quantum_machine_hull' })
     event.shaped(`roll_mod:iv_${kind}_output_hatch`, ['U', 'V'], { U: 'modern_industrialization:quantum_machine_hull', V: part })
 })
 
+event.shaped("ae2:entropy_manipulator", ["  A", " BC", "DC "], {
+    A: "ae2:fluix_block",
+    B: "ae2:energy_cell",
+    C: "modern_industrialization:aluminum_wire",
+    D: "modern_industrialization:aluminum_rod"
+});
 
 event.shaped(
     Item.of('railcraft:tunnel_bore'),
