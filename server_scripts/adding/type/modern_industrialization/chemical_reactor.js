@@ -567,7 +567,7 @@ event.recipes.modern_industrialization.chemical_reactor(32, 400)
 .fluidIn("500x modern_industrialization:benzene")
 .fluidIn("250x modern_industrialization:chlorine")
 .fluidIn("250x modern_industrialization:ammonia")
-.itemIn("1x modern_industrialization:salt_dust")
+.itemIn("1x #c:dusts/salt")
 .fluidOut("500x modern_industrialization:adrenaline")
 
 // Гербіцид 2-го рівня (за мотивами 2,4-Д): фенол + хлор + оцтова кислота

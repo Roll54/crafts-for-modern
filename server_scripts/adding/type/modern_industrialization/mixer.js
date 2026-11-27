@@ -143,7 +143,7 @@ event.recipes.modern_industrialization.mixer(16, 200)
   event.recipes.modern_industrialization.mixer(24, 100)
   .fluidIn("10000x extended_industrialization:distilled_water")
   .itemIn("1x roll_mod:1_circuit", 0.0)
-  .itemIn("1x modern_industrialization:salt_dust")
+  .itemIn("1x #c:dusts/salt")
   .fluidOut("10000x modern_industrialization:saline_solution")
 
 // Живтек
@@ -157,12 +157,12 @@ event.recipes.modern_industrialization.mixer(16, 200)
   .fluidIn("2000x extended_industrialization:distilled_water")
   .itemIn("10x roll_mod:agar_dust")
   .itemIn("6x roll_mod:calcium_dust")
-  .itemIn("4x modern_industrialization:salt_dust")
+  .itemIn("4x #c:dusts/salt")
   .fluidOut("2000x modern_industrialization:raw_nutrient_solution")
 
 // Ін'єкції: шприц + 250 мБ адреналіну + розчинник + діюча речовина
 const injections = [
-    ['injection_resistance',      '250x extended_industrialization:distilled_water', ['2x roll_mod:calcium_dust', '1x modern_industrialization:salt_dust']],
+    ['injection_resistance',      '250x extended_industrialization:distilled_water', ['2x roll_mod:calcium_dust', '1x #c:dusts/salt']],
     ['injection_haste',           '250x extended_industrialization:distilled_water', ['4x minecraft:sugar']],
     ['injection_speed',           '250x extended_industrialization:distilled_water', ['4x minecraft:cocoa_beans', '2x minecraft:sugar']],
     ['injection_regen',           '250x modern_industrialization:raw_nutrient_solution', ['1x minecraft:glistering_melon_slice', '1x minecraft:ghast_tear']],
@@ -283,6 +283,6 @@ event.recipes.modern_industrialization.mixer(32, 1000)
 event.recipes.modern_industrialization.mixer(2, 400)
   .fluidIn("500x modern_industrialization:acetic_acid")
   .fluidIn("500x minecraft:water")
-  .itemIn("1x modern_industrialization:salt_dust")
+  .itemIn("1x #c:dusts/salt")
   .fluidOut("1000x roll_mod:herbicide_tier_1")
 })
