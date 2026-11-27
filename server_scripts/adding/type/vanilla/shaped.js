@@ -3569,19 +3569,7 @@ tankTiers.forEach((tierFrom, i) => {
     })
 })
 
-// Етрій: блок і декоративні блоки (за зразком Ad Astra)
-event.shaped(
-    Item.of('ad_astra:etrium_block'),
-    [
-        'AAA',
-        'AAA',
-        'AAA'
-    ],
-    {
-        A: 'ad_astra:etrium_ingot'
-    }
-)
-
+// Етрій: декоративні блоки (за зразком Ad Astra)
 event.shaped(
     Item.of('ad_astra:etrium_plateblock', 64),
     [

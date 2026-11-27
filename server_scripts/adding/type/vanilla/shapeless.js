@@ -326,9 +326,4 @@ rollModHatchPairs.forEach(([input, output]) => {
         `roll_mod:iv_fluid_${side}_hatch`
     ])
 })
-
-// Етрій: блок <-> злитки <-> самородки
-event.shapeless(Item.of('ad_astra:etrium_ingot', 9), ['ad_astra:etrium_block'])
-event.shapeless(Item.of('ad_astra:etrium_nugget', 9), ['ad_astra:etrium_ingot'])
-event.shapeless(Item.of('ad_astra:etrium_ingot'), ['9x ad_astra:etrium_nugget'])
 })
